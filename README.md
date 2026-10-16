@@ -128,6 +128,9 @@ THE GAME                          4232 functions, 673196 bytes of code; each fun
   of which library                588 functions, 83572 bytes of code: the Sega SDK, the NAOMI library and the C runtime bundled in the game
     done                   21.9%  129 of 588 library functions, 9878 bytes (11.8%)
     named                 100.0%  588 of 588 (the library's own names, from SDK tables)
+REVERSE ENGINEERING               what the model map identifies; separate from the measures above, not done work
+  models named              4.2%  608 of 14434 models: a name, or a named table or collection
+  sounds named              0.1%  1 of 1019 sounds (sound rules)
 ```
 <!-- /progress -->
 
