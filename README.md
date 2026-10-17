@@ -2,6 +2,8 @@
 
 ![decomp progress](badge.svg)
 
+**Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
+
 A decompilation of the Dreamcast **Zombie Revenge**, in progress. It rebuilds the game's executable
 byte for byte from one assembly file per function (the baseline the build keeps checking), with
 1026 of its 4232 functions named so far. A function is **done** when its C behaves like the
