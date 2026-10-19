@@ -18,7 +18,7 @@ All 608 are named in `models.txt` (`name POL.AFS <offset> <label>`, offset = ent
 
 ### Weapons (entry 3)
 
-The `buki_` models are the weapons: `handgun1` (`+0x8040`, 5,104 bytes), `machinegun1` (`+0xAC00`), `shotgun` (`+0xF360`), `handg_tama` (bullet, `+0x7A40`), `handg_yakkyo` (casing, `+0x7CC0`), `shotshell` (`+0x111C0`), magazines, and `magapika001a` to `004a`. The muzzle flashes are the `gun_` models (`gun_flash0` at `+0x473A0`, `gun_flash1` at `+0x47740`, `gun_flash2` at `+0x47C40`). The flat records read cleanly and look like the weapons when drawn (handgun 108 triangles, machine gun 120, shotgun 166). In Crazy Taxi's units (about 10 cm) the pistol is 2.1 long; the barrel runs along the model's z, the height along y.
+The `buki_` models are the weapons: `handgun1` (`+0x8040`, 5,104 bytes), `machinegun1` (`+0xAC00`), `shotgun` (`+0xF360`), `handg_tama` (bullet, `+0x7A40`), `handg_yakkyo` (casing, `+0x7CC0`), `shotshell` (`+0x111C0`), magazines, and `magapika001a` to `004a`. The muzzle flashes are the `gun_` models (`gun_flash0` at `+0x473A0`, `gun_flash1` at `+0x47740`, `gun_flash2` at `+0x47C40`). The flat records read cleanly and look like the weapons when drawn (handgun 108 triangles, machine gun 120, shotgun 166). In units of about 10 cm the pistol is 2.1 long; the barrel runs along the model's z, the height along y.
 
 Shapes (model units, 10 per metre): `handg_tama` is not a slug but a bullet tracer, a thin pyramid 10.5 long along its z (0 to +10.5) and 0.2 wide. `handg_yakkyo` (the casing) is 0.6 long and `shotshell` 1.5. In the guns the barrel runs along -z (the muzzle at the low z end) and the grip is at the high z end, hanging down (-y): the pistol's grip centres near (0, -1.1, 1.0), the submachine gun's near (0, -1.0, 0.7), the shotgun's near (0, -0.2, 2.8).
 
@@ -38,7 +38,7 @@ Characters, skeletons and textures on them stay open: Shuriken shows Zombie Reve
 
 ## Sound effects: `SND.AFS`
 
-`DPETC/DP2SOUND.MLT` (Sega's `SMLT` multi bank, 29 sound-effect slots) is not the game's: it is byte-identical on the Zombie Revenge, Sonic Adventure and Sonic Adventure 2 discs (MD5 `bb0b71c7...`), part of the browser files in `DPETC`. Its 29 effects are not gunfire or anything of the game's.
+`DPETC/DP2SOUND.MLT` (Sega's `SMLT` multi bank, 29 sound-effect slots) is not the game's: it is byte-identical on other discs that carry the browser files (MD5 `bb0b71c7...`), part of the browser files in `DPETC`. Its 29 effects are not gunfire or anything of the game's.
 
 The game's sounds are in `SND.AFS` (319 entries, 132 MB):
 
@@ -46,7 +46,7 @@ The game's sounds are in `SND.AFS` (319 entries, 132 MB):
 |---|---|
 | 0 | The AICA sound driver program, 59,264 bytes (`AM2/AICAsoundDrv990920/Ver1.76`) |
 | 1 to 302 | ADX streams (music and long voices) |
-| 303 to 311 | Nine `DTPK` sound packs (the AM2 driver's: the same format Crazy Taxi and Virtua Tennis load), 1,317,422 / 516,900 / 326,828 / 323,704 / 182,008 / 251,564 / 42,888 / 81,872 / 195,696 bytes |
+| 303 to 311 | Nine `DTPK` sound packs (the AM2 driver's format), 1,317,422 / 516,900 / 326,828 / 323,704 / 182,008 / 251,564 / 42,888 / 81,872 / 195,696 bytes |
 | 312 to 318 | Small tables (56,320 bytes; 4,224 bytes x4; 19,200 bytes x2), not read |
 
 Entry 303 holds 207 samples in 15 banks (203 4-bit ADPCM, 4 PCM16), entry 304 holds 75 (53 ADPCM, 21 PCM16). Which sample is which weapon is not decided: by shape alone (sharp attack, quick fall, noisy), entry 303's samples 0, 14, 39, 111, 151, 152, 186 and 187 are the gunshot-like ones.
