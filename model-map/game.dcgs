@@ -1,7 +1,7 @@
 # dcgs v1.0
 # sha1 aaa2a5cd6eb567fd0b44d7567c939318e5bed422
 # base 0C010000
-# sections models images audio
+# sections models textures images audio
 [models]
 file	offset	bytes	records	radius	group	sub	sublabel	name	table	index	used_by	texset
 POL.AFS	80000	104	1	0.001								
@@ -354,9 +354,9 @@ POL.AFS	2a9aa0	3776	4	3.126				Buki Ctlight
 POL.AFS	2aaac0	3600	4	0.769				Buki Ctlight2				
 POL.AFS	2aba40	504	1	5.240				Buki Handg Tama				
 POL.AFS	2abcc0	688	2	0.340				Buki Handg Yakkyo				
-POL.AFS	2ac040	4992	1	1.318				Buki Handgun1				
+POL.AFS	2ac040	4992	1	1.318				Buki Handgun1				weapons
 POL.AFS	2ad440	5808	3	2.247				Buki Handgun Mat				
-POL.AFS	2aec00	6192	5	2.659				Buki Machinegun1				
+POL.AFS	2aec00	6192	5	2.659				Buki Machinegun1				weapons
 POL.AFS	2b05e0	1840	3	0.779				Buki Magapika001a				
 POL.AFS	2b0e20	1840	3	0.779				Buki Magapika002a				
 POL.AFS	2b1660	1840	3	0.779				Buki Magapika003a				
@@ -365,8 +365,8 @@ POL.AFS	2b26e0	952	2	0.758				Buki Magazin
 POL.AFS	2b2b60	1120	1	0.758				Buki Magazin2				
 POL.AFS	2b3040	136	1	3.536				Buki Mark1				
 POL.AFS	2b3140	432	1	1.027				Buki Muti Koma				
-POL.AFS	2b3360	7256	6	3.896				Buki Shotgun				
-POL.AFS	2b51c0	856	2	0.770				Buki Shotshell				
+POL.AFS	2b3360	7256	6	3.896				Buki Shotgun				weapons
+POL.AFS	2b51c0	856	2	0.770				Buki Shotshell				weapons
 POL.AFS	2b55e0	4424	4	0.888				Buki Sybom1				
 POL.AFS	2b68a0	688	1	6.080				Buki Tetupipe				
 POL.AFS	2b6bc0	432	1	5.078				Coli B				
@@ -14438,6 +14438,13 @@ POL.AFS	3965800	136	1	18.554
 POL.AFS	3965900	136	1	18.554								
 POL.AFS	3965a00	136	1	18.554								
 POL.AFS	3965b00	136	1	18.554								
+[textures]
+file	number	texture_file	offset	size	width	height	type	format	set
+POL.AFS	13	TEX.AFS@2ea760	1c	6144	128	128	3	1	weapons
+POL.AFS	26	TEX.AFS@2f0b20	1c	6144	128	128	3	1	weapons
+POL.AFS	27	TEX.AFS@2f1ec0	1c	6144	128	128	3	1	weapons
+POL.AFS	116	TEX.AFS@31ea60	1c	4096	32	64	d	2	weapons
+
 [images]
 file	offset	kind	width	height	type	format	bytes	name
 0GDTEX.PVR	10	pvr	256	256	1	0	131088	
