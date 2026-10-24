@@ -23,14 +23,19 @@ The case (JSON): {"exe": path, "base": hex, "dump": path, "entry": hex, "end": h
 "fr0": float, "poke_arg": {"r7": hexbytes}}, ...], "steps": max}. Paths are relative to the case file.
 A call's "poke_arg" writes those bytes at the address the named register holds when the call is made.
 """
+import os as _tp_os, sys as _tp_sys  # noqa: E401  every tools folder on the import path (tools/toolpath.py)
+_tp_sys.path.insert(0, _tp_os.path.normpath(_tp_os.path.join(_tp_os.path.dirname(_tp_os.path.abspath(__file__)), '.')))
+import toolpath  # noqa: E402,F401
 import json
 import math
 import os
+import re
 import struct
 import sys
 
 M32 = 0xFFFFFFFF
 SENTINEL = 0x0EADBEE0          # return address the run ends on (outside RAM, never executed)
+ROM_HI = 0x00220000           # 0x00000000-0x0021FFFF: boot ROM and flash, read-only
 STACK_TOP = 0x0E000000         # a fresh stack page, so its writes are not effects
 RAM_LO, RAM_HI = 0x0C000000, 0x0D000000
 
@@ -77,8 +82,11 @@ class Memory:
         self.pages = {}
         self.writes = []          # (addr, size, value), stack excluded
         self.devices = []         # ('r'/'w', addr, size, value)
+        self.reads = []           # the address of every data read, in order (capped)
         self.stack = (STACK_TOP - 0x10000, STACK_TOP)
         self.device_reads = {}    # addr -> list of values to hand back, in order
+        self.seq_reads = {}       # RAM addr -> what each read returns, in order (the last value stays): a word an interrupt changes
+        self.seq_used = {}        # RAM addr -> how many reads took one of those values
 
     @staticmethod
     def phys(a):
@@ -99,10 +107,18 @@ class Memory:
 
     def read(self, addr, size, fetch=False):
         a = self.phys(addr)
+        if not fetch and len(self.reads) < 4000:
+            self.reads.append(a)
+        sq = self.seq_reads.get(a) if not fetch else None
+        if sq:                                   # a word that changes between reads (an interrupt, a counter): the case lists what each read returns
+            self.seq_used['%08X' % a] = self.seq_used.get('%08X' % a, 0) + 1
+            return (sq.pop(0) if len(sq) > 1 else sq[0]) & ((1 << (8 * size)) - 1)
         if a & (size - 1):
             raise Stop('unaligned %d-byte read at %08X' % (size, addr))
         page = self.pages.get(a >> 12)
         if page is None:
+            if a < ROM_HI and not fetch and a not in self.device_reads:
+                return 0                         # the boot ROM and flash: a read has no side effect, so its order is not an effect (a null pointer's fields)
             if not (RAM_LO <= a < RAM_HI) and not fetch and not (self.stack[0] <= a < self.stack[1]):
                 vals = self.device_reads.get(a)
                 v = vals.pop(0) if vals else 0
@@ -137,12 +153,15 @@ class CPU:
         self.t = self.s = self.q = self.mq = 0
         self.srx = 0x40000000         # SR's other bits (MD = 1, interrupt mask 0): read by stc sr, written by ldc sr
         self.gbr = self.mach = self.macl = self.pr = self.pc = 0
+        self.vbr = 0
         self.fpul = 0
         self.fr = [0] * 16        # float32 bits, current bank
         self.xf = [0] * 16        # the other bank
         self.sz = self.prec = self.frbit = 0
         self.fpscr_rest = 0x00040001   # DN = 1, RM = nearest
         self.steps = 0
+        self.covered = set()                  # the address of every instruction that ran
+        self.trace = None                     # with case['trace']: (pc, opcode, r0-r15, fr0-fr15) of every instruction, before it runs
         self.on_call = None       # callback(cpu, target, kind) -> True when the call was handled
         self.lo = self.hi = 0     # the function's own bytes: branches inside stay inside
         self.inside = []          # return addresses of the callees running now (deep calls)
@@ -178,8 +197,15 @@ class CPU:
     # one instruction; returns a pending branch target (delayed) or None
     def step(self, in_slot=False):
         pc = self.pc
+        if not in_slot and not self.inside and getattr(self, 'hi', None) and pc == self.hi and self.on_call:
+            # execution ran on past the function's last instruction (no return: it falls into the next function): a jump out, like a tail call
+            if self.on_call(self, pc, 'jump', pc):
+                return
         op = self.m.read(pc, 2, fetch=True)
         self.steps += 1
+        self.covered.add(pc)
+        if self.trace is not None:
+            self.trace.append((pc, op, tuple(self.r), tuple(self.fr)))
         self.pc = (pc + 2) & M32
         n, m_, lo4, lo8 = (op >> 8) & 15, (op >> 4) & 15, op & 15, op & 255
         r = self.r
@@ -207,6 +233,7 @@ class CPU:
             if op == 0x0019: self.mq = self.q = self.t = 0; return
             if lo8 == 0x02: r[n] = self.sr(); return
             if lo8 == 0x12: r[n] = self.gbr; return
+            if lo8 == 0x22: r[n] = self.vbr; return                          # stc vbr,rn
             if lo8 == 0x0a: r[n] = self.mach; return
             if lo8 == 0x1a: r[n] = self.macl; return
             if lo8 == 0x2a: r[n] = self.pr; return
@@ -329,18 +356,20 @@ class CPU:
             if lo8 == 0x5a: self.fpul = x; return
             if lo8 == 0x6a: self.set_fpscr(x); return
             if lo8 == 0x1e: self.gbr = x; return
+            if lo8 == 0x2e: self.vbr = x; return                             # ldc rm,vbr
             if lo8 == 0x0e: self.set_sr(x); return                         # ldc rm,sr
-            if lo8 in (0x02, 0x12, 0x22, 0x52, 0x62, 0x13):               # sts.l / stc.l gbr
+            if lo8 in (0x02, 0x12, 0x22, 0x52, 0x62, 0x13, 0x23):         # sts.l / stc.l gbr, vbr
                 v = {0x02: self.mach, 0x12: self.macl, 0x22: self.pr, 0x52: self.fpul,
-                     0x62: self.get_fpscr(), 0x13: self.gbr}[lo8]
+                     0x62: self.get_fpscr(), 0x13: self.gbr, 0x23: self.vbr}[lo8]
                 r[n] = (x - 4) & M32; wr(r[n], 4, v); return
-            if lo8 in (0x06, 0x16, 0x26, 0x56, 0x66, 0x17):               # lds.l / ldc.l gbr
+            if lo8 in (0x06, 0x16, 0x26, 0x56, 0x66, 0x17, 0x27):         # lds.l / ldc.l gbr, vbr
                 v = rd(x, 4); r[n] = (x + 4) & M32
                 if lo8 == 0x06: self.mach = v
                 elif lo8 == 0x16: self.macl = v
                 elif lo8 == 0x26: self.pr = v
                 elif lo8 == 0x56: self.fpul = v
                 elif lo8 == 0x66: self.set_fpscr(v)
+                elif lo8 == 0x27: self.vbr = v
                 else: self.gbr = v
                 return
         elif hi == 5:
@@ -437,7 +466,7 @@ class CPU:
         if self.inside and call != 'call':        # inside a deep callee: its branches are its own
             self.pc = target
             return
-        if call in ('call', 'jump') or not (self.lo <= target < self.hi):
+        if call == 'call' or not (self.lo <= target < self.hi):      # a braf / jmp to an address inside the function is a branch (a jump table, a long goto)
             if self.on_call and self.on_call(self, target, call or 'jump', at):
                 return
         self.pc = target
@@ -490,6 +519,12 @@ class CPU:
                 self.setf(n, math.sqrt(x) if x >= 0 else float('nan')); return
             if k == 8: self.fr[n] = 0; return                            # fldi0
             if k == 9: self.fr[n] = 0x3F800000; return                   # fldi1
+            if k == 7:                                                    # fsrra frn
+                x = self.f(n)
+                self.setf(n, 1.0 / math.sqrt(x) if x > 0 else float('inf')); return
+            if k == 0xf and (n & 1) == 0:                                 # fsca fpul,drn: sine and cosine of an angle in 1/65536 turns
+                a = 2.0 * math.pi * (self.fpul & 0xFFFF) / 65536.0
+                self.setf(n, math.sin(a)); self.setf(n + 1, math.cos(a)); return
             if k == 0xe:                                                  # fipr fvm,fvn
                 vn, vm = (n >> 2) * 4, (n & 3) * 4
                 s = sum(self.f(vm + i) * self.f(vn + i) for i in range(4))
@@ -557,7 +592,7 @@ class CPU:
             r[n] = (r[n] - 8) & M32; store(r[n], *get(m_)); return
 
 
-def run(case, case_dir='.', code=None, deep=False, entry=None, end=None):
+def run(case, case_dir='.', code=None, deep=False, entry=None, end=None, argc=None):
     """Run one case. code = (address, bytes) puts other code (a compiled C unit) at its address;
     entry/end then name the function inside it (default: all of it). deep: True runs every call;
     a function of the target address runs the calls it accepts (the rest return the case's values)."""
@@ -574,6 +609,8 @@ def run(case, case_dir='.', code=None, deep=False, entry=None, end=None):
     end = end_ if end_ is not None else (code[0] + len(code[1]) if code else int(case['end'], 16))
     for a, hexbytes in case.get('poke', {}).items():
         mem.load(int(a, 16), bytes.fromhex(hexbytes))
+    for a, vals in case.get('seq_reads', {}).items():
+        mem.seq_reads[Memory.phys(int(a, 16))] = [int(v, 16) for v in vals]
     for a, vals in case.get('device_reads', {}).items():
         mem.device_reads[Memory.phys(int(a, 16))] = [int(v, 16) for v in vals]
     mem.writes.clear()
@@ -587,32 +624,66 @@ def run(case, case_dir='.', code=None, deep=False, entry=None, end=None):
             cpu.fr[int(k[2:])] = f_bits(float(v)) if not isinstance(v, str) else int(v, 16)
         elif k == 'gbr':
             cpu.gbr = int(v, 16)
+        elif k == 'vbr':
+            cpu.vbr = int(v, 16)
+        elif k.startswith('xf'):                          # the back bank (XMTRX) the function starts with
+            cpu.xf[int(k[2:])] = f_bits(float(v)) if not isinstance(v, str) else int(v, 16)
         else:
             cpu.r[int(k[1:])] = int(v, 16) & M32
     cpu.pr = SENTINEL
+    if case.get('gbr'):                          # the global base register the function's @(disp,gbr) accesses use
+        cpu.gbr = int(case['gbr'], 16) & M32
     cpu.pc = entry
+    if case.get('trace'):
+        cpu.trace = []
     calls = []
     returns = list(case.get('calls', []))
     entry_r15 = cpu.r[15]
+    xf_entry = list(cpu.xf)
+    given_args = {int(k[1:]) for k in case.get('regs', {}) if re.match(r'r[4-7]$', k)}   # the arguments the case passes in are the function's own
+    entry_fargs = [cpu.fr[i] for i in range(4, 12)]   # fr4-fr11 as the case gave them: a float argument register that still holds this was not set by the function
+    given_fargs = {int(k[2:]) for k in case.get('regs', {}) if re.match(r'fr(4|5|6|7|8|9|10|11)$', k)}
+    after_call = []
+    entry_args = [cpu.r[i] for i in range(4, 8)]      # r4-r7 as the case gave them: a call's argument register that still holds this was not set by the function
+    post_args = list(entry_args); post_fargs = list(entry_fargs)   # r4-r7 / fr4-fr11 right after the last call
 
     def on_call(c, target, kind, at):
         if deep is True or (callable(deep) and deep(target)):   # True: every call; a test: those it accepts
-            if kind == 'call':
-                c.inside.append(c.pr)            # runs until it returns here; not a call out
+            if kind in ('call', 'jump'):
+                c.inside.append(c.pr)            # runs until it returns here (a tail jump: to our caller); not a call out
             return False
         calls.append({'to': '%08X' % (target & M32), 'kind': kind,
                       'r4-r7': ['%08X' % c.r[i] for i in range(4, 8)],
-                      'fr4-fr11': ['%08X' % c.fr[i] for i in range(4, 12)]})
+                      'fr4-fr11': ['%08X' % c.fr[i] for i in range(4, 12)],
+                      'chg': [(i in given_args and not after_call) or (c.r[i] != entry_args[i - 4] and c.r[i] != post_args[i - 4]) for i in range(4, 8)],
+                      'fchg': [(i in given_fargs and not after_call) or (c.fr[i] != entry_fargs[i - 4] and c.fr[i] != post_fargs[i - 4]) for i in range(4, 12)],
+                      'stack': '%08X' % mem.read(c.r[15] & M32, 4, True),
+                      'stackw': ['%08X' % mem.read((c.r[15] + 4 * k) & M32, 4, True) for k in range(4)]})   # words passed on the stack (a 5th argument on)   # the word on top of the stack: the first argument of a variadic call
+        if not returns:
+            c.r[0] = 0                           # a call the case gives no answer for returns 0 (r0 and fr0): a leftover register is not a result, on the original or on the compiled C
+            c.fr[0] = 0
         ret = returns.pop(0) if returns else {}
+        if 'r0' not in ret:
+            c.r[0] = 0                           # an answer that gives no r0 / fr0: the callee's result is 0, not a leftover register
+        if 'fr0' not in ret:
+            c.fr[0] = 0
+        n_args = argc(target & M32) if argc else None             # the callee's integer argument count, when known
         for k, v in ret.get('poke_arg', {}).items():             # the callee filled an output slot
+            if n_args is not None and int(k[1:]) - 4 >= n_args:
+                continue                                         # not one of its arguments: the register only holds a leftover
             mem.load(c.r[int(k[1:])] & M32, bytes.fromhex(v))
+        if ret.get('poke_stack'):                                # a structure returned by value: the callee fills the buffer the stack word names
+            mem.load(mem.read(c.r[15] & M32, 4, True) & M32, bytes.fromhex(ret['poke_stack']))
         for k, v in ret.items():
-            if k == 'poke_arg':
+            if k in ('poke_arg', 'poke_stack'):
                 continue
             if k.startswith('fr'):
                 c.fr[int(k[2:])] = f_bits(float(v)) if not isinstance(v, str) else int(v, 16)
             else:
                 c.r[int(k[1:])] = int(v, 16) & M32
+        post_args[:] = [c.r[i] for i in range(4, 8)]           # a real callee leaves r4-r7 and fr4-fr11 undefined: what still holds these values
+        post_fargs[:] = [c.fr[i] for i in range(4, 12)]        # at the next call was not set for it (a leftover, not an argument)
+        after_call.append(1)
         if kind == 'jump':                       # a tail jump: the callee returns for us
             c.pc = c.pr
         else:
@@ -633,7 +704,10 @@ def run(case, case_dir='.', code=None, deep=False, entry=None, end=None):
             'devices': [[k, '%08X' % a, s, '%0*X' % (s * 2, v)] for k, a, s, v in mem.devices],
             'out': {'r0': '%08X' % cpu.r[0], 'r1': '%08X' % cpu.r[1],
                     'fr0': '%08X' % cpu.fr[0], 'fr1': '%08X' % cpu.fr[1]},
-            'r15_balanced': cpu.r[15] == entry_r15}
+            'r15_balanced': cpu.r[15] == entry_r15,
+            'xf': ['%08X' % v for v in cpu.xf], 'xf_changed': cpu.xf != xf_entry,
+            'covered': sorted(a for a in cpu.covered if entry <= a < end),
+            'reads': mem.reads, 'seq_used': dict(mem.seq_used), 'trace': cpu.trace}
 
 
 def main(argv):

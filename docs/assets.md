@@ -8,7 +8,7 @@ What the disc files and the executable tell us about the game's assets. Addresse
 
 ## Models: `POL.AFS`
 
-93 entries, one model set each (stage pieces, shared objects). A model is the NAOMI library's flat format (the one `nl*` functions draw): a 24-byte header, then records (a `0x50`-byte header with the texture number at `+0x20` and the strip data length at `+0x4C`), ending in a zero word. `tools/model_map.py` finds 14,434 models in the file and lists them in `model-map/game.dcgs`.
+93 entries, one model set each (stage pieces, shared objects). A model is the NAOMI library's flat format (the one `nl*` functions draw): a 24-byte header, then records (a `0x50`-byte header with the texture number at `+0x20` and the strip data length at `+0x4C`), ending in a zero word. `tools/3-assets/model_map.py` finds 14,434 models in the file and lists them in `model-map/game.dcgs`.
 
 ### The name directory
 
