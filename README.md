@@ -33,9 +33,6 @@ FUNCTIONS
   Checked with errors               0  0 bytes
   No C form                      8.0%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
   documented                    13.7%  579 named functions in docs/*.md
-GAME ASSETS (EXTRA)                    
-  models named                   4.2%  608 of 14434 models: a name, or a named table or collection
-  sounds named                   0.1%  1 of 1019 sounds (sound rules)
 ```
 <!-- /progress -->
 

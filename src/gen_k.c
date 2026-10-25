@@ -512,10 +512,6 @@ void FUN_0c0de260(float f4)
     *(float *)0xC948254 = f4;
 }
 
-int FUN_0c0d8c40(int a4, int a5, int a6)
-{
-    return FUN_0c0d9ad0(a4, a5, a6, (*(float *)0xC0D8CC8));
-}
 
 int FUN_0c0d9ac0(void)
 {

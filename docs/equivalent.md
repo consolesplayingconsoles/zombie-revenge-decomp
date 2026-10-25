@@ -37261,8 +37261,8 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 73
 - the cases run 12 of 12 instructions
 
-### FUN_0c0d8c40 (`0C0D8C40`, 8 bytes, `src/gen_k.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0d8c40.json`
+### FUN_0c0d8c40 (`0C0D8C40`, 8 bytes, `src/gen_v.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_v/FUN_0c0d8c40.json`
 - case 0
 - case 1
 - case 2
@@ -56880,8 +56880,8 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 55
 - the cases run 16 of 16 instructions
 
-### buUnmountDisk (`0C212CEC`, 36 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/buUnmountDisk.json`
+### buUnmountDisk (`0C212CEC`, 36 bytes, `src/gen_x.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_x/buUnmountDisk.json`
 - case 0
 - case 1
 - case 2
@@ -66895,8 +66895,8 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - the cases run 19 of 19 instructions
 
-### pdGunSetCallback (`0C210BE0`, 36 bytes, `src/gen_l.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_l/pdGunSetCallback.json`
+### pdGunSetCallback (`0C210BE0`, 36 bytes, `src/gen_w.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_w/pdGunSetCallback.json`
 - case 0
 - case 1
 - case 2

@@ -1178,10 +1178,6 @@ int syTmrInit(void)
     return (t1 | 0x1);
 }
 
-int buUnmountDisk(int a4)
-{
-    return buUnmount(a4);
-}
 
 int kmiCopyFromFrameBuffer(int a4, int a5, int a6)
 {

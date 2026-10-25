@@ -1,7 +1,7 @@
-# dcgs v1.0
+# dcgs unstable
 # sha1 aaa2a5cd6eb567fd0b44d7567c939318e5bed422
 # base 0C010000
-# sections models textures images audio
+# sections models images audio
 [models]
 file	offset	bytes	records	radius	group	sub	sublabel	name	table	index	used_by	texset
 POL.AFS	80000	104	1	0.001								
@@ -338,614 +338,614 @@ POL.AFS	298280	6512	12	17.083
 POL.AFS	299fe0	36672	5	28.940								
 POL.AFS	2a30e0	1256	2	5.154								
 POL.AFS	2a36a0	544	3	7.449								
-POL.AFS	2a4000	104	1	0.001				1 5 Dummy				
-POL.AFS	2a40e0	1520	1	0.935				Asc2d 0				
-POL.AFS	2a4740	880	1	0.964				Asc2d 1				
-POL.AFS	2a4b20	2400	1	1.082				Asc2d 2				
-POL.AFS	2a5500	2832	1	0.955				Asc2d 3				
-POL.AFS	2a6080	1408	1	1.068				Asc2d 4				
-POL.AFS	2a6680	2264	1	1.097				Asc2d 5				
-POL.AFS	2a6fe0	2248	1	0.952				Asc2d 6				
-POL.AFS	2a7920	1696	1	1.040				Asc2d 7				
-POL.AFS	2a8040	2736	1	0.971				Asc2d 8				
-POL.AFS	2a8b60	2312	1	0.951				Asc2d 9				
-POL.AFS	2a94e0	1336	1	1.292				Asc2d Zspcpct				
-POL.AFS	2a9aa0	3776	4	3.126				Buki Ctlight				
-POL.AFS	2aaac0	3600	4	0.769				Buki Ctlight2				
-POL.AFS	2aba40	504	1	5.240				Buki Handg Tama				
-POL.AFS	2abcc0	688	2	0.340				Buki Handg Yakkyo				
-POL.AFS	2ac040	4992	1	1.318				Buki Handgun1				weapons
-POL.AFS	2ad440	5808	3	2.247				Buki Handgun Mat				
-POL.AFS	2aec00	6192	5	2.659				Buki Machinegun1				weapons
-POL.AFS	2b05e0	1840	3	0.779				Buki Magapika001a				
-POL.AFS	2b0e20	1840	3	0.779				Buki Magapika002a				
-POL.AFS	2b1660	1840	3	0.779				Buki Magapika003a				
-POL.AFS	2b1ea0	1840	3	0.779				Buki Magapika004a				
-POL.AFS	2b26e0	952	2	0.758				Buki Magazin				
-POL.AFS	2b2b60	1120	1	0.758				Buki Magazin2				
-POL.AFS	2b3040	136	1	3.536				Buki Mark1				
-POL.AFS	2b3140	432	1	1.027				Buki Muti Koma				
-POL.AFS	2b3360	7256	6	3.896				Buki Shotgun				weapons
-POL.AFS	2b51c0	856	2	0.770				Buki Shotshell				weapons
-POL.AFS	2b55e0	4424	4	0.888				Buki Sybom1				
-POL.AFS	2b68a0	688	1	6.080				Buki Tetupipe				
-POL.AFS	2b6bc0	432	1	5.078				Coli B				
-POL.AFS	2b6de0	432	1	5.078				Coli G				
-POL.AFS	2b7000	432	1	5.078				Coli K				
-POL.AFS	2b7220	432	1	5.078				Coli R				
-POL.AFS	2b7440	432	1	5.078				Coli W				
-POL.AFS	2b7660	432	1	5.078				Coli Y				
-POL.AFS	2b7880	136	1	0.314				Eff Blokabe1a0				
-POL.AFS	2b7980	200	1	0.417				Eff Blokabe1a1				
-POL.AFS	2b7ac0	264	1	0.496				Eff Blokabe1a2				
-POL.AFS	2b7c40	328	1	0.559				Eff Blokabe1a3				
-POL.AFS	2b7e00	136	1	0.370				Eff Blokabe2a0				
-POL.AFS	2b7f00	200	1	0.437				Eff Blokabe2a1				
-POL.AFS	2b8040	264	1	0.498				Eff Blokabe2a2				
-POL.AFS	2b81c0	328	1	0.559				Eff Blokabe2a3				
-POL.AFS	2b8380	136	1	0.707				Eff Blood00a				
-POL.AFS	2b8480	136	1	0.707				Eff Blood01a				
-POL.AFS	2b8580	136	1	0.707				Eff Blood02a				
-POL.AFS	2b8680	136	1	0.707				Eff Blood03a				
-POL.AFS	2b8780	136	1	0.707				Eff Bloodb00				
-POL.AFS	2b8880	136	1	0.707				Eff Bloodb01				
-POL.AFS	2b8980	136	1	0.707				Eff Bloodb02				
-POL.AFS	2b8a80	136	1	0.707				Eff Bloodb03				
-POL.AFS	2b8b80	136	1	0.707				Eff Bloodb04				
-POL.AFS	2b8c80	136	1	0.707				Eff Bloodb05				
-POL.AFS	2b8d80	136	1	0.707				Eff Bloodb06				
-POL.AFS	2b8e80	136	1	0.846				Eff Blopota002a				
-POL.AFS	2b8f80	136	1	0.994				Eff Blopota003a				
-POL.AFS	2b9080	136	1	1.175				Eff Blopota004a				
-POL.AFS	2b9180	136	1	1.337				Eff Blopota005a				
-POL.AFS	2b9280	136	1	1.426				Eff Blopota006a				
-POL.AFS	2b9380	136	1	1.456				Eff Blopota007a				
-POL.AFS	2b9480	168	1	0.573				Eff Blotoro1a0				
-POL.AFS	2b95a0	504	1	0.633				Eff Blotoro1a1				
-POL.AFS	2b9820	712	1	0.667				Eff Blotoro1a2				
-POL.AFS	2b9b60	912	1	0.708				Eff Blotoro1a3				
-POL.AFS	2b9f60	392	1	0.707				Eff Blotoro1a4				
-POL.AFS	2ba160	344	1	1.839				Eff Busya0				
-POL.AFS	2ba340	344	1	2.639				Eff Busya1				
-POL.AFS	2ba520	576	1	4.279				Eff Busya2				
-POL.AFS	2ba7e0	968	1	4.279				Eff Busya3				
-POL.AFS	2bac20	136	1	5.590				Eff Fire In01				
-POL.AFS	2bad20	136	1	5.590				Eff Fire In02				
-POL.AFS	2bae20	136	1	5.590				Eff Fire In03				
-POL.AFS	2baf20	136	1	5.590				Eff Fire In04				
-POL.AFS	2bb020	136	1	5.590				Eff Fire In05				
-POL.AFS	2bb120	136	1	5.590				Eff Fire In06				
-POL.AFS	2bb220	136	1	5.590				Eff Fire In07				
-POL.AFS	2bb320	136	1	5.590				Eff Fire In08				
-POL.AFS	2bb420	136	1	5.590				Eff Fire In09				
-POL.AFS	2bb520	136	1	5.590				Eff Fire In10				
-POL.AFS	2bb620	136	1	5.590				Eff Fire In11				
-POL.AFS	2bb720	136	1	5.590				Eff Fire In12				
-POL.AFS	2bb820	136	1	5.590				Eff Fire In13				
-POL.AFS	2bb920	136	1	5.590				Eff Fire In14				
-POL.AFS	2bba20	136	1	5.590				Eff Fire In15				
-POL.AFS	2bbb20	136	1	5.590				Eff Fire In16				
-POL.AFS	2bbc20	136	1	5.590				Eff Fire In17				
-POL.AFS	2bbd20	136	1	5.590				Eff Fire In18				
-POL.AFS	2bbe20	136	1	5.590				Eff Fire In19				
-POL.AFS	2bbf20	136	1	5.590				Eff Fire In20				
-POL.AFS	2bc020	136	1	5.590				Eff Fire In21				
-POL.AFS	2bc120	136	1	5.590				Eff Fire In22				
-POL.AFS	2bc220	136	1	5.590				Eff Fire In23				
-POL.AFS	2bc320	136	1	5.590				Eff Fire In24				
-POL.AFS	2bc420	136	1	5.590				Eff Fire In25				
-POL.AFS	2bc520	136	1	5.590				Eff Fire In26				
-POL.AFS	2bc620	136	1	5.590				Eff Fire In27				
-POL.AFS	2bc720	136	1	5.590				Eff Fire In28				
-POL.AFS	2bc820	136	1	5.590				Eff Fire In29				
-POL.AFS	2bc920	136	1	5.590				Eff Fire In30				
-POL.AFS	2bca20	136	1	5.590				Eff Fire In31				
-POL.AFS	2bcb20	136	1	5.590				Eff Fire In32				
-POL.AFS	2bcc20	3224	1	5.000				Eff Fire Sphere				
-POL.AFS	2bd940	1560	1	0.359				Eff Gero000a				
-POL.AFS	2bdfe0	1560	1	0.394				Eff Gero001a				
-POL.AFS	2be680	1560	1	0.481				Eff Gero002a				
-POL.AFS	2bed20	1560	1	0.593				Eff Gero003a				
-POL.AFS	2bf3c0	1560	1	0.701				Eff Gero004a				
-POL.AFS	2bfa60	1560	1	0.776				Eff Gero005a				
-POL.AFS	2c0100	1560	1	0.789				Eff Gero006a				
-POL.AFS	2c07a0	1560	1	0.667				Eff Gero007a				
-POL.AFS	2c0e40	1560	1	0.444				Eff Gero008a				
-POL.AFS	2c14e0	1560	1	0.274				Eff Gero009a				
-POL.AFS	2c1b80	1560	1	0.240				Eff Gero010a				
-POL.AFS	2c2220	136	1	0.784				Eff Geropota005a				
-POL.AFS	2c2320	136	1	0.784				Eff Geropota006a				
-POL.AFS	2c2420	136	1	0.846				Eff Geropota007a				
-POL.AFS	2c2520	136	1	0.994				Eff Geropota008a				
-POL.AFS	2c2620	136	1	1.176				Eff Geropota009a				
-POL.AFS	2c2720	136	1	1.338				Eff Geropota010a				
-POL.AFS	2c2820	136	1	1.426				Eff Geropota011a				
-POL.AFS	2c2920	136	1	1.455				Eff Geropota012a				
-POL.AFS	2c2a20	136	1	1.476				Eff Geropota013a				
-POL.AFS	2c2b20	136	1	1.489				Eff Geropota014a				
-POL.AFS	2c2c20	136	1	1.495				Eff Geropota015a				
-POL.AFS	2c2d20	136	1	1.496				Eff Geropota016a				
-POL.AFS	2c2e20	136	1	1.492				Eff Geropota017a				
-POL.AFS	2c2f20	136	1	1.485				Eff Geropota018a				
-POL.AFS	2c3020	136	1	1.476				Eff Geropota019a				
-POL.AFS	2c3120	136	1	1.465				Eff Geropota020a				
-POL.AFS	2c3220	136	1	1.454				Eff Geropota021a				
-POL.AFS	2c3320	136	1	1.443				Eff Geropota022a				
-POL.AFS	2c3420	136	1	1.434				Eff Geropota023a				
-POL.AFS	2c3520	136	1	1.428				Eff Geropota024a				
-POL.AFS	2c3620	136	1	1.426				Eff Geropota025a				
-POL.AFS	2c3720	136	1	0.707				Eff Hit04				
-POL.AFS	2c3820	136	1	0.994				Eff Hit05				
-POL.AFS	2c3920	136	1	1.145				Eff Hit07				
-POL.AFS	2c3a20	136	1	1.131				Eff Hit08				
-POL.AFS	2c3b20	448	1	4.243				Eff Hit B001a				
-POL.AFS	2c3d60	544	1	4.581				Eff Hit B002a				
-POL.AFS	2c4000	544	1	4.905				Eff Hit B003a				
-POL.AFS	2c42a0	544	1	5.214				Eff Hit B004a				
-POL.AFS	2c4540	544	1	5.507				Eff Hit B005a				
-POL.AFS	2c47e0	544	1	5.784				Eff Hit B006a				
-POL.AFS	2c4a80	544	1	6.044				Eff Hit B007a				
-POL.AFS	2c4d20	544	1	6.287				Eff Hit B008a				
-POL.AFS	2c4fc0	544	1	6.512				Eff Hit B009a				
-POL.AFS	2c5260	544	1	6.720				Eff Hit B010a				
-POL.AFS	2c5500	544	1	6.909				Eff Hit B011a				
-POL.AFS	2c57a0	544	1	7.079				Eff Hit B012a				
-POL.AFS	2c5a40	544	1	7.230				Eff Hit B013a				
-POL.AFS	2c5ce0	544	1	7.363				Eff Hit B014a				
-POL.AFS	2c5f80	544	1	7.475				Eff Hit B015a				
-POL.AFS	2c6220	544	1	7.568				Eff Hit B016a				
-POL.AFS	2c64c0	544	1	7.641				Eff Hit B017a				
-POL.AFS	2c6760	544	1	7.693				Eff Hit B018a				
-POL.AFS	2c6a00	544	1	7.724				Eff Hit B019a				
-POL.AFS	2c6ca0	544	1	7.735				Eff Hit B020a				
-POL.AFS	2c6f40	136	1	0.707				Eff Hithit01				
-POL.AFS	2c7040	136	1	0.707				Eff Hithit02				
-POL.AFS	2c7140	136	1	0.707				Eff Hithit03				
-POL.AFS	2c7240	136	1	0.707				Eff Hithit04				
-POL.AFS	2c7340	136	1	0.707				Eff Hithit05				
-POL.AFS	2c7440	136	1	0.707				Eff Hithit06				
-POL.AFS	2c7540	136	1	0.707				Eff Hithit07				
-POL.AFS	2c7640	136	1	0.707				Eff Hithit08				
-POL.AFS	2c7740	136	1	0.707				Eff Hithit09				
-POL.AFS	2c7840	136	1	0.707				Eff Hithit10				
-POL.AFS	2c7940	136	1	0.707				Eff Hithit11				
-POL.AFS	2c7a40	136	1	0.707				Eff Hithit12				
-POL.AFS	2c7b40	136	1	0.707				Eff Hithit13				
-POL.AFS	2c7c40	136	1	0.707				Eff Hithit14				
-POL.AFS	2c7d40	136	1	0.707				Eff Hithit15				
-POL.AFS	2c7e40	136	1	0.707				Eff Hithit16				
-POL.AFS	2c7f40	136	1	0.707				Eff Hithit17				
-POL.AFS	2c8040	136	1	0.707				Eff Hithit18				
-POL.AFS	2c8140	136	1	0.707				Eff Hithit19				
-POL.AFS	2c8240	136	1	0.707				Eff Hithit20				
-POL.AFS	2c8340	136	1	15.353				Eff Kage				
-POL.AFS	2c8440	1504	3	10.730				Eff Kemkem001a				
-POL.AFS	2c8b40	1504	3	11.403				Eff Kemkem002a				
-POL.AFS	2c9240	1504	3	13.088				Eff Kemkem003a				
-POL.AFS	2c9940	1504	3	15.210				Eff Kemkem004a				
-POL.AFS	2ca040	1504	3	17.075				Eff Kemkem005a				
-POL.AFS	2ca740	1504	3	20.772				Eff Kemkem006a				
-POL.AFS	2cae40	1504	3	24.377				Eff Kemkem007a				
-POL.AFS	2cb540	1504	3	27.873				Eff Kemkem008a				
-POL.AFS	2cbc40	1504	3	31.259				Eff Kemkem009a				
-POL.AFS	2cc340	1504	3	34.544				Eff Kemkem010a				
-POL.AFS	2cca40	1504	3	33.978				Eff Kemkem011a				
-POL.AFS	2cd140	1504	3	33.360				Eff Kemkem012a				
-POL.AFS	2cd840	1504	3	32.761				Eff Kemkem013a				
-POL.AFS	2cdf40	1504	3	32.251				Eff Kemkem014a				
-POL.AFS	2ce640	1504	3	31.895				Eff Kemkem015a				
-POL.AFS	2ced40	1504	3	31.762				Eff Kemkem016a				
-POL.AFS	2cf440	136	1	0.707				Eff Kira A				
-POL.AFS	2cf540	136	1	0.707				Eff Kira B				
-POL.AFS	2cf640	136	1	0.707				Eff Kira C				
-POL.AFS	2cf740	136	1	0.707				Eff Kira D				
-POL.AFS	2cf840	136	1	0.707				Eff Kira E				
-POL.AFS	2cf940	136	1	1.259				Eff Kira F				
-POL.AFS	2cfa40	136	1	0.707				Eff Kira G				
-POL.AFS	2cfb40	136	1	7.071				Eff Misttrain1a				
-POL.AFS	2cfc40	1624	1	0.840				Eff Mok009a				
-POL.AFS	2d0320	1624	1	0.902				Eff Mok010a				
-POL.AFS	2d0a00	1624	1	0.969				Eff Mok011a				
-POL.AFS	2d10e0	1624	1	1.047				Eff Mok012a				
-POL.AFS	2d17c0	1624	1	1.124				Eff Mok013a				
-POL.AFS	2d1ea0	1624	1	1.203				Eff Mok014a				
-POL.AFS	2d2580	1624	1	1.272				Eff Mok015a				
-POL.AFS	2d2c60	1624	1	1.334				Eff Mok016a				
-POL.AFS	2d3340	1624	1	1.387				Eff Mok017a				
-POL.AFS	2d3a20	1624	1	1.431				Eff Mok018a				
-POL.AFS	2d4100	1624	1	1.471				Eff Mok019a				
-POL.AFS	2d47e0	1624	1	1.504				Eff Mok020a				
-POL.AFS	2d4ec0	1624	1	1.549				Eff Mok021a				
-POL.AFS	2d55a0	1624	1	1.603				Eff Mok022a				
-POL.AFS	2d5c80	1624	1	1.648				Eff Mok023a				
-POL.AFS	2d6360	1624	1	1.691				Eff Mok024a				
-POL.AFS	2d6a40	1624	1	1.734				Eff Mok025a				
-POL.AFS	2d7120	1624	1	1.783				Eff Mok026a				
-POL.AFS	2d7800	1624	1	1.829				Eff Mok027a				
-POL.AFS	2d7ee0	1624	1	1.864				Eff Mok028a				
-POL.AFS	2d85c0	1624	1	1.887				Eff Mok029a				
-POL.AFS	2d8ca0	1456	1	1.895				Eff Mok030a				
-POL.AFS	2d92c0	1624	1	0.774				Eff Mokmok005a				
-POL.AFS	2d99a0	1624	1	0.801				Eff Mokmok006a				
-POL.AFS	2da080	1624	1	0.827				Eff Mokmok007a				
-POL.AFS	2da760	1624	1	0.856				Eff Mokmok008a				
-POL.AFS	2dae40	1624	1	0.887				Eff Mokmok009a				
-POL.AFS	2db520	1624	1	0.915				Eff Mokmok010a				
-POL.AFS	2dbc00	1624	1	0.938				Eff Mokmok011a				
-POL.AFS	2dc2e0	1624	1	0.956				Eff Mokmok012a				
-POL.AFS	2dc9c0	1624	1	0.970				Eff Mokmok013a				
-POL.AFS	2dd0a0	1624	1	0.978				Eff Mokmok014a				
-POL.AFS	2dd780	1624	1	0.981				Eff Mokmok015a				
-POL.AFS	2dde60	1624	1	0.985				Eff Mokmok016a				
-POL.AFS	2de540	1624	1	1.001				Eff Mokmok017a				
-POL.AFS	2dec20	1624	1	1.022				Eff Mokmok018a				
-POL.AFS	2df300	1624	1	1.041				Eff Mokmok019a				
-POL.AFS	2df9e0	1624	1	1.061				Eff Mokmok020a				
-POL.AFS	2e00c0	1624	1	1.076				Eff Mokmok021a				
-POL.AFS	2e07a0	1624	1	1.092				Eff Mokmok022a				
-POL.AFS	2e0e80	1624	1	1.114				Eff Mokmok023a				
-POL.AFS	2e1560	1624	1	1.131				Eff Mokmok024a				
-POL.AFS	2e1c40	1624	1	1.142				Eff Mokmok025a				
-POL.AFS	2e2320	1264	1	1.228				Eff Nikuhen1				
-POL.AFS	2e2880	376	1	0.334				Eff Nikuhen2				
-POL.AFS	2e2a80	1192	1	0.583				Eff Nikuhen2 Hi				
-POL.AFS	2e2fa0	232	1	0.264				Eff Nikuhen2 Low				
-POL.AFS	2e3100	1528	1	0.288				Eff Nikuhen3				
-POL.AFS	2e3780	792	1	0.428				Eff Nikuhen4				
-POL.AFS	2e3b20	376	1	1.852				Eff Smoke Shot00				
-POL.AFS	2e3d20	376	1	4.961				Eff Smoke Shot01				
-POL.AFS	2e3f20	376	1	6.283				Eff Smoke Shot02				
-POL.AFS	2e4120	376	1	7.359				Eff Smoke Shot03				
-POL.AFS	2e4320	376	1	8.242				Eff Smoke Shot04				
-POL.AFS	2e4520	376	1	8.982				Eff Smoke Shot05				
-POL.AFS	2e4720	376	1	9.630				Eff Smoke Shot06				
-POL.AFS	2e4920	376	1	10.239				Eff Smoke Shot07				
-POL.AFS	2e4b20	376	1	10.859				Eff Smoke Shot08				
-POL.AFS	2e4d20	376	1	11.542				Eff Smoke Shot09				
-POL.AFS	2e4f20	136	1	0.146				Eff Tubu Kira				
-POL.AFS	2e5020	1088	1	0.048				Eff Wakemuri001a				
-POL.AFS	2e54e0	1088	1	0.105				Eff Wakemuri002a				
-POL.AFS	2e59a0	1088	1	0.264				Eff Wakemuri003a				
-POL.AFS	2e5e60	1088	1	0.509				Eff Wakemuri004a				
-POL.AFS	2e6320	1088	1	0.821				Eff Wakemuri005a				
-POL.AFS	2e67e0	1088	1	1.185				Eff Wakemuri006a				
-POL.AFS	2e6ca0	1088	1	1.583				Eff Wakemuri007a				
-POL.AFS	2e7160	1088	1	1.998				Eff Wakemuri008a				
-POL.AFS	2e7620	1088	1	2.413				Eff Wakemuri009a				
-POL.AFS	2e7ae0	1088	1	2.811				Eff Wakemuri010a				
-POL.AFS	2e7fa0	1088	1	3.175				Eff Wakemuri011a				
-POL.AFS	2e8460	1088	1	3.488				Eff Wakemuri012a				
-POL.AFS	2e8920	1088	1	3.732				Eff Wakemuri013a				
-POL.AFS	2e8de0	1088	1	3.892				Eff Wakemuri014a				
-POL.AFS	2e92a0	1088	1	3.948				Eff Wakemuri015a				
-POL.AFS	2e9760	1032	2	2.178				Eff Yaji Door001a				
-POL.AFS	2e9c40	1032	2	2.178				Eff Yajiru Go001a				
-POL.AFS	2ea120	1144	2	2.749				Eff Yajirusi001a				
-POL.AFS	2ea660	136	1	5.385				Eff Zanzo1				
-POL.AFS	2ea760	552	1	139.306				Gat Beam				
-POL.AFS	2eaa00	2336	1	1.000				Gat Eball				
-POL.AFS	2eb3a0	800	1	0.843				Gun Flash0				
-POL.AFS	2eb740	1144	1	2.650				Gun Flash1				
-POL.AFS	2ebc40	1144	1	3.318				Gun Flash2				
-POL.AFS	2ec140	800	1	1.148				Gun Flash Mat0				
-POL.AFS	2ec4e0	1144	1	3.611				Gun Flash Mat1				
-POL.AFS	2ec9e0	1144	1	4.521				Gun Flash Mat2				
-POL.AFS	2ecee0	800	1	1.387				Gun Flash Shot0				
-POL.AFS	2ed280	1368	1	4.297				Gun Flash Shot1				
-POL.AFS	2ed860	1368	1	5.380				Gun Flash Shot2				
-POL.AFS	2ede40	136	1	0.280				Hyo Buki Noma				
-POL.AFS	2edf40	136	1	0.358				Hyo Buki Sandan				
-POL.AFS	2ee040	408	3	2.638				Hyo Don Kao				
-POL.AFS	2ee300	408	2	4.204				Hyo Esi Si				
-POL.AFS	2ee560	136	1	14.318				Hyo Kurobeta				
-POL.AFS	2ee660	136	1	3.885				Hyo Life Doku				
-POL.AFS	2ee760	136	1	3.885				Hyo Life Ye				
-POL.AFS	2ee860	408	3	2.638				Hyo Mat Kao				
-POL.AFS	2eeb20	136	1	3.092				Hyo Nobullet1				
-POL.AFS	2eec20	560	2	2.749				Hyo Sankak001a				
-POL.AFS	2eef20	560	2	2.749				Hyo Sankak002a				
-POL.AFS	2ef220	560	2	2.749				Hyo Sankak003a				
-POL.AFS	2ef520	560	2	2.749				Hyo Sankak004a				
-POL.AFS	2ef820	560	2	2.749				Hyo Sankak005a				
-POL.AFS	2efb20	560	2	2.749				Hyo Sankak006a				
-POL.AFS	2efe20	560	2	2.749				Hyo Sankak007a				
-POL.AFS	2f0120	560	2	2.749				Hyo Sankak008a				
-POL.AFS	2f0420	560	2	2.749				Hyo Sankak009a				
-POL.AFS	2f0720	560	2	2.749				Hyo Sankak010a				
-POL.AFS	2f0a20	408	3	4.514				Hyo Si Si				
-POL.AFS	2f0ce0	408	3	2.638				Hyo Tan Kao				
-POL.AFS	2f0fa0	1288	1	2.102				Item Bulletbox				
-POL.AFS	2f1520	7880	3	3.097				Item Erikusa1				
-POL.AFS	2f3500	4528	2	3.078				Item Gedoku				
-POL.AFS	2f4780	1288	1	2.102				Item Oukyu				
-POL.AFS	2f4d00	27704	14	4.334				Kou1				
-POL.AFS	2fbdc0	18080	8	1.908				Kou1 Atama				
-POL.AFS	300700	2368	2	0.178				Kou1 Eye L				
-POL.AFS	301100	2368	2	0.178				Kou1 Eye R				
-POL.AFS	301b00	464	1	4.281				Kou1 Hane001a				
-POL.AFS	301d40	464	1	4.266				Kou1 Hane002a				
-POL.AFS	301f80	464	1	4.240				Kou1 Hane003a				
-POL.AFS	3021c0	464	1	4.210				Kou1 Hane004a				
-POL.AFS	302400	464	1	3.669				Kou1 Hane005a				
-POL.AFS	302640	464	1	3.214				Kou1 Hane006a				
-POL.AFS	302880	464	1	2.867				Kou1 Hane007a				
-POL.AFS	302ac0	464	1	2.638				Kou1 Hane008a				
-POL.AFS	302d00	464	1	2.770				Kou1 Hane009a				
-POL.AFS	302f40	464	1	2.968				Kou1 Hane010a				
-POL.AFS	303180	464	1	3.209				Kou1 Hane011a				
-POL.AFS	3033c0	464	1	3.469				Kou1 Hane012a				
-POL.AFS	303600	464	1	3.660				Kou1 Hane013a				
-POL.AFS	303840	464	1	3.873				Kou1 Hane014a				
-POL.AFS	303a80	464	1	4.074				Kou1 Hane015a				
-POL.AFS	303cc0	464	1	4.223				Kou1 Hane016a				
-POL.AFS	303f00	4400	3	1.354				Kou1 Oppo001a				
-POL.AFS	305140	4400	3	1.346				Kou1 Oppo002a				
-POL.AFS	306380	4400	3	1.324				Kou1 Oppo003a				
-POL.AFS	3075c0	4400	3	1.293				Kou1 Oppo004a				
-POL.AFS	308800	4400	3	1.254				Kou1 Oppo005a				
-POL.AFS	309a40	4400	3	1.218				Kou1 Oppo006a				
-POL.AFS	30ac80	4400	3	1.231				Kou1 Oppo007a				
-POL.AFS	30bec0	4400	3	1.215				Kou1 Oppo008a				
-POL.AFS	30d100	4304	3	1.207				Kou1 Oppo009a				
-POL.AFS	30e2e0	4400	3	1.215				Kou1 Oppo010a				
-POL.AFS	30f520	4400	3	1.232				Kou1 Oppo011a				
-POL.AFS	310760	4400	3	1.225				Kou1 Oppo012a				
-POL.AFS	3119a0	4400	3	1.274				Kou1 Oppo013a				
-POL.AFS	312be0	4400	3	1.314				Kou1 Oppo014a				
-POL.AFS	313e20	4400	3	1.343				Kou1 Oppo015a				
-POL.AFS	315060	4400	3	1.354				Kou1 Oppo016a				
-POL.AFS	3162a0	136	1	0.707				Maru				
-POL.AFS	3163a0	136	1	0.707				Maru S				
-POL.AFS	3164a0	20112	1	4.993				Sight 3d				
-POL.AFS	31b3a0	9360	1	5.050				Sight 3d1a				
-POL.AFS	31d8a0	3176	1	5.050				Sight 3d2a				
-POL.AFS	31e580	528	1	0.844				Sight 3dtri				
-POL.AFS	31e800	376	1	4.243				Ssmoke00				
-POL.AFS	31ea00	376	1	4.581				Ssmoke01				
-POL.AFS	31ec00	376	1	4.905				Ssmoke02				
-POL.AFS	31ee00	376	1	5.214				Ssmoke03				
-POL.AFS	31f000	376	1	5.507				Ssmoke04				
-POL.AFS	31f200	376	1	5.784				Ssmoke05				
-POL.AFS	31f400	376	1	6.044				Ssmoke06				
-POL.AFS	31f600	376	1	6.287				Ssmoke07				
-POL.AFS	31f800	376	1	6.512				Ssmoke08				
-POL.AFS	31fa00	376	1	6.720				Ssmoke09				
-POL.AFS	31fc00	376	1	6.909				Ssmoke10				
-POL.AFS	31fe00	376	1	7.079				Ssmoke11				
-POL.AFS	320000	376	1	7.230				Ssmoke12				
-POL.AFS	320200	376	1	7.363				Ssmoke13				
-POL.AFS	320400	376	1	7.475				Ssmoke14				
-POL.AFS	320600	376	1	7.568				Ssmoke15				
-POL.AFS	320800	376	1	7.641				Ssmoke16				
-POL.AFS	320a00	376	1	7.693				Ssmoke17				
-POL.AFS	320c00	376	1	7.724				Ssmoke18				
-POL.AFS	320e00	376	1	7.735				Ssmoke19				
-POL.AFS	321000	3560	8	228.438				St1 Jimen1a				
-POL.AFS	3220a0	3016	6	542.715				St1 Jimen2a				
-POL.AFS	322e80	10216	4	10.435				St2 Box Hahe A				
-POL.AFS	3257e0	12504	6	10.733				St2 Box Hahe B				
-POL.AFS	328ac0	2400	3	4.276				St2 Box Ma Na A				
-POL.AFS	329540	3648	3	3.861				St2 Box Ma Na B				
-POL.AFS	32a4a0	2448	3	4.470				St2 Box Ma Na C				
-POL.AFS	32af40	2448	3	3.019				St2 Box Ma Si A				
-POL.AFS	32b9e0	3696	3	4.178				St2 Box Ma Si B				
-POL.AFS	32c960	2376	3	5.006				St2 Box Ma Si C				
-POL.AFS	32d3c0	2304	3	3.195				St2 Box Ma Ue A				
-POL.AFS	32dde0	3528	3	5.254				St2 Box Ma Ue B				
-POL.AFS	32ecc0	2496	3	4.612				St2 Box Ma Ue C				
-POL.AFS	32f7a0	2448	4	3.502				St2 Box Wa Ma Yo A				
-POL.AFS	3302a0	3672	3	5.255				St2 Box Wa Ma Yo B				
-POL.AFS	331220	2496	4	3.117				St2 Box Wa Ma Yo C				
-POL.AFS	331d40	2184	3	2.927				St2 Box Wa Ma Yo D				
-POL.AFS	3326e0	3264	3	4.609				St2 Box Wa Ma Yo E				
-POL.AFS	3334c0	2160	3	2.492				St2 Box Wa Ma Yo F				
-POL.AFS	333e40	2544	3	4.366				St2 Box Wa Ta Ma A				
-POL.AFS	334940	2568	3	5.137				St2 Box Wa Ta Ma B				
-POL.AFS	335460	2472	2	4.531				St2 Box Wa Ta Ma C				
-POL.AFS	335ee0	2712	2	4.480				St2 Box Wa Ta Ma D				
-POL.AFS	336a40	2496	2	3.801				St2 Box Wa Yo A				
-POL.AFS	3374c0	2736	2	3.229				St2 Box Wa Yo B				
-POL.AFS	338040	9576	6	12.402				St2 Kibako S				
-POL.AFS	33a7c0	4992	1	1.318				Tek L Handg				
-POL.AFS	33bbc0	4424	4	0.957				Tek L Sybom1				
-POL.AFS	33ce80	4616	1	0.957				Tek L Sybom Wh				
-POL.AFS	33e100	688	1	6.080				Tek L Tetupipe				
-POL.AFS	33e420	4992	1	1.318				Tek R Handg				
-POL.AFS	33f820	5856	4	1.522				Tek R Handg2				
-POL.AFS	341060	5808	2	2.247				Tek R Handg M				
-POL.AFS	3427e0	6488	2	2.707				Tek R Handg M2				
-POL.AFS	344200	5640	6	2.659				Tek R Machineg				
-POL.AFS	345a20	5640	1	2.659				Tek R Machineg Wh				
-POL.AFS	3470a0	6928	1	3.896				Tek R Shotg Wh				
-POL.AFS	348c20	7256	6	3.896				Tek R Shotgun				
-POL.AFS	34aa80	688	1	6.080				Tek R Tetupipe				
-POL.AFS	34ada0	776	2	1.809				Zona Asi L				
-POL.AFS	34b180	776	2	1.804				Zona Asi R				
-POL.AFS	34b560	2304	4	1.748				Zona Atama				
-POL.AFS	34bfc0	1800	4	1.594				Zona Atama D1				
-POL.AFS	34c840	592	2	1.026				Zona Atama D2				
-POL.AFS	34cb60	2216	5	1.446				Zona Atama D3				
-POL.AFS	34d5c0	576	2	2.152				Zona Haram				
-POL.AFS	34d8c0	776	1	3.115				Zona Hiz L				
-POL.AFS	34dc40	696	2	2.452				Zona Hiz L D				
-POL.AFS	34dfc0	808	1	3.115				Zona Hiz R				
-POL.AFS	34e360	624	2	2.891				Zona Hiz R D				
-POL.AFS	34e6a0	960	1	1.815				Zona Kat L				
-POL.AFS	34eae0	1048	2	1.054				Zona Kat L D				
-POL.AFS	34efc0	696	2	1.447				Zona Kat L E				
-POL.AFS	34f340	1416	2	1.805				Zona Kat R				
-POL.AFS	34f9a0	640	1	1.335				Zona Kat R D				
-POL.AFS	34fca0	728	2	1.201				Zona Kat R E				
-POL.AFS	350040	1552	4	2.441				Zona Koshi				
-POL.AFS	3507c0	1712	4	2.461				Zona Koshi D				
-POL.AFS	350fe0	776	1	2.797				Zona Mmo L				
-POL.AFS	351360	832	2	2.324				Zona Mmo L D				
-POL.AFS	351760	784	1	2.796				Zona Mmo R				
-POL.AFS	351ae0	1056	2	2.718				Zona Mmo R D				
-POL.AFS	351fc0	1200	2	2.453				Zona Munee				
-POL.AFS	352540	4992	5	3.700				Zona Munee D1				
-POL.AFS	353a80	5096	6	3.298				Zona Munee D2				
-POL.AFS	355080	1864	3	3.248				Zona Munee D3				
-POL.AFS	3558e0	200	1	10.326				Zona Pera0				
-POL.AFS	355a20	200	1	10.316				Zona Pera1				
-POL.AFS	355b60	200	1	10.296				Zona Pera2				
-POL.AFS	355ca0	200	1	10.277				Zona Pera3				
-POL.AFS	355de0	200	1	10.259				Zona Pera4				
-POL.AFS	355f20	200	1	10.436				Zona Pera5				
-POL.AFS	356060	200	1	10.583				Zona Pera6				
-POL.AFS	3561a0	200	1	10.738				Zona Pera7				
-POL.AFS	3562e0	200	1	10.942				Zona Pera8				
-POL.AFS	356420	200	1	11.241				Zona Pera9				
-POL.AFS	356560	1152	2	1.328				Zona Tek L				
-POL.AFS	356aa0	1704	4	2.167				Zona Tek L D1				
-POL.AFS	3572c0	2168	4	3.461				Zona Tek L D2				
-POL.AFS	357ca0	1128	2	1.328				Zona Tek R				
-POL.AFS	3581e0	1824	4	2.157				Zona Tek R D1				
-POL.AFS	358a60	2128	4	3.443				Zona Tek R D2				
-POL.AFS	359420	616	1	1.639				Zona Ude L				
-POL.AFS	359700	736	2	1.007				Zona Ude L D				
-POL.AFS	359aa0	616	2	1.122				Zona Ude L E				
-POL.AFS	359de0	688	1	1.639				Zona Ude R				
-POL.AFS	35a100	760	2	1.012				Zona Ude R D				
-POL.AFS	35a4c0	592	2	1.119				Zona Ude R E				
-POL.AFS	35a7e0	776	2	1.752				Zonb Asi L				
-POL.AFS	35abc0	776	2	1.764				Zonb Asi R				
-POL.AFS	35afa0	2248	5	1.748				Zonb Atama				
-POL.AFS	35ba20	2312	6	2.282				Zonb Atama D1				
-POL.AFS	35c540	2312	6	2.282				Zonb Atama D1 V				
-POL.AFS	35d060	1480	3	1.440				Zonb Atama D2				
-POL.AFS	35d740	1480	3	1.440				Zonb Atama D2 V				
-POL.AFS	35de20	2312	6	1.492				Zonb Atama D3				
-POL.AFS	35e940	2312	6	1.492				Zonb Atama D3 V				
-POL.AFS	35f460	2176	5	1.748				Zonb Atama V				
-POL.AFS	35fea0	728	2	2.074				Zonb Haram				
-POL.AFS	360240	728	2	2.074				Zonb Haram V				
-POL.AFS	3605e0	936	2	2.922				Zonb Hiz L				
-POL.AFS	360a60	912	3	2.791				Zonb Hiz L D				
-POL.AFS	360f00	968	2	2.924				Zonb Hiz R				
-POL.AFS	3613a0	936	3	2.640				Zonb Hiz R D				
-POL.AFS	361860	960	1	1.870				Zonb Kat L				
-POL.AFS	361ca0	808	2	1.380				Zonb Kat L D				
-POL.AFS	3620a0	808	2	1.380				Zonb Kat L D V				
-POL.AFS	3624a0	960	1	1.870				Zonb Kat L V				
-POL.AFS	3628e0	1056	1	1.875				Zonb Kat R				
-POL.AFS	362d80	760	2	1.479				Zonb Kat R D				
-POL.AFS	363140	760	2	1.479				Zonb Kat R D V				
-POL.AFS	363500	1056	1	1.875				Zonb Kat R V				
-POL.AFS	3639a0	1456	4	2.608				Zonb Koshi				
-POL.AFS	3640c0	1808	4	2.493				Zonb Koshi D				
-POL.AFS	364940	1808	4	2.493				Zonb Koshi D V				
-POL.AFS	3651c0	1456	4	2.608				Zonb Koshi V				
-POL.AFS	3658e0	776	1	2.797				Zonb Mmo L				
-POL.AFS	365c60	1072	2	2.939				Zonb Mmo L D				
-POL.AFS	366160	1072	2	2.939				Zonb Mmo L D V				
-POL.AFS	366660	776	1	2.797				Zonb Mmo L V				
-POL.AFS	3669e0	784	1	2.796				Zonb Mmo R				
-POL.AFS	366d60	856	2	2.995				Zonb Mmo R D				
-POL.AFS	367180	856	2	2.995				Zonb Mmo R D V				
-POL.AFS	3675a0	784	1	2.796				Zonb Mmo R V				
-POL.AFS	367920	1208	2	2.356				Zonb Munee				
-POL.AFS	367ea0	4488	4	3.020				Zonb Munee D1				
-POL.AFS	3691a0	4488	4	3.020				Zonb Munee D1 V				
-POL.AFS	36a4a0	5112	5	3.422				Zonb Munee D2				
-POL.AFS	36ba60	5112	5	3.422				Zonb Munee D2 V				
-POL.AFS	36d020	2032	4	3.390				Zonb Munee D3				
-POL.AFS	36d980	2032	4	3.390				Zonb Munee D3 V				
-POL.AFS	36e2e0	1208	2	2.356				Zonb Munee V				
-POL.AFS	36e860	200	1	10.506				Zonb Pera0				
-POL.AFS	36e9a0	200	1	10.479				Zonb Pera1				
-POL.AFS	36eae0	200	1	10.406				Zonb Pera2				
-POL.AFS	36ec20	200	1	10.297				Zonb Pera3				
-POL.AFS	36ed60	200	1	10.160				Zonb Pera4				
-POL.AFS	36eea0	200	1	10.102				Zonb Pera5				
-POL.AFS	36efe0	200	1	10.047				Zonb Pera6				
-POL.AFS	36f120	200	1	10.229				Zonb Pera7				
-POL.AFS	36f260	200	1	10.461				Zonb Pera8				
-POL.AFS	36f3a0	200	1	10.660				Zonb Pera9				
-POL.AFS	36f4e0	1112	2	1.328				Zonb Tek L				
-POL.AFS	36fa00	1088	2	1.328				Zonb Tek R				
-POL.AFS	36ff00	720	2	1.772				Zonb Ude L				
-POL.AFS	3702a0	704	2	1.149				Zonb Ude L D				
-POL.AFS	370620	704	2	1.149				Zonb Ude L D V				
-POL.AFS	3709a0	720	2	1.772				Zonb Ude L V				
-POL.AFS	370d40	816	2	1.771				Zonb Ude R				
-POL.AFS	371140	752	2	1.210				Zonb Ude R D				
-POL.AFS	371500	752	2	1.210				Zonb Ude R D V				
-POL.AFS	3718c0	816	2	1.771				Zonb Ude R V				
-POL.AFS	371cc0	776	2	1.727				Zonc Asi L				
-POL.AFS	3720a0	776	2	1.721				Zonc Asi R				
-POL.AFS	372480	2096	3	1.688				Zonc Atama				
-POL.AFS	372dc0	2320	3	1.854				Zonc Atama D1				
-POL.AFS	3737e0	1304	4	1.469				Zonc Atama D2				
-POL.AFS	373e60	2176	4	1.799				Zonc Atama D3				
-POL.AFS	374840	728	2	2.328				Zonc Haram				
-POL.AFS	374be0	1264	2	3.103				Zonc Hiz L				
-POL.AFS	3751a0	1320	3	2.918				Zonc Hiz L D				
-POL.AFS	3757e0	992	2	2.871				Zonc Hiz R				
-POL.AFS	375c80	1088	3	2.803				Zonc Hiz R D				
-POL.AFS	3761e0	1112	1	1.838				Zonc Kat L				
-POL.AFS	3766c0	1280	2	1.795				Zonc Kat L D				
-POL.AFS	376c80	1160	1	1.844				Zonc Kat R				
-POL.AFS	377180	1224	2	1.779				Zonc Kat R D				
-POL.AFS	377720	1728	4	2.574				Zonc Koshi				
-POL.AFS	377f40	1808	4	2.493				Zonc Koshi D				
-POL.AFS	3787c0	880	1	2.739				Zonc Mmo L				
-POL.AFS	378ba0	816	2	2.900				Zonc Mmo L D				
-POL.AFS	378fa0	832	1	2.738				Zonc Mmo R				
-POL.AFS	379360	816	2	2.860				Zonc Mmo R D				
-POL.AFS	379760	1184	2	2.606				Zonc Munee				
-POL.AFS	379cc0	4320	4	3.145				Zonc Munee D1				
-POL.AFS	37af00	4536	4	3.709				Zonc Munee D2				
-POL.AFS	37c220	2528	3	3.806				Zonc Munee D3				
-POL.AFS	37cd20	200	1	10.048				Zonc Pera0				
-POL.AFS	37ce60	200	1	10.069				Zonc Pera1				
-POL.AFS	37cfa0	200	1	10.126				Zonc Pera2				
-POL.AFS	37d0e0	200	1	10.211				Zonc Pera3				
-POL.AFS	37d220	200	1	10.316				Zonc Pera4				
-POL.AFS	37d360	200	1	10.423				Zonc Pera5				
-POL.AFS	37d4a0	200	1	10.280				Zonc Pera6				
-POL.AFS	37d5e0	200	1	10.224				Zonc Pera7				
-POL.AFS	37d720	200	1	10.172				Zonc Pera8				
-POL.AFS	37d860	200	1	10.128				Zonc Pera9				
-POL.AFS	37d9a0	1112	2	1.114				Zonc Tek L				
-POL.AFS	37dec0	1088	2	1.114				Zonc Tek R				
-POL.AFS	37e3c0	720	2	1.728				Zonc Ude L				
-POL.AFS	37e760	1024	3	1.452				Zonc Ude L D				
-POL.AFS	37ec80	816	2	1.779				Zonc Ude R				
-POL.AFS	37f080	1016	3	1.506				Zonc Ude R D				
-POL.AFS	37f5a0	728	2	1.701				Zond Asi L				
-POL.AFS	37f940	752	2	1.696				Zond Asi R				
-POL.AFS	37fd00	2400	3	1.747				Zond Atama				
-POL.AFS	380780	2192	4	1.785				Zond Atama D1				
-POL.AFS	381180	1672	4	1.930				Zond Atama D2				
-POL.AFS	381980	2256	4	1.439				Zond Atama D3				
-POL.AFS	3823c0	640	2	1.598				Zond Haram				
-POL.AFS	382700	1424	2	3.308				Zond Hiz L				
-POL.AFS	382d60	1184	3	2.936				Zond Hiz L D				
-POL.AFS	383320	1296	1	3.310				Zond Hiz R				
-POL.AFS	3838a0	1008	2	2.971				Zond Hiz R D				
-POL.AFS	383d60	960	1	1.921				Zond Kat L				
-POL.AFS	3841a0	936	2	1.372				Zond Kat L D				
-POL.AFS	384620	1080	1	1.921				Zond Kat R				
-POL.AFS	384ae0	1072	2	1.419				Zond Kat R D				
-POL.AFS	384fe0	752	2	1.994				Zond Koshi				
-POL.AFS	3853a0	1048	3	2.109				Zond Koshi D				
-POL.AFS	3858e0	792	1	2.801				Zond Mmo L				
-POL.AFS	385c80	1032	2	2.913				Zond Mmo L D				
-POL.AFS	386160	760	1	2.806				Zond Mmo R				
-POL.AFS	3864e0	752	2	2.850				Zond Mmo R D				
-POL.AFS	3868a0	1240	2	2.114				Zond Munee				
-POL.AFS	386e40	4088	6	2.968				Zond Munee D1				
-POL.AFS	388040	5136	7	3.054				Zond Munee D2				
-POL.AFS	3896a0	3000	4	3.057				Zond Munee D3				
-POL.AFS	38a3c0	1112	2	1.114				Zond Tek L				
-POL.AFS	38a8e0	912	2	0.885				Zond Tek Lg				
-POL.AFS	38ad40	1088	2	1.114				Zond Tek R				
-POL.AFS	38b240	984	2	0.885				Zond Tek Rg				
-POL.AFS	38b6e0	616	1	1.625				Zond Ude L				
-POL.AFS	38b9c0	792	2	1.050				Zond Ude L D				
-POL.AFS	38bda0	688	1	1.625				Zond Ude R				
-POL.AFS	38c0c0	840	2	1.204				Zond Ude R D				
+POL.AFS	2a4000	104	1	0.001								
+POL.AFS	2a40e0	1520	1	0.935								
+POL.AFS	2a4740	880	1	0.964								
+POL.AFS	2a4b20	2400	1	1.082								
+POL.AFS	2a5500	2832	1	0.955								
+POL.AFS	2a6080	1408	1	1.068								
+POL.AFS	2a6680	2264	1	1.097								
+POL.AFS	2a6fe0	2248	1	0.952								
+POL.AFS	2a7920	1696	1	1.040								
+POL.AFS	2a8040	2736	1	0.971								
+POL.AFS	2a8b60	2312	1	0.951								
+POL.AFS	2a94e0	1336	1	1.292								
+POL.AFS	2a9aa0	3776	4	3.126								
+POL.AFS	2aaac0	3600	4	0.769								
+POL.AFS	2aba40	504	1	5.240								
+POL.AFS	2abcc0	688	2	0.340								
+POL.AFS	2ac040	4992	1	1.318								
+POL.AFS	2ad440	5808	3	2.247								
+POL.AFS	2aec00	6192	5	2.659								
+POL.AFS	2b05e0	1840	3	0.779								
+POL.AFS	2b0e20	1840	3	0.779								
+POL.AFS	2b1660	1840	3	0.779								
+POL.AFS	2b1ea0	1840	3	0.779								
+POL.AFS	2b26e0	952	2	0.758								
+POL.AFS	2b2b60	1120	1	0.758								
+POL.AFS	2b3040	136	1	3.536								
+POL.AFS	2b3140	432	1	1.027								
+POL.AFS	2b3360	7256	6	3.896								
+POL.AFS	2b51c0	856	2	0.770								
+POL.AFS	2b55e0	4424	4	0.888								
+POL.AFS	2b68a0	688	1	6.080								
+POL.AFS	2b6bc0	432	1	5.078								
+POL.AFS	2b6de0	432	1	5.078								
+POL.AFS	2b7000	432	1	5.078								
+POL.AFS	2b7220	432	1	5.078								
+POL.AFS	2b7440	432	1	5.078								
+POL.AFS	2b7660	432	1	5.078								
+POL.AFS	2b7880	136	1	0.314								
+POL.AFS	2b7980	200	1	0.417								
+POL.AFS	2b7ac0	264	1	0.496								
+POL.AFS	2b7c40	328	1	0.559								
+POL.AFS	2b7e00	136	1	0.370								
+POL.AFS	2b7f00	200	1	0.437								
+POL.AFS	2b8040	264	1	0.498								
+POL.AFS	2b81c0	328	1	0.559								
+POL.AFS	2b8380	136	1	0.707								
+POL.AFS	2b8480	136	1	0.707								
+POL.AFS	2b8580	136	1	0.707								
+POL.AFS	2b8680	136	1	0.707								
+POL.AFS	2b8780	136	1	0.707								
+POL.AFS	2b8880	136	1	0.707								
+POL.AFS	2b8980	136	1	0.707								
+POL.AFS	2b8a80	136	1	0.707								
+POL.AFS	2b8b80	136	1	0.707								
+POL.AFS	2b8c80	136	1	0.707								
+POL.AFS	2b8d80	136	1	0.707								
+POL.AFS	2b8e80	136	1	0.846								
+POL.AFS	2b8f80	136	1	0.994								
+POL.AFS	2b9080	136	1	1.175								
+POL.AFS	2b9180	136	1	1.337								
+POL.AFS	2b9280	136	1	1.426								
+POL.AFS	2b9380	136	1	1.456								
+POL.AFS	2b9480	168	1	0.573								
+POL.AFS	2b95a0	504	1	0.633								
+POL.AFS	2b9820	712	1	0.667								
+POL.AFS	2b9b60	912	1	0.708								
+POL.AFS	2b9f60	392	1	0.707								
+POL.AFS	2ba160	344	1	1.839								
+POL.AFS	2ba340	344	1	2.639								
+POL.AFS	2ba520	576	1	4.279								
+POL.AFS	2ba7e0	968	1	4.279								
+POL.AFS	2bac20	136	1	5.590								
+POL.AFS	2bad20	136	1	5.590								
+POL.AFS	2bae20	136	1	5.590								
+POL.AFS	2baf20	136	1	5.590								
+POL.AFS	2bb020	136	1	5.590								
+POL.AFS	2bb120	136	1	5.590								
+POL.AFS	2bb220	136	1	5.590								
+POL.AFS	2bb320	136	1	5.590								
+POL.AFS	2bb420	136	1	5.590								
+POL.AFS	2bb520	136	1	5.590								
+POL.AFS	2bb620	136	1	5.590								
+POL.AFS	2bb720	136	1	5.590								
+POL.AFS	2bb820	136	1	5.590								
+POL.AFS	2bb920	136	1	5.590								
+POL.AFS	2bba20	136	1	5.590								
+POL.AFS	2bbb20	136	1	5.590								
+POL.AFS	2bbc20	136	1	5.590								
+POL.AFS	2bbd20	136	1	5.590								
+POL.AFS	2bbe20	136	1	5.590								
+POL.AFS	2bbf20	136	1	5.590								
+POL.AFS	2bc020	136	1	5.590								
+POL.AFS	2bc120	136	1	5.590								
+POL.AFS	2bc220	136	1	5.590								
+POL.AFS	2bc320	136	1	5.590								
+POL.AFS	2bc420	136	1	5.590								
+POL.AFS	2bc520	136	1	5.590								
+POL.AFS	2bc620	136	1	5.590								
+POL.AFS	2bc720	136	1	5.590								
+POL.AFS	2bc820	136	1	5.590								
+POL.AFS	2bc920	136	1	5.590								
+POL.AFS	2bca20	136	1	5.590								
+POL.AFS	2bcb20	136	1	5.590								
+POL.AFS	2bcc20	3224	1	5.000								
+POL.AFS	2bd940	1560	1	0.359								
+POL.AFS	2bdfe0	1560	1	0.394								
+POL.AFS	2be680	1560	1	0.481								
+POL.AFS	2bed20	1560	1	0.593								
+POL.AFS	2bf3c0	1560	1	0.701								
+POL.AFS	2bfa60	1560	1	0.776								
+POL.AFS	2c0100	1560	1	0.789								
+POL.AFS	2c07a0	1560	1	0.667								
+POL.AFS	2c0e40	1560	1	0.444								
+POL.AFS	2c14e0	1560	1	0.274								
+POL.AFS	2c1b80	1560	1	0.240								
+POL.AFS	2c2220	136	1	0.784								
+POL.AFS	2c2320	136	1	0.784								
+POL.AFS	2c2420	136	1	0.846								
+POL.AFS	2c2520	136	1	0.994								
+POL.AFS	2c2620	136	1	1.176								
+POL.AFS	2c2720	136	1	1.338								
+POL.AFS	2c2820	136	1	1.426								
+POL.AFS	2c2920	136	1	1.455								
+POL.AFS	2c2a20	136	1	1.476								
+POL.AFS	2c2b20	136	1	1.489								
+POL.AFS	2c2c20	136	1	1.495								
+POL.AFS	2c2d20	136	1	1.496								
+POL.AFS	2c2e20	136	1	1.492								
+POL.AFS	2c2f20	136	1	1.485								
+POL.AFS	2c3020	136	1	1.476								
+POL.AFS	2c3120	136	1	1.465								
+POL.AFS	2c3220	136	1	1.454								
+POL.AFS	2c3320	136	1	1.443								
+POL.AFS	2c3420	136	1	1.434								
+POL.AFS	2c3520	136	1	1.428								
+POL.AFS	2c3620	136	1	1.426								
+POL.AFS	2c3720	136	1	0.707								
+POL.AFS	2c3820	136	1	0.994								
+POL.AFS	2c3920	136	1	1.145								
+POL.AFS	2c3a20	136	1	1.131								
+POL.AFS	2c3b20	448	1	4.243								
+POL.AFS	2c3d60	544	1	4.581								
+POL.AFS	2c4000	544	1	4.905								
+POL.AFS	2c42a0	544	1	5.214								
+POL.AFS	2c4540	544	1	5.507								
+POL.AFS	2c47e0	544	1	5.784								
+POL.AFS	2c4a80	544	1	6.044								
+POL.AFS	2c4d20	544	1	6.287								
+POL.AFS	2c4fc0	544	1	6.512								
+POL.AFS	2c5260	544	1	6.720								
+POL.AFS	2c5500	544	1	6.909								
+POL.AFS	2c57a0	544	1	7.079								
+POL.AFS	2c5a40	544	1	7.230								
+POL.AFS	2c5ce0	544	1	7.363								
+POL.AFS	2c5f80	544	1	7.475								
+POL.AFS	2c6220	544	1	7.568								
+POL.AFS	2c64c0	544	1	7.641								
+POL.AFS	2c6760	544	1	7.693								
+POL.AFS	2c6a00	544	1	7.724								
+POL.AFS	2c6ca0	544	1	7.735								
+POL.AFS	2c6f40	136	1	0.707								
+POL.AFS	2c7040	136	1	0.707								
+POL.AFS	2c7140	136	1	0.707								
+POL.AFS	2c7240	136	1	0.707								
+POL.AFS	2c7340	136	1	0.707								
+POL.AFS	2c7440	136	1	0.707								
+POL.AFS	2c7540	136	1	0.707								
+POL.AFS	2c7640	136	1	0.707								
+POL.AFS	2c7740	136	1	0.707								
+POL.AFS	2c7840	136	1	0.707								
+POL.AFS	2c7940	136	1	0.707								
+POL.AFS	2c7a40	136	1	0.707								
+POL.AFS	2c7b40	136	1	0.707								
+POL.AFS	2c7c40	136	1	0.707								
+POL.AFS	2c7d40	136	1	0.707								
+POL.AFS	2c7e40	136	1	0.707								
+POL.AFS	2c7f40	136	1	0.707								
+POL.AFS	2c8040	136	1	0.707								
+POL.AFS	2c8140	136	1	0.707								
+POL.AFS	2c8240	136	1	0.707								
+POL.AFS	2c8340	136	1	15.353								
+POL.AFS	2c8440	1504	3	10.730								
+POL.AFS	2c8b40	1504	3	11.403								
+POL.AFS	2c9240	1504	3	13.088								
+POL.AFS	2c9940	1504	3	15.210								
+POL.AFS	2ca040	1504	3	17.075								
+POL.AFS	2ca740	1504	3	20.772								
+POL.AFS	2cae40	1504	3	24.377								
+POL.AFS	2cb540	1504	3	27.873								
+POL.AFS	2cbc40	1504	3	31.259								
+POL.AFS	2cc340	1504	3	34.544								
+POL.AFS	2cca40	1504	3	33.978								
+POL.AFS	2cd140	1504	3	33.360								
+POL.AFS	2cd840	1504	3	32.761								
+POL.AFS	2cdf40	1504	3	32.251								
+POL.AFS	2ce640	1504	3	31.895								
+POL.AFS	2ced40	1504	3	31.762								
+POL.AFS	2cf440	136	1	0.707								
+POL.AFS	2cf540	136	1	0.707								
+POL.AFS	2cf640	136	1	0.707								
+POL.AFS	2cf740	136	1	0.707								
+POL.AFS	2cf840	136	1	0.707								
+POL.AFS	2cf940	136	1	1.259								
+POL.AFS	2cfa40	136	1	0.707								
+POL.AFS	2cfb40	136	1	7.071								
+POL.AFS	2cfc40	1624	1	0.840								
+POL.AFS	2d0320	1624	1	0.902								
+POL.AFS	2d0a00	1624	1	0.969								
+POL.AFS	2d10e0	1624	1	1.047								
+POL.AFS	2d17c0	1624	1	1.124								
+POL.AFS	2d1ea0	1624	1	1.203								
+POL.AFS	2d2580	1624	1	1.272								
+POL.AFS	2d2c60	1624	1	1.334								
+POL.AFS	2d3340	1624	1	1.387								
+POL.AFS	2d3a20	1624	1	1.431								
+POL.AFS	2d4100	1624	1	1.471								
+POL.AFS	2d47e0	1624	1	1.504								
+POL.AFS	2d4ec0	1624	1	1.549								
+POL.AFS	2d55a0	1624	1	1.603								
+POL.AFS	2d5c80	1624	1	1.648								
+POL.AFS	2d6360	1624	1	1.691								
+POL.AFS	2d6a40	1624	1	1.734								
+POL.AFS	2d7120	1624	1	1.783								
+POL.AFS	2d7800	1624	1	1.829								
+POL.AFS	2d7ee0	1624	1	1.864								
+POL.AFS	2d85c0	1624	1	1.887								
+POL.AFS	2d8ca0	1456	1	1.895								
+POL.AFS	2d92c0	1624	1	0.774								
+POL.AFS	2d99a0	1624	1	0.801								
+POL.AFS	2da080	1624	1	0.827								
+POL.AFS	2da760	1624	1	0.856								
+POL.AFS	2dae40	1624	1	0.887								
+POL.AFS	2db520	1624	1	0.915								
+POL.AFS	2dbc00	1624	1	0.938								
+POL.AFS	2dc2e0	1624	1	0.956								
+POL.AFS	2dc9c0	1624	1	0.970								
+POL.AFS	2dd0a0	1624	1	0.978								
+POL.AFS	2dd780	1624	1	0.981								
+POL.AFS	2dde60	1624	1	0.985								
+POL.AFS	2de540	1624	1	1.001								
+POL.AFS	2dec20	1624	1	1.022								
+POL.AFS	2df300	1624	1	1.041								
+POL.AFS	2df9e0	1624	1	1.061								
+POL.AFS	2e00c0	1624	1	1.076								
+POL.AFS	2e07a0	1624	1	1.092								
+POL.AFS	2e0e80	1624	1	1.114								
+POL.AFS	2e1560	1624	1	1.131								
+POL.AFS	2e1c40	1624	1	1.142								
+POL.AFS	2e2320	1264	1	1.228								
+POL.AFS	2e2880	376	1	0.334								
+POL.AFS	2e2a80	1192	1	0.583								
+POL.AFS	2e2fa0	232	1	0.264								
+POL.AFS	2e3100	1528	1	0.288								
+POL.AFS	2e3780	792	1	0.428								
+POL.AFS	2e3b20	376	1	1.852								
+POL.AFS	2e3d20	376	1	4.961								
+POL.AFS	2e3f20	376	1	6.283								
+POL.AFS	2e4120	376	1	7.359								
+POL.AFS	2e4320	376	1	8.242								
+POL.AFS	2e4520	376	1	8.982								
+POL.AFS	2e4720	376	1	9.630								
+POL.AFS	2e4920	376	1	10.239								
+POL.AFS	2e4b20	376	1	10.859								
+POL.AFS	2e4d20	376	1	11.542								
+POL.AFS	2e4f20	136	1	0.146								
+POL.AFS	2e5020	1088	1	0.048								
+POL.AFS	2e54e0	1088	1	0.105								
+POL.AFS	2e59a0	1088	1	0.264								
+POL.AFS	2e5e60	1088	1	0.509								
+POL.AFS	2e6320	1088	1	0.821								
+POL.AFS	2e67e0	1088	1	1.185								
+POL.AFS	2e6ca0	1088	1	1.583								
+POL.AFS	2e7160	1088	1	1.998								
+POL.AFS	2e7620	1088	1	2.413								
+POL.AFS	2e7ae0	1088	1	2.811								
+POL.AFS	2e7fa0	1088	1	3.175								
+POL.AFS	2e8460	1088	1	3.488								
+POL.AFS	2e8920	1088	1	3.732								
+POL.AFS	2e8de0	1088	1	3.892								
+POL.AFS	2e92a0	1088	1	3.948								
+POL.AFS	2e9760	1032	2	2.178								
+POL.AFS	2e9c40	1032	2	2.178								
+POL.AFS	2ea120	1144	2	2.749								
+POL.AFS	2ea660	136	1	5.385								
+POL.AFS	2ea760	552	1	139.306								
+POL.AFS	2eaa00	2336	1	1.000								
+POL.AFS	2eb3a0	800	1	0.843								
+POL.AFS	2eb740	1144	1	2.650								
+POL.AFS	2ebc40	1144	1	3.318								
+POL.AFS	2ec140	800	1	1.148								
+POL.AFS	2ec4e0	1144	1	3.611								
+POL.AFS	2ec9e0	1144	1	4.521								
+POL.AFS	2ecee0	800	1	1.387								
+POL.AFS	2ed280	1368	1	4.297								
+POL.AFS	2ed860	1368	1	5.380								
+POL.AFS	2ede40	136	1	0.280								
+POL.AFS	2edf40	136	1	0.358								
+POL.AFS	2ee040	408	3	2.638								
+POL.AFS	2ee300	408	2	4.204								
+POL.AFS	2ee560	136	1	14.318								
+POL.AFS	2ee660	136	1	3.885								
+POL.AFS	2ee760	136	1	3.885								
+POL.AFS	2ee860	408	3	2.638								
+POL.AFS	2eeb20	136	1	3.092								
+POL.AFS	2eec20	560	2	2.749								
+POL.AFS	2eef20	560	2	2.749								
+POL.AFS	2ef220	560	2	2.749								
+POL.AFS	2ef520	560	2	2.749								
+POL.AFS	2ef820	560	2	2.749								
+POL.AFS	2efb20	560	2	2.749								
+POL.AFS	2efe20	560	2	2.749								
+POL.AFS	2f0120	560	2	2.749								
+POL.AFS	2f0420	560	2	2.749								
+POL.AFS	2f0720	560	2	2.749								
+POL.AFS	2f0a20	408	3	4.514								
+POL.AFS	2f0ce0	408	3	2.638								
+POL.AFS	2f0fa0	1288	1	2.102								
+POL.AFS	2f1520	7880	3	3.097								
+POL.AFS	2f3500	4528	2	3.078								
+POL.AFS	2f4780	1288	1	2.102								
+POL.AFS	2f4d00	27704	14	4.334								
+POL.AFS	2fbdc0	18080	8	1.908								
+POL.AFS	300700	2368	2	0.178								
+POL.AFS	301100	2368	2	0.178								
+POL.AFS	301b00	464	1	4.281								
+POL.AFS	301d40	464	1	4.266								
+POL.AFS	301f80	464	1	4.240								
+POL.AFS	3021c0	464	1	4.210								
+POL.AFS	302400	464	1	3.669								
+POL.AFS	302640	464	1	3.214								
+POL.AFS	302880	464	1	2.867								
+POL.AFS	302ac0	464	1	2.638								
+POL.AFS	302d00	464	1	2.770								
+POL.AFS	302f40	464	1	2.968								
+POL.AFS	303180	464	1	3.209								
+POL.AFS	3033c0	464	1	3.469								
+POL.AFS	303600	464	1	3.660								
+POL.AFS	303840	464	1	3.873								
+POL.AFS	303a80	464	1	4.074								
+POL.AFS	303cc0	464	1	4.223								
+POL.AFS	303f00	4400	3	1.354								
+POL.AFS	305140	4400	3	1.346								
+POL.AFS	306380	4400	3	1.324								
+POL.AFS	3075c0	4400	3	1.293								
+POL.AFS	308800	4400	3	1.254								
+POL.AFS	309a40	4400	3	1.218								
+POL.AFS	30ac80	4400	3	1.231								
+POL.AFS	30bec0	4400	3	1.215								
+POL.AFS	30d100	4304	3	1.207								
+POL.AFS	30e2e0	4400	3	1.215								
+POL.AFS	30f520	4400	3	1.232								
+POL.AFS	310760	4400	3	1.225								
+POL.AFS	3119a0	4400	3	1.274								
+POL.AFS	312be0	4400	3	1.314								
+POL.AFS	313e20	4400	3	1.343								
+POL.AFS	315060	4400	3	1.354								
+POL.AFS	3162a0	136	1	0.707								
+POL.AFS	3163a0	136	1	0.707								
+POL.AFS	3164a0	20112	1	4.993								
+POL.AFS	31b3a0	9360	1	5.050								
+POL.AFS	31d8a0	3176	1	5.050								
+POL.AFS	31e580	528	1	0.844								
+POL.AFS	31e800	376	1	4.243								
+POL.AFS	31ea00	376	1	4.581								
+POL.AFS	31ec00	376	1	4.905								
+POL.AFS	31ee00	376	1	5.214								
+POL.AFS	31f000	376	1	5.507								
+POL.AFS	31f200	376	1	5.784								
+POL.AFS	31f400	376	1	6.044								
+POL.AFS	31f600	376	1	6.287								
+POL.AFS	31f800	376	1	6.512								
+POL.AFS	31fa00	376	1	6.720								
+POL.AFS	31fc00	376	1	6.909								
+POL.AFS	31fe00	376	1	7.079								
+POL.AFS	320000	376	1	7.230								
+POL.AFS	320200	376	1	7.363								
+POL.AFS	320400	376	1	7.475								
+POL.AFS	320600	376	1	7.568								
+POL.AFS	320800	376	1	7.641								
+POL.AFS	320a00	376	1	7.693								
+POL.AFS	320c00	376	1	7.724								
+POL.AFS	320e00	376	1	7.735								
+POL.AFS	321000	3560	8	228.438								
+POL.AFS	3220a0	3016	6	542.715								
+POL.AFS	322e80	10216	4	10.435								
+POL.AFS	3257e0	12504	6	10.733								
+POL.AFS	328ac0	2400	3	4.276								
+POL.AFS	329540	3648	3	3.861								
+POL.AFS	32a4a0	2448	3	4.470								
+POL.AFS	32af40	2448	3	3.019								
+POL.AFS	32b9e0	3696	3	4.178								
+POL.AFS	32c960	2376	3	5.006								
+POL.AFS	32d3c0	2304	3	3.195								
+POL.AFS	32dde0	3528	3	5.254								
+POL.AFS	32ecc0	2496	3	4.612								
+POL.AFS	32f7a0	2448	4	3.502								
+POL.AFS	3302a0	3672	3	5.255								
+POL.AFS	331220	2496	4	3.117								
+POL.AFS	331d40	2184	3	2.927								
+POL.AFS	3326e0	3264	3	4.609								
+POL.AFS	3334c0	2160	3	2.492								
+POL.AFS	333e40	2544	3	4.366								
+POL.AFS	334940	2568	3	5.137								
+POL.AFS	335460	2472	2	4.531								
+POL.AFS	335ee0	2712	2	4.480								
+POL.AFS	336a40	2496	2	3.801								
+POL.AFS	3374c0	2736	2	3.229								
+POL.AFS	338040	9576	6	12.402								
+POL.AFS	33a7c0	4992	1	1.318								
+POL.AFS	33bbc0	4424	4	0.957								
+POL.AFS	33ce80	4616	1	0.957								
+POL.AFS	33e100	688	1	6.080								
+POL.AFS	33e420	4992	1	1.318								
+POL.AFS	33f820	5856	4	1.522								
+POL.AFS	341060	5808	2	2.247								
+POL.AFS	3427e0	6488	2	2.707								
+POL.AFS	344200	5640	6	2.659								
+POL.AFS	345a20	5640	1	2.659								
+POL.AFS	3470a0	6928	1	3.896								
+POL.AFS	348c20	7256	6	3.896								
+POL.AFS	34aa80	688	1	6.080								
+POL.AFS	34ada0	776	2	1.809								
+POL.AFS	34b180	776	2	1.804								
+POL.AFS	34b560	2304	4	1.748								
+POL.AFS	34bfc0	1800	4	1.594								
+POL.AFS	34c840	592	2	1.026								
+POL.AFS	34cb60	2216	5	1.446								
+POL.AFS	34d5c0	576	2	2.152								
+POL.AFS	34d8c0	776	1	3.115								
+POL.AFS	34dc40	696	2	2.452								
+POL.AFS	34dfc0	808	1	3.115								
+POL.AFS	34e360	624	2	2.891								
+POL.AFS	34e6a0	960	1	1.815								
+POL.AFS	34eae0	1048	2	1.054								
+POL.AFS	34efc0	696	2	1.447								
+POL.AFS	34f340	1416	2	1.805								
+POL.AFS	34f9a0	640	1	1.335								
+POL.AFS	34fca0	728	2	1.201								
+POL.AFS	350040	1552	4	2.441								
+POL.AFS	3507c0	1712	4	2.461								
+POL.AFS	350fe0	776	1	2.797								
+POL.AFS	351360	832	2	2.324								
+POL.AFS	351760	784	1	2.796								
+POL.AFS	351ae0	1056	2	2.718								
+POL.AFS	351fc0	1200	2	2.453								
+POL.AFS	352540	4992	5	3.700								
+POL.AFS	353a80	5096	6	3.298								
+POL.AFS	355080	1864	3	3.248								
+POL.AFS	3558e0	200	1	10.326								
+POL.AFS	355a20	200	1	10.316								
+POL.AFS	355b60	200	1	10.296								
+POL.AFS	355ca0	200	1	10.277								
+POL.AFS	355de0	200	1	10.259								
+POL.AFS	355f20	200	1	10.436								
+POL.AFS	356060	200	1	10.583								
+POL.AFS	3561a0	200	1	10.738								
+POL.AFS	3562e0	200	1	10.942								
+POL.AFS	356420	200	1	11.241								
+POL.AFS	356560	1152	2	1.328								
+POL.AFS	356aa0	1704	4	2.167								
+POL.AFS	3572c0	2168	4	3.461								
+POL.AFS	357ca0	1128	2	1.328								
+POL.AFS	3581e0	1824	4	2.157								
+POL.AFS	358a60	2128	4	3.443								
+POL.AFS	359420	616	1	1.639								
+POL.AFS	359700	736	2	1.007								
+POL.AFS	359aa0	616	2	1.122								
+POL.AFS	359de0	688	1	1.639								
+POL.AFS	35a100	760	2	1.012								
+POL.AFS	35a4c0	592	2	1.119								
+POL.AFS	35a7e0	776	2	1.752								
+POL.AFS	35abc0	776	2	1.764								
+POL.AFS	35afa0	2248	5	1.748								
+POL.AFS	35ba20	2312	6	2.282								
+POL.AFS	35c540	2312	6	2.282								
+POL.AFS	35d060	1480	3	1.440								
+POL.AFS	35d740	1480	3	1.440								
+POL.AFS	35de20	2312	6	1.492								
+POL.AFS	35e940	2312	6	1.492								
+POL.AFS	35f460	2176	5	1.748								
+POL.AFS	35fea0	728	2	2.074								
+POL.AFS	360240	728	2	2.074								
+POL.AFS	3605e0	936	2	2.922								
+POL.AFS	360a60	912	3	2.791								
+POL.AFS	360f00	968	2	2.924								
+POL.AFS	3613a0	936	3	2.640								
+POL.AFS	361860	960	1	1.870								
+POL.AFS	361ca0	808	2	1.380								
+POL.AFS	3620a0	808	2	1.380								
+POL.AFS	3624a0	960	1	1.870								
+POL.AFS	3628e0	1056	1	1.875								
+POL.AFS	362d80	760	2	1.479								
+POL.AFS	363140	760	2	1.479								
+POL.AFS	363500	1056	1	1.875								
+POL.AFS	3639a0	1456	4	2.608								
+POL.AFS	3640c0	1808	4	2.493								
+POL.AFS	364940	1808	4	2.493								
+POL.AFS	3651c0	1456	4	2.608								
+POL.AFS	3658e0	776	1	2.797								
+POL.AFS	365c60	1072	2	2.939								
+POL.AFS	366160	1072	2	2.939								
+POL.AFS	366660	776	1	2.797								
+POL.AFS	3669e0	784	1	2.796								
+POL.AFS	366d60	856	2	2.995								
+POL.AFS	367180	856	2	2.995								
+POL.AFS	3675a0	784	1	2.796								
+POL.AFS	367920	1208	2	2.356								
+POL.AFS	367ea0	4488	4	3.020								
+POL.AFS	3691a0	4488	4	3.020								
+POL.AFS	36a4a0	5112	5	3.422								
+POL.AFS	36ba60	5112	5	3.422								
+POL.AFS	36d020	2032	4	3.390								
+POL.AFS	36d980	2032	4	3.390								
+POL.AFS	36e2e0	1208	2	2.356								
+POL.AFS	36e860	200	1	10.506								
+POL.AFS	36e9a0	200	1	10.479								
+POL.AFS	36eae0	200	1	10.406								
+POL.AFS	36ec20	200	1	10.297								
+POL.AFS	36ed60	200	1	10.160								
+POL.AFS	36eea0	200	1	10.102								
+POL.AFS	36efe0	200	1	10.047								
+POL.AFS	36f120	200	1	10.229								
+POL.AFS	36f260	200	1	10.461								
+POL.AFS	36f3a0	200	1	10.660								
+POL.AFS	36f4e0	1112	2	1.328								
+POL.AFS	36fa00	1088	2	1.328								
+POL.AFS	36ff00	720	2	1.772								
+POL.AFS	3702a0	704	2	1.149								
+POL.AFS	370620	704	2	1.149								
+POL.AFS	3709a0	720	2	1.772								
+POL.AFS	370d40	816	2	1.771								
+POL.AFS	371140	752	2	1.210								
+POL.AFS	371500	752	2	1.210								
+POL.AFS	3718c0	816	2	1.771								
+POL.AFS	371cc0	776	2	1.727								
+POL.AFS	3720a0	776	2	1.721								
+POL.AFS	372480	2096	3	1.688								
+POL.AFS	372dc0	2320	3	1.854								
+POL.AFS	3737e0	1304	4	1.469								
+POL.AFS	373e60	2176	4	1.799								
+POL.AFS	374840	728	2	2.328								
+POL.AFS	374be0	1264	2	3.103								
+POL.AFS	3751a0	1320	3	2.918								
+POL.AFS	3757e0	992	2	2.871								
+POL.AFS	375c80	1088	3	2.803								
+POL.AFS	3761e0	1112	1	1.838								
+POL.AFS	3766c0	1280	2	1.795								
+POL.AFS	376c80	1160	1	1.844								
+POL.AFS	377180	1224	2	1.779								
+POL.AFS	377720	1728	4	2.574								
+POL.AFS	377f40	1808	4	2.493								
+POL.AFS	3787c0	880	1	2.739								
+POL.AFS	378ba0	816	2	2.900								
+POL.AFS	378fa0	832	1	2.738								
+POL.AFS	379360	816	2	2.860								
+POL.AFS	379760	1184	2	2.606								
+POL.AFS	379cc0	4320	4	3.145								
+POL.AFS	37af00	4536	4	3.709								
+POL.AFS	37c220	2528	3	3.806								
+POL.AFS	37cd20	200	1	10.048								
+POL.AFS	37ce60	200	1	10.069								
+POL.AFS	37cfa0	200	1	10.126								
+POL.AFS	37d0e0	200	1	10.211								
+POL.AFS	37d220	200	1	10.316								
+POL.AFS	37d360	200	1	10.423								
+POL.AFS	37d4a0	200	1	10.280								
+POL.AFS	37d5e0	200	1	10.224								
+POL.AFS	37d720	200	1	10.172								
+POL.AFS	37d860	200	1	10.128								
+POL.AFS	37d9a0	1112	2	1.114								
+POL.AFS	37dec0	1088	2	1.114								
+POL.AFS	37e3c0	720	2	1.728								
+POL.AFS	37e760	1024	3	1.452								
+POL.AFS	37ec80	816	2	1.779								
+POL.AFS	37f080	1016	3	1.506								
+POL.AFS	37f5a0	728	2	1.701								
+POL.AFS	37f940	752	2	1.696								
+POL.AFS	37fd00	2400	3	1.747								
+POL.AFS	380780	2192	4	1.785								
+POL.AFS	381180	1672	4	1.930								
+POL.AFS	381980	2256	4	1.439								
+POL.AFS	3823c0	640	2	1.598								
+POL.AFS	382700	1424	2	3.308								
+POL.AFS	382d60	1184	3	2.936								
+POL.AFS	383320	1296	1	3.310								
+POL.AFS	3838a0	1008	2	2.971								
+POL.AFS	383d60	960	1	1.921								
+POL.AFS	3841a0	936	2	1.372								
+POL.AFS	384620	1080	1	1.921								
+POL.AFS	384ae0	1072	2	1.419								
+POL.AFS	384fe0	752	2	1.994								
+POL.AFS	3853a0	1048	3	2.109								
+POL.AFS	3858e0	792	1	2.801								
+POL.AFS	385c80	1032	2	2.913								
+POL.AFS	386160	760	1	2.806								
+POL.AFS	3864e0	752	2	2.850								
+POL.AFS	3868a0	1240	2	2.114								
+POL.AFS	386e40	4088	6	2.968								
+POL.AFS	388040	5136	7	3.054								
+POL.AFS	3896a0	3000	4	3.057								
+POL.AFS	38a3c0	1112	2	1.114								
+POL.AFS	38a8e0	912	2	0.885								
+POL.AFS	38ad40	1088	2	1.114								
+POL.AFS	38b240	984	2	0.885								
+POL.AFS	38b6e0	616	1	1.625								
+POL.AFS	38b9c0	792	2	1.050								
+POL.AFS	38bda0	688	1	1.625								
+POL.AFS	38c0c0	840	2	1.204								
 POL.AFS	38c800	1032	2	2.178								
 POL.AFS	38cce0	432	1	15.865								
 POL.AFS	38cf00	504	2	14.713								
@@ -14438,13 +14438,6 @@ POL.AFS	3965800	136	1	18.554
 POL.AFS	3965900	136	1	18.554								
 POL.AFS	3965a00	136	1	18.554								
 POL.AFS	3965b00	136	1	18.554								
-[textures]
-file	number	texture_file	offset	size	width	height	type	format	set
-POL.AFS	13	TEX.AFS@2ea760	1c	6144	128	128	3	1	weapons
-POL.AFS	26	TEX.AFS@2f0b20	1c	6144	128	128	3	1	weapons
-POL.AFS	27	TEX.AFS@2f1ec0	1c	6144	128	128	3	1	weapons
-POL.AFS	116	TEX.AFS@31ea60	1c	4096	32	64	d	2	weapons
-
 [images]
 file	offset	kind	width	height	type	format	bytes	name
 0GDTEX.PVR	10	pvr	256	256	1	0	131088	
@@ -23065,7 +23058,7 @@ VOICE.AFS	380	378000	6264	ADX	1	22050	11025	0.5
 VOICE.AFS	381	37a000	6264	ADX	1	22050	11025	0.5	
 VOICE.AFS	382	37c000	6264	ADX	1	22050	11025	0.5	
 SND.AFS	0	80000	59264	unknown					
-SND.AFS	1	8e800	3973120	ADX	2	44100	3528008	80.0	Song 1
+SND.AFS	1	8e800	3973120	ADX	2	44100	3528008	80.0	
 SND.AFS	2	458800	5449728	ADX	2	44100	4841883	109.8	
 SND.AFS	3	98b000	4536320	ADX	2	44100	4030464	91.4	
 SND.AFS	4	dde800	3950592	ADX	2	44100	3510464	79.6	

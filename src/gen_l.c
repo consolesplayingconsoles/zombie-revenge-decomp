@@ -1089,10 +1089,6 @@ int pdGunEnter(int a4)
     return t2;
 }
 
-int pdGunSetCallback(int a4)
-{
-    return kdSetGunCallback(a4);
-}
 
 int FUN_0c0e58b0(int a4, int a5)
 {
