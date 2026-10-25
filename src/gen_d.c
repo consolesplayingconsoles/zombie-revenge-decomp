@@ -180,7 +180,7 @@ int FUN_0c043fd0(int a4, int a5, int a6, int a7);
 int FUN_0c051a48(int a4);
 int FUN_0c01e720(int a4);
 float FUN_0c01e770(int a4);
-float FUN_0c01f18e(int a4);
+int FUN_0c01f18e(int a4);
 int FUN_0c021376(void);
 int FUN_0c021c64(void);
 int FUN_0c02280e(int a4);
@@ -1783,16 +1783,14 @@ float FUN_0c01e770(int a4)
     return u0;
 }
 
-float FUN_0c01f18e(int a4)
+int FUN_0c01f18e(int a4)
 {
     float t0;
     int stk[6];
 
     t0 = FUN_0c01f1b8((a4 + 0x30), ((int)stk + 4));
     *(float *)((a4 + 0xB4)) = t0;
-    *(volatile float *)((a4 + 0x34));
-    *(volatile float *)0xC01F23C;
-    return t0;
+    return (*(float *)0xC01F23C) > ((*(float *)((a4 + 0x34))) - t0);
 }
 
 int FUN_0c021376(void)
