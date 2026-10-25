@@ -1867,17 +1867,6 @@ int FUN_0c0cddda(int a4)
     return (*(int *)(((((a4 << 2) << 2) + 0xC5229BC) + 0x8)));
 }
 
-int FUN_0c0ce5b2(Stk4 s)
-{
-    int stk[16];
-
-    stk[4] = s.w[0];
-    stk[5] = s.w[1];
-    stk[6] = s.w[2];
-    stk[7] = s.w[3];
-    FUN_0c0db0a0((*(int *)(((((int)stk + 8) + 0x8) + 0x0))), (*(int *)(((((int)stk + 8) + 0x8) + 0x4))));
-    return (FUN_0c0db0e0(((*(int *)(((((int)stk + 8) + 0x8) + 0x8))))));
-}
 
 int FUN_0c0cea9c(void)
 {

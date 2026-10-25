@@ -886,7 +886,6 @@ FUN_0c0ce10c
 FUN_0c0ce2ac
 FUN_0c0ce486
 FUN_0c0ce57a
-FUN_0c0ce5b2
 FUN_0c0ce6a8
 FUN_0c0ce708
 FUN_0c0ce752
@@ -1085,7 +1084,6 @@ FUN_0c0de8c0
 FUN_0c0de8d0
 FUN_0c0de900
 FUN_0c0de9c0
-FUN_0c0de9e0
 FUN_0c0dea10
 FUN_0c0dea90
 FUN_0c0ded50
@@ -1425,7 +1423,6 @@ _pd_peripheral_error
 _pd_peripheral_set_id
 _pd_peripheral_set_null
 adxf_AllocAdxFs
-adxf_ChkPrmGfr
 adxf_ChkPrmPt
 adxf_CloseSjStm
 adxf_CreateAdxFs

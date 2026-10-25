@@ -1534,17 +1534,6 @@ float FUN_0c0da3e0(int a4)
     return (*(float *)0xC0DA488);
 }
 
-int FUN_0c0de9e0(int a4)
-{
-    if ((int)(*(int *)((a4 + 0x0))) >= 0) {
-        if ((*(int *)0xC94C680) == 0) {
-            FUN_0c0eaa20();
-        } else {
-            FUN_0c0eb9c0();
-        }
-    }
-    return FUN_0c0dc4c0(0x1);
-}
 
 int FUN_0c0e1cc6(int a4, int a5, int a6)
 {

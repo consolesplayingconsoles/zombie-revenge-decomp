@@ -314,20 +314,6 @@ int FUN_0c213470(void)
     return memset(0xC239418, 0x0, 0x3A0);
 }
 
-int adxf_ChkPrmGfr(int a4, int a5)
-{
-    int t5;
-
-    if (((int)a4 >= 0) && ((int)a4 < (int)0x100)) {
-        if (((int)a5 >= 0) && (t5 = *(int *)(((*(int *)(((a4 << 2) + 0xC95E288))) + 0xC)), (int)a5 < (int)t5)) {
-            return 0x0;
-        }
-        FUN_0c229d7e();
-        return 0xFFFFFFFD;
-    }
-    FUN_0c229d7e();
-    return 0xFFFFFFFD;
-}
 
 int FUN_0c21b5a6(int a4)
 {
