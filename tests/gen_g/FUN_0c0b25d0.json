@@ -1,0 +1,258 @@
+{
+ "dev": [
+  {
+   "about": "case 0",
+   "poke": {
+    "0C24FAAC": "00000000",
+    "0C24FAB0": "04000000"
+   }
+  },
+  {
+   "about": "case 1",
+   "poke": {
+    "0C24FAAC": "01000000",
+    "0C24FAB0": "0000c842"
+   }
+  },
+  {
+   "about": "case 2",
+   "poke": {
+    "0C24FAAC": "02000000",
+    "0C24FAB0": "00002040"
+   }
+  },
+  {
+   "about": "case 3",
+   "poke": {
+    "0C24FAAC": "03000000",
+    "0C24FAB0": "0000803f"
+   }
+  },
+  {
+   "about": "case 4",
+   "poke": {
+    "0C24FAAC": "04000000",
+    "0C24FAB0": "0000803f"
+   }
+  },
+  {
+   "about": "case 5",
+   "poke": {
+    "0C24FAAC": "05000000",
+    "0C24FAB0": "00000080"
+   }
+  },
+  {
+   "about": "case 6",
+   "poke": {
+    "0C24FAAC": "08000000",
+    "0C24FAB0": "0000803f"
+   }
+  },
+  {
+   "about": "case 7",
+   "poke": {
+    "0C24FAAC": "10000000",
+    "0C24FAB0": "00000040"
+   }
+  },
+  {
+   "about": "case 8",
+   "poke": {
+    "0C24FAAC": "00010000",
+    "0C24FAB0": "00000080"
+   }
+  },
+  {
+   "about": "case 9",
+   "poke": {
+    "0C24FAAC": "0000803f",
+    "0C24FAB0": "00010000"
+   }
+  },
+  {
+   "about": "case 10",
+   "poke": {
+    "0C24FAAC": "00000040",
+    "0C24FAB0": "02000000"
+   }
+  },
+  {
+   "about": "case 11",
+   "poke": {
+    "0C24FAAC": "00002040",
+    "0C24FAB0": "286b6e4e"
+   }
+  },
+  {
+   "about": "case 12",
+   "poke": {
+    "0C24FAAC": "ffffff7f",
+    "0C24FAB0": "04000000"
+   }
+  },
+  {
+   "about": "case 13",
+   "poke": {
+    "0C24FAAC": "00000080",
+    "0C24FAB0": "0000c842"
+   }
+  },
+  {
+   "about": "case 14",
+   "poke": {
+    "0C24FAAC": "000040c0",
+    "0C24FAB0": "feffffff"
+   }
+  },
+  {
+   "about": "case 15",
+   "poke": {
+    "0C24FAAC": "000040c0",
+    "0C24FAB0": "02000000"
+   }
+  },
+  {
+   "about": "case 16",
+   "poke": {
+    "0C24FAAC": "0000c842",
+    "0C24FAB0": "0000803f"
+   }
+  },
+  {
+   "about": "case 17",
+   "poke": {
+    "0C24FAAC": "0000803f",
+    "0C24FAB0": "10000000"
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "case 101",
+   "poke": {
+    "0C24FAAC": "02000000",
+    "0C24FAB0": "03000000"
+   }
+  },
+  {
+   "about": "case 39",
+   "poke": {
+    "0C24FAAC": "feffffff",
+    "0C24FAB0": "00000040"
+   }
+  },
+  {
+   "about": "case 113",
+   "poke": {
+    "0C24FAAC": "feffffff",
+    "0C24FAB0": "08000000"
+   }
+  },
+  {
+   "about": "case 114",
+   "poke": {
+    "0C24FAAC": "01000000",
+    "0C24FAB0": "000040c0"
+   }
+  },
+  {
+   "about": "case 55",
+   "poke": {
+    "0C24FAAC": "00000080",
+    "0C24FAB0": "02000000"
+   }
+  },
+  {
+   "about": "case 74",
+   "poke": {
+    "0C24FAAC": "01000000",
+    "0C24FAB0": "08000000"
+   }
+  },
+  {
+   "about": "case 51",
+   "poke": {
+    "0C24FAAC": "08000000",
+    "0C24FAB0": "0000c842"
+   }
+  },
+  {
+   "about": "case 40",
+   "poke": {
+    "0C24FAAC": "02000000",
+    "0C24FAB0": "10000000"
+   }
+  },
+  {
+   "about": "case 112",
+   "poke": {
+    "0C24FAAC": "00002040",
+    "0C24FAB0": "08000000"
+   }
+  },
+  {
+   "about": "case 83",
+   "poke": {
+    "0C24FAAC": "10000000",
+    "0C24FAB0": "08000000"
+   }
+  },
+  {
+   "about": "case 43",
+   "poke": {
+    "0C24FAAC": "05000000",
+    "0C24FAB0": "0000c842"
+   }
+  },
+  {
+   "about": "case 110",
+   "poke": {
+    "0C24FAAC": "10000000",
+    "0C24FAB0": "05000000"
+   }
+  },
+  {
+   "about": "case 52",
+   "poke": {
+    "0C24FAAC": "08000000",
+    "0C24FAB0": "0000c842"
+   }
+  },
+  {
+   "about": "case 103",
+   "poke": {
+    "0C24FAAC": "feffffff",
+    "0C24FAB0": "00000040"
+   }
+  },
+  {
+   "about": "case 71",
+   "poke": {
+    "0C24FAAC": "ffffff7f",
+    "0C24FAB0": "01000000"
+   }
+  },
+  {
+   "about": "case 53",
+   "poke": {
+    "0C24FAAC": "feffffff",
+    "0C24FAB0": "00000080"
+   }
+  },
+  {
+   "about": "case 111",
+   "poke": {
+    "0C24FAAC": "02000000",
+    "0C24FAB0": "ffffff7f"
+   }
+  },
+  {
+   "about": "case 84",
+   "poke": {
+    "0C24FAAC": "00010000",
+    "0C24FAB0": "03000000"
+   }
+  }
+ ]
+}

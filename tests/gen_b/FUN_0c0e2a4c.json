@@ -1,0 +1,27 @@
+{
+ "dev": [
+  {
+   "about": "rescue: flips 0C0E2A6A",
+   "regs": {},
+   "poke": {
+    "FFFFFFF4": "01000000"
+   }
+  },
+  {
+   "about": "rescue: flips 0C0E2A6A",
+   "regs": {},
+   "poke": {
+    "FFFFFFF4": "ffffff7f"
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "rescue: flips 0C0E2A6A",
+   "regs": {},
+   "poke": {
+    "FFFFFFF4": "02000000"
+   }
+  }
+ ]
+}

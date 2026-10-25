@@ -1,0 +1,22 @@
+{
+ "dev": [
+  {
+   "about": "rescue: flips 0C0AC880",
+   "regs": {},
+   "poke": {
+    "FFFFFFFC": "48c80a0c",
+    "00000020": "48c80a0c"
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "rescue: flips 0C0AC880",
+   "regs": {},
+   "poke": {
+    "FFFFFFFC": "48c80a0c",
+    "00000020": "48c80a0c"
+   }
+  }
+ ]
+}
