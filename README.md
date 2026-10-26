@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=50.9&b=14.3&a=12&s=0)
+![decomp progress](badges/progress.svg?p=60.1&b=23.3&a=13&s=0)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,18 +21,18 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE             11.9%  the instructions the cases ran, of all instructions, over the 3895 functions that can be C; the 1894 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (50.9% complete) 1911  of the 3895 functions that can be C (337 with no C form are counted apart)
-BYTES LEFT    (14.3% complete) 550848  of 643100 bytes of code that can be C
+TOTAL TEST COVERAGE             13.2%  the instructions the cases ran, of all instructions, over the 3998 functions that can be C; the 1928 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (60.1% complete) 1595  of the 3998 functions that can be C (234 with no C form are counted apart)
+BYTES LEFT    (23.3% complete) 503014  of 655494 bytes of code that can be C
 FUNCTIONS                              
   unnamed                        3206  functions still called FUN_... (3206 of 4232)
-  Not written C                  1911  550848 bytes
+  Not written C                  1595  503014 bytes
   Written C with errors             0  0 bytes
   Not drawn                         0  0 bytes
   Drawn with errors                 0  0 bytes
   Checked with errors               0  0 bytes
-  No C form                      8.0%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
-  documented                    13.7%  579 named functions in docs/*.md
+  No C form                      5.5%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
+  documented                    13.8%  586 named functions in docs/*.md
 ```
 <!-- /progress -->
 

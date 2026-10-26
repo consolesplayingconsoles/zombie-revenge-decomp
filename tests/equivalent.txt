@@ -1,6 +1,8 @@
 ADXB_CheckAu
 ADXB_CheckSpsd
 ADXB_CheckWav
+ADXB_CopyExtraBufMono
+ADXB_CopyExtraBufSte
 ADXB_Destroy
 ADXB_EntryAddWrFunc
 ADXB_EntryData
@@ -172,6 +174,7 @@ FUN_0c01a50c
 FUN_0c01a52c
 FUN_0c01a632
 FUN_0c01a80a
+FUN_0c01a822
 FUN_0c01a874
 FUN_0c01a89c
 FUN_0c01ac14
@@ -198,6 +201,7 @@ FUN_0c01f172
 FUN_0c01f18e
 FUN_0c01f8a0
 FUN_0c01fb04
+FUN_0c01fb64
 FUN_0c01fccc
 FUN_0c01fcf8
 FUN_0c01fd90
@@ -308,12 +312,16 @@ FUN_0c039302
 FUN_0c03a536
 FUN_0c03a66c
 FUN_0c03b80e
+FUN_0c03bffe
+FUN_0c03c174
+FUN_0c03c256
 FUN_0c03c65c
 FUN_0c03c6ac
 FUN_0c03c70c
 FUN_0c03cfb8
 FUN_0c03d020
 FUN_0c03d516
+FUN_0c03e0f2
 FUN_0c03f450
 FUN_0c03f4a0
 FUN_0c03f63c
@@ -354,6 +362,7 @@ FUN_0c046b50
 FUN_0c046cc0
 FUN_0c047ff6
 FUN_0c048798
+FUN_0c04904a
 FUN_0c049804
 FUN_0c04994c
 FUN_0c04996a
@@ -649,6 +658,7 @@ FUN_0c0a9cb8
 FUN_0c0a9e68
 FUN_0c0a9e94
 FUN_0c0a9f0e
+FUN_0c0aa472
 FUN_0c0aa4a2
 FUN_0c0aa4f8
 FUN_0c0ab2ec
@@ -664,6 +674,7 @@ FUN_0c0ae09a
 FUN_0c0ae1ae
 FUN_0c0ae202
 FUN_0c0ae258
+FUN_0c0ae2c8
 FUN_0c0ae95c
 FUN_0c0af792
 FUN_0c0af9b4
@@ -700,6 +711,7 @@ FUN_0c0b2e48
 FUN_0c0b2e84
 FUN_0c0b3254
 FUN_0c0b359e
+FUN_0c0b37ee
 FUN_0c0b38a6
 FUN_0c0b3998
 FUN_0c0b3e94
@@ -740,6 +752,7 @@ FUN_0c0b68ce
 FUN_0c0b70a0
 FUN_0c0b70b4
 FUN_0c0b70fe
+FUN_0c0b7466
 FUN_0c0b756c
 FUN_0c0b7596
 FUN_0c0b75e8
@@ -752,12 +765,14 @@ FUN_0c0b7f08
 FUN_0c0b8156
 FUN_0c0b8590
 FUN_0c0b8624
+FUN_0c0b8950
 FUN_0c0b8a12
 FUN_0c0b8afe
 FUN_0c0b8b42
 FUN_0c0b976e
 FUN_0c0b9b7a
 FUN_0c0b9b8e
+FUN_0c0b9c94
 FUN_0c0b9da0
 FUN_0c0b9efe
 FUN_0c0ba00c
@@ -1013,13 +1028,16 @@ FUN_0c0db1e0
 FUN_0c0db2a0
 FUN_0c0db430
 FUN_0c0db470
+FUN_0c0db490
 FUN_0c0db4d0
+FUN_0c0db4f0
 FUN_0c0db530
 FUN_0c0db550
 FUN_0c0db5a0
 FUN_0c0db640
 FUN_0c0db6b0
 FUN_0c0db730
+FUN_0c0db800
 FUN_0c0db840
 FUN_0c0db850
 FUN_0c0dbbf0
@@ -1044,6 +1062,7 @@ FUN_0c0dcbe0
 FUN_0c0dcc40
 FUN_0c0dcc70
 FUN_0c0dcc80
+FUN_0c0dcca0
 FUN_0c0dccc0
 FUN_0c0dccf0
 FUN_0c0dcd10
@@ -1068,6 +1087,7 @@ FUN_0c0ddeb0
 FUN_0c0ddfd0
 FUN_0c0de000
 FUN_0c0de030
+FUN_0c0de070
 FUN_0c0de190
 FUN_0c0de260
 FUN_0c0de270
@@ -1079,10 +1099,12 @@ FUN_0c0de3b0
 FUN_0c0de3c0
 FUN_0c0de3f0
 FUN_0c0de4a0
+FUN_0c0de6c0
 FUN_0c0de7a0
 FUN_0c0de8c0
 FUN_0c0de8d0
 FUN_0c0de900
+FUN_0c0de960
 FUN_0c0de9c0
 FUN_0c0dea10
 FUN_0c0dea90
@@ -1258,6 +1280,7 @@ FUN_0c21ef80
 FUN_0c220da0
 FUN_0c220da4
 FUN_0c220da8
+FUN_0c220de2
 FUN_0c220e10
 FUN_0c220e2a
 FUN_0c22100e
@@ -1308,6 +1331,7 @@ FUN_0c229e1c
 FUN_0c229e76
 FUN_0c229ef4
 FUN_0c229f08
+FUN_0c22a038
 FUN_0c22a06c
 FUN_0c22a070
 FUN_0c22a080
@@ -1334,6 +1358,7 @@ FUN_0c22a6d8
 FUN_0c22a934
 FUN_0c22abc0
 FUN_0c22b324
+FUN_0c22b3d8
 FUN_0c22b6c8
 FUN_0c22b6e0
 FUN_0c22b6f6
@@ -1344,10 +1369,14 @@ FUN_0c22ba6e
 FUN_0c22baec
 FUN_0c22bbe0
 FUN_0c22bece
+FUN_0c22c4ca
 FUN_0c22c598
 FUN_0c22c602
 FUN_0c22c6d0
+FUN_0c22c884
 FUN_0c22ca1a
+FUN_0c22cb3c
+FUN_0c22cb92
 FUN_0c22ccd0
 FUN_0c22cd00
 FUN_0c22cd18
@@ -1429,10 +1458,12 @@ adxf_CreateAdxFs
 adxf_ExecOne
 adxf_SetAfsFileInfo
 adxsjd_clear
+adxsjd_decode_exec
 adxsjd_decode_prep
 adxt_eos_entry
 adxt_start_sj
 adxt_start_stm
+adxt_stat_decend
 adxt_stat_playend
 buCalcBackupFileSize
 buCloseFile
@@ -1628,6 +1659,7 @@ kmiPurgeMemory
 kmiPutGlobalParam
 kmiReadRegister
 kmiRegisterPhIntHandler
+kmiReleaseHardware
 kmiSetSysConfigFlag
 kmiUnloadDevice
 kmiWaitAccurate
@@ -1790,6 +1822,7 @@ syG2DmaResume
 syG2DmaResumeAll
 syG2DmaSetProtect
 syG2DmaSuspendAll
+syHwCacheFinish
 syHwFinish
 syHwInit
 syHwInit2
@@ -1831,6 +1864,7 @@ thunk_FUN_0c0e2a4c
 thunk_FUN_0c214c44
 thunk_FUN_0c221364
 thunk_FUN_0c22904c
+thunk_FUN_0c22907e
 thunk_FUN_0c22b6fa
 thunk_FUN_0c22b736
 thunk_FUN_0c22b866
