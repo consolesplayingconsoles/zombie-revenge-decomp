@@ -1,0 +1,36 @@
+{
+ "dev": [
+  {
+   "about": "case 0",
+   "poke": {},
+   "steps": 2000000
+  },
+  {
+   "about": "case 2",
+   "poke": {},
+   "steps": 2000000
+  },
+  {
+   "about": "case 4",
+   "poke": {},
+   "steps": 2000000
+  }
+ ],
+ "holdout": [
+  {
+   "about": "case 1",
+   "poke": {},
+   "steps": 2000000
+  },
+  {
+   "about": "case 3",
+   "poke": {},
+   "steps": 2000000
+  },
+  {
+   "about": "case 5",
+   "poke": {},
+   "steps": 2000000
+  }
+ ]
+}
