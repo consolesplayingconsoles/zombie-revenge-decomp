@@ -17,14 +17,14 @@ int FUN_0c0c99a0(int, int);
 int FUN_0c0cbafc(int, int, int, int);
 int FUN_0c0cead0(int);
 int FUN_0c0da2e0(void);
-int FUN_0c0db640(int);
-int FUN_0c0dc4c0(int);
+int nlGetMatrix(int);
+int nlPopMatrix(int);
 int FUN_0c0dc5a0(void);
-int FUN_0c0dc5d0(void);
-int FUN_0c0dc890(int);
+int nlQuickInvertMatrix(void);
+int nlRotateAY(int);
 int FUN_0c0dcca0(int);
-int FUN_0c0dced0(int, int);
-int FUN_0c0dcef0(int, int, int);
+int nlSubVector(int, int);
+int nlSubVector3op(int, int, int);
 int FUN_0c0de310(float, float, float);
 int FUN_0c0df280(int, int);
 int FUN_0c0e14c4(int);
@@ -32,14 +32,14 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e4428(int);
 int FUN_0c0e5dc0(void);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
 int FUN_0c0ed8a8(int, int, int);
 int FUN_0c21038e(void);
 int FUN_0c211122(int, int);
 int FUN_0c229000(int, int, int);
-int FUN_0c229d7e(int, ...);
-int FUN_0c22a652(int, int, int, int);
+int ADXERR_CallErrFunc(int, ...);
+int ADXSTMF_Create(int, int, int, int);
 int FUN_0c232624(int, int, int);
 int FUN_0c23382c(int, int, int, int, int);
 extern int _builtin_get_imask(void);
@@ -103,7 +103,7 @@ int kmiInitInterrupt(void);
 void syChainInit(void);
 int buRenameFile(int a4, int a5, int a6);
 int _pd_peripheral_set_id(int a4, int a5);
-int FUN_0c229122(int a4, int a5, int a6, int a7);
+int fmMngChkEmptyData(int a4, int a5, int a6, int a7);
 int kbCfgIni(int a4, int a5, int a6);
 int mpdrv_clear_deviceinfo(int a4);
 
@@ -132,7 +132,7 @@ int FUN_0c068d54(int a4)
 
     t1 = FUN_0c0e19aa(0xC068DA8, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     FUN_0c0e6248();
     *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FA502);
     *(unsigned int *)((t1 + 0x8C)) = a4;
@@ -145,7 +145,7 @@ int FUN_0c07a89a(int a4)
 
     t1 = FUN_0c0e19aa(0xC07A944, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     FUN_0c0e6248();
     *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FFD62);
     *(unsigned int *)((t1 + 0x8C)) = a4;
@@ -164,7 +164,7 @@ int FUN_0c075256(void)
     for (;;) {
         t3 = FUN_0c0e19aa(0xC0751C8, 0x44, (*(int *)0xC23ECE4));
         FUN_0c0e19d0(t3);
-        t5 = FUN_0c0e61d4();
+        t5 = _quick_odd_mvn();
         t0 = (t0 + 0x1);
         *(unsigned int *)((t3 + 0x3C)) = (*(int *)((t1 + 0xC)));
         t1 = (t1 + 0x10);
@@ -179,8 +179,8 @@ int FUN_0c081e0c(int a4)
 {
     int stk[8];
 
-    FUN_0c0dcef0((((int)stk + 4) + 0x8), (0x254 + a4), (0x278 + a4));
-    FUN_0c0dced0((((int)stk + 4) + 0x8), (0x290 + a4));
+    nlSubVector3op((((int)stk + 4) + 0x8), (0x254 + a4), (0x278 + a4));
+    nlSubVector((((int)stk + 4) + 0x8), (0x290 + a4));
     FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (*(float *)(((int)stk + 12))), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))));
     *(unsigned short *)((a4 + 0x3CC)) = (*(int *)(((int)stk + 4)));
     *(unsigned short *)((a4 + 0x3CE)) = (*(int *)(((int)stk + 8)));
@@ -249,10 +249,10 @@ int ADXSTM_OpenFileRange(int a4, int a5, int a6, int a7)
 
     t0 = FUN_0c21038e();
     if (t0 == 0) {
-        FUN_0c229d7e(0xC237D98);
+        ADXERR_CallErrFunc(0xC237D98);
         t4 = 0x0;
     } else {
-        t2 = FUN_0c22a652(t0, 0x0, (((a6 << 8) << 2) << 1), a7);
+        t2 = ADXSTMF_Create(t0, 0x0, (((a6 << 8) << 2) << 1), a7);
         FUN_0c0ed8a8((t2 + 0x40), a4, 0x20);
         t4 = t2;
     }
@@ -440,11 +440,11 @@ int FUN_0c0761b8(void)
     FUN_0c0e19d0(t1);
     FUN_0c0dc5a0();
     FUN_0c0dcca0(0xC0FE638);
-    FUN_0c0dc890((*(short *)0xC0FE646));
-    FUN_0c0dc5d0();
-    FUN_0c0db640((t1 + 0x34));
+    nlRotateAY((*(short *)0xC0FE646));
+    nlQuickInvertMatrix();
+    nlGetMatrix((t1 + 0x34));
     *(unsigned short *)(((0x76 + t1) + 0x0)) = (*(short *)0xC0FE64A);
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0a3c34(int a4, int a5)
@@ -1206,7 +1206,7 @@ int _pd_peripheral_set_id(int a4, int a5)
     return t23;
 }
 
-int FUN_0c229122(int a4, int a5, int a6, int a7)
+int fmMngChkEmptyData(int a4, int a5, int a6, int a7)
 {
     int t0;
     int t1;

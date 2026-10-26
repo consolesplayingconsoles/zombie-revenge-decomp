@@ -83,7 +83,7 @@ int mpdrv_set_end(void);
 int ADXB_EvokeExpandMono(int a4, int a5);
 int syG2DmaSetProtect(int a4, int a5);
 int vmsfb_end(int a4, int a5, int a6, int a7);
-int FUN_0c232f3c(int a4);
+int mwlSbFreeWork(int a4);
 void FUN_0c22ee8c(int a4);
 void FUN_0c22f7e0(int a4);
 void syMmuDeleteEntry(int a4, int a5, int a6);
@@ -838,7 +838,7 @@ int vmsfb_end(int a4, int a5, int a6, int a7)
     return buFbrEndFiber(a4, a5, a6, a7);
 }
 
-int FUN_0c232f3c(int a4)
+int mwlSbFreeWork(int a4)
 {
     int t2;
     int t3;

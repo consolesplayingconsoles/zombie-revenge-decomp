@@ -8,19 +8,19 @@ int FUN_0c01d984(int);
 int FUN_0c054fb0(int, int);
 int FUN_0c0db470(int, int);
 int FUN_0c0db4d0(int, int);
-int FUN_0c0db550(int, int);
-extern int FUN_0c0db730();
-int FUN_0c0dbe10(int);
-int FUN_0c0dc160(int);
-int FUN_0c0dcc40(void);
+int nlCopyMatrix(int, int);
+extern int nlGetMatrix8();
+int nlLoadMatrix8(int);
+int nlMultiMatrix8(int);
+int nlTransposeMatrix(void);
 int FUN_0c0dcc70(float, float, float);
-int FUN_0c0dce40(int, int, float);
+int nlScaleUnitVector(int, int, float);
 int FUN_0c0de030(int);
 int FUN_0c0de8c0(void);
 int FUN_0c0dea10(int, float);
 int FUN_0c0e59e0(void);
 int FUN_0c0e5dc0(void);
-int FUN_0c220da8(int, int, int, int);
+int ccitt_updcrc(int, int, int, int);
 int FUN_0c22907e(int, int, int);
 int FUN_0c22b324(int, int, int, int);
 int FUN_0c233730(int, int, int);
@@ -36,14 +36,14 @@ int FUN_0c22cb3c(int a4, int a5, int a6, int a7);
 int FUN_0c22c884(int a4, int a5, int a6, int a7);
 void FUN_0c0db490(int a4, int a5, int a6);
 void FUN_0c0db4f0(int a4, int a5, int a6);
-int FUN_0c0de070(float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
+int nl_set_cnv_proj_pers(float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
 int FUN_0c22cb92(int a4, int a5, int a6, int a7);
 void FUN_0c22a038(int a4);
 int ADXB_CopyExtraBufSte(int a4, int a5, int a6, int a7);
-int FUN_0c0de6c0(void);
+int nlInvLightVector(void);
 int FUN_0c0de960(int a4, float f4);
-int FUN_0c220de2(int a4, int a5, int a6, int a7);
-int FUN_0c22b3d8(int a4, int a5, int a6, int a7);
+int crcchk(int a4, int a5, int a6, int a7);
+int ADXF_InitCache_P2_(int a4, int a5, int a6, int a7);
 int FUN_0c0db800(int a4);
 int adxt_stat_decend(int a4, int a5, int a6, int a7);
 int kmiReleaseHardware(void);
@@ -166,18 +166,18 @@ void FUN_0c0db4f0(int a4, int a5, int a6)
     }
 }
 
-int FUN_0c0de070(float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
+int nl_set_cnv_proj_pers(float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
 {
     int t0;
     int t3;
     int t4;
 
-    t0 = ((int (*)(int, float, float, float, float, float, float, float, float))(FUN_0c0db730))(0xC948600, f4, f5, f6, f7, f8, f9, f10, f11);
+    t0 = ((int (*)(int, float, float, float, float, float, float, float, float))(nlGetMatrix8))(0xC948600, f4, f5, f6, f7, f8, f9, f10, f11);
     FUN_0c0de030(0xC9484E8);
-    FUN_0c0dc160(0xC948600);
-    t3 = ((int (*)(int))(FUN_0c0db730))(0xC948580);
-    t4 = ((int (*)(int))(FUN_0c0db730))(0xC9485C0);
-    return FUN_0c0dbe10(0xC948600);
+    nlMultiMatrix8(0xC948600);
+    t3 = ((int (*)(int))(nlGetMatrix8))(0xC948580);
+    t4 = ((int (*)(int))(nlGetMatrix8))(0xC9485C0);
+    return nlLoadMatrix8(0xC948600);
 }
 
 int FUN_0c22cb92(int a4, int a5, int a6, int a7)
@@ -213,40 +213,40 @@ int ADXB_CopyExtraBufSte(int a4, int a5, int a6, int a7)
     return memcpy2(((a6 << 1) + a4), (((a5 + a6) << 1) + a4), a7);
 }
 
-int FUN_0c0de6c0(void)
+int nlInvLightVector(void)
 {
-    FUN_0c0dcc40();
+    nlTransposeMatrix();
     FUN_0c0db4d0(0xC20CE50, 0xC948248);
     FUN_0c0db4d0(0xC20CE60, 0xC948238);
-    FUN_0c0dce40(0xC948238, 0xC948238, (*(float *)0xC0DE790));
-    return FUN_0c0dcc40();
+    nlScaleUnitVector(0xC948238, 0xC948238, (*(float *)0xC0DE790));
+    return nlTransposeMatrix();
 }
 
 int FUN_0c0de960(int a4, float f4)
 {
     if (((*(int *)((a4 + 0x4))) & 16) != 0) {
-        FUN_0c0de6c0();
+        nlInvLightVector();
     }
     FUN_0c0e59e0();
     FUN_0c0de8c0();
     return FUN_0c0dea10(a4, f4);
 }
 
-int FUN_0c220de2(int a4, int a5, int a6, int a7)
+int crcchk(int a4, int a5, int a6, int a7)
 {
     int t1;
     int stk[4];
 
     *(unsigned int *)(((int)stk + 8)) = a4;
     *(unsigned short *)(((int)stk + 4)) = a5;
-    t1 = FUN_0c220da8(0x0, (*(int *)(((int)stk + 8))), 0xA, a7);
+    t1 = ccitt_updcrc(0x0, (*(int *)(((int)stk + 8))), 0xA, a7);
     if ((unsigned short)(*(short *)(((int)stk + 4))) != (unsigned short)(~t1)) {
         return 0xFFFFFFFF;
     }
     return 0x0;
 }
 
-int FUN_0c22b3d8(int a4, int a5, int a6, int a7)
+int ADXF_InitCache_P2_(int a4, int a5, int a6, int a7)
 {
     int t1;
 
@@ -263,9 +263,9 @@ int FUN_0c0db800(int a4)
 
     t0 = *(int *)0xC9482BC;
     if (a4 == 0) {
-        return FUN_0c0dbe10((t0 - 64));
+        return nlLoadMatrix8((t0 - 64));
     }
-    return FUN_0c0db550(a4, (t0 - 64));
+    return nlCopyMatrix(a4, (t0 - 64));
 }
 
 int adxt_stat_decend(int a4, int a5, int a6, int a7)

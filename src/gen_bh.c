@@ -10,15 +10,15 @@ int FUN_0c0685a4(int, int, int, int);
 int FUN_0c0c465c(int);
 int FUN_0c0cc3f8(int);
 int FUN_0c0cc720(void);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
 int FUN_0c0dcca0(int);
-int FUN_0c0dcd10(int, int);
+int nlAddVector(int, int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e61d4(int, float);
+int _quick_odd_mvn(int, float);
 extern float _builtin_sqrtf(float);
 int FUN_0c07903a(int a4, int a5, int a6, int a7);
 int FUN_0c04073a(int a4, float f4);
@@ -37,18 +37,18 @@ int FUN_0c07903a(int a4, int a5, int a6, int a7)
     }
     t3 = *(int *)((a4 + 0x98));
     if ((t3 & 1) != 0) {
-        FUN_0c0dcd10((a4 + 0x30), (a4 + 0x48));
+        nlAddVector((a4 + 0x30), (a4 + 0x48));
         *(float *)((a4 + 0x4C)) = ((*(float *)((a4 + 0x4C))) - 0.049999997f);
         *(unsigned short *)((a4 + 0x60)) = ((*(short *)((a4 + 0x60))) + (*(int *)(((a4 + 0x68) + 0x0))));
         *(unsigned short *)((a4 + 0x62)) = ((*(short *)((a4 + 0x62))) + (*(int *)(((0x6C + a4) + 0x0))));
         *(unsigned short *)((a4 + 0x64)) = ((*(short *)((a4 + 0x64))) + (*(int *)(((0x70 + a4) + 0x0))));
-        FUN_0c0dc510(0x0);
+        nlPushMatrix(0x0);
         FUN_0c0dcca0((a4 + 0x30));
-        FUN_0c0dc950((*(short *)((a4 + 0x64))));
-        FUN_0c0dc890((*(short *)((a4 + 0x62))));
-        FUN_0c0dc6e0((*(short *)((a4 + 0x60))));
+        nlRotateAZ((*(short *)((a4 + 0x64))));
+        nlRotateAY((*(short *)((a4 + 0x62))));
+        nlRotateAX((*(short *)((a4 + 0x60))));
         FUN_0c0c465c((*(int *)((a4 + 0x78))));
-        return FUN_0c0dc4c0(0x1);
+        return nlPopMatrix(0x1);
     }
     return t3;
 }
@@ -105,7 +105,7 @@ int FUN_0c04073a(int a4, float f4)
         }
         t52 = t28;
     } else {
-        FUN_0c0e61d4(a4, f4);
+        _quick_odd_mvn(a4, f4);
         *(float *)(((int)stk + 8)) = 0.0f;
         *(float *)((a4 + 0x26C)) = _builtin_sqrtf(((((FUN_0c01f1b8((((int)stk + 4) + 0x4), (((int)stk + 4) + 0x10))) + (*(float *)(((int)stk + 4)))) - (*(float *)((a4 + 0x34)))) * (*(float *)0xC040888)));
         *(unsigned int *)((a4 + 0x4EC)) = ((*(int *)((a4 + 0x4EC))) + 0x1);

@@ -24,7 +24,7 @@ int FUN_0c228f20(int, int);
 int FUN_0c229028(int);
 int FUN_0c229ce0(void);
 int FUN_0c229d40(void);
-int FUN_0c229d7e(void);
+int ADXERR_CallErrFunc(void);
 int FUN_0c229ef4(void);
 int FUN_0c229f08(void);
 int FUN_0c22a070(int, int);
@@ -93,8 +93,8 @@ void kmiDACControl(void);
 int FUN_0c21ef80(int a4);
 int kmiCopyTextureToTexture(void);
 int kmiPutGlobalParam(void);
-int FUN_0c220da8(int a4, int a5, int a6, int a7);
-int FUN_0c22137a(int a4, int a5);
+int ccitt_updcrc(int a4, int a5, int a6, int a7);
+int gdFsStrcmpi(int a4, int a5);
 int syTmrGenSetClock(int a4);
 int kmGetFreeTextureMem(int a4, int a5);
 int kmChangeContextPaletteBank(int a4);
@@ -102,7 +102,7 @@ int kmChangeVertexPCW(int a4, int a5, int a6);
 int gdFsClose(int a4);
 int syCfgSetSoundMode(int a4, int a5, int a6);
 int kmDiscardVertexBuffer(void);
-int FUN_0c220e2a(int a4);
+int bcdtime2fad(int a4);
 int buSetFileParam(int a4, int a5, int a6);
 int FUN_0c214cdc(int a4, int a5, int a6);
 int FUN_0c218676(int a4, int a5, int a6, int a7);
@@ -139,8 +139,8 @@ int buGetLastError(int a4);
 int buGetFileSize(int a4, int a5);
 int pdVibMxStart(int a4, int a5);
 int adxf_AllocAdxFs(void);
-int FUN_0c2213b4(int a4, int a5, int a6);
-int FUN_0c2213da(int a4);
+int gdFsGetTokenSize(int a4, int a5, int a6);
+int gdFsGetSearchID(int a4);
 void syChainMasterHandlerPVR_H(void);
 int syTmrInit(void);
 int buUnmountDisk(int a4);
@@ -399,7 +399,7 @@ int kmiPutGlobalParam(void)
     return (*(int *)0xC95296C);
 }
 
-int FUN_0c220da8(int a4, int a5, int a6, int a7)
+int ccitt_updcrc(int a4, int a5, int a6, int a7)
 {
     int t4;
     int t5;
@@ -441,7 +441,7 @@ int FUN_0c220da8(int a4, int a5, int a6, int a7)
     return t4;
 }
 
-int FUN_0c22137a(int a4, int a5)
+int gdFsStrcmpi(int a4, int a5)
 {
     int t2;
     int t3;
@@ -592,7 +592,7 @@ int kmDiscardVertexBuffer(void)
     return 0x0;
 }
 
-int FUN_0c220e2a(int a4)
+int bcdtime2fad(int a4)
 {
     int t1;
     int t3;
@@ -672,12 +672,12 @@ int adxf_ChkPrmPt(int a4, int a5)
 {
     if (((int)a4 >= 0) && ((int)a4 < (int)0x100)) {
         if (a5 == 0) {
-            FUN_0c229d7e();
+            ADXERR_CallErrFunc();
             return 0xFFFFFFFD;
         }
         return 0x0;
     }
-    FUN_0c229d7e();
+    ADXERR_CallErrFunc();
     return 0xFFFFFFFD;
 }
 
@@ -749,7 +749,7 @@ int ADXF_ExecServer(void)
 int ADXF_GetNumReqSct(int a4, int a5)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         *(unsigned int *)((a5 + 0x0)) = 0x0;
         return 0xFFFFFFFD;
     }
@@ -1096,7 +1096,7 @@ int adxf_AllocAdxFs(void)
     return t6;
 }
 
-int FUN_0c2213b4(int a4, int a5, int a6)
+int gdFsGetTokenSize(int a4, int a5, int a6)
 {
     int t1;
     int t2;
@@ -1126,7 +1126,7 @@ int FUN_0c2213b4(int a4, int a5, int a6)
     return t3;
 }
 
-int FUN_0c2213da(int a4)
+int gdFsGetSearchID(int a4)
 {
     int t1;
     int t2;
@@ -1462,7 +1462,7 @@ int FUN_0c221364(int a4, int a5)
 int ADXF_GetFsizeSct(int a4)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         return 0xFFFFFFFD;
     }
     return (*(int *)((a4 + 0x10)));
@@ -1471,7 +1471,7 @@ int ADXF_GetFsizeSct(int a4)
 int ADXF_Tell(int a4)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         return 0xFFFFFFFD;
     }
     return (*(int *)((a4 + 0x18)));
@@ -1480,7 +1480,7 @@ int ADXF_Tell(int a4)
 int ADXF_GetFsizeByte(int a4)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         return 0xFFFFFFFD;
     }
     return (*(int *)((a4 + 0x14)));
@@ -1489,7 +1489,7 @@ int ADXF_GetFsizeByte(int a4)
 int ADXF_GetNumReadSct(int a4)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         return 0xFFFFFFFD;
     }
     return (*(int *)((a4 + 0x24)));
@@ -1498,7 +1498,7 @@ int ADXF_GetNumReadSct(int a4)
 int ADXF_GetStat(int a4)
 {
     if (a4 == 0) {
-        FUN_0c229d7e();
+        ADXERR_CallErrFunc();
         return 0xFFFFFFFD;
     }
     return (*(signed char *)((a4 + 0x1)));

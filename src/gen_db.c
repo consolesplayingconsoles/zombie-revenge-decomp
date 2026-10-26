@@ -9,11 +9,11 @@ int FUN_0c0849da(int, int, int, int, int, int, int, int);
 int FUN_0c0a7714(int, int, float, float, float);
 int FUN_0c0c465c(int);
 int FUN_0c0c475c(int, float);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
 int FUN_0c0dcc70(float, float, float);
 int FUN_0c0de3c0(int, int);
-int FUN_0c0e61d4(int, int, int, float, float);
+int _quick_odd_mvn(int, int, int, float, float);
 int FUN_0c229088(int, int);
 int FUN_0c229172(int);
 int FUN_0c232610(int, int, int);
@@ -57,7 +57,7 @@ int FUN_0c02d22a(int a4, int a5, int a6, float f4, float f5)
                 *(unsigned int *)((a4 + 0x558)) = t5;
                 *(unsigned int *)((a4 + 0x508)) = 0x1;
                 *(unsigned int *)((a4 + 0x514)) = 0x1;
-                FUN_0c0e61d4(t5, t9, 0xC2475D4, u16, u7);
+                _quick_odd_mvn(t5, t9, 0xC2475D4, u16, u7);
                 *(unsigned int *)((a4 + 0x4F4)) = 0x17;
             } else {
                 *(unsigned int *)((a4 + 0x558)) = 0x0;
@@ -430,7 +430,7 @@ int FUN_0c057c50(int a4)
     int stk[10];
 
     *(unsigned int *)(((int)stk + 4)) = 0xC2475D4;
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     FUN_0c0dcc70((*(float *)((a4 + 0x30))), ((*(float *)((a4 + 0xB4))) + 0.0699999928f), (*(float *)((a4 + 0x38))));
     if (((*(int *)0xC23A258) & 3) != 0) {
         t7 = 0xC23A258;
@@ -460,7 +460,7 @@ int FUN_0c057c50(int a4)
                     FUN_0c0de3c0(0x4, t8);
                     FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
                     t7 = 0xC0DC4C0;
-                    return FUN_0c0dc4c0(0x1);
+                    return nlPopMatrix(0x1);
                 }
                 continue;
             }
@@ -478,12 +478,12 @@ int FUN_0c057c50(int a4)
                 FUN_0c0de3c0(0x4, t8);
                 FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
                 t7 = 0xC0DC4C0;
-                return FUN_0c0dc4c0(0x1);
+                return nlPopMatrix(0x1);
             }
         }
         FUN_0c0de3c0(0x1, 0x1);
         FUN_0c0c475c(0xC9, 0.899999976f);
         FUN_0c0de3c0(0x4, 0x5);
     }
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }

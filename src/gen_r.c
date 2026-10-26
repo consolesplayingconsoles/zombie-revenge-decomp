@@ -39,8 +39,8 @@ int FUN_0c0e1ade(int);
 int FUN_0c0e1dc4(int);
 int FUN_0c0e35b6(int, int);
 int FUN_0c0e5dc0(void);
-int FUN_0c0e609c(void);
-int FUN_0c0e61d4(void);
+int _quick_evn_mvn(void);
+int _quick_odd_mvn(void);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c229028(void);
 int FUN_0c22b6c8(int);
@@ -91,7 +91,7 @@ int FUN_0c0e1962(int a4, int a5, int a6);
 int FUN_0c0e63ac(int a4, int a5, int a6);
 int FUN_0c0f3f98(int a4, int a5);
 int get_data(int a4);
-int FUN_0c232ef4(int a4);
+int mwlSbAllocWork(int a4);
 int FUN_0c22ba22(int a4, int a5, int a6, int a7);
 int FUN_0c0874ca(int a4, int a5, int a6, int a7);
 int FUN_0c08a1b8(int a4, int a5);
@@ -99,13 +99,13 @@ int FUN_0c092146(int a4);
 int FUN_0c0b70fe(void);
 int FUN_0c0b7f08(int a4, int a5);
 int FUN_0c0cee9e(void);
-float FUN_0c0da010(float f4);
+float nlFloor(float f4);
 float FUN_0c0e5930(int a4);
 int FUN_0c0e1b06(void);
 void FUN_0c0b359e(int a4, int a5);
 int buCloseFile(int a4);
 int buDeleteFileEx(int a4, int a5, int a6);
-int FUN_0c22287e(int a4, int a5, int a6);
+int syMmuDeleteAllEntries(int a4, int a5, int a6);
 int search_fat_free_xross(int a4, int a5, int a6, int a7);
 int syCfgGetIndividualID(int a4, int a5, int a6);
 
@@ -161,7 +161,7 @@ int FUN_0c070b90(int a4, int a5)
 
     t1 = FUN_0c0e19aa(0xC070C96, 0x474, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned int *)((t1 + 0x28C)) = 0x1260;
     *(unsigned int *)((t1 + 0xBC)) = 0x2;
     *(unsigned short *)((t1 + 0x6E)) = a5;
@@ -275,7 +275,7 @@ int FUN_0c08ad98(int a4)
 
     t1 = FUN_0c0e19aa(0xC08AE04, 0xA4, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned short *)((t1 + 0x9A)) = 0x296;
     *(unsigned short *)((t1 + 0xA2)) = 0x1;
     *(float *)((t1 + 0x90)) = 0.375f;
@@ -346,7 +346,7 @@ void FUN_0c01a52c(int a4)
 
 int FUN_0c016c5e(int a4)
 {
-    FUN_0c0e609c();
+    _quick_evn_mvn();
     if (((*(int *)0xC23A1A8) & 1) != 0) {
         FUN_0c0cfb00(a4);
     }
@@ -578,7 +578,7 @@ int FUN_0c0b2e84(int a4)
 
     t1 = FUN_0c0e19aa(0xC0B2ECC, 0xB4, (*(int *)0xC23ECE4));
     *(unsigned int *)((t1 + 0x7C)) = (*(int *)((a4 + 0x8)));
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned int *)(((0x98 + t1) + 0x0)) = ((FUN_0c0da2e0()) & 0x7);
     *(unsigned int *)((t1 + 0x9C)) = 0x0;
     return 0x9C;
@@ -862,7 +862,7 @@ int get_data(int a4)
     return 0x0;
 }
 
-int FUN_0c232ef4(int a4)
+int mwlSbAllocWork(int a4)
 {
     int t0;
     int t1;
@@ -919,7 +919,7 @@ int FUN_0c0874ca(int a4, int a5, int a6, int a7)
 
     t1 = FUN_0c0e19aa(0xC087510, 0x60, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned int *)((t1 + 0x30)) = a4;
     *(unsigned int *)((t1 + 0x5C)) = a6;
     *(unsigned int *)((t1 + 0x58)) = a7;
@@ -988,7 +988,7 @@ int FUN_0c0b7f08(int a4, int a5)
 
     t0 = FUN_0c0e1830(0xC0B7F4E, 0xC8);
     FUN_0c0e19d0(t0);
-    t2 = FUN_0c0e61d4();
+    t2 = _quick_odd_mvn();
     t3 = (0xB4 + t0);
     t4 = a5;
     for (;;) {
@@ -1040,7 +1040,7 @@ int FUN_0c0cee9e(void)
     return t2;
 }
 
-float FUN_0c0da010(float f4)
+float nlFloor(float f4)
 {
     if ((*(float *)0xC0DA134) > _builtin_fabsf(f4)) {
         if (0.0f > f4) {
@@ -1140,7 +1140,7 @@ int buDeleteFileEx(int a4, int a5, int a6)
     return t3;
 }
 
-int FUN_0c22287e(int a4, int a5, int a6)
+int syMmuDeleteAllEntries(int a4, int a5, int a6)
 {
     int t1;
     int t2;

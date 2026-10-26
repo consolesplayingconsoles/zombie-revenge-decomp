@@ -7,13 +7,13 @@ int FUN_0c0c0340(int);
 int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
 int FUN_0c0da410(int);
 int FUN_0c0db0a0(int, int);
-int FUN_0c0db0e0(int, ...);
-extern int FUN_0c0db730();
-int FUN_0c0dbe10(int);
-int FUN_0c0dc1a0(int);
+int nlPrintf(int, ...);
+extern int nlGetMatrix8();
+int nlLoadMatrix8(int);
+int nlMultiMatrixRevOrder8(int);
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
-int FUN_0c0e61d4(int, float, float, float);
+int _quick_odd_mvn(int, float, float, float);
 int mwRnaErrCallFunc(int, int, int, int);
 int FUN_0c08c170(int a4, int a5, int a6, int a7);
 void FUN_0c0a5754(int a4, int a5, int a6, int a7);
@@ -145,10 +145,10 @@ int FUN_0c0de160(float f4, float f5, float f6, float f7, float f8, float f9, flo
     int t0;
     int t2;
 
-    t0 = ((int (*)(int, float, float, float, float, float, float, float, float))(FUN_0c0db730))(0xC94C640, f4, f5, f6, f7, f8, f9, f10, f11);
-    FUN_0c0dc1a0(0xC9485C0);
-    t2 = ((int (*)(int))(FUN_0c0db730))(0xC948580);
-    return FUN_0c0dbe10(0xC94C640);
+    t0 = ((int (*)(int, float, float, float, float, float, float, float, float))(nlGetMatrix8))(0xC94C640, f4, f5, f6, f7, f8, f9, f10, f11);
+    nlMultiMatrixRevOrder8(0xC9485C0);
+    t2 = ((int (*)(int))(nlGetMatrix8))(0xC948580);
+    return nlLoadMatrix8(0xC94C640);
 }
 
 int mwRnaGetTransSw(int a4, int a5, int a6, int a7)
@@ -168,7 +168,7 @@ int FUN_0c0ce5b2(Stk3 s)
     stk[5] = s.w[1];
     stk[6] = s.w[2];
     FUN_0c0db0a0((*(int *)(((((int)stk + 8) + 0x8) + 0x0))), (*(int *)(((((int)stk + 8) + 0x8) + 0x4))));
-    return (FUN_0c0db0e0(((*(int *)(((((int)stk + 8) + 0x8) + 0x8))))));
+    return (nlPrintf(((*(int *)(((((int)stk + 8) + 0x8) + 0x8))))));
 }
 
 int mwRnaGetNumRoom(int a4, int a5, int a6, int a7)
@@ -194,7 +194,7 @@ int FUN_0c0de310(float f4, float f5, float f6)
     *(float *)0xC20CE80 = f4;
     *(float *)0xC20CE84 = f5;
     *(float *)0xC20CE88 = f6;
-    return (FUN_0c0e61d4(0xC20CE80, f4, f5, f6));
+    return (_quick_odd_mvn(0xC20CE80, f4, f5, f6));
 }
 
 int FUN_0c22c716(int a4, int a5, int a6, int a7)

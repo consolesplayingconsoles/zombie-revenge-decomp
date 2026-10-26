@@ -18,13 +18,13 @@ int FUN_0c096d6c(void);
 int FUN_0c0c3ef8(int);
 int FUN_0c0c47ae(int);
 int FUN_0c0ce486(void);
-int FUN_0c0dc1e0(int);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
-int FUN_0c0dcb80(float, float, float);
+int nlMultiMatrixRevOrder(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
+int nlScale(float, float, float);
 int FUN_0c0dcca0(int);
-int FUN_0c0dcd10(int, int);
+int nlAddVector(int, int);
 int FUN_0c0de000(float);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
@@ -34,10 +34,10 @@ int FUN_0c0e4f04(int, int);
 int FUN_0c0e4fbe(int, int);
 int FUN_0c0e505a(int, int);
 int FUN_0c0e509a(int, int, int);
-int FUN_0c0e609c(void);
-int FUN_0c0e61d4(int, int, int);
+int _quick_evn_mvn(void);
+int _quick_odd_mvn(int, int, int);
 int FUN_0c0e62e0(int, int, int);
-int FUN_0c0f2d14(int, int, int, int, float, float, float, float, float, float, float, float);
+int setjmp(int, int, int, int, float, float, float, float, float, float, float, float);
 int FUN_0c235d04(int);
 int FUN_0c235ea4(int, int);
 int kmSetFogDensity(int);
@@ -61,8 +61,8 @@ int FUN_0c0e1dfe(int a4, int a5);
 int FUN_0c232e00(int a4);
 int FUN_0c2334c8(int a4, int a5, int a6);
 int buFbrSleepFiber(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
-int FUN_0c23601c(int a4, int a5);
-int FUN_0c235f56(int a4, int a5);
+int syIntAdrChk_printh(int a4, int a5);
+int syIntAdrChk_getchar(int a4, int a5);
 int FUN_0c2344ba(int a4);
 int ADXB_CheckWav(int a4);
 int ADXB_CheckAu(int a4);
@@ -164,7 +164,7 @@ int FUN_0c022a64(int a4)
     *(float *)((a4 + 0x48)) = ((*(float *)((a4 + 0x60))) * u1);
     *(float *)((a4 + 0x4C)) = ((*(float *)((a4 + 0x64))) * u1);
     *(float *)((a4 + 0x50)) = ((*(float *)((a4 + 0x68))) * u1);
-    return FUN_0c0dcd10((a4 + 0x48), (0x4B0 + a4));
+    return nlAddVector((a4 + 0x48), (0x4B0 + a4));
 }
 
 int FUN_0c02a220(int a4)
@@ -213,7 +213,7 @@ int FUN_0c0336d6(int a4, int a5, int a6)
     *(unsigned int *)(((int)stk + 8)) = a5;
     *(unsigned int *)(((int)stk + 12)) = a6;
     *(volatile int *)(((*(int *)(((int)stk + 4))) + 0xBC));
-    FUN_0c0e61d4(a4, a5, a6);
+    _quick_odd_mvn(a4, a5, a6);
     t4 = *(int *)(((int)stk + 8));
     t5 = *(short *)(((*(int *)(((int)stk + 4))) + 0x6E));
     *(volatile int *)(((int)stk + 12));
@@ -257,8 +257,8 @@ void FUN_0c0c99d0(int a4)
         u0 = *(float *)0xC0C9AC4;
         *(float *)0xC20A224 = (((float)a4 * u0) + (*(float *)0xC0C9AC8));
         u2 = *(float *)0xC0C9ACC;
-        FUN_0c0dcb80((((float)a4 * u0) + u2), (((float)a4 * u0) + u2), (((float)a4 * u0) + u2));
-        FUN_0c0dc1e0(0xC20A1EC);
+        nlScale((((float)a4 * u0) + u2), (((float)a4 * u0) + u2), (((float)a4 * u0) + u2));
+        nlMultiMatrixRevOrder(0xC20A1EC);
     return;
     }
 }
@@ -266,9 +266,9 @@ void FUN_0c0c99d0(int a4)
 int FUN_0c0bb250(int a4, int a5, int a6, int a7)
 {
     FUN_0c0dcca0(a5);
-    FUN_0c0dc950((-(*(short *)((a6 + 0x0)))));
-    FUN_0c0dc890((-(*(short *)(((a6 + 0x2) + 0x0)))));
-    FUN_0c0dc6e0((*(short *)((((a6 + 0x2) + 0x2) + 0x0))));
+    nlRotateAZ((-(*(short *)((a6 + 0x0)))));
+    nlRotateAY((-(*(short *)(((a6 + 0x2) + 0x0)))));
+    nlRotateAX((*(short *)((((a6 + 0x2) + 0x2) + 0x0))));
     FUN_0c0de000((*(float *)((a4 + 0x280))));
     return FUN_0c0c47ae((*(int *)((a7 + 0x0))));
 }
@@ -433,7 +433,7 @@ int buFbrSleepFiber(int a4, int a5, int a6, int a7, float f4, float f5, float f6
         t5 = ((*(int *)(((*(int *)0xC990CB0) + 0x204))) + a4);
     }
     *(unsigned int *)((t1 + 0x14)) = t5;
-    t9 = FUN_0c0f2d14(((*(int *)(((*(int *)0xC990CB0) + 0xD78))) + 0x18), a5, a6, a7, f4, f5, f6, f7, f8, f9, f10, f11);
+    t9 = setjmp(((*(int *)(((*(int *)0xC990CB0) + 0xD78))) + 0x18), a5, a6, a7, f4, f5, f6, f7, f8, f9, f10, f11);
     t12 = t9;
     if (t9 == 0) {
         t12 = (longjmp(((*(int *)0xC990CB0) + 0x4), 0x1));
@@ -441,7 +441,7 @@ int buFbrSleepFiber(int a4, int a5, int a6, int a7, float f4, float f5, float f6
     return t12;
 }
 
-int FUN_0c23601c(int a4, int a5)
+int syIntAdrChk_printh(int a4, int a5)
 {
     int t0;
     int t1;
@@ -462,7 +462,7 @@ int FUN_0c23601c(int a4, int a5)
     return t3;
 }
 
-int FUN_0c235f56(int a4, int a5)
+int syIntAdrChk_getchar(int a4, int a5)
 {
     int t0;
     int t11;
@@ -556,7 +556,7 @@ int SJ_SplitChunk(int a4, int a5, int a6, int a7)
 {
     int t0;
 
-    t0 = FUN_0c0e609c();
+    t0 = _quick_evn_mvn();
     *(unsigned int *)((a7 + 0x4)) = (*(int *)((a6 + 0x4)));
     if ((int)(*(int *)((a6 + 0x4))) > (int)a5) {
         *(unsigned int *)((a6 + 0x4)) = a5;

@@ -22,16 +22,16 @@ int FUN_0c0d80c0(int);
 float FUN_0c0da410(int);
 float FUN_0c0da560(int, float);
 float FUN_0c0da610(int, float);
-int FUN_0c0dc1e0(int);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
+int nlMultiMatrixRevOrder(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
 int FUN_0c0dcc70(float, float, float);
-int FUN_0c0dccc0(void);
+int nlUnitMatrix(void);
 int FUN_0c0de000(float);
-int FUN_0c0de190(int);
+int nlObjPut(int);
 int FUN_0c0de310(float, float, float);
 int FUN_0c0e14c4(int);
 int FUN_0c0e1830(int, int);
@@ -43,8 +43,8 @@ int FUN_0c0e49a0(int, int, int);
 int FUN_0c0e4ece(int, int, int);
 int FUN_0c0e5dc0(void);
 int FUN_0c0e5f1c(void);
-int FUN_0c0e609c(void);
-int FUN_0c0e61d4(void);
+int _quick_evn_mvn(void);
+int _quick_odd_mvn(void);
 int FUN_0c2212e0(int);
 int FUN_0c22b402(int, int);
 int FUN_0c22b6c8(int);
@@ -82,10 +82,10 @@ int FUN_0c0d6592(int a4, int a5);
 void FUN_0c0da510(float f4);
 int FUN_0c0a92b0(int a4);
 void FUN_0c0da5c0(float f4);
-int FUN_0c0de3f0(float f4, float f5);
+int nlObjPutSetSaturate(float f4, float f5);
 int FUN_0c0e5008(int a4, int a5, int a6);
 int adxf_CloseSjStm(int a4);
-int FUN_0c22130c(int a4, int a5, int a6);
+int gdFsStrncmpi(int a4, int a5, int a6);
 int FUN_0c22c598(int a4, int a5, int a6, int a7);
 int FUN_0c2339e8(int a4, int a5, int a6, int a7);
 int FUN_0c0a447c(int a4, int a5);
@@ -93,7 +93,7 @@ int FUN_0c0ae1ae(void);
 int FUN_0c0b70b4(void);
 void FUN_0c0bfa46(int a4);
 int FUN_0c0c47ae(int a4);
-void FUN_0c0d88f0(void);
+void sys_init(void);
 int FUN_0c0e4428(int a4);
 int FUN_0c0e631c(int a4, int a5, int a6, int a7);
 int FUN_0c0e6490(int a4, int a5);
@@ -179,7 +179,7 @@ int FUN_0c01d276(int a4, int a5, int a6, int a7)
     *(unsigned int *)((t0 + 0x38)) = (*(int *)((a4 + 0xBC)));
     *(unsigned int *)((t0 + 0x30)) = (*(int *)((a4 + 0xC0)));
     *(unsigned int *)((t0 + 0x34)) = ((a5 << 16) | a6);
-    return (FUN_0c0e61d4());
+    return (_quick_odd_mvn());
 }
 
 int FUN_0c0548cc(int a4)
@@ -206,14 +206,14 @@ int FUN_0c054918(int a4)
 
 int FUN_0c032f3e(int a4)
 {
-    FUN_0c0dc510(0x0);
-    FUN_0c0dccc0();
+    nlPushMatrix(0x0);
+    nlUnitMatrix();
     FUN_0c0dcc70((*(float *)((a4 + 0x30))), (*(float *)((a4 + 0x34))), (*(float *)((a4 + 0x38))));
-    FUN_0c0dc950((*(short *)((a4 + 0x70))));
-    FUN_0c0dc890((*(short *)((a4 + 0x6E))));
-    FUN_0c0dc6e0((*(short *)((a4 + 0x6C))));
+    nlRotateAZ((*(short *)((a4 + 0x70))));
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    nlRotateAX((*(short *)((a4 + 0x6C))));
     FUN_0c0c47ae((*(int *)((a4 + 0x400))));
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c06ab38(void)
@@ -264,11 +264,11 @@ int FUN_0c06ea7e(int a4, int a5, int a6, int a7)
 {
     FUN_0c0685a4(a4, a5, a6, a7);
     if (((*(short *)((a4 + 0x64))) & (*(int *)0xC23ED88)) != 0) {
-        FUN_0c0dc510(0x0);
+        nlPushMatrix(0x0);
         FUN_0c0dcc70((*(float *)((a4 + 0x30))), (*(float *)((a4 + 0x34))), (*(float *)((a4 + 0x38))));
-        FUN_0c0dc890((*(short *)((a4 + 0x62))));
+        nlRotateAY((*(short *)((a4 + 0x62))));
         FUN_0c0c473c((*(int *)((a4 + 0x78))));
-        return FUN_0c0dc4c0(0x1);
+        return nlPopMatrix(0x1);
     }
     return 0x64;
 }
@@ -277,10 +277,10 @@ int FUN_0c07c8ea(int a4)
 {
     int t8;
 
-    FUN_0c0dc510((a4 + 0x38));
+    nlPushMatrix((a4 + 0x38));
     FUN_0c0de000((*(float *)((a4 + 0x78))));
     FUN_0c0c4898((*(short *)((a4 + 0x30))), ((*(float *)((a4 + 0x34))) * (float)(*(short *)((a4 + 0x32)))));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     t8 = *(short *)((a4 + 0x32));
     *(unsigned short *)((a4 + 0x32)) = (t8 - 1);
     if ((int)(short)(t8 - 1) <= 0) {
@@ -292,7 +292,7 @@ int FUN_0c07c8ea(int a4)
 int FUN_0c08498e(float f4, float f5, float f6)
 {
     FUN_0c0de310((f4 * (*(float *)0xC247EE8)), (f5 * (*(float *)0xC247EEC)), (f6 * (*(float *)0xC247EF0)));
-    return FUN_0c0de3f0((-1.0f), (-1.0f));
+    return nlObjPutSetSaturate((-1.0f), (-1.0f));
 }
 
 int FUN_0c086c1e(int a4, int a5, int a6, float f4)
@@ -301,7 +301,7 @@ int FUN_0c086c1e(int a4, int a5, int a6, float f4)
 
     t1 = FUN_0c0e19aa(0xC086CAC, 0x50, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e609c();
+    _quick_evn_mvn();
     *(float *)((t1 + 0x40)) = f4;
     *(unsigned int *)((t1 + 0x48)) = a5;
     *(unsigned int *)((t1 + 0x4C)) = a6;
@@ -314,7 +314,7 @@ int FUN_0c08f5d0(int a4, int a5)
 
     t1 = FUN_0c0e19aa(0xC08C4D8, 0xA4, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned short *)((t1 + 0x8A)) = a5;
     *(float *)((t1 + 0x90)) = (*(float *)0xC08F720);
     *(unsigned short *)((t1 + 0x9A)) = 0x328;
@@ -393,7 +393,7 @@ int FUN_0c0d70c8(int a4)
 
 int FUN_0c0d6592(int a4, int a5)
 {
-    return (FUN_0c0e609c());
+    return (_quick_evn_mvn());
 }
 
 void FUN_0c0da510(float f4)
@@ -446,7 +446,7 @@ void FUN_0c0da5c0(float f4)
     *(volatile float *)0xC0DA694;
 }
 
-int FUN_0c0de3f0(float f4, float f5)
+int nlObjPutSetSaturate(float f4, float f5)
 {
     *(float *)0xC20CEA0 = f5;
     *(float *)0xC20CEA4 = (-f4);
@@ -527,7 +527,7 @@ int adxf_CloseSjStm(int a4)
     return t31;
 }
 
-int FUN_0c22130c(int a4, int a5, int a6)
+int gdFsStrncmpi(int a4, int a5, int a6)
 {
     int t14;
     int t2;
@@ -692,15 +692,15 @@ void FUN_0c0bfa46(int a4)
 int FUN_0c0c47ae(int a4)
 {
     if (((*(int *)(((((a4 << 1) + a4) << 2) + 0xC2623A0))) != 0) && (a4 != 0)) {
-        FUN_0c0dc510(0x0);
-        FUN_0c0dc1e0(((*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC))) + 0x2AC));
-        FUN_0c0de190((*(int *)(((((a4 << 1) + a4) << 2) + 0xC2623A0))));
-        return FUN_0c0dc4c0(0x1);
+        nlPushMatrix(0x0);
+        nlMultiMatrixRevOrder(((*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC))) + 0x2AC));
+        nlObjPut((*(int *)(((((a4 << 1) + a4) << 2) + 0xC2623A0))));
+        return nlPopMatrix(0x1);
     }
     return 0xC2623A0;
 }
 
-void FUN_0c0d88f0(void)
+void sys_init(void)
 {
     int t0;
     int t1;

@@ -6,7 +6,7 @@ int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
 int FUN_0c0d9dc0(float, float);
 float FUN_0c0d9e90(int);
 int FUN_0c0e19f2(int);
-int FUN_0c0e61d4(int, int, float, float, float, float);
+int _quick_odd_mvn(int, int, float, float, float, float);
 int FUN_0c08a8e0(int a4, int a5, float f4);
 int FUN_0c08e6d8(int a4);
 
@@ -38,7 +38,7 @@ int FUN_0c08a8e0(int a4, int a5, float f4)
         if ((_builtin_fabsf((u1 - u0)) * u5) > u5) {
             u6 = u5;
         }
-        FUN_0c0e61d4(a4, a5, u2, _builtin_fabsf((u1 - u0)), u5, u1);
+        _quick_odd_mvn(a4, a5, u2, _builtin_fabsf((u1 - u0)), u5, u1);
         *(float *)(((int)stk + 16)) = f4;
         *(unsigned int *)(((int)stk + 8)) = ((0x154 + a4) + (((a5 << 1) + a5) << 2));
         t13 = FUN_0c0d9dc0(((*(float *)((((((((a5 << 1) + a5) << 2) << 2) << 2) + 0xC23F268) + 0x0))) - (*(float *)((((0x154 + a4) + (((a5 << 1) + a5) << 2)) + 0x0)))), ((*(float *)((((((((a5 << 1) + a5) << 2) << 2) << 2) + 0xC23F268) + 0x8))) - (*(float *)((((0x154 + a4) + (((a5 << 1) + a5) << 2)) + 0x8)))));
@@ -52,7 +52,7 @@ int FUN_0c08a8e0(int a4, int a5, float f4)
         u26 = u0;
         u27 = u1;
     }
-    return (FUN_0c0e61d4(t21, t22, u24, u25, u26, u27));
+    return (_quick_odd_mvn(t21, t22, u24, u25, u26, u27));
 }
 
 int FUN_0c08e6d8(int a4)

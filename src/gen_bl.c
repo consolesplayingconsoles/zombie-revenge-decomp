@@ -5,12 +5,12 @@ int FUN_0c0845f8(int, int);
 int FUN_0c0a80e2(int, int, int);
 int FUN_0c0cc3f8(int);
 int FUN_0c0db0a0(int, int);
-int FUN_0c0db0e0(int, ...);
+int nlPrintf(int, ...);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e40ec(int, int, int);
-int FUN_0c0e61d4(int);
+int _quick_odd_mvn(int);
 int FUN_0c0c0fb8(int a4);
 int FUN_0c0c105a(int a4);
 int FUN_0c0c0fee(int a4);
@@ -31,7 +31,7 @@ int FUN_0c0c0fb8(int a4)
     int t6;
 
     FUN_0c0db0a0((*(int *)((a4 + 0x34))), (*(int *)((a4 + 0x38))));
-    t5 = FUN_0c0db0e0(0xC1E3A20, ((*(int *)((a4 + 0x40)))));
+    t5 = nlPrintf(0xC1E3A20, ((*(int *)((a4 + 0x40)))));
     t6 = *(int *)((a4 + 0x30));
     *(unsigned int *)((a4 + 0x30)) = (t6 - 1);
     if ((int)(t6 - 1) <= 0) {
@@ -46,7 +46,7 @@ int FUN_0c0c105a(int a4)
     int t4;
 
     FUN_0c0db0a0((*(int *)((a4 + 0x34))), (*(int *)((a4 + 0x38))));
-    t3 = FUN_0c0db0e0(0xC1E3A2C, (0x44 + a4));
+    t3 = nlPrintf(0xC1E3A2C, (0x44 + a4));
     t4 = *(int *)((a4 + 0x30));
     *(unsigned int *)((a4 + 0x30)) = (t4 - 1);
     if ((int)(t4 - 1) <= 0) {
@@ -61,7 +61,7 @@ int FUN_0c0c0fee(int a4)
     int t5;
 
     FUN_0c0db0a0((*(int *)((a4 + 0x34))), (*(int *)((a4 + 0x38))));
-    t4 = FUN_0c0db0e0(0xC1E3A24, (*(float *)((a4 + 0x3C))));
+    t4 = nlPrintf(0xC1E3A24, (*(float *)((a4 + 0x3C))));
     t5 = *(int *)((a4 + 0x30));
     *(unsigned int *)((a4 + 0x30)) = (t5 - 1);
     if ((int)(t5 - 1) <= 0) {
@@ -76,7 +76,7 @@ int FUN_0c0c1024(int a4)
     int t6;
 
     FUN_0c0db0a0((*(int *)((a4 + 0x34))), (*(int *)((a4 + 0x38))));
-    t5 = FUN_0c0db0e0(0xC1E3A28, ((*(int *)((a4 + 0x40)))));
+    t5 = nlPrintf(0xC1E3A28, ((*(int *)((a4 + 0x40)))));
     t6 = *(int *)((a4 + 0x30));
     *(unsigned int *)((a4 + 0x30)) = (t6 - 1);
     if ((int)(t6 - 1) <= 0) {
@@ -165,7 +165,7 @@ void FUN_0c08214c(int a4)
     *(unsigned int *)((a4 + 0x30)) = (t0 - 1);
     if ((int)(t0 - 1) <= 0) {
         *(unsigned int *)0xC247D04 = (*(int *)((a4 + 0x34)));
-        FUN_0c0e61d4(a4);
+        _quick_odd_mvn(a4);
         FUN_0c0e19f2();
     return;
     }

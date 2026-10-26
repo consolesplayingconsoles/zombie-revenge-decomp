@@ -1,20 +1,20 @@
 /* Straight-line functions with calls and guards (batch gen_k): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0d9ad0(int, int, int, float);
-float FUN_0c0da010(float);
-float FUN_0c0da190(float);
+int nlSetBackColorZ(int, int, int, float);
+float nlFloor(float);
+float nlLog(float);
 int FUN_0c0da2e0(void);
 int FUN_0c0da510(float);
 int FUN_0c0dbda0(int);
-int FUN_0c0dc100(int);
-int FUN_0c0dc160(int);
-int FUN_0c0dc1a0(int);
-int FUN_0c0dc510(int);
+int nlMultiMatrix(int);
+int nlMultiMatrix8(int);
+int nlMultiMatrixRevOrder8(int);
+int nlPushMatrix(int);
 int FUN_0c0dd260(void);
 int FUN_0c0dd280(void);
-int FUN_0c0de270(float, float, float);
-int FUN_0c0de2d0(float, float, float);
+int nlObjPutSetSpecularEyeDirectionF(float, float, float);
+int nlObjPutSetLightDirectionF(float, float, float);
 int FUN_0c0e1dfe(int);
 int FUN_0c0e1e40(int);
 int FUN_0c0e2030(int);
@@ -113,8 +113,8 @@ float FUN_0c0dcd80(int a4, int a5)
 
 int FUN_0c0de8d0(void)
 {
-    FUN_0c0dc510(0xC948580);
-    FUN_0c0dc100((*(int *)0xC9482D4));
+    nlPushMatrix(0xC948580);
+    nlMultiMatrix((*(int *)0xC9482D4));
     return FUN_0c0dc220();
 }
 
@@ -263,19 +263,19 @@ float FUN_0c0d9e70(float f4)
 {
     float t0;
 
-    t0 = FUN_0c0da010((-f4));
+    t0 = nlFloor((-f4));
     return (-t0);
 }
 
 int FUN_0c0dde90(void)
 {
     FUN_0c0dbda0(0xC9484E8);
-    return FUN_0c0dc100(0xC9484A8);
+    return nlMultiMatrix(0xC9484A8);
 }
 
 int FUN_0c0de2a0(int a4)
 {
-    return FUN_0c0de270((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
+    return nlObjPutSetSpecularEyeDirectionF((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
 }
 
 int FUN_0c0df4c0(int a4)
@@ -305,7 +305,7 @@ float FUN_0c0da210(float f4)
 {
     float t0;
 
-    t0 = FUN_0c0da190(f4);
+    t0 = nlLog(f4);
     return (t0 / (*(float *)0xC0DA25C));
 }
 
@@ -313,7 +313,7 @@ float FUN_0c0da220(float f4)
 {
     float t0;
 
-    t0 = FUN_0c0da190(f4);
+    t0 = nlLog(f4);
     return (t0 / 0.693147123f);
 }
 
@@ -386,13 +386,13 @@ void FUN_0c0dcc70(float f4, float f5, float f6)
 
 int FUN_0c0de2c0(int a4)
 {
-    return FUN_0c0de2d0((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
+    return nlObjPutSetLightDirectionF((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
 }
 
 int FUN_0c0de8c0(void)
 {
-    FUN_0c0dc510(0x0);
-    return FUN_0c0dc1a0(0xC948580);
+    nlPushMatrix(0x0);
+    return nlMultiMatrixRevOrder8(0xC948580);
 }
 
 int FUN_0c0e1e6a(int a4)
@@ -436,7 +436,7 @@ int FUN_0c0d9ab0(int a4, int a5, int a6, int a7)
 
 int FUN_0c0dc240(void)
 {
-    FUN_0c0dc510((*(int *)0xC9482D4));
+    nlPushMatrix((*(int *)0xC9482D4));
     return FUN_0c0dc220();
 }
 
@@ -503,7 +503,7 @@ void FUN_0c0daf60(int a4, int a5)
 
 int FUN_0c0dc220(void)
 {
-    return FUN_0c0dc160(((*(int *)0xC9482BC) - 64));
+    return nlMultiMatrix8(((*(int *)0xC9482BC) - 64));
 }
 
 void FUN_0c0de260(float f4)

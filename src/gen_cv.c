@@ -3,11 +3,11 @@
 
 int FUN_0c0555ca(int, int, int, int);
 int FUN_0c0db4d0(int, int);
-int FUN_0c0dc4c0(int);
+int nlPopMatrix(int);
 int FUN_0c0dc5a0(void);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0e61d4(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int _quick_odd_mvn(int);
 void FUN_0c036256(int a4);
 
 void FUN_0c036256(int a4)
@@ -43,7 +43,7 @@ void FUN_0c036256(int a4)
                     } else {
                         t19 = (*(int *)((a4 + 0x1E0)));
                     }
-                    FUN_0c0e61d4(0xFFFF8000);
+                    _quick_odd_mvn(0xFFFF8000);
                     *(float *)(((int)stk + 32)) = ((*(float *)(((int)stk + 32))) + (*(float *)0xC036448));
                     *(float *)(((int)stk + 16)) = 0.0f;
                     *(float *)(((int)stk + 20)) = 0.0f;
@@ -52,10 +52,10 @@ void FUN_0c036256(int a4)
                     t26 = t7;
                     for (;;) {
                         FUN_0c0dc5a0();
-                        FUN_0c0dc890(t25);
-                        FUN_0c0dc6e0(0xFFFFE000);
+                        nlRotateAY(t25);
+                        nlRotateAX(0xFFFFE000);
                         FUN_0c0db4d0((((int)stk + 4) + 0xC), ((int)stk + 4));
-                        FUN_0c0dc4c0(0x1);
+                        nlPopMatrix(0x1);
                         FUN_0c0555ca(a4, (*(int *)((t26 + 0x4))), (((int)stk + 4) + 0x18), ((int)stk + 4));
                         t26 = (t26 + 0x8);
                         t25 = (t25 + 0x1000);
@@ -74,7 +74,7 @@ void FUN_0c036256(int a4)
                         } else {
                             t59 = (*(int *)((a4 + 0x1E0)));
                         }
-                        FUN_0c0e61d4(0xFFFF8000);
+                        _quick_odd_mvn(0xFFFF8000);
                         *(float *)(((int)stk + 32)) = ((*(float *)(((int)stk + 32))) + (*(float *)0xC036448));
                         *(float *)(((int)stk + 16)) = 0.0f;
                         *(float *)(((int)stk + 20)) = 0.0f;
@@ -83,10 +83,10 @@ void FUN_0c036256(int a4)
                         t66 = t7;
                         for (;;) {
                             FUN_0c0dc5a0();
-                            FUN_0c0dc890(t65);
-                            FUN_0c0dc6e0(0xFFFFE000);
+                            nlRotateAY(t65);
+                            nlRotateAX(0xFFFFE000);
                             FUN_0c0db4d0((((int)stk + 4) + 0xC), ((int)stk + 4));
-                            FUN_0c0dc4c0(0x1);
+                            nlPopMatrix(0x1);
                             FUN_0c0555ca(a4, (*(int *)((t66 + 0x4))), (((int)stk + 4) + 0x18), ((int)stk + 4));
                             t66 = (t66 + 0x8);
                             t65 = (t65 + 0x1000);

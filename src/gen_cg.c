@@ -4,7 +4,7 @@
 int FUN_0c0a6688(int, int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c0e6248(int);
 int FUN_0c05f6f8(int a4);
 
@@ -26,8 +26,8 @@ int FUN_0c05f6f8(int a4)
     *(unsigned int *)((t3 + 0x1F8)) = 0xD;
     *(volatile int *)(((int)stk + 4));
     FUN_0c0e6248(0xA);
-    FUN_0c0e61d4();
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
+    _quick_odd_mvn();
     *(unsigned int *)((t3 + 0x22C)) = 0x20;
     *(float *)(((((int)stk + 4) + 0x4) + 0x4)) = -0.599999964f;
     *(float *)(((((int)stk + 4) + 0x4) + 0x8)) = -1.5f;

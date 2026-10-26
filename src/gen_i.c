@@ -22,9 +22,9 @@ int FUN_0c0cc3f8(int);
 int FUN_0c0cc6dc(void);
 int FUN_0c0d61be(void);
 int FUN_0c0d80d0(int, int);
-int FUN_0c0d8870(void);
+int paletteUpload(void);
 int FUN_0c0db840(int);
-int FUN_0c0dccc0(void);
+int nlUnitMatrix(void);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
@@ -286,7 +286,7 @@ int FUN_0c0b60aa(void)
 
 int FUN_0c0b65ca(void)
 {
-    FUN_0c0dccc0();
+    nlUnitMatrix();
     return FUN_0c082b76(0x0);
 }
 
@@ -350,7 +350,7 @@ int FUN_0c0c281c(int a4)
 
 int FUN_0c0cedc8(void)
 {
-    FUN_0c0d8870();
+    paletteUpload();
     return FUN_0c084458();
 }
 

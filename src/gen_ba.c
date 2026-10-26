@@ -5,7 +5,7 @@ float FUN_0c01f172(int);
 int FUN_0c055874(void);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e61d4(int);
+int _quick_odd_mvn(int);
 int FUN_0c0556ce(int a4, int a5, int a6);
 
 int FUN_0c0556ce(int a4, int a5, int a6)
@@ -60,7 +60,7 @@ int FUN_0c0556ce(int a4, int a5, int a6)
                 *(unsigned int *)((t6 + 0x21C)) = (*(int *)((((a4 << 2) << 2) + 0xC20C0B8)));
             }
             if (a6 != 0) {
-                FUN_0c0e61d4(0x1);
+                _quick_odd_mvn(0x1);
             }
             if (a5 != 11) {
             } else {

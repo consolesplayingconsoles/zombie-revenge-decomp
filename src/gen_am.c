@@ -5,7 +5,7 @@ int FUN_0c01de60(int, int);
 int FUN_0c01df30(int, int);
 int FUN_0c01e23c(int, int, int, int);
 int FUN_0c01e656(int);
-int FUN_0c0e61d4(int, int, int, int);
+int _quick_odd_mvn(int, int, int, int);
 int FUN_0c01db0e(int a4, int a5, int a6, int a7);
 
 int FUN_0c01db0e(int a4, int a5, int a6, int a7)
@@ -207,7 +207,7 @@ int FUN_0c01db0e(int a4, int a5, int a6, int a7)
     *(float *)((R14 + 0x4C)) = ((*(float *)((R14 + 0x4C))) + -0.5f);
     goto L_C01DBB2;
     L_C01DBB2:;
-    FUN_0c0e61d4(R4, R5, R6, R7);
+    _quick_odd_mvn(R4, R5, R6, R7);
     R12 = ((*(int *)((R14 + 0x84))));
     if (((*(int *)((R14 + 0xB8))) != 1)) goto L_C01DBD2;
     goto L_C01DBCC;

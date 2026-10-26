@@ -27,7 +27,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c0e5f1c(int);
-int FUN_0c0e61d4(int, int);
+int _quick_odd_mvn(int, int);
 int FUN_0c0847de(int a4);
 int FUN_0c08b364(void);
 int FUN_0c0ab75a(void);
@@ -164,7 +164,7 @@ int FUN_0c090a1c(int a4, int a5)
 
 int FUN_0c0a8fd6(int a4, int a5)
 {
-    return (FUN_0c0e61d4(a4, a5));
+    return (_quick_odd_mvn(a4, a5));
 }
 
 int FUN_0c0ae202(void)

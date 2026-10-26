@@ -10,15 +10,15 @@ int FUN_0c0849da(void);
 int FUN_0c0cc3f8(int);
 float FUN_0c0d9e90(int);
 int FUN_0c0da2e0(void);
-int FUN_0c0dcd10(int, int);
+int nlAddVector(int, int);
 int FUN_0c0dce80(int, int, float);
-int FUN_0c0dcef0(int, int, int);
+int nlSubVector3op(int, int, int);
 int FUN_0c0dfd50(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c0e5f1c(int);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c0a3cdc(int a4, int a5, int a6, int a7);
 int FUN_0c036a4c(int a4, int a5, int a6, int a7);
 int FUN_0c063df0(int a4, int a5, int a6);
@@ -80,7 +80,7 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
         }
     }
     FUN_0c0dce80(((int)stk + 4), (*(int *)((a4 + 0x38))), (*(float *)((a4 + 0x3C))));
-    return (FUN_0c0dcef0((0x45C + t1), 0xC10D078, ((int)stk + 4)));
+    return (nlSubVector3op((0x45C + t1), 0xC10D078, ((int)stk + 4)));
 }
 
 int FUN_0c036a4c(int a4, int a5, int a6, int a7)
@@ -107,7 +107,7 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7)
             FUN_0c036994((*(int *)((a4 + 0x30))), (*(int *)((a4 + 0x48))), ((*(int *)((t1 + 0xA4))) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
             *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (a4 + 0x50)) + 0x0)) = (*(int *)((a4 + 0x48)));
             *(volatile int *)((a4 + 0x4C));
-            FUN_0c0e61d4();
+            _quick_odd_mvn();
             *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xD0 + a4)) + 0x0)) = (*(float *)(((int)stk + 20)));
             *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xF0 + a4)) + 0x0)) = (float)(*(int *)(((int)stk + 16)));
             *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (0x110 + a4)) + 0x0)) = (*(int *)(((int)stk + 24)));
@@ -130,7 +130,7 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7)
         FUN_0c036994((*(int *)((a4 + 0x30))), (*(int *)((a4 + 0x48))), ((*(int *)((t1 + 0xA4))) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
         *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (a4 + 0x50)) + 0x0)) = (*(int *)((a4 + 0x48)));
         *(volatile int *)((a4 + 0x4C));
-        FUN_0c0e61d4();
+        _quick_odd_mvn();
         *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xD0 + a4)) + 0x0)) = (*(float *)(((int)stk + 20)));
         *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xF0 + a4)) + 0x0)) = (float)(*(int *)(((int)stk + 16)));
         *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (0x110 + a4)) + 0x0)) = (*(int *)(((int)stk + 24)));
@@ -180,7 +180,7 @@ int FUN_0c063df0(int a4, int a5, int a6)
     *(float *)((t1 + 0x30)) = (*(float *)((a5 + 0x0)));
     *(float *)((t1 + 0x34)) = (*(float *)((a5 + 0x4)));
     *(float *)((t1 + 0x38)) = (*(float *)((a5 + 0x8)));
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned int *)((t1 + 0x230)) = a5;
     return 0x230;
 }
@@ -205,14 +205,14 @@ int FUN_0c03261c(int a4, float f4, float f5)
         t5 = FUN_0c02a416(a4);
         if ((t5 == 0) && ((t6 = *(int *)((a4 + 0x49C)), t6 != 3) && (t7 = *(int *)((a4 + 0x510)), t8 = *(int *)((0xC247030 + (t7 << 2))), t8 == 4))) {
             *(volatile int *)((a4 + 0x510));
-            FUN_0c0e61d4();
+            _quick_odd_mvn();
             *(float *)(((int)stk + 60)) = (*(float *)(((int)stk + 12)));
             *(float *)(((int)stk + 64)) = (1.0f + 1.0f);
-            FUN_0c0e61d4();
+            _quick_odd_mvn();
             *(float *)(((int)stk + 40)) = (*(float *)(((int)stk + 8)));
             *(float *)(((int)stk + 44)) = 1.0f;
             FUN_0c036efc((((int)stk + 4) + 0x2C), (((int)stk + 4) + 0x18), (((int)stk + 4) + 0xC), ((int)stk + 4));
-            FUN_0c0dcd10((0x4B0 + a4), (((int)stk + 4) + 0xC));
+            nlAddVector((0x4B0 + a4), (((int)stk + 4) + 0xC));
             *(float *)((a4 + 0x550)) = (*(float *)(((int)stk + 4)));
             return 0x1;
         }
@@ -247,7 +247,7 @@ int FUN_0c064640(int a4, int a5)
     *(unsigned int *)(((0x1FC + t1) + 0x0)) = (unsigned char)(*(signed char *)((a5 + 0x1)));
     *(unsigned int *)((t1 + 0x1F8)) = (unsigned char)(*(signed char *)((a5 + 0x0)));
     *(unsigned int *)(((0x22C + t1) + 0x0)) = ((unsigned short)(*(short *)((a5 + 0x8))) << 1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     return t1;
 }
 

@@ -1,0 +1,114 @@
+{
+ "dev": [
+  {
+   "about": "endless case 0",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000000"
+   }
+  },
+  {
+   "about": "endless case 1",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000001"
+   }
+  },
+  {
+   "about": "endless case 2",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000002"
+   }
+  },
+  {
+   "about": "endless case 3",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000004"
+   }
+  },
+  {
+   "about": "endless case 4",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000008"
+   }
+  },
+  {
+   "about": "endless case 5",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "0C900000"
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "endless case 6",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "0C910000"
+   }
+  },
+  {
+   "about": "endless case 7",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "FFFFFFFF"
+   }
+  },
+  {
+   "about": "endless case 8",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000010"
+   }
+  },
+  {
+   "about": "endless case 9",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000040"
+   }
+  },
+  {
+   "about": "endless case 10",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "0C920040"
+   }
+  },
+  {
+   "about": "endless case 11",
+   "poke": {},
+   "endless": true,
+   "steps": 20000,
+   "regs": {
+    "r5": "00000003"
+   }
+  }
+ ]
+}

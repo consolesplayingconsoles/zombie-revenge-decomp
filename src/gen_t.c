@@ -31,11 +31,11 @@ int FUN_0c0d1854(int);
 int FUN_0c0d2040(int, int);
 int FUN_0c0da2e0(void);
 int FUN_0c0db0a0(int, int);
-int FUN_0c0db0e0(int, ...);
+int nlPrintf(int, ...);
 int FUN_0c0db4d0(int, int);
 int FUN_0c0dbda0(int);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
 int FUN_0c0dcca0(int);
 int FUN_0c0dce80(int, int, float);
 int FUN_0c0de2c0(int);
@@ -46,8 +46,8 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e1dc4(int);
 int FUN_0c0e262a(int);
 int FUN_0c0e5f1c(void);
-int FUN_0c0e609c(void);
-int FUN_0c0e61d4(int);
+int _quick_evn_mvn(void);
+int _quick_odd_mvn(int);
 int FUN_0c229734(void);
 int FUN_0c233692(int, int, int);
 extern int _builtin_get_imask(void);
@@ -101,7 +101,7 @@ int ntInfExit(void);
 int FUN_0c0f30f8(int a4, int a5);
 int kmChangeContextColorClamp(int a4);
 int search_fat_used(int a4);
-int FUN_0c2290d4(int a4, int a5, int a6);
+int fmMngNum2Bit(int a4, int a5, int a6);
 int FUN_0c22ca1a(int a4, int a5, int a6, int a7);
 int syCfgGetSoundMode(int a4, int a5, int a6);
 void kmiRegisterPhIntHandler(int a4);
@@ -249,7 +249,7 @@ int FUN_0c0555ca(int a4, int a5, int a6, int a7)
         if (t0 == 0) {
             return 0xFFFFFFFF;
         }
-        FUN_0c0e61d4(t0);
+        _quick_odd_mvn(t0);
         *(unsigned int *)((a4 + 0x25C)) = 0x0;
         return 0x0;
     }
@@ -283,12 +283,12 @@ int FUN_0c078d72(int a4, int a5)
         if (t1 == 0) {
             break;
         }
-        FUN_0c0dc510(0x0);
+        nlPushMatrix(0x0);
         if (((unsigned short)(*(short *)((t0 + 0xE))) & (*(short *)(((int)stk + 4)))) != 0) {
             FUN_0c0dcca0(t0);
             FUN_0c0c465c((unsigned short)(*(short *)((t0 + 0xC))));
         }
-        FUN_0c0dc4c0(0x1);
+        nlPopMatrix(0x1);
         t0 = (t0 + 0x10);
     }
     return t1;
@@ -461,7 +461,7 @@ int FUN_0c0cdff2(void)
     *(float *)0xC23F1D8 = 1.0f;
     *(unsigned int *)0xC23F1E0 = 0xA;
     *(unsigned int *)0xC23F1DC = 0xFFFFFFFF;
-    t0 = FUN_0c0e609c();
+    t0 = _quick_evn_mvn();
     *(unsigned int *)0xC5229BC = 0x9;
     return t0;
 }
@@ -490,7 +490,7 @@ void FUN_0c0ce6a8(int a4, int a5)
             t2 = (*(int *)((t3 + 0x4)));
             t1 = (t1 - 4);
             FUN_0c0db0a0(t1, t2);
-            FUN_0c0db0e0(0xC1E9F40);
+            nlPrintf(0xC1E9F40);
         } else {
             t13 = t1;
             t14 = t2;
@@ -637,7 +637,7 @@ float FUN_0c01e79a(int a4, int a5)
 
 int FUN_0c016c10(int a4)
 {
-    FUN_0c0e609c();
+    _quick_evn_mvn();
     if (((*(int *)0xC23A1A8) & 1) != 0) {
         FUN_0c0cfaf2(a4);
     }
@@ -819,7 +819,7 @@ int FUN_0c0cf11c(int a4, int a5)
     if ((int)a4 < (int)0x16) {
         t0 = FUN_0c0556ce(a4, 0x4, a5);
         if ((int)t0 >= 0) {
-            FUN_0c0e61d4((*(int *)(((t0 << 2) + 0xC2475D4))));
+            _quick_odd_mvn((*(int *)(((t0 << 2) + 0xC2475D4))));
             *(unsigned int *)((a4 + 0x25C)) = 0x0;
             *(volatile float *)0xC0CF22C;
             return FUN_0c0cee6a(a5);
@@ -961,7 +961,7 @@ int search_fat_used(int a4)
     return t0;
 }
 
-int FUN_0c2290d4(int a4, int a5, int a6)
+int fmMngNum2Bit(int a4, int a5, int a6)
 {
     int t1;
     int t3;

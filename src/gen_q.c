@@ -44,10 +44,10 @@ int FUN_0c0cead0(int);
 int FUN_0c0d0648(void);
 int FUN_0c0d26a8(void);
 int FUN_0c0d9ac0(void);
-int FUN_0c0db640(int);
+int nlGetMatrix(int);
 int FUN_0c0dbda0(int);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
 int FUN_0c0dcca0(int);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
@@ -60,7 +60,7 @@ int FUN_0c0e3a08(int, int);
 int FUN_0c0e40ec(int, int, int);
 int FUN_0c0e44b0(int, int, int);
 int FUN_0c0e54ec(int, int, int);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c2134b2(void);
 int FUN_0c21b228(int, int, int, int);
 extern float _builtin_fipr(float *, float *);
@@ -135,7 +135,7 @@ int FUN_0c0cc6dc(void);
 void FUN_0c0d9630(void);
 float FUN_0c0dd050(int a4);
 int FUN_0c0b8afe(void);
-void FUN_0c0db550(int a4, int a5);
+void nlCopyMatrix(int a4, int a5);
 int FUN_0c0e4fbe(int a4, int a5);
 int FUN_0c0e1c44(int a4);
 int buDefragDisk(int a4, int a5);
@@ -439,10 +439,10 @@ int FUN_0c07d692(int a4, int a5, int a6, int a7)
         if ((int)(*(int *)((t2 + 0xC))) < 0) {
             break;
         }
-        t1 = (FUN_0c0dc510(0x0));
+        t1 = (nlPushMatrix(0x0));
         t1 = (FUN_0c0dcca0(t2));
         t1 = (FUN_0c0c465c((*(int *)((t2 + 0xC)))));
-        t1 = (FUN_0c0dc4c0(0x1));
+        t1 = (nlPopMatrix(0x1));
         t2 = (t2 + 0x10);
     }
     return t1;
@@ -720,7 +720,7 @@ int FUN_0c086b96(int a4)
 
     t1 = FUN_0c0e19aa(0xC08C25A, 0xA4, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(unsigned short *)((t1 + 0x9A)) = 0x410;
     *(unsigned short *)((t1 + 0xA0)) = 0x14;
     *(float *)((t1 + 0x90)) = (*(float *)0xC086CA0);
@@ -772,7 +772,7 @@ int FUN_0c086bda(int a4, float f4)
 
     t1 = FUN_0c0e19aa(0xC08C25A, 0xA4, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     *(float *)((t1 + 0x90)) = f4;
     *(unsigned short *)((t1 + 0x9A)) = 0x245;
     *(unsigned short *)((t1 + 0xA0)) = 0x14;
@@ -1058,7 +1058,7 @@ int FUN_0c0b8afe(void)
     return FUN_0c0c62d0(0xC1125E0);
 }
 
-void FUN_0c0db550(int a4, int a5)
+void nlCopyMatrix(int a4, int a5)
 {
     int t0;
     int t1;
@@ -1073,7 +1073,7 @@ void FUN_0c0db550(int a4, int a5)
         return;
     }
     if (a5 == 0) {
-        FUN_0c0db640(a4);
+        nlGetMatrix(a4);
     return;
     }
     t0 = 0x10;

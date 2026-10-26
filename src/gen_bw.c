@@ -10,7 +10,7 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e4f8c(int, int, int);
 int FUN_0c0e52ec(int, int, int);
 int FUN_0c0e56f4(int);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int mwRnaErrCallFunc(int);
 int FUN_0c23363e(int a4, int a5, int a6);
 int FUN_0c081074(int a4);
@@ -42,8 +42,8 @@ int FUN_0c081074(int a4)
     int t0;
     int t1;
 
-    t0 = ((int (*)(int))(FUN_0c0e61d4))(a4);
-    t1 = ((int (*)(void))(FUN_0c0e61d4))();
+    t0 = ((int (*)(int))(_quick_odd_mvn))(a4);
+    t1 = ((int (*)(void))(_quick_odd_mvn))();
     FUN_0c01f8a0((a4 + 0x30), 0x80, 0xFFFFFFFF);
     if ((*(int *)((a4 + 0xD8))) != 0) {
         return FUN_0c0a6bf8((0xC8 + a4), (0xBC + a4), (0x260 + a4), 0.0f);
@@ -61,7 +61,7 @@ int FUN_0c01d0be(int a4)
     *(unsigned int *)((t0 + 0x30)) = (*(int *)((a4 + 0xC0)));
     *(unsigned int *)((t0 + 0x34)) = (*(int *)((a4 + 0x350)));
     *(volatile int *)((a4 + 0x340));
-    return (FUN_0c0e61d4());
+    return (_quick_odd_mvn());
 }
 
 int FUN_0c01d10c(int a4)
@@ -74,7 +74,7 @@ int FUN_0c01d10c(int a4)
     *(unsigned int *)((t0 + 0x30)) = (*(int *)((a4 + 0xC0)));
     *(unsigned int *)((t0 + 0x34)) = (*(int *)((a4 + 0x34C)));
     *(volatile int *)((a4 + 0x340));
-    return (FUN_0c0e61d4());
+    return (_quick_odd_mvn());
 }
 
 int FUN_0c0999cc(int a4)
@@ -89,7 +89,7 @@ int FUN_0c0999cc(int a4)
     t4 = *(int *)((a4 + 0x2E8));
     *(unsigned int *)((t1 + 0x44)) = (((int)t4 >= 0) ? (0x2 << (t4 & 31)) : ((-(int)t4 & 31) ? ((int)0x2 >> (-(int)t4 & 31)) : ((int)0x2 >> 31)));
     *(float *)((t1 + 0x4C)) = (*(float *)((a4 + 0x390)));
-    return (FUN_0c0e61d4());
+    return (_quick_odd_mvn());
 }
 
 int FUN_0c233930(int a4, int a5, int a6)

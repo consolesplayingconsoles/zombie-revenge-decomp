@@ -10,7 +10,7 @@ int FUN_0c0c0340(int, float);
 int FUN_0c0cc3f8(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e61d4(int, int);
+int _quick_odd_mvn(int, int);
 int FUN_0c0a9d50(int a4, int a5, float f4);
 int FUN_0c0b455c(void);
 
@@ -151,7 +151,7 @@ int FUN_0c0b455c(void)
         t5 = *(int *)((t0 + 0x14));
         *(unsigned int *)((t3 + 0xBC)) = t1;
         *(unsigned int *)(((0xC0 + t3) + 0x0)) = (*(signed char *)((t0 + 0x1)));
-        FUN_0c0e61d4((0x45C + t3), (0x468 + t3));
+        _quick_odd_mvn((0x45C + t3), (0x468 + t3));
         FUN_0c0855ba(t3);
         FUN_0c0ba6e8(t3);
         if ((*(int *)((t3 + 0xC0))) == 17) {

@@ -4,7 +4,7 @@
 int FUN_0c062934(int, float, float);
 int FUN_0c062a74(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c062b5e(int a4);
 
 int FUN_0c062b5e(int a4)
@@ -20,7 +20,7 @@ int FUN_0c062b5e(int a4)
     if (t2 == 0) {
         FUN_0c0e19f2();
     }
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     FUN_0c062934(a4, 200.0f, (((float)t0 / (float)t1) * 1.0f));
     t8 = *(int *)((a4 + 0x22C));
     *(unsigned int *)((a4 + 0x22C)) = (t8 - 1);

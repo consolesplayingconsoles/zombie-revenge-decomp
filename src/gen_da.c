@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c056234(int, int);
-int FUN_0c0e61d4(int, int, int, int);
+int _quick_odd_mvn(int, int, int, int);
 void FUN_0c056118(int a4, int a5, int a6, int a7);
 
 void FUN_0c056118(int a4, int a5, int a6, int a7)
@@ -21,7 +21,7 @@ void FUN_0c056118(int a4, int a5, int a6, int a7)
                     *(unsigned int *)((t2 + 0x25C)) = 0x0;
                 }
             } else {
-                FUN_0c0e61d4(((a7 << 2) + (0x344 + a4)), a5, a6, 0xC2475D4);
+                _quick_odd_mvn(((a7 << 2) + (0x344 + a4)), a5, a6, 0xC2475D4);
                 *(unsigned int *)((t2 + 0x224)) = ((*(int *)((t2 + 0x224))) - 1);
                 *(unsigned int *)((t2 + 0x23C)) = 0x0;
                 FUN_0c056234(a4, t2);

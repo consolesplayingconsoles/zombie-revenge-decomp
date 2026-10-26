@@ -80,7 +80,7 @@ int vmsio_ismount(int);
 int vmsio_isready(int);
 int fmMngWrite(int a4, int a5);
 int search_exec_file(int a4, int a5);
-int FUN_0c229d7e(Stk4 s);
+int ADXERR_CallErrFunc(Stk4 s);
 int vmsfs_init_work_new(int a4);
 int vmsfs_dpf(Stk4 s);
 int fmMngRead(int a4, int a5);
@@ -89,7 +89,7 @@ int FUN_0c22b6fa(void);
 int kdDevGetTimerInfo(int a4, int a5);
 int vmsfs_isready(void);
 int ADXF_Init(void);
-int FUN_0c22909c(int a4, int a5, int a6);
+int fmMngBit2Num(int a4, int a5, int a6);
 int ADXF_Finish(void);
 int kdDevGetVibrationInfo(int a4, int a5);
 int vmsfs_resetwork(int a4);
@@ -303,7 +303,7 @@ int search_exec_file(int a4, int a5)
     return t2;
 }
 
-int FUN_0c229d7e(Stk4 s)
+int ADXERR_CallErrFunc(Stk4 s)
 {
     int t0;
     int t3;
@@ -485,7 +485,7 @@ int ADXF_Init(void)
     return 0xC95E688;
 }
 
-int FUN_0c22909c(int a4, int a5, int a6)
+int fmMngBit2Num(int a4, int a5, int a6)
 {
     int t1;
     int t2;

@@ -12,23 +12,23 @@ int FUN_0c0d9450(int, int, int, int);
 int FUN_0c0d9ca0(float);
 float FUN_0c0d9e90(int);
 float FUN_0c0da410(int);
-float FUN_0c0da6a0(int);
+float nlTan(int);
 int FUN_0c0da920(void);
 int FUN_0c0daf70(int);
-int FUN_0c0db3b0(int, int, int);
-int FUN_0c0db550(int, int);
+int nlSetPaletteData(int, int, int);
+int nlCopyMatrix(int, int);
 int FUN_0c0dbda0(int);
 int FUN_0c0dbe40(int, int);
-int FUN_0c0dc100(int);
+int nlMultiMatrix(int);
 int FUN_0c0dc220(void);
 int FUN_0c0dc460(int);
-int FUN_0c0dc510(int);
-int FUN_0c0dc760(int, float, float);
+int nlPushMatrix(int);
+int nlRotateAxeSC(int, float, float);
 int FUN_0c0dcc70(float, float, float);
 float FUN_0c0dcea0(int);
 int FUN_0c0dd050(int);
-int FUN_0c0de6c0(void);
-int FUN_0c0de7e0(int);
+int nlInvLightVector(void);
+int nlobjput_sub(int);
 int FUN_0c0de8c0(void);
 int FUN_0c0deaa0(int, int, int, int);
 int FUN_0c0df758(int, int, int);
@@ -82,8 +82,8 @@ int kmSetFogTableColor(int, ...);
 int kmSetPaletteData(int);
 int kmfSetFatalErrorCallback(int);
 float FUN_0c0d9f30(int a4);
-float FUN_0c0dc1e0(int a4);
-int FUN_0c0dc4c0(int a4);
+float nlMultiMatrixRevOrder(int a4);
+int nlPopMatrix(int a4);
 int FUN_0c0dea10(int a4, float f4, float f5);
 int FUN_0c0dfcae(int a4, int a5);
 void FUN_0c0e4e88(int a4);
@@ -96,45 +96,45 @@ int FUN_0c0e4a5a(int a4);
 int FUN_0c0e55f0(void);
 int FUN_0c0e56f4(int a4);
 int FUN_0c0c0304(int a4, int a5, int a6, float f4, float f5, float f6, float f7, float f8);
-int FUN_0c0db0e0(Stk4 s);
-void FUN_0c0dc5d0(void);
-float FUN_0c0dce40(int a4, int a5, float f4);
+int nlPrintf(Stk4 s);
+void nlQuickInvertMatrix(void);
+float nlScaleUnitVector(int a4, int a5, float f4);
 int FUN_0c0d8610(int a4, int a5);
-int FUN_0c0db180(int a4);
-int FUN_0c0db850(int a4, int a5, int a6);
+int nlFogTableColor(int a4);
+int nlInitMatrixStack(int a4, int a5, int a6);
 int FUN_0c0df9fc(int a4, int a5);
 int FUN_0c0e1dc4(int a4);
 int FUN_0c0e505a(int a4, int a5);
 void FUN_0c0de030(int a4);
 void FUN_0c0de7a0(int a4);
-int FUN_0c0dc6a0(int a4, int a5);
+int nlRotate(int a4, int a5);
 int FUN_0c0e1b9a(int a4);
 int FUN_0c0e1c0e(int a4, int a5);
 int FUN_0c0d86e0(int a4, int a5);
 int FUN_0c0d9260(int a4, int a5, int a6, int a7);
 int FUN_0c0d9bd0(float f4);
-int FUN_0c0db640(int a4);
+int nlGetMatrix(int a4);
 int FUN_0c0db6b0(int a4);
-float FUN_0c0dc1a0(int a4);
-float FUN_0c0dcdc0(int a4, int a5, int a6);
+float nlMultiMatrixRevOrder8(int a4);
+float nlOuterProduct(int a4, int a5, int a6);
 int FUN_0c0dfcee(float f4, float f5);
 int FUN_0c0e20b2(int a4);
 int FUN_0c0da880(int a4);
 int FUN_0c0ddeb0(int a4, int a5);
-int FUN_0c0de2d0(float f4, float f5, float f6);
-float FUN_0c0d9eb0(int a4);
-float FUN_0c0da3e0(int a4);
+int nlObjPutSetLightDirectionF(float f4, float f5, float f6);
+float nlCosec(int a4);
+float nlSec(int a4);
 int FUN_0c0de9e0(int a4);
 int FUN_0c0e1cc6(int a4, int a5, int a6);
 int FUN_0c0e4ece(int a4, int a5, int a6);
 void FUN_0c0e557c(void);
-void FUN_0c0d84e0(int a4, int a5, int a6);
-int FUN_0c0db730(int a4);
-float FUN_0c0dc6e0(int a4);
+void nlCreateTextureParam(int a4, int a5, int a6);
+int nlGetMatrix8(int a4);
+float nlRotateAX(int a4);
 void FUN_0c0dcbb0(int a4);
-void FUN_0c0dcc40(void);
-float FUN_0c0dcd50(int a4, int a5, int a6, float f4, float f5);
-int FUN_0c0de190(int a4);
+void nlTransposeMatrix(void);
+float nlGetAverageVector(int a4, int a5, int a6, float f4, float f5);
+int nlObjPut(int a4);
 int FUN_0c0ded50(int a4, int a5);
 int FUN_0c0e19f2(void);
 int FUN_0c0e4f5a(int a4, int a5, int a6);
@@ -144,13 +144,13 @@ void FUN_0c0e1e40(int a4, int a5, int a6, int a7);
 int FUN_0c0e2794(int a4, int a5);
 int FUN_0c0e57a0(int a4, float f4, float f5, float f6);
 int FUN_0c0d95a0(int a4, int a5, int a6, int a7);
-void FUN_0c0dbe10(int a4);
-float FUN_0c0dc710(float f4, float f5);
-float FUN_0c0dc890(int a4);
-float FUN_0c0dc950(int a4);
+void nlLoadMatrix8(int a4);
+float nlRotateXSC(float f4, float f5);
+float nlRotateAY(int a4);
+float nlRotateAZ(int a4);
 int FUN_0c0dd280(void);
 int FUN_0c0ddfd0(void);
-int FUN_0c0de270(float f4, float f5, float f6);
+int nlObjPutSetSpecularEyeDirectionF(float f4, float f5, float f6);
 void FUN_0c0e1ade(int a4);
 void FUN_0c0e1b72(int a4);
 int FUN_0c0e1cf6(int a4, int a5);
@@ -161,24 +161,24 @@ int FUN_0c0e193c(int a4, int a5, int a6);
 int FUN_0c0e19aa(int a4, int a5, int a6);
 int FUN_0c0e1d1e(int a4, int a5);
 int FUN_0c0bfabc(float f4);
-void FUN_0c0d8870(void);
-float FUN_0c0dc8c0(float f4, float f5);
-void FUN_0c0dccc0(void);
+void paletteUpload(void);
+float nlRotateYSC(float f4, float f5);
+void nlUnitMatrix(void);
 float FUN_0c0dd0a0(int a4, int a5);
 int FUN_0c0e55b4(int a4);
-int FUN_0c0da970(void);
+int nlPrintInitFontTexture(void);
 int FUN_0c0db0a0(int a4, int a5);
 int FUN_0c0db5a0(int a4);
 int FUN_0c0e1830(int a4, int a5);
 void FUN_0c0e19d0(int a4);
 int FUN_0c0e563c(int a4);
 int FUN_0c0c473c(int a4);
-int FUN_0c0dc740(int a4, int a5);
-float FUN_0c0dcd10(int a4, int a5);
-float FUN_0c0dcd30(int a4, int a5, int a6);
-float FUN_0c0dcda0(int a4, int a5);
-float FUN_0c0dced0(int a4, int a5);
-float FUN_0c0dcef0(int a4, int a5, int a6);
+int nlRotateAxe(int a4, int a5);
+float nlAddVector(int a4, int a5);
+float nlAddVector3op(int a4, int a5, int a6);
+float nlLength(int a4, int a5);
+float nlSubVector(int a4, int a5);
+float nlSubVector3op(int a4, int a5, int a6);
 int FUN_0c0dd2b0(void);
 int FUN_0c0dd260(void);
 int FUN_0c0ddc20(int a4, int a5);
@@ -220,7 +220,7 @@ float FUN_0c0d9f30(int a4)
             if ((unsigned short)a4 == 0xC000) {
                 return 0.0f;
             }
-            t0 = FUN_0c0da6a0((unsigned short)a4);
+            t0 = nlTan((unsigned short)a4);
             return (1.0f / t0);
         }
         return 0.0f;
@@ -228,7 +228,7 @@ float FUN_0c0d9f30(int a4)
     return 3.40282347e+38f;
 }
 
-float FUN_0c0dc1e0(int a4)
+float nlMultiMatrixRevOrder(int a4)
 {
     float u0;
     float u1;
@@ -383,7 +383,7 @@ float FUN_0c0dc1e0(int a4)
     return u0;
 }
 
-int FUN_0c0dc4c0(int a4)
+int nlPopMatrix(int a4)
 {
     int t0;
     int t2;
@@ -492,7 +492,7 @@ int FUN_0c0dea10(int a4, float f4, float f5)
             FUN_0c0eb9c2(a4, 0xC948238, f4, f5);
         }
     }
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0dfcae(int a4, int a5)
@@ -714,7 +714,7 @@ int FUN_0c0c0304(int a4, int a5, int a6, float f4, float f5, float f6, float f7,
     return (FUN_0c0c0340(((int)stk + 4), 1.0f));
 }
 
-int FUN_0c0db0e0(Stk4 s)
+int nlPrintf(Stk4 s)
 {
     int t0;
     int stk[14];
@@ -732,7 +732,7 @@ int FUN_0c0db0e0(Stk4 s)
     return 0x0;
 }
 
-void FUN_0c0dc5d0(void)
+void nlQuickInvertMatrix(void)
 {
     float u4;
     float u7;
@@ -800,7 +800,7 @@ void FUN_0c0dc5d0(void)
     _builtin_ld_ext((float (*)[4])u16);
 }
 
-float FUN_0c0dce40(int a4, int a5, float f4)
+float nlScaleUnitVector(int a4, int a5, float f4)
 {
     float t0;
 
@@ -853,7 +853,7 @@ int FUN_0c0d8610(int a4, int a5)
     return t0;
 }
 
-int FUN_0c0db180(int a4)
+int nlFogTableColor(int a4)
 {
     int stk[5];
 
@@ -864,7 +864,7 @@ int FUN_0c0db180(int a4)
     return (kmSetFogTableColor(((*(int *)((((int)stk + 8) + 0x0))))));
 }
 
-int FUN_0c0db850(int a4, int a5, int a6)
+int nlInitMatrixStack(int a4, int a5, int a6)
 {
     int t0;
     int t2;
@@ -881,8 +881,8 @@ int FUN_0c0db850(int a4, int a5, int a6)
     *(unsigned short *)((a4 + 0x0)) = 0x0;
     *(unsigned int *)((a4 + 0x8)) = ((a5 + 0x1F) & 0xFFFFFFE0);
     *(unsigned int *)((a4 + 0x4)) = ((a5 + 0x1F) & 0xFFFFFFE0);
-    FUN_0c0dccc0();
-    FUN_0c0db640((*(int *)((a4 + 0x8))));
+    nlUnitMatrix();
+    nlGetMatrix((*(int *)((a4 + 0x8))));
     return (*(int *)((a4 + 0x4)));
 }
 
@@ -1080,7 +1080,7 @@ void FUN_0c0de7a0(int a4)
     _builtin_ld_ext((float (*)[4])u16);
 }
 
-int FUN_0c0dc6a0(int a4, int a5)
+int nlRotate(int a4, int a5)
 {
     int stk[6];
 
@@ -1089,7 +1089,7 @@ int FUN_0c0dc6a0(int a4, int a5)
     *(float *)(((int)stk + 12)) = (*(float *)((a4 + 0x4)));
     *(float *)(((int)stk + 16)) = (*(float *)((a4 + 0x8)));
     FUN_0c0dd050((((int)stk + 4) + 0x4));
-    return (FUN_0c0dc740((((int)stk + 4) + 0x4), (*(int *)(((int)stk + 4)))));
+    return (nlRotateAxe((((int)stk + 4) + 0x4), (*(int *)(((int)stk + 4)))));
 }
 
 int FUN_0c0e1b9a(int a4)
@@ -1125,7 +1125,7 @@ int FUN_0c0d86e0(int a4, int a5)
     t0 = *(int *)0xC990E98;
     t1 = *(short *)(((t0 + ((a4 << 2) << 1)) + 0x4));
     if (t1 != 0) {
-        return FUN_0c0db3b0((((*(short *)(((t0 + ((a4 << 2) << 1)) + 0x0))) << 2) << 2), a5, (((unsigned char)(*(signed char *)(((t0 + ((a4 << 2) << 1)) + 0x3))) << 2) << 2));
+        return nlSetPaletteData((((*(short *)(((t0 + ((a4 << 2) << 1)) + 0x0))) << 2) << 2), a5, (((unsigned char)(*(signed char *)(((t0 + ((a4 << 2) << 1)) + 0x3))) << 2) << 2));
     }
     return t1;
 }
@@ -1155,7 +1155,7 @@ int FUN_0c0d9bd0(float f4)
     return (((-t0) + 0x4000) & 0xFFFF);
 }
 
-int FUN_0c0db640(int a4)
+int nlGetMatrix(int a4)
 {
     int t1;
     float u3[16];
@@ -1242,7 +1242,7 @@ int FUN_0c0db6b0(int a4)
     return ((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4);
 }
 
-float FUN_0c0dc1a0(int a4)
+float nlMultiMatrixRevOrder8(int a4)
 {
     float u0;
     float u1;
@@ -1397,7 +1397,7 @@ float FUN_0c0dc1a0(int a4)
     return u1;
 }
 
-float FUN_0c0dcdc0(int a4, int a5, int a6)
+float nlOuterProduct(int a4, int a5, int a6)
 {
     float u0;
     float u1;
@@ -1497,7 +1497,7 @@ int FUN_0c0ddeb0(int a4, int a5)
     return 0x8;
 }
 
-int FUN_0c0de2d0(float f4, float f5, float f6)
+int nlObjPutSetLightDirectionF(float f4, float f5, float f6)
 {
     *(float *)0xC20CE50 = f4;
     *(float *)0xC20CE54 = f5;
@@ -1512,7 +1512,7 @@ int FUN_0c0de2d0(float f4, float f5, float f6)
     return 0x8;
 }
 
-float FUN_0c0d9eb0(int a4)
+float nlCosec(int a4)
 {
     float t0;
 
@@ -1523,7 +1523,7 @@ float FUN_0c0d9eb0(int a4)
     return (*(float *)0xC0D9F7C);
 }
 
-float FUN_0c0da3e0(int a4)
+float nlSec(int a4)
 {
     float t0;
 
@@ -1583,7 +1583,7 @@ void FUN_0c0e557c(void)
     *(unsigned int *)0xC94C840 = 0x0;
 }
 
-void FUN_0c0d84e0(int a4, int a5, int a6)
+void nlCreateTextureParam(int a4, int a5, int a6)
 {
     int t0;
 
@@ -1596,7 +1596,7 @@ void FUN_0c0d84e0(int a4, int a5, int a6)
     *(unsigned int *)((((a4 * 0x3C) + t0) + 0x34)) = (*(int *)0xC943DB4);
 }
 
-int FUN_0c0db730(int a4)
+int nlGetMatrix8(int a4)
 {
     int t1;
     float u3[16];
@@ -1625,7 +1625,7 @@ int FUN_0c0db730(int a4)
     return (((((((((t1 + 0x40) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8);
 }
 
-float FUN_0c0dc6e0(int a4)
+float nlRotateAX(int a4)
 {
     float u0;
     float u1;
@@ -1701,7 +1701,7 @@ void FUN_0c0dcbb0(int a4)
     _builtin_ld_ext((float (*)[4])u6);
 }
 
-void FUN_0c0dcc40(void)
+void nlTransposeMatrix(void)
 {
     int t2;
     int t4;
@@ -1739,7 +1739,7 @@ void FUN_0c0dcc40(void)
     _builtin_ld_ext((float (*)[4])u13);
 }
 
-float FUN_0c0dcd50(int a4, int a5, int a6, float f4, float f5)
+float nlGetAverageVector(int a4, int a5, int a6, float f4, float f5)
 {
     float u2;
     float u5;
@@ -1761,14 +1761,14 @@ float FUN_0c0dcd50(int a4, int a5, int a6, float f4, float f5)
     return f5;
 }
 
-int FUN_0c0de190(int a4)
+int nlObjPut(int a4)
 {
     if (((*(int *)((a4 + 0x4))) & 0x2) == 0) {
-        FUN_0c0de6c0();
+        nlInvLightVector();
     }
-    FUN_0c0dc510(0x0);
-    FUN_0c0dc1a0(0xC948580);
-    return FUN_0c0de7e0(a4);
+    nlPushMatrix(0x0);
+    nlMultiMatrixRevOrder8(0xC948580);
+    return nlobjput_sub(a4);
 }
 
 int FUN_0c0ded50(int a4, int a5)
@@ -1905,7 +1905,7 @@ int FUN_0c0d95a0(int a4, int a5, int a6, int a7)
     return t3;
 }
 
-void FUN_0c0dbe10(int a4)
+void nlLoadMatrix8(int a4)
 {
     int t1;
     float u3;
@@ -1987,7 +1987,7 @@ void FUN_0c0dbe10(int a4)
     _builtin_ld_ext((float (*)[4])u26);
 }
 
-float FUN_0c0dc710(float f4, float f5)
+float nlRotateXSC(float f4, float f5)
 {
     float u0[4];
     float u1[4];
@@ -2025,7 +2025,7 @@ float FUN_0c0dc710(float f4, float f5)
     return u0[0];
 }
 
-float FUN_0c0dc890(int a4)
+float nlRotateAY(int a4)
 {
     float u0;
     float u1;
@@ -2067,7 +2067,7 @@ float FUN_0c0dc890(int a4)
     return u2[0];
 }
 
-float FUN_0c0dc950(int a4)
+float nlRotateAZ(int a4)
 {
     float u0;
     float u1;
@@ -2111,23 +2111,23 @@ float FUN_0c0dc950(int a4)
 
 int FUN_0c0dd280(void)
 {
-    FUN_0c0dc510((*(int *)0xC9482E0));
-    FUN_0c0dc100((*(int *)0xC9482D4));
+    nlPushMatrix((*(int *)0xC9482E0));
+    nlMultiMatrix((*(int *)0xC9482D4));
     FUN_0c0dc220();
-    FUN_0c0db730(0xC9484A8);
-    return FUN_0c0dc4c0(0x1);
+    nlGetMatrix8(0xC9484A8);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0ddfd0(void)
 {
-    FUN_0c0dc510(0xC9484E8);
-    FUN_0c0dc100((*(int *)0xC9482E0));
-    FUN_0c0dc100((*(int *)0xC9482D4));
+    nlPushMatrix(0xC9484E8);
+    nlMultiMatrix((*(int *)0xC9482E0));
+    nlMultiMatrix((*(int *)0xC9482D4));
     FUN_0c0dc220();
     return FUN_0c0dc460(0x1);
 }
 
-int FUN_0c0de270(float f4, float f5, float f6)
+int nlObjPutSetSpecularEyeDirectionF(float f4, float f5, float f6)
 {
     *(float *)0xC20CE60 = ((*(float *)0xC20CE50) + f4);
     *(float *)0xC20CE64 = ((*(float *)0xC20CE54) + f5);
@@ -2183,7 +2183,7 @@ int FUN_0c0e1cf6(int a4, int a5)
 int FUN_0c0de900(int a4)
 {
     if (((*(int *)((a4 + 0x4))) & 16) != 0) {
-        FUN_0c0de6c0();
+        nlInvLightVector();
     }
     FUN_0c0e59e0();
     FUN_0c0de8c0();
@@ -2252,7 +2252,7 @@ int FUN_0c0bfabc(float f4)
     return t0;
 }
 
-void FUN_0c0d8870(void)
+void paletteUpload(void)
 {
     if ((*(signed char *)0xC990E80) != 0) {
         *(unsigned char *)0xC990E80 = 0x0;
@@ -2261,7 +2261,7 @@ void FUN_0c0d8870(void)
     }
 }
 
-float FUN_0c0dc8c0(float f4, float f5)
+float nlRotateYSC(float f4, float f5)
 {
     float u0[4];
     float u1[4];
@@ -2299,7 +2299,7 @@ float FUN_0c0dc8c0(float f4, float f5)
     return u0[0];
 }
 
-void FUN_0c0dccc0(void)
+void nlUnitMatrix(void)
 {
     float u0[16];
     float u1[16];
@@ -2382,7 +2382,7 @@ int FUN_0c0e55b4(int a4)
     return a4;
 }
 
-int FUN_0c0da970(void)
+int nlPrintInitFontTexture(void)
 {
     int t0;
 
@@ -2411,7 +2411,7 @@ int FUN_0c0db5a0(int a4)
     int stk[20];
 
     *(unsigned int *)(((int)stk + 4)) = a4;
-    FUN_0c0db550((((int)stk + 4) + 0x4), a4);
+    nlCopyMatrix((((int)stk + 4) + 0x4), a4);
     return (FUN_0c0dbe40((((int)stk + 4) + 0x4), (((int)stk + 4) + 0x44)));
 }
 
@@ -2461,17 +2461,17 @@ int FUN_0c0c473c(int a4)
     return FUN_0c0849da();
 }
 
-int FUN_0c0dc740(int a4, int a5)
+int nlRotateAxe(int a4, int a5)
 {
     float t0;
     float t1;
 
     t0 = FUN_0c0d9e90(a5);
     t1 = FUN_0c0da410(a5);
-    return FUN_0c0dc760(a4, t1, t0);
+    return nlRotateAxeSC(a4, t1, t0);
 }
 
-float FUN_0c0dcd10(int a4, int a5)
+float nlAddVector(int a4, int a5)
 {
     float u0;
     float u1;
@@ -2492,7 +2492,7 @@ float FUN_0c0dcd10(int a4, int a5)
     return (u0 + u1);
 }
 
-float FUN_0c0dcd30(int a4, int a5, int a6)
+float nlAddVector3op(int a4, int a5, int a6)
 {
     float u0;
     float u1;
@@ -2513,7 +2513,7 @@ float FUN_0c0dcd30(int a4, int a5, int a6)
     return (u0 + u1);
 }
 
-float FUN_0c0dcda0(int a4, int a5)
+float nlLength(int a4, int a5)
 {
     float u0;
     float u1;
@@ -2541,7 +2541,7 @@ float FUN_0c0dcda0(int a4, int a5)
     return _builtin_sqrtf((_builtin_fipr(u6, u7)));
 }
 
-float FUN_0c0dced0(int a4, int a5)
+float nlSubVector(int a4, int a5)
 {
     float u0;
     float u1;
@@ -2562,7 +2562,7 @@ float FUN_0c0dced0(int a4, int a5)
     return (u0 - u1);
 }
 
-float FUN_0c0dcef0(int a4, int a5, int a6)
+float nlSubVector3op(int a4, int a5, int a6)
 {
     float u0;
     float u1;
@@ -2585,25 +2585,25 @@ float FUN_0c0dcef0(int a4, int a5, int a6)
 
 int FUN_0c0dd2b0(void)
 {
-    FUN_0c0dc510((*(int *)0xC9482D4));
+    nlPushMatrix((*(int *)0xC9482D4));
     FUN_0c0dc220();
-    FUN_0c0db640(0xC948468);
-    return FUN_0c0dc4c0(0x1);
+    nlGetMatrix(0xC948468);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0dd260(void)
 {
-    FUN_0c0dc510((*(int *)0xC9482E0));
+    nlPushMatrix((*(int *)0xC9482E0));
     FUN_0c0dc220();
-    FUN_0c0db730(0xC9484A8);
-    return FUN_0c0dc4c0(0x1);
+    nlGetMatrix8(0xC9484A8);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0ddc20(int a4, int a5)
 {
-    FUN_0c0dc510(0xC948468);
+    nlPushMatrix(0xC948468);
     FUN_0c0db470(a4, a5);
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c0e15b4(int a4)
@@ -2743,7 +2743,7 @@ float FUN_0c0da0c0(float f4)
 
 int FUN_0c0db530(void)
 {
-    FUN_0c0db640(0x0);
+    nlGetMatrix(0x0);
     *(unsigned int *)0xC9482BC = (*(int *)0xC9482B8);
     *(unsigned short *)0xC9482B4 = 0x0;
     return FUN_0c0dbda0(0x0);
@@ -2753,8 +2753,8 @@ int FUN_0c0dc5a0(void)
 {
     int t0;
 
-    t0 = FUN_0c0dc510(0x0);
-    FUN_0c0dccc0();
+    t0 = nlPushMatrix(0x0);
+    nlUnitMatrix();
     return t0;
 }
 

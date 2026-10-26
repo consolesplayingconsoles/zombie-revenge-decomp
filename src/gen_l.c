@@ -8,7 +8,7 @@ float FUN_0c0d9ee0(float);
 float FUN_0c0da410(int);
 float FUN_0c0da510(float);
 int FUN_0c0db4d0(int, int);
-int FUN_0c0dcc40(void);
+int nlTransposeMatrix(void);
 int FUN_0c0e2a4c(int);
 int FUN_0c0e5dc0(void);
 int FUN_0c0e5f1c(int);
@@ -20,17 +20,17 @@ int FUN_0c0ed8dc(int, int, int, int);
 int FUN_0c0ef250(int, int, int, int);
 int FUN_0c0f24ec(int, int);
 float FUN_0c0f2fe4(float);
-int FUN_0c20d198(void);
+int _INITSCT(void);
 int FUN_0c20d728(int, int);
 int FUN_0c20ee8e(int);
 int FUN_0c20eee6(int);
 int FUN_0c20fa76(int);
-int FUN_0c210c04(int);
+int syCacheInit_P2_(int);
 int FUN_0c220da0(void);
 int FUN_0c220da4(void);
-int FUN_0c2225f8(int, int);
-int FUN_0c2227d0(void);
-int FUN_0c22287e(void);
+int syIntInit(int, int);
+int sySqInit(void);
+int syMmuDeleteAllEntries(void);
 int FUN_0c229028(void);
 extern int _builtin_get_imask(void);
 extern void _builtin_prefetch(void *);
@@ -148,7 +148,7 @@ int FUN_0c0f0574(int a4, int a5);
 int FUN_0c0edc20(int a4, int a5, int a6);
 int FUN_0c0f31b8(int a4, int a5);
 int kmSetVSyncCallback(int a4, int a5);
-int FUN_0c20ef82(int a4);
+int gdFsCheckMedia(int a4);
 int convert_support(int a4);
 int FUN_0c0e6380(void);
 int ntInfGetNetworkInfo(int a4);
@@ -475,7 +475,7 @@ void syHwFinish(void)
 
     t0 = _builtin_get_imask();
     _builtin_set_imask(0xF);
-    FUN_0c22287e();
+    syMmuDeleteAllEntries();
     syHwCacheFinish();
     _builtin_set_imask(((unsigned int)(((t0 & 0xF) << 2) << 2) >> 4));
 }
@@ -720,10 +720,10 @@ int syRtcCompareDate(int a4, int a5)
 
 int FUN_0c0e5aa0(void)
 {
-    FUN_0c0dcc40();
+    nlTransposeMatrix();
     FUN_0c0db4d0(0xC94CAD0, 0xC94CAE8);
     FUN_0c0db4d0(0xC20D040, 0xC9DF200);
-    return FUN_0c0dcc40();
+    return nlTransposeMatrix();
 }
 
 int FUN_0c0e5980(int a4, int a5)
@@ -805,9 +805,9 @@ int syRtcInit(void)
 int syHwInit(void)
 {
     hwInit();
-    FUN_0c2225f8((*(int *)0xC236864), (*(int *)0xC2393D4));
-    FUN_0c2227d0();
-    FUN_0c210c04((*(int *)0xC236860));
+    syIntInit((*(int *)0xC236864), (*(int *)0xC2393D4));
+    sySqInit();
+    syCacheInit_P2_((*(int *)0xC236860));
     return syTmrInit();
 }
 
@@ -887,7 +887,7 @@ int FUN_0c20d160(void)
             break;
         }
     }
-    FUN_0c20d198();
+    _INITSCT();
     FUN_0c20d188();
     FUN_0c010250();
     return FUN_0c20d190();
@@ -1165,7 +1165,7 @@ int kmSetVSyncCallback(int a4, int a5)
     return 0x0;
 }
 
-int FUN_0c20ef82(int a4)
+int gdFsCheckMedia(int a4)
 {
     int t0;
     int t1;

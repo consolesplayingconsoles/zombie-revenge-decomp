@@ -15,8 +15,8 @@ int FUN_0c0c0340(int);
 float FUN_0c0da410(int);
 int FUN_0c0e5dc0(void);
 int FUN_0c0e5f1c(void);
-int FUN_0c0e609c(void);
-extern int FUN_0c0e61d4();
+int _quick_evn_mvn(void);
+extern int _quick_odd_mvn();
 int kmiCreateRegionArray(int, int, int, int, int, int);
 int mpdrv_init_globals(void);
 int mpdrv_insertnop(int);
@@ -521,8 +521,8 @@ int FUN_0c029e06(int a4)
     float u39;
     int stk[21];
 
-    t0 = ((int (*)(int))(FUN_0c0e61d4))(a4);
-    t1 = ((int (*)(void))(FUN_0c0e61d4))();
+    t0 = ((int (*)(int))(_quick_odd_mvn))(a4);
+    t1 = ((int (*)(void))(_quick_odd_mvn))();
     t2 = *(int *)((a4 + 0x3A0));
     if (t2 != 0) {
         if (t2 != 1) {
@@ -614,7 +614,7 @@ int FUN_0c029e06(int a4)
                 *(unsigned int *)((a4 + 0x3AC)) = 0x78;
                 *(unsigned int *)((a4 + 0x3B0)) = 0x0;
                 *(unsigned int *)((a4 + 0x3A0)) = ((*(int *)((a4 + 0x3A0))) + 0x1);
-                FUN_0c0e609c();
+                _quick_evn_mvn();
                 FUN_0c062d4a(a4, (((int)stk + 16) + 0xC), (((int)stk + 16) + 0x28), 0xFFFFF800, 0x0, 0x1, 0x0);
                 FUN_0c062d4a(a4, (((int)stk + 4) + 0x18), (((int)stk + 4) + 0x28), 0xFFFFF800, 0x0, 0x1, 0x0);
                 t78 = (FUN_0c0372f8(a4, 0x123A9, 0x223A9, (*(int *)((a4 + 0x3AC)))));

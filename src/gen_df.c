@@ -8,7 +8,7 @@ int FUN_0c039110(int);
 int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
 int FUN_0c0da2e0(void);
 int FUN_0c0e5f1c(void);
-int FUN_0c0e61d4(int);
+int _quick_odd_mvn(int);
 int FUN_0c03d038(int a4);
 
 int FUN_0c03d038(int a4)
@@ -37,7 +37,7 @@ int FUN_0c03d038(int a4)
     int t104;
     int stk[14];
 
-    FUN_0c0e61d4(a4);
+    _quick_odd_mvn(a4);
     t1 = *(int *)((a4 + 0x4C4));
     if (((t1 != 0) && (t1 != 1)) || ((t2 = *(int *)((a4 + 0x310)), (int)t2 < 0) || (t3 = *(int *)((a4 + 0x304)), (int)t3 <= 0))) {
         *(unsigned int *)((a4 + 0x57C)) = 0x0;

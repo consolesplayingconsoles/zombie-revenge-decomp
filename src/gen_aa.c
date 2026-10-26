@@ -1,11 +1,11 @@
 /* Straight-line functions with calls and guards (batch gen_aa): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0dc1a0(int);
-int FUN_0c0dc510(int);
-int FUN_0c0de6c0(void);
-int FUN_0c0de700(void);
-int FUN_0c0de850(int);
+int nlMultiMatrixRevOrder8(int);
+int nlPushMatrix(int);
+int nlInvLightVector(void);
+int nlInvLightVectorUseViewMatrix(void);
+int nlobjput_sub_trnsl(int);
 int FUN_0c0de8d0(void);
 extern int _builtin_tas(char *);
 #pragma inline_asm(iaOcbp)
@@ -23,7 +23,7 @@ int FUN_0c0cf942(int a4, int a5, int a6, int a7);
 void FUN_0c20d7d4(int a4);
 int mpdrv_set_bwrite(int a4, int a5, int a6, int a7, int a8, int a9, int a10);
 float FUN_0c093ac8(int a4, int a5, int a6, float f4, float f5, float f6);
-int FUN_0c0de1f0(int a4, float f4);
+int nlObjPutTrnsl(int a4, float f4);
 int mpdrv_set_bread(int a4, int a5, int a6, int a7, int a8);
 int mpdrv_set_getlerr(int a4, int a5, int a6, int a7, int a8);
 int FUN_0c0de230(int a4, float f4);
@@ -153,14 +153,14 @@ float FUN_0c093ac8(int a4, int a5, int a6, float f4, float f5, float f6)
     return (((f5 * f5) - ((f5 - f6) * (f5 - f6))) / (f5 * f5));
 }
 
-int FUN_0c0de1f0(int a4, float f4)
+int nlObjPutTrnsl(int a4, float f4)
 {
     if (((*(int *)((a4 + 0x4))) & 2) == 0) {
-        FUN_0c0de6c0();
+        nlInvLightVector();
     }
-    FUN_0c0dc510(0x0);
-    FUN_0c0dc1a0(0xC948580);
-    return FUN_0c0de850(a4);
+    nlPushMatrix(0x0);
+    nlMultiMatrixRevOrder8(0xC948580);
+    return nlobjput_sub_trnsl(a4);
 }
 
 int mpdrv_set_bread(int a4, int a5, int a6, int a7, int a8)
@@ -192,10 +192,10 @@ int mpdrv_set_getlerr(int a4, int a5, int a6, int a7, int a8)
 int FUN_0c0de230(int a4, float f4)
 {
     if (((*(int *)((a4 + 0x4))) & 2) == 0) {
-        FUN_0c0de700();
+        nlInvLightVectorUseViewMatrix();
     }
     FUN_0c0de8d0();
-    return FUN_0c0de850(a4);
+    return nlobjput_sub_trnsl(a4);
 }
 
 int FUN_0c01c214(int a4, int a5)

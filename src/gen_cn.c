@@ -40,28 +40,28 @@ float FUN_0c0da410(int);
 int FUN_0c0db2a0(int);
 int FUN_0c0db470(int, int);
 int FUN_0c0dc0b0(int);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
-int FUN_0c0dcb80(float, float, float);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
+int nlScale(float, float, float);
 int FUN_0c0dcc70(float, float, float);
 int FUN_0c0dcca0(int);
-int FUN_0c0dccc0(void);
-int FUN_0c0dcd10(int, int);
-float FUN_0c0dcda0(int, int);
-int FUN_0c0dce40(int, int, float);
+int nlUnitMatrix(void);
+int nlAddVector(int, int);
+float nlLength(int, int);
+int nlScaleUnitVector(int, int, float);
 int FUN_0c0dce80(int, int, float);
 float FUN_0c0dcea0(int);
-int FUN_0c0dced0(int, int);
-int FUN_0c0dcef0(int, int, int);
+int nlSubVector(int, int);
+int nlSubVector3op(int, int, int);
 int FUN_0c0dd2f0(int, float, float, float);
 int FUN_0c0de000(float);
 int FUN_0c0de310(float, float, float);
 int FUN_0c0de3a0(float, float, float);
 int FUN_0c0de3b0(float, float, float);
-int FUN_0c0de3f0(float, float);
+int nlObjPutSetSaturate(float, float);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 extern int FUN_0c0e19f2();
@@ -78,7 +78,7 @@ int FUN_0c0e5980(int, int);
 int FUN_0c0e5ad0(int, int);
 int FUN_0c0e5b30(void);
 int FUN_0c0e5dc0(void);
-extern int FUN_0c0e61d4();
+extern int _quick_odd_mvn();
 int FUN_0c0e6248(void);
 extern int FUN_0c0e631c();
 int FUN_0c9de360(void);
@@ -116,7 +116,7 @@ int FUN_0c084218(void)
     int t21;
 
     FUN_0c0dc0b0(0x3);
-    FUN_0c0dccc0();
+    nlUnitMatrix();
     FUN_0c0dd2f0((*(int *)0xC247ED8), (*(float *)0xC247EDC), (*(float *)0xC247EE0), (*(float *)0xC247EE4));
     FUN_0c0dc0b0(0x1);
     FUN_0c08448c(0x0);
@@ -164,11 +164,11 @@ int FUN_0c084218(void)
         FUN_0c0d9940((*(int *)0xC248A9C), (*(int *)0xC248A98));
     }
     if ((*(int *)0xC247F0C) != 0) {
-        FUN_0c0de3f0((*(float *)0xC247F10), (*(float *)0xC247F14));
+        nlObjPutSetSaturate((*(float *)0xC247F10), (*(float *)0xC247F14));
         FUN_0c0de3a0(((*(float *)0xC247EF4) * (*(float *)0xC247EE8)), ((*(float *)0xC247EF8) * (*(float *)0xC247EEC)), ((*(float *)0xC247EFC) * (*(float *)0xC247EF0)));
         return FUN_0c0de3b0(((*(float *)0xC247F00) * (*(float *)0xC247EE8)), ((*(float *)0xC247F04) * (*(float *)0xC247EEC)), ((*(float *)0xC247F08) * (*(float *)0xC247EF0)));
     }
-    FUN_0c0de3f0((-1.0f), (-1.0f));
+    nlObjPutSetSaturate((-1.0f), (-1.0f));
     return FUN_0c0de310((*(float *)0xC247EE8), (*(float *)0xC247EEC), (*(float *)0xC247EF0));
 }
 
@@ -198,7 +198,7 @@ int FUN_0c0b35e4(int a4)
         *(float *)((a4 + 0x34)) = ((*(float *)((a4 + 0x34))) + 0.75f);
     }
     FUN_0c085704(a4);
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
     if (((*(int *)((a4 + 0x20C))) & 0x20000000) != 0) {
         FUN_0c01db0e(a4, (*(int *)((a4 + 0xA4))));
     } else {
@@ -381,7 +381,7 @@ void FUN_0c0bd958(int a4, int a5, int a6, int a7)
     if (((int)R10 <= 0)) goto L_C0BDA18;
     goto L_C0BD9E6;
     L_C0BD9E6:;
-    t31 = FUN_0c0dcda0(R9, R14);
+    t31 = nlLength(R9, R14);
     F0 = (t31);
     if ((!(9.99999975e-06f > t31))) goto L_C0BDA0C;
     goto L_C0BD9F6;
@@ -660,27 +660,27 @@ int FUN_0c0ccb64(int a4, int a5, int a6, int a7)
     u6 = -81.0f;
     u6 = u6 + 0.00499999989f * (float)(FUN_0c0da2e0());
     *(float *)(((int)stk + 20)) = u6;
-    FUN_0c0dcd10((((int)stk + 4) + 0x8), (a4 + 0x3C));
-    FUN_0c0dced0((((int)stk + 4) + 0x8), (a4 + 0x30));
+    nlAddVector((((int)stk + 4) + 0x8), (a4 + 0x3C));
+    nlSubVector((((int)stk + 4) + 0x8), (a4 + 0x30));
     u10 = 0.00999999978f;
     u10 = u10 + 1.92266589e-06f * (float)(FUN_0c0da2e0());
-    FUN_0c0dce40((((int)stk + 4) + 0x8), (((int)stk + 4) + 0x8), u10);
-    FUN_0c0dcd10((a4 + 0x48), (((int)stk + 4) + 0x8));
+    nlScaleUnitVector((((int)stk + 4) + 0x8), (((int)stk + 4) + 0x8), u10);
+    nlAddVector((a4 + 0x48), (((int)stk + 4) + 0x8));
     FUN_0c0dce80((a4 + 0x48), (a4 + 0x48), 0.979999959f);
-    FUN_0c0dcd10((a4 + 0x30), (a4 + 0x48));
+    nlAddVector((a4 + 0x30), (a4 + 0x48));
     *(float *)((a4 + 0x34)) = ((*(float *)((a4 + 0x34))) - 0.272222161f);
     FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (*(float *)((a4 + 0x48))), (*(float *)((a4 + 0x4C))), (*(float *)((a4 + 0x50))));
     *(unsigned short *)(((0x54 + a4) + 0x0)) = (int)((float)(*(short *)(((0x54 + a4) + 0x0))) + ((float)(FUN_0c07e636((*(short *)((a4 + 0x54))), (*(int *)(((int)stk + 4))))) * 0.099999994f));
     *(unsigned short *)(((0x56 + a4) + 0x0)) = (int)((float)(*(short *)(((0x56 + a4) + 0x0))) + ((float)(FUN_0c07e636((*(short *)((a4 + 0x56))), ((*(int *)(((int)stk + 8))) + 0x7FFF))) * 0.099999994f));
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     FUN_0c0dcca0((a4 + 0x30));
-    FUN_0c0dc890((*(short *)((a4 + 0x56))));
-    FUN_0c0dc6e0((*(short *)((a4 + 0x54))));
+    nlRotateAY((*(short *)((a4 + 0x56))));
+    nlRotateAX((*(short *)((a4 + 0x54))));
     u34 = *(float *)((a4 + 0x5C));
-    FUN_0c0dcb80(u34, u34, u34);
+    nlScale(u34, u34, u34);
     FUN_0c0de000((*(float *)((a4 + 0x5C))));
     FUN_0c0c465c((*(short *)((((*(int *)((a4 + 0x60))) << 1) + 0xC1E9E4C))));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     t42 = *(int *)((a4 + 0x60));
     *(unsigned int *)((a4 + 0x60)) = (t42 + 0x1);
     if ((unsigned int)(t42 + 0x1) >= (unsigned int)0x4) {
@@ -934,13 +934,13 @@ int FUN_0c068b62(int a4)
             *(unsigned int *)((a4 + 0x220)) = ((*(int *)((a4 + 0x220))) + 0x1);
         }
     }
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     FUN_0c0dcc70((*(float *)((a4 + 0x30))), ((*(float *)((a4 + 0x34))) + (*(float *)((a4 + 0x64)))), (*(float *)((a4 + 0x38))));
-    FUN_0c0dc890((*(short *)((a4 + 0x6E))));
-    FUN_0c0dc950((*(short *)((a4 + 0x70))));
-    FUN_0c0dc6e0((*(short *)((a4 + 0x6C))));
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    nlRotateAZ((*(short *)((a4 + 0x70))));
+    nlRotateAX((*(short *)((a4 + 0x6C))));
     FUN_0c0c465c((*(int *)((a4 + 0x21C))));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     return FUN_0c01cdf2(a4);
 }
 
@@ -1021,7 +1021,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                         FUN_0c0e19d0(t7);
                                         t6 = 0xC0E61D4;
                                         t5 = t10;
-                                        FUN_0c0e61d4();
+                                        _quick_odd_mvn();
                                         t5 = t10;
                                         t6 = 0xC0E6248;
                                         t5 = (t5 + 0xC);
@@ -1045,7 +1045,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                     FUN_0c0e19d0(t7);
                                     t6 = 0xC0E61D4;
                                     t5 = t10;
-                                    FUN_0c0e61d4();
+                                    _quick_odd_mvn();
                                     t5 = t10;
                                     t6 = 0xC0E6248;
                                     t5 = (t5 + 0xC);
@@ -1066,7 +1066,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                 FUN_0c0e19d0(t7);
                                 t6 = 0xC0E61D4;
                                 t5 = t10;
-                                FUN_0c0e61d4();
+                                _quick_odd_mvn();
                                 t5 = t10;
                                 t6 = 0xC0E6248;
                                 t5 = (t5 + 0xC);
@@ -1085,7 +1085,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                             FUN_0c0e19d0(t7);
                             t6 = 0xC0E61D4;
                             t5 = t10;
-                            FUN_0c0e61d4();
+                            _quick_odd_mvn();
                             t5 = t10;
                             t6 = 0xC0E6248;
                             t5 = (t5 + 0xC);
@@ -1104,7 +1104,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                         FUN_0c0e19d0(t7);
                         t6 = 0xC0E61D4;
                         t5 = t10;
-                        FUN_0c0e61d4();
+                        _quick_odd_mvn();
                         t5 = t10;
                         t6 = 0xC0E6248;
                         t5 = (t5 + 0xC);
@@ -1124,7 +1124,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                     FUN_0c0e19d0(t7);
                     t6 = 0xC0E61D4;
                     t5 = t10;
-                    FUN_0c0e61d4();
+                    _quick_odd_mvn();
                     t5 = t10;
                     t6 = 0xC0E6248;
                     t5 = (t5 + 0xC);
@@ -1211,9 +1211,9 @@ int FUN_0c024dfa(int a4, int a5, int a6, int a7)
                     u30 = _builtin_sqrtf(u26);
                 }
                 FUN_0c0a7714((((int)stk + 4) + 0x4), ((int)stk + 4), ((*(float *)((a4 + 0x518))) - (*(float *)((a4 + 0x30)))), ((*(float *)((a4 + 0x51C))) - (*(float *)((a4 + 0x34)))), ((*(float *)((a4 + 0x520))) - (*(float *)((a4 + 0x38)))));
-                FUN_0c0dc510(0x0);
-                FUN_0c0dccc0();
-                FUN_0c0dc890((*(int *)(((int)stk + 4))));
+                nlPushMatrix(0x0);
+                nlUnitMatrix();
+                nlRotateAY((*(int *)(((int)stk + 4))));
                 *(float *)(((int)stk + 24)) = 0.0f;
                 *(float *)(((int)stk + 28)) = 0.0f;
                 *(float *)(((int)stk + 32)) = u30;
@@ -1221,7 +1221,7 @@ int FUN_0c024dfa(int a4, int a5, int a6, int a7)
                 *(float *)(((((int)stk + 4) + 0x20) + 0x0)) = (*(float *)(((int)stk + 12)));
                 *(float *)((((((int)stk + 4) + 0x20) + 0x4) + 0x0)) = (*(float *)(((int)stk + 16)));
                 *(float *)((((((int)stk + 4) + 0x20) + 0x8) + 0x0)) = (*(float *)(((int)stk + 20)));
-                FUN_0c0dc4c0(0x1);
+                nlPopMatrix(0x1);
                 *(float *)((a4 + 0x48)) = (*(float *)(((((int)stk + 4) + 0x20) + 0x0)));
                 *(float *)((a4 + 0x4C)) = (*(float *)(((((int)stk + 4) + 0x20) + 0x4)));
                 *(float *)((a4 + 0x50)) = (*(float *)(((((int)stk + 4) + 0x20) + 0x8)));
@@ -1263,9 +1263,9 @@ int FUN_0c061a8a(int a4, int a5, float f4)
     int t32;
     int stk[14];
 
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     u2 = *(float *)(((*(int *)0xC247B94) + 0x88));
-    FUN_0c0dcb80((u2 * 0.5f), (u2 * 0.5f), 0.099999994f);
+    nlScale((u2 * 0.5f), (u2 * 0.5f), 0.099999994f);
     u5 = *(float *)(((*(int *)0xC247B94) + 0x88));
     u6 = (u5 * 0.5f);
     if (0.099999994f > (u5 * 0.5f)) {
@@ -1285,8 +1285,8 @@ int FUN_0c061a8a(int a4, int a5, float f4)
     if (!((*(float *)((a5 + 0x0))) > 0.0f)) {
         *(float *)((a5 + 0x0)) = ((*(float *)((a5 + 0x0))) + 1.0f);
     }
-    FUN_0c0dc510(0x0);
-    FUN_0c0dc890(0x8000);
+    nlPushMatrix(0x0);
+    nlRotateAY(0x8000);
     FUN_0c0cae8e(0x3EC);
     FUN_0c0cacde(0x3EC, 0.199999988f, 0.0f);
     FUN_0c0de000((f4 * u6));
@@ -1298,20 +1298,20 @@ int FUN_0c061a8a(int a4, int a5, float f4)
     FUN_0c0848bc((*(float *)((t32 + 0x4C))), (*(float *)((t32 + 0x50))), (*(float *)((t32 + 0x54))));
     FUN_0c0cacde(0x3EC, -0.199999988f, 0.0f);
     FUN_0c0cae8e(0x3EC);
-    FUN_0c0dcb80(0.5f, 0.5f, (1.0f + 1.0f));
+    nlScale(0.5f, 0.5f, (1.0f + 1.0f));
     FUN_0c0de000(((1.0f + 1.0f) * ((f4 * u6))));
     FUN_0c0cae8e(0x3ED);
     FUN_0c0cacde(0x3ED, 0.0f, (*(float *)((a4 + 0x0))));
     FUN_0c0c47ae(0x3ED);
     FUN_0c0cacde(0x3ED, 0.0f, ((*(float *)((a5 + 0x0))) - (*(float *)((a4 + 0x0)))));
-    FUN_0c0dcb80(1.00999999f, 1.00999999f, 1.0f);
+    nlScale(1.00999999f, 1.00999999f, 1.0f);
     FUN_0c0de000(((1.0f + 1.0f) * ((f4 * u6))));
     FUN_0c0c47ae(0x3ED);
     FUN_0c0cacde(0x3ED, 0.0f, (-(*(float *)((a5 + 0x0)))));
     FUN_0c0cae8e(0x3ED);
     FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
-    FUN_0c0dc4c0(0x1);
-    return FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
+    return nlPopMatrix(0x1);
 }
 
 int FUN_0c08a5e4(int a4, int a5)
@@ -1391,8 +1391,8 @@ int FUN_0c08a5e4(int a4, int a5)
         t62 = t37;
         t63 = t38;
     }
-    t66 = ((int (*)(int, int))(FUN_0c0e61d4))(t62, t63);
-    return (((int (*)(void))(FUN_0c0e61d4))());
+    t66 = ((int (*)(int, int))(_quick_odd_mvn))(t62, t63);
+    return (((int (*)(void))(_quick_odd_mvn))());
 }
 
 int FUN_0c081e8c(int a4)
@@ -1456,11 +1456,11 @@ int FUN_0c081e8c(int a4)
     }
     if ((*(int *)((a4 + 0x3F4))) != 0) {
         *(unsigned int *)((a4 + 0x3F4)) = ((*(int *)((a4 + 0x3F4))) - 1);
-        t49 = ((int (*)(int))(FUN_0c0e61d4))(t44);
-        t50 = ((int (*)(void))(FUN_0c0e61d4))();
+        t49 = ((int (*)(int))(_quick_odd_mvn))(t44);
+        t50 = ((int (*)(void))(_quick_odd_mvn))();
     } else {
-        FUN_0c0dcef0(((int)stk + 4), (0x284 + a4), (0x278 + a4));
-        FUN_0c0dcef0((((int)stk + 4) + 0xC), (0x260 + a4), (0x254 + a4));
+        nlSubVector3op(((int)stk + 4), (0x284 + a4), (0x278 + a4));
+        nlSubVector3op((((int)stk + 4) + 0xC), (0x260 + a4), (0x254 + a4));
         if (((*(int *)((a4 + 0x250))) & 24) != 0) {
             *(unsigned int *)((a4 + 0x250)) = ((*(int *)((a4 + 0x250))) & 0xFFFFFFE7);
             *(unsigned int *)((a4 + 0x3EC)) = ((*(int *)((a4 + 0x3EC))) + 0x1);
@@ -1483,8 +1483,8 @@ int FUN_0c081e8c(int a4)
             u75 = (((u59 * t70)) * 0.00999999978f);
         }
         FUN_0c0dce80((((int)stk + 4) + 0xC), (((int)stk + 4) + 0xC), u75);
-        FUN_0c0dcd10((0x278 + a4), ((int)stk + 4));
-        FUN_0c0dcd10((0x254 + a4), (((int)stk + 4) + 0xC));
+        nlAddVector((0x278 + a4), ((int)stk + 4));
+        nlAddVector((0x254 + a4), (((int)stk + 4) + 0xC));
     }
     return (FUN_0c081e0c(a4));
 }
@@ -1756,7 +1756,7 @@ float FUN_0c022c5e(int a4)
     *(float *)((a4 + 0x48)) = (*(float *)((a4 + 0x60)));
     *(float *)((a4 + 0x4C)) = ((*(float *)((a4 + 0x64))) * 0.949999988f);
     *(float *)((a4 + 0x50)) = (*(float *)((a4 + 0x68)));
-    FUN_0c0dcd10((a4 + 0x48), (0x4B0 + a4));
+    nlAddVector((a4 + 0x48), (0x4B0 + a4));
     u49 = *(float *)((a4 + 0x48));
     u50 = *(float *)((a4 + 0x4C));
     u51 = *(float *)((a4 + 0x50));

@@ -1842,6 +1842,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 94
 - the cases run 19 of 19 instructions
 
+### ADXERR_CallErrFunc (`0C229D7E`, 62 bytes, `src/gen_n.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_n/ADXERR_CallErrFunc.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 91
+- case 111
+- case 94
+- case 100
+- case 37
+- case 42
+- case 62
+- case 116
+- case 60
+- case 85
+- case 48
+- case 74
+- case 90
+- case 49
+- case 57
+- case 82
+- case 40
+- case 73
+- the cases run 27 of 31 instructions
+
 ### ADXERR_EntryErrFunc (`0C229D74`, 10 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/ADXERR_EntryErrFunc.json`
 - case 0
@@ -2281,6 +2321,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 52
 - case 76
 - the cases run 29 of 29 instructions
+
+### ADXF_InitCache_P2_ (`0C22B3D8`, 42 bytes, `src/gen_z.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/ADXF_InitCache_P2_.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 81
+- case 74
+- case 64
+- case 99
+- case 106
+- case 93
+- case 80
+- case 92
+- case 59
+- case 100
+- case 104
+- case 67
+- case 86
+- case 96
+- case 111
+- case 113
+- case 46
+- case 44
+- the cases run 21 of 21 instructions
 
 ### ADXF_ReadSj32 (`0C2146FE`, 46 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/ADXF_ReadSj32.json`
@@ -2962,6 +3042,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - the cases run 13 of 13 instructions
 
+### ADXSTMF_Create (`0C22A652`, 134 bytes, `src/gen_ck.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/ADXSTMF_Create.json`
+- case 131
+- case 0
+- case 4
+- case 7
+- case 11
+- case 12
+- case 13
+- case 16
+- case 19
+- case 20
+- case 21
+- case 22
+- case 24
+- case 25
+- case 26
+- case 27
+- case 28
+- case 29
+- case 148
+- case 77
+- case 154
+- case 113
+- case 150
+- case 86
+- case 76
+- case 59
+- case 102
+- case 135
+- case 94
+- case 91
+- case 127
+- case 74
+- case 57
+- case 149
+- case 147
+- case 69
+- the cases run 65 of 67 instructions
+
 ### ADXSTMF_ExecHndl (`0C22AAA8`, 14 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/ADXSTMF_ExecHndl.json`
 - case 0
@@ -3414,6 +3534,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 84
 - the cases run 42 of 42 instructions
 
+### ADXSTM_OpenRange (`0C22A774`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/ADXSTM_OpenRange.json`
+- case 0
+- case 30
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 46
+- case 63
+- case 85
+- case 110
+- case 75
+- case 40
+- case 56
+- case 51
+- case 65
+- case 45
+- case 115
+- case 81
+- case 82
+- case 119
+- case 76
+- case 54
+- case 66
+- case 92
+- the cases run 45 of 45 instructions
+
 ### ADXSTM_Seek (`0C22A8BC`, 24 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/ADXSTM_Seek.json`
 - case 0
@@ -3493,6 +3653,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 65
 - case 102
 - the cases run 4 of 4 instructions
+
+### ADXSTM_SetEos (`0C22A8DA`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/ADXSTM_SetEos.json`
+- case 21
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 52
+- case 68
+- case 113
+- case 36
+- case 69
+- case 105
+- case 55
+- case 98
+- case 90
+- case 116
+- case 71
+- case 101
+- case 40
+- case 57
+- case 61
+- case 93
+- case 74
+- case 44
+- the cases run 16 of 16 instructions
 
 ### ADXSTM_SetReqRdSize (`0C22AB20`, 6 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/ADXSTM_SetReqRdSize.json`
@@ -4014,6 +4214,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - the cases run 32 of 32 instructions
 
+### ADXT_Pause (`0C213DCC`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/ADXT_Pause.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 81
+- case 92
+- case 77
+- case 49
+- case 39
+- case 96
+- case 67
+- case 107
+- case 127
+- case 139
+- case 130
+- case 133
+- case 65
+- case 120
+- case 80
+- case 121
+- case 98
+- case 104
+- the cases run 31 of 44 instructions
+
 ### ADXT_SetFilter (`0C213E38`, 10 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/ADXT_SetFilter.json`
 - case 0
@@ -4512,6 +4752,34 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 39
 - the cases run 15 of 15 instructions
 
+### FUN_0c0101dc (`0C0101DC`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 12 development and 12 holdout cases, in `tests/gen_ek/FUN_0c0101dc.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 41 of 55 instructions
+
 ### FUN_0c010250 (`0C010250`, 20 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c010250.json`
 - case 0
@@ -4591,6 +4859,22 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 79
 - case 60
 - the cases run 21 of 28 instructions
+
+### FUN_0c01029e (`0C01029E`, 676 bytes, `src/gen_dp.c`)
+- equivalent on 6 development and 6 holdout cases, in `tests/gen_dp/FUN_0c01029e.json`
+- endless case 0
+- endless case 1
+- endless case 2
+- endless case 3
+- endless case 4
+- endless case 5
+- endless case 6
+- endless case 7
+- endless case 8
+- endless case 9
+- endless case 10
+- endless case 11
+- the cases run 58 of 239 instructions
 
 ### FUN_0c0105c4 (`0C0105C4`, 18 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c0105c4.json`
@@ -4711,6 +4995,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - case 81
 - the cases run 34 of 34 instructions
+
+### FUN_0c0106a0 (`0C0106A0`, 550 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c0106a0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 80
+- case 82
+- case 37
+- case 86
+- case 94
+- case 39
+- case 93
+- case 97
+- case 92
+- case 118
+- case 78
+- case 100
+- case 59
+- case 109
+- case 101
+- case 95
+- case 71
+- case 108
+- the cases run 195 of 195 instructions
 
 ### FUN_0c0108c6 (`0C0108C6`, 122 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0108c6.json`
@@ -5151,6 +5475,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 57
 - case 108
 - the cases run 16 of 16 instructions
+
+### FUN_0c010e3c (`0C010E3C`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c010e3c.json`
+- case 1
+- case 2
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 149
+- case 69
+- case 155
+- case 145
+- case 79
+- case 126
+- case 94
+- case 140
+- case 91
+- case 142
+- case 63
+- case 71
+- case 75
+- case 131
+- case 84
+- case 129
+- case 41
+- case 154
+- the cases run 43 of 43 instructions
 
 ### FUN_0c010e92 (`0C010E92`, 30 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c010e92.json`
@@ -5748,6 +6112,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 146
 - the cases run 51 of 51 instructions
 
+### FUN_0c01197c (`0C01197C`, 726 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c01197c.json`
+- case 18
+- case 55
+- case 77
+- case 2
+- case 98
+- case 14
+- case 71
+- case 0
+- case 1
+- case 3
+- case 4
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 17
+- case 148
+- case 155
+- case 70
+- case 78
+- case 83
+- case 108
+- case 153
+- case 136
+- case 103
+- case 66
+- case 84
+- case 114
+- case 82
+- case 113
+- case 128
+- case 101
+- case 117
+- case 68
+- the cases run 278 of 279 instructions
+
 ### FUN_0c011c6c (`0C011C6C`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c011c6c.json`
 - case 0
@@ -5908,6 +6312,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - the cases run 28 of 28 instructions
 
+### FUN_0c0141d4 (`0C0141D4`, 314 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0141d4.json`
+- case 2
+- case 8
+- case 11
+- case 12
+- case 14
+- case 18
+- case 19
+- case 25
+- case 31
+- case 35
+- case 37
+- case 39
+- case 45
+- case 48
+- case 53
+- case 54
+- case 55
+- case 57
+- case 106
+- case 123
+- case 148
+- case 134
+- case 155
+- case 119
+- case 152
+- case 110
+- case 126
+- case 127
+- case 144
+- case 125
+- case 147
+- case 108
+- case 104
+- case 113
+- case 102
+- case 109
+- the cases run 154 of 157 instructions
+
 ### FUN_0c01430e (`0C01430E`, 680 bytes, `src/gen_ap.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ap/FUN_0c01430e.json`
 - case 1
@@ -6027,6 +6471,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - case 156
 - the cases run 18 of 18 instructions
+
+### FUN_0c0146f0 (`0C0146F0`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0146f0.json`
+- case 135
+- case 135
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 93
+- case 96
+- case 53
+- case 154
+- case 152
+- case 65
+- case 87
+- case 148
+- case 132
+- case 78
+- case 63
+- case 121
+- case 60
+- case 62
+- case 73
+- case 38
+- case 147
+- case 122
+- the cases run 84 of 86 instructions
 
 ### FUN_0c0147a4 (`0C0147A4`, 1192 bytes, `src/gen_ag.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ag/FUN_0c0147a4.json`
@@ -6354,6 +6838,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 87
 - the cases run 14 of 14 instructions
 
+### FUN_0c0154c0 (`0C0154C0`, 554 bytes, `src/gen_du.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_du/FUN_0c0154c0.json`
+- case 57
+- case 10
+- case 3
+- case 4
+- case 2
+- case 0
+- case 5
+- case 9
+- case 1
+- case 6
+- case 7
+- case 8
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 94
+- case 95
+- case 132
+- case 53
+- case 115
+- case 40
+- case 47
+- case 80
+- case 136
+- case 36
+- case 128
+- case 131
+- case 65
+- case 92
+- case 106
+- case 79
+- case 87
+- case 151
+- the cases run 121 of 204 instructions
+
 ### FUN_0c0156ea (`0C0156EA`, 696 bytes, `src/gen_ap.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ap/FUN_0c0156ea.json`
 - case 97
@@ -6554,6 +7078,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 98
 - the cases run 49 of 49 instructions
 
+### FUN_0c015d7e (`0C015D7E`, 590 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c015d7e.json`
+- case 5
+- case 106
+- case 7
+- case 4
+- case 1
+- case 6
+- case 0
+- case 9
+- case 2
+- case 8
+- case 10
+- case 3
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 158
+- case 91
+- case 136
+- case 108
+- case 42
+- case 144
+- case 103
+- case 69
+- case 64
+- case 124
+- case 70
+- case 117
+- case 105
+- case 150
+- case 77
+- case 80
+- case 84
+- case 94
+- the cases run 170 of 247 instructions
+
 ### FUN_0c015fcc (`0C015FCC`, 262 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cz/FUN_0c015fcc.json`
 - case 0
@@ -6593,6 +7157,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 129
 - case 56
 - the cases run 69 of 102 instructions
+
+### FUN_0c0160d2 (`0C0160D2`, 216 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0160d2.json`
+- case 32
+- case 2
+- case 4
+- case 1
+- case 3
+- case 32
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 100
+- case 82
+- case 66
+- case 104
+- case 153
+- case 149
+- case 68
+- case 120
+- case 55
+- case 107
+- case 118
+- case 79
+- case 157
+- case 52
+- case 97
+- case 60
+- case 127
+- case 148
+- the cases run 75 of 75 instructions
 
 ### FUN_0c0161aa (`0C0161AA`, 56 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c0161aa.json`
@@ -6794,6 +7398,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 57
 - the cases run 11 of 11 instructions
 
+### FUN_0c016296 (`0C016296`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c016296.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 118
+- case 101
+- case 89
+- case 61
+- case 66
+- case 85
+- case 80
+- case 106
+- case 93
+- case 59
+- case 53
+- case 103
+- case 49
+- case 114
+- case 60
+- case 111
+- case 48
+- case 44
+- the cases run 44 of 44 instructions
+
 ### FUN_0c0162ee (`0C0162EE`, 40 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 7 holdout cases, in `tests/gen_d/FUN_0c0162ee.json`
 - case 0
@@ -6863,6 +7507,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 11 of 11 instructions
 
+### FUN_0c01632c (`0C01632C`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c01632c.json`
+- case 2
+- case 4
+- case 21
+- case 0
+- case 1
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 118
+- case 68
+- case 38
+- case 100
+- case 57
+- case 60
+- case 107
+- case 59
+- case 45
+- case 91
+- case 71
+- case 50
+- case 96
+- case 62
+- case 61
+- case 66
+- case 108
+- case 69
+- the cases run 35 of 35 instructions
+
 ### FUN_0c01641c (`0C01641C`, 28 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c01641c.json`
 - case 0
@@ -6902,6 +7586,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 154
 - case 120
 - the cases run 14 of 14 instructions
+
+### FUN_0c016438 (`0C016438`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c016438.json`
+- case 0
+- case 6
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 50
+- case 111
+- case 63
+- case 109
+- case 72
+- case 59
+- case 68
+- case 91
+- case 101
+- case 106
+- case 117
+- case 107
+- case 45
+- case 93
+- case 81
+- case 95
+- case 105
+- case 61
+- the cases run 65 of 65 instructions
+
+### FUN_0c0164d6 (`0C0164D6`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0164d6.json`
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 21
+- case 115
+- case 131
+- case 90
+- case 84
+- case 154
+- case 143
+- case 136
+- case 141
+- case 53
+- case 138
+- case 75
+- case 128
+- case 86
+- case 135
+- case 145
+- case 144
+- case 49
+- case 94
+- the cases run 45 of 45 instructions
 
 ### FUN_0c016530 (`0C016530`, 70 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c016530.json`
@@ -7103,6 +7867,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - the cases run 35 of 35 instructions
 
+### FUN_0c016728 (`0C016728`, 354 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c016728.json`
+- case 1
+- case 0
+- case 8
+- case 9
+- case 11
+- case 83
+- case 5
+- case 49
+- case 7
+- case 2
+- case 3
+- case 4
+- case 6
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 37
+- case 94
+- case 98
+- case 67
+- case 118
+- case 126
+- case 149
+- case 104
+- case 107
+- case 51
+- case 143
+- case 158
+- case 156
+- case 159
+- case 64
+- case 66
+- case 114
+- case 89
+- the cases run 137 of 145 instructions
+
 ### FUN_0c0168b0 (`0C0168B0`, 298 bytes, `src/gen_cw.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cw/FUN_0c0168b0.json`
 - case 32
@@ -7302,6 +8106,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 67
 - case 74
 - the cases run 4 of 4 instructions
+
+### FUN_0c016ac0 (`0C016AC0`, 316 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c016ac0.json`
+- case 26
+- case 0
+- case 26
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 96
+- case 57
+- case 69
+- case 47
+- case 48
+- case 74
+- case 61
+- case 49
+- case 115
+- case 142
+- case 149
+- case 58
+- case 121
+- case 78
+- case 113
+- case 136
+- case 97
+- case 71
+- the cases run 124 of 127 instructions
 
 ### FUN_0c016c10 (`0C016C10`, 78 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c016c10.json`
@@ -7542,6 +8386,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 96
 - case 49
 - the cases run 33 of 69 instructions
+
+### FUN_0c016dfe (`0C016DFE`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c016dfe.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 75
+- case 39
+- case 64
+- case 38
+- case 47
+- case 121
+- case 92
+- case 52
+- case 150
+- case 155
+- case 144
+- case 159
+- case 37
+- case 132
+- case 115
+- case 138
+- case 133
+- case 82
+- the cases run 19 of 67 instructions
 
 ### FUN_0c017216 (`0C017216`, 36 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c017216.json`
@@ -8023,6 +8907,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 76
 - the cases run 62 of 62 instructions
 
+### FUN_0c018f60 (`0C018F60`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c018f60.json`
+- case 2
+- case 6
+- case 8
+- case 12
+- case 21
+- case 30
+- case 37
+- case 48
+- case 53
+- case 61
+- case 80
+- case 89
+- case 92
+- case 100
+- case 105
+- case 116
+- case 150
+- case 158
+- case 3
+- case 7
+- case 10
+- case 19
+- case 23
+- case 31
+- case 47
+- case 49
+- case 60
+- case 67
+- case 84
+- case 91
+- case 99
+- case 101
+- case 112
+- case 149
+- case 157
+- case 159
+- the cases run 57 of 57 instructions
+
 ### FUN_0c01906a (`0C01906A`, 150 bytes, `src/gen_ci.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ci/FUN_0c01906a.json`
 - case 21
@@ -8343,6 +9267,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 122
 - the cases run 33 of 33 instructions
 
+### FUN_0c019980 (`0C019980`, 182 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c019980.json`
+- case 16
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 37
+- case 93
+- case 38
+- case 110
+- case 48
+- case 41
+- case 109
+- case 60
+- case 40
+- case 112
+- case 107
+- case 62
+- case 104
+- case 70
+- case 46
+- case 98
+- case 101
+- case 108
+- the cases run 63 of 63 instructions
+
 ### FUN_0c019a36 (`0C019A36`, 38 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c019a36.json`
 - case 3
@@ -8542,6 +9506,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - case 54
 - the cases run 37 of 37 instructions
+
+### FUN_0c01a3d8 (`0C01A3D8`, 174 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c01a3d8.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 68
+- case 103
+- case 107
+- case 90
+- case 95
+- case 73
+- case 66
+- case 48
+- case 79
+- case 80
+- case 99
+- case 41
+- case 70
+- case 45
+- case 43
+- case 113
+- case 116
+- case 115
+- the cases run 31 of 44 instructions
 
 ### FUN_0c01a486 (`0C01A486`, 22 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c01a486.json`
@@ -8868,6 +9872,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 131
 - case 86
 - the cases run 27 of 27 instructions
+
+### FUN_0c01aae0 (`0C01AAE0`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c01aae0.json`
+- case 9
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 97
+- case 79
+- case 100
+- case 43
+- case 108
+- case 72
+- case 74
+- case 96
+- case 87
+- case 69
+- case 103
+- case 66
+- case 109
+- case 42
+- case 76
+- case 60
+- case 81
+- case 61
+- the cases run 44 of 44 instructions
 
 ### FUN_0c01ac14 (`0C01AC14`, 30 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c01ac14.json`
@@ -9371,6 +10415,52 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - the cases run 31 of 31 instructions
 
+### FUN_0c01ce8a (`0C01CE8A`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c01ce8a.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 105
+- case 72
+- case 75
+- case 108
+- case 77
+- case 55
+- case 89
+- case 92
+- case 116
+- case 74
+- case 114
+- case 90
+- case 104
+- case 103
+- case 87
+- case 112
+- case 50
+- case 39
+- the cases run 45 of 45 instructions
+
+### FUN_0c01cf44 (`0C01CF44`, 166 bytes, `src/gen_eg.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eg/FUN_0c01cf44.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 77 of 82 instructions
+
 ### FUN_0c01d0be (`0C01D0BE`, 78 bytes, `src/gen_bw.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bw/FUN_0c01d0be.json`
 - case 1
@@ -9756,6 +10846,44 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 46
 - the cases run 31 of 31 instructions
 
+### FUN_0c01d9c2 (`0C01D9C2`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 17 development and 17 holdout cases, in `tests/gen_ek/FUN_0c01d9c2.json`
+- case 4
+- case 7
+- case 13
+- case 21
+- case 29
+- case 32
+- case 55
+- case 62
+- case 68
+- case 88
+- case 115
+- case 119
+- case 132
+- case 138
+- case 143
+- case 149
+- case 152
+- case 0
+- case 10
+- case 14
+- case 27
+- case 31
+- case 54
+- case 58
+- case 66
+- case 70
+- case 102
+- case 117
+- case 121
+- case 135
+- case 142
+- case 147
+- case 150
+- case 158
+- the cases run 48 of 56 instructions
+
 ### FUN_0c01db0e (`0C01DB0E`, 836 bytes, `src/gen_am.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_am/FUN_0c01db0e.json`
 - case 11
@@ -9881,6 +11009,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 117
 - case 120
 - the cases run 20 of 72 instructions
+
+### FUN_0c01e23c (`0C01E23C`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c01e23c.json`
+- case 35
+- case 12
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 94
+- case 37
+- case 41
+- case 60
+- case 91
+- case 51
+- case 110
+- case 114
+- case 59
+- case 40
+- case 45
+- case 103
+- case 115
+- case 93
+- case 118
+- case 112
+- case 63
+- case 65
+- the cases run 86 of 86 instructions
 
 ### FUN_0c01e2e8 (`0C01E2E8`, 70 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c01e2e8.json`
@@ -10162,6 +11330,18 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 303
 - the cases run 29 of 29 instructions
 
+### FUN_0c01ec10 (`0C01EC10`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c01ec10.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 61 of 82 instructions
+
+### FUN_0c01ee84 (`0C01EE84`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ef/FUN_0c01ee84.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 65 of 82 instructions
+
 ### FUN_0c01ef2a (`0C01EF2A`, 226 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c01ef2a.json`
 - case 0
@@ -10361,6 +11541,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 211
 - case 311
 - the cases run 26 of 26 instructions
+
+### FUN_0c01fa90 (`0C01FA90`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c01fa90.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 94
+- case 75
+- case 125
+- case 45
+- case 159
+- case 145
+- case 108
+- case 58
+- case 134
+- case 41
+- case 128
+- case 40
+- case 78
+- case 102
+- case 158
+- case 148
+- case 52
+- case 113
+- the cases run 58 of 58 instructions
 
 ### FUN_0c01fb04 (`0C01FB04`, 78 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c01fb04.json`
@@ -10637,6 +11857,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 93
 - the cases run 28 of 28 instructions
 
+### FUN_0c01fddc (`0C01FDDC`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c01fddc.json`
+- case 2
+- case 9
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 15
+- case 16
+- case 18
+- case 22
+- case 24
+- case 25
+- case 146
+- case 145
+- case 153
+- case 138
+- case 121
+- case 112
+- case 122
+- case 120
+- case 149
+- case 111
+- case 109
+- case 156
+- case 148
+- case 114
+- case 159
+- case 119
+- case 103
+- case 132
+- the cases run 83 of 83 instructions
+
 ### FUN_0c01fe82 (`0C01FE82`, 30 bytes, `src/gen_bo.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bo/FUN_0c01fe82.json`
 - case 1
@@ -10716,6 +11976,82 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - case 77
 - the cases run 40 of 40 instructions
+
+### FUN_0c01ff28 (`0C01FF28`, 574 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c01ff28.json`
+- case 0
+- case 4
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 113
+- case 102
+- case 40
+- case 96
+- case 54
+- case 34
+- case 90
+- case 133
+- case 62
+- case 141
+- case 83
+- case 65
+- case 56
+- case 125
+- case 157
+- case 69
+- case 155
+- case 39
+- the cases run 117 of 241 instructions
+
+### FUN_0c020750 (`0C020750`, 350 bytes, `src/gen_ea.c`)
+- equivalent on 16 development and 16 holdout cases, in `tests/gen_ea/FUN_0c020750.json`
+- case 1
+- case 9
+- case 12
+- case 23
+- case 38
+- case 50
+- case 65
+- case 86
+- case 105
+- case 113
+- case 117
+- case 120
+- case 124
+- case 127
+- case 135
+- case 150
+- case 4
+- case 11
+- case 18
+- case 36
+- case 48
+- case 64
+- case 72
+- case 104
+- case 112
+- case 115
+- case 119
+- case 121
+- case 125
+- case 134
+- case 147
+- case 159
+- the cases run 175 of 175 instructions
 
 ### FUN_0c0208fc (`0C0208FC`, 102 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c0208fc.json`
@@ -11436,6 +12772,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 42
 - the cases run 25 of 25 instructions
 
+### FUN_0c0213de (`0C0213DE`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0213de.json`
+- case 20
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 111
+- case 154
+- case 53
+- case 56
+- case 156
+- case 42
+- case 139
+- case 126
+- case 84
+- case 128
+- case 85
+- case 105
+- case 77
+- case 81
+- case 97
+- case 90
+- case 94
+- case 120
+- the cases run 83 of 83 instructions
+
+### FUN_0c02148c (`0C02148C`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c02148c.json`
+- case 49
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 153
+- case 69
+- case 112
+- case 110
+- case 47
+- case 60
+- case 91
+- case 102
+- case 35
+- case 103
+- case 132
+- case 64
+- case 148
+- case 146
+- case 97
+- case 151
+- case 89
+- case 105
+- the cases run 76 of 76 instructions
+
+### FUN_0c021956 (`0C021956`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c021956.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 19
+- case 21
+- case 22
+- case 23
+- case 80
+- case 128
+- case 94
+- case 102
+- case 93
+- case 122
+- case 145
+- case 115
+- case 82
+- case 47
+- case 125
+- case 111
+- case 81
+- case 117
+- case 109
+- case 49
+- case 149
+- case 140
+- the cases run 44 of 44 instructions
+
 ### FUN_0c0219ec (`0C0219EC`, 92 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c0219ec.json`
 - case 0
@@ -11790,6 +13246,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 58
 - the cases run 17 of 17 instructions
 
+### FUN_0c021d30 (`0C021D30`, 160 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c021d30.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 111
+- case 42
+- case 87
+- case 54
+- case 69
+- case 122
+- case 43
+- case 99
+- case 65
+- case 61
+- case 63
+- case 133
+- case 93
+- case 107
+- case 86
+- case 102
+- case 156
+- case 89
+- the cases run 52 of 80 instructions
+
 ### FUN_0c021dd0 (`0C021DD0`, 54 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c021dd0.json`
 - case 0
@@ -11910,6 +13406,41 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 105
 - the cases run 53 of 53 instructions
 
+### FUN_0c021fee (`0C021FEE`, 182 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 13 holdout cases, in `tests/gen_ec/FUN_0c021fee.json`
+- case 0
+- case 4
+- case 7
+- case 13
+- case 21
+- case 23
+- case 24
+- case 25
+- case 26
+- case 37
+- case 43
+- case 46
+- case 47
+- case 48
+- case 49
+- case 51
+- case 55
+- case 56
+- case 158
+- case 152
+- case 114
+- case 154
+- case 116
+- case 139
+- case 99
+- case 106
+- case 146
+- case 125
+- case 123
+- case 105
+- case 119
+- the cases run 91 of 91 instructions
+
 ### FUN_0c0220dc (`0C0220DC`, 194 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c0220dc.json`
 - case 0
@@ -11949,6 +13480,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 99
 - case 157
 - the cases run 72 of 96 instructions
+
+### FUN_0c02219e (`0C02219E`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c02219e.json`
+- case 2
+- case 0
+- case 1
+- case 4
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 132
+- case 158
+- case 136
+- case 64
+- case 72
+- case 140
+- case 40
+- case 120
+- case 57
+- case 144
+- case 52
+- case 75
+- case 65
+- case 45
+- case 93
+- case 157
+- case 53
+- case 128
+- the cases run 42 of 83 instructions
 
 ### FUN_0c022252 (`0C022252`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c022252.json`
@@ -12465,6 +14036,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 63
 - the cases run 16 of 16 instructions
 
+### FUN_0c023de0 (`0C023DE0`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 7 development and 7 holdout cases, in `tests/gen_ec/FUN_0c023de0.json`
+- case 2
+- case 3
+- case 5
+- case 7
+- case 45
+- case 105
+- case 132
+- case 52
+- case 4
+- case 6
+- case 9
+- case 82
+- case 118
+- case 133
+- the cases run 70 of 91 instructions
+
 ### FUN_0c023e98 (`0C023E98`, 36 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c023e98.json`
 - case 0
@@ -12504,6 +14093,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 76
 - case 99
 - the cases run 18 of 18 instructions
+
+### FUN_0c023f0c (`0C023F0C`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c023f0c.json`
+- case 87
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 91
+- case 74
+- case 45
+- case 90
+- case 111
+- case 119
+- case 54
+- case 108
+- case 89
+- case 106
+- case 114
+- case 100
+- case 95
+- case 92
+- case 42
+- case 117
+- case 43
+- case 96
+- the cases run 58 of 58 instructions
+
+### FUN_0c023f80 (`0C023F80`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c023f80.json`
+- case 35
+- case 1
+- case 12
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 86
+- case 108
+- case 118
+- case 42
+- case 41
+- case 55
+- case 89
+- case 87
+- case 40
+- case 119
+- case 71
+- case 88
+- case 63
+- case 65
+- case 114
+- case 44
+- case 53
+- case 48
+- the cases run 58 of 58 instructions
 
 ### FUN_0c02405a (`0C02405A`, 100 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c02405a.json`
@@ -12625,6 +14294,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 56
 - the cases run 38 of 38 instructions
 
+### FUN_0c024274 (`0C024274`, 176 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c024274.json`
+- case 2
+- case 7
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 59
+- case 63
+- case 43
+- case 73
+- case 111
+- case 82
+- case 51
+- case 36
+- case 56
+- case 88
+- case 54
+- case 110
+- case 100
+- case 57
+- case 37
+- case 74
+- case 66
+- case 119
+- the cases run 59 of 63 instructions
+
+### FUN_0c024324 (`0C024324`, 152 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c024324.json`
+- case 67
+- case 28
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 39
+- case 69
+- case 86
+- case 80
+- case 91
+- case 88
+- case 100
+- case 48
+- case 60
+- case 96
+- case 61
+- case 76
+- case 103
+- case 53
+- case 68
+- case 37
+- case 112
+- case 44
+- the cases run 74 of 75 instructions
+
 ### FUN_0c0243d8 (`0C0243D8`, 146 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c0243d8.json`
 - case 1
@@ -12693,6 +14442,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 118
 - case 153
 - the cases run 38 of 38 instructions
+
+### FUN_0c024776 (`0C024776`, 302 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c024776.json`
+- case 1
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 79
+- case 72
+- case 143
+- case 88
+- case 121
+- case 120
+- case 103
+- case 99
+- case 48
+- case 156
+- case 157
+- case 149
+- case 155
+- case 62
+- case 39
+- case 66
+- case 43
+- case 47
+- the cases run 78 of 121 instructions
+
+### FUN_0c024ae0 (`0C024AE0`, 632 bytes, `src/gen_dp.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dp/FUN_0c024ae0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 23
+- case 25
+- case 28
+- case 30
+- case 153
+- case 90
+- case 89
+- case 93
+- case 157
+- case 119
+- case 102
+- case 155
+- case 118
+- case 91
+- case 114
+- case 130
+- case 156
+- case 143
+- case 85
+- case 121
+- case 110
+- case 112
+- the cases run 37 of 279 instructions
 
 ### FUN_0c024dfa (`0C024DFA`, 496 bytes, `src/gen_cn.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cn/FUN_0c024dfa.json`
@@ -12974,6 +14803,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 229
 - the cases run 32 of 32 instructions
 
+### FUN_0c0265ac (`0C0265AC`, 636 bytes, `src/gen_do.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_do/FUN_0c0265ac.json`
+- case 2
+- case 95
+- case 3
+- case 0
+- case 4
+- case 5
+- case 2
+- case 1
+- case 2
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 57
+- case 55
+- case 114
+- case 98
+- case 68
+- case 37
+- case 34
+- case 80
+- case 52
+- case 58
+- case 149
+- case 147
+- case 43
+- case 60
+- case 70
+- case 143
+- case 78
+- case 124
+- the cases run 101 of 254 instructions
+
 ### FUN_0c026dbc (`0C026DBC`, 32 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c026dbc.json`
 - case 1
@@ -13254,6 +15123,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 108
 - the cases run 103 of 112 instructions
 
+### FUN_0c0277c4 (`0C0277C4`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0277c4.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 37
+- case 157
+- case 230
+- case 150
+- case 46
+- case 71
+- case 159
+- case 173
+- case 235
+- case 49
+- case 67
+- case 196
+- case 225
+- case 79
+- case 74
+- case 179
+- case 228
+- case 166
+- the cases run 114 of 114 instructions
+
 ### FUN_0c0278d0 (`0C0278D0`, 524 bytes, `src/gen_au.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_au/FUN_0c0278d0.json`
 - case 33
@@ -13454,6 +15363,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 79
 - the cases run 40 of 124 instructions
 
+### FUN_0c02914a (`0C02914A`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c02914a.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 137
+- case 149
+- case 100
+- case 127
+- case 66
+- case 78
+- case 79
+- case 61
+- case 59
+- case 113
+- case 48
+- case 86
+- case 71
+- case 82
+- case 105
+- case 129
+- case 121
+- case 90
+- the cases run 24 of 76 instructions
+
 ### FUN_0c029302 (`0C029302`, 390 bytes, `src/gen_bb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c029302.json`
 - case 70
@@ -13533,6 +15482,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 284
 - case 218
 - the cases run 230 of 236 instructions
+
+### FUN_0c029b60 (`0C029B60`, 112 bytes, `src/gen_el.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_el/FUN_0c029b60.json`
+- case 99
+- case 105
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 57
+- case 88
+- case 35
+- case 82
+- case 34
+- case 37
+- case 53
+- case 56
+- case 43
+- case 45
+- case 114
+- case 64
+- case 87
+- case 58
+- case 91
+- case 38
+- case 119
+- case 115
+- the cases run 54 of 56 instructions
 
 ### FUN_0c029bd4 (`0C029BD4`, 30 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c029bd4.json`
@@ -14083,6 +16072,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 123 of 133 instructions
 
+### FUN_0c02ae4e (`0C02AE4E`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c02ae4e.json`
+- case 43
+- case 43
+- case 43
+- case 43
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 57
+- case 84
+- case 99
+- case 47
+- case 50
+- case 65
+- case 110
+- case 101
+- case 49
+- case 103
+- case 36
+- case 87
+- case 75
+- case 60
+- case 90
+- case 64
+- case 54
+- case 53
+- the cases run 71 of 77 instructions
+
 ### FUN_0c02aef8 (`0C02AEF8`, 246 bytes, `src/gen_bx.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bx/FUN_0c02aef8.json`
 - case 7
@@ -14323,6 +16352,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 78
 - the cases run 94 of 95 instructions
 
+### FUN_0c02b8ba (`0C02B8BA`, 156 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c02b8ba.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 101
+- case 105
+- case 99
+- case 140
+- case 58
+- case 46
+- case 147
+- case 149
+- case 57
+- case 150
+- case 98
+- case 59
+- case 37
+- case 36
+- case 124
+- case 156
+- case 155
+- case 87
+- the cases run 19 of 78 instructions
+
 ### FUN_0c02bc00 (`0C02BC00`, 14 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c02bc00.json`
 - case 0
@@ -14443,6 +16512,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - the cases run 7 of 7 instructions
 
+### FUN_0c02bc2a (`0C02BC2A`, 370 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c02bc2a.json`
+- case 3
+- case 84
+- case 40
+- case 13
+- case 1
+- case 80
+- case 0
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 110
+- case 43
+- case 55
+- case 52
+- case 90
+- case 35
+- case 39
+- case 58
+- case 71
+- case 105
+- case 37
+- case 99
+- case 83
+- case 53
+- case 85
+- case 73
+- case 69
+- case 100
+- the cases run 146 of 168 instructions
+
 ### FUN_0c02bda4 (`0C02BDA4`, 384 bytes, `src/gen_cq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cq/FUN_0c02bda4.json`
 - case 96
@@ -14562,6 +16671,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 135
 - case 111
 - the cases run 238 of 333 instructions
+
+### FUN_0c02cbe0 (`0C02CBE0`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c02cbe0.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 17
+- case 20
+- case 21
+- case 22
+- case 152
+- case 143
+- case 76
+- case 150
+- case 75
+- case 72
+- case 155
+- case 153
+- case 0
+- case 81
+- case 139
+- case 103
+- case 0
+- case 154
+- case 99
+- case 112
+- case 118
+- case 96
+- the cases run 72 of 89 instructions
 
 ### FUN_0c02cc94 (`0C02CC94`, 28 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c02cc94.json`
@@ -14963,6 +17112,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 104
 - the cases run 194 of 194 instructions
 
+### FUN_0c02ddf8 (`0C02DDF8`, 484 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c02ddf8.json`
+- case 1
+- case 27
+- case 5
+- case 3
+- case 99
+- case 7
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 11
+- case 12
+- case 27
+- case 52
+- case 9
+- case 13
+- case 113
+- case 104
+- case 88
+- case 71
+- case 56
+- case 90
+- case 63
+- case 83
+- case 101
+- case 67
+- case 38
+- case 55
+- case 45
+- case 34
+- case 85
+- case 89
+- case 95
+- case 51
+- the cases run 110 of 199 instructions
+
 ### FUN_0c02e478 (`0C02E478`, 148 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c02e478.json`
 - case 1
@@ -15203,6 +17392,92 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - the cases run 13 of 13 instructions
 
+### FUN_0c02e70c (`0C02E70C`, 216 bytes, `src/gen_ec.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ec/FUN_0c02e70c.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 34 of 85 instructions
+
+### FUN_0c02eaee (`0C02EAEE`, 360 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c02eaee.json`
+- case 35
+- case 140
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 153
+- case 130
+- case 110
+- case 111
+- case 53
+- case 124
+- case 76
+- case 117
+- case 39
+- case 42
+- case 93
+- case 105
+- case 131
+- case 112
+- case 152
+- case 94
+- case 106
+- case 81
+- the cases run 120 of 147 instructions
+
+### FUN_0c02ec56 (`0C02EC56`, 224 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c02ec56.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 67
+- case 64
+- case 136
+- case 45
+- case 98
+- case 139
+- case 104
+- case 107
+- case 154
+- case 52
+- case 68
+- case 155
+- case 126
+- case 80
+- case 105
+- case 134
+- case 60
+- case 113
+- the cases run 61 of 100 instructions
+
 ### FUN_0c02ee08 (`0C02EE08`, 220 bytes, `src/gen_c.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_c/FUN_0c02ee08.json`
 - case 25
@@ -15375,6 +17650,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 28 of 125 instructions
 
+### FUN_0c02f4b8 (`0C02F4B8`, 348 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c02f4b8.json`
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 117
+- case 140
+- case 159
+- case 143
+- case 158
+- case 80
+- case 66
+- case 75
+- case 90
+- case 145
+- case 79
+- case 60
+- case 82
+- case 45
+- case 150
+- case 51
+- case 137
+- case 144
+- the cases run 119 of 146 instructions
+
 ### FUN_0c02f6f4 (`0C02F6F4`, 1154 bytes, `src/gen_ah.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ah/FUN_0c02f6f4.json`
 - case 8
@@ -15414,6 +17729,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 84
 - case 75
 - the cases run 225 of 501 instructions
+
+### FUN_0c02fb76 (`0C02FB76`, 176 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c02fb76.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 109
+- case 66
+- case 85
+- case 141
+- case 80
+- case 122
+- case 69
+- case 47
+- case 151
+- case 111
+- case 139
+- case 64
+- case 155
+- case 117
+- case 42
+- case 50
+- case 152
+- case 148
+- the cases run 66 of 66 instructions
 
 ### FUN_0c02fc26 (`0C02FC26`, 1292 bytes, `src/gen_dh.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dh/FUN_0c02fc26.json`
@@ -15494,6 +17849,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - case 48
 - the cases run 38 of 38 instructions
+
+### FUN_0c0306bc (`0C0306BC`, 222 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0306bc.json`
+- case 0
+- case 1
+- case 2
+- case 0
+- case 3
+- case 0
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 141
+- case 77
+- case 60
+- case 110
+- case 121
+- case 120
+- case 73
+- case 65
+- case 42
+- case 76
+- case 146
+- case 37
+- case 127
+- case 103
+- case 157
+- case 158
+- case 47
+- case 45
+- the cases run 48 of 88 instructions
 
 ### FUN_0c030848 (`0C030848`, 58 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c030848.json`
@@ -15614,6 +18009,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 144
 - case 88
 - the cases run 81 of 142 instructions
+
+### FUN_0c030ad6 (`0C030AD6`, 306 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c030ad6.json`
+- case 120
+- case 9
+- case 39
+- case 47
+- case 95
+- case 120
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 8
+- case 10
+- case 51
+- case 1
+- case 3
+- case 5
+- case 11
+- case 60
+- case 61
+- case 143
+- case 112
+- case 115
+- case 126
+- case 71
+- case 99
+- case 97
+- case 104
+- case 76
+- case 66
+- case 132
+- case 135
+- case 77
+- case 114
+- case 101
+- case 131
+- the cases run 126 of 130 instructions
 
 ### FUN_0c030ec8 (`0C030EC8`, 392 bytes, `src/gen_cp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cp/FUN_0c030ec8.json`
@@ -15975,6 +18410,29 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 143
 - the cases run 191 of 191 instructions
 
+### FUN_0c031bf8 (`0C031BF8`, 224 bytes, `src/gen_eb.c`)
+- equivalent on 10 development and 9 holdout cases, in `tests/gen_eb/FUN_0c031bf8.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 23
+- case 72
+- case 88
+- case 93
+- case 1
+- case 3
+- case 5
+- case 7
+- case 9
+- case 11
+- case 34
+- case 83
+- case 92
+- the cases run 108 of 112 instructions
+
 ### FUN_0c031cd8 (`0C031CD8`, 28 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c031cd8.json`
 - case 22
@@ -16014,6 +18472,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 63
 - case 103
 - the cases run 14 of 14 instructions
+
+### FUN_0c031d18 (`0C031D18`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c031d18.json`
+- case 66
+- case 56
+- case 0
+- case 13
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 42
+- case 65
+- case 47
+- case 96
+- case 75
+- case 91
+- case 53
+- case 135
+- case 139
+- case 62
+- case 99
+- case 144
+- case 52
+- case 72
+- case 119
+- case 134
+- case 82
+- case 78
+- the cases run 114 of 114 instructions
 
 ### FUN_0c031e3c (`0C031E3C`, 34 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c031e3c.json`
@@ -16160,6 +18658,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 15 of 15 instructions
+
+### FUN_0c03217c (`0C03217C`, 88 bytes, `src/gen_em.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_em/FUN_0c03217c.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 44 of 44 instructions
 
 ### FUN_0c0321d4 (`0C0321D4`, 38 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c0321d4.json`
@@ -17135,6 +19639,39 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 229
 - the cases run 136 of 136 instructions
 
+### FUN_0c033b04 (`0C033B04`, 312 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 11 holdout cases, in `tests/gen_ea/FUN_0c033b04.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 14
+- case 16
+- case 18
+- case 26
+- case 50
+- case 55
+- case 65
+- case 66
+- case 69
+- case 77
+- case 93
+- case 105
+- case 111
+- case 115
+- case 256
+- case 286
+- case 317
+- case 333
+- case 290
+- case 360
+- case 339
+- case 322
+- case 344
+- case 355
+- case 311
+- the cases run 154 of 156 instructions
+
 ### FUN_0c033c8c (`0C033C8C`, 212 bytes, `src/gen_cb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cb/FUN_0c033c8c.json`
 - case 1
@@ -17174,6 +19711,122 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 359
 - case 297
 - the cases run 106 of 106 instructions
+
+### FUN_0c033d60 (`0C033D60`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 14 holdout cases, in `tests/gen_ef/FUN_0c033d60.json`
+- case 7
+- case 6
+- case 8
+- case 15
+- case 16
+- case 17
+- case 18
+- case 22
+- case 24
+- case 26
+- case 29
+- case 31
+- case 34
+- case 43
+- case 49
+- case 50
+- case 52
+- case 54
+- case 121
+- case 135
+- case 132
+- case 137
+- case 152
+- case 134
+- case 126
+- case 122
+- case 145
+- case 151
+- case 111
+- case 136
+- case 127
+- case 113
+- the cases run 83 of 83 instructions
+
+### FUN_0c0340a0 (`0C0340A0`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0340a0.json`
+- case 6
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 82
+- case 148
+- case 70
+- case 56
+- case 60
+- case 114
+- case 157
+- case 92
+- case 121
+- case 155
+- case 57
+- case 80
+- case 109
+- case 48
+- case 81
+- case 126
+- case 96
+- case 123
+- the cases run 42 of 58 instructions
+
+### FUN_0c034134 (`0C034134`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c034134.json`
+- case 86
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 107
+- case 51
+- case 122
+- case 56
+- case 150
+- case 97
+- case 46
+- case 113
+- case 85
+- case 117
+- case 136
+- case 120
+- case 148
+- case 45
+- case 153
+- case 84
+- case 134
+- case 98
+- the cases run 57 of 57 instructions
 
 ### FUN_0c0341a6 (`0C0341A6`, 120 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0341a6.json`
@@ -17271,6 +19924,66 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 254
 - case 319
 - the cases run 118 of 118 instructions
+
+### FUN_0c03442c (`0C03442C`, 218 bytes, `src/gen_ec.c`)
+- equivalent on 8 development and 8 holdout cases, in `tests/gen_ec/FUN_0c03442c.json`
+- case 6
+- case 41
+- case 57
+- case 74
+- case 104
+- case 127
+- case 136
+- case 148
+- case 12
+- case 44
+- case 70
+- case 79
+- case 126
+- case 130
+- case 139
+- case 151
+- the cases run 109 of 109 instructions
+
+### FUN_0c034506 (`0C034506`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c034506.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 105
+- case 46
+- case 103
+- case 41
+- case 43
+- case 49
+- case 81
+- case 96
+- case 37
+- case 87
+- case 71
+- case 59
+- case 99
+- case 40
+- case 69
+- case 91
+- case 72
+- case 83
+- the cases run 43 of 43 instructions
 
 ### FUN_0c03457c (`0C03457C`, 190 bytes, `src/gen_b.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_b/FUN_0c03457c.json`
@@ -17788,6 +20501,45 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 115
 - the cases run 67 of 67 instructions
 
+### FUN_0c034e2c (`0C034E2C`, 174 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 17 holdout cases, in `tests/gen_ef/FUN_0c034e2c.json`
+- case 148
+- case 155
+- case 0
+- case 2
+- case 1
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 13
+- case 14
+- case 15
+- case 17
+- case 25
+- case 27
+- case 36
+- case 138
+- case 123
+- case 128
+- case 124
+- case 157
+- case 114
+- case 117
+- case 111
+- case 149
+- case 143
+- case 152
+- case 140
+- case 108
+- case 154
+- case 129
+- case 122
+- case 146
+- the cases run 87 of 87 instructions
+
 ### FUN_0c034f6c (`0C034F6C`, 80 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c034f6c.json`
 - case 13
@@ -17907,6 +20659,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - case 42
 - the cases run 29 of 124 instructions
+
+### FUN_0c0351bc (`0C0351BC`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0351bc.json`
+- case 0
+- case 3
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 137
+- case 83
+- case 138
+- case 69
+- case 130
+- case 45
+- case 58
+- case 61
+- case 136
+- case 100
+- case 146
+- case 43
+- case 42
+- case 117
+- case 149
+- case 111
+- case 102
+- case 35
+- the cases run 25 of 81 instructions
 
 ### FUN_0c035280 (`0C035280`, 52 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c035280.json`
@@ -18420,6 +21212,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 81
 - the cases run 50 of 52 instructions
 
+### FUN_0c035f64 (`0C035F64`, 314 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c035f64.json`
+- case 15
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 17
+- case 18
+- case 19
+- case 127
+- case 40
+- case 100
+- case 81
+- case 153
+- case 89
+- case 54
+- case 111
+- case 78
+- case 58
+- case 149
+- case 90
+- case 139
+- case 93
+- case 151
+- case 94
+- case 112
+- case 103
+- the cases run 146 of 146 instructions
+
+### FUN_0c0360ac (`0C0360AC`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0360ac.json`
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 34
+- case 71
+- case 63
+- case 139
+- case 97
+- case 62
+- case 56
+- case 146
+- case 65
+- case 58
+- case 94
+- case 157
+- case 96
+- case 152
+- case 106
+- case 68
+- case 80
+- case 102
+- the cases run 56 of 56 instructions
+
+### FUN_0c03611c (`0C03611C`, 314 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c03611c.json`
+- case 91
+- case 0
+- case 1
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 131
+- case 101
+- case 54
+- case 143
+- case 135
+- case 148
+- case 142
+- case 99
+- case 120
+- case 58
+- case 75
+- case 53
+- case 113
+- case 108
+- case 62
+- case 132
+- case 76
+- case 112
+- the cases run 45 of 130 instructions
+
 ### FUN_0c036256 (`0C036256`, 316 bytes, `src/gen_cv.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cv/FUN_0c036256.json`
 - case 0
@@ -18459,6 +21371,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 67
 - case 127
 - the cases run 64 of 136 instructions
+
+### FUN_0c036392 (`0C036392`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c036392.json`
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 79
+- case 102
+- case 53
+- case 91
+- case 82
+- case 105
+- case 153
+- case 98
+- case 88
+- case 72
+- case 41
+- case 127
+- case 112
+- case 71
+- case 138
+- case 140
+- case 130
+- case 143
+- the cases run 24 of 82 instructions
 
 ### FUN_0c036470 (`0C036470`, 280 bytes, `src/gen_cy.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cy/FUN_0c036470.json`
@@ -18500,6 +21452,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 371
 - the cases run 98 of 138 instructions
 
+### FUN_0c0365f4 (`0C0365F4`, 176 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0365f4.json`
+- case 13
+- case 0
+- case 4
+- case 7
+- case 10
+- case 12
+- case 14
+- case 15
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 24
+- case 25
+- case 26
+- case 28
+- case 29
+- case 120
+- case 128
+- case 119
+- case 83
+- case 143
+- case 155
+- case 146
+- case 138
+- case 133
+- case 108
+- case 153
+- case 88
+- case 132
+- case 117
+- case 135
+- case 62
+- case 159
+- case 98
+- the cases run 88 of 88 instructions
+
 ### FUN_0c0366b4 (`0C0366B4`, 338 bytes, `src/gen_cr.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cr/FUN_0c0366b4.json`
 - case 123
@@ -18539,6 +21531,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 71
 - case 151
 - the cases run 157 of 159 instructions
+
+### FUN_0c036994 (`0C036994`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c036994.json`
+- case 1
+- case 3
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 17
+- case 18
+- case 21
+- case 27
+- case 29
+- case 33
+- case 35
+- case 107
+- case 77
+- case 105
+- case 108
+- case 82
+- case 100
+- case 90
+- case 113
+- case 117
+- case 76
+- case 97
+- case 84
+- case 99
+- case 85
+- case 73
+- case 115
+- case 102
+- case 74
+- the cases run 89 of 92 instructions
 
 ### FUN_0c036a4c (`0C036A4C`, 280 bytes, `src/gen_be.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_be/FUN_0c036a4c.json`
@@ -18619,6 +21651,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 144
 - case 153
 - the cases run 26 of 26 instructions
+
+### FUN_0c036d86 (`0C036D86`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c036d86.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 11
+- case 13
+- case 16
+- case 17
+- case 19
+- case 21
+- case 23
+- case 24
+- case 28
+- case 29
+- case 34
+- case 35
+- case 36
+- case 38
+- case 125
+- case 113
+- case 144
+- case 96
+- case 146
+- case 93
+- case 109
+- case 137
+- case 128
+- case 110
+- case 88
+- case 90
+- case 130
+- case 142
+- case 135
+- case 114
+- case 149
+- case 132
+- the cases run 46 of 46 instructions
+
+### FUN_0c036e18 (`0C036E18`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c036e18.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 53
+- case 46
+- case 147
+- case 80
+- case 138
+- case 59
+- case 62
+- case 171
+- case 139
+- case 190
+- case 229
+- case 54
+- case 121
+- case 234
+- case 161
+- case 217
+- case 244
+- case 92
+- the cases run 114 of 114 instructions
 
 ### FUN_0c036efc (`0C036EFC`, 262 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cz/FUN_0c036efc.json`
@@ -18858,6 +21970,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 151
 - the cases run 28 of 28 instructions
 
+### FUN_0c0372a0 (`0C0372A0`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0372a0.json`
+- case 0
+- case 2
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 12
+- case 20
+- case 23
+- case 24
+- case 27
+- case 29
+- case 31
+- case 143
+- case 121
+- case 133
+- case 89
+- case 124
+- case 140
+- case 90
+- case 112
+- case 94
+- case 134
+- case 79
+- case 98
+- case 148
+- case 155
+- case 149
+- case 150
+- case 109
+- case 83
+- the cases run 44 of 44 instructions
+
 ### FUN_0c0372f8 (`0C0372F8`, 60 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c0372f8.json`
 - case 0
@@ -19058,6 +22210,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 79
 - the cases run 50 of 50 instructions
 
+### FUN_0c037504 (`0C037504`, 466 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c037504.json`
+- case 14
+- case 0
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 89
+- case 141
+- case 151
+- case 116
+- case 118
+- case 68
+- case 154
+- case 86
+- case 49
+- case 137
+- case 55
+- case 75
+- case 136
+- case 152
+- case 157
+- case 148
+- case 72
+- case 130
+- the cases run 205 of 205 instructions
+
 ### FUN_0c0376f4 (`0C0376F4`, 538 bytes, `src/gen_as.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_as/FUN_0c0376f4.json`
 - case 0
@@ -19097,6 +22289,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 98
 - case 39
 - the cases run 239 of 239 instructions
+
+### FUN_0c037954 (`0C037954`, 308 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c037954.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 81
+- case 193
+- case 230
+- case 233
+- case 146
+- case 99
+- case 61
+- case 190
+- case 217
+- case 270
+- case 231
+- case 237
+- case 56
+- case 160
+- case 48
+- case 277
+- case 244
+- case 132
+- the cases run 154 of 154 instructions
 
 ### FUN_0c037acc (`0C037ACC`, 410 bytes, `src/gen_bb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c037acc.json`
@@ -19177,6 +22409,108 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 52
 - case 161
 - the cases run 195 of 200 instructions
+
+### FUN_0c037e44 (`0C037E44`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c037e44.json`
+- case 21
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 70
+- case 110
+- case 60
+- case 103
+- case 113
+- case 87
+- case 46
+- case 54
+- case 37
+- case 50
+- case 101
+- case 51
+- case 41
+- case 81
+- case 75
+- case 112
+- case 80
+- case 72
+- the cases run 76 of 82 instructions
+
+### FUN_0c037ee8 (`0C037EE8`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c037ee8.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 43
+- case 41
+- case 118
+- case 56
+- case 94
+- case 44
+- case 77
+- case 85
+- case 51
+- case 117
+- case 47
+- case 90
+- case 106
+- case 114
+- case 37
+- case 58
+- case 66
+- case 107
+- the cases run 82 of 82 instructions
+
+### FUN_0c037fd4 (`0C037FD4`, 344 bytes, `src/gen_ea.c`)
+- equivalent on 9 development and 9 holdout cases, in `tests/gen_ea/FUN_0c037fd4.json`
+- case 0
+- case 2
+- case 4
+- case 9
+- case 27
+- case 74
+- case 112
+- case 126
+- case 139
+- case 1
+- case 3
+- case 5
+- case 10
+- case 70
+- case 77
+- case 120
+- case 136
+- case 159
+- the cases run 172 of 172 instructions
 
 ### FUN_0c03812c (`0C03812C`, 18 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c03812c.json`
@@ -19648,6 +22982,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 361
 - the cases run 100 of 100 instructions
 
+### FUN_0c038f9c (`0C038F9C`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c038f9c.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 80
+- case 95
+- case 117
+- case 68
+- case 102
+- case 77
+- case 85
+- case 114
+- case 91
+- case 52
+- case 99
+- case 58
+- case 38
+- case 97
+- case 89
+- case 62
+- case 83
+- case 75
+- the cases run 46 of 46 instructions
+
 ### FUN_0c039034 (`0C039034`, 192 bytes, `src/gen_b.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_b/FUN_0c039034.json`
 - case 0
@@ -19771,6 +23145,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 142
 - the cases run 23 of 23 instructions
 
+### FUN_0c039416 (`0C039416`, 1006 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c039416.json`
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 55
+- case 155
+- case 125
+- case 77
+- case 84
+- case 100
+- case 105
+- case 153
+- case 142
+- case 60
+- case 134
+- case 117
+- case 0
+- case 135
+- case 87
+- case 156
+- case 129
+- case 136
+- the cases run 286 of 461 instructions
+
 ### FUN_0c039804 (`0C039804`, 150 bytes, `src/gen_ci.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ci/FUN_0c039804.json`
 - case 3
@@ -19811,6 +23225,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - the cases run 75 of 75 instructions
 
+### FUN_0c0398b8 (`0C0398B8`, 946 bytes, `src/gen_dk.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dk/FUN_0c0398b8.json`
+- case 0
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 9
+- case 10
+- case 12
+- case 17
+- case 18
+- case 20
+- case 21
+- case 25
+- case 63
+- case 105
+- case 94
+- case 142
+- case 109
+- case 122
+- case 156
+- case 127
+- case 125
+- case 67
+- case 153
+- case 148
+- case 78
+- case 81
+- case 118
+- case 101
+- case 111
+- case 130
+- the cases run 332 of 441 instructions
+
+### FUN_0c039c6a (`0C039C6A`, 556 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c039c6a.json`
+- case 29
+- case 1
+- case 0
+- case 16
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 14
+- case 21
+- case 24
+- case 36
+- case 147
+- case 106
+- case 95
+- case 103
+- case 146
+- case 133
+- case 129
+- case 130
+- case 122
+- case 84
+- case 105
+- case 80
+- case 136
+- case 148
+- case 158
+- case 159
+- case 127
+- case 138
+- the cases run 211 of 257 instructions
+
+### FUN_0c03a112 (`0C03A112`, 828 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dm/FUN_0c03a112.json`
+- case 159
+- case 0
+- case 1
+- case 4
+- case 7
+- case 9
+- case 11
+- case 19
+- case 23
+- case 37
+- case 40
+- case 51
+- case 57
+- case 69
+- case 92
+- case 122
+- case 129
+- case 131
+- case 37
+- case 13
+- case 2
+- case 5
+- case 8
+- case 10
+- case 16
+- case 21
+- case 26
+- case 38
+- case 46
+- case 55
+- case 60
+- case 71
+- case 113
+- case 123
+- case 130
+- case 143
+- the cases run 332 of 383 instructions
+
 ### FUN_0c03a536 (`0C03A536`, 60 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c03a536.json`
 - case 0
@@ -19850,6 +23384,35 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 124
 - case 94
 - the cases run 30 of 30 instructions
+
+### FUN_0c03a5b4 (`0C03A5B4`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 13 development and 12 holdout cases, in `tests/gen_ek/FUN_0c03a5b4.json`
+- case 1
+- case 3
+- case 5
+- case 7
+- case 9
+- case 18
+- case 35
+- case 39
+- case 79
+- case 88
+- case 100
+- case 135
+- case 158
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 28
+- case 37
+- case 45
+- case 81
+- case 97
+- case 101
+- case 136
+- the cases run 57 of 57 instructions
 
 ### FUN_0c03a66c (`0C03A66C`, 34 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c03a66c.json`
@@ -20007,6 +23570,63 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 132
 - case 143
 - the cases run 54 of 54 instructions
+
+### FUN_0c03aaa2 (`0C03AAA2`, 364 bytes, `src/gen_dx.c`)
+- equivalent on 7 development and 6 holdout cases, in `tests/gen_dx/FUN_0c03aaa2.json`
+- case 3
+- case 3
+- case 5
+- case 10
+- case 92
+- case 137
+- case 3
+- case 99
+- case 4
+- case 9
+- case 21
+- case 121
+- case 3
+- the cases run 142 of 167 instructions
+
+### FUN_0c03acb4 (`0C03ACB4`, 218 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c03acb4.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 134
+- case 43
+- case 87
+- case 73
+- case 102
+- case 36
+- case 48
+- case 52
+- case 142
+- case 93
+- case 78
+- case 129
+- case 120
+- case 127
+- case 122
+- case 69
+- case 81
+- case 126
+- the cases run 109 of 109 instructions
 
 ### FUN_0c03afe8 (`0C03AFE8`, 250 bytes, `src/gen_bx.c`)
 - equivalent on 11 development and 10 holdout cases, in `tests/gen_bx/FUN_0c03afe8.json`
@@ -20433,6 +24053,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - the cases run 51 of 51 instructions
 
+### FUN_0c03c592 (`0C03C592`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c03c592.json`
+- case 5
+- case 28
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 56
+- case 92
+- case 49
+- case 111
+- case 77
+- case 106
+- case 44
+- case 108
+- case 66
+- case 86
+- case 37
+- case 72
+- case 79
+- case 110
+- case 97
+- case 109
+- case 99
+- case 47
+- the cases run 44 of 44 instructions
+
+### FUN_0c03c5ea (`0C03C5EA`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c03c5ea.json`
+- case 5
+- case 28
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 75
+- case 56
+- case 82
+- case 74
+- case 116
+- case 90
+- case 46
+- case 71
+- case 89
+- case 109
+- case 99
+- case 110
+- case 72
+- case 49
+- case 68
+- case 63
+- case 113
+- case 73
+- the cases run 44 of 44 instructions
+
 ### FUN_0c03c65c (`0C03C65C`, 80 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c03c65c.json`
 - case 5
@@ -20713,6 +24413,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 51 of 51 instructions
 
+### FUN_0c03c9e0 (`0C03C9E0`, 154 bytes, `src/gen_ei.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ei/FUN_0c03c9e0.json`
+- case 35
+- case 51
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 112
+- case 118
+- case 37
+- case 79
+- case 104
+- case 72
+- case 34
+- case 55
+- case 81
+- case 52
+- case 69
+- case 91
+- case 109
+- case 98
+- case 99
+- case 102
+- case 53
+- case 73
+- the cases run 72 of 76 instructions
+
 ### FUN_0c03caa4 (`0C03CAA4`, 150 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c03caa4.json`
 - case 33
@@ -20752,6 +24492,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 118
 - case 104
 - the cases run 70 of 74 instructions
+
+### FUN_0c03cc70 (`0C03CC70`, 220 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c03cc70.json`
+- case 5
+- case 0
+- case 1
+- case 14
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 43
+- case 47
+- case 68
+- case 67
+- case 49
+- case 95
+- case 50
+- case 103
+- case 101
+- case 108
+- case 40
+- case 36
+- case 82
+- case 96
+- case 66
+- case 44
+- case 60
+- case 114
+- the cases run 87 of 90 instructions
 
 ### FUN_0c03cd4c (`0C03CD4C`, 210 bytes, `src/gen_cb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cb/FUN_0c03cd4c.json`
@@ -21264,6 +25044,77 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 131
 - the cases run 124 of 124 instructions
 
+### FUN_0c03eab4 (`0C03EAB4`, 370 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c03eab4.json`
+- case 1
+- case 3
+- case 0
+- case 5
+- case 4
+- case 1
+- case 6
+- case 2
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 50
+- case 42
+- case 88
+- case 132
+- case 96
+- case 111
+- case 76
+- case 73
+- case 43
+- case 77
+- case 51
+- case 145
+- case 86
+- case 66
+- case 154
+- case 129
+- case 115
+- case 138
+- the cases run 136 of 161 instructions
+
+### FUN_0c03ee44 (`0C03EE44`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 14 development and 13 holdout cases, in `tests/gen_ef/FUN_0c03ee44.json`
+- case 1
+- case 20
+- case 24
+- case 33
+- case 45
+- case 55
+- case 73
+- case 81
+- case 98
+- case 104
+- case 131
+- case 135
+- case 149
+- case 152
+- case 17
+- case 21
+- case 29
+- case 36
+- case 46
+- case 69
+- case 79
+- case 84
+- case 101
+- case 108
+- case 133
+- case 147
+- case 150
+- the cases run 51 of 51 instructions
+
 ### FUN_0c03f450 (`0C03F450`, 80 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c03f450.json`
 - case 0
@@ -21343,6 +25194,33 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - case 105
 - the cases run 14 of 14 instructions
+
+### FUN_0c03f4bc (`0C03F4BC`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 12 development and 11 holdout cases, in `tests/gen_ef/FUN_0c03f4bc.json`
+- case 3
+- case 6
+- case 16
+- case 21
+- case 42
+- case 57
+- case 68
+- case 74
+- case 99
+- case 108
+- case 147
+- case 159
+- case 0
+- case 9
+- case 18
+- case 25
+- case 53
+- case 58
+- case 69
+- case 95
+- case 105
+- case 144
+- case 157
+- the cases run 84 of 84 instructions
 
 ### FUN_0c03f63c (`0C03F63C`, 78 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c03f63c.json`
@@ -21424,6 +25302,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 104
 - the cases run 75 of 165 instructions
 
+### FUN_0c03f884 (`0C03F884`, 348 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c03f884.json`
+- case 2
+- case 3
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 147
+- case 102
+- case 92
+- case 83
+- case 65
+- case 124
+- case 42
+- case 110
+- case 95
+- case 116
+- case 153
+- case 71
+- case 156
+- case 58
+- case 78
+- case 54
+- case 63
+- case 112
+- the cases run 33 of 157 instructions
+
 ### FUN_0c03faa0 (`0C03FAA0`, 22 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c03faa0.json`
 - case 0
@@ -21503,6 +25421,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 108
 - case 112
 - the cases run 75 of 113 instructions
+
+### FUN_0c03fed2 (`0C03FED2`, 156 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c03fed2.json`
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 48
+- case 77
+- case 45
+- case 62
+- case 38
+- case 100
+- case 50
+- case 88
+- case 118
+- case 96
+- case 74
+- case 53
+- case 56
+- case 104
+- case 114
+- case 84
+- case 55
+- case 44
+- the cases run 24 of 77 instructions
 
 ### FUN_0c0401e0 (`0C0401E0`, 134 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c0401e0.json`
@@ -21744,6 +25702,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 125
 - the cases run 38 of 165 instructions
 
+### FUN_0c040fc4 (`0C040FC4`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c040fc4.json`
+- case 26
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 91
+- case 95
+- case 47
+- case 106
+- case 86
+- case 63
+- case 92
+- case 113
+- case 70
+- case 103
+- case 37
+- case 102
+- case 118
+- case 87
+- case 56
+- case 78
+- case 93
+- case 76
+- the cases run 45 of 76 instructions
+
 ### FUN_0c04105c (`0C04105C`, 604 bytes, `src/gen_aq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_aq/FUN_0c04105c.json`
 - case 2
@@ -21783,6 +25781,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 112
 - case 88
 - the cases run 113 of 241 instructions
+
+### FUN_0c0412b8 (`0C0412B8`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0412b8.json`
+- case 0
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 22
+- case 23
+- case 24
+- case 25
+- case 27
+- case 28
+- case 29
+- case 31
+- case 34
+- case 89
+- case 74
+- case 137
+- case 108
+- case 70
+- case 125
+- case 82
+- case 131
+- case 133
+- case 123
+- case 79
+- case 151
+- case 90
+- case 147
+- case 153
+- case 107
+- case 141
+- case 81
+- the cases run 92 of 92 instructions
+
+### FUN_0c041370 (`0C041370`, 310 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c041370.json`
+- case 0
+- case 77
+- case 0
+- case 3
+- case 5
+- case 2
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 85
+- case 117
+- case 61
+- case 150
+- case 41
+- case 108
+- case 71
+- case 81
+- case 38
+- case 94
+- case 68
+- case 139
+- case 126
+- case 77
+- case 60
+- case 123
+- case 43
+- case 143
+- the cases run 87 of 124 instructions
 
 ### FUN_0c0414a6 (`0C0414A6`, 602 bytes, `src/gen_as.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_as/FUN_0c0414a6.json`
@@ -22064,6 +26142,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 71
 - the cases run 59 of 235 instructions
 
+### FUN_0c042570 (`0C042570`, 988 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c042570.json`
+- case 152
+- case 12
+- case 14
+- case 15
+- case 17
+- case 21
+- case 25
+- case 27
+- case 29
+- case 30
+- case 31
+- case 34
+- case 35
+- case 36
+- case 37
+- case 39
+- case 40
+- case 41
+- case 84
+- case 77
+- case 87
+- case 148
+- case 81
+- case 76
+- case 124
+- case 123
+- case 71
+- case 89
+- case 155
+- case 91
+- case 88
+- case 129
+- case 112
+- case 83
+- case 136
+- case 95
+- the cases run 103 of 364 instructions
+
 ### FUN_0c042980 (`0C042980`, 22 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c042980.json`
 - case 0
@@ -22184,6 +26302,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - the cases run 13 of 13 instructions
 
+### FUN_0c042fd0 (`0C042FD0`, 216 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c042fd0.json`
+- case 5
+- case 18
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 46
+- case 91
+- case 88
+- case 111
+- case 59
+- case 154
+- case 58
+- case 114
+- case 116
+- case 70
+- case 99
+- case 36
+- case 55
+- case 80
+- case 138
+- case 158
+- case 102
+- case 73
+- the cases run 107 of 108 instructions
+
 ### FUN_0c04313c (`0C04313C`, 196 bytes, `src/gen_ce.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ce/FUN_0c04313c.json`
 - case 20
@@ -22263,6 +26421,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 143
 - case 150
 - the cases run 26 of 26 instructions
+
+### FUN_0c0432e2 (`0C0432E2`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0432e2.json`
+- case 141
+- case 12
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 8
+- case 10
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 51
+- case 85
+- case 139
+- case 151
+- case 158
+- case 127
+- case 152
+- case 136
+- case 56
+- case 68
+- case 42
+- case 146
+- case 92
+- case 52
+- case 100
+- case 140
+- case 122
+- case 108
+- the cases run 43 of 43 instructions
 
 ### FUN_0c043338 (`0C043338`, 30 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c043338.json`
@@ -22424,6 +26622,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 74
 - the cases run 32 of 32 instructions
 
+### FUN_0c04356c (`0C04356C`, 602 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c04356c.json`
+- case 4
+- case 10
+- case 1
+- case 6
+- case 2
+- case 5
+- case 7
+- case 0
+- case 3
+- case 8
+- case 9
+- case 11
+- case 4
+- case 4
+- case 12
+- case 13
+- case 14
+- case 15
+- case 99
+- case 112
+- case 66
+- case 111
+- case 83
+- case 58
+- case 117
+- case 35
+- case 76
+- case 44
+- case 86
+- case 97
+- case 103
+- case 91
+- case 94
+- case 57
+- case 67
+- case 42
+- the cases run 161 of 207 instructions
+
 ### FUN_0c043724 (`0C043724`, 374 bytes, `src/gen_cq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cq/FUN_0c043724.json`
 - case 2
@@ -22464,6 +26702,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 46
 - the cases run 164 of 180 instructions
 
+### FUN_0c0438ac (`0C0438AC`, 714 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c0438ac.json`
+- case 10
+- case 1
+- case 4
+- case 6
+- case 5
+- case 3
+- case 140
+- case 8
+- case 7
+- case 9
+- case 11
+- case 147
+- case 148
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 84
+- case 136
+- case 39
+- case 48
+- case 103
+- case 87
+- case 64
+- case 96
+- case 53
+- case 106
+- case 88
+- case 93
+- case 127
+- case 99
+- case 129
+- case 102
+- case 154
+- case 151
+- the cases run 232 of 332 instructions
+
 ### FUN_0c043b7c (`0C043B7C`, 520 bytes, `src/gen_dg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dg/FUN_0c043b7c.json`
 - case 9
@@ -22503,6 +26781,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 76
 - case 74
 - the cases run 223 of 242 instructions
+
+### FUN_0c043d88 (`0C043D88`, 350 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c043d88.json`
+- case 4
+- case 82
+- case 53
+- case 75
+- case 3
+- case 2
+- case 34
+- case 1
+- case 5
+- case 0
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 66
+- case 61
+- case 99
+- case 70
+- case 48
+- case 89
+- case 92
+- case 78
+- case 100
+- case 101
+- case 33
+- case 64
+- case 113
+- case 80
+- case 86
+- case 45
+- case 43
+- case 116
+- the cases run 138 of 148 instructions
 
 ### FUN_0c043ed4 (`0C043ED4`, 212 bytes, `src/gen_cb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cb/FUN_0c043ed4.json`
@@ -22903,6 +27221,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 48
 - case 46
 - the cases run 4 of 4 instructions
+
+### FUN_0c0453ac (`0C0453AC`, 354 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0453ac.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 43
+- case 38
+- case 113
+- case 152
+- case 119
+- case 114
+- case 76
+- case 41
+- case 62
+- case 143
+- case 144
+- case 147
+- case 54
+- case 77
+- case 40
+- case 79
+- case 87
+- case 150
+- the cases run 177 of 177 instructions
 
 ### FUN_0c045544 (`0C045544`, 52 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c045544.json`
@@ -23459,6 +27817,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 68
 - the cases run 30 of 30 instructions
 
+### FUN_0c046170 (`0C046170`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c046170.json`
+- case 3
+- case 0
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 84
+- case 231
+- case 233
+- case 89
+- case 77
+- case 216
+- case 129
+- case 179
+- case 203
+- case 220
+- case 138
+- case 82
+- case 52
+- case 46
+- case 71
+- case 157
+- case 165
+- case 206
+- the cases run 114 of 114 instructions
+
 ### FUN_0c046294 (`0C046294`, 246 bytes, `src/gen_bx.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bx/FUN_0c046294.json`
 - case 2
@@ -23578,6 +27976,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 119
 - case 137
 - the cases run 166 of 186 instructions
+
+### FUN_0c0465fa (`0C0465FA`, 456 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c0465fa.json`
+- case 112
+- case 15
+- case 40
+- case 12
+- case 39
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 78
+- case 107
+- case 35
+- case 100
+- case 94
+- case 116
+- case 86
+- case 96
+- case 50
+- case 65
+- case 92
+- case 52
+- case 117
+- case 57
+- case 60
+- case 99
+- case 87
+- case 61
+- the cases run 137 of 208 instructions
+
+### FUN_0c0467c2 (`0C0467C2`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0467c2.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 65
+- case 79
+- case 47
+- case 35
+- case 53
+- case 150
+- case 134
+- case 104
+- case 149
+- case 62
+- case 154
+- case 133
+- case 93
+- case 68
+- case 89
+- case 103
+- case 152
+- case 92
+- the cases run 58 of 58 instructions
 
 ### FUN_0c046968 (`0C046968`, 12 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c046968.json`
@@ -23859,6 +28337,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 76
 - the cases run 16 of 16 instructions
 
+### FUN_0c0470da (`0C0470DA`, 304 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0470da.json`
+- case 37
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 92
+- case 106
+- case 65
+- case 115
+- case 45
+- case 40
+- case 87
+- case 86
+- case 93
+- case 156
+- case 71
+- case 119
+- case 98
+- case 89
+- case 122
+- case 79
+- case 46
+- case 60
+- the cases run 68 of 135 instructions
+
 ### FUN_0c04720a (`0C04720A`, 342 bytes, `src/gen_cr.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cr/FUN_0c04720a.json`
 - case 0
@@ -23898,6 +28416,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 38
 - case 143
 - the cases run 70 of 136 instructions
+
+### FUN_0c047360 (`0C047360`, 312 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c047360.json`
+- case 19
+- case 38
+- case 34
+- case 19
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 100
+- case 99
+- case 113
+- case 87
+- case 114
+- case 33
+- case 74
+- case 37
+- case 47
+- case 119
+- case 70
+- case 53
+- case 115
+- case 63
+- case 41
+- case 116
+- case 49
+- case 88
+- the cases run 118 of 126 instructions
+
+### FUN_0c047948 (`0C047948`, 546 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c047948.json`
+- case 49
+- case 95
+- case 3
+- case 4
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 145
+- case 79
+- case 130
+- case 131
+- case 113
+- case 77
+- case 83
+- case 78
+- case 138
+- case 80
+- case 50
+- case 121
+- case 124
+- case 120
+- case 141
+- case 44
+- case 97
+- case 62
+- the cases run 82 of 231 instructions
+
+### FUN_0c047e9c (`0C047E9C`, 346 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c047e9c.json`
+- case 1
+- case 154
+- case 3
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 104
+- case 56
+- case 35
+- case 67
+- case 113
+- case 57
+- case 61
+- case 97
+- case 132
+- case 58
+- case 69
+- case 133
+- case 88
+- case 62
+- case 115
+- case 53
+- case 123
+- case 41
+- the cases run 65 of 155 instructions
 
 ### FUN_0c047ff6 (`0C047FF6`, 40 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c047ff6.json`
@@ -24018,6 +28656,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - case 37
 - the cases run 30 of 30 instructions
+
+### FUN_0c048c1e (`0C048C1E`, 370 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c048c1e.json`
+- case 0
+- case 1
+- case 2
+- case 29
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 128
+- case 132
+- case 130
+- case 49
+- case 156
+- case 61
+- case 48
+- case 37
+- case 102
+- case 96
+- case 120
+- case 54
+- case 92
+- case 79
+- case 58
+- case 74
+- case 107
+- case 98
+- the cases run 147 of 151 instructions
 
 ### FUN_0c048f1a (`0C048F1A`, 390 bytes, `src/gen_cp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cp/FUN_0c048f1a.json`
@@ -24934,6 +29612,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 90 of 141 instructions
 
+### FUN_0c04b496 (`0C04B496`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c04b496.json`
+- case 67
+- case 67
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 76
+- case 47
+- case 92
+- case 109
+- case 73
+- case 69
+- case 115
+- case 52
+- case 114
+- case 102
+- case 105
+- case 75
+- case 98
+- case 93
+- case 66
+- case 42
+- case 118
+- case 111
+- the cases run 76 of 76 instructions
+
 ### FUN_0c04b8a8 (`0C04B8A8`, 14 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c04b8a8.json`
 - case 0
@@ -24973,6 +29691,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - case 65
 - the cases run 7 of 7 instructions
+
+### FUN_0c04b8e4 (`0C04B8E4`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c04b8e4.json`
+- case 12
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 77
+- case 82
+- case 105
+- case 81
+- case 118
+- case 100
+- case 94
+- case 111
+- case 125
+- case 136
+- case 92
+- case 159
+- case 139
+- case 146
+- case 115
+- case 87
+- case 153
+- case 89
+- the cases run 76 of 79 instructions
 
 ### FUN_0c04b982 (`0C04B982`, 214 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c04b982.json`
@@ -25087,6 +29845,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 147
 - the cases run 56 of 56 instructions
 
+### FUN_0c04bb86 (`0C04BB86`, 176 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c04bb86.json`
+- case 2
+- case 0
+- case 7
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 15
+- case 16
+- case 17
+- case 25
+- case 80
+- case 98
+- case 148
+- case 118
+- case 94
+- case 137
+- case 101
+- case 109
+- case 129
+- case 100
+- case 119
+- case 79
+- case 97
+- case 87
+- case 121
+- case 113
+- case 89
+- case 146
+- the cases run 80 of 88 instructions
+
 ### FUN_0c04bc36 (`0C04BC36`, 18 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c04bc36.json`
 - case 4
@@ -25167,6 +29965,34 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 77
 - the cases run 70 of 94 instructions
 
+### FUN_0c04bd40 (`0C04BD40`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 6 holdout cases, in `tests/gen_ek/FUN_0c04bd40.json`
+- case 91
+- case 76
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 18
+- case 20
+- case 23
+- case 138
+- case 139
+- case 152
+- case 143
+- case 136
+- case 144
+- the cases run 59 of 59 instructions
+
 ### FUN_0c04bdb6 (`0C04BDB6`, 42 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c04bdb6.json`
 - case 0
@@ -25246,6 +30072,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 78
 - case 108
 - the cases run 9 of 9 instructions
+
+### FUN_0c04be14 (`0C04BE14`, 174 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c04be14.json`
+- case 58
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 122
+- case 107
+- case 113
+- case 60
+- case 97
+- case 59
+- case 75
+- case 55
+- case 139
+- case 137
+- case 84
+- case 76
+- case 140
+- case 130
+- case 42
+- case 100
+- case 49
+- case 45
+- the cases run 28 of 87 instructions
 
 ### FUN_0c04bf48 (`0C04BF48`, 144 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c04bf48.json`
@@ -25407,6 +30273,80 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 50
 - the cases run 30 of 30 instructions
 
+### FUN_0c04c42e (`0C04C42E`, 182 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c04c42e.json`
+- case 19
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 68
+- case 137
+- case 140
+- case 64
+- case 89
+- case 128
+- case 76
+- case 77
+- case 138
+- case 78
+- case 141
+- case 49
+- case 136
+- case 57
+- case 90
+- case 106
+- case 69
+- case 112
+- the cases run 91 of 91 instructions
+
+### FUN_0c04c514 (`0C04C514`, 218 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 12 holdout cases, in `tests/gen_ec/FUN_0c04c514.json`
+- case 11
+- case 18
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 12
+- case 15
+- case 16
+- case 20
+- case 29
+- case 115
+- case 157
+- case 107
+- case 111
+- case 159
+- case 92
+- case 152
+- case 123
+- case 117
+- case 137
+- case 140
+- case 158
+- the cases run 82 of 109 instructions
+
 ### FUN_0c04c62c (`0C04C62C`, 680 bytes, `src/gen_ap.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ap/FUN_0c04c62c.json`
 - case 0
@@ -25446,6 +30386,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - case 125
 - the cases run 72 of 300 instructions
+
+### FUN_0c04c91c (`0C04C91C`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c04c91c.json`
+- case 17
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 51
+- case 39
+- case 50
+- case 115
+- case 69
+- case 41
+- case 101
+- case 38
+- case 88
+- case 117
+- case 79
+- case 58
+- case 106
+- case 85
+- case 86
+- case 48
+- case 43
+- case 56
+- the cases run 57 of 57 instructions
 
 ### FUN_0c04c98e (`0C04C98E`, 334 bytes, `src/gen_cr.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cr/FUN_0c04c98e.json`
@@ -25727,6 +30707,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 60
 - the cases run 21 of 21 instructions
 
+### FUN_0c04d1f8 (`0C04D1F8`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c04d1f8.json`
+- case 6
+- case 0
+- case 1
+- case 2
+- case 3
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 140
+- case 159
+- case 110
+- case 48
+- case 108
+- case 133
+- case 129
+- case 79
+- case 141
+- case 81
+- case 156
+- case 65
+- case 80
+- case 71
+- case 77
+- case 56
+- case 139
+- case 83
+- the cases run 39 of 46 instructions
+
 ### FUN_0c04d270 (`0C04D270`, 124 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c04d270.json`
 - case 4
@@ -25807,6 +30827,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 148
 - the cases run 16 of 16 instructions
 
+### FUN_0c04d34a (`0C04D34A`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c04d34a.json`
+- case 64
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 24
+- case 34
+- case 41
+- case 44
+- case 52
+- case 58
+- case 62
+- case 74
+- case 108
+- case 112
+- case 121
+- case 134
+- case 81
+- case 3
+- case 5
+- case 7
+- case 9
+- case 22
+- case 33
+- case 37
+- case 42
+- case 48
+- case 53
+- case 59
+- case 64
+- case 76
+- case 111
+- case 119
+- case 124
+- case 139
+- the cases run 75 of 75 instructions
+
 ### FUN_0c04d402 (`0C04D402`, 48 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c04d402.json`
 - case 4
@@ -25846,6 +30906,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 85
 - case 95
 - the cases run 24 of 24 instructions
+
+### FUN_0c04d448 (`0C04D448`, 970 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c04d448.json`
+- case 38
+- case 8
+- case 64
+- case 85
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 13
+- case 15
+- case 20
+- case 115
+- case 123
+- case 153
+- case 158
+- case 117
+- case 76
+- case 108
+- case 122
+- case 124
+- case 118
+- case 106
+- case 89
+- case 125
+- case 126
+- case 137
+- case 150
+- case 141
+- case 157
+- the cases run 180 of 403 instructions
 
 ### FUN_0c04d8e0 (`0C04D8E0`, 210 bytes, `src/gen_cb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cb/FUN_0c04d8e0.json`
@@ -25926,6 +31026,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 102
 - case 64
 - the cases run 27 of 30 instructions
+
+### FUN_0c04da18 (`0C04DA18`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c04da18.json`
+- case 96
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 133
+- case 141
+- case 69
+- case 42
+- case 81
+- case 106
+- case 138
+- case 105
+- case 94
+- case 84
+- case 116
+- case 50
+- case 63
+- case 119
+- case 89
+- case 137
+- case 62
+- case 35
+- the cases run 56 of 85 instructions
 
 ### FUN_0c04daec (`0C04DAEC`, 36 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c04daec.json`
@@ -26046,6 +31186,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 118
 - case 149
 - the cases run 74 of 104 instructions
+
+### FUN_0c04dce8 (`0C04DCE8`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c04dce8.json`
+- case 9
+- case 9
+- case 42
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 18
+- case 19
+- case 148
+- case 147
+- case 115
+- case 109
+- case 139
+- case 91
+- case 119
+- case 149
+- case 114
+- case 144
+- case 134
+- case 123
+- case 136
+- case 152
+- case 106
+- case 129
+- case 95
+- case 98
+- the cases run 72 of 86 instructions
 
 ### FUN_0c04ddb0 (`0C04DDB0`, 242 bytes, `src/gen_by.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_by/FUN_0c04ddb0.json`
@@ -26207,6 +31387,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 67
 - the cases run 53 of 53 instructions
 
+### FUN_0c04e324 (`0C04E324`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c04e324.json`
+- case 9
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 18
+- case 22
+- case 79
+- case 139
+- case 151
+- case 113
+- case 111
+- case 90
+- case 124
+- case 107
+- case 138
+- case 9
+- case 9
+- case 123
+- case 99
+- case 122
+- case 61
+- case 97
+- case 75
+- case 158
+- the cases run 44 of 44 instructions
+
 ### FUN_0c04e37c (`0C04E37C`, 94 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c04e37c.json`
 - case 15
@@ -26327,6 +31547,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 131
 - the cases run 108 of 108 instructions
 
+### FUN_0c04e506 (`0C04E506`, 178 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c04e506.json`
+- case 40
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 121
+- case 94
+- case 65
+- case 114
+- case 141
+- case 138
+- case 93
+- case 50
+- case 87
+- case 110
+- case 51
+- case 146
+- case 120
+- case 107
+- case 97
+- case 56
+- case 103
+- case 117
+- the cases run 40 of 69 instructions
+
 ### FUN_0c04e5b8 (`0C04E5B8`, 80 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c04e5b8.json`
 - case 0
@@ -26406,6 +31666,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 126
 - case 73
 - the cases run 12 of 12 instructions
+
+### FUN_0c04e80c (`0C04E80C`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c04e80c.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 18
+- case 147
+- case 47
+- case 46
+- case 122
+- case 84
+- case 150
+- case 101
+- case 86
+- case 116
+- case 63
+- case 144
+- case 65
+- case 152
+- case 145
+- case 67
+- case 138
+- case 137
+- case 50
+- the cases run 43 of 43 instructions
 
 ### FUN_0c04e862 (`0C04E862`, 144 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c04e862.json`
@@ -26887,6 +32187,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - the cases run 38 of 38 instructions
 
+### FUN_0c04fdb0 (`0C04FDB0`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c04fdb0.json`
+- case 5
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 129
+- case 69
+- case 51
+- case 77
+- case 47
+- case 122
+- case 83
+- case 109
+- case 110
+- case 101
+- case 104
+- case 67
+- case 145
+- case 85
+- case 103
+- case 93
+- case 68
+- case 127
+- the cases run 46 of 46 instructions
+
 ### FUN_0c04fe0c (`0C04FE0C`, 40 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c04fe0c.json`
 - case 0
@@ -27006,6 +32346,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - case 97
 - the cases run 53 of 53 instructions
+
+### FUN_0c04fffe (`0C04FFFE`, 156 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c04fffe.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 132
+- case 37
+- case 148
+- case 130
+- case 70
+- case 112
+- case 79
+- case 84
+- case 64
+- case 85
+- case 52
+- case 63
+- case 157
+- case 133
+- case 82
+- case 141
+- case 156
+- case 158
+- the cases run 25 of 77 instructions
 
 ### FUN_0c050248 (`0C050248`, 20 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c050248.json`
@@ -27247,6 +32627,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 142
 - the cases run 57 of 67 instructions
 
+### FUN_0c050a30 (`0C050A30`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ek/FUN_0c050a30.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 53 of 57 instructions
+
+### FUN_0c050aa2 (`0C050AA2`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ek/FUN_0c050aa2.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 53 of 57 instructions
+
+### FUN_0c050b2c (`0C050B2C`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ek/FUN_0c050b2c.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 53 of 57 instructions
+
 ### FUN_0c050b9e (`0C050B9E`, 36 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c050b9e.json`
 - case 4
@@ -27332,6 +32730,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 51 of 55 instructions
+
+### FUN_0c050c78 (`0C050C78`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c050c78.json`
+- case 4
+- case 0
+- case 11
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 20
+- case 71
+- case 150
+- case 68
+- case 106
+- case 119
+- case 148
+- case 154
+- case 74
+- case 141
+- case 77
+- case 76
+- case 104
+- case 79
+- case 52
+- case 133
+- case 115
+- case 157
+- case 143
+- the cases run 44 of 44 instructions
 
 ### FUN_0c050d20 (`0C050D20`, 32 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c050d20.json`
@@ -27564,6 +33002,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 57
 - the cases run 49 of 49 instructions
 
+### FUN_0c0510be (`0C0510BE`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0510be.json`
+- case 0
+- case 0
+- case 0
+- case 1
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 38
+- case 132
+- case 141
+- case 125
+- case 52
+- case 146
+- case 91
+- case 60
+- case 157
+- case 99
+- case 88
+- case 148
+- case 62
+- case 74
+- case 100
+- case 126
+- case 115
+- case 111
+- the cases run 29 of 82 instructions
+
 ### FUN_0c051330 (`0C051330`, 14 bytes, `src/gen_e.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_e/FUN_0c051330.json`
 - case 0
@@ -27644,6 +33122,29 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 158
 - the cases run 35 of 35 instructions
 
+### FUN_0c0519f0 (`0C0519F0`, 88 bytes, `src/gen_em.c`)
+- equivalent on 10 development and 9 holdout cases, in `tests/gen_em/FUN_0c0519f0.json`
+- case 0
+- case 2
+- case 6
+- case 9
+- case 15
+- case 41
+- case 56
+- case 84
+- case 93
+- case 124
+- case 1
+- case 3
+- case 7
+- case 11
+- case 22
+- case 53
+- case 62
+- case 88
+- case 108
+- the cases run 44 of 44 instructions
+
 ### FUN_0c051a48 (`0C051A48`, 44 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 13 holdout cases, in `tests/gen_d/FUN_0c051a48.json`
 - case 0
@@ -27678,6 +33179,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 137
 - case 122
 - the cases run 22 of 22 instructions
+
+### FUN_0c051e92 (`0C051E92`, 466 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c051e92.json`
+- case 2
+- case 12
+- case 25
+- case 43
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 20
+- case 67
+- case 48
+- case 139
+- case 104
+- case 141
+- case 86
+- case 111
+- case 126
+- case 49
+- case 129
+- case 125
+- case 70
+- case 132
+- case 65
+- case 47
+- case 110
+- case 148
+- case 62
+- the cases run 72 of 201 instructions
 
 ### FUN_0c052064 (`0C052064`, 64 bytes, `src/gen_d.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_d/FUN_0c052064.json`
@@ -27919,6 +33460,158 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 84
 - the cases run 26 of 26 instructions
 
+### FUN_0c0526b8 (`0C0526B8`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0526b8.json`
+- case 0
+- case 6
+- case 12
+- case 21
+- case 24
+- case 35
+- case 41
+- case 50
+- case 54
+- case 61
+- case 66
+- case 68
+- case 84
+- case 99
+- case 106
+- case 115
+- case 123
+- case 135
+- case 4
+- case 7
+- case 19
+- case 23
+- case 30
+- case 36
+- case 47
+- case 51
+- case 58
+- case 64
+- case 67
+- case 77
+- case 90
+- case 105
+- case 108
+- case 117
+- case 130
+- case 136
+- the cases run 58 of 58 instructions
+
+### FUN_0c053406 (`0C053406`, 158 bytes, `src/gen_ej.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ej/FUN_0c053406.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 87
+- case 106
+- case 104
+- case 95
+- case 62
+- case 61
+- case 118
+- case 69
+- case 68
+- case 90
+- case 40
+- case 65
+- case 75
+- case 50
+- case 102
+- case 51
+- case 88
+- case 84
+- the cases run 79 of 79 instructions
+
+### FUN_0c0534a4 (`0C0534A4`, 90 bytes, `src/gen_em.c`)
+- equivalent on 14 development and 14 holdout cases, in `tests/gen_em/FUN_0c0534a4.json`
+- case 0
+- case 3
+- case 5
+- case 8
+- case 11
+- case 38
+- case 49
+- case 64
+- case 75
+- case 90
+- case 99
+- case 106
+- case 110
+- case 144
+- case 2
+- case 4
+- case 6
+- case 10
+- case 31
+- case 46
+- case 51
+- case 72
+- case 88
+- case 91
+- case 103
+- case 108
+- case 124
+- case 146
+- the cases run 45 of 45 instructions
+
+### FUN_0c05355c (`0C05355C`, 362 bytes, `src/gen_dy.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dy/FUN_0c05355c.json`
+- case 98
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 78
+- case 86
+- case 102
+- case 113
+- case 55
+- case 76
+- case 64
+- case 75
+- case 95
+- case 81
+- case 112
+- case 131
+- case 133
+- case 135
+- case 140
+- case 63
+- case 69
+- case 84
+- the cases run 51 of 163 instructions
+
 ### FUN_0c053700 (`0C053700`, 196 bytes, `src/gen_a.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_a/FUN_0c053700.json`
 - rescue: empty case
@@ -28091,6 +33784,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 35 of 121 instructions
 
+### FUN_0c053c64 (`0C053C64`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c053c64.json`
+- case 13
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 16
+- case 17
+- case 18
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 26
+- case 27
+- case 28
+- case 29
+- case 92
+- case 159
+- case 89
+- case 112
+- case 105
+- case 114
+- case 80
+- case 57
+- case 130
+- case 77
+- case 65
+- case 110
+- case 61
+- case 148
+- case 140
+- case 146
+- case 75
+- case 120
+- the cases run 25 of 59 instructions
+
+### FUN_0c053cf0 (`0C053CF0`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c053cf0.json`
+- case 13
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 26
+- case 126
+- case 65
+- case 84
+- case 57
+- case 129
+- case 86
+- case 113
+- case 151
+- case 155
+- case 104
+- case 78
+- case 107
+- case 112
+- case 80
+- case 144
+- case 60
+- case 147
+- case 74
+- the cases run 18 of 56 instructions
+
 ### FUN_0c053d60 (`0C053D60`, 108 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c053d60.json`
 - case 22
@@ -28251,6 +34024,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 98
 - the cases run 29 of 29 instructions
 
+### FUN_0c053e94 (`0C053E94`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c053e94.json`
+- case 9
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 152
+- case 119
+- case 56
+- case 80
+- case 115
+- case 139
+- case 67
+- case 96
+- case 98
+- case 148
+- case 74
+- case 54
+- case 132
+- case 150
+- case 127
+- case 158
+- case 113
+- case 122
+- the cases run 46 of 46 instructions
+
+### FUN_0c053f0c (`0C053F0C`, 160 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c053f0c.json`
+- case 4
+- case 12
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 56
+- case 158
+- case 157
+- case 91
+- case 37
+- case 74
+- case 89
+- case 48
+- case 60
+- case 94
+- case 129
+- case 142
+- case 105
+- case 100
+- case 109
+- case 134
+- case 41
+- case 44
+- the cases run 37 of 80 instructions
+
 ### FUN_0c053fac (`0C053FAC`, 1704 bytes, `src/gen_ad.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ad/FUN_0c053fac.json`
 - case 26
@@ -28370,6 +34223,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - case 84
 - the cases run 31 of 31 instructions
+
+### FUN_0c05477c (`0C05477C`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c05477c.json`
+- case 15
+- case 13
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 16
+- case 17
+- case 91
+- case 218
+- case 360
+- case 75
+- case 225
+- case 59
+- case 195
+- case 121
+- case 411
+- case 390
+- case 105
+- case 362
+- case 241
+- case 38
+- case 309
+- case 398
+- case 95
+- case 381
+- the cases run 90 of 90 instructions
 
 ### FUN_0c054830 (`0C054830`, 102 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c054830.json`
@@ -28530,6 +34423,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 127
 - case 128
 - the cases run 140 of 160 instructions
+
+### FUN_0c054ae0 (`0C054AE0`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c054ae0.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 117
+- case 77
+- case 64
+- case 55
+- case 136
+- case 157
+- case 65
+- case 146
+- case 102
+- case 112
+- case 111
+- case 60
+- case 88
+- case 114
+- case 96
+- case 74
+- case 116
+- case 59
+- the cases run 30 of 79 instructions
 
 ### FUN_0c054b7e (`0C054B7E`, 140 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c054b7e.json`
@@ -28715,6 +34648,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 133
 - case 158
 - the cases run 20 of 20 instructions
+
+### FUN_0c054d8e (`0C054D8E`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c054d8e.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 38
+- case 127
+- case 112
+- case 93
+- case 69
+- case 66
+- case 114
+- case 119
+- case 154
+- case 68
+- case 145
+- case 72
+- case 71
+- case 67
+- case 118
+- case 141
+- case 41
+- case 108
+- the cases run 56 of 56 instructions
 
 ### FUN_0c054e1c (`0C054E1C`, 26 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c054e1c.json`
@@ -28922,6 +34895,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - the cases run 101 of 154 instructions
 
+### FUN_0c0552dc (`0C0552DC`, 218 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0552dc.json`
+- case 1
+- case 1
+- case 14
+- case 67
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 39
+- case 88
+- case 75
+- case 77
+- case 99
+- case 150
+- case 137
+- case 124
+- case 129
+- case 106
+- case 107
+- case 91
+- case 158
+- case 110
+- case 148
+- case 43
+- case 113
+- case 44
+- the cases run 91 of 91 instructions
+
 ### FUN_0c0553b6 (`0C0553B6`, 528 bytes, `src/gen_au.c`)
 - equivalent on 18 development and 12 holdout cases, in `tests/gen_au/FUN_0c0553b6.json`
 - case 25
@@ -29116,6 +35129,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 121
 - the cases run 31 of 31 instructions
 
+### FUN_0c055936 (`0C055936`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c055936.json`
+- case 73
+- case 0
+- case 2
+- case 4
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 18
+- case 58
+- case 61
+- case 142
+- case 133
+- case 118
+- case 115
+- case 127
+- case 48
+- case 63
+- case 140
+- case 41
+- case 143
+- case 124
+- case 105
+- case 144
+- case 147
+- case 101
+- case 132
+- the cases run 57 of 57 instructions
+
+### FUN_0c0559a8 (`0C0559A8`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0559a8.json`
+- case 7
+- case 0
+- case 4
+- case 6
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 24
+- case 26
+- case 138
+- case 130
+- case 93
+- case 82
+- case 71
+- case 152
+- case 129
+- case 103
+- case 72
+- case 65
+- case 135
+- case 140
+- case 144
+- case 75
+- case 122
+- case 118
+- case 56
+- case 79
+- the cases run 58 of 58 instructions
+
 ### FUN_0c055aee (`0C055AEE`, 394 bytes, `src/gen_cp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cp/FUN_0c055aee.json`
 - case 4
@@ -29155,6 +35248,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 96
 - case 119
 - the cases run 141 of 176 instructions
+
+### FUN_0c055c9c (`0C055C9C`, 350 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c055c9c.json`
+- case 134
+- case 3
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 15
+- case 16
+- case 18
+- case 19
+- case 135
+- case 151
+- case 81
+- case 117
+- case 159
+- case 97
+- case 112
+- case 157
+- case 74
+- case 132
+- case 155
+- case 125
+- case 145
+- case 123
+- case 78
+- case 99
+- case 109
+- case 118
+- the cases run 98 of 155 instructions
 
 ### FUN_0c055dfa (`0C055DFA`, 276 bytes, `src/gen_cy.c`)
 - equivalent on 11 development and 11 holdout cases, in `tests/gen_cy/FUN_0c055dfa.json`
@@ -29301,6 +35434,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 133
 - case 121
 - the cases run 65 of 65 instructions
+
+### FUN_0c056098 (`0C056098`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c056098.json`
+- case 8
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 156
+- case 140
+- case 138
+- case 68
+- case 60
+- case 64
+- case 155
+- case 147
+- case 82
+- case 154
+- case 99
+- case 157
+- case 73
+- case 84
+- case 145
+- case 63
+- case 120
+- case 117
+- the cases run 10 of 46 instructions
 
 ### FUN_0c056118 (`0C056118`, 260 bytes, `src/gen_da.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_da/FUN_0c056118.json`
@@ -29782,6 +35955,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 97
 - the cases run 118 of 150 instructions
 
+### FUN_0c0567c0 (`0C0567C0`, 312 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0567c0.json`
+- case 13
+- case 0
+- case 125
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 141
+- case 87
+- case 104
+- case 42
+- case 68
+- case 90
+- case 64
+- case 84
+- case 144
+- case 54
+- case 58
+- case 140
+- case 45
+- case 100
+- case 123
+- case 55
+- case 49
+- case 78
+- the cases run 156 of 156 instructions
+
 ### FUN_0c056928 (`0C056928`, 410 bytes, `src/gen_bb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c056928.json`
 - case 1
@@ -29821,6 +36034,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 127
 - case 75
 - the cases run 194 of 199 instructions
+
+### FUN_0c056b24 (`0C056B24`, 158 bytes, `src/gen_ej.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ej/FUN_0c056b24.json`
+- case 0
+- case 1
+- case 3
+- case 108
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 15
+- case 16
+- case 100
+- case 136
+- case 119
+- case 116
+- case 96
+- case 91
+- case 76
+- case 112
+- case 65
+- case 88
+- case 73
+- case 57
+- case 85
+- case 148
+- case 67
+- case 157
+- case 87
+- case 102
+- the cases run 76 of 79 instructions
 
 ### FUN_0c056e7a (`0C056E7A`, 20 bytes, `src/gen_g.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_g/FUN_0c056e7a.json`
@@ -30222,6 +36475,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 55
 - the cases run 35 of 35 instructions
 
+### FUN_0c057e2a (`0C057E2A`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c057e2a.json`
+- case 2
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 140
+- case 133
+- case 65
+- case 144
+- case 134
+- case 117
+- case 159
+- case 59
+- case 130
+- case 151
+- case 112
+- case 128
+- case 48
+- case 81
+- case 123
+- case 111
+- case 69
+- case 94
+- the cases run 57 of 57 instructions
+
 ### FUN_0c057ec8 (`0C057EC8`, 100 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c057ec8.json`
 - case 0
@@ -30301,6 +36594,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - case 119
 - the cases run 35 of 35 instructions
+
+### FUN_0c057fd4 (`0C057FD4`, 182 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c057fd4.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 89
+- case 82
+- case 57
+- case 88
+- case 37
+- case 127
+- case 65
+- case 158
+- case 54
+- case 55
+- case 67
+- case 123
+- case 74
+- case 120
+- case 126
+- case 59
+- case 104
+- case 141
+- the cases run 49 of 91 instructions
+
+### FUN_0c05808a (`0C05808A`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c05808a.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 67
+- case 111
+- case 92
+- case 55
+- case 149
+- case 145
+- case 77
+- case 81
+- case 106
+- case 144
+- case 148
+- case 62
+- case 103
+- case 153
+- case 146
+- case 71
+- case 70
+- case 88
+- the cases run 39 of 46 instructions
 
 ### FUN_0c058100 (`0C058100`, 38 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c058100.json`
@@ -30382,11 +36755,91 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 42
 - the cases run 30 of 34 instructions
 
+### FUN_0c05816a (`0C05816A`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c05816a.json`
+- case 1
+- case 15
+- case 5
+- case 0
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 39
+- case 141
+- case 122
+- case 59
+- case 149
+- case 146
+- case 68
+- case 96
+- case 45
+- case 156
+- case 91
+- case 90
+- case 86
+- case 114
+- case 70
+- case 81
+- case 47
+- case 139
+- the cases run 93 of 93 instructions
+
 ### FUN_0c05824e (`0C05824E`, 138 bytes, `src/gen_ck.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_ck/FUN_0c05824e.json`
 - rescue: empty case
 - rescue: empty case
 - the cases run 69 of 69 instructions
+
+### FUN_0c058308 (`0C058308`, 220 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c058308.json`
+- case 43
+- case 111
+- case 43
+- case 4
+- case 6
+- case 13
+- case 15
+- case 19
+- case 20
+- case 33
+- case 34
+- case 36
+- case 38
+- case 40
+- case 41
+- case 46
+- case 47
+- case 52
+- case 139
+- case 124
+- case 132
+- case 117
+- case 123
+- case 146
+- case 155
+- case 145
+- case 150
+- case 137
+- case 107
+- case 148
+- case 143
+- case 120
+- case 158
+- case 147
+- case 134
+- case 125
+- the cases run 110 of 110 instructions
 
 ### FUN_0c05878c (`0C05878C`, 1466 bytes, `src/gen_af.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_af/FUN_0c05878c.json`
@@ -30587,6 +37040,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 48
 - case 147
 - the cases run 61 of 61 instructions
+
+### FUN_0c0595c8 (`0C0595C8`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0595c8.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 76
+- case 36
+- case 67
+- case 79
+- case 87
+- case 54
+- case 39
+- case 75
+- case 112
+- case 56
+- case 72
+- case 53
+- case 108
+- case 119
+- case 46
+- case 95
+- case 114
+- case 111
+- the cases run 44 of 44 instructions
 
 ### FUN_0c059620 (`0C059620`, 122 bytes, `src/gen_bq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bq/FUN_0c059620.json`
@@ -31028,6 +37521,31 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 152
 - the cases run 34 of 34 instructions
 
+### FUN_0c05a9ce (`0C05A9CE`, 222 bytes, `src/gen_eb.c`)
+- equivalent on 11 development and 10 holdout cases, in `tests/gen_eb/FUN_0c05a9ce.json`
+- case 75
+- case 6
+- case 30
+- case 35
+- case 52
+- case 78
+- case 92
+- case 134
+- case 144
+- case 152
+- case 157
+- case 0
+- case 10
+- case 33
+- case 40
+- case 76
+- case 86
+- case 115
+- case 138
+- case 147
+- case 154
+- the cases run 111 of 111 instructions
+
 ### FUN_0c05b274 (`0C05B274`, 442 bytes, `src/gen_az.c`)
 - equivalent on 11 development and 10 holdout cases, in `tests/gen_az/FUN_0c05b274.json`
 - case 1
@@ -31052,6 +37570,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 354
 - case 374
 - the cases run 192 of 195 instructions
+
+### FUN_0c05b42e (`0C05B42E`, 718 bytes, `src/gen_do.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_do/FUN_0c05b42e.json`
+- case 17
+- case 7
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 18
+- case 19
+- case 47
+- case 117
+- case 144
+- case 80
+- case 98
+- case 106
+- case 70
+- case 110
+- case 143
+- case 66
+- case 83
+- case 60
+- case 88
+- case 90
+- case 114
+- case 86
+- case 157
+- case 129
+- the cases run 267 of 290 instructions
 
 ### FUN_0c05b6fc (`0C05B6FC`, 806 bytes, `src/gen_an.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_an/FUN_0c05b6fc.json`
@@ -31306,6 +37864,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 117
 - case 46
 - the cases run 193 of 251 instructions
+
+### FUN_0c05f07c (`0C05F07C`, 358 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c05f07c.json`
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 58
+- case 115
+- case 151
+- case 155
+- case 48
+- case 120
+- case 72
+- case 109
+- case 73
+- case 79
+- case 118
+- case 101
+- case 139
+- case 67
+- case 154
+- case 82
+- case 61
+- case 38
+- the cases run 85 of 141 instructions
 
 ### FUN_0c05f1e2 (`0C05F1E2`, 442 bytes, `src/gen_az.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_az/FUN_0c05f1e2.json`
@@ -31744,6 +38342,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 189
 - the cases run 176 of 179 instructions
 
+### FUN_0c0619e0 (`0C0619E0`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0619e0.json`
+- case 2
+- case 80
+- case 3
+- case 4
+- case 5
+- case 6
+- case 11
+- case 12
+- case 13
+- case 19
+- case 21
+- case 23
+- case 26
+- case 27
+- case 32
+- case 33
+- case 37
+- case 39
+- case 100
+- case 155
+- case 96
+- case 147
+- case 87
+- case 92
+- case 150
+- case 136
+- case 130
+- case 103
+- case 84
+- case 120
+- case 73
+- case 91
+- case 129
+- case 144
+- case 108
+- case 89
+- the cases run 85 of 85 instructions
+
 ### FUN_0c061a8a (`0C061A8A`, 496 bytes, `src/gen_cn.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cn/FUN_0c061a8a.json`
 - case 18
@@ -31783,6 +38421,33 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 143
 - case 77
 - the cases run 214 of 214 instructions
+
+### FUN_0c061fb8 (`0C061FB8`, 88 bytes, `src/gen_em.c`)
+- equivalent on 12 development and 11 holdout cases, in `tests/gen_em/FUN_0c061fb8.json`
+- case 0
+- case 7
+- case 40
+- case 61
+- case 73
+- case 88
+- case 92
+- case 103
+- case 117
+- case 126
+- case 136
+- case 150
+- case 6
+- case 28
+- case 57
+- case 63
+- case 87
+- case 90
+- case 98
+- case 116
+- case 120
+- case 132
+- case 141
+- the cases run 44 of 44 instructions
 
 ### FUN_0c0622dc (`0C0622DC`, 1560 bytes, `src/gen_ae.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ae/FUN_0c0622dc.json`
@@ -31984,6 +38649,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 81
 - the cases run 53 of 53 instructions
 
+### FUN_0c062c74 (`0C062C74`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c062c74.json`
+- case 0
+- case 15
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 107
+- case 62
+- case 74
+- case 119
+- case 73
+- case 84
+- case 64
+- case 81
+- case 67
+- case 49
+- case 106
+- case 59
+- case 39
+- case 76
+- case 48
+- case 94
+- case 103
+- case 82
+- the cases run 56 of 56 instructions
+
 ### FUN_0c062d04 (`0C062D04`, 70 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c062d04.json`
 - case 0
@@ -32023,6 +38728,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 113
 - case 158
 - the cases run 35 of 35 instructions
+
+### FUN_0c062d4a (`0C062D4A`, 362 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c062d4a.json`
+- case 33
+- case 0
+- case 1
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 19
+- case 20
+- case 24
+- case 25
+- case 34
+- case 39
+- case 41
+- case 44
+- case 152
+- case 137
+- case 122
+- case 78
+- case 141
+- case 133
+- case 110
+- case 138
+- case 123
+- case 153
+- case 158
+- case 112
+- case 131
+- case 151
+- case 107
+- case 87
+- case 106
+- case 89
+- the cases run 150 of 150 instructions
+
+### FUN_0c062eb4 (`0C062EB4`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c062eb4.json`
+- case 0
+- case 9
+- case 13
+- case 28
+- case 31
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 79
+- case 59
+- case 77
+- case 56
+- case 41
+- case 58
+- case 36
+- case 69
+- case 46
+- case 109
+- case 44
+- case 96
+- case 89
+- case 54
+- case 83
+- case 100
+- case 105
+- case 84
+- the cases run 44 of 44 instructions
 
 ### FUN_0c062f54 (`0C062F54`, 102 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c062f54.json`
@@ -32270,6 +39055,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 153
 - the cases run 102 of 102 instructions
 
+### FUN_0c063ff8 (`0C063FF8`, 474 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c063ff8.json`
+- case 1
+- case 5
+- case 3
+- case 2
+- case 6
+- case 7
+- case 9
+- case 10
+- case 21
+- case 25
+- case 26
+- case 28
+- case 32
+- case 35
+- case 37
+- case 39
+- case 41
+- case 45
+- case 110
+- case 91
+- case 138
+- case 103
+- case 154
+- case 140
+- case 94
+- case 127
+- case 109
+- case 141
+- case 107
+- case 99
+- case 157
+- case 131
+- case 134
+- case 100
+- case 128
+- case 115
+- the cases run 207 of 207 instructions
+
 ### FUN_0c064640 (`0C064640`, 256 bytes, `src/gen_be.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_be/FUN_0c064640.json`
 - case 0
@@ -32350,6 +39175,304 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 94
 - the cases run 34 of 34 instructions
 
+### FUN_0c0651ac (`0C0651AC`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c0651ac.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 79 of 79 instructions
+
+### FUN_0c06524a (`0C06524A`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c06524a.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 256
+- case 304
+- case 356
+- case 181
+- case 213
+- case 218
+- case 287
+- case 354
+- case 363
+- case 207
+- case 333
+- case 192
+- case 278
+- case 364
+- case 412
+- case 382
+- case 179
+- case 46
+- the cases run 44 of 44 instructions
+
+### FUN_0c0652a2 (`0C0652A2`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c0652a2.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 79 of 79 instructions
+
+### FUN_0c065340 (`0C065340`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c065340.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 48
+- case 396
+- case 105
+- case 262
+- case 46
+- case 93
+- case 159
+- case 355
+- case 84
+- case 62
+- case 65
+- case 367
+- case 335
+- case 405
+- case 187
+- case 334
+- case 227
+- case 173
+- the cases run 44 of 44 instructions
+
+### FUN_0c065398 (`0C065398`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c065398.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 79 of 79 instructions
+
+### FUN_0c06546c (`0C06546C`, 966 bytes, `src/gen_dk.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dk/FUN_0c06546c.json`
+- case 0
+- case 19
+- case 57
+- case 2
+- case 19
+- case 57
+- case 19
+- case 77
+- case 3
+- case 19
+- case 19
+- case 19
+- case 57
+- case 19
+- case 4
+- case 5
+- case 6
+- case 7
+- case 70
+- case 94
+- case 140
+- case 27
+- case 51
+- case 116
+- case 106
+- case 139
+- case 123
+- case 92
+- case 154
+- case 111
+- case 133
+- case 69
+- case 53
+- case 30
+- case 137
+- case 32
+- the cases run 200 of 385 instructions
+
+### FUN_0c065840 (`0C065840`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c065840.json`
+- case 2
+- case 0
+- case 3
+- case 4
+- case 6
+- case 7
+- case 9
+- case 11
+- case 13
+- case 14
+- case 15
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 25
+- case 27
+- case 103
+- case 134
+- case 122
+- case 128
+- case 97
+- case 125
+- case 62
+- case 136
+- case 57
+- case 139
+- case 127
+- case 141
+- case 113
+- case 123
+- case 147
+- case 56
+- case 98
+- case 145
+- the cases run 45 of 45 instructions
+
+### FUN_0c065bb2 (`0C065BB2`, 768 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dm/FUN_0c065bb2.json`
+- case 29
+- case 0
+- case 29
+- case 29
+- case 29
+- case 29
+- case 4
+- case 7
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 18
+- case 19
+- case 21
+- case 23
+- case 75
+- case 65
+- case 68
+- case 151
+- case 132
+- case 146
+- case 89
+- case 131
+- case 112
+- case 127
+- case 93
+- case 84
+- case 29
+- case 73
+- case 48
+- case 128
+- case 29
+- case 137
+- the cases run 304 of 340 instructions
+
+### FUN_0c065eb2 (`0C065EB2`, 360 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c065eb2.json`
+- case 2
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 54
+- case 51
+- case 80
+- case 136
+- case 102
+- case 86
+- case 75
+- case 146
+- case 61
+- case 107
+- case 37
+- case 52
+- case 112
+- case 49
+- case 120
+- case 97
+- case 40
+- case 58
+- the cases run 90 of 142 instructions
+
+### FUN_0c066064 (`0C066064`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c066064.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 62
+- case 113
+- case 47
+- case 42
+- case 79
+- case 50
+- case 66
+- case 90
+- case 89
+- case 81
+- case 39
+- case 106
+- case 74
+- case 99
+- case 77
+- case 78
+- case 67
+- case 75
+- the cases run 46 of 46 instructions
+
 ### FUN_0c066240 (`0C066240`, 230 bytes, `src/gen_by.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_by/FUN_0c066240.json`
 - case 0
@@ -32429,6 +39552,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 114
 - case 101
 - the cases run 194 of 194 instructions
+
+### FUN_0c067062 (`0C067062`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c067062.json`
+- case 33
+- case 89
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 52
+- case 42
+- case 43
+- case 38
+- case 109
+- case 107
+- case 71
+- case 57
+- case 76
+- case 55
+- case 112
+- case 115
+- case 68
+- case 81
+- case 98
+- case 97
+- case 101
+- case 47
+- the cases run 43 of 43 instructions
 
 ### FUN_0c067128 (`0C067128`, 74 bytes, `src/gen_r.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c067128.json`
@@ -32550,6 +39713,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 158
 - the cases run 99 of 104 instructions
 
+### FUN_0c06742c (`0C06742C`, 476 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c06742c.json`
+- case 0
+- case 77
+- case 2
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 91
+- case 69
+- case 71
+- case 138
+- case 80
+- case 94
+- case 35
+- case 55
+- case 137
+- case 117
+- case 106
+- case 66
+- case 151
+- case 145
+- case 63
+- case 107
+- case 108
+- case 110
+- the cases run 148 of 196 instructions
+
 ### FUN_0c067814 (`0C067814`, 22 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c067814.json`
 - case 0
@@ -32667,6 +39870,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 119
 - the cases run 179 of 210 instructions
 
+### FUN_0c067cd4 (`0C067CD4`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c067cd4.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 11
+- case 12
+- case 15
+- case 16
+- case 18
+- case 21
+- case 25
+- case 27
+- case 29
+- case 30
+- case 86
+- case 126
+- case 136
+- case 99
+- case 130
+- case 83
+- case 138
+- case 129
+- case 140
+- case 112
+- case 111
+- case 84
+- case 121
+- case 117
+- case 152
+- case 113
+- case 118
+- case 90
+- the cases run 79 of 79 instructions
+
 ### FUN_0c06816c (`0C06816C`, 256 bytes, `src/gen_bd.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bd/FUN_0c06816c.json`
 - case 3
@@ -32746,6 +39989,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 71
 - case 66
 - the cases run 21 of 21 instructions
+
+### FUN_0c068424 (`0C068424`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eb/FUN_0c068424.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 114 of 114 instructions
 
 ### FUN_0c068508 (`0C068508`, 42 bytes, `src/gen_bl.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bl/FUN_0c068508.json`
@@ -33027,6 +40276,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 131
 - the cases run 188 of 283 instructions
 
+### FUN_0c069098 (`0C069098`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c069098.json`
+- case 2
+- case 3
+- case 4
+- case 5
+- case 11
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 23
+- case 24
+- case 26
+- case 27
+- case 28
+- case 29
+- case 34
+- case 102
+- case 112
+- case 132
+- case 138
+- case 131
+- case 77
+- case 99
+- case 78
+- case 156
+- case 105
+- case 90
+- case 151
+- case 116
+- case 86
+- case 139
+- case 141
+- case 79
+- case 135
+- the cases run 43 of 43 instructions
+
 ### FUN_0c0690ee (`0C0690EE`, 100 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c0690ee.json`
 - case 1
@@ -33146,6 +40435,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 46
 - case 48
 - the cases run 28 of 28 instructions
+
+### FUN_0c0695b0 (`0C0695B0`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0695b0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 18
+- case 131
+- case 133
+- case 122
+- case 126
+- case 73
+- case 149
+- case 50
+- case 130
+- case 90
+- case 108
+- case 102
+- case 112
+- case 111
+- case 54
+- case 49
+- case 68
+- case 114
+- case 86
+- the cases run 84 of 84 instructions
 
 ### FUN_0c069e28 (`0C069E28`, 402 bytes, `src/gen_bb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c069e28.json`
@@ -33307,6 +40636,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 140
 - the cases run 29 of 29 instructions
 
+### FUN_0c06a9b2 (`0C06A9B2`, 370 bytes, `src/gen_dw.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dw/FUN_0c06a9b2.json`
+- case 1
+- case 12
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 66
+- case 49
+- case 83
+- case 147
+- case 113
+- case 79
+- case 55
+- case 64
+- case 137
+- case 128
+- case 89
+- case 119
+- case 57
+- case 77
+- case 94
+- case 111
+- case 37
+- case 120
+- the cases run 99 of 150 instructions
+
 ### FUN_0c06ab38 (`0C06AB38`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c06ab38.json`
 - case 0
@@ -33346,6 +40715,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - case 153
 - the cases run 38 of 38 instructions
+
+### FUN_0c06adfc (`0C06ADFC`, 112 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c06adfc.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 126
+- case 129
+- case 94
+- case 157
+- case 103
+- case 66
+- case 114
+- case 120
+- case 63
+- case 159
+- case 102
+- case 151
+- case 152
+- case 100
+- case 156
+- case 136
+- case 62
+- case 42
+- the cases run 56 of 56 instructions
 
 ### FUN_0c06b060 (`0C06B060`, 140 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c06b060.json`
@@ -33387,6 +40796,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 115
 - the cases run 70 of 70 instructions
 
+### FUN_0c06b114 (`0C06B114`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c06b114.json`
+- case 0
+- case 9
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 100
+- case 45
+- case 107
+- case 46
+- case 112
+- case 62
+- case 68
+- case 92
+- case 66
+- case 84
+- case 48
+- case 82
+- case 90
+- case 113
+- case 69
+- case 86
+- case 80
+- case 71
+- the cases run 79 of 79 instructions
+
 ### FUN_0c06b1b2 (`0C06B1B2`, 16 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c06b1b2.json`
 - case 0
@@ -33426,6 +40875,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 66
 - case 90
 - the cases run 8 of 8 instructions
+
+### FUN_0c06b3b6 (`0C06B3B6`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c06b3b6.json`
+- case 62
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 41
+- case 61
+- case 97
+- case 37
+- case 46
+- case 55
+- case 39
+- case 79
+- case 95
+- case 77
+- case 72
+- case 47
+- case 119
+- case 114
+- case 56
+- case 36
+- case 75
+- case 82
+- the cases run 45 of 45 instructions
 
 ### FUN_0c06b430 (`0C06B430`, 46 bytes, `src/gen_bm.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bm/FUN_0c06b430.json`
@@ -33547,6 +41036,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 145
 - the cases run 70 of 70 instructions
 
+### FUN_0c06b748 (`0C06B748`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c06b748.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 67
+- case 112
+- case 104
+- case 72
+- case 99
+- case 101
+- case 38
+- case 97
+- case 69
+- case 42
+- case 91
+- case 40
+- case 58
+- case 70
+- case 41
+- case 102
+- case 84
+- case 46
+- the cases run 46 of 46 instructions
+
+### FUN_0c06b888 (`0C06B888`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c06b888.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 56
+- case 69
+- case 42
+- case 38
+- case 57
+- case 88
+- case 84
+- case 83
+- case 66
+- case 54
+- case 103
+- case 64
+- case 70
+- case 46
+- case 100
+- case 119
+- case 85
+- case 62
+- the cases run 58 of 58 instructions
+
 ### FUN_0c06bc74 (`0C06BC74`, 192 bytes, `src/gen_b.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_b/FUN_0c06bc74.json`
 - case 2
@@ -33666,6 +41235,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 105
 - case 74
 - the cases run 41 of 41 instructions
+
+### FUN_0c06c89c (`0C06C89C`, 156 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c06c89c.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 83
+- case 74
+- case 84
+- case 119
+- case 53
+- case 37
+- case 41
+- case 81
+- case 59
+- case 103
+- case 42
+- case 85
+- case 69
+- case 58
+- case 78
+- case 46
+- case 109
+- case 77
+- the cases run 78 of 78 instructions
 
 ### FUN_0c06c938 (`0C06C938`, 284 bytes, `src/gen_bd.c`)
 - equivalent on 8 development and 8 holdout cases, in `tests/gen_bd/FUN_0c06c938.json`
@@ -33819,6 +41428,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 138 of 279 instructions
 
+### FUN_0c06db68 (`0C06DB68`, 178 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c06db68.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 19
+- case 23
+- case 26
+- case 28
+- case 76
+- case 109
+- case 89
+- case 127
+- case 132
+- case 72
+- case 69
+- case 116
+- case 94
+- case 79
+- case 144
+- case 102
+- case 115
+- case 112
+- case 130
+- case 106
+- case 120
+- case 153
+- the cases run 89 of 89 instructions
+
+### FUN_0c06dc1a (`0C06DC1A`, 372 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c06dc1a.json`
+- case 4
+- case 0
+- case 8
+- case 9
+- case 10
+- case 12
+- case 15
+- case 16
+- case 17
+- case 19
+- case 20
+- case 21
+- case 22
+- case 24
+- case 25
+- case 26
+- case 27
+- case 28
+- case 125
+- case 142
+- case 103
+- case 65
+- case 99
+- case 156
+- case 126
+- case 145
+- case 78
+- case 97
+- case 128
+- case 146
+- case 59
+- case 93
+- case 105
+- case 64
+- case 89
+- case 157
+- the cases run 44 of 158 instructions
+
 ### FUN_0c06ddc4 (`0C06DDC4`, 104 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c06ddc4.json`
 - case 0
@@ -33904,6 +41593,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 149
 - case 93
 - the cases run 140 of 140 instructions
+
+### FUN_0c06e0c4 (`0C06E0C4`, 316 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c06e0c4.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 20
+- case 21
+- case 22
+- case 24
+- case 25
+- case 26
+- case 27
+- case 153
+- case 124
+- case 93
+- case 147
+- case 130
+- case 146
+- case 103
+- case 97
+- case 116
+- case 149
+- case 85
+- case 101
+- case 94
+- case 132
+- case 135
+- case 58
+- case 144
+- case 112
+- the cases run 158 of 158 instructions
 
 ### FUN_0c06e23c (`0C06E23C`, 142 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c06e23c.json`
@@ -34003,6 +41732,40 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 103
 - the cases run 117 of 127 instructions
 
+### FUN_0c06e9cc (`0C06E9CC`, 178 bytes, `src/gen_ec.c`)
+- equivalent on 15 development and 15 holdout cases, in `tests/gen_ec/FUN_0c06e9cc.json`
+- case 8
+- case 2
+- case 10
+- case 15
+- case 17
+- case 23
+- case 35
+- case 50
+- case 56
+- case 74
+- case 96
+- case 101
+- case 128
+- case 146
+- case 151
+- case 1
+- case 6
+- case 12
+- case 16
+- case 22
+- case 27
+- case 44
+- case 54
+- case 57
+- case 93
+- case 97
+- case 125
+- case 143
+- case 147
+- case 159
+- the cases run 67 of 88 instructions
+
 ### FUN_0c06ea7e (`0C06EA7E`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c06ea7e.json`
 - case 1
@@ -34088,6 +41851,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 29 of 29 instructions
+
+### FUN_0c06ece4 (`0C06ECE4`, 182 bytes, `src/gen_ee.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ee/FUN_0c06ece4.json`
+- case 0
+- case 120
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 196
+- case 145
+- case 50
+- case 192
+- case 147
+- case 195
+- case 44
+- case 188
+- case 135
+- case 210
+- case 92
+- case 140
+- case 100
+- case 169
+- case 168
+- case 139
+- case 202
+- case 104
+- the cases run 62 of 89 instructions
 
 ### FUN_0c06f1cc (`0C06F1CC`, 240 bytes, `src/gen_by.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_by/FUN_0c06f1cc.json`
@@ -34729,6 +42532,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - the cases run 85 of 125 instructions
 
+### FUN_0c074ccc (`0C074CCC`, 658 bytes, `src/gen_dq.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dq/FUN_0c074ccc.json`
+- case 3
+- case 2
+- case 1
+- case 0
+- case 9
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 96
+- case 55
+- case 105
+- case 65
+- case 104
+- case 157
+- case 83
+- case 150
+- case 131
+- case 58
+- case 121
+- case 159
+- case 77
+- case 52
+- case 141
+- case 80
+- case 81
+- case 137
+- the cases run 193 of 287 instructions
+
 ### FUN_0c075036 (`0C075036`, 238 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c075036.json`
 - case 4
@@ -34917,6 +42760,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 58
 - the cases run 74 of 74 instructions
 
+### FUN_0c0758f4 (`0C0758F4`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0758f4.json`
+- case 0
+- case 1
+- case 6
+- case 9
+- case 13
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 21
+- case 23
+- case 26
+- case 27
+- case 30
+- case 31
+- case 35
+- case 37
+- case 127
+- case 147
+- case 117
+- case 152
+- case 104
+- case 153
+- case 129
+- case 143
+- case 87
+- case 150
+- case 83
+- case 146
+- case 105
+- case 113
+- case 131
+- case 100
+- case 148
+- case 98
+- the cases run 45 of 45 instructions
+
 ### FUN_0c075954 (`0C075954`, 50 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c075954.json`
 - case 0
@@ -34997,6 +42880,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 43
 - the cases run 11 of 11 instructions
 
+### FUN_0c075bae (`0C075BAE`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ef/FUN_0c075bae.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 84 of 84 instructions
+
 ### FUN_0c075f02 (`0C075F02`, 22 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c075f02.json`
 - case 0
@@ -35036,6 +42925,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - case 92
 - the cases run 11 of 11 instructions
+
+### FUN_0c075f30 (`0C075F30`, 354 bytes, `src/gen_dz.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dz/FUN_0c075f30.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 15
+- case 19
+- case 22
+- case 24
+- case 29
+- case 30
+- case 31
+- case 33
+- case 34
+- case 39
+- case 42
+- case 124
+- case 136
+- case 126
+- case 143
+- case 133
+- case 142
+- case 103
+- case 129
+- case 111
+- case 148
+- case 107
+- case 115
+- case 157
+- case 108
+- case 153
+- case 139
+- case 118
+- case 100
+- the cases run 118 of 165 instructions
 
 ### FUN_0c0761b8 (`0C0761B8`, 82 bytes, `src/gen_u.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_u/FUN_0c0761b8.json`
@@ -35345,6 +43274,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 86
 - the cases run 94 of 94 instructions
 
+### FUN_0c07787c (`0C07787C`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c07787c.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 15
+- case 16
+- case 17
+- case 20
+- case 21
+- case 26
+- case 94
+- case 108
+- case 130
+- case 106
+- case 103
+- case 142
+- case 87
+- case 155
+- case 148
+- case 158
+- case 96
+- case 116
+- case 151
+- case 110
+- case 84
+- case 117
+- case 119
+- case 85
+- the cases run 83 of 83 instructions
+
 ### FUN_0c077960 (`0C077960`, 1092 bytes, `src/gen_aj.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_aj/FUN_0c077960.json`
 - case 0
@@ -35612,6 +43581,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 81
 - the cases run 25 of 40 instructions
 
+### FUN_0c078dc2 (`0C078DC2`, 632 bytes, `src/gen_ds.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ds/FUN_0c078dc2.json`
+- case 0
+- case 2
+- case 4
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 100
+- case 126
+- case 148
+- case 119
+- case 106
+- case 118
+- case 144
+- case 65
+- case 91
+- case 81
+- case 153
+- case 78
+- case 151
+- case 59
+- case 120
+- case 94
+- case 57
+- case 95
+- the cases run 125 of 252 instructions
+
 ### FUN_0c07903a (`0C07903A`, 206 bytes, `src/gen_bh.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bh/FUN_0c07903a.json`
 - case 2
@@ -35868,6 +43877,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 144
 - the cases run 22 of 22 instructions
 
+### FUN_0c07a460 (`0C07A460`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c07a460.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 129
+- case 102
+- case 103
+- case 83
+- case 55
+- case 68
+- case 54
+- case 149
+- case 80
+- case 95
+- case 82
+- case 124
+- case 146
+- case 155
+- case 52
+- case 134
+- case 132
+- case 126
+- the cases run 25 of 76 instructions
+
 ### FUN_0c07a5f8 (`0C07A5F8`, 380 bytes, `src/gen_bc.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bc/FUN_0c07a5f8.json`
 - case 136
@@ -36068,6 +44117,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 105
 - the cases run 163 of 169 instructions
 
+### FUN_0c07b0bc (`0C07B0BC`, 90 bytes, `src/gen_en.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_en/FUN_0c07b0bc.json`
+- case 0
+- case 1
+- case 2
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 15
+- case 18
+- case 24
+- case 27
+- case 32
+- case 33
+- case 34
+- case 99
+- case 135
+- case 119
+- case 113
+- case 133
+- case 136
+- case 152
+- case 106
+- case 143
+- case 115
+- case 158
+- case 157
+- case 131
+- case 138
+- case 118
+- case 82
+- case 159
+- case 149
+- the cases run 45 of 45 instructions
+
 ### FUN_0c07b1b0 (`0C07B1B0`, 62 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c07b1b0.json`
 - case 4
@@ -36108,6 +44197,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 103
 - the cases run 31 of 31 instructions
 
+### FUN_0c07b1ee (`0C07B1EE`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c07b1ee.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 115
+- case 82
+- case 57
+- case 39
+- case 87
+- case 77
+- case 49
+- case 73
+- case 43
+- case 93
+- case 94
+- case 58
+- case 119
+- case 107
+- case 88
+- case 37
+- case 98
+- case 65
+- the cases run 81 of 81 instructions
+
 ### FUN_0c07b3b0 (`0C07B3B0`, 404 bytes, `src/gen_cp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cp/FUN_0c07b3b0.json`
 - case 3
@@ -36147,6 +44276,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 153
 - case 144
 - the cases run 162 of 169 instructions
+
+### FUN_0c07b70e (`0C07B70E`, 658 bytes, `src/gen_dp.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dp/FUN_0c07b70e.json`
+- case 1
+- case 132
+- case 0
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 114
+- case 86
+- case 63
+- case 137
+- case 134
+- case 101
+- case 53
+- case 85
+- case 111
+- case 125
+- case 72
+- case 76
+- case 98
+- case 105
+- case 52
+- case 42
+- case 77
+- case 147
+- the cases run 216 of 265 instructions
 
 ### FUN_0c07ba5e (`0C07BA5E`, 20 bytes, `src/gen_g.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_g/FUN_0c07ba5e.json`
@@ -36308,6 +44477,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - the cases run 74 of 74 instructions
 
+### FUN_0c07c664 (`0C07C664`, 646 bytes, `src/gen_dr.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dr/FUN_0c07c664.json`
+- case 0
+- case 13
+- case 76
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 8
+- case 9
+- case 11
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 121
+- case 64
+- case 87
+- case 80
+- case 152
+- case 88
+- case 94
+- case 89
+- case 52
+- case 113
+- case 90
+- case 136
+- case 143
+- case 128
+- case 145
+- case 125
+- case 74
+- case 124
+- the cases run 86 of 290 instructions
+
 ### FUN_0c07c8ea (`0C07C8EA`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c07c8ea.json`
 - case 0
@@ -36423,6 +44632,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 136
 - case 55
 - the cases run 35 of 35 instructions
+
+### FUN_0c07cf64 (`0C07CF64`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c07cf64.json`
+- case 10
+- case 16
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 208
+- case 375
+- case 288
+- case 74
+- case 168
+- case 303
+- case 200
+- case 331
+- case 302
+- case 370
+- case 59
+- case 335
+- case 209
+- case 83
+- case 108
+- case 176
+- case 350
+- case 137
+- the cases run 90 of 90 instructions
 
 ### FUN_0c07d040 (`0C07D040`, 244 bytes, `src/gen_by.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_by/FUN_0c07d040.json`
@@ -37177,6 +45426,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - the cases run 12 of 15 instructions
 
+### FUN_0c07e670 (`0C07E670`, 730 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c07e670.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 233
+- case 211
+- case 39
+- case 242
+- case 104
+- case 154
+- case 130
+- case 80
+- case 101
+- case 197
+- case 46
+- case 270
+- case 235
+- case 249
+- case 174
+- case 156
+- case 183
+- case 62
+- the cases run 243 of 325 instructions
+
+### FUN_0c07e94a (`0C07E94A`, 972 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c07e94a.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 154
+- case 137
+- case 153
+- case 59
+- case 83
+- case 82
+- case 74
+- case 87
+- case 37
+- case 78
+- case 144
+- case 70
+- case 156
+- case 89
+- case 120
+- case 60
+- case 67
+- case 119
+- the cases run 342 of 448 instructions
+
 ### FUN_0c07ede6 (`0C07EDE6`, 70 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c07ede6.json`
 - case 32
@@ -37216,6 +45545,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 122
 - case 128
 - the cases run 30 of 35 instructions
+
+### FUN_0c07ee7c (`0C07EE7C`, 460 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c07ee7c.json`
+- case 35
+- case 13
+- case 35
+- case 53
+- case 0
+- case 4
+- case 8
+- case 12
+- case 16
+- case 19
+- case 20
+- case 22
+- case 23
+- case 24
+- case 25
+- case 27
+- case 28
+- case 34
+- case 124
+- case 134
+- case 93
+- case 89
+- case 67
+- case 102
+- case 111
+- case 141
+- case 138
+- case 94
+- case 75
+- case 106
+- case 113
+- case 95
+- case 130
+- case 110
+- case 80
+- case 132
+- the cases run 91 of 201 instructions
 
 ### FUN_0c07f340 (`0C07F340`, 668 bytes, `src/gen_ap.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ap/FUN_0c07f340.json`
@@ -37857,6 +46226,30 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 156
 - the cases run 92 of 96 instructions
 
+### FUN_0c082f04 (`0C082F04`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 10 development and 10 holdout cases, in `tests/gen_ek/FUN_0c082f04.json`
+- case 15
+- case 33
+- case 45
+- case 60
+- case 66
+- case 78
+- case 93
+- case 109
+- case 124
+- case 145
+- case 20
+- case 44
+- case 55
+- case 63
+- case 71
+- case 84
+- case 103
+- case 110
+- case 134
+- case 156
+- the cases run 52 of 58 instructions
+
 ### FUN_0c082f78 (`0C082F78`, 54 bytes, `src/gen_f.c`)
 - equivalent on 14 development and 13 holdout cases, in `tests/gen_f/FUN_0c082f78.json`
 - case 0
@@ -37887,6 +46280,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 140
 - case 148
 - the cases run 27 of 27 instructions
+
+### FUN_0c082fae (`0C082FAE`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c082fae.json`
+- case 0
+- case 8
+- case 16
+- case 29
+- case 31
+- case 44
+- case 46
+- case 75
+- case 81
+- case 84
+- case 99
+- case 103
+- case 112
+- case 121
+- case 138
+- case 140
+- case 147
+- case 155
+- case 4
+- case 11
+- case 22
+- case 30
+- case 42
+- case 45
+- case 56
+- case 80
+- case 83
+- case 94
+- case 101
+- case 110
+- case 116
+- case 132
+- case 139
+- case 143
+- case 148
+- case 156
+- the cases run 61 of 82 instructions
 
 ### FUN_0c083074 (`0C083074`, 62 bytes, `src/gen_f.c`)
 - equivalent on 14 development and 13 holdout cases, in `tests/gen_f/FUN_0c083074.json`
@@ -39875,6 +48308,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 63
 - the cases run 148 of 148 instructions
 
+### FUN_0c085050 (`0C085050`, 220 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c085050.json`
+- case 0
+- case 2
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 17
+- case 21
+- case 24
+- case 29
+- case 32
+- case 34
+- case 38
+- case 39
+- case 40
+- case 100
+- case 112
+- case 92
+- case 77
+- case 158
+- case 132
+- case 150
+- case 90
+- case 120
+- case 135
+- case 78
+- case 137
+- case 88
+- case 79
+- case 114
+- case 151
+- case 138
+- case 94
+- the cases run 110 of 110 instructions
+
 ### FUN_0c08512c (`0C08512C`, 380 bytes, `src/gen_cq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cq/FUN_0c08512c.json`
 - case 4
@@ -40401,6 +48874,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - the cases run 73 of 73 instructions
 
+### FUN_0c086778 (`0C086778`, 350 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c086778.json`
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 93
+- case 116
+- case 133
+- case 113
+- case 136
+- case 46
+- case 114
+- case 115
+- case 82
+- case 98
+- case 153
+- case 129
+- case 120
+- case 90
+- case 142
+- case 118
+- case 70
+- case 69
+- the cases run 89 of 168 instructions
+
 ### FUN_0c0868d6 (`0C0868D6`, 62 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c0868d6.json`
 - case 62
@@ -40841,6 +49354,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 75
 - the cases run 38 of 38 instructions
 
+### FUN_0c086cac (`0C086CAC`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c086cac.json`
+- case 0
+- case 2
+- case 3
+- case 8
+- case 10
+- case 13
+- case 17
+- case 22
+- case 24
+- case 27
+- case 31
+- case 32
+- case 33
+- case 34
+- case 37
+- case 39
+- case 40
+- case 43
+- case 132
+- case 113
+- case 145
+- case 159
+- case 157
+- case 79
+- case 116
+- case 97
+- case 135
+- case 140
+- case 95
+- case 150
+- case 143
+- case 151
+- case 138
+- case 148
+- case 107
+- case 105
+- the cases run 31 of 81 instructions
+
 ### FUN_0c086dcc (`0C086DCC`, 532 bytes, `src/gen_av.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_av/FUN_0c086dcc.json`
 - case 0
@@ -41007,6 +49560,45 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 38 of 192 instructions
 
+### FUN_0c088046 (`0C088046`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 17 holdout cases, in `tests/gen_em/FUN_0c088046.json`
+- case 0
+- case 3
+- case 6
+- case 9
+- case 28
+- case 35
+- case 41
+- case 52
+- case 78
+- case 94
+- case 102
+- case 113
+- case 116
+- case 124
+- case 134
+- case 138
+- case 143
+- case 158
+- case 2
+- case 5
+- case 7
+- case 11
+- case 30
+- case 38
+- case 43
+- case 70
+- case 86
+- case 101
+- case 110
+- case 114
+- case 121
+- case 129
+- case 135
+- case 142
+- case 150
+- the cases run 43 of 43 instructions
+
 ### FUN_0c0881d4 (`0C0881D4`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c0881d4.json`
 - case 1
@@ -41046,6 +49638,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 75
 - case 107
 - the cases run 34 of 34 instructions
+
+### FUN_0c088ec4 (`0C088EC4`, 218 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c088ec4.json`
+- case 145
+- case 12
+- case 83
+- case 13
+- case 16
+- case 17
+- case 19
+- case 20
+- case 24
+- case 25
+- case 26
+- case 28
+- case 32
+- case 33
+- case 34
+- case 36
+- case 41
+- case 42
+- case 153
+- case 82
+- case 152
+- case 147
+- case 126
+- case 87
+- case 88
+- case 91
+- case 139
+- case 146
+- case 123
+- case 143
+- case 77
+- case 81
+- case 92
+- case 96
+- case 85
+- case 124
+- the cases run 109 of 109 instructions
 
 ### FUN_0c088fcc (`0C088FCC`, 838 bytes, `src/gen_al.c`)
 - equivalent on 18 development and 9 holdout cases, in `tests/gen_al/FUN_0c088fcc.json`
@@ -41157,6 +49789,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 123
 - case 156
 - the cases run 27 of 27 instructions
+
+### FUN_0c089bec (`0C089BEC`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ef/FUN_0c089bec.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 86 of 86 instructions
 
 ### FUN_0c089d04 (`0C089D04`, 1204 bytes, `src/gen_dh.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dh/FUN_0c089d04.json`
@@ -41724,6 +50362,44 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 135
 - the cases run 63 of 63 instructions
 
+### FUN_0c08b4d2 (`0C08B4D2`, 120 bytes, `src/gen_el.c`)
+- equivalent on 17 development and 17 holdout cases, in `tests/gen_el/FUN_0c08b4d2.json`
+- case 23
+- case 3
+- case 5
+- case 10
+- case 15
+- case 18
+- case 20
+- case 36
+- case 51
+- case 57
+- case 73
+- case 81
+- case 93
+- case 102
+- case 121
+- case 133
+- case 150
+- case 2
+- case 4
+- case 6
+- case 12
+- case 17
+- case 19
+- case 30
+- case 46
+- case 55
+- case 67
+- case 75
+- case 88
+- case 96
+- case 104
+- case 130
+- case 138
+- case 159
+- the cases run 60 of 60 instructions
+
 ### FUN_0c08b580 (`0C08B580`, 208 bytes, `src/gen_cc.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cc/FUN_0c08b580.json`
 - case 5
@@ -41763,6 +50439,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 154
 - case 77
 - the cases run 72 of 104 instructions
+
+### FUN_0c08b678 (`0C08B678`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c08b678.json`
+- case 15
+- case 1
+- case 2
+- case 8
+- case 9
+- case 14
+- case 19
+- case 21
+- case 25
+- case 26
+- case 27
+- case 33
+- case 35
+- case 37
+- case 39
+- case 41
+- case 45
+- case 47
+- case 116
+- case 157
+- case 145
+- case 128
+- case 139
+- case 121
+- case 113
+- case 132
+- case 153
+- case 149
+- case 107
+- case 105
+- case 147
+- case 117
+- case 111
+- case 140
+- case 101
+- case 125
+- the cases run 92 of 92 instructions
 
 ### FUN_0c08b730 (`0C08B730`, 124 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c08b730.json`
@@ -41924,6 +50640,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 66
 - the cases run 141 of 222 instructions
 
+### FUN_0c08bd50 (`0C08BD50`, 310 bytes, `src/gen_eb.c`)
+- equivalent on 7 development and 7 holdout cases, in `tests/gen_eb/FUN_0c08bd50.json`
+- case 0
+- case 3
+- case 6
+- case 8
+- case 14
+- case 82
+- case 163
+- case 2
+- case 5
+- case 7
+- case 10
+- case 55
+- case 158
+- case 198
+- the cases run 155 of 155 instructions
+
 ### FUN_0c08bf92 (`0C08BF92`, 294 bytes, `src/gen_c.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_c/FUN_0c08bf92.json`
 - case 2
@@ -42083,6 +50817,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 147
 - case 125
 - the cases run 50 of 50 instructions
+
+### FUN_0c08c610 (`0C08C610`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c08c610.json`
+- case 0
+- case 16
+- case 21
+- case 27
+- case 44
+- case 46
+- case 52
+- case 59
+- case 80
+- case 82
+- case 86
+- case 93
+- case 99
+- case 103
+- case 115
+- case 129
+- case 143
+- case 155
+- case 12
+- case 19
+- case 24
+- case 43
+- case 45
+- case 50
+- case 53
+- case 67
+- case 81
+- case 83
+- case 92
+- case 95
+- case 100
+- case 105
+- case 124
+- case 141
+- case 146
+- case 157
+- the cases run 44 of 44 instructions
+
+### FUN_0c08c668 (`0C08C668`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c08c668.json`
+- case 112
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 143
+- case 62
+- case 97
+- case 115
+- case 149
+- case 40
+- case 102
+- case 84
+- case 70
+- case 157
+- case 99
+- case 52
+- case 121
+- case 117
+- case 51
+- case 133
+- case 38
+- case 79
+- the cases run 84 of 84 instructions
 
 ### FUN_0c08c7c0 (`0C08C7C0`, 42 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c08c7c0.json`
@@ -42470,6 +51284,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 123
 - the cases run 27 of 27 instructions
 
+### FUN_0c08e504 (`0C08E504`, 350 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c08e504.json`
+- case 1
+- case 13
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 38
+- case 78
+- case 96
+- case 125
+- case 92
+- case 69
+- case 81
+- case 71
+- case 116
+- case 158
+- case 54
+- case 108
+- case 110
+- case 42
+- case 102
+- case 52
+- case 49
+- case 143
+- the cases run 175 of 175 instructions
+
 ### FUN_0c08e698 (`0C08E698`, 64 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c08e698.json`
 - case 2
@@ -42630,6 +51484,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 141
 - the cases run 23 of 23 instructions
 
+### FUN_0c08ea54 (`0C08EA54`, 86 bytes, `src/gen_eo.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eo/FUN_0c08ea54.json`
+- case 70
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 100
+- case 39
+- case 38
+- case 137
+- case 155
+- case 98
+- case 140
+- case 97
+- case 149
+- case 145
+- case 124
+- case 110
+- case 139
+- case 49
+- case 46
+- case 156
+- case 122
+- case 88
+- the cases run 43 of 43 instructions
+
 ### FUN_0c08edf0 (`0C08EDF0`, 110 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c08edf0.json`
 - case 0
@@ -42670,6 +51564,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 89
 - the cases run 55 of 55 instructions
 
+### FUN_0c08ee90 (`0C08EE90`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c08ee90.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 14
+- case 15
+- case 22
+- case 23
+- case 26
+- case 27
+- case 157
+- case 115
+- case 147
+- case 207
+- case 198
+- case 188
+- case 143
+- case 217
+- case 211
+- case 144
+- case 164
+- case 158
+- case 214
+- case 149
+- case 186
+- case 120
+- case 118
+- case 122
+- the cases run 92 of 92 instructions
+
 ### FUN_0c08f3d8 (`0C08F3D8`, 72 bytes, `src/gen_r.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c08f3d8.json`
 - case 0
@@ -42709,6 +51643,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 117
 - case 130
 - the cases run 36 of 36 instructions
+
+### FUN_0c08f500 (`0C08F500`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c08f500.json`
+- case 1
+- case 7
+- case 11
+- case 21
+- case 29
+- case 33
+- case 41
+- case 51
+- case 63
+- case 70
+- case 81
+- case 90
+- case 94
+- case 104
+- case 111
+- case 117
+- case 135
+- case 154
+- case 3
+- case 8
+- case 12
+- case 26
+- case 32
+- case 34
+- case 43
+- case 54
+- case 66
+- case 75
+- case 88
+- case 91
+- case 97
+- case 106
+- case 112
+- case 134
+- case 152
+- case 158
+- the cases run 58 of 58 instructions
 
 ### FUN_0c08f5d0 (`0C08F5D0`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c08f5d0.json`
@@ -43239,11 +52213,91 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 69
 - the cases run 10 of 10 instructions
 
+### FUN_0c090bf0 (`0C090BF0`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c090bf0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 15
+- case 16
+- case 17
+- case 19
+- case 24
+- case 26
+- case 83
+- case 152
+- case 72
+- case 99
+- case 104
+- case 154
+- case 115
+- case 92
+- case 156
+- case 111
+- case 142
+- case 149
+- case 137
+- case 94
+- case 159
+- case 89
+- case 105
+- case 88
+- the cases run 46 of 46 instructions
+
 ### FUN_0c090c68 (`0C090C68`, 304 bytes, `src/gen_cw.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_cw/FUN_0c090c68.json`
 - rescue: empty case
 - rescue: empty case
 - the cases run 152 of 152 instructions
+
+### FUN_0c090f70 (`0C090F70`, 482 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c090f70.json`
+- case 2
+- case 6
+- case 10
+- case 12
+- case 14
+- case 18
+- case 23
+- case 28
+- case 34
+- case 35
+- case 37
+- case 46
+- case 51
+- case 52
+- case 57
+- case 61
+- case 64
+- case 76
+- case 186
+- case 254
+- case 152
+- case 162
+- case 233
+- case 189
+- case 181
+- case 226
+- case 176
+- case 156
+- case 227
+- case 170
+- case 220
+- case 175
+- case 164
+- case 199
+- case 245
+- case 172
+- the cases run 223 of 227 instructions
 
 ### FUN_0c0911b8 (`0C0911B8`, 322 bytes, `src/gen_ct.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ct/FUN_0c0911b8.json`
@@ -43325,6 +52379,77 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 138
 - the cases run 47 of 47 instructions
 
+### FUN_0c0913aa (`0C0913AA`, 186 bytes, `src/gen_ed.c`)
+- equivalent on 18 development and 9 holdout cases, in `tests/gen_ed/FUN_0c0913aa.json`
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 9
+- case 11
+- case 22
+- case 23
+- case 25
+- case 28
+- case 30
+- case 34
+- case 42
+- case 44
+- case 45
+- case 46
+- case 50
+- case 150
+- case 133
+- case 135
+- case 146
+- case 159
+- case 156
+- case 138
+- case 144
+- case 143
+- the cases run 24 of 93 instructions
+
+### FUN_0c0914fe (`0C0914FE`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0914fe.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 24
+- case 114
+- case 144
+- case 81
+- case 119
+- case 109
+- case 61
+- case 116
+- case 130
+- case 105
+- case 71
+- case 94
+- case 108
+- case 106
+- case 89
+- case 132
+- case 151
+- case 142
+- case 73
+- the cases run 86 of 86 instructions
+
 ### FUN_0c091ac8 (`0C091AC8`, 284 bytes, `src/gen_c.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_c/FUN_0c091ac8.json`
 - case 19
@@ -43405,6 +52530,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 146
 - the cases run 28 of 28 instructions
 
+### FUN_0c091fd4 (`0C091FD4`, 370 bytes, `src/gen_dw.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dw/FUN_0c091fd4.json`
+- case 47
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 15
+- case 18
+- case 19
+- case 20
+- case 23
+- case 24
+- case 26
+- case 27
+- case 87
+- case 99
+- case 89
+- case 101
+- case 127
+- case 118
+- case 74
+- case 90
+- case 70
+- case 108
+- case 81
+- case 65
+- case 107
+- case 83
+- case 151
+- case 105
+- case 98
+- case 156
+- the cases run 152 of 152 instructions
+
 ### FUN_0c092146 (`0C092146`, 70 bytes, `src/gen_r.c`)
 - equivalent on 17 development and 16 holdout cases, in `tests/gen_r/FUN_0c092146.json`
 - case 0
@@ -43441,6 +52606,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 150
 - case 153
 - the cases run 35 of 35 instructions
+
+### FUN_0c0925e0 (`0C0925E0`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0925e0.json`
+- case 4
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 8
+- case 9
+- case 12
+- case 13
+- case 15
+- case 18
+- case 19
+- case 21
+- case 25
+- case 26
+- case 27
+- case 29
+- case 159
+- case 139
+- case 110
+- case 118
+- case 134
+- case 101
+- case 151
+- case 126
+- case 87
+- case 144
+- case 117
+- case 95
+- case 75
+- case 133
+- case 88
+- case 90
+- case 74
+- case 138
+- the cases run 44 of 44 instructions
 
 ### FUN_0c092638 (`0C092638`, 126 bytes, `src/gen_bq.c`)
 - equivalent on 8 development and 8 holdout cases, in `tests/gen_bq/FUN_0c092638.json`
@@ -43822,6 +53027,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 137
 - the cases run 52 of 52 instructions
 
+### FUN_0c092e7c (`0C092E7C`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c092e7c.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 17
+- case 26
+- case 34
+- case 38
+- case 45
+- case 71
+- case 78
+- case 81
+- case 93
+- case 105
+- case 124
+- case 127
+- case 136
+- case 149
+- case 1
+- case 5
+- case 9
+- case 11
+- case 22
+- case 30
+- case 37
+- case 44
+- case 52
+- case 76
+- case 79
+- case 92
+- case 99
+- case 114
+- case 126
+- case 130
+- case 148
+- case 159
+- the cases run 76 of 76 instructions
+
+### FUN_0c09312a (`0C09312A`, 162 bytes, `src/gen_ei.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ei/FUN_0c09312a.json`
+- case 0
+- case 7
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 16
+- case 17
+- case 18
+- case 22
+- case 23
+- case 147
+- case 128
+- case 143
+- case 115
+- case 88
+- case 110
+- case 95
+- case 145
+- case 104
+- case 96
+- case 106
+- case 92
+- case 87
+- case 119
+- case 158
+- case 140
+- case 102
+- case 152
+- the cases run 66 of 81 instructions
+
 ### FUN_0c09363c (`0C09363C`, 196 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c09363c.json`
 - case 0
@@ -43981,6 +53266,32 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 103
 - case 96
 - the cases run 28 of 28 instructions
+
+### FUN_0c09509e (`0C09509E`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 11 development and 11 holdout cases, in `tests/gen_ef/FUN_0c09509e.json`
+- case 4
+- case 10
+- case 20
+- case 30
+- case 53
+- case 78
+- case 93
+- case 105
+- case 117
+- case 126
+- case 157
+- case 7
+- case 11
+- case 29
+- case 45
+- case 65
+- case 82
+- case 95
+- case 114
+- case 124
+- case 155
+- case 159
+- the cases run 77 of 85 instructions
 
 ### FUN_0c0955c0 (`0C0955C0`, 142 bytes, `src/gen_ck.c`)
 - equivalent on 10 development and 10 holdout cases, in `tests/gen_ck/FUN_0c0955c0.json`
@@ -44202,6 +53513,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 349
 - the cases run 48 of 48 instructions
 
+### FUN_0c095fa0 (`0C095FA0`, 178 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c095fa0.json`
+- case 0
+- case 2
+- case 6
+- case 8
+- case 10
+- case 13
+- case 20
+- case 25
+- case 31
+- case 34
+- case 47
+- case 50
+- case 63
+- case 67
+- case 69
+- case 72
+- case 77
+- case 82
+- case 1
+- case 4
+- case 7
+- case 9
+- case 11
+- case 18
+- case 23
+- case 29
+- case 33
+- case 43
+- case 49
+- case 58
+- case 64
+- case 68
+- case 70
+- case 74
+- case 78
+- case 83
+- the cases run 89 of 89 instructions
+
 ### FUN_0c096094 (`0C096094`, 276 bytes, `src/gen_cy.c`)
 - equivalent on 18 development and 8 holdout cases, in `tests/gen_cy/FUN_0c096094.json`
 - case 1
@@ -44392,6 +53743,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 133
 - the cases run 104 of 104 instructions
 
+### FUN_0c097520 (`0C097520`, 152 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c097520.json`
+- case 96
+- case 96
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 69
+- case 60
+- case 112
+- case 80
+- case 114
+- case 40
+- case 118
+- case 71
+- case 113
+- case 104
+- case 81
+- case 38
+- case 75
+- case 52
+- case 37
+- case 116
+- case 49
+- case 74
+- the cases run 76 of 76 instructions
+
 ### FUN_0c0975d0 (`0C0975D0`, 264 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cz/FUN_0c0975d0.json`
 - case 2
@@ -44471,6 +53862,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 70
 - case 52
 - the cases run 132 of 132 instructions
+
+### FUN_0c097870 (`0C097870`, 662 bytes, `src/gen_do.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_do/FUN_0c097870.json`
+- case 79
+- case 63
+- case 0
+- case 4
+- case 7
+- case 10
+- case 12
+- case 13
+- case 15
+- case 16
+- case 18
+- case 19
+- case 22
+- case 23
+- case 24
+- case 25
+- case 26
+- case 27
+- case 84
+- case 102
+- case 129
+- case 136
+- case 156
+- case 131
+- case 112
+- case 109
+- case 126
+- case 119
+- case 134
+- case 145
+- case 142
+- case 137
+- case 106
+- case 86
+- case 158
+- case 105
+- the cases run 312 of 314 instructions
 
 ### FUN_0c098160 (`0C098160`, 54 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c098160.json`
@@ -44592,6 +54023,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 96
 - the cases run 115 of 509 instructions
 
+### FUN_0c0987a4 (`0C0987A4`, 932 bytes, `src/gen_dk.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dk/FUN_0c0987a4.json`
+- case 106
+- case 52
+- case 39
+- case 57
+- case 1
+- case 3
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 14
+- case 15
+- case 18
+- case 20
+- case 23
+- case 24
+- case 139
+- case 157
+- case 107
+- case 69
+- case 85
+- case 84
+- case 125
+- case 101
+- case 152
+- case 104
+- case 71
+- case 119
+- case 97
+- case 153
+- case 141
+- case 126
+- case 133
+- case 135
+- the cases run 293 of 383 instructions
+
+### FUN_0c098b48 (`0C098B48`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c098b48.json`
+- case 116
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 18
+- case 125
+- case 79
+- case 77
+- case 152
+- case 153
+- case 69
+- case 156
+- case 57
+- case 120
+- case 106
+- case 157
+- case 41
+- case 112
+- case 129
+- case 91
+- case 104
+- case 66
+- case 46
+- the cases run 58 of 58 instructions
+
 ### FUN_0c098c2e (`0C098C2E`, 204 bytes, `src/gen_cb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cb/FUN_0c098c2e.json`
 - case 38
@@ -44671,6 +54182,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - case 85
 - the cases run 104 of 104 instructions
+
+### FUN_0c098e1c (`0C098E1C`, 156 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c098e1c.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 114
+- case 105
+- case 38
+- case 76
+- case 117
+- case 67
+- case 95
+- case 101
+- case 45
+- case 75
+- case 60
+- case 89
+- case 49
+- case 102
+- case 103
+- case 79
+- case 78
+- case 42
+- the cases run 30 of 78 instructions
 
 ### FUN_0c0999cc (`0C0999CC`, 78 bytes, `src/gen_bw.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bw/FUN_0c0999cc.json`
@@ -44752,6 +54303,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - the cases run 47 of 47 instructions
 
+### FUN_0c09a846 (`0C09A846`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c09a846.json`
+- case 0
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 18
+- case 20
+- case 21
+- case 22
+- case 23
+- case 59
+- case 136
+- case 86
+- case 128
+- case 67
+- case 87
+- case 80
+- case 100
+- case 119
+- case 127
+- case 152
+- case 88
+- case 116
+- case 114
+- case 96
+- case 157
+- case 115
+- case 142
+- the cases run 43 of 43 instructions
+
 ### FUN_0c09b470 (`0C09B470`, 66 bytes, `src/gen_p.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_p/FUN_0c09b470.json`
 - case 7
@@ -44791,6 +54382,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 153
 - case 129
 - the cases run 33 of 33 instructions
+
+### FUN_0c09ba10 (`0C09BA10`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c09ba10.json`
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 19
+- case 20
+- case 21
+- case 22
+- case 147
+- case 127
+- case 64
+- case 138
+- case 90
+- case 128
+- case 56
+- case 112
+- case 86
+- case 80
+- case 84
+- case 159
+- case 52
+- case 114
+- case 108
+- case 99
+- case 145
+- case 139
+- the cases run 90 of 90 instructions
 
 ### FUN_0c09bd5c (`0C09BD5C`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c09bd5c.json`
@@ -45053,6 +54684,31 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 68
 - case 144
 - the cases run 60 of 60 instructions
+
+### FUN_0c09d278 (`0C09D278`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 11 development and 10 holdout cases, in `tests/gen_ef/FUN_0c09d278.json`
+- case 0
+- case 19
+- case 22
+- case 48
+- case 52
+- case 90
+- case 114
+- case 118
+- case 141
+- case 143
+- case 159
+- case 3
+- case 20
+- case 33
+- case 49
+- case 77
+- case 101
+- case 117
+- case 137
+- case 142
+- case 148
+- the cases run 84 of 84 instructions
 
 ### FUN_0c09d320 (`0C09D320`, 8 bytes, `src/gen_g.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_g/FUN_0c09d320.json`
@@ -45787,11 +55443,112 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 55 of 55 instructions
 
+### FUN_0c0a3640 (`0C0A3640`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0a3640.json`
+- case 39
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 11
+- case 12
+- case 16
+- case 18
+- case 22
+- case 26
+- case 31
+- case 32
+- case 35
+- case 36
+- case 37
+- case 103
+- case 74
+- case 68
+- case 70
+- case 122
+- case 88
+- case 112
+- case 89
+- case 124
+- case 115
+- case 71
+- case 75
+- case 137
+- case 134
+- case 145
+- case 110
+- case 154
+- case 153
+- the cases run 46 of 46 instructions
+
+### FUN_0c0a3870 (`0C0A3870`, 166 bytes, `src/gen_ef.c`)
+- equivalent on 9 development and 8 holdout cases, in `tests/gen_ef/FUN_0c0a3870.json`
+- case 2
+- case 8
+- case 21
+- case 49
+- case 61
+- case 108
+- case 134
+- case 140
+- case 152
+- case 5
+- case 11
+- case 46
+- case 58
+- case 75
+- case 121
+- case 137
+- case 149
+- the cases run 83 of 83 instructions
+
 ### FUN_0c0a3c34 (`0C0A3C34`, 82 bytes, `src/gen_u.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_u/FUN_0c0a3c34.json`
 - rescue: empty case
 - rescue: empty case
 - the cases run 41 of 41 instructions
+
+### FUN_0c0a3c86 (`0C0A3C86`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0a3c86.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 12
+- case 15
+- case 16
+- case 17
+- case 18
+- case 22
+- case 23
+- case 25
+- case 27
+- case 28
+- case 29
+- case 31
+- case 132
+- case 74
+- case 121
+- case 125
+- case 145
+- case 89
+- case 82
+- case 136
+- case 81
+- case 93
+- case 98
+- case 154
+- case 111
+- case 155
+- case 157
+- case 147
+- case 113
+- case 103
+- the cases run 43 of 43 instructions
 
 ### FUN_0c0a3cdc (`0C0A3CDC`, 282 bytes, `src/gen_be.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_be/FUN_0c0a3cdc.json`
@@ -46032,6 +55789,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 114
 - case 115
 - the cases run 30 of 182 instructions
+
+### FUN_0c0a46f4 (`0C0A46F4`, 316 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0a46f4.json`
+- case 0
+- case 3
+- case 99
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 48
+- case 49
+- case 104
+- case 113
+- case 100
+- case 78
+- case 76
+- case 45
+- case 56
+- case 53
+- case 110
+- case 109
+- case 50
+- case 86
+- case 92
+- case 112
+- case 108
+- case 119
+- the cases run 155 of 155 instructions
 
 ### FUN_0c0a4bb2 (`0C0A4BB2`, 80 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c0a4bb2.json`
@@ -46569,6 +56366,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 126
 - the cases run 49 of 49 instructions
 
+### FUN_0c0a5c18 (`0C0A5C18`, 174 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0a5c18.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 149
+- case 112
+- case 122
+- case 46
+- case 59
+- case 158
+- case 133
+- case 146
+- case 67
+- case 100
+- case 96
+- case 125
+- case 144
+- case 39
+- case 148
+- case 77
+- case 142
+- case 129
+- the cases run 87 of 87 instructions
+
+### FUN_0c0a5cc6 (`0C0A5CC6`, 308 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0a5cc6.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 101
+- case 122
+- case 43
+- case 57
+- case 132
+- case 105
+- case 114
+- case 104
+- case 67
+- case 44
+- case 54
+- case 47
+- case 52
+- case 127
+- case 119
+- case 64
+- case 138
+- case 97
+- the cases run 48 of 108 instructions
+
 ### FUN_0c0a5dfa (`0C0A5DFA`, 402 bytes, `src/gen_cp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cp/FUN_0c0a5dfa.json`
 - case 33
@@ -46769,6 +56646,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - the cases run 123 of 187 instructions
 
+### FUN_0c0a6610 (`0C0A6610`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a6610.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 63
+- case 128
+- case 71
+- case 249
+- case 190
+- case 74
+- case 143
+- case 272
+- case 124
+- case 215
+- case 168
+- case 270
+- case 54
+- case 258
+- case 265
+- case 221
+- case 256
+- case 179
+- the cases run 60 of 60 instructions
+
 ### FUN_0c0a6688 (`0C0A6688`, 124 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0a6688.json`
 - case 0
@@ -46888,6 +56805,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 385
 - case 114
 - the cases run 64 of 64 instructions
+
+### FUN_0c0a6800 (`0C0A6800`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0a6800.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 399
+- case 262
+- case 217
+- case 76
+- case 79
+- case 247
+- case 141
+- case 353
+- case 101
+- case 357
+- case 231
+- case 151
+- case 90
+- case 411
+- case 395
+- case 373
+- case 402
+- case 118
+- the cases run 56 of 56 instructions
 
 ### FUN_0c0a6870 (`0C0A6870`, 124 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0a6870.json`
@@ -47089,6 +57046,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 124
 - the cases run 137 of 137 instructions
 
+### FUN_0c0a73ec (`0C0A73EC`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0a73ec.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 142
+- case 121
+- case 156
+- case 55
+- case 154
+- case 69
+- case 102
+- case 79
+- case 127
+- case 132
+- case 111
+- case 153
+- case 144
+- case 116
+- case 97
+- case 61
+- case 87
+- case 63
+- the cases run 81 of 81 instructions
+
 ### FUN_0c0a748e (`0C0A748E`, 270 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 17 holdout cases, in `tests/gen_cz/FUN_0c0a748e.json`
 - case 24
@@ -47127,6 +57124,27 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 387
 - case 402
 - the cases run 135 of 135 instructions
+
+### FUN_0c0a759c (`0C0A759C`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 9 development and 8 holdout cases, in `tests/gen_ek/FUN_0c0a759c.json`
+- case 39
+- case 61
+- case 97
+- case 202
+- case 221
+- case 224
+- case 280
+- case 304
+- case 348
+- case 58
+- case 65
+- case 201
+- case 219
+- case 222
+- case 277
+- case 293
+- case 318
+- the cases run 57 of 57 instructions
 
 ### FUN_0c0a760e (`0C0A760E`, 250 bytes, `src/gen_bd.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bd/FUN_0c0a760e.json`
@@ -47168,6 +57186,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 63
 - the cases run 102 of 102 instructions
 
+### FUN_0c0a7714 (`0C0A7714`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a7714.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 86
+- case 116
+- case 101
+- case 62
+- case 111
+- case 46
+- case 103
+- case 78
+- case 119
+- case 100
+- case 90
+- case 42
+- case 66
+- case 102
+- case 59
+- case 114
+- case 76
+- case 110
+- the cases run 58 of 58 instructions
+
+### FUN_0c0a7788 (`0C0A7788`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a7788.json`
+- case 8
+- case 38
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 116
+- case 84
+- case 45
+- case 111
+- case 37
+- case 61
+- case 52
+- case 70
+- case 56
+- case 58
+- case 74
+- case 40
+- case 94
+- case 57
+- case 98
+- case 68
+- case 51
+- case 53
+- the cases run 59 of 59 instructions
+
 ### FUN_0c0a77fe (`0C0A77FE`, 138 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c0a77fe.json`
 - case 5
@@ -47206,6 +57304,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 45
 - case 51
 - case 119
+- the cases run 59 of 59 instructions
+
+### FUN_0c0a7888 (`0C0A7888`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a7888.json`
+- case 6
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 56
+- case 93
+- case 82
+- case 88
+- case 58
+- case 77
+- case 100
+- case 49
+- case 89
+- case 116
+- case 115
+- case 39
+- case 75
+- case 99
+- case 112
+- case 61
+- case 43
+- case 113
+- the cases run 58 of 58 instructions
+
+### FUN_0c0a78fc (`0C0A78FC`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a78fc.json`
+- case 12
+- case 15
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 16
+- case 17
+- case 91
+- case 74
+- case 73
+- case 90
+- case 97
+- case 117
+- case 83
+- case 60
+- case 58
+- case 67
+- case 78
+- case 82
+- case 59
+- case 101
+- case 63
+- case 87
+- case 72
+- case 42
+- the cases run 58 of 58 instructions
+
+### FUN_0c0a7984 (`0C0A7984`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a7984.json`
+- case 9
+- case 14
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 59
+- case 50
+- case 112
+- case 66
+- case 77
+- case 38
+- case 74
+- case 36
+- case 54
+- case 49
+- case 82
+- case 109
+- case 97
+- case 83
+- case 44
+- case 107
+- case 115
+- case 76
 - the cases run 59 of 59 instructions
 
 ### FUN_0c0a79fa (`0C0A79FA`, 190 bytes, `src/gen_b.c`)
@@ -47323,6 +57541,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - case 56
 - the cases run 72 of 72 instructions
+
+### FUN_0c0a83f2 (`0C0A83F2`, 230 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0a83f2.json`
+- case 87
+- case 12
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 13
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 149
+- case 140
+- case 141
+- case 155
+- case 58
+- case 139
+- case 75
+- case 91
+- case 119
+- case 100
+- case 138
+- case 63
+- case 132
+- case 76
+- case 136
+- case 142
+- case 84
+- case 152
+- the cases run 55 of 62 instructions
 
 ### FUN_0c0a86d6 (`0C0A86D6`, 48 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c0a86d6.json`
@@ -47564,6 +57822,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 14 of 14 instructions
 
+### FUN_0c0a87b4 (`0C0A87B4`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0a87b4.json`
+- case 12
+- case 13
+- case 18
+- case 22
+- case 25
+- case 30
+- case 32
+- case 40
+- case 46
+- case 48
+- case 49
+- case 50
+- case 51
+- case 52
+- case 53
+- case 54
+- case 55
+- case 57
+- case 156
+- case 150
+- case 125
+- case 117
+- case 159
+- case 126
+- case 119
+- case 106
+- case 144
+- case 95
+- case 129
+- case 148
+- case 134
+- case 102
+- case 140
+- case 141
+- case 133
+- case 155
+- the cases run 45 of 45 instructions
+
+### FUN_0c0a880e (`0C0A880E`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0a880e.json`
+- case 13
+- case 15
+- case 16
+- case 19
+- case 20
+- case 25
+- case 27
+- case 28
+- case 29
+- case 35
+- case 37
+- case 40
+- case 41
+- case 42
+- case 43
+- case 45
+- case 46
+- case 47
+- case 123
+- case 103
+- case 131
+- case 78
+- case 154
+- case 148
+- case 121
+- case 96
+- case 85
+- case 87
+- case 110
+- case 79
+- case 117
+- case 107
+- case 119
+- case 120
+- case 98
+- case 102
+- the cases run 59 of 59 instructions
+
 ### FUN_0c0a8884 (`0C0A8884`, 14 bytes, `src/gen_g.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_g/FUN_0c0a8884.json`
 - case 0
@@ -47643,6 +57981,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - case 55
 - the cases run 22 of 22 instructions
+
+### FUN_0c0a8990 (`0C0A8990`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0a8990.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 111
+- case 100
+- case 53
+- case 74
+- case 81
+- case 54
+- case 99
+- case 80
+- case 60
+- case 75
+- case 59
+- case 52
+- case 70
+- case 76
+- case 115
+- case 108
+- case 103
+- case 56
+- the cases run 43 of 43 instructions
+
+### FUN_0c0a8adc (`0C0A8ADC`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0a8adc.json`
+- case 5
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 77
+- case 83
+- case 138
+- case 104
+- case 118
+- case 53
+- case 120
+- case 82
+- case 79
+- case 56
+- case 70
+- case 109
+- case 134
+- case 42
+- case 45
+- case 52
+- case 132
+- case 50
+- the cases run 85 of 85 instructions
+
+### FUN_0c0a8bb0 (`0C0A8BB0`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0a8bb0.json`
+- case 5
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 66
+- case 95
+- case 139
+- case 100
+- case 68
+- case 137
+- case 52
+- case 126
+- case 116
+- case 83
+- case 121
+- case 47
+- case 122
+- case 103
+- case 150
+- case 128
+- case 118
+- case 77
+- the cases run 85 of 85 instructions
 
 ### FUN_0c0a8c5a (`0C0A8C5A`, 58 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c0a8c5a.json`
@@ -47843,6 +58301,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - case 57
 - the cases run 10 of 10 instructions
+
+### FUN_0c0a9084 (`0C0A9084`, 474 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c0a9084.json`
+- case 13
+- case 0
+- case 13
+- case 3
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 79
+- case 77
+- case 61
+- case 134
+- case 151
+- case 133
+- case 94
+- case 70
+- case 59
+- case 65
+- case 92
+- case 104
+- case 53
+- case 116
+- case 118
+- case 86
+- case 139
+- case 132
+- the cases run 173 of 188 instructions
 
 ### FUN_0c0a925e (`0C0A925E`, 82 bytes, `src/gen_u.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_u/FUN_0c0a925e.json`
@@ -48919,6 +59417,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 139
 - the cases run 41 of 41 instructions
 
+### FUN_0c0ad61a (`0C0AD61A`, 232 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0ad61a.json`
+- case 48
+- case 26
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 151
+- case 128
+- case 74
+- case 78
+- case 72
+- case 111
+- case 100
+- case 92
+- case 125
+- case 130
+- case 137
+- case 147
+- case 44
+- case 47
+- case 117
+- case 127
+- case 40
+- case 61
+- the cases run 116 of 116 instructions
+
 ### FUN_0c0ad702 (`0C0AD702`, 228 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c0ad702.json`
 - case 0
@@ -48958,6 +59496,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - case 59
 - the cases run 71 of 71 instructions
+
+### FUN_0c0ad7e6 (`0C0AD7E6`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0ad7e6.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 122
+- case 106
+- case 66
+- case 103
+- case 77
+- case 92
+- case 72
+- case 126
+- case 58
+- case 124
+- case 104
+- case 55
+- case 145
+- case 115
+- case 75
+- case 95
+- case 139
+- case 155
+- the cases run 44 of 44 instructions
 
 ### FUN_0c0ad83e (`0C0AD83E`, 216 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c0ad83e.json`
@@ -49704,6 +60282,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 66
 - the cases run 12 of 12 instructions
 
+### FUN_0c0af9e8 (`0C0AF9E8`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0af9e8.json`
+- case 5
+- case 16
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 60
+- case 58
+- case 69
+- case 73
+- case 117
+- case 49
+- case 71
+- case 108
+- case 67
+- case 87
+- case 37
+- case 36
+- case 65
+- case 102
+- case 57
+- case 45
+- case 86
+- case 104
+- the cases run 45 of 69 instructions
+
 ### FUN_0c0afe10 (`0C0AFE10`, 50 bytes, `src/gen_bl.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bl/FUN_0c0afe10.json`
 - case 0
@@ -49944,6 +60562,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 56
 - the cases run 24 of 24 instructions
 
+### FUN_0c0b0a8e (`0C0B0A8E`, 86 bytes, `src/gen_en.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_en/FUN_0c0b0a8e.json`
+- case 68
+- case 0
+- case 4
+- case 6
+- case 7
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 128
+- case 130
+- case 63
+- case 80
+- case 87
+- case 114
+- case 72
+- case 90
+- case 116
+- case 59
+- case 106
+- case 65
+- case 129
+- case 115
+- case 126
+- case 113
+- case 123
+- case 105
+- the cases run 43 of 43 instructions
+
 ### FUN_0c0b0b4a (`0C0B0B4A`, 98 bytes, `src/gen_bv.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bv/FUN_0c0b0b4a.json`
 - case 0
@@ -50063,6 +60721,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 104
 - case 64
 - the cases run 29 of 29 instructions
+
+### FUN_0c0b0c3a (`0C0B0C3A`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0b0c3a.json`
+- case 5
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 88
+- case 80
+- case 77
+- case 57
+- case 45
+- case 112
+- case 60
+- case 58
+- case 107
+- case 61
+- case 39
+- case 70
+- case 94
+- case 72
+- case 62
+- case 66
+- case 110
+- case 63
+- the cases run 60 of 60 instructions
 
 ### FUN_0c0b0cb8 (`0C0B0CB8`, 56 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_f/FUN_0c0b0cb8.json`
@@ -50184,6 +60882,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 36
 - the cases run 15 of 15 instructions
 
+### FUN_0c0b0e64 (`0C0B0E64`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0b0e64.json`
+- case 4
+- case 4
+- case 5
+- case 8
+- case 11
+- case 12
+- case 14
+- case 15
+- case 17
+- case 21
+- case 22
+- case 23
+- case 25
+- case 31
+- case 33
+- case 35
+- case 36
+- case 38
+- case 95
+- case 125
+- case 98
+- case 86
+- case 87
+- case 142
+- case 143
+- case 149
+- case 131
+- case 102
+- case 118
+- case 94
+- case 133
+- case 99
+- case 90
+- case 122
+- case 120
+- case 105
+- the cases run 43 of 43 instructions
+
+### FUN_0c0b0eba (`0C0B0EBA`, 366 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0b0eba.json`
+- case 4
+- case 0
+- case 0
+- case 122
+- case 6
+- case 4
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 77
+- case 82
+- case 145
+- case 79
+- case 56
+- case 45
+- case 54
+- case 73
+- case 55
+- case 153
+- case 126
+- case 138
+- case 87
+- case 112
+- case 147
+- case 66
+- case 85
+- case 86
+- the cases run 136 of 163 instructions
+
 ### FUN_0c0b131c (`0C0B131C`, 20 bytes, `src/gen_g.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_g/FUN_0c0b131c.json`
 - case 0
@@ -50223,6 +61001,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 92
 - case 83
 - the cases run 10 of 10 instructions
+
+### FUN_0c0b145c (`0C0B145C`, 230 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0b145c.json`
+- case 16
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 70
+- case 146
+- case 93
+- case 73
+- case 144
+- case 96
+- case 104
+- case 109
+- case 151
+- case 55
+- case 80
+- case 106
+- case 85
+- case 87
+- case 49
+- case 36
+- case 117
+- case 79
+- the cases run 92 of 92 instructions
 
 ### FUN_0c0b1542 (`0C0B1542`, 196 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c0b1542.json`
@@ -50704,6 +61522,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 49
 - the cases run 53 of 53 instructions
 
+### FUN_0c0b207c (`0C0B207C`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0b207c.json`
+- case 0
+- case 110
+- case 22
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 128
+- case 70
+- case 74
+- case 65
+- case 91
+- case 132
+- case 47
+- case 117
+- case 93
+- case 107
+- case 88
+- case 121
+- case 84
+- case 120
+- case 138
+- case 155
+- case 50
+- case 55
+- the cases run 85 of 85 instructions
+
 ### FUN_0c0b2126 (`0C0B2126`, 248 bytes, `src/gen_be.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_be/FUN_0c0b2126.json`
 - case 4
@@ -51104,6 +61962,33 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 28 of 28 instructions
 
+### FUN_0c0b2b18 (`0C0B2B18`, 358 bytes, `src/gen_dx.c`)
+- equivalent on 12 development and 11 holdout cases, in `tests/gen_dx/FUN_0c0b2b18.json`
+- case 8
+- case 8
+- case 25
+- case 39
+- case 60
+- case 65
+- case 79
+- case 104
+- case 110
+- case 130
+- case 137
+- case 158
+- case 3
+- case 23
+- case 32
+- case 51
+- case 64
+- case 69
+- case 85
+- case 105
+- case 120
+- case 134
+- case 145
+- the cases run 142 of 152 instructions
+
 ### FUN_0c0b2e48 (`0C0B2E48`, 60 bytes, `src/gen_f.c`)
 - equivalent on 18 development and 7 holdout cases, in `tests/gen_f/FUN_0c0b2e48.json`
 - case 0
@@ -51332,6 +62217,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 36
 - case 44
 - the cases run 45 of 52 instructions
+
+### FUN_0c0b3440 (`0C0B3440`, 350 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0b3440.json`
+- case 158
+- case 158
+- case 8
+- case 0
+- case 2
+- case 4
+- case 6
+- case 10
+- case 12
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 21
+- case 23
+- case 25
+- case 27
+- case 57
+- case 77
+- case 125
+- case 142
+- case 90
+- case 76
+- case 102
+- case 136
+- case 85
+- case 150
+- case 154
+- case 83
+- case 153
+- case 121
+- case 130
+- case 152
+- case 65
+- case 135
+- the cases run 89 of 145 instructions
 
 ### FUN_0c0b359e (`0C0B359E`, 70 bytes, `src/gen_r.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c0b359e.json`
@@ -51893,6 +62818,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 88
 - the cases run 66 of 66 instructions
 
+### FUN_0c0b4328 (`0C0B4328`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0b4328.json`
+- case 7
+- case 8
+- case 9
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 24
+- case 27
+- case 32
+- case 33
+- case 34
+- case 35
+- case 36
+- case 37
+- case 39
+- case 40
+- case 98
+- case 140
+- case 124
+- case 111
+- case 153
+- case 90
+- case 82
+- case 156
+- case 126
+- case 119
+- case 106
+- case 96
+- case 101
+- case 152
+- case 134
+- case 118
+- case 75
+- case 83
+- the cases run 46 of 46 instructions
+
 ### FUN_0c0b4384 (`0C0B4384`, 128 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0b4384.json`
 - case 0
@@ -52412,6 +63377,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 74
 - case 89
 - the cases run 32 of 32 instructions
+
+### FUN_0c0b4d40 (`0C0B4D40`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0b4d40.json`
+- case 1
+- case 2
+- case 4
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 15
+- case 16
+- case 18
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 116
+- case 154
+- case 46
+- case 85
+- case 96
+- case 80
+- case 101
+- case 130
+- case 79
+- case 63
+- case 90
+- case 45
+- case 73
+- case 131
+- case 112
+- case 153
+- case 78
+- case 57
+- the cases run 46 of 46 instructions
 
 ### FUN_0c0b4e02 (`0C0B4E02`, 52 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0b4e02.json`
@@ -53649,6 +64654,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 89
 - the cases run 35 of 35 instructions
 
+### FUN_0c0b719e (`0C0B719E`, 312 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0b719e.json`
+- case 15
+- case 24
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 78
+- case 85
+- case 108
+- case 79
+- case 106
+- case 76
+- case 38
+- case 91
+- case 107
+- case 80
+- case 112
+- case 81
+- case 84
+- case 101
+- case 113
+- case 55
+- case 89
+- case 46
+- the cases run 156 of 156 instructions
+
 ### FUN_0c0b72d6 (`0C0B72D6`, 152 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c0b72d6.json`
 - case 0
@@ -54081,6 +65126,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 89
 - the cases run 10 of 10 instructions
 
+### FUN_0c0b7af6 (`0C0B7AF6`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0b7af6.json`
+- case 5
+- case 1
+- case 2
+- case 3
+- case 6
+- case 14
+- case 18
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 27
+- case 28
+- case 29
+- case 30
+- case 31
+- case 32
+- case 118
+- case 83
+- case 88
+- case 136
+- case 84
+- case 107
+- case 70
+- case 120
+- case 91
+- case 117
+- case 152
+- case 72
+- case 99
+- case 146
+- case 75
+- case 93
+- case 77
+- case 124
+- the cases run 45 of 45 instructions
+
 ### FUN_0c0b7f08 (`0C0B7F08`, 70 bytes, `src/gen_r.c`)
 - equivalent on 18 development and 17 holdout cases, in `tests/gen_r/FUN_0c0b7f08.json`
 - case 0
@@ -54199,6 +65284,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 103
 - case 93
 - the cases run 156 of 160 instructions
+
+### FUN_0c0b8304 (`0C0B8304`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0b8304.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 66
+- case 41
+- case 65
+- case 126
+- case 111
+- case 61
+- case 43
+- case 80
+- case 46
+- case 102
+- case 70
+- case 149
+- case 154
+- case 99
+- case 128
+- case 42
+- case 38
+- case 134
+- the cases run 45 of 45 instructions
 
 ### FUN_0c0b835e (`0C0B835E`, 100 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c0b835e.json`
@@ -54319,6 +65444,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 84
 - case 102
 - the cases run 7 of 7 instructions
+
+### FUN_0c0b8632 (`0C0B8632`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0b8632.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 73
+- case 62
+- case 115
+- case 76
+- case 70
+- case 80
+- case 71
+- case 59
+- case 111
+- case 54
+- case 67
+- case 77
+- case 74
+- case 38
+- case 50
+- case 55
+- case 93
+- case 97
+- the cases run 77 of 77 instructions
 
 ### FUN_0c0b8950 (`0C0B8950`, 194 bytes, `src/gen_y.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_y/FUN_0c0b8950.json`
@@ -54915,6 +66080,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 152
 - the cases run 52 of 52 instructions
 
+### FUN_0c0ba1d8 (`0C0BA1D8`, 160 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0ba1d8.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 16
+- case 17
+- case 19
+- case 22
+- case 68
+- case 143
+- case 132
+- case 159
+- case 101
+- case 117
+- case 121
+- case 125
+- case 123
+- case 104
+- case 156
+- case 102
+- case 103
+- case 142
+- case 61
+- case 112
+- case 150
+- case 66
+- the cases run 80 of 80 instructions
+
+### FUN_0c0ba662 (`0C0BA662`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0ba662.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 18
+- case 20
+- case 21
+- case 22
+- case 23
+- case 26
+- case 57
+- case 150
+- case 101
+- case 107
+- case 116
+- case 148
+- case 137
+- case 122
+- case 139
+- case 63
+- case 84
+- case 66
+- case 104
+- case 74
+- case 103
+- case 157
+- case 54
+- case 88
+- the cases run 43 of 43 instructions
+
 ### FUN_0c0ba6e8 (`0C0BA6E8`, 142 bytes, `src/gen_ch.c`)
 - equivalent on 8 development and 8 holdout cases, in `tests/gen_ch/FUN_0c0ba6e8.json`
 - case 0
@@ -55014,6 +66259,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - case 105
 - the cases run 16 of 16 instructions
+
+### FUN_0c0bb134 (`0C0BB134`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0bb134.json`
+- case 0
+- case 3
+- case 6
+- case 8
+- case 10
+- case 24
+- case 30
+- case 49
+- case 54
+- case 69
+- case 72
+- case 75
+- case 79
+- case 110
+- case 114
+- case 136
+- case 143
+- case 152
+- case 2
+- case 4
+- case 7
+- case 9
+- case 11
+- case 29
+- case 32
+- case 52
+- case 56
+- case 71
+- case 74
+- case 78
+- case 104
+- case 111
+- case 117
+- case 140
+- case 147
+- case 154
+- the cases run 58 of 58 instructions
 
 ### FUN_0c0bb1a8 (`0C0BB1A8`, 32 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0bb1a8.json`
@@ -55808,6 +67093,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 48
 - the cases run 16 of 16 instructions
 
+### FUN_0c0bdec2 (`0C0BDEC2`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 7 development and 7 holdout cases, in `tests/gen_eh/FUN_0c0bdec2.json`
+- case 0
+- case 26
+- case 30
+- case 36
+- case 53
+- case 58
+- case 61
+- case 23
+- case 29
+- case 34
+- case 45
+- case 55
+- case 60
+- case 66
+- the cases run 28 of 77 instructions
+
 ### FUN_0c0be338 (`0C0BE338`, 292 bytes, `src/gen_cw.c`)
 - equivalent on 11 development and 11 holdout cases, in `tests/gen_cw/FUN_0c0be338.json`
 - case 0
@@ -55833,6 +67136,25 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 75
 - case 82
 - the cases run 46 of 144 instructions
+
+### FUN_0c0be578 (`0C0BE578`, 374 bytes, `src/gen_dv.c`)
+- equivalent on 8 development and 7 holdout cases, in `tests/gen_dv/FUN_0c0be578.json`
+- case 17
+- case 4
+- case 10
+- case 41
+- case 46
+- case 53
+- case 65
+- case 82
+- case 0
+- case 7
+- case 15
+- case 42
+- case 48
+- case 64
+- case 71
+- the cases run 123 of 186 instructions
 
 ### FUN_0c0be6ee (`0C0BE6EE`, 192 bytes, `src/gen_ce.c`)
 - equivalent on 17 development and 17 holdout cases, in `tests/gen_ce/FUN_0c0be6ee.json`
@@ -56071,6 +67393,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 108
 - case 98
 - the cases run 13 of 13 instructions
+
+### FUN_0c0bf17a (`0C0BF17A`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0bf17a.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 25
+- case 118
+- case 126
+- case 95
+- case 117
+- case 155
+- case 110
+- case 107
+- case 64
+- case 116
+- case 66
+- case 133
+- case 85
+- case 94
+- case 99
+- case 131
+- case 152
+- case 49
+- case 75
+- the cases run 60 of 60 instructions
+
+### FUN_0c0bf2ac (`0C0BF2AC`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0bf2ac.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 22
+- case 23
+- case 24
+- case 81
+- case 53
+- case 113
+- case 145
+- case 98
+- case 116
+- case 144
+- case 68
+- case 114
+- case 52
+- case 112
+- case 120
+- case 104
+- case 105
+- case 99
+- case 154
+- case 55
+- case 90
+- the cases run 60 of 60 instructions
 
 ### FUN_0c0bf908 (`0C0BF908`, 32 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0bf908.json`
@@ -56432,6 +67834,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 144
 - the cases run 61 of 61 instructions
 
+### FUN_0c0c0094 (`0C0C0094`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0c0094.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 20
+- case 21
+- case 92
+- case 90
+- case 121
+- case 138
+- case 61
+- case 75
+- case 50
+- case 60
+- case 111
+- case 84
+- case 76
+- case 115
+- case 99
+- case 158
+- case 145
+- case 128
+- case 108
+- case 88
+- the cases run 43 of 43 instructions
+
 ### FUN_0c0c0304 (`0C0C0304`, 60 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0c0304.json`
 - case 0
@@ -56511,6 +67953,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 42
 - case 75
 - the cases run 17 of 17 instructions
+
+### FUN_0c0c0384 (`0C0C0384`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0c0384.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 134
+- case 136
+- case 42
+- case 150
+- case 104
+- case 67
+- case 140
+- case 138
+- case 107
+- case 144
+- case 108
+- case 120
+- case 141
+- case 92
+- case 117
+- case 64
+- case 147
+- case 70
+- the cases run 43 of 43 instructions
 
 ### FUN_0c0c03da (`0C0C03DA`, 42 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c03da.json`
@@ -56712,6 +68194,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 148
 - the cases run 29 of 29 instructions
 
+### FUN_0c0c058e (`0C0C058E`, 1548 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c0c058e.json`
+- case 102
+- case 0
+- case 94
+- case 150
+- case 12
+- case 50
+- case 71
+- case 68
+- case 2
+- case 4
+- case 6
+- case 7
+- case 9
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 148
+- case 140
+- case 74
+- case 100
+- case 120
+- case 122
+- case 64
+- case 106
+- case 77
+- case 87
+- case 141
+- case 107
+- case 158
+- case 76
+- case 65
+- case 111
+- case 115
+- case 81
+- the cases run 488 of 635 instructions
+
 ### FUN_0c0c0b9a (`0C0C0B9A`, 64 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c0b9a.json`
 - case 1
@@ -56751,6 +68273,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 99
 - case 134
 - the cases run 32 of 32 instructions
+
+### FUN_0c0c0bda (`0C0C0BDA`, 722 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c0c0bda.json`
+- case 96
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 81
+- case 104
+- case 60
+- case 41
+- case 42
+- case 119
+- case 93
+- case 107
+- case 64
+- case 97
+- case 53
+- case 84
+- case 59
+- case 47
+- case 109
+- case 43
+- case 37
+- case 74
+- the cases run 232 of 278 instructions
 
 ### FUN_0c0c0eac (`0C0C0EAC`, 46 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c0eac.json`
@@ -57032,6 +68594,39 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 70
 - the cases run 27 of 27 instructions
 
+### FUN_0c0c1140 (`0C0C1140`, 112 bytes, `src/gen_em.c`)
+- equivalent on 15 development and 14 holdout cases, in `tests/gen_em/FUN_0c0c1140.json`
+- case 7
+- case 9
+- case 14
+- case 21
+- case 26
+- case 29
+- case 31
+- case 39
+- case 42
+- case 48
+- case 53
+- case 56
+- case 60
+- case 67
+- case 71
+- case 0
+- case 11
+- case 18
+- case 22
+- case 27
+- case 30
+- case 33
+- case 40
+- case 44
+- case 50
+- case 54
+- case 58
+- case 62
+- case 69
+- the cases run 54 of 56 instructions
+
 ### FUN_0c0c1480 (`0C0C1480`, 4 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0c1480.json`
 - case 0
@@ -57077,6 +68672,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 0 of 64 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
+
+### FUN_0c0c1508 (`0C0C1508`, 118 bytes, `src/gen_el.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_el/FUN_0c0c1508.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 13
+- case 14
+- case 17
+- case 18
+- case 19
+- case 20
+- case 22
+- case 25
+- case 26
+- case 27
+- case 29
+- case 30
+- case 33
+- case 34
+- case 100
+- case 126
+- case 85
+- case 141
+- case 81
+- case 115
+- case 80
+- case 112
+- case 153
+- case 125
+- case 105
+- case 99
+- case 95
+- case 68
+- case 59
+- case 146
+- case 131
+- case 101
+- the cases run 15 of 59 instructions
 
 ### FUN_0c0c157e (`0C0C157E`, 48 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c157e.json`
@@ -57157,6 +68792,126 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 79
 - case 107
 - the cases run 20 of 20 instructions
+
+### FUN_0c0c1620 (`0C0C1620`, 178 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0c1620.json`
+- case 0
+- case 0
+- case 4
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 20
+- case 22
+- case 24
+- case 25
+- case 26
+- case 27
+- case 63
+- case 112
+- case 101
+- case 157
+- case 91
+- case 87
+- case 72
+- case 111
+- case 75
+- case 106
+- case 70
+- case 100
+- case 133
+- case 85
+- case 114
+- case 113
+- case 67
+- case 138
+- the cases run 88 of 89 instructions
+
+### FUN_0c0c1714 (`0C0C1714`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0c1714.json`
+- case 0
+- case 4
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 18
+- case 19
+- case 21
+- case 22
+- case 24
+- case 25
+- case 26
+- case 29
+- case 107
+- case 96
+- case 75
+- case 129
+- case 68
+- case 155
+- case 103
+- case 85
+- case 148
+- case 114
+- case 99
+- case 116
+- case 144
+- case 127
+- case 109
+- case 140
+- case 59
+- case 130
+- the cases run 82 of 82 instructions
+
+### FUN_0c0c1af4 (`0C0C1AF4`, 942 bytes, `src/gen_di.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c0c1af4.json`
+- case 2
+- case 0
+- case 1
+- case 4
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 16
+- case 18
+- case 20
+- case 21
+- case 90
+- case 86
+- case 72
+- case 88
+- case 76
+- case 63
+- case 77
+- case 133
+- case 154
+- case 80
+- case 119
+- case 145
+- case 79
+- case 144
+- case 103
+- case 83
+- case 102
+- case 126
+- the cases run 137 of 137 instructions
 
 ### FUN_0c0c2126 (`0C0C2126`, 1416 bytes, `src/gen_af.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_af/FUN_0c0c2126.json`
@@ -57638,6 +69393,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - the cases run 50 of 50 instructions
 
+### FUN_0c0c37ac (`0C0C37AC`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0c37ac.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 112
+- case 127
+- case 125
+- case 124
+- case 73
+- case 119
+- case 113
+- case 60
+- case 69
+- case 140
+- case 131
+- case 75
+- case 151
+- case 105
+- case 74
+- case 149
+- case 85
+- case 102
+- the cases run 56 of 56 instructions
+
 ### FUN_0c0c3a3e (`0C0C3A3E`, 776 bytes, `src/gen_an.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_an/FUN_0c0c3a3e.json`
 - case 116
@@ -57798,6 +69593,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 113
 - the cases run 66 of 66 instructions
 
+### FUN_0c0c3fb8 (`0C0C3FB8`, 728 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c0c3fb8.json`
+- case 46
+- case 116
+- case 110
+- case 0
+- case 25
+- case 46
+- case 17
+- case 21
+- case 23
+- case 28
+- case 29
+- case 33
+- case 34
+- case 36
+- case 38
+- case 39
+- case 42
+- case 43
+- case 158
+- case 114
+- case 148
+- case 124
+- case 125
+- case 130
+- case 120
+- case 102
+- case 141
+- case 106
+- case 105
+- case 117
+- case 136
+- case 137
+- case 97
+- case 156
+- case 107
+- case 109
+- the cases run 231 of 310 instructions
+
 ### FUN_0c0c4290 (`0C0C4290`, 146 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c0c4290.json`
 - case 12
@@ -57844,6 +69679,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 27 of 31 instructions
 
+### FUN_0c0c4364 (`0C0C4364`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0c4364.json`
+- case 139
+- case 35
+- case 0
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 18
+- case 131
+- case 143
+- case 85
+- case 48
+- case 145
+- case 102
+- case 105
+- case 94
+- case 75
+- case 115
+- case 70
+- case 137
+- case 134
+- case 96
+- case 77
+- case 81
+- case 87
+- case 92
+- the cases run 57 of 60 instructions
+
 ### FUN_0c0c43dc (`0C0C43DC`, 136 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c0c43dc.json`
 - case 43
@@ -57883,6 +69758,58 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 136
 - case 123
 - the cases run 42 of 43 instructions
+
+### FUN_0c0c4464 (`0C0C4464`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ek/FUN_0c0c4464.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 37 of 55 instructions
+
+### FUN_0c0c44d6 (`0C0C44D6`, 86 bytes, `src/gen_em.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_em/FUN_0c0c44d6.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 32 of 41 instructions
+
+### FUN_0c0c452c (`0C0C452C`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c0c452c.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 142
+- case 121
+- case 85
+- case 123
+- case 48
+- case 95
+- case 78
+- case 74
+- case 82
+- case 88
+- case 112
+- case 63
+- case 81
+- case 43
+- case 131
+- case 79
+- case 56
+- case 91
+- the cases run 42 of 42 instructions
 
 ### FUN_0c0c4580 (`0C0C4580`, 52 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c4580.json`
@@ -58124,6 +70051,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 118
 - the cases run 18 of 18 instructions
 
+### FUN_0c0c46cc (`0C0C46CC`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0c46cc.json`
+- case 0
+- case 4
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 38
+- case 65
+- case 108
+- case 77
+- case 90
+- case 58
+- case 110
+- case 35
+- case 62
+- case 83
+- case 50
+- case 73
+- case 98
+- case 36
+- case 82
+- case 39
+- case 97
+- case 96
+- the cases run 18 of 18 instructions
+
 ### FUN_0c0c473c (`0C0C473C`, 32 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0c473c.json`
 - case 0
@@ -58280,6 +70247,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 115
 - case 128
 - the cases run 37 of 37 instructions
+
+### FUN_0c0c4844 (`0C0C4844`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c0c4844.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 14
+- case 15
+- case 16
+- case 18
+- case 21
+- case 23
+- case 78
+- case 150
+- case 86
+- case 136
+- case 155
+- case 79
+- case 142
+- case 146
+- case 95
+- case 128
+- case 156
+- case 75
+- case 124
+- case 109
+- case 92
+- case 135
+- case 147
+- case 80
+- the cases run 42 of 42 instructions
 
 ### FUN_0c0c4898 (`0C0C4898`, 42 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c4898.json`
@@ -58820,6 +70827,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 117 of 141 instructions
 
+### FUN_0c0c5d32 (`0C0C5D32`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0c5d32.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 42
+- case 43
+- case 49
+- case 81
+- case 71
+- case 44
+- case 61
+- case 98
+- case 94
+- case 113
+- case 46
+- case 82
+- case 72
+- case 97
+- case 77
+- case 55
+- case 63
+- case 53
+- the cases run 53 of 57 instructions
+
 ### FUN_0c0c5de8 (`0C0C5DE8`, 374 bytes, `src/gen_bb.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c0c5de8.json`
 - case 0
@@ -58858,6 +70905,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 50
 - case 148
 - case 57
+- the cases run 41 of 147 instructions
+
+### FUN_0c0c5f5e (`0C0C5F5E`, 370 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0c5f5e.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 98
+- case 73
+- case 118
+- case 61
+- case 107
+- case 66
+- case 36
+- case 154
+- case 137
+- case 134
+- case 108
+- case 65
+- case 60
+- case 53
+- case 94
+- case 42
+- case 81
+- case 70
 - the cases run 41 of 147 instructions
 
 ### FUN_0c0c60d0 (`0C0C60D0`, 272 bytes, `src/gen_bd.c`)
@@ -58899,6 +70986,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 335
 - case 244
 - the cases run 105 of 105 instructions
+
+### FUN_0c0c61e0 (`0C0C61E0`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0c61e0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 92
+- case 71
+- case 142
+- case 130
+- case 148
+- case 91
+- case 74
+- case 114
+- case 125
+- case 127
+- case 54
+- case 118
+- case 49
+- case 55
+- case 62
+- case 90
+- case 145
+- case 135
+- the cases run 58 of 58 instructions
+
+### FUN_0c0c6254 (`0C0C6254`, 90 bytes, `src/gen_en.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_en/FUN_0c0c6254.json`
+- case 116
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 45
+- case 58
+- case 67
+- case 50
+- case 80
+- case 59
+- case 35
+- case 96
+- case 70
+- case 42
+- case 99
+- case 68
+- case 37
+- case 85
+- case 84
+- case 108
+- case 51
+- case 60
+- the cases run 41 of 45 instructions
 
 ### FUN_0c0c62d0 (`0C0C62D0`, 130 bytes, `src/gen_cm.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cm/FUN_0c0c62d0.json`
@@ -59733,6 +71900,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 133
 - the cases run 56 of 71 instructions
 
+### FUN_0c0c73e6 (`0C0C73E6`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0c73e6.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 159
+- case 150
+- case 138
+- case 149
+- case 37
+- case 146
+- case 90
+- case 54
+- case 148
+- case 36
+- case 144
+- case 43
+- case 65
+- case 78
+- case 115
+- case 94
+- case 124
+- case 44
+- the cases run 77 of 77 instructions
+
 ### FUN_0c0c74a4 (`0C0C74A4`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c0c74a4.json`
 - case 0
@@ -59892,6 +72099,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 70
 - case 58
 - the cases run 73 of 73 instructions
+
+### FUN_0c0c7d9c (`0C0C7D9C`, 158 bytes, `src/gen_ej.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ej/FUN_0c0c7d9c.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 154
+- case 158
+- case 89
+- case 70
+- case 137
+- case 104
+- case 41
+- case 82
+- case 129
+- case 131
+- case 99
+- case 114
+- case 45
+- case 132
+- case 159
+- case 59
+- case 139
+- case 156
+- the cases run 38 of 60 instructions
 
 ### FUN_0c0c7e46 (`0C0C7E46`, 8 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0c7e46.json`
@@ -60133,6 +72380,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 86
 - the cases run 11 of 11 instructions
 
+### FUN_0c0c8b94 (`0C0C8B94`, 302 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0c8b94.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 25
+- case 26
+- case 27
+- case 28
+- case 29
+- case 52
+- case 61
+- case 151
+- case 75
+- case 60
+- case 65
+- case 67
+- case 87
+- case 100
+- case 141
+- case 154
+- case 58
+- case 113
+- case 99
+- case 71
+- case 72
+- case 122
+- case 112
+- the cases run 34 of 150 instructions
+
 ### FUN_0c0c8cc8 (`0C0C8CC8`, 62 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c8cc8.json`
 - case 0
@@ -60172,6 +72459,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - case 75
 - the cases run 0 of 31 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
+
+### FUN_0c0c8d06 (`0C0C8D06`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ef/FUN_0c0c8d06.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 86 of 86 instructions
 
 ### FUN_0c0c8dd4 (`0C0C8DD4`, 42 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0c8dd4.json`
@@ -60298,6 +72591,16 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 124
 - case 145
 - the cases run 0 of 52 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
+
+### FUN_0c0c90d6 (`0C0C90D6`, 476 bytes, `src/gen_dv.c`)
+- equivalent on 3 development and 3 holdout cases, in `tests/gen_dv/FUN_0c0c90d6.json`
+- rescue: flips 0C0C91DE
+- rescue: flips 0C0C9274
+- rescue: flips 0C0C928C
+- rescue: flips 0C0C91DE
+- rescue: flips 0C0C928C
+- rescue: flips 0C0C9294
+- the cases run 217 of 237 instructions
 
 ### FUN_0c0c92b2 (`0C0C92B2`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c0c92b2.json`
@@ -60499,6 +72802,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 46
 - the cases run 12 of 12 instructions
 
+### FUN_0c0c9e86 (`0C0C9E86`, 166 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0c9e86.json`
+- case 12
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 144
+- case 65
+- case 73
+- case 146
+- case 115
+- case 53
+- case 111
+- case 89
+- case 125
+- case 154
+- case 141
+- case 148
+- case 137
+- case 56
+- case 70
+- case 139
+- case 52
+- case 121
+- the cases run 79 of 83 instructions
+
+### FUN_0c0c9f70 (`0C0C9F70`, 962 bytes, `src/gen_dj.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dj/FUN_0c0c9f70.json`
+- case 2
+- case 0
+- case 1
+- case 4
+- case 67
+- case 71
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 15
+- case 16
+- case 21
+- case 25
+- case 96
+- case 135
+- case 139
+- case 97
+- case 146
+- case 132
+- case 105
+- case 106
+- case 131
+- case 91
+- case 92
+- case 111
+- case 114
+- case 125
+- case 102
+- case 113
+- case 104
+- case 133
+- the cases run 189 of 398 instructions
+
 ### FUN_0c0ca332 (`0C0CA332`, 430 bytes, `src/gen_az.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_az/FUN_0c0ca332.json`
 - case 139
@@ -60618,6 +73001,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 95
 - case 108
 - the cases run 15 of 15 instructions
+
+### FUN_0c0ca6d2 (`0C0CA6D2`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0ca6d2.json`
+- case 232
+- case 52
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 16
+- case 26
+- case 33
+- case 48
+- case 155
+- case 185
+- case 227
+- case 183
+- case 214
+- case 167
+- case 254
+- case 190
+- case 142
+- case 156
+- case 135
+- case 237
+- case 173
+- case 225
+- case 235
+- case 201
+- case 159
+- case 144
+- the cases run 81 of 81 instructions
+
+### FUN_0c0ca794 (`0C0CA794`, 176 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0ca794.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 98
+- case 95
+- case 113
+- case 42
+- case 93
+- case 51
+- case 39
+- case 108
+- case 83
+- case 117
+- case 40
+- case 97
+- case 49
+- case 110
+- case 54
+- case 80
+- case 106
+- case 62
+- the cases run 88 of 88 instructions
 
 ### FUN_0c0ca844 (`0C0CA844`, 30 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0ca844.json`
@@ -61445,6 +73908,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 108
 - the cases run 34 of 34 instructions
 
+### FUN_0c0cc054 (`0C0CC054`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0cc054.json`
+- case 5
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 131
+- case 110
+- case 61
+- case 101
+- case 129
+- case 94
+- case 60
+- case 153
+- case 150
+- case 147
+- case 83
+- case 72
+- case 102
+- case 103
+- case 95
+- case 136
+- case 111
+- case 126
+- the cases run 18 of 70 instructions
+
 ### FUN_0c0cc108 (`0C0CC108`, 630 bytes, `src/gen_ar.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ar/FUN_0c0cc108.json`
 - case 17
@@ -61810,6 +74313,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 20 of 25 instructions
+
+### FUN_0c0cc7d8 (`0C0CC7D8`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0cc7d8.json`
+- case 145
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 63
+- case 88
+- case 68
+- case 57
+- case 50
+- case 61
+- case 120
+- case 121
+- case 115
+- case 127
+- case 73
+- case 126
+- case 92
+- case 125
+- case 153
+- case 96
+- case 133
+- case 109
+- the cases run 45 of 45 instructions
 
 ### FUN_0c0cc832 (`0C0CC832`, 46 bytes, `src/gen_bl.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bl/FUN_0c0cc832.json`
@@ -62340,6 +74883,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 43
 - the cases run 21 of 21 instructions
 
+### FUN_0c0cdf68 (`0C0CDF68`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0cdf68.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 83
+- case 88
+- case 50
+- case 52
+- case 45
+- case 97
+- case 109
+- case 61
+- case 93
+- case 116
+- case 72
+- case 98
+- case 66
+- case 67
+- case 58
+- case 115
+- case 75
+- case 37
+- the cases run 56 of 56 instructions
+
 ### FUN_0c0cdfd8 (`0C0CDFD8`, 26 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0cdfd8.json`
 - case 0
@@ -62459,6 +75042,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - case 100
 - the cases run 21 of 21 instructions
+
+### FUN_0c0ce136 (`0C0CE136`, 374 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c0ce136.json`
+- case 38
+- case 55
+- case 29
+- case 33
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 55
+- case 59
+- case 72
+- case 85
+- case 48
+- case 60
+- case 45
+- case 44
+- case 66
+- case 92
+- case 49
+- case 62
+- case 80
+- case 75
+- case 113
+- case 73
+- case 89
+- case 115
+- the cases run 134 of 147 instructions
 
 ### FUN_0c0ce2ac (`0C0CE2AC`, 30 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0ce2ac.json`
@@ -62895,6 +75518,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 61
 - the cases run 20 of 20 instructions
 
+### FUN_0c0ce7e0 (`0C0CE7E0`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0ce7e0.json`
+- case 141
+- case 123
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 75
+- case 44
+- case 117
+- case 129
+- case 94
+- case 151
+- case 66
+- case 127
+- case 159
+- case 81
+- case 96
+- case 144
+- case 62
+- case 152
+- case 143
+- case 120
+- case 126
+- case 136
+- the cases run 79 of 79 instructions
+
 ### FUN_0c0ce87e (`0C0CE87E`, 16 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0ce87e.json`
 - case 0
@@ -63295,6 +75958,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 157
 - the cases run 54 of 54 instructions
 
+### FUN_0c0cebc4 (`0C0CEBC4`, 178 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0cebc4.json`
+- case 0
+- case 4
+- case 13
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 108
+- case 91
+- case 57
+- case 100
+- case 65
+- case 77
+- case 85
+- case 79
+- case 36
+- case 75
+- case 38
+- case 90
+- case 43
+- case 52
+- case 68
+- case 78
+- case 81
+- case 60
+- the cases run 76 of 89 instructions
+
 ### FUN_0c0cec76 (`0C0CEC76`, 36 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0cec76.json`
 - case 0
@@ -63374,6 +76077,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 66
 - case 80
 - the cases run 40 of 40 instructions
+
+### FUN_0c0ced14 (`0C0CED14`, 86 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0ced14.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 120
+- case 77
+- case 137
+- case 86
+- case 95
+- case 100
+- case 121
+- case 136
+- case 60
+- case 66
+- case 80
+- case 106
+- case 104
+- case 58
+- case 143
+- case 65
+- case 102
+- case 158
+- the cases run 43 of 43 instructions
 
 ### FUN_0c0cedc8 (`0C0CEDC8`, 14 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0cedc8.json`
@@ -63535,6 +76278,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 35 of 35 instructions
 
+### FUN_0c0ceee4 (`0C0CEEE4`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c0ceee4.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 51 of 79 instructions
+
 ### FUN_0c0cef82 (`0C0CEF82`, 284 bytes, `src/gen_cy.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cy/FUN_0c0cef82.json`
 - case 0
@@ -63654,6 +76403,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 45
 - case 119
 - the cases run 53 of 97 instructions
+
+### FUN_0c0cf2dc (`0C0CF2DC`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0cf2dc.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 56
+- case 140
+- case 118
+- case 157
+- case 114
+- case 131
+- case 96
+- case 134
+- case 135
+- case 41
+- case 84
+- case 153
+- case 55
+- case 86
+- case 145
+- case 116
+- case 110
+- case 126
+- the cases run 0 of 66 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
 
 ### FUN_0c0cf386 (`0C0CF386`, 12 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0cf386.json`
@@ -64450,6 +77239,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 67
 - the cases run 31 of 31 instructions
 
+### FUN_0c0d1230 (`0C0D1230`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c0d1230.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 17
+- case 18
+- case 19
+- case 86
+- case 151
+- case 141
+- case 123
+- case 61
+- case 119
+- case 98
+- case 122
+- case 84
+- case 152
+- case 90
+- case 59
+- case 112
+- case 140
+- case 52
+- case 92
+- case 150
+- case 72
+- the cases run 42 of 42 instructions
+
 ### FUN_0c0d1284 (`0C0D1284`, 1418 bytes, `src/gen_dh.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dh/FUN_0c0d1284.json`
 - case 0
@@ -64890,6 +77719,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - the cases run 40 of 40 instructions
 
+### FUN_0c0d22d0 (`0C0D22D0`, 938 bytes, `src/gen_dl.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dl/FUN_0c0d22d0.json`
+- case 8
+- case 15
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 16
+- case 17
+- case 18
+- case 86
+- case 147
+- case 141
+- case 127
+- case 84
+- case 80
+- case 50
+- case 56
+- case 97
+- case 68
+- case 96
+- case 88
+- case 78
+- case 81
+- case 82
+- case 63
+- case 45
+- case 70
+- the cases run 239 of 399 instructions
+
 ### FUN_0c0d267a (`0C0D267A`, 10 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0d267a.json`
 - case 0
@@ -64930,6 +77799,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 58
 - the cases run 5 of 5 instructions
 
+### FUN_0c0d26a8 (`0C0D26A8`, 160 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c0d26a8.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 80 of 80 instructions
+
 ### FUN_0c0d27a0 (`0C0D27A0`, 912 bytes, `src/gen_ak.c`)
 - equivalent on 17 development and 16 holdout cases, in `tests/gen_ak/FUN_0c0d27a0.json`
 - case 23
@@ -64966,6 +77841,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 147
 - case 157
 - the cases run 317 of 391 instructions
+
+### FUN_0c0d2d2e (`0C0D2D2E`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0d2d2e.json`
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 14
+- case 15
+- case 17
+- case 19
+- case 22
+- case 23
+- case 24
+- case 26
+- case 27
+- case 30
+- case 35
+- case 38
+- case 109
+- case 135
+- case 75
+- case 142
+- case 94
+- case 138
+- case 131
+- case 145
+- case 96
+- case 126
+- case 123
+- case 119
+- case 136
+- case 104
+- case 87
+- case 122
+- case 159
+- case 95
+- the cases run 36 of 44 instructions
 
 ### FUN_0c0d35e0 (`0C0D35E0`, 96 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c0d35e0.json`
@@ -65006,6 +77921,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - case 99
 - the cases run 48 of 48 instructions
+
+### FUN_0c0d3684 (`0C0D3684`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0d3684.json`
+- case 0
+- case 1
+- case 2
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 20
+- case 21
+- case 156
+- case 130
+- case 111
+- case 95
+- case 114
+- case 157
+- case 126
+- case 143
+- case 76
+- case 83
+- case 152
+- case 73
+- case 103
+- case 93
+- case 66
+- case 65
+- case 121
+- case 139
+- the cases run 46 of 46 instructions
 
 ### FUN_0c0d36e0 (`0C0D36E0`, 198 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c0d36e0.json`
@@ -65407,6 +78362,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 43
 - the cases run 536 of 843 instructions
 
+### FUN_0c0d5d94 (`0C0D5D94`, 786 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dm/FUN_0c0d5d94.json`
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 147
+- case 57
+- case 159
+- case 132
+- case 129
+- case 158
+- case 106
+- case 75
+- case 93
+- case 46
+- case 114
+- case 145
+- case 110
+- case 66
+- case 116
+- case 109
+- case 107
+- case 103
+- the cases run 246 of 343 instructions
+
 ### FUN_0c0d6254 (`0C0D6254`, 298 bytes, `src/gen_cx.c`)
 - equivalent on 14 development and 13 holdout cases, in `tests/gen_cx/FUN_0c0d6254.json`
 - case 153
@@ -65517,6 +78512,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - case 108
 - the cases run 38 of 38 instructions
+
+### FUN_0c0d6604 (`0C0D6604`, 728 bytes, `src/gen_dn.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dn/FUN_0c0d6604.json`
+- case 1
+- case 32
+- case 93
+- case 5
+- case 82
+- case 4
+- case 6
+- case 8
+- case 11
+- case 16
+- case 18
+- case 23
+- case 24
+- case 27
+- case 33
+- case 34
+- case 38
+- case 41
+- case 109
+- case 131
+- case 141
+- case 78
+- case 89
+- case 115
+- case 140
+- case 90
+- case 85
+- case 88
+- case 128
+- case 80
+- case 138
+- case 83
+- case 159
+- case 110
+- case 143
+- case 135
+- the cases run 98 of 304 instructions
 
 ### FUN_0c0d68dc (`0C0D68DC`, 392 bytes, `src/gen_cq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cq/FUN_0c0d68dc.json`
@@ -65757,6 +78792,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 112
 - case 142
 - the cases run 42 of 42 instructions
+
+### FUN_0c0d6d74 (`0C0D6D74`, 166 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0d6d74.json`
+- case 85
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 17
+- case 23
+- case 24
+- case 25
+- case 152
+- case 131
+- case 123
+- case 118
+- case 107
+- case 99
+- case 80
+- case 159
+- case 128
+- case 108
+- case 151
+- case 139
+- case 81
+- case 110
+- case 141
+- case 119
+- case 127
+- case 150
+- the cases run 83 of 83 instructions
 
 ### FUN_0c0d6e1a (`0C0D6E1A`, 64 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0d6e1a.json`
@@ -66179,6 +79254,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 49
 - the cases run 19 of 19 instructions
 
+### FUN_0c0d7d50 (`0C0D7D50`, 320 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/FUN_0c0d7d50.json`
+- case 0
+- case 4
+- case 10
+- case 12
+- case 16
+- case 18
+- case 21
+- case 22
+- case 25
+- case 26
+- case 27
+- case 28
+- case 30
+- case 31
+- case 32
+- case 33
+- case 34
+- case 35
+- case 85
+- case 68
+- case 118
+- case 148
+- case 102
+- case 146
+- case 124
+- case 72
+- case 110
+- case 141
+- case 108
+- case 93
+- case 107
+- case 143
+- case 140
+- case 114
+- case 99
+- case 69
+- the cases run 130 of 130 instructions
+
 ### FUN_0c0d7e90 (`0C0D7E90`, 42 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0d7e90.json`
 - case 0
@@ -66264,6 +79379,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 74
 - case 47
 - the cases run 3 of 3 instructions
+
+### FUN_0c0d80d0 (`0C0D80D0`, 90 bytes, `src/gen_em.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_em/FUN_0c0d80d0.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 23 of 42 instructions
 
 ### FUN_0c0d8130 (`0C0D8130`, 22 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0d8130.json`
@@ -66385,92 +79506,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 407
 - the cases run 12 of 12 instructions
 
-### FUN_0c0d8220 (`0C0D8220`, 126 bytes, `src/gen_bp.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0d8220.json`
-- case 17
-- case 0
-- case 4
-- case 6
-- case 7
-- case 9
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 18
-- case 20
-- case 23
-- case 24
-- case 25
-- case 26
-- case 28
-- case 159
-- case 101
-- case 68
-- case 106
-- case 138
-- case 61
-- case 144
-- case 78
-- case 125
-- case 93
-- case 90
-- case 63
-- case 111
-- case 87
-- case 154
-- case 86
-- case 76
-- case 119
-- the cases run 50 of 50 instructions
-
-### FUN_0c0d82a0 (`0C0D82A0`, 36 bytes, `src/gen_h.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_h/FUN_0c0d82a0.json`
-- rescue: empty case
-- rescue: empty case
-- the cases run 18 of 18 instructions
-
-### FUN_0c0d8310 (`0C0D8310`, 62 bytes, `src/gen_h.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0d8310.json`
-- case 4
-- case 0
-- case 6
-- case 7
-- case 9
-- case 12
-- case 13
-- case 14
-- case 18
-- case 19
-- case 20
-- case 23
-- case 24
-- case 27
-- case 30
-- case 37
-- case 41
-- case 42
-- case 91
-- case 149
-- case 156
-- case 84
-- case 92
-- case 104
-- case 144
-- case 102
-- case 111
-- case 140
-- case 93
-- case 109
-- case 141
-- case 90
-- case 153
-- case 83
-- case 127
-- case 119
-- the cases run 27 of 27 instructions
-
 ### FUN_0c0d8350 (`0C0D8350`, 156 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c0d8350.json`
 - case 2
@@ -66510,52 +79545,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - case 91
 - the cases run 39 of 39 instructions
-
-### FUN_0c0d8420 (`0C0D8420`, 44 bytes, `src/gen_h.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0d8420.json`
-- case 3
-- case 0
-- case 2
-- case 4
-- case 8
-- case 9
-- case 10
-- case 13
-- case 14
-- case 19
-- case 20
-- case 24
-- case 28
-- case 29
-- case 31
-- case 32
-- case 34
-- case 37
-- case 87
-- case 71
-- case 146
-- case 150
-- case 83
-- case 107
-- case 142
-- case 116
-- case 113
-- case 129
-- case 149
-- case 135
-- case 74
-- case 106
-- case 153
-- case 90
-- case 69
-- case 157
-- the cases run 22 of 22 instructions
-
-### FUN_0c0d84e0 (`0C0D84E0`, 46 bytes, `src/gen_j.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/FUN_0c0d84e0.json`
-- rescue: empty case
-- rescue: empty case
-- the cases run 12 of 19 instructions
 
 ### FUN_0c0d8590 (`0C0D8590`, 40 bytes, `src/gen_h.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_h/FUN_0c0d8590.json`
@@ -66677,46 +79666,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 95
 - the cases run 29 of 29 instructions
 
-### FUN_0c0d8660 (`0C0D8660`, 110 bytes, `src/gen_br.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c0d8660.json`
-- case 0
-- case 2
-- case 4
-- case 6
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 18
-- case 19
-- case 20
-- case 21
-- case 111
-- case 133
-- case 140
-- case 93
-- case 99
-- case 64
-- case 138
-- case 60
-- case 98
-- case 91
-- case 84
-- case 81
-- case 46
-- case 62
-- case 135
-- case 132
-- case 103
-- case 50
-- the cases run 38 of 51 instructions
-
 ### FUN_0c0d86e0 (`0C0D86E0`, 52 bytes, `src/gen_j.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_j/FUN_0c0d86e0.json`
 - rescue: empty case
@@ -66803,46 +79752,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - the cases run 37 of 37 instructions
 
-### FUN_0c0d8870 (`0C0D8870`, 36 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0d8870.json`
-- case 1
-- case 0
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 109
-- case 47
-- case 41
-- case 82
-- case 42
-- case 114
-- case 46
-- case 62
-- case 57
-- case 70
-- case 76
-- case 61
-- case 39
-- case 106
-- case 37
-- case 48
-- case 88
-- case 86
-- the cases run 12 of 12 instructions
-
 ### FUN_0c0d88a0 (`0C0D88A0`, 22 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0d88a0.json`
 - case 0
@@ -66883,46 +79792,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 52
 - the cases run 11 of 11 instructions
 
-### FUN_0c0d88f0 (`0C0D88F0`, 74 bytes, `src/gen_s.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c0d88f0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 82
-- case 56
-- case 78
-- case 157
-- case 124
-- case 108
-- case 89
-- case 159
-- case 59
-- case 37
-- case 158
-- case 115
-- case 92
-- case 80
-- case 49
-- case 73
-- case 112
-- case 48
-- the cases run 18 of 27 instructions
-
 ### FUN_0c0d8940 (`0C0D8940`, 24 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0d8940.json`
 - case 0
@@ -66962,6 +79831,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 79
 - case 73
 - the cases run 12 of 12 instructions
+
+### FUN_0c0d8960 (`0C0D8960`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0d8960.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 19
+- case 22
+- case 23
+- case 26
+- case 27
+- case 28
+- case 29
+- case 30
+- case 84
+- case 81
+- case 144
+- case 63
+- case 113
+- case 140
+- case 108
+- case 152
+- case 156
+- case 134
+- case 55
+- case 126
+- case 104
+- case 88
+- case 80
+- case 87
+- case 139
+- case 132
+- the cases run 59 of 59 instructions
+
+### FUN_0c0d8ae0 (`0C0D8AE0`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0d8ae0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 103
+- case 110
+- case 48
+- case 51
+- case 63
+- case 41
+- case 99
+- case 83
+- case 91
+- case 118
+- case 116
+- case 46
+- case 114
+- case 65
+- case 81
+- case 79
+- case 90
+- case 106
+- the cases run 77 of 77 instructions
 
 ### FUN_0c0d8c40 (`0C0D8C40`, 8 bytes, `src/gen_v.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_v/FUN_0c0d8c40.json`
@@ -67363,6 +80312,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 64
 - the cases run 21 of 21 instructions
 
+### FUN_0c0d93f0 (`0C0D93F0`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c0d93f0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 79
+- case 73
+- case 46
+- case 118
+- case 52
+- case 115
+- case 110
+- case 75
+- case 44
+- case 92
+- case 43
+- case 94
+- case 83
+- case 112
+- case 91
+- case 95
+- case 70
+- case 99
+- the cases run 17 of 17 instructions
+
 ### FUN_0c0d9450 (`0C0D9450`, 330 bytes, `src/gen_ct.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_ct/FUN_0c0d9450.json`
 - rescue: empty case
@@ -67448,6 +80437,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 96
 - case 81
 - the cases run 34 of 34 instructions
+
+### FUN_0c0d9800 (`0C0D9800`, 182 bytes, `src/gen_ec.c`)
+- equivalent on 7 development and 7 holdout cases, in `tests/gen_ec/FUN_0c0d9800.json`
+- case 23
+- case 4
+- case 1
+- case 3
+- case 17
+- case 24
+- case 27
+- case 5
+- case 0
+- case 2
+- case 16
+- case 22
+- case 26
+- case 31
+- the cases run 59 of 60 instructions
 
 ### FUN_0c0d98c0 (`0C0D98C0`, 6 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0d98c0.json`
@@ -67929,6 +80936,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 90
 - the cases run 19 of 19 instructions
 
+### FUN_0c0d9ca0 (`0C0D9CA0`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0d9ca0.json`
+- case 2
+- case 4
+- case 0
+- case 1
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 73
+- case 54
+- case 58
+- case 47
+- case 84
+- case 104
+- case 46
+- case 96
+- case 52
+- case 76
+- case 42
+- case 71
+- case 95
+- case 55
+- case 50
+- case 57
+- case 59
+- case 114
+- the cases run 32 of 33 instructions
+
 ### FUN_0c0d9d20 (`0C0D9D20`, 134 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c0d9d20.json`
 - case 3
@@ -67968,6 +81015,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 37
 - case 36
 - the cases run 62 of 62 instructions
+
+### FUN_0c0d9dc0 (`0C0D9DC0`, 164 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0d9dc0.json`
+- case 3
+- case 1
+- case 6
+- case 0
+- case 29
+- case 2
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 43
+- case 55
+- case 72
+- case 102
+- case 57
+- case 85
+- case 81
+- case 62
+- case 64
+- case 109
+- case 42
+- case 82
+- case 70
+- case 90
+- case 91
+- case 77
+- case 116
+- case 76
+- the cases run 57 of 63 instructions
 
 ### FUN_0c0d9e70 (`0C0D9E70`, 18 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0d9e70.json`
@@ -68049,46 +81136,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - the cases run 12 of 12 instructions
 
-### FUN_0c0d9eb0 (`0C0D9EB0`, 48 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0d9eb0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 83
-- case 96
-- case 89
-- case 44
-- case 114
-- case 99
-- case 60
-- case 41
-- case 102
-- case 47
-- case 69
-- case 76
-- case 108
-- case 93
-- case 53
-- case 105
-- case 70
-- case 64
-- the cases run 19 of 19 instructions
-
 ### FUN_0c0d9ee0 (`0C0D9EE0`, 22 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0d9ee0.json`
 - case 0
@@ -68169,46 +81216,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 59
 - the cases run 28 of 28 instructions
 
-### FUN_0c0da010 (`0C0DA010`, 70 bytes, `src/gen_r.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c0da010.json`
-- case 14
-- case 2
-- case 0
-- case 1
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 15
-- case 16
-- case 17
-- case 51
-- case 62
-- case 90
-- case 50
-- case 108
-- case 110
-- case 73
-- case 96
-- case 80
-- case 39
-- case 52
-- case 64
-- case 46
-- case 102
-- case 81
-- case 76
-- case 58
-- case 92
-- the cases run 22 of 28 instructions
-
 ### FUN_0c0da0c0 (`0C0DA0C0`, 26 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0da0c0.json`
 - case 0
@@ -68248,6 +81255,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 72
 - case 56
 - the cases run 11 of 11 instructions
+
+### FUN_0c0da0e0 (`0C0DA0E0`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0da0e0.json`
+- case 0
+- case 1
+- case 5
+- case 14
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 150
+- case 84
+- case 153
+- case 123
+- case 143
+- case 81
+- case 40
+- case 145
+- case 127
+- case 89
+- case 122
+- case 117
+- case 156
+- case 58
+- case 59
+- case 90
+- case 133
+- case 47
+- the cases run 55 of 55 instructions
 
 ### FUN_0c0da210 (`0C0DA210`, 16 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0da210.json`
@@ -68449,46 +81496,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 61
 - the cases run 3 of 3 instructions
 
-### FUN_0c0da3e0 (`0C0DA3E0`, 48 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0da3e0.json`
-- case 0
-- case 3
-- case 1
-- case 2
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 109
-- case 74
-- case 105
-- case 119
-- case 97
-- case 76
-- case 107
-- case 43
-- case 68
-- case 56
-- case 58
-- case 108
-- case 47
-- case 116
-- case 82
-- case 42
-- case 118
-- case 114
-- the cases run 20 of 20 instructions
-
 ### FUN_0c0da410 (`0C0DA410`, 152 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c0da410.json`
 - case 0
@@ -68569,6 +81576,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 242
 - the cases run 34 of 34 instructions
 
+### FUN_0c0da560 (`0C0DA560`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0da560.json`
+- case 3
+- case 0
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 85
+- case 154
+- case 47
+- case 49
+- case 128
+- case 60
+- case 102
+- case 83
+- case 61
+- case 129
+- case 126
+- case 125
+- case 152
+- case 56
+- case 73
+- case 145
+- case 79
+- case 134
+- the cases run 44 of 44 instructions
+
 ### FUN_0c0da5c0 (`0C0DA5C0`, 76 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c0da5c0.json`
 - case 0
@@ -68608,6 +81655,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 339
 - case 104
 - the cases run 24 of 29 instructions
+
+### FUN_0c0da610 (`0C0DA610`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0da610.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 115
+- case 37
+- case 144
+- case 85
+- case 67
+- case 122
+- case 96
+- case 72
+- case 145
+- case 152
+- case 63
+- case 158
+- case 95
+- case 112
+- case 132
+- case 79
+- case 114
+- case 97
+- the cases run 44 of 44 instructions
 
 ### FUN_0c0da7e0 (`0C0DA7E0`, 136 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c0da7e0.json`
@@ -68729,10 +81816,10 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 82
 - the cases run 33 of 33 instructions
 
-### FUN_0c0da970 (`0C0DA970`, 34 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0da970.json`
-- case 0
+### FUN_0c0da9a0 (`0C0DA9A0`, 354 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0da9a0.json`
 - case 1
+- case 0
 - case 2
 - case 3
 - case 4
@@ -68749,25 +81836,25 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 16
 - case 17
-- case 85
-- case 111
-- case 47
-- case 76
-- case 104
-- case 51
-- case 91
-- case 74
+- case 114
 - case 40
-- case 117
-- case 77
-- case 100
-- case 93
-- case 70
-- case 118
-- case 58
-- case 112
-- case 92
-- the cases run 17 of 17 instructions
+- case 115
+- case 49
+- case 111
+- case 69
+- case 59
+- case 90
+- case 65
+- case 36
+- case 87
+- case 66
+- case 91
+- case 88
+- case 80
+- case 54
+- case 62
+- case 113
+- the cases run 173 of 173 instructions
 
 ### FUN_0c0dac80 (`0C0DAC80`, 694 bytes, `src/gen_dd.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dd/FUN_0c0dac80.json`
@@ -68968,86 +82055,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 94
 - case 39
 - the cases run 17 of 17 instructions
-
-### FUN_0c0db0e0 (`0C0DB0E0`, 60 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0db0e0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 45
-- case 104
-- case 83
-- case 100
-- case 71
-- case 103
-- case 75
-- case 38
-- case 101
-- case 57
-- case 84
-- case 39
-- case 58
-- case 70
-- case 67
-- case 53
-- case 74
-- case 105
-- the cases run 21 of 25 instructions
-
-### FUN_0c0db180 (`0C0DB180`, 58 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0db180.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 154
-- case 93
-- case 51
-- case 85
-- case 68
-- case 56
-- case 36
-- case 84
-- case 104
-- case 116
-- case 141
-- case 128
-- case 135
-- case 147
-- case 41
-- case 134
-- case 121
-- case 57
-- the cases run 29 of 29 instructions
 
 ### FUN_0c0db1c0 (`0C0DB1C0`, 8 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0db1c0.json`
@@ -69409,31 +82416,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 112
 - the cases run 13 of 13 instructions
 
-### FUN_0c0db550 (`0C0DB550`, 68 bytes, `src/gen_q.c`)
-- equivalent on 11 development and 10 holdout cases, in `tests/gen_q/FUN_0c0db550.json`
-- case 8
-- case 21
-- case 34
-- case 50
-- case 75
-- case 80
-- case 83
-- case 118
-- case 131
-- case 145
-- case 155
-- case 41
-- case 17
-- case 35
-- case 65
-- case 77
-- case 82
-- case 114
-- case 126
-- case 141
-- case 147
-- the cases run 17 of 25 instructions
-
 ### FUN_0c0db5a0 (`0C0DB5A0`, 34 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0db5a0.json`
 - case 0
@@ -69474,12 +82456,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 300
 - the cases run 17 of 17 instructions
 
-### FUN_0c0db640 (`0C0DB640`, 52 bytes, `src/gen_j.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/FUN_0c0db640.json`
-- rescue: empty case
-- rescue: empty case
-- the cases run 26 of 26 instructions
-
 ### FUN_0c0db6b0 (`0C0DB6B0`, 52 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0db6b0.json`
 - case 15
@@ -69519,12 +82495,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 15
 - the cases run 22 of 22 instructions
-
-### FUN_0c0db730 (`0C0DB730`, 44 bytes, `src/gen_j.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/FUN_0c0db730.json`
-- rescue: empty case
-- rescue: empty case
-- the cases run 20 of 20 instructions
 
 ### FUN_0c0db800 (`0C0DB800`, 40 bytes, `src/gen_z.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c0db800.json`
@@ -69606,46 +82576,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - the cases run 8 of 8 instructions
 
-### FUN_0c0db850 (`0C0DB850`, 58 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0db850.json`
-- case 4
-- case 0
-- case 1
-- case 2
-- case 3
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 75
-- case 46
-- case 77
-- case 84
-- case 81
-- case 82
-- case 112
-- case 101
-- case 42
-- case 36
-- case 39
-- case 83
-- case 94
-- case 70
-- case 62
-- case 95
-- case 48
-- case 79
-- the cases run 29 of 29 instructions
-
 ### FUN_0c0dbbf0 (`0C0DBBF0`, 196 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c0dbbf0.json`
 - case 0
@@ -69725,126 +82655,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 15
 - the cases run 23 of 25 instructions
-
-### FUN_0c0dbe10 (`0C0DBE10`, 40 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dbe10.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 18 of 18 instructions
-
-### FUN_0c0dc1a0 (`0C0DC1A0`, 52 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc1a0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 26 of 26 instructions
-
-### FUN_0c0dc1e0 (`0C0DC1E0`, 64 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc1e0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 32 of 32 instructions
 
 ### FUN_0c0dc220 (`0C0DC220`, 10 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0dc220.json`
@@ -69966,86 +82776,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 119
 - the cases run 25 of 25 instructions
 
-### FUN_0c0dc4c0 (`0C0DC4C0`, 64 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc4c0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 32 of 32 instructions
-
-### FUN_0c0dc510 (`0C0DC510`, 132 bytes, `src/gen_cm.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_cm/FUN_0c0dc510.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 61 of 64 instructions
-
 ### FUN_0c0dc5a0 (`0C0DC5A0`, 26 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc5a0.json`
 - case 0
@@ -70086,46 +82816,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - the cases run 13 of 13 instructions
 
-### FUN_0c0dc5d0 (`0C0DC5D0`, 60 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc5d0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 30 of 30 instructions
-
 ### FUN_0c0dc670 (`0C0DC670`, 24 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc670.json`
 - case 15
@@ -70165,286 +82855,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 15
 - the cases run 12 of 12 instructions
-
-### FUN_0c0dc6a0 (`0C0DC6A0`, 54 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc6a0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 361
-- case 363
-- case 266
-- case 217
-- case 351
-- case 135
-- case 245
-- case 259
-- case 258
-- case 229
-- case 368
-- case 221
-- case 310
-- case 69
-- case 224
-- case 307
-- case 317
-- case 280
-- the cases run 27 of 27 instructions
-
-### FUN_0c0dc6e0 (`0C0DC6E0`, 44 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc6e0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 22 of 22 instructions
-
-### FUN_0c0dc710 (`0C0DC710`, 40 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc710.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 20 of 20 instructions
-
-### FUN_0c0dc740 (`0C0DC740`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc740.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 39
-- case 77
-- case 110
-- case 43
-- case 88
-- case 65
-- case 90
-- case 51
-- case 57
-- case 37
-- case 78
-- case 38
-- case 47
-- case 102
-- case 55
-- case 101
-- case 91
-- case 75
-- the cases run 16 of 16 instructions
-
-### FUN_0c0dc890 (`0C0DC890`, 40 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc890.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 20 of 20 instructions
-
-### FUN_0c0dc8c0 (`0C0DC8C0`, 36 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc8c0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 18 of 18 instructions
-
-### FUN_0c0dc950 (`0C0DC950`, 40 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dc950.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 20 of 20 instructions
 
 ### FUN_0c0dcbb0 (`0C0DCBB0`, 44 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcbb0.json`
@@ -70525,46 +82935,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 15
 - the cases run 8 of 8 instructions
-
-### FUN_0c0dcc40 (`0C0DCC40`, 44 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcc40.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 22 of 22 instructions
 
 ### FUN_0c0dcc70 (`0C0DCC70`, 16 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0dcc70.json`
@@ -70686,46 +83056,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 81
 - the cases run 10 of 10 instructions
 
-### FUN_0c0dccc0 (`0C0DCCC0`, 36 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dccc0.json`
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- case 15
-- the cases run 18 of 18 instructions
-
 ### FUN_0c0dccf0 (`0C0DCCF0`, 28 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dccf0.json`
 - case 15
@@ -70766,126 +83096,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - the cases run 14 of 14 instructions
 
-### FUN_0c0dcd10 (`0C0DCD10`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcd10.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 68
-- case 107
-- case 88
-- case 110
-- case 114
-- case 95
-- case 103
-- case 117
-- case 47
-- case 75
-- case 116
-- case 106
-- case 105
-- case 71
-- case 89
-- case 77
-- case 86
-- case 112
-- the cases run 16 of 16 instructions
-
-### FUN_0c0dcd30 (`0C0DCD30`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcd30.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 108
-- case 107
-- case 109
-- case 83
-- case 47
-- case 69
-- case 53
-- case 91
-- case 36
-- case 85
-- case 97
-- case 75
-- case 57
-- case 45
-- case 88
-- case 66
-- case 44
-- case 93
-- the cases run 16 of 16 instructions
-
-### FUN_0c0dcd50 (`0C0DCD50`, 44 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcd50.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 84
-- case 63
-- case 43
-- case 103
-- case 74
-- case 106
-- case 97
-- case 55
-- case 76
-- case 104
-- case 85
-- case 113
-- case 65
-- case 70
-- case 99
-- case 62
-- case 45
-- case 89
-- the cases run 22 of 22 instructions
-
 ### FUN_0c0dcd80 (`0C0DCD80`, 24 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0dcd80.json`
 - case 0
@@ -70925,126 +83135,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 115
 - case 63
 - the cases run 12 of 12 instructions
-
-### FUN_0c0dcda0 (`0C0DCDA0`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcda0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 54
-- case 115
-- case 96
-- case 74
-- case 80
-- case 48
-- case 111
-- case 113
-- case 112
-- case 114
-- case 62
-- case 93
-- case 100
-- case 117
-- case 119
-- case 53
-- case 87
-- case 41
-- the cases run 16 of 16 instructions
-
-### FUN_0c0dcdc0 (`0C0DCDC0`, 52 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcdc0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 74
-- case 42
-- case 110
-- case 52
-- case 83
-- case 56
-- case 43
-- case 103
-- case 115
-- case 48
-- case 114
-- case 75
-- case 57
-- case 40
-- case 91
-- case 81
-- case 50
-- case 98
-- the cases run 26 of 26 instructions
-
-### FUN_0c0dce40 (`0C0DCE40`, 60 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dce40.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 76
-- case 78
-- case 107
-- case 95
-- case 37
-- case 70
-- case 38
-- case 117
-- case 113
-- case 66
-- case 104
-- case 91
-- case 86
-- case 87
-- case 92
-- case 75
-- case 52
-- case 82
-- the cases run 30 of 30 instructions
 
 ### FUN_0c0dce80 (`0C0DCE80`, 28 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dce80.json`
@@ -71125,86 +83215,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 108
 - case 60
 - the cases run 10 of 10 instructions
-
-### FUN_0c0dced0 (`0C0DCED0`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dced0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 74
-- case 102
-- case 92
-- case 118
-- case 91
-- case 41
-- case 60
-- case 89
-- case 95
-- case 44
-- case 77
-- case 48
-- case 56
-- case 67
-- case 66
-- case 113
-- case 96
-- case 87
-- the cases run 16 of 16 instructions
-
-### FUN_0c0dcef0 (`0C0DCEF0`, 32 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0dcef0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 43
-- case 110
-- case 55
-- case 93
-- case 78
-- case 95
-- case 94
-- case 67
-- case 62
-- case 113
-- case 52
-- case 114
-- case 87
-- case 68
-- case 75
-- case 44
-- case 109
-- case 81
-- the cases run 16 of 16 instructions
 
 ### FUN_0c0dd050 (`0C0DD050`, 68 bytes, `src/gen_q.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_q/FUN_0c0dd050.json`
@@ -71532,6 +83542,52 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 118
 - the cases run 16 of 16 instructions
 
+### FUN_0c0ddd20 (`0C0DDD20`, 228 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c0ddd20.json`
+- case 11
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 113
+- case 68
+- case 98
+- case 79
+- case 38
+- case 50
+- case 77
+- case 82
+- case 118
+- case 81
+- case 49
+- case 88
+- case 37
+- case 96
+- case 84
+- case 112
+- case 86
+- case 99
+- the cases run 107 of 107 instructions
+
+### FUN_0c0dde10 (`0C0DDE10`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_ek/FUN_0c0dde10.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 59 of 59 instructions
+
 ### FUN_0c0dde90 (`0C0DDE90`, 18 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0dde90.json`
 - case 0
@@ -71772,46 +83828,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - the cases run 28 of 28 instructions
 
-### FUN_0c0de070 (`0C0DE070`, 52 bytes, `src/gen_z.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c0de070.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 48
-- case 51
-- case 91
-- case 107
-- case 117
-- case 78
-- case 82
-- case 36
-- case 90
-- case 61
-- case 102
-- case 57
-- case 44
-- case 43
-- case 45
-- case 39
-- case 109
-- case 71
-- the cases run 26 of 26 instructions
-
 ### FUN_0c0de160 (`0C0DE160`, 38 bytes, `src/gen_bk.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bk/FUN_0c0de160.json`
 - case 0
@@ -71851,86 +83867,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 82
 - case 67
 - the cases run 19 of 19 instructions
-
-### FUN_0c0de190 (`0C0DE190`, 44 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0de190.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 89
-- case 93
-- case 98
-- case 71
-- case 116
-- case 68
-- case 94
-- case 74
-- case 42
-- case 44
-- case 100
-- case 108
-- case 69
-- case 111
-- case 101
-- case 119
-- case 75
-- case 87
-- the cases run 22 of 22 instructions
-
-### FUN_0c0de1f0 (`0C0DE1F0`, 52 bytes, `src/gen_aa.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_aa/FUN_0c0de1f0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 48
-- case 46
-- case 41
-- case 95
-- case 101
-- case 45
-- case 117
-- case 82
-- case 47
-- case 84
-- case 110
-- case 61
-- case 74
-- case 87
-- case 75
-- case 73
-- case 98
-- case 42
-- the cases run 26 of 26 instructions
 
 ### FUN_0c0de230 (`0C0DE230`, 44 bytes, `src/gen_aa.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_aa/FUN_0c0de230.json`
@@ -72012,46 +83948,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 46
 - the cases run 5 of 5 instructions
 
-### FUN_0c0de270 (`0C0DE270`, 40 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0de270.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 96
-- case 68
-- case 36
-- case 78
-- case 91
-- case 71
-- case 82
-- case 55
-- case 119
-- case 65
-- case 87
-- case 85
-- case 81
-- case 97
-- case 118
-- case 57
-- case 40
-- case 77
-- the cases run 20 of 20 instructions
-
 ### FUN_0c0de2a0 (`0C0DE2A0`, 18 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0de2a0.json`
 - case 0
@@ -72131,46 +84027,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 75
 - case 39
 - the cases run 8 of 8 instructions
-
-### FUN_0c0de2d0 (`0C0DE2D0`, 50 bytes, `src/gen_j.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0de2d0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 103
-- case 90
-- case 100
-- case 67
-- case 115
-- case 89
-- case 42
-- case 102
-- case 94
-- case 40
-- case 77
-- case 73
-- case 111
-- case 114
-- case 82
-- case 52
-- case 80
-- case 75
-- the cases run 25 of 25 instructions
 
 ### FUN_0c0de310 (`0C0DE310`, 30 bytes, `src/gen_bk.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bk/FUN_0c0de310.json`
@@ -72332,46 +84188,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 74
 - the cases run 13 of 13 instructions
 
-### FUN_0c0de3f0 (`0C0DE3F0`, 76 bytes, `src/gen_s.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c0de3f0.json`
-- case 0
-- case 2
-- case 1
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 50
-- case 72
-- case 94
-- case 83
-- case 86
-- case 46
-- case 115
-- case 103
-- case 51
-- case 61
-- case 56
-- case 37
-- case 59
-- case 114
-- case 67
-- case 60
-- case 90
-- case 76
-- the cases run 38 of 38 instructions
-
 ### FUN_0c0de4a0 (`0C0DE4A0`, 30 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0de4a0.json`
 - case 0
@@ -72411,46 +84227,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 157
 - case 147
 - the cases run 15 of 15 instructions
-
-### FUN_0c0de6c0 (`0C0DE6C0`, 50 bytes, `src/gen_z.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c0de6c0.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 44
-- case 65
-- case 96
-- case 117
-- case 57
-- case 101
-- case 82
-- case 113
-- case 87
-- case 55
-- case 81
-- case 41
-- case 71
-- case 74
-- case 73
-- case 69
-- case 37
-- case 92
-- the cases run 25 of 25 instructions
 
 ### FUN_0c0de7a0 (`0C0DE7A0`, 56 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0de7a0.json`
@@ -73258,6 +85034,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 86
 - the cases run 11 of 11 instructions
 
+### FUN_0c0df570 (`0C0DF570`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/FUN_0c0df570.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 27 of 71 instructions
+
 ### FUN_0c0df660 (`0C0DF660`, 232 bytes, `src/gen_c.c`)
 - equivalent on 18 development and 7 holdout cases, in `tests/gen_c/FUN_0c0df660.json`
 - case 6
@@ -73689,6 +85471,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 102
 - the cases run 8 of 15 instructions
 
+### FUN_0c0e1310 (`0C0E1310`, 352 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0e1310.json`
+- case 83
+- case 41
+- case 0
+- case 29
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 103
+- case 70
+- case 116
+- case 57
+- case 64
+- case 42
+- case 102
+- case 47
+- case 72
+- case 39
+- case 107
+- case 84
+- case 36
+- case 46
+- case 74
+- case 58
+- case 53
+- case 62
+- the cases run 174 of 175 instructions
+
 ### FUN_0c0e14a0 (`0C0E14A0`, 8 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0e14a0.json`
 - case 0
@@ -73868,6 +85690,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 40
 - case 78
 - the cases run 4 of 4 instructions
+
+### FUN_0c0e17dc (`0C0E17DC`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c0e17dc.json`
+- case 0
+- case 4
+- case 7
+- case 10
+- case 12
+- case 13
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 23
+- case 25
+- case 29
+- case 33
+- case 34
+- case 35
+- case 36
+- case 104
+- case 119
+- case 116
+- case 143
+- case 118
+- case 137
+- case 124
+- case 151
+- case 157
+- case 139
+- case 77
+- case 75
+- case 94
+- case 113
+- case 156
+- case 158
+- case 142
+- case 121
+- the cases run 42 of 42 instructions
 
 ### FUN_0c0e1830 (`0C0E1830`, 34 bytes, `src/gen_j.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_j/FUN_0c0e1830.json`
@@ -74912,6 +86774,25 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 34 of 56 instructions
 
+### FUN_0c0e2254 (`0C0E2254`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 8 development and 7 holdout cases, in `tests/gen_ek/FUN_0c0e2254.json`
+- case 4
+- case 10
+- case 19
+- case 32
+- case 43
+- case 53
+- case 67
+- case 76
+- case 0
+- case 16
+- case 28
+- case 35
+- case 46
+- case 60
+- case 72
+- the cases run 60 of 60 instructions
+
 ### FUN_0c0e2362 (`0C0E2362`, 12 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0e2362.json`
 - case 0
@@ -74951,6 +86832,33 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 50
 - case 99
 - the cases run 6 of 6 instructions
+
+### FUN_0c0e2582 (`0C0E2582`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 12 development and 11 holdout cases, in `tests/gen_ef/FUN_0c0e2582.json`
+- case 17
+- case 1
+- case 3
+- case 5
+- case 7
+- case 9
+- case 11
+- case 57
+- case 86
+- case 119
+- case 145
+- case 159
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 35
+- case 64
+- case 100
+- case 135
+- case 158
+- the cases run 84 of 84 instructions
 
 ### FUN_0c0e26c4 (`0C0E26C4`, 208 bytes, `src/gen_cb.c`)
 - equivalent on 13 development and 13 holdout cases, in `tests/gen_cb/FUN_0c0e26c4.json`
@@ -75022,12 +86930,111 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 21 of 21 instructions
 
+### FUN_0c0e282a (`0C0E282A`, 224 bytes, `src/gen_eb.c`)
+- equivalent on 13 development and 13 holdout cases, in `tests/gen_eb/FUN_0c0e282a.json`
+- case 90
+- case 0
+- case 6
+- case 10
+- case 19
+- case 31
+- case 39
+- case 54
+- case 94
+- case 108
+- case 129
+- case 142
+- case 149
+- case 76
+- case 3
+- case 9
+- case 18
+- case 29
+- case 36
+- case 50
+- case 61
+- case 98
+- case 124
+- case 140
+- case 148
+- case 153
+- the cases run 105 of 112 instructions
+
+### FUN_0c0e29f0 (`0C0E29F0`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0e29f0.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 13
+- case 18
+- case 22
+- case 29
+- case 32
+- case 33
+- case 35
+- case 37
+- case 39
+- case 119
+- case 157
+- case 146
+- case 98
+- case 129
+- case 112
+- case 147
+- case 136
+- case 154
+- case 121
+- case 126
+- case 141
+- case 118
+- case 109
+- case 132
+- case 113
+- case 108
+- case 117
+- the cases run 46 of 46 instructions
+
 ### FUN_0c0e2a4c (`0C0E2A4C`, 194 bytes, `src/gen_b.c`)
 - equivalent on 2 development and 1 holdout cases, in `tests/gen_b/FUN_0c0e2a4c.json`
 - rescue: flips 0C0E2A6A
 - rescue: flips 0C0E2A6A
 - rescue: flips 0C0E2A6A
 - the cases run 71 of 94 instructions
+
+### FUN_0c0e2b0e (`0C0E2B0E`, 480 bytes, `src/gen_dt.c`)
+- equivalent on 13 development and 12 holdout cases, in `tests/gen_dt/FUN_0c0e2b0e.json`
+- case 120
+- case 1
+- case 3
+- case 5
+- case 7
+- case 9
+- case 11
+- case 51
+- case 70
+- case 85
+- case 111
+- case 116
+- case 126
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 10
+- case 31
+- case 64
+- case 77
+- case 96
+- case 114
+- case 118
+- the cases run 129 of 195 instructions
 
 ### FUN_0c0e2d00 (`0C0E2D00`, 108 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/FUN_0c0e2d00.json`
@@ -75069,6 +87076,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 41
 - the cases run 54 of 54 instructions
 
+### FUN_0c0e3630 (`0C0E3630`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0e3630.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 43
+- case 109
+- case 64
+- case 84
+- case 127
+- case 45
+- case 156
+- case 131
+- case 50
+- case 134
+- case 133
+- case 154
+- case 142
+- case 38
+- case 124
+- case 113
+- case 93
+- case 117
+- the cases run 38 of 43 instructions
+
 ### FUN_0c0e36ac (`0C0E36AC`, 20 bytes, `src/gen_k.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_k/FUN_0c0e36ac.json`
 - case 0
@@ -75108,6 +87155,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 113
 - case 72
 - the cases run 10 of 10 instructions
+
+### FUN_0c0e36c4 (`0C0E36C4`, 180 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0e36c4.json`
+- case 1
+- case 0
+- case 1
+- case 1
+- case 1
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 143
+- case 129
+- case 120
+- case 96
+- case 116
+- case 141
+- case 108
+- case 41
+- case 101
+- case 46
+- case 63
+- case 150
+- case 118
+- case 113
+- case 37
+- case 148
+- case 85
+- case 87
+- the cases run 88 of 88 instructions
 
 ### FUN_0c0e3792 (`0C0E3792`, 322 bytes, `src/gen_ct.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ct/FUN_0c0e3792.json`
@@ -75228,6 +87315,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 159
 - case 145
 - the cases run 91 of 91 instructions
+
+### FUN_0c0e3a08 (`0C0E3A08`, 538 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c0e3a08.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 8
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 18
+- case 19
+- case 27
+- case 30
+- case 32
+- case 33
+- case 35
+- case 104
+- case 76
+- case 98
+- case 148
+- case 95
+- case 146
+- case 110
+- case 119
+- case 111
+- case 147
+- case 96
+- case 130
+- case 139
+- case 132
+- case 118
+- case 74
+- case 106
+- case 109
+- the cases run 36 of 206 instructions
 
 ### FUN_0c0e3c22 (`0C0E3C22`, 280 bytes, `src/gen_cy.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cy/FUN_0c0e3c22.json`
@@ -75548,6 +87675,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 55
 - case 115
 - the cases run 108 of 119 instructions
+
+### FUN_0c0e432e (`0C0E432E`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/FUN_0c0e432e.json`
+- case 51
+- case 51
+- case 36
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 101
+- case 87
+- case 58
+- case 75
+- case 119
+- case 109
+- case 44
+- case 46
+- case 98
+- case 103
+- case 71
+- case 33
+- case 88
+- case 39
+- case 43
+- case 100
+- case 42
+- case 86
+- the cases run 67 of 73 instructions
+
+### FUN_0c0e43cc (`0C0E43CC`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c0e43cc.json`
+- case 13
+- case 0
+- case 13
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 101
+- case 107
+- case 73
+- case 55
+- case 87
+- case 72
+- case 113
+- case 112
+- case 88
+- case 78
+- case 56
+- case 108
+- case 98
+- case 84
+- case 42
+- case 117
+- case 39
+- case 85
+- the cases run 44 of 44 instructions
 
 ### FUN_0c0e4428 (`0C0E4428`, 74 bytes, `src/gen_s.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c0e4428.json`
@@ -76385,6 +88592,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 156
 - the cases run 41 of 41 instructions
 
+### FUN_0c0e542c (`0C0E542C`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c0e542c.json`
+- case 127
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 152
+- case 105
+- case 136
+- case 97
+- case 51
+- case 89
+- case 151
+- case 100
+- case 60
+- case 124
+- case 122
+- case 104
+- case 128
+- case 56
+- case 113
+- case 40
+- case 38
+- case 153
+- the cases run 86 of 86 instructions
+
 ### FUN_0c0e54ec (`0C0E54EC`, 122 bytes, `src/gen_bp.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/FUN_0c0e54ec.json`
 - case 144
@@ -77105,6 +89352,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 116
 - the cases run 21 of 21 instructions
 
+### FUN_0c0e59e0 (`0C0E59E0`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c0e59e0.json`
+- case 0
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 133
+- case 156
+- case 61
+- case 91
+- case 39
+- case 48
+- case 81
+- case 148
+- case 103
+- case 96
+- case 67
+- case 113
+- case 117
+- case 122
+- case 107
+- case 83
+- case 144
+- case 118
+- the cases run 92 of 92 instructions
+
 ### FUN_0c0e5aa0 (`0C0E5AA0`, 44 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/FUN_0c0e5aa0.json`
 - case 0
@@ -77762,6 +90049,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 73
 - case 69
 - the cases run 11 of 18 instructions
+
+### FUN_0c0e6700 (`0C0E6700`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c0e6700.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 68
+- case 41
+- case 149
+- case 117
+- case 101
+- case 43
+- case 82
+- case 144
+- case 65
+- case 58
+- case 145
+- case 70
+- case 110
+- case 107
+- case 44
+- case 35
+- case 50
+- case 127
+- the cases run 12 of 38 instructions
 
 ### FUN_0c0e6f60 (`0C0E6F60`, 2 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/FUN_0c0e6f60.json`
@@ -79087,46 +91414,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - the cases run 11 of 11 instructions
 
-### FUN_0c20ef82 (`0C20EF82`, 34 bytes, `src/gen_l.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_l/FUN_0c20ef82.json`
-- case 7
-- case 2
-- case 3
-- case 5
-- case 7
-- case 8
-- case 11
-- case 14
-- case 15
-- case 16
-- case 18
-- case 19
-- case 20
-- case 21
-- case 25
-- case 26
-- case 27
-- case 31
-- case 53
-- case 140
-- case 57
-- case 106
-- case 115
-- case 92
-- case 90
-- case 133
-- case 139
-- case 153
-- case 99
-- case 136
-- case 145
-- case 108
-- case 132
-- case 118
-- case 70
-- case 147
-- the cases run 17 of 17 instructions
-
 ### FUN_0c20f29a (`0C20F29A`, 22 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/FUN_0c20f29a.json`
 - case 2
@@ -79525,6 +91812,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 138
 - case 99
 - case 43
+- the cases run 58 of 58 instructions
+
+### FUN_0c211122 (`0C211122`, 596 bytes, `src/gen_do.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_do/FUN_0c211122.json`
+- case 2
+- case 0
+- case 10
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 159
+- case 155
+- case 107
+- case 151
+- case 105
+- case 50
+- case 141
+- case 118
+- case 131
+- case 43
+- case 89
+- case 120
+- case 47
+- case 140
+- case 59
+- case 62
+- case 158
+- case 148
 - the cases run 58 of 58 instructions
 
 ### FUN_0c211376 (`0C211376`, 50 bytes, `src/gen_l.c`)
@@ -79927,6 +92254,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 85
 - the cases run 3 of 3 instructions
 
+### FUN_0c214c44 (`0C214C44`, 84 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c214c44.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 55
+- case 107
+- case 97
+- case 36
+- case 91
+- case 102
+- case 52
+- case 50
+- case 94
+- case 115
+- case 66
+- case 63
+- case 114
+- case 99
+- case 68
+- case 88
+- case 37
+- case 103
+- the cases run 4 of 4 instructions
+
 ### FUN_0c214c80 (`0C214C80`, 42 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c214c80.json`
 - case 1
@@ -80287,6 +92654,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 147
 - the cases run 130 of 329 instructions
 
+### FUN_0c218514 (`0C218514`, 354 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c218514.json`
+- case 75
+- case 53
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 49
+- case 127
+- case 83
+- case 76
+- case 158
+- case 138
+- case 41
+- case 63
+- case 35
+- case 90
+- case 123
+- case 99
+- case 139
+- case 125
+- case 95
+- case 143
+- case 80
+- case 115
+- the cases run 120 of 120 instructions
+
 ### FUN_0c218676 (`0C218676`, 52 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c218676.json`
 - case 1
@@ -80446,6 +92853,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 81
 - case 99
 - the cases run 2 of 2 instructions
+
+### FUN_0c219808 (`0C219808`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c219808.json`
+- case 38
+- case 0
+- case 1
+- case 38
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 65
+- case 106
+- case 100
+- case 77
+- case 37
+- case 73
+- case 83
+- case 109
+- case 70
+- case 97
+- case 96
+- case 52
+- case 112
+- case 59
+- case 67
+- case 58
+- case 51
+- case 94
+- the cases run 35 of 36 instructions
 
 ### FUN_0c21b228 (`0C21B228`, 666 bytes, `src/gen_dd.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dd/FUN_0c21b228.json`
@@ -80737,12 +93184,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 128
 - the cases run 30 of 30 instructions
 
-### FUN_0c21fbc0 (`0C21FBC0`, 384 bytes, `src/gen_cq.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_cq/FUN_0c21fbc0.json`
-- rescue: empty case
-- rescue: empty case
-- the cases run 159 of 170 instructions
-
 ### FUN_0c220360 (`0C220360`, 626 bytes, `src/gen_de.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_de/FUN_0c220360.json`
 - rescue: empty case
@@ -80829,86 +93270,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 102
 - the cases run 2 of 2 instructions
 
-### FUN_0c220da8 (`0C220DA8`, 58 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c220da8.json`
-- case 2
-- case 1
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 18
-- case 152
-- case 51
-- case 144
-- case 96
-- case 75
-- case 60
-- case 57
-- case 140
-- case 80
-- case 97
-- case 58
-- case 136
-- case 155
-- case 112
-- case 118
-- case 44
-- case 73
-- case 157
-- the cases run 29 of 29 instructions
-
-### FUN_0c220de2 (`0C220DE2`, 46 bytes, `src/gen_z.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c220de2.json`
-- case 4
-- case 0
-- case 1
-- case 2
-- case 3
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 139
-- case 136
-- case 58
-- case 135
-- case 68
-- case 64
-- case 93
-- case 100
-- case 86
-- case 82
-- case 48
-- case 132
-- case 117
-- case 130
-- case 91
-- case 79
-- case 106
-- case 57
-- the cases run 23 of 23 instructions
-
 ### FUN_0c220e10 (`0C220E10`, 26 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c220e10.json`
 - case 0
@@ -80948,46 +93309,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - case 116
 - the cases run 13 of 13 instructions
-
-### FUN_0c220e2a (`0C220E2A`, 54 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c220e2a.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 60
-- case 79
-- case 39
-- case 40
-- case 48
-- case 61
-- case 76
-- case 92
-- case 66
-- case 88
-- case 108
-- case 65
-- case 53
-- case 83
-- case 63
-- case 94
-- case 41
-- case 47
-- the cases run 27 of 27 instructions
 
 ### FUN_0c22100e (`0C22100E`, 28 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c22100e.json`
@@ -81589,46 +93910,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 41
 - the cases run 6 of 10 instructions
 
-### FUN_0c22130c (`0C22130C`, 76 bytes, `src/gen_s.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/FUN_0c22130c.json`
-- case 1
-- case 2
-- case 5
-- case 6
-- case 7
-- case 8
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 18
-- case 23
-- case 24
-- case 27
-- case 28
-- case 29
-- case 30
-- case 156
-- case 79
-- case 76
-- case 117
-- case 86
-- case 145
-- case 90
-- case 158
-- case 84
-- case 150
-- case 103
-- case 82
-- case 138
-- case 87
-- case 75
-- case 144
-- case 99
-- case 155
-- the cases run 23 of 37 instructions
-
 ### FUN_0c221364 (`0C221364`, 30 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c221364.json`
 - case 0
@@ -81668,166 +93949,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 54
 - case 64
 - the cases run 11 of 11 instructions
-
-### FUN_0c22137a (`0C22137A`, 58 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c22137a.json`
-- case 0
-- case 2
-- case 3
-- case 4
-- case 8
-- case 9
-- case 11
-- case 14
-- case 15
-- case 16
-- case 19
-- case 20
-- case 27
-- case 29
-- case 30
-- case 32
-- case 37
-- case 39
-- case 146
-- case 110
-- case 123
-- case 126
-- case 152
-- case 147
-- case 103
-- case 118
-- case 136
-- case 145
-- case 102
-- case 158
-- case 127
-- case 89
-- case 85
-- case 114
-- case 111
-- case 99
-- the cases run 19 of 29 instructions
-
-### FUN_0c2213b4 (`0C2213B4`, 38 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c2213b4.json`
-- case 2
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 10
-- case 11
-- case 12
-- case 13
-- case 15
-- case 18
-- case 21
-- case 22
-- case 24
-- case 25
-- case 26
-- case 27
-- case 144
-- case 82
-- case 139
-- case 134
-- case 130
-- case 125
-- case 126
-- case 113
-- case 149
-- case 121
-- case 150
-- case 90
-- case 85
-- case 61
-- case 140
-- case 152
-- case 92
-- case 96
-- the cases run 7 of 19 instructions
-
-### FUN_0c2213da (`0C2213DA`, 38 bytes, `src/gen_m.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/FUN_0c2213da.json`
-- case 0
-- case 4
-- case 5
-- case 7
-- case 8
-- case 10
-- case 12
-- case 13
-- case 15
-- case 18
-- case 19
-- case 20
-- case 21
-- case 22
-- case 23
-- case 24
-- case 25
-- case 26
-- case 144
-- case 128
-- case 123
-- case 114
-- case 141
-- case 152
-- case 80
-- case 155
-- case 94
-- case 65
-- case 74
-- case 75
-- case 109
-- case 73
-- case 104
-- case 111
-- case 146
-- case 83
-- the cases run 15 of 19 instructions
-
-### FUN_0c22287e (`0C22287E`, 70 bytes, `src/gen_r.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c22287e.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 94
-- case 143
-- case 145
-- case 62
-- case 51
-- case 91
-- case 136
-- case 110
-- case 39
-- case 41
-- case 60
-- case 42
-- case 71
-- case 138
-- case 87
-- case 69
-- case 85
-- case 117
-- the cases run 35 of 35 instructions
 
 ### FUN_0c228e94 (`0C228E94`, 12 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c228e94.json`
@@ -82349,38 +94470,11 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 69
 - the cases run 10 of 10 instructions
 
-### FUN_0c22909c (`0C22909C`, 56 bytes, `src/gen_n.c`)
-- equivalent on 18 development and 6 holdout cases, in `tests/gen_n/FUN_0c22909c.json`
-- case 2
+### FUN_0c229172 (`0C229172`, 230 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/FUN_0c229172.json`
+- case 14
 - case 0
-- case 6
-- case 9
-- case 13
-- case 15
-- case 19
-- case 20
-- case 21
-- case 22
-- case 25
-- case 26
-- case 27
-- case 28
-- case 29
-- case 30
 - case 32
-- case 33
-- case 74
-- case 75
-- case 76
-- case 73
-- case 78
-- case 71
-- the cases run 28 of 28 instructions
-
-### FUN_0c2290d4 (`0C2290D4`, 78 bytes, `src/gen_t.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_t/FUN_0c2290d4.json`
-- case 29
-- case 0
 - case 1
 - case 2
 - case 3
@@ -82391,111 +94485,30 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 8
 - case 9
 - case 10
+- case 11
 - case 12
 - case 13
 - case 15
 - case 16
-- case 17
-- case 18
-- case 128
-- case 134
-- case 81
-- case 55
-- case 95
-- case 150
-- case 96
-- case 69
-- case 114
-- case 126
+- case 72
 - case 124
-- case 147
-- case 75
+- case 144
+- case 132
+- case 105
 - case 143
-- case 140
-- case 66
-- case 116
-- case 93
-- the cases run 39 of 39 instructions
-
-### FUN_0c229122 (`0C229122`, 80 bytes, `src/gen_u.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_u/FUN_0c229122.json`
-- case 13
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 14
-- case 15
-- case 16
-- case 17
-- case 76
-- case 42
-- case 121
-- case 57
-- case 44
-- case 41
-- case 69
-- case 141
-- case 139
-- case 89
-- case 113
-- case 123
-- case 118
-- case 54
-- case 38
-- case 45
-- case 115
-- case 101
-- the cases run 20 of 40 instructions
-
-### FUN_0c229314 (`0C229314`, 200 bytes, `src/gen_a.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_a/FUN_0c229314.json`
-- case 0
-- case 12
-- case 18
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 13
-- case 14
-- case 15
-- case 16
-- case 66
-- case 43
-- case 109
-- case 78
-- case 76
-- case 119
-- case 88
-- case 70
-- case 68
-- case 90
-- case 54
-- case 60
-- case 51
-- case 71
-- case 110
-- case 67
-- case 46
 - case 64
-- the cases run 79 of 100 instructions
+- case 156
+- case 85
+- case 84
+- case 104
+- case 93
+- case 151
+- case 127
+- case 47
+- case 111
+- case 126
+- case 54
+- the cases run 109 of 109 instructions
 
 ### FUN_0c229434 (`0C229434`, 96 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c229434.json`
@@ -82576,6 +94589,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 42
 - case 41
 - the cases run 4 of 4 instructions
+
+### FUN_0c229c6c (`0C229C6C`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c229c6c.json`
+- case 0
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 120
+- case 45
+- case 88
+- case 62
+- case 85
+- case 158
+- case 55
+- case 110
+- case 136
+- case 106
+- case 101
+- case 135
+- case 156
+- case 70
+- case 146
+- case 111
+- case 113
+- case 79
+- the cases run 43 of 45 instructions
 
 ### FUN_0c229ce0 (`0C229CE0`, 8 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c229ce0.json`
@@ -82696,46 +94749,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - case 41
 - the cases run 13 of 13 instructions
-
-### FUN_0c229d7e (`0C229D7E`, 62 bytes, `src/gen_n.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c229d7e.json`
-- case 1
-- case 0
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 91
-- case 111
-- case 94
-- case 100
-- case 37
-- case 42
-- case 62
-- case 116
-- case 60
-- case 85
-- case 48
-- case 74
-- case 90
-- case 49
-- case 57
-- case 82
-- case 40
-- case 73
-- the cases run 27 of 31 instructions
 
 ### FUN_0c229de6 (`0C229DE6`, 18 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c229de6.json`
@@ -83857,46 +95870,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 9 of 9 instructions
 
-### FUN_0c22a652 (`0C22A652`, 134 bytes, `src/gen_ck.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/FUN_0c22a652.json`
-- case 131
-- case 0
-- case 4
-- case 7
-- case 11
-- case 12
-- case 13
-- case 16
-- case 19
-- case 20
-- case 21
-- case 22
-- case 24
-- case 25
-- case 26
-- case 27
-- case 28
-- case 29
-- case 148
-- case 77
-- case 154
-- case 113
-- case 150
-- case 86
-- case 76
-- case 59
-- case 102
-- case 135
-- case 94
-- case 91
-- case 127
-- case 74
-- case 57
-- case 149
-- case 147
-- case 69
-- the cases run 65 of 67 instructions
-
 ### FUN_0c22a6d8 (`0C22A6D8`, 8 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c22a6d8.json`
 - case 0
@@ -84063,12 +96036,13 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 148
 - the cases run 18 of 18 instructions
 
-### FUN_0c22b3d8 (`0C22B3D8`, 42 bytes, `src/gen_z.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c22b3d8.json`
+### FUN_0c22b402 (`0C22B402`, 556 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/FUN_0c22b402.json`
 - case 0
+- case 3
+- case 18
 - case 1
 - case 2
-- case 3
 - case 4
 - case 5
 - case 6
@@ -84082,26 +96056,25 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 14
 - case 15
 - case 16
-- case 17
-- case 81
-- case 74
-- case 64
-- case 99
-- case 106
-- case 93
-- case 80
-- case 92
-- case 59
-- case 100
-- case 104
-- case 67
-- case 86
-- case 96
+- case 112
 - case 111
-- case 113
-- case 46
-- case 44
-- the cases run 21 of 21 instructions
+- case 106
+- case 147
+- case 60
+- case 67
+- case 109
+- case 94
+- case 45
+- case 40
+- case 79
+- case 74
+- case 122
+- case 102
+- case 78
+- case 140
+- case 58
+- case 159
+- the cases run 58 of 58 instructions
 
 ### FUN_0c22b6c8 (`0C22B6C8`, 24 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/FUN_0c22b6c8.json`
@@ -84623,6 +96596,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - the cases run 91 of 95 instructions
 
+### FUN_0c22bfa2 (`0C22BFA2`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/FUN_0c22bfa2.json`
+- case 116
+- case 6
+- case 37
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 197
+- case 118
+- case 95
+- case 110
+- case 214
+- case 203
+- case 160
+- case 80
+- case 45
+- case 92
+- case 224
+- case 34
+- case 223
+- case 135
+- case 112
+- case 184
+- case 145
+- case 217
+- the cases run 73 of 90 instructions
+
 ### FUN_0c22c3b8 (`0C22C3B8`, 274 bytes, `src/gen_cy.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cy/FUN_0c22c3b8.json`
 - case 41
@@ -84874,6 +96887,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 69
 - the cases run 15 of 15 instructions
 
+### FUN_0c22c7fe (`0C22C7FE`, 116 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c22c7fe.json`
+- case 0
+- case 31
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 94
+- case 56
+- case 83
+- case 71
+- case 50
+- case 51
+- case 96
+- case 60
+- case 89
+- case 116
+- case 43
+- case 110
+- case 37
+- case 81
+- case 88
+- case 57
+- case 93
+- case 38
+- the cases run 52 of 58 instructions
+
 ### FUN_0c22c884 (`0C22C884`, 56 bytes, `src/gen_z.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c22c884.json`
 - case 12
@@ -85073,6 +97126,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 53
 - case 85
 - the cases run 39 of 39 instructions
+
+### FUN_0c22cae2 (`0C22CAE2`, 90 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c22cae2.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 73
+- case 96
+- case 105
+- case 119
+- case 117
+- case 50
+- case 59
+- case 42
+- case 52
+- case 93
+- case 97
+- case 81
+- case 51
+- case 56
+- case 47
+- case 100
+- case 109
+- case 54
+- the cases run 18 of 29 instructions
 
 ### FUN_0c22cb3c (`0C22CB3C`, 62 bytes, `src/gen_z.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_z/FUN_0c22cb3c.json`
@@ -85794,6 +97887,78 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 144
 - the cases run 84 of 137 instructions
 
+### FUN_0c22e3f4 (`0C22E3F4`, 766 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 10 holdout cases, in `tests/gen_dm/FUN_0c22e3f4.json`
+- case 23
+- case 8
+- case 3
+- case 7
+- case 14
+- case 15
+- case 18
+- case 20
+- case 22
+- case 24
+- case 29
+- case 31
+- case 41
+- case 42
+- case 46
+- case 49
+- case 54
+- case 56
+- case 143
+- case 156
+- case 145
+- case 144
+- case 157
+- case 130
+- case 142
+- case 123
+- case 147
+- case 153
+- the cases run 160 of 306 instructions
+
+### FUN_0c22e6f2 (`0C22E6F2`, 472 bytes, `src/gen_dv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dv/FUN_0c22e6f2.json`
+- case 34
+- case 0
+- case 3
+- case 4
+- case 10
+- case 12
+- case 13
+- case 14
+- case 16
+- case 20
+- case 22
+- case 24
+- case 26
+- case 27
+- case 28
+- case 32
+- case 33
+- case 36
+- case 146
+- case 107
+- case 85
+- case 122
+- case 94
+- case 83
+- case 119
+- case 118
+- case 80
+- case 97
+- case 82
+- case 142
+- case 131
+- case 81
+- case 116
+- case 120
+- case 105
+- case 157
+- the cases run 121 of 169 instructions
+
 ### FUN_0c22e8ca (`0C22E8CA`, 322 bytes, `src/gen_ct.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ct/FUN_0c22e8ca.json`
 - case 16
@@ -86067,6 +98232,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 48
 - case 50
 - the cases run 49 of 76 instructions
+
+### FUN_0c22f312 (`0C22F312`, 802 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dm/FUN_0c22f312.json`
+- case 71
+- case 77
+- case 1
+- case 12
+- case 19
+- case 22
+- case 29
+- case 40
+- case 51
+- case 71
+- case 82
+- case 88
+- case 96
+- case 98
+- case 107
+- case 115
+- case 128
+- case 138
+- case 71
+- case 14
+- case 11
+- case 16
+- case 20
+- case 23
+- case 30
+- case 50
+- case 53
+- case 76
+- case 85
+- case 94
+- case 97
+- case 101
+- case 113
+- case 125
+- case 135
+- case 141
+- the cases run 207 of 311 instructions
 
 ### FUN_0c22f788 (`0C22F788`, 44 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_o/FUN_0c22f788.json`
@@ -86696,86 +98901,6 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 117
 - the cases run 18 of 18 instructions
 
-### FUN_0c232ef4 (`0C232EF4`, 72 bytes, `src/gen_r.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/FUN_0c232ef4.json`
-- case 0
-- case 6
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 88
-- case 69
-- case 104
-- case 60
-- case 133
-- case 113
-- case 68
-- case 52
-- case 42
-- case 74
-- case 84
-- case 136
-- case 56
-- case 78
-- case 140
-- case 90
-- case 106
-- case 141
-- the cases run 36 of 36 instructions
-
-### FUN_0c232f3c (`0C232F3C`, 40 bytes, `src/gen_o.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_o/FUN_0c232f3c.json`
-- case 0
-- case 1
-- case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 17
-- case 84
-- case 71
-- case 42
-- case 100
-- case 38
-- case 95
-- case 85
-- case 82
-- case 36
-- case 45
-- case 117
-- case 110
-- case 98
-- case 70
-- case 79
-- case 83
-- case 46
-- case 87
-- the cases run 20 of 20 instructions
-
 ### FUN_0c232f64 (`0C232F64`, 38 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_o/FUN_0c232f64.json`
 - case 0
@@ -86855,6 +98980,27 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 69
 - case 140
 - the cases run 146 of 201 instructions
+
+### FUN_0c23314c (`0C23314C`, 162 bytes, `src/gen_eh.c`)
+- equivalent on 9 development and 8 holdout cases, in `tests/gen_eh/FUN_0c23314c.json`
+- case 3
+- case 1
+- case 6
+- case 8
+- case 14
+- case 16
+- case 18
+- case 20
+- case 23
+- case 13
+- case 5
+- case 7
+- case 12
+- case 15
+- case 17
+- case 19
+- case 22
+- the cases run 78 of 80 instructions
 
 ### FUN_0c2331ee (`0C2331EE`, 144 bytes, `src/gen_ch.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ch/FUN_0c2331ee.json`
@@ -87096,11 +99242,91 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 111
 - the cases run 17 of 17 instructions
 
+### FUN_0c2333cc (`0C2333CC`, 86 bytes, `src/gen_ep.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ep/FUN_0c2333cc.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 74
+- case 40
+- case 112
+- case 113
+- case 42
+- case 36
+- case 61
+- case 108
+- case 55
+- case 88
+- case 64
+- case 114
+- case 46
+- case 41
+- case 78
+- case 82
+- case 91
+- case 92
+- the cases run 43 of 43 instructions
+
 ### FUN_0c233422 (`0C233422`, 52 bytes, `src/gen_o.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_o/FUN_0c233422.json`
 - rescue: empty case
 - rescue: empty case
 - the cases run 26 of 26 instructions
+
+### FUN_0c233456 (`0C233456`, 92 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/FUN_0c233456.json`
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 44
+- case 117
+- case 63
+- case 78
+- case 86
+- case 47
+- case 42
+- case 115
+- case 101
+- case 65
+- case 45
+- case 93
+- case 38
+- case 54
+- case 91
+- case 70
+- case 119
+- case 49
+- the cases run 46 of 46 instructions
 
 ### FUN_0c2334c8 (`0C2334C8`, 62 bytes, `src/gen_p.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_p/FUN_0c2334c8.json`
@@ -87221,6 +99447,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 100
 - case 101
 - the cases run 16 of 16 instructions
+
+### FUN_0c2335c8 (`0C2335C8`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/FUN_0c2335c8.json`
+- case 17
+- case 0
+- case 28
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 132
+- case 142
+- case 46
+- case 92
+- case 82
+- case 152
+- case 38
+- case 134
+- case 102
+- case 120
+- case 57
+- case 84
+- case 157
+- case 108
+- case 117
+- case 90
+- case 126
+- case 73
+- the cases run 47 of 47 instructions
 
 ### FUN_0c23363e (`0C23363E`, 84 bytes, `src/gen_bw.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bw/FUN_0c23363e.json`
@@ -88092,52 +100358,11 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 36
 - the cases run 4 of 4 instructions
 
-### FUN_0c235f56 (`0C235F56`, 58 bytes, `src/gen_p.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_p/FUN_0c235f56.json`
-- case 77
+### FUN_0c235ea4 (`0C235EA4`, 178 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/FUN_0c235ea4.json`
 - case 0
 - case 1
 - case 2
-- case 3
-- case 4
-- case 5
-- case 6
-- case 7
-- case 8
-- case 9
-- case 10
-- case 11
-- case 12
-- case 13
-- case 14
-- case 15
-- case 16
-- case 91
-- case 88
-- case 46
-- case 93
-- case 126
-- case 100
-- case 122
-- case 121
-- case 90
-- case 106
-- case 89
-- case 40
-- case 66
-- case 146
-- case 92
-- case 142
-- case 45
-- case 95
-- the cases run 19 of 29 instructions
-
-### FUN_0c23601c (`0C23601C`, 60 bytes, `src/gen_p.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_p/FUN_0c23601c.json`
-- case 0
-- case 1
-- case 2
-- case 3
 - case 4
 - case 5
 - case 6
@@ -88152,25 +100377,26 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 16
 - case 17
-- case 65
-- case 74
-- case 155
-- case 110
-- case 117
-- case 88
-- case 46
-- case 77
-- case 123
-- case 109
-- case 47
-- case 140
-- case 70
-- case 101
-- case 94
+- case 18
 - case 152
-- case 51
-- case 146
-- the cases run 30 of 30 instructions
+- case 113
+- case 40
+- case 50
+- case 124
+- case 57
+- case 119
+- case 91
+- case 68
+- case 92
+- case 43
+- case 87
+- case 131
+- case 155
+- case 64
+- case 122
+- case 134
+- case 130
+- the cases run 11 of 67 instructions
 
 ### FUN_0c9de360 (`0C9DE360`, 122 bytes, `src/gen_bg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bg/FUN_0c9de360.json`
@@ -88818,6 +101044,52 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 270
 - the cases run 34 of 34 instructions
 
+### adxf_SetFileInfo (`0C2143E2`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_eh/adxf_SetFileInfo.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 46 of 58 instructions
+
+### adxf_read_sj32 (`0C21461C`, 226 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/adxf_read_sj32.json`
+- case 0
+- case 32
+- case 1
+- case 123
+- case 34
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 61
+- case 57
+- case 55
+- case 39
+- case 38
+- case 145
+- case 72
+- case 152
+- case 109
+- case 99
+- case 93
+- case 119
+- case 116
+- case 101
+- case 126
+- case 80
+- case 62
+- case 63
+- the cases run 82 of 86 instructions
+
 ### adxf_wait_1ms (`0C213F24`, 10 bytes, `src/gen_ab.c`)
 - equivalent on 3 development and 3 holdout cases, in `tests/gen_ab/adxf_wait_1ms.json`
 - case 0
@@ -88988,6 +101260,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 362
 - the cases run 37 of 96 instructions
 
+### adxstmf_stat_exec (`0C22A93E`, 362 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/adxstmf_stat_exec.json`
+- case 125
+- case 1
+- case 4
+- case 9
+- case 5
+- case 7
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 147
+- case 114
+- case 98
+- case 148
+- case 128
+- case 106
+- case 139
+- case 73
+- case 144
+- case 121
+- case 59
+- case 155
+- case 136
+- case 130
+- case 60
+- case 137
+- case 145
+- case 91
+- the cases run 90 of 168 instructions
+
 ### adxt_RcvrReplay (`0C22B028`, 274 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 10 holdout cases, in `tests/gen_cz/adxt_RcvrReplay.json`
 - case 18
@@ -89059,6 +101371,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 72
 - case 67
 - the cases run 20 of 20 instructions
+
+### adxt_set_outpan (`0C22ACD8`, 168 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/adxt_set_outpan.json`
+- case 0
+- case 5
+- case 1
+- case 2
+- case 3
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 111
+- case 52
+- case 53
+- case 58
+- case 49
+- case 108
+- case 115
+- case 69
+- case 100
+- case 77
+- case 54
+- case 112
+- case 75
+- case 59
+- case 71
+- case 68
+- case 116
+- case 114
+- the cases run 49 of 56 instructions
 
 ### adxt_start_sj (`0C2139DC`, 48 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/adxt_start_sj.json`
@@ -89219,6 +101571,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 106
 - case 77
 - the cases run 2 of 2 instructions
+
+### bcdtime2fad (`0C220E2A`, 54 bytes, `src/gen_m.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/bcdtime2fad.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 60
+- case 79
+- case 39
+- case 40
+- case 48
+- case 61
+- case 76
+- case 92
+- case 66
+- case 88
+- case 108
+- case 65
+- case 53
+- case 83
+- case 63
+- case 94
+- case 41
+- case 47
+- the cases run 27 of 27 instructions
 
 ### buAnalyzeBackupFileImage (`0C212F5C`, 332 bytes, `src/gen_ct.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ct/buAnalyzeBackupFileImage.json`
@@ -89699,6 +102091,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - case 98
 - the cases run 15 of 15 instructions
+
+### buFbrCreateFiber (`0C233E86`, 220 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/buFbrCreateFiber.json`
+- case 0
+- case 24
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 42
+- case 40
+- case 86
+- case 110
+- case 127
+- case 47
+- case 118
+- case 50
+- case 112
+- case 49
+- case 142
+- case 89
+- case 46
+- case 143
+- case 98
+- case 115
+- case 107
+- case 53
+- the cases run 87 of 87 instructions
 
 ### buFbrExecFiberServer (`0C2340F8`, 206 bytes, `src/gen_cb.c`)
 - equivalent on 7 development and 6 holdout cases, in `tests/gen_cb/buFbrExecFiberServer.json`
@@ -91317,6 +103749,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 132
 - the cases run 5 of 5 instructions
 
+### ccitt_updcrc (`0C220DA8`, 58 bytes, `src/gen_m.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/ccitt_updcrc.json`
+- case 2
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 152
+- case 51
+- case 144
+- case 96
+- case 75
+- case 60
+- case 57
+- case 140
+- case 80
+- case 97
+- case 58
+- case 136
+- case 155
+- case 112
+- case 118
+- case 44
+- case 73
+- case 157
+- the cases run 29 of 29 instructions
+
 ### check_isopen (`0C2283D0`, 4 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/check_isopen.json`
 - case 0
@@ -91557,6 +104029,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 156
 - the cases run 33 of 33 instructions
 
+### crcchk (`0C220DE2`, 46 bytes, `src/gen_z.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/crcchk.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 139
+- case 136
+- case 58
+- case 135
+- case 68
+- case 64
+- case 93
+- case 100
+- case 86
+- case 82
+- case 48
+- case 132
+- case 117
+- case 130
+- case 91
+- case 79
+- case 106
+- case 57
+- the cases run 23 of 23 instructions
+
 ### direntry (`0C228368`, 24 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/direntry.json`
 - case 0
@@ -91637,6 +104149,114 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 101
 - the cases run 13 of 13 instructions
 
+### fmMngAddData (`0C229314`, 200 bytes, `src/gen_a.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_a/fmMngAddData.json`
+- case 0
+- case 12
+- case 18
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 66
+- case 43
+- case 109
+- case 78
+- case 76
+- case 119
+- case 88
+- case 70
+- case 68
+- case 90
+- case 54
+- case 60
+- case 51
+- case 71
+- case 110
+- case 67
+- case 46
+- case 64
+- the cases run 79 of 100 instructions
+
+### fmMngBit2Num (`0C22909C`, 56 bytes, `src/gen_n.c`)
+- equivalent on 18 development and 6 holdout cases, in `tests/gen_n/fmMngBit2Num.json`
+- case 2
+- case 0
+- case 6
+- case 9
+- case 13
+- case 15
+- case 19
+- case 20
+- case 21
+- case 22
+- case 25
+- case 26
+- case 27
+- case 28
+- case 29
+- case 30
+- case 32
+- case 33
+- case 74
+- case 75
+- case 76
+- case 73
+- case 78
+- case 71
+- the cases run 28 of 28 instructions
+
+### fmMngChkEmptyData (`0C229122`, 80 bytes, `src/gen_u.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_u/fmMngChkEmptyData.json`
+- case 13
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 15
+- case 16
+- case 17
+- case 76
+- case 42
+- case 121
+- case 57
+- case 44
+- case 41
+- case 69
+- case 141
+- case 139
+- case 89
+- case 113
+- case 123
+- case 118
+- case 54
+- case 38
+- case 45
+- case 115
+- case 101
+- the cases run 20 of 40 instructions
+
 ### fmMngInit (`0C229494`, 260 bytes, `src/gen_db.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_db/fmMngInit.json`
 - case 1
@@ -91676,6 +104296,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - case 85
 - the cases run 19 of 116 instructions
+
+### fmMngNum2Bit (`0C2290D4`, 78 bytes, `src/gen_t.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_t/fmMngNum2Bit.json`
+- case 29
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 18
+- case 128
+- case 134
+- case 81
+- case 55
+- case 95
+- case 150
+- case 96
+- case 69
+- case 114
+- case 126
+- case 124
+- case 147
+- case 75
+- case 143
+- case 140
+- case 66
+- case 116
+- case 93
+- the cases run 39 of 39 instructions
 
 ### fmMngRead (`0C229624`, 60 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/fmMngRead.json`
@@ -91997,6 +104657,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 107
 - the cases run 20 of 20 instructions
 
+### gdFsCheckMedia (`0C20EF82`, 34 bytes, `src/gen_l.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_l/gdFsCheckMedia.json`
+- case 7
+- case 2
+- case 3
+- case 5
+- case 7
+- case 8
+- case 11
+- case 14
+- case 15
+- case 16
+- case 18
+- case 19
+- case 20
+- case 21
+- case 25
+- case 26
+- case 27
+- case 31
+- case 53
+- case 140
+- case 57
+- case 106
+- case 115
+- case 92
+- case 90
+- case 133
+- case 139
+- case 153
+- case 99
+- case 136
+- case 145
+- case 108
+- case 132
+- case 118
+- case 70
+- case 147
+- the cases run 17 of 17 instructions
+
 ### gdFsClose (`0C221934`, 56 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsClose.json`
 - case 79
@@ -92076,6 +104776,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 99
 - case 52
 - the cases run 6 of 6 instructions
+
+### gdFsCreateHnG (`0C20FA00`, 112 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/gdFsCreateHnG.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 80
+- case 58
+- case 64
+- case 38
+- case 113
+- case 108
+- case 63
+- case 41
+- case 115
+- case 74
+- case 50
+- case 37
+- case 77
+- case 96
+- case 47
+- case 60
+- case 75
+- case 46
+- the cases run 46 of 46 instructions
 
 ### gdFsDaPauseG (`0C20FFDA`, 188 bytes, `src/gen_ce.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ce/gdFsDaPauseG.json`
@@ -92597,6 +105337,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 110
 - the cases run 11 of 11 instructions
 
+### gdFsGetSearchID (`0C2213DA`, 38 bytes, `src/gen_m.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsGetSearchID.json`
+- case 0
+- case 4
+- case 5
+- case 7
+- case 8
+- case 10
+- case 12
+- case 13
+- case 15
+- case 18
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 25
+- case 26
+- case 144
+- case 128
+- case 123
+- case 114
+- case 141
+- case 152
+- case 80
+- case 155
+- case 94
+- case 65
+- case 74
+- case 75
+- case 109
+- case 73
+- case 104
+- case 111
+- case 146
+- case 83
+- the cases run 15 of 19 instructions
+
 ### gdFsGetStat (`0C221EE4`, 24 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsGetStat.json`
 - case 1
@@ -92716,6 +105496,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 98
 - case 156
 - the cases run 4 of 4 instructions
+
+### gdFsGetTokenSize (`0C2213B4`, 38 bytes, `src/gen_m.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsGetTokenSize.json`
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 18
+- case 21
+- case 22
+- case 24
+- case 25
+- case 26
+- case 27
+- case 144
+- case 82
+- case 139
+- case 134
+- case 130
+- case 125
+- case 126
+- case 113
+- case 149
+- case 121
+- case 150
+- case 90
+- case 85
+- case 61
+- case 140
+- case 152
+- case 92
+- case 96
+- the cases run 7 of 19 instructions
 
 ### gdFsGetTransStat (`0C221E38`, 26 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsGetTransStat.json`
@@ -93065,6 +105885,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 41
 - the cases run 3 of 3 instructions
 
+### gdFsOpenRangeG (`0C20FAEC`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/gdFsOpenRangeG.json`
+- case 156
+- case 0
+- case 7
+- case 1
+- case 2
+- case 3
+- case 4
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 57
+- case 115
+- case 126
+- case 79
+- case 55
+- case 85
+- case 99
+- case 41
+- case 47
+- case 136
+- case 49
+- case 153
+- case 119
+- case 74
+- case 148
+- case 127
+- case 129
+- case 146
+- the cases run 47 of 47 instructions
+
 ### gdFsReadWG (`0C20F234`, 62 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/gdFsReadWG.json`
 - case 0
@@ -93145,6 +106005,23 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 87
 - the cases run 11 of 11 instructions
 
+### gdFsReinitG (`0C20F6F2`, 234 bytes, `src/gen_eb.c`)
+- equivalent on 7 development and 6 holdout cases, in `tests/gen_eb/gdFsReinitG.json`
+- case 4
+- case 6
+- case 15
+- case 32
+- case 35
+- case 39
+- case 42
+- case 0
+- case 8
+- case 25
+- case 34
+- case 36
+- case 41
+- the cases run 111 of 111 instructions
+
 ### gdFsSetGlobalErrG (`0C20EFA4`, 10 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/gdFsSetGlobalErrG.json`
 - case 12
@@ -93224,6 +106101,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 107
 - case 40
 - the cases run 13 of 13 instructions
+
+### gdFsStrcmpi (`0C22137A`, 58 bytes, `src/gen_m.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsStrcmpi.json`
+- case 0
+- case 2
+- case 3
+- case 4
+- case 8
+- case 9
+- case 11
+- case 14
+- case 15
+- case 16
+- case 19
+- case 20
+- case 27
+- case 29
+- case 30
+- case 32
+- case 37
+- case 39
+- case 146
+- case 110
+- case 123
+- case 126
+- case 152
+- case 147
+- case 103
+- case 118
+- case 136
+- case 145
+- case 102
+- case 158
+- case 127
+- case 89
+- case 85
+- case 114
+- case 111
+- case 99
+- the cases run 19 of 29 instructions
+
+### gdFsStrncmpi (`0C22130C`, 76 bytes, `src/gen_s.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/gdFsStrncmpi.json`
+- case 1
+- case 2
+- case 5
+- case 6
+- case 7
+- case 8
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 18
+- case 23
+- case 24
+- case 27
+- case 28
+- case 29
+- case 30
+- case 156
+- case 79
+- case 76
+- case 117
+- case 86
+- case 145
+- case 90
+- case 158
+- case 84
+- case 150
+- case 103
+- case 82
+- case 138
+- case 87
+- case 75
+- case 144
+- case 99
+- case 155
+- the cases run 23 of 37 instructions
 
 ### gdFsTell (`0C221A06`, 22 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/gdFsTell.json`
@@ -95351,6 +108308,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 91
 - the cases run 15 of 15 instructions
 
+### kmChangeContextFogMode (`0C21D1EE`, 114 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/kmChangeContextFogMode.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 96
+- case 66
+- case 111
+- case 94
+- case 118
+- case 115
+- case 76
+- case 67
+- case 79
+- case 90
+- case 72
+- case 39
+- case 117
+- case 38
+- case 102
+- case 54
+- case 89
+- case 48
+- the cases run 15 of 15 instructions
+
 ### kmChangeContextPaletteBank (`0C21D3A0`, 56 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmChangeContextPaletteBank.json`
 - case 16
@@ -95471,6 +108468,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 67
 - the cases run 15 of 15 instructions
 
+### kmChangeContextSuperSample (`0C21D2DA`, 120 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/kmChangeContextSuperSample.json`
+- case 0
+- case 29
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 70
+- case 56
+- case 68
+- case 49
+- case 63
+- case 92
+- case 66
+- case 55
+- case 43
+- case 89
+- case 100
+- case 101
+- case 81
+- case 52
+- case 50
+- case 39
+- case 51
+- case 106
+- the cases run 19 of 19 instructions
+
 ### kmChangeContextUserClipMode (`0C21D3F6`, 106 bytes, `src/gen_br.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_br/kmChangeContextUserClipMode.json`
 - case 0
@@ -95510,6 +108547,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 88
 - case 103
 - the cases run 14 of 14 instructions
+
+### kmChangeContextZWriteDisable (`0C21CF8A`, 118 bytes, `src/gen_ek.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ek/kmChangeContextZWriteDisable.json`
+- case 0
+- case 20
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 87
+- case 117
+- case 85
+- case 97
+- case 102
+- case 90
+- case 95
+- case 47
+- case 51
+- case 59
+- case 56
+- case 44
+- case 68
+- case 77
+- case 98
+- case 42
+- case 112
+- case 41
+- the cases run 19 of 19 instructions
 
 ### kmChangeVertexOffset (`0C21DC10`, 24 bytes, `src/gen_m.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_m/kmChangeVertexOffset.json`
@@ -96055,6 +109132,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 90
 - the cases run 78 of 81 instructions
 
+### kmLoadTextureBlock (`0C21ACBC`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/kmLoadTextureBlock.json`
+- case 11
+- case 8
+- case 3
+- case 0
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 9
+- case 10
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 104
+- case 83
+- case 37
+- case 94
+- case 118
+- case 36
+- case 46
+- case 98
+- case 79
+- case 90
+- case 96
+- case 77
+- case 51
+- case 60
+- case 64
+- case 108
+- case 61
+- case 107
+- the cases run 52 of 52 instructions
+
 ### kmLoadVQCodebook (`0C21AFFE`, 138 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/kmLoadVQCodebook.json`
 - case 8
@@ -96094,6 +109211,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 158
 - case 156
 - the cases run 28 of 42 instructions
+
+### kmLoadYUVTexture (`0C21AE92`, 364 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/kmLoadYUVTexture.json`
+- case 7
+- case 1
+- case 2
+- case 4
+- case 5
+- case 9
+- case 10
+- case 11
+- case 15
+- case 16
+- case 18
+- case 19
+- case 20
+- case 21
+- case 22
+- case 23
+- case 24
+- case 25
+- case 44
+- case 103
+- case 57
+- case 75
+- case 156
+- case 106
+- case 110
+- case 54
+- case 109
+- case 51
+- case 66
+- case 68
+- case 159
+- case 104
+- case 97
+- case 67
+- case 91
+- case 80
+- the cases run 42 of 157 instructions
 
 ### kmQueryFinishFlushVertexBuffer (`0C21D93C`, 28 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmQueryFinishFlushVertexBuffer.json`
@@ -96214,6 +109371,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 94
 - case 87
 - the cases run 9 of 9 instructions
+
+### kmRenderTextureDirect (`0C21A516`, 616 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/kmRenderTextureDirect.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 121
+- case 45
+- case 83
+- case 153
+- case 134
+- case 107
+- case 126
+- case 43
+- case 63
+- case 119
+- case 143
+- case 111
+- case 116
+- case 53
+- case 77
+- case 125
+- case 109
+- case 54
+- the cases run 28 of 230 instructions
 
 ### kmResetRenderer (`0C20E672`, 20 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/kmResetRenderer.json`
@@ -96734,6 +109931,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 139
 - case 88
 - the cases run 33 of 41 instructions
+
+### kmSetPixelClipping (`0C20E402`, 170 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/kmSetPixelClipping.json`
+- case 0
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 55
+- case 58
+- case 50
+- case 39
+- case 111
+- case 70
+- case 83
+- case 108
+- case 117
+- case 88
+- case 100
+- case 43
+- case 47
+- case 36
+- case 59
+- case 82
+- case 106
+- case 101
+- the cases run 46 of 46 instructions
 
 ### kmSetStripLength (`0C21CE94`, 8 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmSetStripLength.json`
@@ -97575,6 +110812,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - the cases run 2 of 2 instructions
 
+### kmiCopyToFrameBuffer (`0C218E40`, 226 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/kmiCopyToFrameBuffer.json`
+- case 90
+- case 0
+- case 7
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 44
+- case 59
+- case 85
+- case 109
+- case 120
+- case 88
+- case 143
+- case 82
+- case 70
+- case 58
+- case 158
+- case 128
+- case 65
+- case 74
+- case 114
+- case 132
+- case 61
+- case 41
+- the cases run 93 of 93 instructions
+
 ### kmiCopyToPVRMemory (`0C218DDC`, 22 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmiCopyToPVRMemory.json`
 - case 0
@@ -97774,6 +111051,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 60
 - case 101
 - the cases run 13 of 13 instructions
+
+### kmiExecuteDMAChain (`0C216EE0`, 312 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/kmiExecuteDMAChain.json`
+- case 16
+- case 16
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 84
+- case 157
+- case 36
+- case 78
+- case 94
+- case 147
+- case 152
+- case 40
+- case 128
+- case 44
+- case 116
+- case 123
+- case 154
+- case 99
+- case 124
+- case 89
+- case 109
+- case 136
+- the cases run 123 of 123 instructions
 
 ### kmiFBGarbageCollect (`0C22E0EE`, 60 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_o/kmiFBGarbageCollect.json`
@@ -98865,6 +112182,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 35 of 135 instructions
 
+### kmiVertexTransferTADirect (`0C21FB68`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/kmiVertexTransferTADirect.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 78
+- case 80
+- case 61
+- case 88
+- case 74
+- case 79
+- case 107
+- case 72
+- case 46
+- case 54
+- case 82
+- case 96
+- case 64
+- case 76
+- case 112
+- case 90
+- case 36
+- case 57
+- the cases run 2 of 2 instructions
+
 ### kmiWaitAccurate (`0C2179A0`, 40 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmiWaitAccurate.json`
 - case 11
@@ -98951,6 +112308,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: 0C95266C changes between reads
 - the cases run 8 of 8 instructions
 
+### kmiWriteFBRegister (`0C21FBC0`, 384 bytes, `src/gen_cq.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_cq/kmiWriteFBRegister.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 159 of 170 instructions
+
 ### kmiWriteRegisters (`0C218F46`, 32 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmiWriteRegisters.json`
 - case 3
@@ -99030,6 +112393,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - case 114
 - the cases run 17 of 17 instructions
+
+### kmytex_FBDeQueueEntry (`0C22EEF2`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/kmytex_FBDeQueueEntry.json`
+- case 20
+- case 130
+- case 27
+- case 30
+- case 43
+- case 53
+- case 60
+- case 63
+- case 68
+- case 83
+- case 97
+- case 101
+- case 115
+- case 121
+- case 127
+- case 139
+- case 150
+- case 152
+- case 35
+- case 25
+- case 29
+- case 41
+- case 46
+- case 57
+- case 61
+- case 65
+- case 69
+- case 87
+- case 99
+- case 106
+- case 118
+- case 122
+- case 134
+- case 145
+- case 151
+- case 153
+- the cases run 24 of 24 instructions
 
 ### kmytex_FBEnQueueEntry (`0C22EED6`, 28 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_o/kmytex_FBEnQueueEntry.json`
@@ -100192,6 +113595,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 127
 - case 90
 - the cases run 140 of 151 instructions
+
+### mpdrv_make_exdevicedata (`0C231814`, 306 bytes, `src/gen_eb.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eb/mpdrv_make_exdevicedata.json`
+- case 23
+- case 71
+- case 64
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 77
+- case 125
+- case 55
+- case 97
+- case 56
+- case 141
+- case 91
+- case 143
+- case 54
+- case 69
+- case 128
+- case 80
+- case 123
+- case 79
+- case 159
+- case 110
+- case 129
+- case 137
+- the cases run 102 of 149 instructions
 
 ### mpdrv_memset_l (`0C231F60`, 22 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 11 holdout cases, in `tests/gen_o/mpdrv_memset_l.json`
@@ -101632,6 +115075,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - the cases run 12 of 12 instructions
 
+### mpdrv_setcmd (`0C230FC8`, 618 bytes, `src/gen_dt.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dt/mpdrv_setcmd.json`
+- case 8
+- case 13
+- case 19
+- case 29
+- case 37
+- case 44
+- case 63
+- case 65
+- case 75
+- case 79
+- case 85
+- case 90
+- case 94
+- case 98
+- case 102
+- case 108
+- case 117
+- case 132
+- case 0
+- case 15
+- case 20
+- case 33
+- case 41
+- case 60
+- case 64
+- case 70
+- case 77
+- case 83
+- case 89
+- case 93
+- case 97
+- case 101
+- case 103
+- case 114
+- case 126
+- case 133
+- the cases run 216 of 286 instructions
+
 ### mpdrv_setcmd_force (`0C23123C`, 526 bytes, `src/gen_dg.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_dg/mpdrv_setcmd_force.json`
 - case 4
@@ -102352,6 +115835,1775 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - the cases run 20 of 20 instructions
 
+### mwlSbAllocWork (`0C232EF4`, 72 bytes, `src/gen_r.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/mwlSbAllocWork.json`
+- case 0
+- case 6
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 88
+- case 69
+- case 104
+- case 60
+- case 133
+- case 113
+- case 68
+- case 52
+- case 42
+- case 74
+- case 84
+- case 136
+- case 56
+- case 78
+- case 140
+- case 90
+- case 106
+- case 141
+- the cases run 36 of 36 instructions
+
+### mwlSbFreeWork (`0C232F3C`, 40 bytes, `src/gen_o.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_o/mwlSbFreeWork.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 84
+- case 71
+- case 42
+- case 100
+- case 38
+- case 95
+- case 85
+- case 82
+- case 36
+- case 45
+- case 117
+- case 110
+- case 98
+- case 70
+- case 79
+- case 83
+- case 46
+- case 87
+- the cases run 20 of 20 instructions
+
+### nlAddVector (`0C0DCD10`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlAddVector.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 68
+- case 107
+- case 88
+- case 110
+- case 114
+- case 95
+- case 103
+- case 117
+- case 47
+- case 75
+- case 116
+- case 106
+- case 105
+- case 71
+- case 89
+- case 77
+- case 86
+- case 112
+- the cases run 16 of 16 instructions
+
+### nlAddVector3op (`0C0DCD30`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlAddVector3op.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 108
+- case 107
+- case 109
+- case 83
+- case 47
+- case 69
+- case 53
+- case 91
+- case 36
+- case 85
+- case 97
+- case 75
+- case 57
+- case 45
+- case 88
+- case 66
+- case 44
+- case 93
+- the cases run 16 of 16 instructions
+
+### nlCommonTextureClearTextureIndex (`0C0D82A0`, 36 bytes, `src/gen_h.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_h/nlCommonTextureClearTextureIndex.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 18 of 18 instructions
+
+### nlCommonTextureGarbageCollection (`0C0D8310`, 62 bytes, `src/gen_h.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_h/nlCommonTextureGarbageCollection.json`
+- case 4
+- case 0
+- case 6
+- case 7
+- case 9
+- case 12
+- case 13
+- case 14
+- case 18
+- case 19
+- case 20
+- case 23
+- case 24
+- case 27
+- case 30
+- case 37
+- case 41
+- case 42
+- case 91
+- case 149
+- case 156
+- case 84
+- case 92
+- case 104
+- case 144
+- case 102
+- case 111
+- case 140
+- case 93
+- case 109
+- case 141
+- case 90
+- case 153
+- case 83
+- case 127
+- case 119
+- the cases run 27 of 27 instructions
+
+### nlCommonTextureGetNextTextureIndex (`0C0D8220`, 126 bytes, `src/gen_bp.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_bp/nlCommonTextureGetNextTextureIndex.json`
+- case 17
+- case 0
+- case 4
+- case 6
+- case 7
+- case 9
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 18
+- case 20
+- case 23
+- case 24
+- case 25
+- case 26
+- case 28
+- case 159
+- case 101
+- case 68
+- case 106
+- case 138
+- case 61
+- case 144
+- case 78
+- case 125
+- case 93
+- case 90
+- case 63
+- case 111
+- case 87
+- case 154
+- case 86
+- case 76
+- case 119
+- the cases run 50 of 50 instructions
+
+### nlCopyMatrix (`0C0DB550`, 68 bytes, `src/gen_q.c`)
+- equivalent on 11 development and 10 holdout cases, in `tests/gen_q/nlCopyMatrix.json`
+- case 8
+- case 21
+- case 34
+- case 50
+- case 75
+- case 80
+- case 83
+- case 118
+- case 131
+- case 145
+- case 155
+- case 41
+- case 17
+- case 35
+- case 65
+- case 77
+- case 82
+- case 114
+- case 126
+- case 141
+- case 147
+- the cases run 17 of 25 instructions
+
+### nlCosec (`0C0D9EB0`, 48 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlCosec.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 83
+- case 96
+- case 89
+- case 44
+- case 114
+- case 99
+- case 60
+- case 41
+- case 102
+- case 47
+- case 69
+- case 76
+- case 108
+- case 93
+- case 53
+- case 105
+- case 70
+- case 64
+- the cases run 19 of 19 instructions
+
+### nlCreateTextureParam (`0C0D84E0`, 46 bytes, `src/gen_j.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/nlCreateTextureParam.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 12 of 19 instructions
+
+### nlFloor (`0C0DA010`, 70 bytes, `src/gen_r.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/nlFloor.json`
+- case 14
+- case 2
+- case 0
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 16
+- case 17
+- case 51
+- case 62
+- case 90
+- case 50
+- case 108
+- case 110
+- case 73
+- case 96
+- case 80
+- case 39
+- case 52
+- case 64
+- case 46
+- case 102
+- case 81
+- case 76
+- case 58
+- case 92
+- the cases run 22 of 28 instructions
+
+### nlFogTableColor (`0C0DB180`, 58 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlFogTableColor.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 154
+- case 93
+- case 51
+- case 85
+- case 68
+- case 56
+- case 36
+- case 84
+- case 104
+- case 116
+- case 141
+- case 128
+- case 135
+- case 147
+- case 41
+- case 134
+- case 121
+- case 57
+- the cases run 29 of 29 instructions
+
+### nlFreePalette (`0C0D8660`, 110 bytes, `src/gen_br.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_br/nlFreePalette.json`
+- case 0
+- case 2
+- case 4
+- case 6
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 19
+- case 20
+- case 21
+- case 111
+- case 133
+- case 140
+- case 93
+- case 99
+- case 64
+- case 138
+- case 60
+- case 98
+- case 91
+- case 84
+- case 81
+- case 46
+- case 62
+- case 135
+- case 132
+- case 103
+- case 50
+- the cases run 38 of 51 instructions
+
+### nlGetAverageVector (`0C0DCD50`, 44 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlGetAverageVector.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 84
+- case 63
+- case 43
+- case 103
+- case 74
+- case 106
+- case 97
+- case 55
+- case 76
+- case 104
+- case 85
+- case 113
+- case 65
+- case 70
+- case 99
+- case 62
+- case 45
+- case 89
+- the cases run 22 of 22 instructions
+
+### nlGetMatrix (`0C0DB640`, 52 bytes, `src/gen_j.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/nlGetMatrix.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 26 of 26 instructions
+
+### nlGetMatrix8 (`0C0DB730`, 44 bytes, `src/gen_j.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/nlGetMatrix8.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 20 of 20 instructions
+
+### nlInitMatrixStack (`0C0DB850`, 58 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlInitMatrixStack.json`
+- case 4
+- case 0
+- case 1
+- case 2
+- case 3
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 75
+- case 46
+- case 77
+- case 84
+- case 81
+- case 82
+- case 112
+- case 101
+- case 42
+- case 36
+- case 39
+- case 83
+- case 94
+- case 70
+- case 62
+- case 95
+- case 48
+- case 79
+- the cases run 29 of 29 instructions
+
+### nlInitTextureSurface (`0C0D8420`, 44 bytes, `src/gen_h.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_h/nlInitTextureSurface.json`
+- case 3
+- case 0
+- case 2
+- case 4
+- case 8
+- case 9
+- case 10
+- case 13
+- case 14
+- case 19
+- case 20
+- case 24
+- case 28
+- case 29
+- case 31
+- case 32
+- case 34
+- case 37
+- case 87
+- case 71
+- case 146
+- case 150
+- case 83
+- case 107
+- case 142
+- case 116
+- case 113
+- case 129
+- case 149
+- case 135
+- case 74
+- case 106
+- case 153
+- case 90
+- case 69
+- case 157
+- the cases run 22 of 22 instructions
+
+### nlInvLightVector (`0C0DE6C0`, 50 bytes, `src/gen_z.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/nlInvLightVector.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 44
+- case 65
+- case 96
+- case 117
+- case 57
+- case 101
+- case 82
+- case 113
+- case 87
+- case 55
+- case 81
+- case 41
+- case 71
+- case 74
+- case 73
+- case 69
+- case 37
+- case 92
+- the cases run 25 of 25 instructions
+
+### nlLength (`0C0DCDA0`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlLength.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 54
+- case 115
+- case 96
+- case 74
+- case 80
+- case 48
+- case 111
+- case 113
+- case 112
+- case 114
+- case 62
+- case 93
+- case 100
+- case 117
+- case 119
+- case 53
+- case 87
+- case 41
+- the cases run 16 of 16 instructions
+
+### nlLoadMatrix8 (`0C0DBE10`, 40 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlLoadMatrix8.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 18 of 18 instructions
+
+### nlMultiMatrixRevOrder (`0C0DC1E0`, 64 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlMultiMatrixRevOrder.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 32 of 32 instructions
+
+### nlMultiMatrixRevOrder8 (`0C0DC1A0`, 52 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlMultiMatrixRevOrder8.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 26 of 26 instructions
+
+### nlObjPut (`0C0DE190`, 44 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlObjPut.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 89
+- case 93
+- case 98
+- case 71
+- case 116
+- case 68
+- case 94
+- case 74
+- case 42
+- case 44
+- case 100
+- case 108
+- case 69
+- case 111
+- case 101
+- case 119
+- case 75
+- case 87
+- the cases run 22 of 22 instructions
+
+### nlObjPutSetLightDirectionF (`0C0DE2D0`, 50 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlObjPutSetLightDirectionF.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 103
+- case 90
+- case 100
+- case 67
+- case 115
+- case 89
+- case 42
+- case 102
+- case 94
+- case 40
+- case 77
+- case 73
+- case 111
+- case 114
+- case 82
+- case 52
+- case 80
+- case 75
+- the cases run 25 of 25 instructions
+
+### nlObjPutSetSaturate (`0C0DE3F0`, 76 bytes, `src/gen_s.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/nlObjPutSetSaturate.json`
+- case 0
+- case 2
+- case 1
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 50
+- case 72
+- case 94
+- case 83
+- case 86
+- case 46
+- case 115
+- case 103
+- case 51
+- case 61
+- case 56
+- case 37
+- case 59
+- case 114
+- case 67
+- case 60
+- case 90
+- case 76
+- the cases run 38 of 38 instructions
+
+### nlObjPutSetSpecularEyeDirectionF (`0C0DE270`, 40 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlObjPutSetSpecularEyeDirectionF.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 96
+- case 68
+- case 36
+- case 78
+- case 91
+- case 71
+- case 82
+- case 55
+- case 119
+- case 65
+- case 87
+- case 85
+- case 81
+- case 97
+- case 118
+- case 57
+- case 40
+- case 77
+- the cases run 20 of 20 instructions
+
+### nlObjPutTrnsl (`0C0DE1F0`, 52 bytes, `src/gen_aa.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_aa/nlObjPutTrnsl.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 48
+- case 46
+- case 41
+- case 95
+- case 101
+- case 45
+- case 117
+- case 82
+- case 47
+- case 84
+- case 110
+- case 61
+- case 74
+- case 87
+- case 75
+- case 73
+- case 98
+- case 42
+- the cases run 26 of 26 instructions
+
+### nlOuterProduct (`0C0DCDC0`, 52 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlOuterProduct.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 74
+- case 42
+- case 110
+- case 52
+- case 83
+- case 56
+- case 43
+- case 103
+- case 115
+- case 48
+- case 114
+- case 75
+- case 57
+- case 40
+- case 91
+- case 81
+- case 50
+- case 98
+- the cases run 26 of 26 instructions
+
+### nlPopMatrix (`0C0DC4C0`, 64 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlPopMatrix.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 32 of 32 instructions
+
+### nlPrintInitFontTexture (`0C0DA970`, 34 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlPrintInitFontTexture.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 85
+- case 111
+- case 47
+- case 76
+- case 104
+- case 51
+- case 91
+- case 74
+- case 40
+- case 117
+- case 77
+- case 100
+- case 93
+- case 70
+- case 118
+- case 58
+- case 112
+- case 92
+- the cases run 17 of 17 instructions
+
+### nlPrintf (`0C0DB0E0`, 60 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlPrintf.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 45
+- case 104
+- case 83
+- case 100
+- case 71
+- case 103
+- case 75
+- case 38
+- case 101
+- case 57
+- case 84
+- case 39
+- case 58
+- case 70
+- case 67
+- case 53
+- case 74
+- case 105
+- the cases run 21 of 25 instructions
+
+### nlPushMatrix (`0C0DC510`, 132 bytes, `src/gen_cm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_cm/nlPushMatrix.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 61 of 64 instructions
+
+### nlQuickInvertMatrix (`0C0DC5D0`, 60 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlQuickInvertMatrix.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 30 of 30 instructions
+
+### nlRotate (`0C0DC6A0`, 54 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotate.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 361
+- case 363
+- case 266
+- case 217
+- case 351
+- case 135
+- case 245
+- case 259
+- case 258
+- case 229
+- case 368
+- case 221
+- case 310
+- case 69
+- case 224
+- case 307
+- case 317
+- case 280
+- the cases run 27 of 27 instructions
+
+### nlRotateAX (`0C0DC6E0`, 44 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateAX.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 22 of 22 instructions
+
+### nlRotateAY (`0C0DC890`, 40 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateAY.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 20 of 20 instructions
+
+### nlRotateAZ (`0C0DC950`, 40 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateAZ.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 20 of 20 instructions
+
+### nlRotateAxe (`0C0DC740`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateAxe.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 39
+- case 77
+- case 110
+- case 43
+- case 88
+- case 65
+- case 90
+- case 51
+- case 57
+- case 37
+- case 78
+- case 38
+- case 47
+- case 102
+- case 55
+- case 101
+- case 91
+- case 75
+- the cases run 16 of 16 instructions
+
+### nlRotateXSC (`0C0DC710`, 40 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateXSC.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 20 of 20 instructions
+
+### nlRotateYSC (`0C0DC8C0`, 36 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlRotateYSC.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 18 of 18 instructions
+
+### nlScaleUnitVector (`0C0DCE40`, 60 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlScaleUnitVector.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 76
+- case 78
+- case 107
+- case 95
+- case 37
+- case 70
+- case 38
+- case 117
+- case 113
+- case 66
+- case 104
+- case 91
+- case 86
+- case 87
+- case 92
+- case 75
+- case 52
+- case 82
+- the cases run 30 of 30 instructions
+
+### nlSec (`0C0DA3E0`, 48 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlSec.json`
+- case 0
+- case 3
+- case 1
+- case 2
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 109
+- case 74
+- case 105
+- case 119
+- case 97
+- case 76
+- case 107
+- case 43
+- case 68
+- case 56
+- case 58
+- case 108
+- case 47
+- case 116
+- case 82
+- case 42
+- case 118
+- case 114
+- the cases run 20 of 20 instructions
+
+### nlSubVector (`0C0DCED0`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlSubVector.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 74
+- case 102
+- case 92
+- case 118
+- case 91
+- case 41
+- case 60
+- case 89
+- case 95
+- case 44
+- case 77
+- case 48
+- case 56
+- case 67
+- case 66
+- case 113
+- case 96
+- case 87
+- the cases run 16 of 16 instructions
+
+### nlSubVector3op (`0C0DCEF0`, 32 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlSubVector3op.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 43
+- case 110
+- case 55
+- case 93
+- case 78
+- case 95
+- case 94
+- case 67
+- case 62
+- case 113
+- case 52
+- case 114
+- case 87
+- case 68
+- case 75
+- case 44
+- case 109
+- case 81
+- the cases run 16 of 16 instructions
+
+### nlTransposeMatrix (`0C0DCC40`, 44 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlTransposeMatrix.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 22 of 22 instructions
+
+### nlUnitMatrix (`0C0DCCC0`, 36 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/nlUnitMatrix.json`
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- case 15
+- the cases run 18 of 18 instructions
+
+### nl_set_cnv_proj_pers (`0C0DE070`, 52 bytes, `src/gen_z.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_z/nl_set_cnv_proj_pers.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 48
+- case 51
+- case 91
+- case 107
+- case 117
+- case 78
+- case 82
+- case 36
+- case 90
+- case 61
+- case 102
+- case 57
+- case 44
+- case 43
+- case 45
+- case 39
+- case 109
+- case 71
+- the cases run 26 of 26 instructions
+
 ### ntInfExit (`0C0E6A54`, 78 bytes, `src/gen_t.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_t/ntInfExit.json`
 - case 4
@@ -102912,6 +118164,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 139
 - the cases run 34 of 40 instructions
 
+### ntInfInit (`0C0E69A8`, 172 bytes, `src/gen_ef.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ef/ntInfInit.json`
+- case 84
+- case 83
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 159
+- case 119
+- case 63
+- case 89
+- case 75
+- case 105
+- case 149
+- case 55
+- case 112
+- case 81
+- case 140
+- case 93
+- case 41
+- case 57
+- case 52
+- case 127
+- case 37
+- case 150
+- the cases run 59 of 68 instructions
+
 ### ntInfIsNetworkInfo (`0C0E6AA2`, 28 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/ntInfIsNetworkInfo.json`
 - case 0
@@ -103157,6 +118449,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 104
 - case 48
 - the cases run 13 of 13 instructions
+
+### paletteUpload (`0C0D8870`, 36 bytes, `src/gen_j.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_j/paletteUpload.json`
+- case 1
+- case 0
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 109
+- case 47
+- case 41
+- case 82
+- case 42
+- case 114
+- case 46
+- case 62
+- case 57
+- case 70
+- case 76
+- case 61
+- case 39
+- case 106
+- case 37
+- case 48
+- case 88
+- case 86
+- the cases run 12 of 12 instructions
 
 ### pdExecPeripheralServer (`0C210922`, 50 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/pdExecPeripheralServer.json`
@@ -105438,6 +120770,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 90
 - the cases run 153 of 190 instructions
 
+### syChainDeleteHandler (`0C22246C`, 362 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/syChainDeleteHandler.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 88
+- case 130
+- case 108
+- case 96
+- case 158
+- case 90
+- case 100
+- case 60
+- case 126
+- case 79
+- case 156
+- case 113
+- case 58
+- case 142
+- case 110
+- case 123
+- case 84
+- case 105
+- the cases run 0 of 154 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
+
 ### syChainInit (`0C222114`, 80 bytes, `src/gen_u.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_u/syChainInit.json`
 - case 0
@@ -105954,6 +121326,86 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 83
 - the cases run 8 of 8 instructions
 
+### syIntAdrChk_getchar (`0C235F56`, 58 bytes, `src/gen_p.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_p/syIntAdrChk_getchar.json`
+- case 77
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 91
+- case 88
+- case 46
+- case 93
+- case 126
+- case 100
+- case 122
+- case 121
+- case 90
+- case 106
+- case 89
+- case 40
+- case 66
+- case 146
+- case 92
+- case 142
+- case 45
+- case 95
+- the cases run 19 of 29 instructions
+
+### syIntAdrChk_printh (`0C23601C`, 60 bytes, `src/gen_p.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_p/syIntAdrChk_printh.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 65
+- case 74
+- case 155
+- case 110
+- case 117
+- case 88
+- case 46
+- case 77
+- case 123
+- case 109
+- case 47
+- case 140
+- case 70
+- case 101
+- case 94
+- case 152
+- case 51
+- case 146
+- the cases run 30 of 30 instructions
+
 ### syMalloc (`0C2115B2`, 10 bytes, `src/gen_l.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_l/syMalloc.json`
 - case 0
@@ -106073,6 +121525,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 50
 - case 59
 - the cases run 2 of 2 instructions
+
+### syMmuDeleteAllEntries (`0C22287E`, 70 bytes, `src/gen_r.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_r/syMmuDeleteAllEntries.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 94
+- case 143
+- case 145
+- case 62
+- case 51
+- case 91
+- case 136
+- case 110
+- case 39
+- case 41
+- case 60
+- case 42
+- case 71
+- case 138
+- case 87
+- case 69
+- case 85
+- case 117
+- the cases run 35 of 35 instructions
 
 ### syMmuDeleteEntry (`0C23006E`, 38 bytes, `src/gen_o.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_o/syMmuDeleteEntry.json`
@@ -106954,6 +122446,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 86
 - the cases run 19 of 19 instructions
 
+### syTmrInt1Cancel (`0C222F06`, 158 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/syTmrInt1Cancel.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 104
+- case 80
+- case 103
+- case 59
+- case 114
+- case 66
+- case 82
+- case 92
+- case 98
+- case 79
+- case 40
+- case 101
+- case 53
+- case 76
+- case 63
+- case 74
+- case 83
+- case 112
+- the cases run 10 of 10 instructions
+
 ### syTmrInt1Set (`0C222E84`, 4 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/syTmrInt1Set.json`
 - case 0
@@ -107033,6 +122565,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 78
 - case 96
 - the cases run 13 of 13 instructions
+
+### sys_init (`0C0D88F0`, 74 bytes, `src/gen_s.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_s/sys_init.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 82
+- case 56
+- case 78
+- case 157
+- case 124
+- case 108
+- case 89
+- case 159
+- case 59
+- case 37
+- case 158
+- case 115
+- case 92
+- case 80
+- case 49
+- case 73
+- case 112
+- case 48
+- the cases run 18 of 27 instructions
 
 ### thunk_FUN_0c011cfc (`0C0D22B4`, 6 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/thunk_FUN_0c011cfc.json`
@@ -108634,6 +124206,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 69
 - the cases run 2 of 2 instructions
 
+### vmsfs_c_fiber6 (`0C224A1C`, 88 bytes, `src/gen_em.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_em/vmsfs_c_fiber6.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 103
+- case 36
+- case 45
+- case 74
+- case 101
+- case 94
+- case 63
+- case 60
+- case 118
+- case 69
+- case 48
+- case 87
+- case 109
+- case 70
+- case 46
+- case 111
+- case 113
+- case 55
+- the cases run 2 of 2 instructions
+
 ### vmsfs_c_fiber7 (`0C224A74`, 2 bytes, `src/gen_n.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_n/vmsfs_c_fiber7.json`
 - case 0
@@ -109234,6 +124846,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 37
 - the cases run 12 of 12 instructions
 
+### vmsfs_fclose (`0C226292`, 360 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/vmsfs_fclose.json`
+- case 158
+- case 158
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 138
+- case 55
+- case 118
+- case 134
+- case 155
+- case 41
+- case 102
+- case 140
+- case 75
+- case 130
+- case 94
+- case 54
+- case 133
+- case 34
+- case 58
+- case 42
+- case 135
+- case 78
+- the cases run 152 of 157 instructions
+
 ### vmsfs_fcreate (`0C22608E`, 328 bytes, `src/gen_ct.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ct/vmsfs_fcreate.json`
 - case 0
@@ -109434,6 +125086,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 143
 - the cases run 100 of 104 instructions
 
+### vmsfs_findfirst_ex (`0C226ADC`, 318 bytes, `src/gen_ea.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ea/vmsfs_findfirst_ex.json`
+- case 3
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 3
+- case 95
+- case 93
+- case 143
+- case 71
+- case 105
+- case 127
+- case 77
+- case 69
+- case 133
+- case 79
+- case 68
+- case 148
+- case 59
+- case 96
+- case 92
+- case 131
+- case 83
+- the cases run 82 of 140 instructions
+
 ### vmsfs_findnext (`0C2269F4`, 198 bytes, `src/gen_a.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_a/vmsfs_findnext.json`
 - case 46
@@ -109593,6 +125285,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 51
 - case 150
 - the cases run 29 of 109 instructions
+
+### vmsfs_format (`0C225714`, 810 bytes, `src/gen_dm.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dm/vmsfs_format.json`
+- case 83
+- case 65
+- case 48
+- case 0
+- case 13
+- case 104
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 74
+- case 126
+- case 127
+- case 84
+- case 151
+- case 101
+- case 144
+- case 96
+- case 141
+- case 108
+- case 99
+- case 136
+- case 72
+- case 64
+- case 133
+- case 94
+- case 79
+- case 110
+- the cases run 120 of 367 instructions
 
 ### vmsfs_fread1 (`0C226750`, 238 bytes, `src/gen_c.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_c/vmsfs_fread1.json`
@@ -110154,6 +125886,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 159
 - the cases run 103 of 103 instructions
 
+### vmsfs_mount2 (`0C225564`, 154 bytes, `src/gen_eh.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_eh/vmsfs_mount2.json`
+- case 12
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 52
+- case 135
+- case 69
+- case 78
+- case 145
+- case 51
+- case 98
+- case 99
+- case 110
+- case 38
+- case 140
+- case 92
+- case 80
+- case 37
+- case 123
+- case 50
+- case 85
+- case 130
+- the cases run 57 of 57 instructions
+
 ### vmsfs_read_disk_image (`0C228678`, 138 bytes, `src/gen_ck.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ck/vmsfs_read_disk_image.json`
 - case 13
@@ -110634,6 +126406,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 109
 - the cases run 93 of 95 instructions
 
+### vmsfs_xcreate (`0C225F2A`, 356 bytes, `src/gen_dx.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/vmsfs_xcreate.json`
+- case 0
+- case 0
+- case 0
+- case 1
+- case 3
+- case 4
+- case 7
+- case 9
+- case 10
+- case 11
+- case 12
+- case 14
+- case 16
+- case 17
+- case 19
+- case 23
+- case 24
+- case 26
+- case 143
+- case 155
+- case 110
+- case 75
+- case 58
+- case 141
+- case 113
+- case 139
+- case 136
+- case 99
+- case 59
+- case 106
+- case 100
+- case 86
+- case 64
+- case 120
+- case 90
+- case 78
+- the cases run 82 of 153 instructions
+
 ### vmsfs_xdefrag (`0C22791C`, 384 bytes, `src/gen_cq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cq/vmsfs_xdefrag.json`
 - case 0
@@ -110673,6 +126485,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 75
 - case 144
 - the cases run 31 of 157 instructions
+
+### vmsfs_xfind (`0C2274EE`, 184 bytes, `src/gen_ec.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ec/vmsfs_xfind.json`
+- case 12
+- case 92
+- case 45
+- case 70
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 13
+- case 14
+- case 121
+- case 76
+- case 108
+- case 123
+- case 110
+- case 120
+- case 139
+- case 69
+- case 93
+- case 116
+- case 146
+- case 68
+- case 96
+- case 138
+- case 122
+- case 133
+- case 103
+- case 130
+- the cases run 75 of 75 instructions
 
 ### vmsfs_xwrite1 (`0C2265D6`, 264 bytes, `src/gen_cz.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_cz/vmsfs_xwrite1.json`

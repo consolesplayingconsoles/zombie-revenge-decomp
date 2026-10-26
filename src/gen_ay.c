@@ -2,15 +2,15 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0db840(int);
-int FUN_0c0dc4c0(int);
+int nlPopMatrix(int);
 int FUN_0c0dc5a0(void);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
 int FUN_0c0dcc70(float, float, float);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c05fd8c(int a4, int a5, int a6, int a7, int a8, float f4, float f5, float f6, float f7);
 
 int FUN_0c05fd8c(int a4, int a5, int a6, int a7, int a8, float f4, float f5, float f6, float f7)
@@ -46,8 +46,8 @@ int FUN_0c05fd8c(int a4, int a5, int a6, int a7, int a8, float f4, float f5, flo
     *(unsigned int *)(((0x22C + t1) + 0x0)) = (((unsigned short)t23 << 1) + (unsigned short)t23);
     *(volatile int *)((a4 + 0xBC));
     *(volatile int *)((t1 + 0x1E8));
-    FUN_0c0e61d4();
-    FUN_0c0e61d4();
+    _quick_odd_mvn();
+    _quick_odd_mvn();
     *(unsigned int *)((t1 + 0x220)) = 0x38E;
     *(unsigned int *)((t1 + 0x244)) = 0x0;
     *(float *)((t1 + 0x24C)) = f5;
@@ -61,10 +61,10 @@ int FUN_0c05fd8c(int a4, int a5, int a6, int a7, int a8, float f4, float f5, flo
     *(unsigned short *)((t1 + 0x6E)) = (a7 + (*(short *)((a4 + 0x6E))));
     *(unsigned short *)((t1 + 0x70)) = 0x0;
     FUN_0c0dc5a0();
-    FUN_0c0dc890((*(short *)((t1 + 0x6E))));
-    FUN_0c0dc6e0((*(short *)((t1 + 0x6C))));
-    FUN_0c0dc950((*(short *)((t1 + 0x70))));
+    nlRotateAY((*(short *)((t1 + 0x6E))));
+    nlRotateAX((*(short *)((t1 + 0x6C))));
+    nlRotateAZ((*(short *)((t1 + 0x70))));
     FUN_0c0dcc70(0.0f, 0.0f, (-f4));
     FUN_0c0db840((t1 + 0x48));
-    return FUN_0c0dc4c0(0x1);
+    return nlPopMatrix(0x1);
 }

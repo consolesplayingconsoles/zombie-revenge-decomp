@@ -26,22 +26,22 @@ int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
 float FUN_0c0d9e90(int);
 float FUN_0c0da300(void);
 float FUN_0c0da410(int);
-float FUN_0c0da6a0(int);
+float nlTan(int);
 int FUN_0c0db0a0(int, int);
-int FUN_0c0db0e0(int, ...);
+int nlPrintf(int, ...);
 int FUN_0c0db4d0(int, int);
-int FUN_0c0db640(int);
-int FUN_0c0dc100(int);
-int FUN_0c0dc4c0(int);
-int FUN_0c0dc510(int);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
-int FUN_0c0dc950(int);
-int FUN_0c0dcb80(float, float, float);
+int nlGetMatrix(int);
+int nlMultiMatrix(int);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
+int nlScale(float, float, float);
 int FUN_0c0dcc70(float, float, float);
 int FUN_0c0dcc80(int);
 int FUN_0c0dcca0(int);
-int FUN_0c0dccc0(void);
+int nlUnitMatrix(void);
 int FUN_0c0de000(float);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
@@ -52,7 +52,7 @@ int FUN_0c0e36c4(int, int);
 int FUN_0c0e3792(int, int, int, int);
 int FUN_0c0e4428(int);
 int FUN_0c0e5dc0(void);
-int FUN_0c0e61d4(void);
+int _quick_odd_mvn(void);
 int FUN_0c2212c0(void);
 int FUN_0c22ba6a(void);
 int FUN_0c22bb3e(int);
@@ -296,7 +296,7 @@ int FUN_0c0cef82(int a4, int a5, int a6, int a7, int a8)
     *(float *)(((int)stk + 36)) = (*(float *)(((((int)stk + 4) + 0x2C) + 0x4)));
     *(float *)(((int)stk + 32)) = (FUN_0c01f1b8((((int)stk + 4) + 0x18), (((int)stk + 4) + 0xC)));
     *(volatile int *)(((((int)stk + 4) + 0x54) + 0x0));
-    return (FUN_0c0e61d4());
+    return (_quick_odd_mvn());
 }
 
 int vmsfs_fwrite1(int a4, int a5)
@@ -714,20 +714,20 @@ int FUN_0c06df78(int a4)
     u18 = (float)(*(short *)((a4 + 0x94)));
     u18 = u18 + 2048.0f * (FUN_0c0da410((*(short *)((a4 + 0x9A)))));
     *(unsigned short *)((a4 + 0x40)) = (int)u18;
-    FUN_0c0dccc0();
-    FUN_0c0dc890((*(short *)((a4 + 0x3E))));
+    nlUnitMatrix();
+    nlRotateAY((*(short *)((a4 + 0x3E))));
     FUN_0c0dcca0(t0);
-    FUN_0c0dc950((*(short *)((a4 + 0x40))));
-    FUN_0c0dc6e0((*(short *)((a4 + 0x3C))));
+    nlRotateAZ((*(short *)((a4 + 0x40))));
+    nlRotateAX((*(short *)((a4 + 0x3C))));
     FUN_0c0dcc80(t0);
-    FUN_0c0db640((((int)stk + 4) + 0xC));
+    nlGetMatrix((((int)stk + 4) + 0xC));
     FUN_0c0db4d0(t0, ((int)stk + 4));
     *(float *)(((int)stk + 4)) = (*(float *)((a4 + 0x30)));
     *(float *)(((int)stk + 8)) = ((*(float *)(((*(int *)((a4 + 0x4C))) + 0x4))) - (*(float *)(((int)stk + 8))));
     *(float *)(((int)stk + 12)) = (*(float *)((a4 + 0x38)));
-    FUN_0c0dccc0();
+    nlUnitMatrix();
     FUN_0c0dcca0(((int)stk + 4));
-    return (FUN_0c0dc100((((int)stk + 4) + 0xC)));
+    return (nlMultiMatrix((((int)stk + 4) + 0xC)));
 }
 
 int FUN_0c0e3c22(int a4, int a5)
@@ -875,12 +875,12 @@ int FUN_0c0b3ef8(int a4, int a5, int a6, int a7)
         FUN_0c0e19f2(a4, a5, a6, a7);
     }
     FUN_0c08448c(0x1);
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     FUN_0c0dcc70(1.0f, 0.0f, 0.0f);
     FUN_0c0c465c((unsigned short)(*(short *)0xC203F70));
     FUN_0c0c465c((unsigned short)(*(short *)0xC203F72));
     FUN_0c0c465c((unsigned short)(*(short *)0xC203F74));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     t16 = *(int *)((a4 + 0xA4));
     *(unsigned int *)((a4 + 0xA4)) = (t16 + 0x1);
     if ((t16 + 0x1) == 60) {
@@ -893,21 +893,21 @@ int FUN_0c0b3ef8(int a4, int a5, int a6, int a7)
     }
     *(volatile int *)((a4 + 0xA0));
     *(unsigned short *)(((0x62 + a4) + 0x0)) = (FUN_0c0e5dc0());
-    FUN_0c0dc510(0x0);
+    nlPushMatrix(0x0);
     FUN_0c0dcc70((*(float *)0xC0B4060), (*(float *)0xC0B405C), (*(float *)0xC0B4058));
-    FUN_0c0dc950(0xFFFFFFF6);
-    FUN_0c0dc6e0(0xA);
-    FUN_0c0dc890((*(short *)((a4 + 0x62))));
+    nlRotateAZ(0xFFFFFFF6);
+    nlRotateAX(0xA);
+    nlRotateAY((*(short *)((a4 + 0x62))));
     FUN_0c0c465c((*(int *)((a4 + 0x7C))));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     FUN_0c0dcc70((*(float *)0xC0B4078), (*(float *)0xC0B4074), (*(float *)0xC0B4070));
-    FUN_0c0dc950(0xFFFFFFF6);
-    FUN_0c0dc6e0(0xA);
-    FUN_0c0dc890((*(short *)((a4 + 0x62))));
-    FUN_0c0dcb80(1.0f, 1.0f, (*(float *)0xC0B407C));
+    nlRotateAZ(0xFFFFFFF6);
+    nlRotateAX(0xA);
+    nlRotateAY((*(short *)((a4 + 0x62))));
+    nlScale(1.0f, 1.0f, (*(float *)0xC0B407C));
     FUN_0c0de000(1.0f);
     FUN_0c0c465c(((*(int *)((a4 + 0x7C))) + 0x1));
-    return (FUN_0c0dc4c0(0x1));
+    return (nlPopMatrix(0x1));
 }
 
 int kmiFinalizeRender(int a4, int a5, int a6)
@@ -1437,18 +1437,18 @@ int FUN_0c096094(int a4, int a5)
                 t2 = 0x8;
                 *(float *)((t6 + t2)) = ((*(float *)((t6 + t2))) + (*(float *)(((0x14 + t6) + 0x0))));
                 t3 = 0x0;
-                t2 = (FUN_0c0dc510(t3));
+                t2 = (nlPushMatrix(t3));
                 t2 = 0x8;
                 u18 = *(float *)((t6 + t2));
                 t2 = 0x4;
                 t2 = (FUN_0c0dcc70((*(float *)((t6 + 0x0))), (*(float *)((t6 + t2))), u18));
                 t2 = 0x3CE;
                 t3 = (*(short *)((t1 + t2)));
-                t2 = (FUN_0c0dc890(t3));
+                t2 = (nlRotateAY(t3));
                 t2 = 0x3CC;
                 t3 = (*(short *)((t1 + t2)));
-                t2 = (FUN_0c0dc6e0(t3));
-                t2 = (FUN_0c0dcb80(0.599999964f, 0.599999964f, 0.599999964f));
+                t2 = (nlRotateAX(t3));
+                t2 = (nlScale(0.599999964f, 0.599999964f, 0.599999964f));
                 t2 = (FUN_0c0de000(0.599999964f));
                 u7 = 1.0f;
                 if ((int)(*(int *)((t6 + 0x18))) < (int)0xA) {
@@ -1464,7 +1464,7 @@ int FUN_0c096094(int a4, int a5)
                 }
                 t2 = (FUN_0c0c465c(t3));
                 t3 = 0x1;
-                t2 = (FUN_0c0dc4c0(t3));
+                t2 = (nlPopMatrix(t3));
             } else {
                 t43 = t3;
                 t44 = t4;
@@ -1518,18 +1518,18 @@ int FUN_0c0961f8(int a4, int a5)
                 t2 = 0x8;
                 *(float *)((t6 + t2)) = ((*(float *)((t6 + t2))) + (*(float *)(((0x14 + t6) + 0x0))));
                 t3 = 0x0;
-                t2 = (FUN_0c0dc510(t3));
+                t2 = (nlPushMatrix(t3));
                 t2 = 0x8;
                 u18 = *(float *)((t6 + t2));
                 t2 = 0x4;
                 t2 = (FUN_0c0dcc70((*(float *)((t6 + 0x0))), (*(float *)((t6 + t2))), u18));
                 t2 = 0x3CE;
                 t3 = (*(short *)((t1 + t2)));
-                t2 = (FUN_0c0dc890(t3));
+                t2 = (nlRotateAY(t3));
                 t2 = 0x3CC;
                 t3 = (*(short *)((t1 + t2)));
-                t2 = (FUN_0c0dc6e0(t3));
-                t2 = (FUN_0c0dcb80(0.599999964f, 0.599999964f, 0.599999964f));
+                t2 = (nlRotateAX(t3));
+                t2 = (nlScale(0.599999964f, 0.599999964f, 0.599999964f));
                 t2 = (FUN_0c0de000(0.599999964f));
                 u7 = 1.0f;
                 if ((int)(*(int *)((t6 + 0x18))) < (int)0xA) {
@@ -1545,7 +1545,7 @@ int FUN_0c0961f8(int a4, int a5)
                 }
                 t2 = (FUN_0c0c465c(t3));
                 t3 = 0x1;
-                t2 = (FUN_0c0dc4c0(t3));
+                t2 = (nlPopMatrix(t3));
             } else {
                 t43 = t3;
                 t44 = t4;
@@ -1624,7 +1624,7 @@ int FUN_0c0333f0(int a4, int a5, int a6, int a7)
 int FUN_0c045ca2(int a4)
 {
     FUN_0c0db0a0(0x1, (*(int *)((a4 + 0x60))));
-    FUN_0c0db0e0(0xC0F5E24);
+    nlPrintf(0xC0F5E24);
     FUN_0c045acc(a4, (*(int *)((a4 + 0x64))), 0x0);
     return ((int (*)(int))(0xC045BBC))(a4);
 }
@@ -1641,10 +1641,10 @@ int FUN_0c0a72a0(float f4, float f5, float f6, float f7, float f8, float f9)
     *(float *)(((int)stk + 32)) = f8;
     *(float *)(((int)stk + 52)) = f9;
     FUN_0c0a78fc(((int)stk + 4), (((int)stk + 4) + 0x4), (*(float *)(((int)stk + 36))), (*(float *)(((int)stk + 32))), f9);
-    FUN_0c0dc510(0x0);
-    FUN_0c0dccc0();
-    FUN_0c0dc950((-(*(int *)(((int)stk + 8)))));
-    FUN_0c0dc6e0((-(*(int *)(((int)stk + 4)))));
+    nlPushMatrix(0x0);
+    nlUnitMatrix();
+    nlRotateAZ((-(*(int *)(((int)stk + 8)))));
+    nlRotateAX((-(*(int *)(((int)stk + 4)))));
     *(float *)(((int)stk + 68)) = (*(float *)(((int)stk + 40)));
     *(float *)(((int)stk + 72)) = (*(float *)(((int)stk + 48)));
     *(float *)(((int)stk + 76)) = (*(float *)(((int)stk + 44)));
@@ -1652,19 +1652,19 @@ int FUN_0c0a72a0(float f4, float f5, float f6, float f7, float f8, float f9)
     *(float *)(((((int)stk + 4) + 0x18) + 0x0)) = (*(float *)(((int)stk + 56)));
     *(float *)(((((int)stk + 4) + 0x14) + 0x0)) = (*(float *)(((int)stk + 60)));
     *(float *)(((((int)stk + 4) + 0x10) + 0x0)) = (*(float *)(((int)stk + 64)));
-    FUN_0c0dccc0();
-    FUN_0c0db640((((int)stk + 4) + 0x4C));
+    nlUnitMatrix();
+    nlGetMatrix((((int)stk + 4) + 0x4C));
     FUN_0c0a7714((((int)stk + 4) + 0xC), (((int)stk + 4) + 0x8), (*(float *)(((int)stk + 28))), (*(float *)(((int)stk + 24))), (*(float *)(((int)stk + 20))));
-    t23 = FUN_0c0da6a0((*(int *)(((int)stk + 16))));
+    t23 = nlTan((*(int *)(((int)stk + 16))));
     *(float *)(((int)stk + 96)) = ((FUN_0c0da410((*(int *)(((int)stk + 12))))) / t23);
     *(float *)(((int)stk + 100)) = 0.0f;
     *(float *)(((int)stk + 104)) = ((FUN_0c0d9e90((*(int *)(((int)stk + 12))))) / t23);
-    FUN_0c0dc4c0(0x1);
-    FUN_0c0dc6e0((*(int *)(((int)stk + 4))));
-    FUN_0c0dc950((*(int *)(((int)stk + 8))));
-    FUN_0c0dc100((((int)stk + 4) + 0x4C));
-    FUN_0c0dc950((-(*(int *)(((int)stk + 8)))));
-    return (FUN_0c0dc6e0((-(*(int *)(((int)stk + 4))))));
+    nlPopMatrix(0x1);
+    nlRotateAX((*(int *)(((int)stk + 4))));
+    nlRotateAZ((*(int *)(((int)stk + 8))));
+    nlMultiMatrix((((int)stk + 4) + 0x4C));
+    nlRotateAZ((-(*(int *)(((int)stk + 8)))));
+    return (nlRotateAX((-(*(int *)(((int)stk + 4))))));
 }
 
 int vmsfs_fopen(int a4, int a5, int a6)

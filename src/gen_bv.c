@@ -23,7 +23,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e2400(int, int, int, int, int, int, int, int, int, int, int);
-int FUN_0c0e61d4(int, int, int);
+int _quick_odd_mvn(int, int, int);
 int memset(int, int, int);
 int FUN_0c042ad8(int a4, int a5, int a6, float f4, float f5);
 int FUN_0c0a94e2(void);
@@ -36,7 +36,7 @@ int FUN_0c042ad8(int a4, int a5, int a6, float f4, float f5)
     int stk[13];
 
     *(unsigned int *)(((int)stk + 8)) = a4;
-    FUN_0c0e61d4(a4, a5, a6);
+    _quick_odd_mvn(a4, a5, a6);
     *(float *)(((int)stk + 36)) = f4;
     *(float *)(((int)stk + 40)) = f5;
     FUN_0c036efc((((int)stk + 4) + 0x14), (*(int *)(((int)stk + 8))), (((int)stk + 4) + 0x8), ((int)stk + 4));

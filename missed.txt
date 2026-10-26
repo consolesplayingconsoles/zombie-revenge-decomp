@@ -1469,15 +1469,15 @@
 0c0d1eac  after FUN_0c0d1e10             function start; pointed to from 0c0d1e94
 0c0d4b28  after FUN_0c0d4b14             pointed to from 0c0d5e3c, inside FUN_0c0d4b14 (merged?)
 0c0d9a30  after FUN_0c0d99a0             pointed to from 0c0d9b90
-0c0dbaac  after FUN_0c0db900             pointed to from 0c0dba80
-0c0dbaf0  after FUN_0c0db900             pointed to from 0c0dbac0
-0c0dbb44  after FUN_0c0db900             pointed to from 0c0dbb10
-0c0dc860  after FUN_0c0dc760             pointed to from 0c0dcb50
-0c0dc920  after FUN_0c0dc8c0             pointed to from 0c0dcb58
-0c0dc980  after FUN_0c0dc950             pointed to from 0c0dcb5c
-0c0dc9e0  after FUN_0c0dc950             pointed to from 0c0dcb60
-0c0de838  after FUN_0c0de7e0             pointed to from 0c0de440
-0c0de8a8  after FUN_0c0de850             pointed to from 0c0de444
+0c0dbaac  after nlInvertMatrix             pointed to from 0c0dba80
+0c0dbaf0  after nlInvertMatrix             pointed to from 0c0dbac0
+0c0dbb44  after nlInvertMatrix             pointed to from 0c0dbb10
+0c0dc860  after nlRotateAxeSC             pointed to from 0c0dcb50
+0c0dc920  after nlRotateYSC             pointed to from 0c0dcb58
+0c0dc980  after nlRotateAZ             pointed to from 0c0dcb5c
+0c0dc9e0  after nlRotateAZ             pointed to from 0c0dcb60
+0c0de838  after nlobjput_sub             pointed to from 0c0de440
+0c0de8a8  after nlobjput_sub_trnsl             pointed to from 0c0de444
 0c0e17a4  after FUN_0c0e1794             pointed to from 0c0e1a8c
 0c0e1a1e  after FUN_0c0e19f2             function start; pointed to from 0c0e1aa0; pointed to from 0c0e222c
 0c0e1d64  after FUN_0c0e1d1e             function start; pointed to from 0c0e1d60
@@ -1490,7 +1490,7 @@
 0c0e91ea  after FUN_0c0e8e80             pointed to from 0c0de67c
 0c0e9dca  after FUN_0c0e9d20             pointed to from 0c0de680
 0c0ed6d8  after FUN_0c0ed650             pointed to from 0c9de3f4
-0c0ef236  after FUN_0c0ef1e0             pointed to from 0c9def68; pointed to from 0c9defe8
+0c0ef236  after nl_objasm_transform_tri_bump             pointed to from 0c9def68; pointed to from 0c9defe8
 0c0f4004  after FUN_0c0f3fe0             pointed to from 0c20d224
 0c0f40cc  after FUN_0c0f3fe0             pointed to from 0c015f30; pointed to from 0c01605c
 0c0f893c  after FUN_0c0f3fe0             pointed to from 0c0c5ee8
@@ -1542,7 +1542,7 @@
 0c20f272  after gdFsReadWG               pointed to from 0c20f3e0
 0c20f28c  after gdFsReadWG               pointed to from 0c20f3d8
 0c21024c  after gdFsDaGetInfoG           pointed to from 0c236690
-0c210c5a  after FUN_0c210c04             pointed to from 0c0107dc
+0c210c5a  after syCacheInit_P2_             pointed to from 0c0107dc
 0c210cee  after FUN_0c210c70             pointed to from 0c08e230
 0c210e36  after FUN_0c210c70             pointed to from 0c210db8
 0c210eb0  after FUN_0c210c70             pointed to from 0c210e40
@@ -1775,11 +1775,11 @@
 0c0d9a90  after FUN_0c0d9a60             leaf: pool load + rts
 0c0d9aa0  after FUN_0c0d9a60             leaf: pool load + rts
 0c0da252  after FUN_0c0da220             function start
-0c0da794  after FUN_0c0da6a0             function start
+0c0da794  after nlTan             function start
 0c0da870  after FUN_0c0da7e0             leaf: pool load + rts
 0c0db0d0  after FUN_0c0db0a0             leaf: pool load + rts
-0c0db150  after FUN_0c0db0e0             function start
-0c0db8da  after FUN_0c0db890             function start
+0c0db150  after nlPrintf             function start
+0c0db8da  after nlInitMatrix             function start
 0c0dd0f0  after FUN_0c0dd0a0             function start
 0c0de990  after FUN_0c0de960             function start
 0c0df000  after FUN_0c0def50             function start

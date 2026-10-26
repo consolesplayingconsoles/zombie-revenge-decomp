@@ -10,7 +10,7 @@ int FUN_0c0c73e6(int, float, float);
 int FUN_0c0cc3f8(int);
 int FUN_0c0e19f2(int, int, int);
 int FUN_0c0e5f1c(int);
-int FUN_0c0e61d4(int, int, float);
+int _quick_odd_mvn(int, int, float);
 int FUN_0c01906a(int a4, int a5, int a6, int a7);
 int FUN_0c039804(int a4);
 int FUN_0c0ba09c(int a4, int a5, int a6);
@@ -198,7 +198,7 @@ int FUN_0c0a8f48(int a4, int a5)
     t13 = t7;
     if ((*(int *)((a5 + 0x8))) != 0) {
         *(volatile int *)((a5 + 0x8));
-        t13 = (FUN_0c0e61d4(a4, a5, 0.0f));
+        t13 = (_quick_odd_mvn(a4, a5, 0.0f));
     }
     return t13;
 }

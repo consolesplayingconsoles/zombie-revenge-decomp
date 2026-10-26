@@ -5,12 +5,12 @@ int FUN_0c08a220(int, int);
 int FUN_0c09134c(int, int, int, int);
 int FUN_0c0c0340(int);
 int FUN_0c0db470(int, int);
-int FUN_0c0dc4c0(int);
+int nlPopMatrix(int);
 int FUN_0c0dc5a0(void);
-int FUN_0c0dc6e0(int);
-int FUN_0c0dc890(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
 int FUN_0c0e19f2(int, int, int, int);
-int FUN_0c0e61d4(int);
+int _quick_odd_mvn(int);
 int FUN_0c0a30f0(int a4, int a5, int a6, int a7);
 int FUN_0c095d14(int a4);
 
@@ -53,12 +53,12 @@ int FUN_0c095d14(int a4)
     int stk[9];
 
     *(volatile int *)((a4 + 0xBC));
-    FUN_0c0e61d4(a4);
+    _quick_odd_mvn(a4);
     FUN_0c0dc5a0();
-    FUN_0c0dc890((*(short *)((a4 + 0x6E))));
-    FUN_0c0dc6e0((*(short *)((a4 + 0x6C))));
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    nlRotateAX((*(short *)((a4 + 0x6C))));
     FUN_0c0db470(0xC10BC94, ((int)stk + 4));
-    FUN_0c0dc4c0(0x1);
+    nlPopMatrix(0x1);
     FUN_0c09134c((((int)stk + 4) + 0xC), ((int)stk + 4), 0x8, 0x2);
     return (FUN_0c08a220((((int)stk + 4) + 0xC), 0x1));
 }
