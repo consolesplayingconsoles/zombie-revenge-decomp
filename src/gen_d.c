@@ -306,24 +306,6 @@ int FUN_0c032aa6(int a4)
     return (nlAddVector((0x4B0 + a4), ((int)stk + 4)));
 }
 
-int FUN_0c046b50(void)
-{
-    int t0;
-    int t4;
-    int stk[17];
-
-    t0 = 0xC0F6644;
-    for (;;) {
-        t0 = (t0 + 0x2C);
-        _quick_odd_mvn(0xC0F6644);
-        *(unsigned short *)(((int)stk + 36)) = (*(int *)0xC23ED50);
-        t4 = FUN_0c0208fc(((int)stk + 4));
-        if ((unsigned int)t0 >= (unsigned int)0xC0F66C8) {
-            break;
-        }
-    }
-    return t4;
-}
 
 int FUN_0c052064(int a4)
 {
@@ -2166,13 +2148,6 @@ void FUN_0c01c24e(void)
     *(unsigned int *)0xC23FF10 = 0x0;
 }
 
-int FUN_0c0321d4(int a4, int a5)
-{
-    *(unsigned int *)((a4 + 0x53C)) = (*(int *)(((((a5 << 2) << 2) + 0xC1F3134) + 0x0)));
-    *(unsigned int *)((a4 + 0x540)) = (*(int *)((a4 + 0x53C)));
-    *(unsigned int *)((a4 + 0x55C)) = ((*(int *)(((((a5 << 2) << 2) + 0xC1F3134) + 0x4))) * (*(int *)0xC247070));
-    return FUN_0c031fbc(a4);
-}
 
 int FUN_0c014696(int a4, int a5)
 {
@@ -2638,11 +2613,6 @@ int FUN_0c029bd4(int a4)
     return t0;
 }
 
-int FUN_0c032142(int a4, int a5)
-{
-    *(unsigned int *)((a4 + 0x540)) = ((*(int *)((a4 + 0x53C))) + ((short)(*(short *)(((((a5 << 2) << 1) + ((*(int *)((a4 + 0x540))) + 0xC)) + 0x0))) * (short)0x1C));
-    return FUN_0c031fbc(a4);
-}
 
 int FUN_0c0353e4(int a4)
 {

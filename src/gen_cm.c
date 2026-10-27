@@ -435,36 +435,6 @@ int FUN_0c056016(int a4)
     return FUN_0c0519f0(a4);
 }
 
-int FUN_0c079108(void)
-{
-    float u0;
-    int t1;
-    int t2;
-    int t3;
-    int t5;
-
-    u0 = *(float *)0xC0791EC;
-    t1 = 0x0;
-    t2 = 0x10;
-    t3 = 0xC10014C;
-    for (;;) {
-        t5 = FUN_0c0e19aa(0xC078DC2, 0x228, (*(int *)0xC23ECE4));
-        FUN_0c0e19d0(t5);
-        _quick_odd_mvn();
-        FUN_0c0e6248();
-        t1 = (t1 + 0x1);
-        *(unsigned int *)(((0x220 + t5) + 0x0)) = (*(short *)((t3 + 0x12)));
-        t3 = (t3 + 0x18);
-        *(unsigned int *)((t5 + 0xBC)) = t2;
-        *(unsigned int *)((t5 + 0xC8)) = 0x20000;
-        *(float *)((t5 + 0x1B8)) = u0;
-        t2 = (t2 + 0x1);
-        if ((unsigned int)t1 >= (unsigned int)0x2) {
-            break;
-        }
-    }
-    return 0x1B8;
-}
 
 int FUN_0c0836d2(int a4)
 {

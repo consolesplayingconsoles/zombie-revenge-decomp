@@ -1773,7 +1773,7 @@ F 0c0b736e 234 FUN_0c0b736e
 F 0c0b7466 78 FUN_0c0b7466
 F 0c0b756c 42 FUN_0c0b756c
 F 0c0b7596 54 FUN_0c0b7596
-F 0c0b75d2 10 BL_Reset(void)
+F 0c0b75d2 10 BL_Reset
 F 0c0b75e8 30 FUN_0c0b75e8
 F 0c0b771e 22 FUN_0c0b771e
 F 0c0b7734 334 FUN_0c0b7734
@@ -4188,7 +4188,7 @@ F 0c235dd8 204 syIntAdrChk_init
 F 0c235ea4 178 FUN_0c235ea4
 F 0c235f56 58 syIntAdrChk_getchar
 F 0c235f90 86 syIntAdrChk_finish
-F 0c235fe6 54 send_message_in_current_mode(char*)
+F 0c235fe6 54 send_message_in_current_mode
 F 0c23601c 60 syIntAdrChk_printh
 F 0c236058 258 ADX_DecodeMonoFloat
 F 0c236170 496 ADX_DecodeSteFloat

@@ -499,18 +499,6 @@ int nlCommonTextureGarbageCollection(void)
     return t2;
 }
 
-int FUN_0c06defc(int a4)
-{
-    int t1;
-    int t4;
-
-    t1 = FUN_0c0e19aa(0xC06DE48, 0xB4, (*(int *)0xC23ECE4));
-    _quick_odd_mvn(t1);
-    FUN_0c0e6248(a4);
-    t4 = *(short *)0xC0FB65A;
-    *(unsigned int *)(((0x78 + a4) + 0x0)) = t4;
-    return t4;
-}
 
 int FUN_0c0b63ac(int a4)
 {
@@ -560,18 +548,6 @@ int FUN_0c0c2764(int a4)
     return 0x4;
 }
 
-int FUN_0c0c4a00(int a4)
-{
-    int stk[15];
-
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    _quick_evn_mvn();
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = 1.0f;
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x8)) = (*(int *)(((((int)stk + 4) + 0x2C) + 0x0)));
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x14)) = (*(int *)(((((int)stk + 4) + 0x2C) + 0x0)));
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x20)) = (*(int *)(((((int)stk + 4) + 0x2C) + 0x0)));
-    return (FUN_0c0be88a((*(int *)(((int)stk + 4))), (((int)stk + 4) + 0x4)));
-}
 
 int FUN_0c0c4c54(void)
 {
@@ -628,16 +604,6 @@ int FUN_0c0cf3b0(int a4)
     return t5;
 }
 
-int FUN_0c06ecaa(int a4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC06EBC4, 0xB4, (*(int *)0xC23ECE4));
-    _quick_odd_mvn(t1);
-    *(unsigned int *)((a4 + 0x78)) = (*(int *)0xC0FBD20);
-    *(unsigned int *)((a4 + 0x8C)) = 0xC247ED8;
-    return 0x8C;
-}
 
 int FUN_0c0b789c(int a4)
 {
@@ -954,16 +920,6 @@ int FUN_0c0c4580(void)
     return t14;
 }
 
-int FUN_0c0c497c(int a4, float f4)
-{
-    int stk[12];
-
-    *(unsigned short *)(((int)stk + 4)) = a4;
-    _quick_odd_mvn(a4);
-    *(float *)(((((int)stk + 4) + 0x20) + 0x0)) = f4;
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x14)) = (*(int *)(((((int)stk + 4) + 0x20) + 0x0)));
-    return (FUN_0c0be88a((unsigned short)(*(short *)(((int)stk + 4))), (((int)stk + 4) + 0x4)));
-}
 
 int FUN_0c0cbbf4(void)
 {
@@ -1548,23 +1504,7 @@ int FUN_0c0c0504(int a4)
     return a4;
 }
 
-int FUN_0c0c6694(void)
-{
-    int t0;
 
-    t0 = FUN_0c0e1830(0xC0C66BA, 0x70);
-    FUN_0c0e19d0(t0);
-    return (_quick_evn_mvn());
-}
-
-int FUN_0c0c65d2(void)
-{
-    int t0;
-
-    t0 = FUN_0c0e1830(0xC0C664C, 0x70);
-    FUN_0c0e19d0(t0);
-    return (_quick_evn_mvn());
-}
 
 int FUN_0c0c8e1a(int a4)
 {
@@ -1843,14 +1783,6 @@ int FUN_0c0bdb50(int a4, int a5, int a6)
     return nlPopMatrix(0x1);
 }
 
-int FUN_0c0bf908(int a4)
-{
-    int stk[5];
-
-    *(unsigned int *)(((int)stk + 12)) = a4;
-    FUN_0c0bf88c(((int)stk + 4), (((int)stk + 4) + 0x4));
-    return (FUN_0c0df9fc((*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8)))));
-}
 
 int FUN_0c0cddba(int a4)
 {
