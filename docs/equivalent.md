@@ -23616,6 +23616,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 142
 - the cases run 23 of 23 instructions
 
+### FUN_0c039354 (`0C039354`, 194 bytes, `src/gen_fu.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_fu/FUN_0c039354.json`
+- case 8
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 18
+- case 158
+- case 45
+- case 144
+- case 69
+- case 115
+- case 104
+- case 101
+- case 106
+- case 130
+- case 155
+- case 159
+- case 84
+- case 71
+- case 156
+- case 65
+- case 114
+- case 111
+- case 157
+- the cases run 97 of 97 instructions
+
 ### FUN_0c039416 (`0C039416`, 1006 bytes, `src/gen_di.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_di/FUN_0c039416.json`
 - case 0
@@ -29568,6 +29608,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 44
 - the cases run 67 of 67 instructions
 
+### FUN_0c049124 (`0C049124`, 228 bytes, `src/gen_fv.c`)
+- equivalent on 7 development and 7 holdout cases, in `tests/gen_fv/FUN_0c049124.json`
+- case 55
+- case 3
+- case 22
+- case 55
+- case 81
+- case 94
+- case 107
+- case 55
+- case 18
+- case 34
+- case 64
+- case 84
+- case 99
+- case 114
+- the cases run 114 of 114 instructions
+
 ### FUN_0c0493d8 (`0C0493D8`, 240 bytes, `src/gen_by.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_by/FUN_0c0493d8.json`
 - case 34
@@ -29607,6 +29665,27 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 61
 - case 116
 - the cases run 82 of 82 instructions
+
+### FUN_0c0494e0 (`0C0494E0`, 228 bytes, `src/gen_fv.c`)
+- equivalent on 9 development and 8 holdout cases, in `tests/gen_fv/FUN_0c0494e0.json`
+- case 4
+- case 4
+- case 23
+- case 32
+- case 60
+- case 80
+- case 90
+- case 95
+- case 147
+- case 4
+- case 14
+- case 24
+- case 37
+- case 61
+- case 87
+- case 94
+- case 122
+- the cases run 114 of 114 instructions
 
 ### FUN_0c0497a0 (`0C0497A0`, 100 bytes, `src/gen_bu.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bu/FUN_0c0497a0.json`
@@ -43356,6 +43435,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 103
 - case 92
 - the cases run 50 of 50 instructions
+
+### FUN_0c070258 (`0C070258`, 646 bytes, `src/gen_fu.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_fu/FUN_0c070258.json`
+- case 0
+- case 1
+- case 2
+- case 3
+- case 4
+- case 5
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 14
+- case 15
+- case 16
+- case 17
+- case 58
+- case 80
+- case 120
+- case 143
+- case 147
+- case 69
+- case 62
+- case 145
+- case 66
+- case 47
+- case 102
+- case 141
+- case 134
+- case 128
+- case 154
+- case 101
+- case 153
+- case 127
+- the cases run 0 of 280 instructions (nothing compared: no case showed a write, a call, a device access or a change of SR, and the C returns nothing)
 
 ### FUN_0c070a42 (`0C070A42`, 250 bytes, `src/gen_bd.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_bd/FUN_0c070a42.json`
@@ -112241,6 +112360,46 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - the cases run 42 of 157 instructions
 
+### kmProcessVertexRenderState (`0C21C180`, 1922 bytes, `src/gen_fv.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_fv/kmProcessVertexRenderState.json`
+- case 149
+- case 36
+- case 33
+- case 5
+- case 100
+- case 148
+- case 0
+- case 1
+- case 4
+- case 6
+- case 7
+- case 8
+- case 9
+- case 10
+- case 11
+- case 12
+- case 13
+- case 15
+- case 53
+- case 144
+- case 61
+- case 152
+- case 110
+- case 72
+- case 50
+- case 151
+- case 69
+- case 130
+- case 106
+- case 104
+- case 98
+- case 75
+- case 76
+- case 94
+- case 140
+- case 142
+- the cases run 526 of 631 instructions
+
 ### kmQueryFinishFlushVertexBuffer (`0C21D93C`, 28 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmQueryFinishFlushVertexBuffer.json`
 - case 13
@@ -114800,6 +114959,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 150
 - case 135
 - the cases run 90 of 90 instructions
+
+### kmiGetDisplayData (`0C218BE0`, 388 bytes, `src/gen_fu.c`)
+- equivalent on 1 development and 1 holdout cases, in `tests/gen_fu/kmiGetDisplayData.json`
+- rescue: empty case
+- rescue: empty case
+- the cases run 85 of 138 instructions
 
 ### kmiGetDstVertexBuffer (`0C21D460`, 14 bytes, `src/gen_m.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_m/kmiGetDstVertexBuffer.json`

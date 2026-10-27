@@ -616,6 +616,7 @@ FUN_0c039034
 FUN_0c039288
 FUN_0c0392e8
 FUN_0c039302
+FUN_0c039354
 FUN_0c039416
 FUN_0c039804
 FUN_0c0398b8
@@ -767,7 +768,9 @@ FUN_0c048f1a
 FUN_0c048fec
 FUN_0c04904a
 FUN_0c049076
+FUN_0c049124
 FUN_0c0493d8
+FUN_0c0494e0
 FUN_0c0497a0
 FUN_0c049804
 FUN_0c04982e
@@ -1134,6 +1137,7 @@ FUN_0c06f3ac
 FUN_0c06f3f6
 FUN_0c070114
 FUN_0c0701b8
+FUN_0c070258
 FUN_0c070a42
 FUN_0c070b90
 FUN_0c0725c8
@@ -2962,6 +2966,7 @@ kmLoadRectangleTexturePart
 kmLoadTextureBlock
 kmLoadVQCodebook
 kmLoadYUVTexture
+kmProcessVertexRenderState
 kmQueryFinishFlushVertexBuffer
 kmQueryFinishLastTextureDMA
 kmRenderDirect
@@ -3026,6 +3031,7 @@ kmiFastTA
 kmiFastTADirect
 kmiFatalErrorEntry
 kmiFinalizeRender
+kmiGetDisplayData
 kmiGetDstVertexBuffer
 kmiGetNativeRegOBPSize
 kmiGetPackOBPParam
