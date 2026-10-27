@@ -60,51 +60,6 @@ int FUN_0c0c1508(int a4, int a5, int a6, int a7)
     return (FUN_0c0bbbf4(a4));
 }
 
-int FUN_0c01a49c(void)
-{
-    int t1;
-    int t2;
-    int t3;
-    int t4;
-    int t7;
-    int t13;
-    int t23;
-    int t33;
-    int t0;
-
-    t1 = 0x0;
-    t2 = 0x0;
-    t3 = 0x0;
-    t4 = 0x0;
-    for (;;) {
-        if ((*(int *)(((0xC247030 + t1) + 0x0))) != 0) {
-            t3 = 0xC246FF0;
-            t3 = (t3 + t2);
-            t0 = 0xC0;
-            t3 = (*(int *)((t3 + 0x0)));
-            t7 = *(int *)((t3 + t0));
-            t4 = (t4 | (((int)t7 >= 0) ? (0x1 << (t7 & 31)) : ((-(int)t7 & 31) ? ((int)0x1 >> (-(int)t7 & 31)) : ((int)0x1 >> 31))));
-        }
-        t1 = (t1 + 0x4);
-        t2 = (t2 + 0x4);
-        if ((unsigned int)t1 >= (unsigned int)0x8) {
-            break;
-        }
-    }
-    t13 = t0;
-    if ((0x1 & t4) == 0) {
-        t13 = (FUN_0c0c4464((*(int *)0xC23ED50), 0x0, 0x0));
-    }
-    t23 = t13;
-    if ((0x4 & t4) == 0) {
-        t23 = (FUN_0c0c4464((*(int *)0xC23ED50), 0x2, 0x0));
-    }
-    t33 = t23;
-    if ((t4 & 0x10) == 0) {
-        t33 = (FUN_0c0c4464((*(int *)0xC23ED50), 0x4, 0x0));
-    }
-    return t33;
-}
 
 int FUN_0c029b60(int a4, int a5, int a6, int a7)
 {
