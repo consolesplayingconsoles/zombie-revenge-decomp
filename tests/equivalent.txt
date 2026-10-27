@@ -434,7 +434,6 @@ FUN_0c02bc0e
 FUN_0c02bc1c
 FUN_0c02bc2a
 FUN_0c02bda4
-FUN_0c02bfa8
 FUN_0c02c6ee
 FUN_0c02cbe0
 FUN_0c02cc94
@@ -491,9 +490,7 @@ FUN_0c031e3c
 FUN_0c031e5e
 FUN_0c031f48
 FUN_0c031fbc
-FUN_0c032142
 FUN_0c03217c
-FUN_0c0321d4
 FUN_0c0321fa
 FUN_0c03227c
 FUN_0c032394
@@ -751,7 +748,6 @@ FUN_0c0469a4
 FUN_0c0469f6
 FUN_0c046a20
 FUN_0c046aee
-FUN_0c046b50
 FUN_0c046cc0
 FUN_0c0470da
 FUN_0c04720a
@@ -987,12 +983,10 @@ FUN_0c058308
 FUN_0c05878c
 FUN_0c058e7c
 FUN_0c058f7c
-FUN_0c058fa0
 FUN_0c059500
 FUN_0c0595c8
 FUN_0c059620
 FUN_0c0598e4
-FUN_0c059d72
 FUN_0c059eee
 FUN_0c059f04
 FUN_0c059f1c
@@ -1019,11 +1013,9 @@ FUN_0c05f9ee
 FUN_0c05faf6
 FUN_0c05fbfe
 FUN_0c05fd8c
-FUN_0c0603d0
 FUN_0c060ae0
 FUN_0c060bda
 FUN_0c060e1e
-FUN_0c061214
 FUN_0c0614fa
 FUN_0c0619e0
 FUN_0c061a8a
@@ -1117,7 +1109,6 @@ FUN_0c06d6e4
 FUN_0c06db68
 FUN_0c06dc1a
 FUN_0c06ddc4
-FUN_0c06defc
 FUN_0c06df78
 FUN_0c06e0c4
 FUN_0c06e23c
@@ -1126,7 +1117,6 @@ FUN_0c06e56e
 FUN_0c06e9cc
 FUN_0c06ea7e
 FUN_0c06eb74
-FUN_0c06ecaa
 FUN_0c06ece4
 FUN_0c06f1cc
 FUN_0c06f3ac
@@ -1176,7 +1166,6 @@ FUN_0c078d6e
 FUN_0c078d72
 FUN_0c078dc2
 FUN_0c07903a
-FUN_0c079108
 FUN_0c07918a
 FUN_0c07993a
 FUN_0c07a0f0
@@ -1831,7 +1820,6 @@ FUN_0c0bea46
 FUN_0c0bf17a
 FUN_0c0bf2ac
 FUN_0c0bf88c
-FUN_0c0bf908
 FUN_0c0bf928
 FUN_0c0bf940
 FUN_0c0bfa46
@@ -1907,9 +1895,7 @@ FUN_0c0c47ae
 FUN_0c0c4844
 FUN_0c0c4898
 FUN_0c0c490a
-FUN_0c0c497c
 FUN_0c0c49b0
-FUN_0c0c4a00
 FUN_0c0c4a3c
 FUN_0c0c4c54
 FUN_0c0c4c90
@@ -1932,9 +1918,7 @@ FUN_0c0c6352
 FUN_0c0c6496
 FUN_0c0c64aa
 FUN_0c0c64cc
-FUN_0c0c65d2
 FUN_0c0c664c
-FUN_0c0c6694
 FUN_0c0c66ba
 FUN_0c0c6798
 FUN_0c0c69b6
@@ -2304,6 +2288,7 @@ FUN_0c0def50
 FUN_0c0df280
 FUN_0c0df3a0
 FUN_0c0df3c0
+FUN_0c0df490
 FUN_0c0df4c0
 FUN_0c0df4f0
 FUN_0c0df510
@@ -2540,6 +2525,7 @@ FUN_0c21b8a0
 FUN_0c21b92e
 FUN_0c21bc80
 FUN_0c21ef80
+FUN_0c21efbc
 FUN_0c220360
 FUN_0c220da0
 FUN_0c220da4
@@ -2965,14 +2951,20 @@ kmRenderDirect
 kmRenderTextureDirect
 kmResetRenderer
 kmSetBackGroundPlane
+kmSetBorderColor
+kmSetCheapShadowMode
 kmSetDisplayMode
 kmSetEORCallback
 kmSetEndOfVertexCallback
 kmSetEndOfYUVCallback
+kmSetFogTable
+kmSetFogTableColor
+kmSetFogVertexColor
 kmSetForwardClipping
 kmSetFramebufferTexture
 kmSetGlobalClipping
 kmSetHSyncCallback
+kmSetHSyncLine
 kmSetModifierRenderState
 kmSetPALEXTCallback
 kmSetPaletteBankData
@@ -2980,19 +2972,21 @@ kmSetPixelClipping
 kmSetStripLength
 kmSetStripOverRunCallback
 kmSetTexOverflowCallback
+kmSetUserClipLevelAdjust
 kmSetVSyncCallback
 kmSetVertexRenderState
 kmSetWaitVsyncCallback
 kmSetWaitVsyncCount
 kmUseAnotherModifier
 kmfGetInternalSystemMetrics
+kmfInitializeYUVConverter
 kmfSetCommonModifier
 kmfSetFatalErrorCallback
 kmfSetTimeOutCount
 kmfSetVertexBufferBaseAddress
+kmfSetVirticalFilterMode
 kmiABSalloc
 kmiAddSysConfigFlag
-kmiAllocSysConfig
 kmiCheckRenderer
 kmiChkActiveListType
 kmiCopyFromFrameBuffer
@@ -3009,6 +3003,7 @@ kmiFBGarbageCollect
 kmiFBSortQueue
 kmiFBallocEx
 kmiFBfreeEx
+kmiFBinit
 kmiFastTA
 kmiFastTADirect
 kmiFatalErrorEntry
@@ -3031,6 +3026,7 @@ kmiReadRegister
 kmiRegisterCallback
 kmiRegisterPhIntHandler
 kmiReleaseHardware
+kmiResetTA
 kmiSetSysConfigFlag
 kmiUnloadDevice
 kmiVQalloc
@@ -3039,6 +3035,7 @@ kmiWaitAccurate
 kmiWaitForFinishDMA
 kmiWaitVlank
 kmiWriteFBRegister
+kmiWriteRegister
 kmiWriteRegisters
 kmyConvertAddress64to32
 kmytex_FBDeQueueEntry
@@ -3126,6 +3123,7 @@ mwRnaGetAutoSw
 mwRnaGetNumData
 mwRnaGetNumRoom
 mwRnaGetPlaySw
+mwRnaGetTime
 mwRnaGetTransSw
 mwSfdStartFrame
 mwlRnaAddFlshPos
@@ -3332,6 +3330,10 @@ thunk_FUN_0c22c884
 thunk_FUN_0c22c8bc
 thunk_FUN_0c22c8cc
 thunk_FUN_0c22c932
+thunk_kmSetCheapShadowMode
+thunk_kmSetFogTable
+thunk_kmiWriteRegister
+thunk_mwRnaGetTime
 trigger
 vmsfb_create
 vmsfb_end

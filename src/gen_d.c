@@ -93,6 +93,7 @@ int FUN_0c2134b2(int, int, int, int);
 extern void _builtin_set_imask(int);
 int gdFsFinish(void);
 int kmSetCheapShadowMode(void);
+int thunk_kmSetCheapShadowMode(void);
 int pdExitPeripheral(void);
 int syHwFinish(void);
 int syMallocFinish(void);
@@ -2208,7 +2209,7 @@ int FUN_0c017216(int a4)
 
     FUN_0c06db68(a4, 0xAAA);
     FUN_0c06ddc4(a4);
-    t2 = kmSetCheapShadowMode();
+    t2 = thunk_kmSetCheapShadowMode();
     *(unsigned int *)((a4 + 0x0)) = 0xC017038;
     return t2;
 }
@@ -2335,7 +2336,7 @@ int FUN_0c01723a(int a4)
     int t1;
 
     FUN_0c06db68(a4, 0xAAA);
-    t1 = kmSetCheapShadowMode();
+    t1 = thunk_kmSetCheapShadowMode();
     *(unsigned int *)((a4 + 0x0)) = 0xC017038;
     return t1;
 }

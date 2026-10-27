@@ -107,6 +107,7 @@ int buUnmount(int);
 int kdGetDeviceInfo(int);
 int kmLoadTexture(int, int, int, int);
 int kmSetFogTable(void);
+int thunk_kmSetFogTable(void);
 int mwRnaErrCallFunc(int, int, int, int);
 int nlFogTableColor(int);
 int nlPopMatrix(int);
@@ -1911,7 +1912,7 @@ int FUN_0c0c0384(void)
             }
         }
     }
-    kmSetFogTable();
+    thunk_kmSetFogTable();
     nlFogTableColor(0x0);
     return FUN_0c0db1c0(0xFF09);
 }

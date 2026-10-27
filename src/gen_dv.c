@@ -53,6 +53,7 @@ int FUN_0c22ee60(void);
 int FUN_0c22eeb2(int, int, int);
 extern float _builtin_sqrtf(float);
 int kmSetCheapShadowMode(void);
+int thunk_kmSetCheapShadowMode(void);
 int kmytex_FBDeQueueEntry(int, int, int);
 int nlAddVector(int, int);
 int nlMultiMatrix(int);
@@ -1183,7 +1184,7 @@ int FUN_0c06dc1a(int a4)
 
     t1 = *(int *)((a4 + 0x30));
     if (((*(int *)0xC23ED5C) & 6) != 0) {
-        kmSetCheapShadowMode();
+        thunk_kmSetCheapShadowMode();
         FUN_0c0e19f2();
     }
     if ((*(int *)0xC23ED50) != (*(int *)((t1 + 0x80)))) {

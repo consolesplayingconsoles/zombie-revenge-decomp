@@ -2337,7 +2337,7 @@ F 0c0db0a0 34 FUN_0c0db0a0
 F 0c0db0e0 60 nlPrintf
 F 0c0db180 58 nlFogTableColor
 F 0c0db1c0 8 FUN_0c0db1c0
-F 0c0db1d0 6 kmSetFogTable
+F 0c0db1d0 6 thunk_kmSetFogTable
 F 0c0db1e0 66 FUN_0c0db1e0
 F 0c0db2a0 22 FUN_0c0db2a0
 F 0c0db320 132 FUN_0c0db320
@@ -2475,7 +2475,7 @@ F 0c0df280 26 FUN_0c0df280
 F 0c0df3a0 22 FUN_0c0df3a0
 F 0c0df3c0 22 FUN_0c0df3c0
 F 0c0df490 18 FUN_0c0df490
-F 0c0df4b0 6 kmSetCheapShadowMode
+F 0c0df4b0 6 thunk_kmSetCheapShadowMode
 F 0c0df4c0 18 FUN_0c0df4c0
 F 0c0df4f0 14 FUN_0c0df4f0
 F 0c0df510 22 FUN_0c0df510
@@ -3243,7 +3243,7 @@ F 0c217500 44 kmiGetProfileInt
 F 0c217564 732 FUN_0c217564
 F 0c217840 28 kmiReleaseHardware
 F 0c21785c 106 kmiInitializeHardware
-F 0c2178c6 6 kmiWriteRegister
+F 0c2178c6 6 thunk_kmiWriteRegister
 F 0c2179a0 40 kmiWaitAccurate
 F 0c2179c8 10 kmiFatalErrorEntry
 F 0c217a00 80 kmiInitInterrupt
@@ -3710,7 +3710,7 @@ F 0c229de0 6 thunk_FUN_0c22b866
 F 0c229de6 18 FUN_0c229de6
 F 0c229e04 6 thunk_FUN_0c22bece
 F 0c229e0a 6 thunk_FUN_0c22bfa2
-F 0c229e10 6 mwRnaGetTime
+F 0c229e10 6 thunk_mwRnaGetTime
 F 0c229e16 6 thunk_FUN_0c22c7c2
 F 0c229e1c 4 FUN_0c229e1c
 F 0c229e26 6 thunk_FUN_0c22c4ca

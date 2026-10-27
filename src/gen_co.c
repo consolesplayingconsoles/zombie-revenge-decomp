@@ -56,6 +56,7 @@ int kdGetDevice(int);
 int kdGetDeviceInfo(int);
 int kdGetStatus(int);
 int kmSetCheapShadowMode(void);
+int thunk_kmSetCheapShadowMode(void);
 int kmSetHSyncCallback(int, int);
 int kmSetVSyncCallback(int, int);
 int kmiAddSysConfigFlag(int);
@@ -319,7 +320,7 @@ int FUN_0c069fba(void)
         if ((int)t8 < (int)0x10) {
             u11 = ((float)t8 * 0.0625f);
         }
-        kmSetCheapShadowMode();
+        thunk_kmSetCheapShadowMode();
         *(unsigned int *)(((int)stk + 8)) = (((t3 << 2) + 0xC0FB0CC) + 0x4);
         t17 = *(int *)((((t3 << 2) + 0xC0FB0CC) + 0x0));
         *(unsigned int *)(((int)stk + 4)) = t17;

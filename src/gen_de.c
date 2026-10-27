@@ -53,6 +53,7 @@ static void iaOcbp(void *p)
 }
 int kmiReadRegister(int);
 extern int kmiWriteRegister();
+extern int thunk_kmiWriteRegister();
 int gdFsGetStatG(int a4, int a5, int a6, int a7);
 int FUN_0c03310c(int a4);
 int FUN_0c058fa0(int a4);
@@ -1355,22 +1356,22 @@ int FUN_0c220360(Stk63 s)
         }
         t60 = t51;
     }
-    t62 = ((int (*)(int, int, int))(kmiWriteRegister))(0xE8, ((*(int *)0xC952600) | 0x8), t60);
+    t62 = ((int (*)(int, int, int))(thunk_kmiWriteRegister))(0xE8, ((*(int *)0xC952600) | 0x8), t60);
     t64 = 0x0;
     if (((*(int *)0xC952318) & 1) != 0) {
         t64 = 0x800000;
     }
-    t66 = ((int (*)(int, int))(kmiWriteRegister))(0x44, t64);
-    t67 = ((int (*)(int, int))(kmiWriteRegister))(0x5C, 0x0);
-    t69 = ((int (*)(int, int))(kmiWriteRegister))(0xD0, (*(int *)0xC9525DC));
-    t71 = ((int (*)(int, int))(kmiWriteRegister))(0xD8, (*(int *)0xC9525EC));
-    t73 = ((int (*)(int, int))(kmiWriteRegister))(0xCC, (*(int *)0xC9525E4));
-    t75 = ((int (*)(int, int))(kmiWriteRegister))(0xD4, (*(int *)0xC9525E8));
-    t77 = ((int (*)(int, int))(kmiWriteRegister))(0xDC, (*(int *)0xC9525F0));
-    t79 = ((int (*)(int, int))(kmiWriteRegister))(0xE0, (*(int *)0xC9525F4));
-    t81 = ((int (*)(int, int))(kmiWriteRegister))(0xEC, (*(int *)0xC952604));
-    t83 = ((int (*)(int, int))(kmiWriteRegister))(0xF0, (*(int *)0xC952608));
-    return (((int (*)(int, int))(kmiWriteRegister))(0xC8, (*(int *)0xC9525E0)));
+    t66 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0x44, t64);
+    t67 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0x5C, 0x0);
+    t69 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xD0, (*(int *)0xC9525DC));
+    t71 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xD8, (*(int *)0xC9525EC));
+    t73 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xCC, (*(int *)0xC9525E4));
+    t75 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xD4, (*(int *)0xC9525E8));
+    t77 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xDC, (*(int *)0xC9525F0));
+    t79 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xE0, (*(int *)0xC9525F4));
+    t81 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xEC, (*(int *)0xC952604));
+    t83 = ((int (*)(int, int))(thunk_kmiWriteRegister))(0xF0, (*(int *)0xC952608));
+    return (((int (*)(int, int))(thunk_kmiWriteRegister))(0xC8, (*(int *)0xC9525E0)));
 }
 
 int FUN_0c07a944(int a4, int a5, int a6, int a7)
