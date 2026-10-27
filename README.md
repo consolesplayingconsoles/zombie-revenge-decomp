@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=95.6&b=87.3&a=65&s=0)
+![decomp progress](badges/progress.svg?p=95.7&b=87.6&a=66&s=0)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,16 +21,16 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE            65.2%  the instructions the cases ran, of all instructions, over the 4059 functions that can be C; the 3412 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (95.6% complete) 179  of the 4059 functions that can be C (173 with no C form are counted apart)
-BYTES LEFT    (87.3% complete) 86344  of 679764 bytes of code that can be C
+TOTAL TEST COVERAGE            65.5%  the instructions the cases ran, of all instructions, over the 4059 functions that can be C; the 3415 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (95.7% complete) 176  of the 4059 functions that can be C (173 with no C form are counted apart)
+BYTES LEFT    (87.6% complete) 84212  of 679764 bytes of code that can be C
 FUNCTIONS                             
   unnamed                       3073  functions still called FUN_... (3073 of 4232)
   Not written C                   31  14844 bytes
   Written C with errors            0  0 bytes
-  Not drawn                        2  2670 bytes
-  Drawn with errors               86  43462 bytes
-  Checked with errors             60  25368 bytes
+  Not drawn                        0  0 bytes
+  Drawn with errors               86  44848 bytes
+  Checked with errors             59  24520 bytes
   No C form                     4.1%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
   documented                   18.9%  801 named functions in docs/*.md
 ```
