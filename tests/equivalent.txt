@@ -338,6 +338,7 @@ FUN_0c021376
 FUN_0c0213ac
 FUN_0c0213de
 FUN_0c02148c
+FUN_0c021524
 FUN_0c021956
 FUN_0c0219ec
 FUN_0c021a48
@@ -856,6 +857,7 @@ FUN_0c04f8d4
 FUN_0c04faa4
 FUN_0c04fb24
 FUN_0c04fb9e
+FUN_0c04fc18
 FUN_0c04fca2
 FUN_0c04fd64
 FUN_0c04fdb0
@@ -896,6 +898,7 @@ FUN_0c052260
 FUN_0c052268
 FUN_0c0522dc
 FUN_0c052328
+FUN_0c05265c
 FUN_0c0526b8
 FUN_0c053406
 FUN_0c0534a4
@@ -973,6 +976,7 @@ FUN_0c056e8e
 FUN_0c056fc4
 FUN_0c057014
 FUN_0c057142
+FUN_0c057950
 FUN_0c057aa8
 FUN_0c057bfa
 FUN_0c057c50
@@ -1176,6 +1180,7 @@ FUN_0c077da4
 FUN_0c077f30
 FUN_0c078018
 FUN_0c078286
+FUN_0c078846
 FUN_0c078bec
 FUN_0c078d6e
 FUN_0c078d72
@@ -1684,6 +1689,7 @@ FUN_0c0b26a2
 FUN_0c0b27bc
 FUN_0c0b2900
 FUN_0c0b2984
+FUN_0c0b2a28
 FUN_0c0b2b18
 FUN_0c0b2e48
 FUN_0c0b2e84
@@ -1825,6 +1831,8 @@ FUN_0c0bdd2c
 FUN_0c0bdec2
 FUN_0c0be0e4
 FUN_0c0be338
+FUN_0c0be46c
+FUN_0c0be4d0
 FUN_0c0be578
 FUN_0c0be6ee
 FUN_0c0be7ae
@@ -1956,6 +1964,7 @@ FUN_0c0c7354
 FUN_0c0c73e6
 FUN_0c0c74a4
 FUN_0c0c78b6
+FUN_0c0c7970
 FUN_0c0c7aa4
 FUN_0c0c7ab8
 FUN_0c0c7d0a
@@ -1979,6 +1988,7 @@ FUN_0c0c98ce
 FUN_0c0c99a0
 FUN_0c0c99d0
 FUN_0c0c9d1c
+FUN_0c0c9d34
 FUN_0c0c9e86
 FUN_0c0c9f70
 FUN_0c0ca332
@@ -1990,6 +2000,7 @@ FUN_0c0ca844
 FUN_0c0ca862
 FUN_0c0ca922
 FUN_0c0cac22
+FUN_0c0cac3a
 FUN_0c0cacde
 FUN_0c0cad0c
 FUN_0c0cae8e
@@ -2744,6 +2755,7 @@ __init_dspdb_cc_f
 __init_target_cc_f
 _destructFiber
 _pd_peripheral_error
+_pd_peripheral_set_data
 _pd_peripheral_set_id
 _pd_peripheral_set_null
 adxf_AllocAdxFs
@@ -3293,6 +3305,7 @@ syG2DmaResume
 syG2DmaResumeAll
 syG2DmaSetProtect
 syG2DmaSuspendAll
+syG2Write
 syHwCacheFinish
 syHwFinish
 syHwInit
