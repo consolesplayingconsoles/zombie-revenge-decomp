@@ -10,50 +10,6 @@ int _quick_odd_mvn(int, int, float, float, float, float);
 int FUN_0c08a8e0(int a4, int a5, float f4);
 int FUN_0c08e6d8(int a4);
 
-int FUN_0c08a8e0(int a4, int a5, float f4)
-{
-    float u0;
-    float u1;
-    float u2;
-    float u5;
-    float u6;
-    int t13;
-    float u3;
-    float u4;
-    int t21;
-    int t22;
-    float u24;
-    float u25;
-    float u26;
-    float u27;
-    int stk[11];
-
-    *(unsigned int *)(((int)stk + 4)) = ((0x154 + a4) + (((a5 << 1) + a5) << 2));
-    u0 = *(float *)((((((((a5 << 1) + a5) << 2) << 2) << 2) + 0xC23F268) + 0x4));
-    u1 = *(float *)((((0x154 + a4) + (((a5 << 1) + a5) << 2)) + 0x4));
-    u2 = *(float *)0xC08A9E0;
-    if (((u2 > u0) && (!(u2 > u1) && (u3 = *(float *)0xC08A9E4, (u1 - u0) > u3))) || (!(u2 > u0) && ((u2 > u1) && (u4 = *(float *)0xC08A9E8, u4 > (u1 - u0))))) {
-        u5 = *(float *)0xC08A9EC;
-        u6 = (_builtin_fabsf((u1 - u0)) * u5);
-        if ((_builtin_fabsf((u1 - u0)) * u5) > u5) {
-            u6 = u5;
-        }
-        _quick_odd_mvn(a4, a5, u2, _builtin_fabsf((u1 - u0)), u5, u1);
-        *(float *)(((int)stk + 16)) = f4;
-        *(unsigned int *)(((int)stk + 8)) = ((0x154 + a4) + (((a5 << 1) + a5) << 2));
-        t13 = FUN_0c0d9dc0(((*(float *)((((((((a5 << 1) + a5) << 2) << 2) << 2) + 0xC23F268) + 0x0))) - (*(float *)((((0x154 + a4) + (((a5 << 1) + a5) << 2)) + 0x0)))), ((*(float *)((((((((a5 << 1) + a5) << 2) << 2) << 2) + 0xC23F268) + 0x8))) - (*(float *)((((0x154 + a4) + (((a5 << 1) + a5) << 2)) + 0x8)))));
-        FUN_0c08e970((((int)stk + 4) + 0x8), (0x8000 + t13), u6);
-        FUN_0c0cc3f8((*(int *)((a4 + 0x3C4))), 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
-    } else {
-        t21 = a4;
-        t22 = a5;
-        u24 = u2;
-        u25 = (u1 - u0);
-        u26 = u0;
-        u27 = u1;
-    }
-    return (_quick_odd_mvn(t21, t22, u24, u25, u26, u27));
-}
 
 int FUN_0c08e6d8(int a4)
 {

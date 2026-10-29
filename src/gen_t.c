@@ -447,24 +447,6 @@ int FUN_0c0a9592(int a4, int a5, int a6, int a7)
     return t14;
 }
 
-int FUN_0c0cdff2(void)
-{
-    int t0;
-
-    *(float *)0xC23F1D0 = 1.0f;
-    *(float *)0xC23F1CC = 1.0f;
-    *(float *)0xC23F1C0 = 1.0f;
-    *(float *)0xC23F1BC = 1.0f;
-    *(float *)0xC23F1B0 = 320.0f;
-    *(float *)0xC23F1B4 = 180.0f;
-    *(float *)0xC23F1B8 = 0.00139999995f;
-    *(float *)0xC23F1D8 = 1.0f;
-    *(unsigned int *)0xC23F1E0 = 0xA;
-    *(unsigned int *)0xC23F1DC = 0xFFFFFFFF;
-    t0 = _quick_evn_mvn();
-    *(unsigned int *)0xC5229BC = 0x9;
-    return t0;
-}
 
 void FUN_0c0ce6a8(int a4, int a5)
 {
@@ -635,18 +617,6 @@ float FUN_0c01e79a(int a4, int a5)
     return u0;
 }
 
-int FUN_0c016c10(int a4)
-{
-    _quick_evn_mvn();
-    if (((*(int *)0xC23A1A8) & 1) != 0) {
-        FUN_0c0cfaf2(a4);
-    }
-    if (((*(int *)0xC23A1A8) & 0x100) != 0) {
-        FUN_0c0d1854(a4);
-    }
-    FUN_0c0cf908();
-    return 0xC23ED04;
-}
 
 int FUN_0c01fb04(void)
 {
@@ -812,24 +782,6 @@ int FUN_0c085704(int a4)
     return FUN_0c085752(a4, t5);
 }
 
-int FUN_0c0cf11c(int a4, int a5)
-{
-    int t0;
-
-    if ((int)a4 < (int)0x16) {
-        t0 = FUN_0c0556ce(a4, 0x4, a5);
-        if ((int)t0 >= 0) {
-            _quick_odd_mvn((*(int *)(((t0 << 2) + 0xC2475D4))));
-            *(unsigned int *)((a4 + 0x25C)) = 0x0;
-            *(volatile float *)0xC0CF22C;
-            return FUN_0c0cee6a(a5);
-        }
-        return t0;
-    }
-    FUN_0c0553b6(a4, 0x4, a5);
-    *(volatile float *)0xC0CF22C;
-    return FUN_0c0cee6a(a5);
-}
 
 float FUN_0c0d7114(int a4, int a5)
 {

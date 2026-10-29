@@ -853,16 +853,6 @@ int FUN_0c0d8610(int a4, int a5)
     return t0;
 }
 
-int nlFogTableColor(int a4)
-{
-    int stk[5];
-
-    *(unsigned char *)((((int)stk + 8) + 0x3)) = (signed char)((unsigned int)((unsigned int)a4 >> 16) >> 8);
-    *(unsigned char *)((((int)stk + 8) + 0x2)) = (short)((unsigned int)a4 >> 16);
-    *(unsigned char *)((((int)stk + 8) + 0x1)) = ((int)a4 >> 8);
-    *(unsigned char *)((((int)stk + 8) + 0x0)) = a4;
-    return (kmSetFogTableColor(((*(int *)((((int)stk + 8) + 0x0))))));
-}
 
 int nlInitMatrixStack(int a4, int a5, int a6)
 {
@@ -2728,10 +2718,6 @@ int FUN_0c0e1676(int a4)
     return FUN_0c0e1794();
 }
 
-int FUN_0c0d8f50(int a4)
-{
-    return (kmSetBorderColor((a4 | 0xFF000000)));
-}
 
 float FUN_0c0da0c0(float f4)
 {

@@ -253,67 +253,6 @@ int FUN_0c091ac8(int a4)
     return FUN_0c0dce80((a4 + 0x3C), (a4 + 0x3C), (*(float *)0xC091CC8));
 }
 
-int FUN_0c0b4404(int a4)
-{
-    int t0;
-    int t5;
-    int t27;
-    int t29;
-    int t43;
-    int t34;
-    int t16;
-    int t9;
-
-    t0 = *(int *)((a4 + 0x24C));
-    if (t0 != 0) {
-        if (t0 != 1) {
-            if (t0 != 2) {
-                if (t0 != 3) {
-                    t5 = t0;
-                    if (t0 != 4) {
-                    } else {
-                        FUN_0c082220();
-                        *(unsigned int *)((a4 + 0x3D4)) = (*(short *)((a4 + 0x3CC)));
-                        *(unsigned int *)((a4 + 0x3D8)) = (*(short *)((a4 + 0x3CE)));
-                        t5 = (_quick_odd_mvn());
-                    }
-                    t9 = t5;
-                } else {
-                    *(float *)((a4 + 0x268)) = ((*(float *)((a4 + 0x268))) + 0.0199999996f);
-                    t9 = 0x268;
-                }
-                t16 = t9;
-            } else {
-                *(unsigned int *)((a4 + 0x420)) = 0x12C;
-                *(unsigned int *)((a4 + 0x24C)) = ((*(int *)((a4 + 0x24C))) + 0x1);
-                t16 = 0x24C;
-            }
-            t34 = t16;
-        } else {
-            FUN_0c0a7ed4(0xC203CDC, (*(int *)((a4 + 0x420))), (0x260 + a4), (0x3D4 + a4));
-            *(unsigned int *)((a4 + 0x420)) = ((*(int *)((a4 + 0x420))) + 0x444);
-            t27 = *(int *)((a4 + 0x420));
-            t29 = t27;
-            if ((int)t27 > (int)0x140000) {
-                *(float *)((a4 + 0x260)) = 180.0f;
-                *(float *)((a4 + 0x264)) = 1.0999999f;
-                *(float *)((a4 + 0x268)) = 97.0f;
-                *(unsigned int *)((a4 + 0x3D4)) = 0x18E3;
-                *(unsigned int *)((a4 + 0x3D8)) = 0xFFFFB05C;
-                *(unsigned int *)((a4 + 0x420)) = 0x1E;
-                *(unsigned int *)((a4 + 0x24C)) = ((*(int *)((a4 + 0x24C))) + 0x1);
-                t29 = 0x24C;
-            }
-            t34 = t29;
-        }
-        t43 = t34;
-    } else {
-        *(unsigned int *)((a4 + 0x420)) = 0x10000;
-        *(unsigned int *)((a4 + 0x24C)) = ((*(int *)((a4 + 0x24C))) + 0x1);
-        t43 = 0x24C;
-    }
-    return t43;
-}
 
 int FUN_0c0cf1b0(int a4, int a5, int a6, int a7)
 {

@@ -1059,16 +1059,6 @@ int buGetFileSize(int a4, int a5)
     return vmsfs_fgetsize(a4, a5);
 }
 
-int pdVibMxStart(int a4, int a5)
-{
-    int t0;
-
-    t0 = pdVibMxIsReady(a4);
-    if (t0 == 0) {
-        return 0xFFFFFFFE;
-    }
-    return pdVibStart(a4, a5);
-}
 
 int adxf_AllocAdxFs(void)
 {
@@ -1228,16 +1218,6 @@ int syChainMasterHandler(int a4)
     return t1;
 }
 
-int pdVibMxStop(int a4)
-{
-    int t0;
-
-    t0 = pdVibMxIsReady(a4);
-    if (t0 == 0) {
-        return 0xFFFFFFFE;
-    }
-    return pdVibStart(a4, 0xC236C00);
-}
 
 int FUN_0c2211be(int a4, int a5, int a6)
 {

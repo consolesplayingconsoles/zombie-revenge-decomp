@@ -124,15 +124,7 @@ int FUN_0c0d88a0(int a4)
     return kmSetPaletteMode((*(int *)(((a4 << 2) + 0xC1EA2A8))));
 }
 
-int FUN_0c0d8ed0(int a4)
-{
-    return (kmSetFogTableColor(a4));
-}
 
-int FUN_0c0d8ef0(int a4)
-{
-    return (kmSetFogVertexColor(a4));
-}
 
 int FUN_0c0d9ee0(float f4)
 {

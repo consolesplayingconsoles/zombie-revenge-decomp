@@ -589,33 +589,6 @@ int FUN_0c03227c(int a4)
     goto L_C03235E;
 }
 
-int FUN_0c0493d8(int a4)
-{
-    float u18;
-
-    if ((int)(*(int *)((a4 + 0x304))) <= 0) {
-        *(unsigned int *)0xC23EDB0 = 0x0;
-        *(unsigned int *)0xC23ED5C = ((*(int *)0xC23ED5C) | 0x10000);
-        *(unsigned int *)((a4 + 0x474)) = 0x0;
-        return 0x474;
-    }
-    if ((*(int *)((a4 + 0x4D0))) == 0) {
-        *(unsigned int *)((a4 + 0xA4)) = ((*(int *)((a4 + 0xA4))) & 0xFFFFFFF7);
-    }
-    if ((int)(*(int *)((a4 + 0x490))) > 0) {
-        *(unsigned int *)((a4 + 0x398)) = ((*(int *)((a4 + 0x398))) - 1);
-    }
-    FUN_0c0465fa(a4);
-    _quick_odd_mvn();
-    if ((((*(float *)((a4 + 0x390))) + 10.0f) > (*(float *)((a4 + 0x34)))) && (u18 = *(float *)((a4 + 0x4C)), !(u18 > 0.0f))) {
-        *(float *)((a4 + 0x4C)) = (((*(float *)((a4 + 0x390))) - (*(float *)((a4 + 0x34)))) + 10.0f);
-        *(float *)((a4 + 0x64)) = 0.0f;
-    }
-    *(float *)((a4 + 0x4B0)) = 0.0f;
-    *(float *)((a4 + 0x4B4)) = 0.0f;
-    *(float *)((a4 + 0x4B8)) = 0.0f;
-    return 0x4B8;
-}
 
 int FUN_0c06f1cc(int a4, int a5)
 {

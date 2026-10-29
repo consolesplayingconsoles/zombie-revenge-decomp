@@ -874,24 +874,6 @@ void hwInit(void)
     }
 }
 
-int FUN_0c20d160(void)
-{
-    int t2;
-
-    *(volatile signed char *)(((*(int *)0xC2364E4) + 0x0));
-    t2 = 0x8C00C000;
-    for (;;) {
-        *(unsigned int *)((t2 + 0x0)) = 0x41474553;
-        t2 = (t2 + 0x4);
-        if ((unsigned int)t2 >= (unsigned int)0x8C00F400) {
-            break;
-        }
-    }
-    _INITSCT();
-    FUN_0c20d188();
-    FUN_0c010250();
-    return FUN_0c20d190();
-}
 
 int FUN_0c0e5810(int a4, float f4)
 {
@@ -2033,3 +2015,5 @@ int kmSetEndOfYUVCallback(int a4, int a5)
 {
     return FUN_0c20d728(a4, a5);
 }
+
+

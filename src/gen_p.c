@@ -139,21 +139,6 @@ int FUN_0c0211a0(void)
     return t5;
 }
 
-int FUN_0c01993e(int a4)
-{
-    int t0;
-    int t11;
-
-    t0 = *(int *)0xC23ED9C;
-    if ((t0 != 7) && ((t0 != 4) && (t0 != 25))) {
-        return FUN_0c019a5c();
-    }
-    if (((*(int *)0xC23A258) & 31) == 0) {
-        *(unsigned int *)0xC23F244 = ((*(int *)0xC23F244) ^ 0x1);
-    }
-    t11 = ((int (*)(int, int))((*(int *)((((*(int *)0xC23F21C) << 2) + 0xC1EFA4C)))))(a4, 0xC23F1AC);
-    return FUN_0c0ce486();
-}
 
 int FUN_0c022a64(int a4)
 {
@@ -203,22 +188,6 @@ int FUN_0c090638(int a4)
     return t6;
 }
 
-int FUN_0c0336d6(int a4, int a5, int a6)
-{
-    int t4;
-    int t5;
-    int stk[8];
-
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    *(unsigned int *)(((int)stk + 8)) = a5;
-    *(unsigned int *)(((int)stk + 12)) = a6;
-    *(volatile int *)(((*(int *)(((int)stk + 4))) + 0xBC));
-    _quick_odd_mvn(a4, a5, a6);
-    t4 = *(int *)(((int)stk + 8));
-    t5 = *(short *)(((*(int *)(((int)stk + 4))) + 0x6E));
-    *(volatile int *)(((int)stk + 12));
-    return (FUN_0c033530((((int)stk + 4) + 0xC), t5, t4));
-}
 
 int FUN_0c0b464a(float f4, float f5)
 {
@@ -552,19 +521,6 @@ int buFbrKillFiber(int a4, int a5)
     return 0xFFFFFFFF;
 }
 
-int SJ_SplitChunk(int a4, int a5, int a6, int a7)
-{
-    int t0;
-
-    t0 = _quick_evn_mvn();
-    *(unsigned int *)((a7 + 0x4)) = (*(int *)((a6 + 0x4)));
-    if ((int)(*(int *)((a6 + 0x4))) > (int)a5) {
-        *(unsigned int *)((a6 + 0x4)) = a5;
-    }
-    *(unsigned int *)((a7 + 0x0)) = ((*(int *)((a6 + 0x0))) + (*(int *)((a6 + 0x4))));
-    *(unsigned int *)((a7 + 0x4)) = ((*(int *)((a7 + 0x4))) - (*(int *)((a6 + 0x4))));
-    return t0;
-}
 
 int ADXB_ExecOneWav(int a4)
 {
@@ -862,3 +818,5 @@ int FUN_0c235ce0(int a4)
 {
     return (*(int *)((a4 + 0x10)));
 }
+
+

@@ -189,13 +189,6 @@ int FUN_0c0ab374(int a4, int a5, int a6, int a7)
     return (FUN_0c0cc3f8(0x82AA9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28)));
 }
 
-int FUN_0c0de310(float f4, float f5, float f6)
-{
-    *(float *)0xC20CE80 = f4;
-    *(float *)0xC20CE84 = f5;
-    *(float *)0xC20CE88 = f6;
-    return (_quick_odd_mvn(0xC20CE80, f4, f5, f6));
-}
 
 int FUN_0c22c716(int a4, int a5, int a6, int a7)
 {

@@ -162,10 +162,6 @@ int FUN_0c090a1c(int a4, int a5)
     return FUN_0c09084c(a4, a5, (*(int *)((0xC246FF0 + ((*(int *)((a4 + 0x1C4))) << 2)))));
 }
 
-int FUN_0c0a8fd6(int a4, int a5)
-{
-    return (_quick_odd_mvn(a4, a5));
-}
 
 int FUN_0c0ae202(void)
 {

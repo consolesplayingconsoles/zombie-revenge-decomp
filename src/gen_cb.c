@@ -89,47 +89,6 @@ int FUN_0c08aa8e(int a4, int a5, int a6, int a7);
 void FUN_0c09635c(int a4, int a5, float f4, float f5);
 void FUN_0c098c2e(int a4, int a5, float f4, float f5);
 
-int FUN_0c08d75c(int a4, int a5, int a6)
-{
-    int t1;
-    int t5;
-    int t17;
-    int t19;
-
-    t1 = FUN_0c0e19aa(0xC08D068, 0x110, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    *(unsigned int *)((t1 + 0x3C)) = a5;
-    *(unsigned int *)((t1 + 0x40)) = a6;
-    *(unsigned int *)0xC247D04 = ((*(int *)0xC247D04) | 0x10000);
-    t5 = *(int *)0xC23ED50;
-    if ((*(int *)0xC200A78) != t5) {
-        *(unsigned int *)0xC200A78 = t5;
-        *(unsigned int *)0xC248DD4 = (*(int *)0xC248A64);
-        *(unsigned int *)0xC248DD8 = (*(int *)0xC248A68);
-        *(unsigned int *)0xC248DDC = (*(int *)0xC248A6C);
-        *(unsigned int *)0xC248DE0 = (unsigned char)((int)(*(int *)0xC248A70) >> 8);
-        *(unsigned int *)0xC248DE4 = (unsigned char)(*(signed char *)0xC248A70);
-    }
-    _quick_odd_mvn(t5, 0xC200A78);
-    t17 = 0x236;
-    for (;;) {
-        FUN_0c0cbafc(t17, 0x2, 0xFC000000, 0x94000000);
-        t17 = (t17 + 0x1);
-        if ((int)t17 >= (int)0x245) {
-            break;
-        }
-    }
-    t19 = 0x259;
-    for (;;) {
-        FUN_0c0cbafc(t19, 0x2, 0xFC000000, 0x94000000);
-        t19 = (t19 + 0x1);
-        if ((int)t19 >= (int)0x26D) {
-            break;
-        }
-    }
-    FUN_0c0cbafc(0x410, 0x2, 0xFC000000, 0xC000000);
-    return (FUN_0c0cbafc(0x294, 0x2, 0xFC006000, 0x84002000));
-}
 
 int FUN_0c0b3d5a(void)
 {

@@ -714,18 +714,6 @@ int FUN_0c01ac48(void)
     return t5;
 }
 
-int FUN_0c086b96(int a4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC08C25A, 0xA4, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    *(unsigned short *)((t1 + 0x9A)) = 0x410;
-    *(unsigned short *)((t1 + 0xA0)) = 0x14;
-    *(float *)((t1 + 0x90)) = (*(float *)0xC086CA0);
-    return 0x90;
-}
 
 int FUN_0c0855f4(int a4)
 {
@@ -766,18 +754,6 @@ int FUN_0c0881d4(int a4, int a5)
     return t3;
 }
 
-int FUN_0c086bda(int a4, float f4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC08C25A, 0xA4, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    *(float *)((t1 + 0x90)) = f4;
-    *(unsigned short *)((t1 + 0x9A)) = 0x245;
-    *(unsigned short *)((t1 + 0xA0)) = 0x14;
-    return 0xA0;
-}
 
 int FUN_0c09bd5c(int a4)
 {
@@ -1214,22 +1190,6 @@ int syCfgIIDCheckSum(int a4)
     return 0x0;
 }
 
-int adxf_SetAfsFileInfo(int a4, int a5, int a6)
-{
-    int t2;
-    int stk[7];
-
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    *(unsigned int *)(((int)stk + 16)) = a6;
-    t2 = ADXF_GetFileRange((*(int *)(((int)stk + 12))), (*(int *)(((int)stk + 16))), (((int)stk + 4) + 0x4));
-    if ((int)t2 < 0) {
-        return 0xFFFFFFFD;
-    }
-    *(unsigned int *)((a4 + 0xC)) = (*(int *)(((int)stk + 8)));
-    *(unsigned int *)((a4 + 0x10)) = (*(int *)(((int)stk + 4)));
-    *(unsigned int *)((a4 + 0x14)) = ((((*(int *)(((int)stk + 4))) << 8) << 2) << 1);
-    return 0x0;
-}
 
 int adxf_ExecOne(int a4)
 {

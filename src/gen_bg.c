@@ -206,40 +206,6 @@ int FUN_0c075036(int a4, int a5, int a6, int a7)
     return t2;
 }
 
-int FUN_0c07a0f0(int a4)
-{
-    int t0;
-    int t1;
-    float u4;
-    float u9;
-
-    t0 = 0x0;
-    for (;;) {
-        t1 = FUN_0c0e1830(0xC07A1D6, 0x2BC);
-        FUN_0c0e19d0(t1);
-        *(unsigned int *)((t1 + 0xBC)) = 0x18;
-        *(float *)((t1 + 0x1E4)) = 5.5f;
-        *(unsigned int *)((t1 + 0x1F8)) = 0x12;
-        *(unsigned int *)((t1 + 0x200)) = 0x1;
-        *(unsigned int *)((t1 + 0x1F4)) = 0x1E;
-        u4 = (*(float *)((a4 + 0x30)));
-        u4 = u4 + 10.0f * (float)t0;
-        *(float *)((t1 + 0x30)) = (u4 + -20.0f);
-        *(float *)((t1 + 0x38)) = (*(float *)((a4 + 0x38)));
-        _quick_odd_mvn();
-        u9 = -0.5f;
-        if ((*(int *)((a4 + 0x88))) != 0) {
-            u9 = 0.5f;
-        }
-        *(float *)((t1 + 0x50)) = u9;
-        t0 = (t0 + 0x1);
-        *(unsigned int *)((t1 + 0x230)) = a4;
-        if ((int)t0 >= (int)0x5) {
-            break;
-        }
-    }
-    return 0x230;
-}
 
 int FUN_0c0ad702(void)
 {
@@ -500,30 +466,6 @@ int FUN_0c08545a(int a4, int a5, float f4, float f5, float f6)
     return t26;
 }
 
-int FUN_0c0835fa(int a4)
-{
-    int t5;
-
-    if ((*(int *)0xC2475A4) == 1) {
-        *(unsigned int *)((a4 + 0x3B4)) = 0x0;
-    } else {
-        *(unsigned int *)((a4 + 0x3B4)) = 0x1;
-    }
-    t5 = *(int *)((((*(int *)((a4 + 0x3B4))) << 2) + 0xC246FF0));
-    FUN_0c082f04(a4, 0x3, (*(float *)((t5 + 0x22C))));
-    FUN_0c082f04(a4, 0x4, (*(float *)((t5 + 0x230))));
-    FUN_0c082f04(a4, 0x5, (*(float *)((t5 + 0x234))));
-    FUN_0c082fae(a4, 0x3, 0x0, 0x168, (*(float *)0xC1028C8));
-    FUN_0c082fae(a4, 0x5, 0x0, 0x168, (*(float *)0xC1028D0));
-    FUN_0c082f78(a4, 0x0, 0xC247EA8);
-    FUN_0c082f78(a4, 0x1, 0xC247EAC);
-    FUN_0c082f78(a4, 0x2, 0xC247EB0);
-    _quick_odd_mvn();
-    *(unsigned int *)((a4 + 0x370)) = 0xEAAA;
-    *(unsigned int *)((a4 + 0x374)) = 0x2D;
-    *(unsigned int *)((a4 + 0x3FC)) = 0x78;
-    return 0x3FC;
-}
 
 int FUN_0c0ad83e(void)
 {
@@ -1573,26 +1515,6 @@ void FUN_0c0dbda0(int a4)
     _builtin_ld_ext((float (*)[4])u19);
 }
 
-int ADXT_StartAfs(int a4, int a5, int a6)
-{
-    int t8;
-    int stk[10];
-
-    *(unsigned int *)(((int)stk + 24)) = a5;
-    *(unsigned int *)(((int)stk + 28)) = a6;
-    ADXT_Stop();
-    ADXCRS_Lock();
-    ADXF_GetFileRange((*(int *)(((int)stk + 24))), (*(int *)(((int)stk + 28))), ((int)stk + 16));
-    t8 = ADXSTM_OpenRange((*(int *)(((int)stk + 16))), (*(int *)(((int)stk + 20))), (*(int *)((a4 + 0x10))));
-    *(unsigned int *)((a4 + 0x8)) = t8;
-    if (t8 == 0) {
-        ADXCRS_Unlock();
-        ADXERR_CallErrFunc(0xC236C08, ((*(int *)(((int)stk + 24)))), ((*(int *)(((int)stk + 28)))));
-    } else {
-        adxt_start_stm(a4);
-    }
-    return (ADXCRS_Unlock());
-}
 
 int FUN_0c0dc460(int a4)
 {

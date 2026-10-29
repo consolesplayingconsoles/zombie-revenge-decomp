@@ -126,54 +126,8 @@ int FUN_0c01112e(void)
     return t0;
 }
 
-int FUN_0c068d54(int a4)
-{
-    int t1;
 
-    t1 = FUN_0c0e19aa(0xC068DA8, 0xB4, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    FUN_0c0e6248();
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FA502);
-    *(unsigned int *)((t1 + 0x8C)) = a4;
-    return 0x8C;
-}
 
-int FUN_0c07a89a(int a4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC07A944, 0xB4, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    FUN_0c0e6248();
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FFD62);
-    *(unsigned int *)((t1 + 0x8C)) = a4;
-    return 0x8C;
-}
-
-int FUN_0c075256(void)
-{
-    int t0;
-    int t1;
-    int t3;
-    int t5;
-
-    t0 = 0x0;
-    t1 = 0xC0FE510;
-    for (;;) {
-        t3 = FUN_0c0e19aa(0xC0751C8, 0x44, (*(int *)0xC23ECE4));
-        FUN_0c0e19d0(t3);
-        t5 = _quick_odd_mvn();
-        t0 = (t0 + 0x1);
-        *(unsigned int *)((t3 + 0x3C)) = (*(int *)((t1 + 0xC)));
-        t1 = (t1 + 0x10);
-        if ((unsigned int)t0 >= (unsigned int)0xA) {
-            break;
-        }
-    }
-    return t5;
-}
 
 int FUN_0c081e0c(int a4)
 {
@@ -1287,3 +1241,5 @@ int mpdrv_clear_deviceinfo(int a4)
     *(unsigned char *)((a4 + 0x33)) = 0x0;
     return 0x0;
 }
+
+

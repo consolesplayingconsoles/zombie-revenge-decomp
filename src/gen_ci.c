@@ -166,39 +166,3 @@ int FUN_0c0ba09c(int a4, int a5, int a6)
     return t26;
 }
 
-int FUN_0c0a8f48(int a4, int a5)
-{
-    int t5;
-    int t7;
-    int t6;
-    int t13;
-
-    *(unsigned int *)((a4 + 0x1BC)) = 0x0;
-    *(unsigned int *)((a4 + 0x3CC)) = a5;
-    *(unsigned int *)((a4 + 0x3D0)) = a5;
-    *(unsigned int *)(((0x2BC + a4) + 0x0)) = (*(short *)((a5 + 0x2)));
-    *(unsigned int *)(((0x2C4 + a4) + 0x0)) = (*(short *)((a5 + 0x2)));
-    *(unsigned int *)(((0x2E8 + a4) + 0x0)) = (unsigned char)(*(signed char *)((a5 + 0x6)));
-    *(unsigned int *)(((0x2D4 + a4) + 0x0)) = (unsigned char)(*(signed char *)((a5 + 0x1)));
-    *(unsigned int *)(((0x3AC + a4) + 0x0)) = ((unsigned char)(*(signed char *)((a5 + 0x4))) - 1);
-    *(unsigned int *)((a4 + 0x2CC)) = 0x1;
-    *(float *)((a4 + 0x60)) = 0.0f;
-    *(float *)((a4 + 0x64)) = 0.0f;
-    *(float *)((a4 + 0x68)) = 0.0f;
-    *(float *)((a4 + 0x54)) = 0.0f;
-    *(float *)((a4 + 0x58)) = 0.0f;
-    *(float *)((a4 + 0x5C)) = 0.0f;
-    t5 = *(signed char *)((a5 + 0x7));
-    t7 = (unsigned char)t5;
-    if ((unsigned char)t5 != 0xFF) {
-        t6 = *(signed char *)((a5 + 0x7));
-        *(unsigned short *)(((0x6E + a4) + 0x0)) = ((unsigned char)t6 << 8);
-        t7 = ((unsigned char)t6 << 8);
-    }
-    t13 = t7;
-    if ((*(int *)((a5 + 0x8))) != 0) {
-        *(volatile int *)((a5 + 0x8));
-        t13 = (_quick_odd_mvn(a4, a5, 0.0f));
-    }
-    return t13;
-}

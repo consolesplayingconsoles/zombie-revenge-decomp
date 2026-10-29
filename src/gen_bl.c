@@ -157,19 +157,6 @@ int FUN_0c068382(int a4)
     return t0;
 }
 
-void FUN_0c08214c(int a4)
-{
-    int t0;
-
-    t0 = *(int *)((a4 + 0x30));
-    *(unsigned int *)((a4 + 0x30)) = (t0 - 1);
-    if ((int)(t0 - 1) <= 0) {
-        *(unsigned int *)0xC247D04 = (*(int *)((a4 + 0x34)));
-        _quick_odd_mvn(a4);
-        FUN_0c0e19f2();
-    return;
-    }
-}
 
 int FUN_0c068508(int a4)
 {

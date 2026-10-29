@@ -1,0 +1,18 @@
+{
+ "dev": [
+  {
+   "about": "rescue: flips 0C0A29FC",
+   "regs": {
+    "r6": "00000001"
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "rescue: flips 0C0A29FC",
+   "regs": {
+    "r6": "00000001"
+   }
+  }
+ ]
+}

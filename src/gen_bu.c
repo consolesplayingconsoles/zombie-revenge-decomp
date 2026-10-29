@@ -290,20 +290,6 @@ int FUN_0c056380(int a4, int a5)
     return t8;
 }
 
-int FUN_0c062f54(int a4, int a5, int a6)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC062FBA, 0x760, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    *(unsigned int *)((t1 + 0x30)) = a4;
-    _quick_odd_mvn();
-    *(unsigned int *)((t1 + 0x40)) = a6;
-    *(float *)((t1 + 0x48)) = (*(float *)((a4 + 0x278)));
-    *(unsigned int *)((t1 + 0x5C)) = (t1 + 0x60);
-    *(float *)((t1 + 0x50)) = (*(float *)(((*(int *)0xC247B98) + 0x2C)));
-    return FUN_0c0cbafc(0x291, 0x2, 0xFC001000, 0x84000000);
-}
 
 float FUN_0c07e1e8(void)
 {
@@ -722,29 +708,6 @@ int FUN_0c038e34(int a4, int a5, int a6, int a7)
     return FUN_0c02a19a(a4, 0x0, a6, a7);
 }
 
-int FUN_0c03746a(int a4)
-{
-    int t5;
-    int t7;
-
-    nlAddVector((a4 + 0x30), (a4 + 0x48));
-    *(float *)((a4 + 0x48)) = 0.0f;
-    *(float *)((a4 + 0x4C)) = 0.0f;
-    *(float *)((a4 + 0x50)) = 0.0f;
-    nlAddVector((a4 + 0x30), (a4 + 0x54));
-    FUN_0c085704(a4);
-    _quick_odd_mvn();
-    FUN_0c0bbbf4(a4);
-    t5 = *(int *)((a4 + 0x2EC));
-    t7 = t5;
-    if ((t5 & 12) != 0) {
-        *(unsigned int *)((a4 + 0x2C4)) = (*(int *)((a4 + 0x5B8)));
-        *(unsigned int *)((a4 + 0x2CC)) = 0x1;
-        *(unsigned int *)((a4 + 0x0)) = 0xC037430;
-        t7 = 0x2CC;
-    }
-    return t7;
-}
 
 int FUN_0c0497a0(int a4)
 {
@@ -849,23 +812,6 @@ int FUN_0c057ec8(int a4)
     return 0x394;
 }
 
-int FUN_0c0690ee(void)
-{
-    int t1;
-    int t7;
-
-    t1 = FUN_0c0e19aa(0xC069152, 0xB4, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    FUN_0c0e6248();
-    *(unsigned short *)((t1 + 0x60)) = 0x0;
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FA52A);
-    *(float *)((t1 + 0x74)) = (*(float *)0xC0691A4);
-    *(unsigned int *)((t1 + 0xA0)) = 0x8;
-    t7 = *(short *)0xC0FA524;
-    *(unsigned int *)(((0xA4 + t1) + 0x0)) = t7;
-    return t7;
-}
 
 int FUN_0c0701b8(int a4, int a5, int a6, int a7, int a8)
 {
@@ -884,30 +830,6 @@ int FUN_0c0701b8(int a4, int a5, int a6, int a7, int a8)
     return 0x78;
 }
 
-int FUN_0c076fdc(void)
-{
-    int t0;
-    int t1;
-    int t3;
-    int t7;
-
-    t0 = 0x0;
-    t1 = 0xC0FFC08;
-    for (;;) {
-        t3 = FUN_0c0e19aa(0xC0186A4, 0xB4, (*(int *)0xC23ECE4));
-        FUN_0c0e19d0(t3);
-        _quick_odd_mvn();
-        *(unsigned short *)(((0x62 + t3) + 0x0)) = (*(short *)((t1 + 0xE)));
-        t7 = *(short *)((t1 + 0x12));
-        t0 = (t0 + 0x1);
-        *(unsigned int *)(((0x78 + t3) + 0x0)) = t7;
-        t1 = (t1 + 0x18);
-        if ((unsigned int)t0 >= (unsigned int)0x2) {
-            break;
-        }
-    }
-    return t7;
-}
 
 int FUN_0c08c1aa(int a4)
 {
@@ -1514,47 +1436,6 @@ int FUN_0c01fd30(int a4)
     return 0x0;
 }
 
-float FUN_0c037002(int a4, int a5)
-{
-    float u0;
-    float u1;
-    float u4;
-    float u5;
-    float u7;
-    float u8;
-    float u9;
-    float u10;
-    float u11;
-    float u12;
-    float u13;
-    float u14;
-
-    u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)((a4 + 0x4));
-    u4 = *(float *)((a4 + 0x8));
-    u5 = (u1 * (*(float *)((a5 + 0x4))));
-    u5 = u5 + u0 * (*(float *)((a5 + 0x0)));
-    u7 = *(float *)((a5 + 0x4));
-    u8 = *(float *)((a5 + 0x0));
-    u9 = u5;
-    u9 = u9 + u4 * (*(float *)((a5 + 0x8)));
-    u10 = (u1 * u1);
-    u10 = u10 + u0 * u0;
-    u11 = *(float *)((a5 + 0x8));
-    u12 = u10;
-    u12 = u12 + u4 * u4;
-    u13 = (u7 * u7);
-    u13 = u13 + u8 * u8;
-    u14 = u13;
-    u14 = u14 + u11 * u11;
-    if ((u9 / (_builtin_sqrtf(u12) * _builtin_sqrtf(u14))) > 0.0f) {
-        return u11;
-    }
-    if (0.0f > (u9 / (_builtin_sqrtf(u12) * _builtin_sqrtf(u14)))) {
-        return u11;
-    }
-    return u11;
-}
 
 void FUN_0c039288(int a4, int a5, int a6)
 {
@@ -1850,42 +1731,7 @@ int FUN_0c04e37c(int a4, int a5)
     return 0x0;
 }
 
-int FUN_0c09134c(int a4, int a5, int a6, int a7)
-{
-    int t0;
-    int t7;
-    int t2;
 
-    t0 = *(int *)0xC23ED84;
-    t7 = t0;
-    if (t0 == 1) {
-        t2 = FUN_0c0e19aa(0xC0913AA, 0xB4, (*(int *)0xC23ECF0));
-        FUN_0c0e19d0(t2);
-        _quick_odd_mvn();
-        *(float *)((t2 + 0x74)) = (*(float *)0xC091484);
-        *(unsigned int *)((t2 + 0xA0)) = a6;
-        *(unsigned int *)((t2 + 0xA4)) = a7;
-        t7 = (_quick_odd_mvn());
-    }
-    return t7;
-}
-
-int FUN_0c09a4d6(int a4)
-{
-    int t1;
-    int t4;
-
-    t1 = FUN_0c0e19aa(0xC099A68, 0x2ACC, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    *(unsigned short *)((a4 + 0x238)) = 0x0;
-    *(unsigned int *)((t1 + 0x30)) = a4;
-    *(unsigned int *)((t1 + 0x34)) = (*(int *)((a4 + 0xBC)));
-    t4 = *(int *)((a4 + 0x2E8));
-    *(unsigned int *)((t1 + 0x44)) = (((int)t4 >= 0) ? (0x2 << (t4 & 31)) : ((-(int)t4 & 31) ? ((int)0x2 >> (-(int)t4 & 31)) : ((int)0x2 >> 31)));
-    *(float *)((t1 + 0x50)) = (*(float *)((a4 + 0x390)));
-    _quick_odd_mvn();
-    return FUN_0c0cbafc(0x392, 0x2, 0xFC000000, 0x84000000);
-}
 
 int FUN_0c0d7f60(int a4, int a5, int a6)
 {
@@ -1981,3 +1827,5 @@ int FUN_0c0219ec(void)
     }
     return 0x0;
 }
+
+

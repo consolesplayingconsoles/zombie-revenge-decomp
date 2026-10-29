@@ -243,61 +243,6 @@ int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
     return ((int (*)(void))(0xC20F2C4))();
 }
 
-int FUN_0c0cef82(int a4, int a5, int a6, int a7, int a8)
-{
-    int t0;
-    float u4;
-    int t5;
-    float u10;
-    int t11;
-    float u15;
-    int t17;
-    float u22;
-    float u23;
-    float u26;
-    float u28;
-    float u30;
-    int stk[31];
-
-    stk[22] = a8;
-    t0 = *(short *)((a4 + 0x0));
-    *(unsigned short *)(((int)stk + 4)) = t0;
-    *(unsigned int *)(((int)stk + 12)) = (a4 + 0x4);
-    u4 = (float)t0;
-    u4 = u4 + (FUN_0c0da300()) * (float)((*(short *)(((a4 + 0x4) + 0x0))) - (*(short *)(((int)stk + 4))));
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = u4;
-    t5 = *(short *)((a4 + 0x2));
-    *(unsigned short *)(((int)stk + 4)) = t5;
-    u10 = (float)t5;
-    u10 = u10 + (FUN_0c0da300()) * (float)((*(short *)(((*(int *)(((int)stk + 12))) + 0x2))) - (*(short *)(((int)stk + 4))));
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x4)) = u10;
-    *(unsigned int *)(((int)stk + 12)) = (a4 + 0x8);
-    t11 = *(short *)(((a4 + 0x8) + 0x0));
-    *(unsigned short *)(((int)stk + 8)) = t11;
-    *(unsigned int *)(((int)stk + 4)) = (a4 + 0xC);
-    u15 = (float)t11;
-    u15 = u15 + (FUN_0c0da300()) * (float)((*(short *)(((a4 + 0xC) + 0x0))) - (*(short *)(((int)stk + 8))));
-    *(float *)(((((int)stk + 4) + 0x24) + 0x0)) = u15;
-    t17 = *(short *)(((*(int *)(((int)stk + 12))) + 0x2));
-    *(unsigned short *)(((int)stk + 8)) = t17;
-    u22 = (float)t17;
-    u22 = u22 + (FUN_0c0da300()) * (float)((*(short *)(((*(int *)(((int)stk + 4))) + 0x2))) - (*(short *)(((int)stk + 8))));
-    *(float *)(((((int)stk + 4) + 0x24) + 0x4)) = u22;
-    u23 = *(float *)(((((int)stk + 4) + 0x2C) + 0x0));
-    u26 = u23;
-    u26 = u26 + (FUN_0c0da300()) * ((*(float *)(((((int)stk + 4) + 0x24) + 0x0))) - u23);
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = u26;
-    u28 = *(float *)(((((int)stk + 4) + 0x2C) + 0x4));
-    u30 = u28;
-    u30 = u30 + (FUN_0c0da300()) * ((*(float *)(((((int)stk + 4) + 0x24) + 0x4))) - u28);
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x4)) = u30;
-    *(float *)(((int)stk + 28)) = (*(float *)(((((int)stk + 4) + 0x2C) + 0x0)));
-    *(float *)(((int)stk + 32)) = (*(float *)0xC0CF114);
-    *(float *)(((int)stk + 36)) = (*(float *)(((((int)stk + 4) + 0x2C) + 0x4)));
-    *(float *)(((int)stk + 32)) = (FUN_0c01f1b8((((int)stk + 4) + 0x18), (((int)stk + 4) + 0xC)));
-    *(volatile int *)(((((int)stk + 4) + 0x54) + 0x0));
-    return (_quick_odd_mvn());
-}
 
 int vmsfs_fwrite1(int a4, int a5)
 {

@@ -431,81 +431,6 @@ int FUN_0c084bf6(int a4, int a5)
     return 0x4C;
 }
 
-int FUN_0c08a7f0(int a4, int a5, float f4)
-{
-    float u0;
-    float u1;
-    int t15;
-    int t25;
-    int stk[11];
-
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R12;
-    int R13;
-    int R14;
-    float F3;
-    float F4;
-    float F5;
-    float F6;
-    float F7;
-    float F15;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    L_C08A7F0:;
-    *(unsigned int *)(((int)stk + 4)) = ((0x154 + R4) + (((R5 << 1) + R5) << 2));
-    u0 = *(float *)((((((((R5 << 1) + R5) << 2) << 2) << 2) + 0xC23F268) + 0x4));
-    u1 = *(float *)((((0x154 + R4) + (((R5 << 1) + R5) << 2)) + 0x4));
-    R12 = ((((R5 << 1) + R5) << 2));
-    R13 = (R4);
-    R14 = (((((((R5 << 1) + R5) << 2) << 2) << 2) + 0xC23F268));
-    F4 = (4.0f);
-    F5 = ((u1 - u0));
-    F6 = (u0);
-    F7 = (u1);
-    if ((!(4.0f > u0))) goto L_C08A83E;
-    goto L_C08A834;
-    L_C08A834:;
-    if ((F4 > F7)) goto L_C08A83E;
-    goto L_C08A838;
-    L_C08A838:;
-    if ((F5 > 1.0f)) goto L_C08A84E;
-    goto L_C08A83E;
-    L_C08A83E:;
-    if ((F4 > F6)) goto L_C08A89E;
-    goto L_C08A842;
-    L_C08A842:;
-    if ((!(F4 > F7))) goto L_C08A89E;
-    goto L_C08A846;
-    L_C08A846:;
-    if ((!((-1.0f) > F5))) goto L_C08A89E;
-    goto L_C08A84E;
-    L_C08A84E:;
-    t15 = !((_builtin_fabsf(F5) * 0.5f) > 0.5f);
-    F15 = ((_builtin_fabsf(F5) * 0.5f));
-    F5 = (_builtin_fabsf(F5));
-    F6 = (0.5f);
-    if (t15) goto L_C08A85E;
-    goto L_C08A85C;
-    L_C08A85C:;
-    F15 = (F6);
-    goto L_C08A85E;
-    L_C08A85E:;
-    _quick_odd_mvn(R4, R5, F4, F5, F6, F7);
-    *(float *)(((int)stk + 16)) = f4;
-    *(unsigned int *)(((int)stk + 8)) = ((0x154 + R13) + R12);
-    t25 = FUN_0c0d9dc0(((*(float *)((R14 + 0x0))) - (*(float *)((((0x154 + R13) + R12) + 0x0)))), ((*(float *)((R14 + 0x8))) - (*(float *)((((0x154 + R13) + R12) + 0x8)))));
-    FUN_0c08e970((((int)stk + 4) + 0x8), (0x8000 + t25), F15);
-    FUN_0c0cc3f8((*(int *)((R13 + 0x3C4))), 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
-    goto L_C08A89E;
-    L_C08A89E:;
-    return (_quick_odd_mvn(R4, R5, F4, F5, F6, F7));
-}
 
 int FUN_0c0b96a4(void)
 {
@@ -1455,41 +1380,6 @@ int FUN_0c02a35a(int a4)
     return t15;
 }
 
-int FUN_0c077780(int a4)
-{
-    int t1;
-    int t21;
-    int stk[14];
-
-    FUN_0c0c47ae(0x11D4);
-    *(unsigned int *)(((int)stk + 12)) = 0xC0FFCB0;
-    *(unsigned int *)(((int)stk + 8)) = 0xC0FFC68;
-    *(unsigned int *)(((int)stk + 4)) = 0xC0FFC74;
-    *(unsigned int *)(((int)stk + 20)) = 0xC0FFC50;
-    *(unsigned int *)(((int)stk + 16)) = 0xC0FFC5C;
-    t1 = 0x0;
-    for (;;) {
-        nlPushMatrix(0x0);
-        FUN_0c0dcca0((*(int *)(((int)stk + 12))));
-        FUN_0c0c47ae((0x34E + ((*(int *)0xC23A258) & 0x3F)));
-        FUN_0c0db800(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4));
-        FUN_0c0dcca0((*(int *)(((int)stk + 8))));
-        FUN_0c0c47ae(0x11D6);
-        FUN_0c0dcca0((*(int *)(((int)stk + 4))));
-        FUN_0c0c47ae(0x11D5);
-        FUN_0c0db800(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4));
-        FUN_0c0db470((*(int *)(((int)stk + 20))), ((0x126C + a4) + t1));
-        FUN_0c0db470((*(int *)(((int)stk + 16))), (((0x126C + a4) + t1) + 0x2D0));
-        FUN_0c07787c();
-        nlPopMatrix(0x1);
-        t21 = nlRotateAY(0x2AAA);
-        t1 = (t1 + 0x2F4);
-        if ((unsigned int)t1 >= (unsigned int)0x11B8) {
-            break;
-        }
-    }
-    return t21;
-}
 
 int FUN_0c084800(float f4, float f5, float f6)
 {

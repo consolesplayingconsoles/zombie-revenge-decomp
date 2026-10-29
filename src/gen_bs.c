@@ -48,17 +48,3 @@ int FUN_0c0a30f0(int a4, int a5, int a6, int a7)
     return FUN_0c0c0340((a4 + 0x30));
 }
 
-int FUN_0c095d14(int a4)
-{
-    int stk[9];
-
-    *(volatile int *)((a4 + 0xBC));
-    _quick_odd_mvn(a4);
-    FUN_0c0dc5a0();
-    nlRotateAY((*(short *)((a4 + 0x6E))));
-    nlRotateAX((*(short *)((a4 + 0x6C))));
-    FUN_0c0db470(0xC10BC94, ((int)stk + 4));
-    nlPopMatrix(0x1);
-    FUN_0c09134c((((int)stk + 4) + 0xC), ((int)stk + 4), 0x8, 0x2);
-    return (FUN_0c08a220((((int)stk + 4) + 0xC), 0x1));
-}

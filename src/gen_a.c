@@ -103,38 +103,6 @@ int kmGetCurrentScanline(int a4);
 int FUN_0c217a50(void);
 int FUN_0c0220dc(int a4, int a5, int a6, int a7);
 
-int FUN_0c01536e(int a4, int a5, int a6, int a7)
-{
-    int t3;
-    int t0;
-    int t12;
-
-    t3 = a7;
-    if ((int)a7 >= (int)0x2) {
-        t0 = 0x2;
-        if ((int)a7 >= (int)0x6) {
-            t0 = 0x3;
-        }
-        t3 = t0;
-    }
-    *(volatile int *)(((t3 << 2) + 0xC1EF4F0));
-    memset(a4, 0x0, 0x60);
-    _slow_strcpy();
-    _slow_strcpy();
-    FUN_0c0e631c((a4 + 0x34), (0xC1EF4AF + ((t3 << 2) << 2)), 0x10);
-    *(unsigned int *)((a4 + 0x44)) = 0xC1EF60C;
-    *(unsigned int *)((a4 + 0x48)) = 0xC1EF62C;
-    *(unsigned short *)((a4 + 0x4C)) = 0x1;
-    *(unsigned short *)((a4 + 0x4E)) = 0x1;
-    *(unsigned int *)((a4 + 0x50)) = 0x0;
-    *(unsigned short *)((a4 + 0x54)) = 0x0;
-    *(unsigned int *)((a4 + 0x58)) = a5;
-    *(unsigned int *)((a4 + 0x5C)) = a6;
-    t12 = buCalcBackupFileSize((unsigned short)(*(short *)((a4 + 0x4C))), (unsigned short)(*(short *)((a4 + 0x54))), a6);
-    *(unsigned int *)0xC23EB18 = ((t12 << 8) << 1);
-    *(unsigned int *)0xC23EB14 = (FUN_0c0e262a(((t12 << 8) << 1)));
-    return (buMakeBackupFileImage((*(int *)0xC23EB14), a4));
-}
 
 
 float FUN_0c038ed4(int a4, float f4)
@@ -313,47 +281,6 @@ int FUN_0c0f3e20(int a4, int a5, int a6)
     return t15;
 }
 
-int fmMngAddData(int a4)
-{
-    int t36;
-    int t30;
-    int t10;
-    int t18;
-    int t26;
-    int t20;
-    int t23;
-    int t24;
-
-    t36 = 0xFFFFFFFA;
-    if ((*(short *)((a4 + 0x2))) == 0) {
-        *(unsigned short *)(((a4 + 0x34) + 0x0)) = (*(int *)((a4 + 0x28)));
-        *(volatile int *)((a4 + 0x30));
-        thunk_FUN_0c22907e();
-        *(unsigned short *)(((a4 + 0x34) + 0x3E)) = (fmcalccrc(0x3E, (a4 + 0x34)));
-        FUN_0c229058((a4 + 0x34), ((*(int *)((a4 + 0xC))) + (((((*(int *)((a4 + 0x28))) + 0x1) << 2) << 2) << 2)), 0x40);
-        t30 = 0xFFFFFFF6;
-        if ((int)(*(int *)((a4 + 0x10))) >= (int)(*(int *)((a4 + 0x14)))) {
-        } else {
-            t10 = *(int *)((a4 + 0x14));
-            fmMngNum2Bit(((*(int *)((a4 + 0x10))) + 0x1), ((*(int *)((a4 + 0xC))) + ((((t10 + 0x1) << 2) << 2) << 2)), (*(int *)((a4 + 0x18))));
-            t18 = FUN_0c232638(((*(int *)((a4 + 0x4))) + ((((t10 + 0x1) << 2) << 2) << 2)), ((*(int *)((a4 + 0xC))) + ((((t10 + 0x1) << 2) << 2) << 2)), ((((*(int *)((a4 + 0x18))) << 2) << 2) << 2));
-            t26 = 0xFFFFFFFE;
-            if (t18 == ((((*(int *)((a4 + 0x18))) << 2) << 2) << 2)) {
-                t20 = *(int *)((a4 + 0x10));
-                *(unsigned int *)((a4 + 0x10)) = ((*(int *)((a4 + 0x10))) + 0x1);
-                t23 = FUN_0c232638(((*(int *)((a4 + 0x4))) + ((((t20 + 0x1) << 2) << 2) << 2)), (a4 + 0x34), 0x40);
-                t24 = 0x0;
-                if (t23 != 64) {
-                    t24 = 0xFFFFFFFE;
-                }
-                t26 = t24;
-            }
-            t30 = t26;
-        }
-        t36 = t30;
-    }
-    return t36;
-}
 
 int ADX_DecodeInfoSpsd(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, int a13, int a14)
 {
@@ -437,31 +364,6 @@ int FUN_0c02a0a8(int a4)
 }
 
 
-int FUN_0c034924(int a4, int a5)
-{
-    int t0;
-    int t9;
-    int stk[25];
-
-    *(unsigned int *)(((int)stk + 24)) = a5;
-    t0 = *(int *)((a4 + 0xBC));
-    *(unsigned int *)(((int)stk + 28)) = (0xC23F268 + (((((t0 << 1) + t0) << 2) << 2) << 2));
-    nlPushMatrix(0x0);
-    nlUnitMatrix();
-    nlRotateAY((*(short *)((a4 + 0x6E))));
-    nlRotateAX((*(short *)((a4 + 0x6C))));
-    nlRotateAZ((*(short *)((a4 + 0x70))));
-    *(float *)(((int)stk + 44)) = 0.0f;
-    *(float *)(((int)stk + 48)) = 0.0f;
-    t9 = *(int *)((a4 + 0x4F4));
-    *(float *)(((int)stk + 52)) = (-(*(float *)((((*(int *)(((((t9 << 1) + t9) << 2) + 0xC1F79BC))) + 0x7C) + 0x0))));
-    FUN_0c0db470((((int)stk + 16) + 0x1C), (((int)stk + 16) + 0x10));
-    *(float *)(((((int)stk + 16) + 0x40) + 0x0)) = (*(float *)(((int)stk + 32)));
-    *(float *)(((((int)stk + 16) + 0x44) + 0x0)) = (*(float *)(((int)stk + 36)));
-    *(float *)(((((int)stk + 16) + 0x48) + 0x0)) = (*(float *)(((int)stk + 40)));
-    nlPopMatrix(0x1);
-    return (FUN_0c036806((*(int *)(((int)stk + 28))), (((int)stk + 4) + 0x4C), (*(int *)(((int)stk + 24))), (((int)stk + 4) + 0x34)));
-}
 
 
 
@@ -1141,63 +1043,4 @@ int FUN_0c217a50(void)
     return t40;
 }
 
-int FUN_0c0220dc(int a4, int a5, int a6, int a7)
-{
-    int t0;
-    int t2;
-    int t50;
-    int t4;
-    int t5;
-    int t10;
-    int t18;
-    int t41;
-    int t31;
 
-    t0 = *(int *)((a4 + 0x6C));
-    t2 = *(int *)((((((t0 << 2) << 2) << 1) + 0xC246314) + 0x4));
-    t50 = t2;
-    if ((*(int *)((((((t0 << 2) << 2) << 1) + 0xC246314) + 0x8))) != 0) {
-        t4 = *(int *)((t2 + 0x0));
-        if (t4 != -2) {
-            if (t4 != -1) {
-                t5 = 0xC;
-                for (;;) {
-                    if ((*(int *)((((t5 << 2) + 0xC247030) + 0x0))) != 0) {
-                        t5 = (t5 + 0x1);
-                        if ((int)t5 >= (int)0x10) {
-                            break;
-                        }
-                        continue;
-                    }
-                    break;
-                }
-                t10 = 0x0;
-                for (;;) {
-                    if ((*(int *)(((((t10 << 2) << 2) + 0xC246394) + 0x0))) != 0) {
-                        t10 = (t10 + 0x1);
-                        if ((int)t10 >= (int)0x10) {
-                            break;
-                        }
-                        continue;
-                    }
-                    break;
-                }
-                t18 = t2;
-                if (((int)t5 < (int)0x10) && ((int)t10 < (int)0x10)) {
-                    FUN_0c021fee(t5, t10);
-                    t18 = (t2 + 0x20);
-                }
-                t31 = t18;
-            } else {
-                t31 = ((*(int *)((((((*(int *)0xC23ED50) << 2) << 1) + (*(int *)((a4 + 0x50)))) + 0x0))) + ((((unsigned short)(*(short *)((t2 + 0x1C))) << 2) << 2) << 1));
-            }
-            t41 = t31;
-        } else {
-            *(unsigned int *)(((((((*(int *)((a4 + 0x6C))) << 2) << 2) << 1) + 0xC246314) + 0x8)) = 0x0;
-            t41 = t2;
-        }
-        t50 = t41;
-    }
-    *(unsigned int *)(((((((*(int *)((a4 + 0x6C))) << 2) << 2) << 1) + 0xC246314) + 0x4)) = t50;
-    return 0x6C;
-}

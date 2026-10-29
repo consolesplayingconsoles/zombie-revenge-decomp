@@ -6,6 +6,7 @@ ADXB_CopyExtraBufSte
 ADXB_DecodeHeaderAiff
 ADXB_DecodeHeaderWav
 ADXB_Destroy
+ADXB_EndDecode
 ADXB_EntryAddWrFunc
 ADXB_EntryData
 ADXB_EntryGetWrFunc
@@ -46,9 +47,11 @@ ADXCRS_Lock
 ADXCRS_Unlock
 ADXERR_CallErrFunc
 ADXERR_EntryErrFunc
+ADXF_AddPartition
 ADXF_Close
 ADXF_ExecServer
 ADXF_Finish
+ADXF_GetFileRange
 ADXF_GetFsizeByte
 ADXF_GetFsizeSct
 ADXF_GetNumReadSct
@@ -114,6 +117,7 @@ ADXT_SetTranspose
 ADXT_StartAfs
 ADX_DecodeInfoAu
 ADX_DecodeInfoSpsd
+ADX_DecodeSteFloat
 BCDtoDEC
 BL_Reset
 DECtoBCD
@@ -160,9 +164,12 @@ FUN_0c01197c
 FUN_0c011c6c
 FUN_0c011cfc
 FUN_0c012570
+FUN_0c0125f4
 FUN_0c0129b6
+FUN_0c012e36
 FUN_0c0134a0
 FUN_0c013c00
+FUN_0c013c38
 FUN_0c0141d4
 FUN_0c01430e
 FUN_0c01467a
@@ -174,7 +181,6 @@ FUN_0c014f92
 FUN_0c014fae
 FUN_0c015018
 FUN_0c015070
-FUN_0c01536e
 FUN_0c015436
 FUN_0c0154a4
 FUN_0c0154c0
@@ -234,6 +240,7 @@ FUN_0c01906a
 FUN_0c01937a
 FUN_0c0193a2
 FUN_0c019444
+FUN_0c0194e8
 FUN_0c01974c
 FUN_0c0197f0
 FUN_0c0198ac
@@ -252,6 +259,7 @@ FUN_0c01a50c
 FUN_0c01a52c
 FUN_0c01a5b8
 FUN_0c01a632
+FUN_0c01a672
 FUN_0c01a80a
 FUN_0c01a822
 FUN_0c01a874
@@ -266,6 +274,8 @@ FUN_0c01bdb0
 FUN_0c01c214
 FUN_0c01c230
 FUN_0c01c24e
+FUN_0c01c274
+FUN_0c01c46a
 FUN_0c01cb94
 FUN_0c01cdc2
 FUN_0c01cdf2
@@ -279,11 +289,12 @@ FUN_0c01d276
 FUN_0c01d2c2
 FUN_0c01d394
 FUN_0c01d3c6
+FUN_0c01d3ee
 FUN_0c01d562
+FUN_0c01d636
 FUN_0c01d8de
 FUN_0c01d984
 FUN_0c01d9c2
-FUN_0c01db0e
 FUN_0c01de60
 FUN_0c01df30
 FUN_0c01df48
@@ -302,7 +313,10 @@ FUN_0c01ef2a
 FUN_0c01f00c
 FUN_0c01f172
 FUN_0c01f18e
+FUN_0c01f4fe
+FUN_0c01f6fc
 FUN_0c01f8a0
+FUN_0c01f8d4
 FUN_0c01fa90
 FUN_0c01fb04
 FUN_0c01fb64
@@ -359,6 +373,7 @@ FUN_0c02219e
 FUN_0c022252
 FUN_0c02280e
 FUN_0c022838
+FUN_0c02286c
 FUN_0c022a64
 FUN_0c022aa6
 FUN_0c022c5e
@@ -406,11 +421,11 @@ FUN_0c0287ce
 FUN_0c028fd6
 FUN_0c02914a
 FUN_0c029302
+FUN_0c0294e6
 FUN_0c029646
 FUN_0c029b60
 FUN_0c029bd4
 FUN_0c029bf2
-FUN_0c029e06
 FUN_0c02a0a8
 FUN_0c02a19a
 FUN_0c02a220
@@ -437,6 +452,7 @@ FUN_0c02bc1c
 FUN_0c02bc2a
 FUN_0c02bda4
 FUN_0c02bfa8
+FUN_0c02c4f6
 FUN_0c02c6ee
 FUN_0c02cbe0
 FUN_0c02cc94
@@ -471,6 +487,7 @@ FUN_0c02f4b8
 FUN_0c02f6f4
 FUN_0c02fb76
 FUN_0c02fc26
+FUN_0c03048e
 FUN_0c030592
 FUN_0c0306bc
 FUN_0c030848
@@ -519,7 +536,6 @@ FUN_0c03310c
 FUN_0c03338c
 FUN_0c0333f0
 FUN_0c033530
-FUN_0c0336d6
 FUN_0c03374c
 FUN_0c033850
 FUN_0c033b04
@@ -548,6 +564,7 @@ FUN_0c034bf6
 FUN_0c034c26
 FUN_0c034d0c
 FUN_0c034e2c
+FUN_0c034efc
 FUN_0c034f6c
 FUN_0c034fbc
 FUN_0c0350a4
@@ -555,11 +572,14 @@ FUN_0c0351bc
 FUN_0c035280
 FUN_0c0352b4
 FUN_0c0353e4
+FUN_0c035402
 FUN_0c03542e
 FUN_0c035458
+FUN_0c0355f8
 FUN_0c0356f4
 FUN_0c03578e
 FUN_0c03593a
+FUN_0c0359c0
 FUN_0c035ad6
 FUN_0c035b26
 FUN_0c035ce4
@@ -574,6 +594,7 @@ FUN_0c036392
 FUN_0c036470
 FUN_0c0365f4
 FUN_0c0366b4
+FUN_0c036806
 FUN_0c036994
 FUN_0c036a4c
 FUN_0c036b64
@@ -582,6 +603,8 @@ FUN_0c036d86
 FUN_0c036e18
 FUN_0c036efc
 FUN_0c037002
+FUN_0c037088
+FUN_0c037106
 FUN_0c0371b0
 FUN_0c0371ea
 FUN_0c03720a
@@ -622,6 +645,7 @@ FUN_0c039416
 FUN_0c039804
 FUN_0c0398b8
 FUN_0c039c6a
+FUN_0c039e96
 FUN_0c03a112
 FUN_0c03a536
 FUN_0c03a5b4
@@ -633,6 +657,7 @@ FUN_0c03aaa2
 FUN_0c03acb4
 FUN_0c03afe8
 FUN_0c03b80e
+FUN_0c03bd28
 FUN_0c03bffe
 FUN_0c03c0e0
 FUN_0c03c174
@@ -653,6 +678,8 @@ FUN_0c03c900
 FUN_0c03c966
 FUN_0c03c9e0
 FUN_0c03caa4
+FUN_0c03cb3a
+FUN_0c03cbec
 FUN_0c03cc70
 FUN_0c03cd4c
 FUN_0c03ce1e
@@ -662,9 +689,11 @@ FUN_0c03d020
 FUN_0c03d038
 FUN_0c03d2ae
 FUN_0c03d516
+FUN_0c03d588
 FUN_0c03e0f2
 FUN_0c03e1a0
 FUN_0c03e33c
+FUN_0c03e388
 FUN_0c03e5bc
 FUN_0c03e6c6
 FUN_0c03e8dc
@@ -695,15 +724,18 @@ FUN_0c0414a6
 FUN_0c041700
 FUN_0c04173a
 FUN_0c0418d4
+FUN_0c041dd0
 FUN_0c041f2a
 FUN_0c04206a
 FUN_0c04228c
 FUN_0c042570
 FUN_0c042980
 FUN_0c042ad8
+FUN_0c042b60
 FUN_0c042d28
 FUN_0c042e34
 FUN_0c042fd0
+FUN_0c0430c0
 FUN_0c04313c
 FUN_0c043200
 FUN_0c043234
@@ -726,6 +758,7 @@ FUN_0c0444fa
 FUN_0c044580
 FUN_0c044638
 FUN_0c04518a
+FUN_0c0451c0
 FUN_0c04533a
 FUN_0c04537c
 FUN_0c0453ac
@@ -735,11 +768,14 @@ FUN_0c045588
 FUN_0c045612
 FUN_0c04561a
 FUN_0c045666
+FUN_0c04569c
 FUN_0c04573a
 FUN_0c045742
 FUN_0c04574a
 FUN_0c045756
 FUN_0c0457fc
+FUN_0c045840
+FUN_0c045acc
 FUN_0c045ca2
 FUN_0c045e54
 FUN_0c046134
@@ -749,6 +785,7 @@ FUN_0c04638a
 FUN_0c046442
 FUN_0c0465fa
 FUN_0c0467c2
+FUN_0c04685c
 FUN_0c046968
 FUN_0c0469a4
 FUN_0c0469f6
@@ -756,12 +793,14 @@ FUN_0c046a20
 FUN_0c046aee
 FUN_0c046b50
 FUN_0c046cc0
+FUN_0c046cf8
 FUN_0c0470da
 FUN_0c04720a
 FUN_0c047360
 FUN_0c047948
 FUN_0c047e9c
 FUN_0c047ff6
+FUN_0c0480ec
 FUN_0c048610
 FUN_0c048798
 FUN_0c048c1e
@@ -783,6 +822,7 @@ FUN_0c0499ec
 FUN_0c049aaa
 FUN_0c049b80
 FUN_0c049c0a
+FUN_0c049c5c
 FUN_0c049f54
 FUN_0c04a058
 FUN_0c04a258
@@ -900,6 +940,7 @@ FUN_0c0522dc
 FUN_0c052328
 FUN_0c05265c
 FUN_0c0526b8
+FUN_0c052754
 FUN_0c053406
 FUN_0c0534a4
 FUN_0c05355c
@@ -966,7 +1007,6 @@ FUN_0c05644a
 FUN_0c056476
 FUN_0c0564d0
 FUN_0c056508
-FUN_0c056588
 FUN_0c05664c
 FUN_0c0567c0
 FUN_0c056928
@@ -1032,11 +1072,12 @@ FUN_0c060ae0
 FUN_0c060bda
 FUN_0c060e1e
 FUN_0c061214
-FUN_0c0614fa
 FUN_0c0619e0
 FUN_0c061a8a
 FUN_0c061ccc
 FUN_0c061fb8
+FUN_0c062034
+FUN_0c062180
 FUN_0c0622dc
 FUN_0c062934
 FUN_0c062a74
@@ -1056,6 +1097,7 @@ FUN_0c063a90
 FUN_0c063df0
 FUN_0c063ff8
 FUN_0c064640
+FUN_0c064740
 FUN_0c065132
 FUN_0c0651ac
 FUN_0c06524a
@@ -1087,13 +1129,12 @@ FUN_0c0685b6
 FUN_0c06867a
 FUN_0c0688d6
 FUN_0c068b62
-FUN_0c068d54
 FUN_0c068da8
 FUN_0c069098
-FUN_0c0690ee
 FUN_0c069152
 FUN_0c069448
 FUN_0c0695b0
+FUN_0c06993c
 FUN_0c069e28
 FUN_0c069fba
 FUN_0c06a1d8
@@ -1121,10 +1162,13 @@ FUN_0c06ccb8
 FUN_0c06cdc2
 FUN_0c06ce0a
 FUN_0c06cee2
+FUN_0c06cf2a
+FUN_0c06d634
 FUN_0c06d6e4
 FUN_0c06db68
 FUN_0c06dc1a
 FUN_0c06ddc4
+FUN_0c06de9e
 FUN_0c06defc
 FUN_0c06df78
 FUN_0c06e0c4
@@ -1150,6 +1194,7 @@ FUN_0c072720
 FUN_0c073eb4
 FUN_0c074078
 FUN_0c07410a
+FUN_0c074254
 FUN_0c0744dc
 FUN_0c0745a0
 FUN_0c0747d6
@@ -1167,6 +1212,7 @@ FUN_0c075bae
 FUN_0c075f02
 FUN_0c075f30
 FUN_0c0761b8
+FUN_0c0762da
 FUN_0c076a84
 FUN_0c076f88
 FUN_0c076fb2
@@ -1253,6 +1299,7 @@ FUN_0c08214c
 FUN_0c08220e
 FUN_0c082220
 FUN_0c082260
+FUN_0c0827c8
 FUN_0c082b76
 FUN_0c082c64
 FUN_0c082ce0
@@ -1304,6 +1351,7 @@ FUN_0c0847de
 FUN_0c0847f4
 FUN_0c084800
 FUN_0c0848bc
+FUN_0c0848d6
 FUN_0c08498e
 FUN_0c0849da
 FUN_0c084a48
@@ -1325,6 +1373,7 @@ FUN_0c0855ba
 FUN_0c0855f4
 FUN_0c085638
 FUN_0c085704
+FUN_0c085752
 FUN_0c08640a
 FUN_0c086530
 FUN_0c086638
@@ -1425,6 +1474,7 @@ FUN_0c090a1c
 FUN_0c090a38
 FUN_0c090bf0
 FUN_0c090c68
+FUN_0c090dec
 FUN_0c090f70
 FUN_0c0911b8
 FUN_0c09134c
@@ -1440,6 +1490,7 @@ FUN_0c092638
 FUN_0c0927b8
 FUN_0c092802
 FUN_0c092858
+FUN_0c092884
 FUN_0c0929fe
 FUN_0c092c04
 FUN_0c092c2c
@@ -1471,6 +1522,7 @@ FUN_0c097720
 FUN_0c097870
 FUN_0c098160
 FUN_0c098196
+FUN_0c0981d0
 FUN_0c0982fc
 FUN_0c0987a4
 FUN_0c098b48
@@ -1482,6 +1534,7 @@ FUN_0c09a4d6
 FUN_0c09a846
 FUN_0c09b470
 FUN_0c09ba10
+FUN_0c09bb20
 FUN_0c09bd5c
 FUN_0c09bdec
 FUN_0c09bfee
@@ -1499,6 +1552,8 @@ FUN_0c09da24
 FUN_0c09dd7a
 FUN_0c09ee68
 FUN_0c09ee7a
+FUN_0c09eec4
+FUN_0c09efd4
 FUN_0c09ffac
 FUN_0c0a083e
 FUN_0c0a0dfa
@@ -1509,6 +1564,7 @@ FUN_0c0a1e7e
 FUN_0c0a2122
 FUN_0c0a2884
 FUN_0c0a2914
+FUN_0c0a2952
 FUN_0c0a2a14
 FUN_0c0a30f0
 FUN_0c0a3640
@@ -1522,6 +1578,7 @@ FUN_0c0a447c
 FUN_0c0a44c6
 FUN_0c0a4548
 FUN_0c0a46f4
+FUN_0c0a4830
 FUN_0c0a4bb2
 FUN_0c0a4c02
 FUN_0c0a4c2a
@@ -1551,8 +1608,10 @@ FUN_0c0a6780
 FUN_0c0a6800
 FUN_0c0a6870
 FUN_0c0a68ec
+FUN_0c0a6928
 FUN_0c0a6bf8
 FUN_0c0a6ca8
+FUN_0c0a7064
 FUN_0c0a72a0
 FUN_0c0a73ec
 FUN_0c0a748e
@@ -1608,6 +1667,7 @@ FUN_0c0aa472
 FUN_0c0aa4a2
 FUN_0c0aa4f8
 FUN_0c0aa522
+FUN_0c0aa5ea
 FUN_0c0ab2ec
 FUN_0c0ab374
 FUN_0c0ab75a
@@ -1642,6 +1702,7 @@ FUN_0c0ae95c
 FUN_0c0aea24
 FUN_0c0aeabc
 FUN_0c0aed74
+FUN_0c0aee08
 FUN_0c0af590
 FUN_0c0af792
 FUN_0c0af7f8
@@ -1713,7 +1774,6 @@ FUN_0c0b400e
 FUN_0c0b4098
 FUN_0c0b4238
 FUN_0c0b4328
-FUN_0c0b4384
 FUN_0c0b4404
 FUN_0c0b455c
 FUN_0c0b464a
@@ -1754,6 +1814,7 @@ FUN_0c0b6702
 FUN_0c0b687e
 FUN_0c0b68aa
 FUN_0c0b68ce
+FUN_0c0b6934
 FUN_0c0b6bea
 FUN_0c0b70a0
 FUN_0c0b70b4
@@ -1830,6 +1891,7 @@ FUN_0c0bdb70
 FUN_0c0bdd2c
 FUN_0c0bdec2
 FUN_0c0be0e4
+FUN_0c0be16c
 FUN_0c0be338
 FUN_0c0be46c
 FUN_0c0be4d0
@@ -1873,6 +1935,7 @@ FUN_0c0c0fee
 FUN_0c0c1024
 FUN_0c0c105a
 FUN_0c0c1140
+FUN_0c0c11b0
 FUN_0c0c1480
 FUN_0c0c1488
 FUN_0c0c1508
@@ -1890,6 +1953,7 @@ FUN_0c0c2736
 FUN_0c0c2764
 FUN_0c0c27a0
 FUN_0c0c281c
+FUN_0c0c2868
 FUN_0c0c35ca
 FUN_0c0c366c
 FUN_0c0c3748
@@ -1932,6 +1996,7 @@ FUN_0c0c4f66
 FUN_0c0c5184
 FUN_0c0c523c
 FUN_0c0c526a
+FUN_0c0c5300
 FUN_0c0c55da
 FUN_0c0c5a4c
 FUN_0c0c5d32
@@ -1952,9 +2017,7 @@ FUN_0c0c66ba
 FUN_0c0c6798
 FUN_0c0c69b6
 FUN_0c0c6ac6
-FUN_0c0c6b48
 FUN_0c0c6c3c
-FUN_0c0c6df6
 FUN_0c0c6ef4
 FUN_0c0c710e
 FUN_0c0c71c8
@@ -1974,19 +2037,23 @@ FUN_0c0c7e4e
 FUN_0c0c7ea0
 FUN_0c0c7ef0
 FUN_0c0c7ef8
+FUN_0c0c8138
 FUN_0c0c82dc
+FUN_0c0c86ac
 FUN_0c0c8b94
 FUN_0c0c8cc8
 FUN_0c0c8d06
 FUN_0c0c8dd4
 FUN_0c0c8dfe
 FUN_0c0c8e1a
+FUN_0c0c8e40
 FUN_0c0c906c
 FUN_0c0c90d6
 FUN_0c0c92b2
 FUN_0c0c98ce
 FUN_0c0c99a0
 FUN_0c0c99d0
+FUN_0c0c9a12
 FUN_0c0c9d1c
 FUN_0c0c9d34
 FUN_0c0c9e86
@@ -1999,6 +2066,7 @@ FUN_0c0ca794
 FUN_0c0ca844
 FUN_0c0ca862
 FUN_0c0ca922
+FUN_0c0ca9a8
 FUN_0c0cac22
 FUN_0c0cac3a
 FUN_0c0cacde
@@ -2008,8 +2076,10 @@ FUN_0c0caeac
 FUN_0c0caef0
 FUN_0c0caf50
 FUN_0c0caf6a
+FUN_0c0cb05c
 FUN_0c0cbaa2
 FUN_0c0cbaf8
+FUN_0c0cbafc
 FUN_0c0cbbf4
 FUN_0c0cbc28
 FUN_0c0cbd70
@@ -2045,6 +2115,7 @@ FUN_0c0cd632
 FUN_0c0cdd9c
 FUN_0c0cddba
 FUN_0c0cddda
+FUN_0c0cddfa
 FUN_0c0cdeba
 FUN_0c0cdf02
 FUN_0c0cdf68
@@ -2059,6 +2130,7 @@ FUN_0c0ce49c
 FUN_0c0ce57a
 FUN_0c0ce5b2
 FUN_0c0ce5d2
+FUN_0c0ce638
 FUN_0c0ce6a8
 FUN_0c0ce708
 FUN_0c0ce752
@@ -2089,6 +2161,7 @@ FUN_0c0ceee4
 FUN_0c0cef82
 FUN_0c0cf09e
 FUN_0c0cf11c
+FUN_0c0cf16a
 FUN_0c0cf1b0
 FUN_0c0cf2ac
 FUN_0c0cf2dc
@@ -2107,13 +2180,17 @@ FUN_0c0cf88c
 FUN_0c0cf908
 FUN_0c0cf942
 FUN_0c0cf98e
+FUN_0c0cfa18
 FUN_0c0cfaf2
 FUN_0c0cfb00
+FUN_0c0cfb0e
 FUN_0c0cfd74
 FUN_0c0cfd9e
 FUN_0c0cfe90
 FUN_0c0cff8e
+FUN_0c0d0276
 FUN_0c0d063e
+FUN_0c0d0648
 FUN_0c0d07cc
 FUN_0c0d0f6c
 FUN_0c0d1230
@@ -2125,6 +2202,7 @@ FUN_0c0d18d8
 FUN_0c0d1942
 FUN_0c0d19b8
 FUN_0c0d19d4
+FUN_0c0d1b00
 FUN_0c0d1de6
 FUN_0c0d1e10
 FUN_0c0d1f12
@@ -2135,6 +2213,7 @@ FUN_0c0d22d0
 FUN_0c0d267a
 FUN_0c0d26a8
 FUN_0c0d27a0
+FUN_0c0d2b30
 FUN_0c0d2d2e
 FUN_0c0d2dd4
 FUN_0c0d35e0
@@ -2151,6 +2230,8 @@ FUN_0c0d42f6
 FUN_0c0d432e
 FUN_0c0d4b14
 FUN_0c0d5d94
+FUN_0c0d60a6
+FUN_0c0d61be
 FUN_0c0d6254
 FUN_0c0d637e
 FUN_0c0d6592
@@ -2206,6 +2287,7 @@ FUN_0c0d93f0
 FUN_0c0d9450
 FUN_0c0d95a0
 FUN_0c0d9630
+FUN_0c0d9760
 FUN_0c0d9800
 FUN_0c0d98c0
 FUN_0c0d98d0
@@ -2262,6 +2344,7 @@ FUN_0c0db800
 FUN_0c0db840
 FUN_0c0dbbf0
 FUN_0c0dbda0
+FUN_0c0dbe40
 FUN_0c0dc0b0
 FUN_0c0dc220
 FUN_0c0dc240
@@ -2330,6 +2413,7 @@ FUN_0c0df570
 FUN_0c0df660
 FUN_0c0df758
 FUN_0c0df9fc
+FUN_0c0dfa36
 FUN_0c0dfb08
 FUN_0c0dfcae
 FUN_0c0dfcee
@@ -2341,7 +2425,9 @@ FUN_0c0e0550
 FUN_0c0e064a
 FUN_0c0e06de
 FUN_0c0e0784
+FUN_0c0e07b4
 FUN_0c0e0cc0
+FUN_0c0e1138
 FUN_0c0e1310
 FUN_0c0e14a0
 FUN_0c0e14c4
@@ -2382,14 +2468,19 @@ FUN_0c0e216c
 FUN_0c0e2254
 FUN_0c0e22cc
 FUN_0c0e2362
+FUN_0c0e2400
 FUN_0c0e2582
+FUN_0c0e262a
 FUN_0c0e26c4
 FUN_0c0e2794
+FUN_0c0e27be
 FUN_0c0e282a
+FUN_0c0e2958
 FUN_0c0e29f0
 FUN_0c0e2a4c
 FUN_0c0e2b0e
 FUN_0c0e2d00
+FUN_0c0e2d6c
 FUN_0c0e3630
 FUN_0c0e36ac
 FUN_0c0e36c4
@@ -2428,6 +2519,7 @@ FUN_0c0e4f8c
 FUN_0c0e4fbe
 FUN_0c0e5008
 FUN_0c0e505a
+FUN_0c0e509a
 FUN_0c0e5210
 FUN_0c0e5288
 FUN_0c0e52ec
@@ -2503,11 +2595,9 @@ FUN_0c0f3ccc
 FUN_0c0f3e20
 FUN_0c0f3f98
 FUN_0c0f3fe0
-FUN_0c20d160
 FUN_0c20d188
 FUN_0c20d190
 FUN_0c20d298
-FUN_0c20d7d4
 FUN_0c20ec20
 FUN_0c20ec38
 FUN_0c20f29a
@@ -2644,8 +2734,10 @@ FUN_0c22ba6a
 FUN_0c22ba6e
 FUN_0c22baec
 FUN_0c22bbe0
+FUN_0c22bcdc
 FUN_0c22bece
 FUN_0c22bfa2
+FUN_0c22c262
 FUN_0c22c3b8
 FUN_0c22c4ca
 FUN_0c22c50e
@@ -2681,6 +2773,7 @@ FUN_0c22e202
 FUN_0c22e3f4
 FUN_0c22e6f2
 FUN_0c22e8ca
+FUN_0c22ea0c
 FUN_0c22ece0
 FUN_0c22ed1c
 FUN_0c22ee60
@@ -2719,9 +2812,11 @@ FUN_0c233422
 FUN_0c233456
 FUN_0c2334c8
 FUN_0c233506
+FUN_0c233528
 FUN_0c2335a8
 FUN_0c2335c8
 FUN_0c23363e
+FUN_0c233692
 FUN_0c23370e
 FUN_0c233730
 FUN_0c233774
@@ -2747,6 +2842,7 @@ FUN_0c235ce0
 FUN_0c235ce4
 FUN_0c235ea4
 FUN_0c9de360
+FUN_0c9dee14
 FUN_0c9e2664
 SJMEM_Reset
 SJRBF_Reset
@@ -2893,6 +2989,7 @@ gdFsOpenRangeG
 gdFsReadWG
 gdFsReinit
 gdFsReinitG
+gdFsSearchPath_dds
 gdFsSetGlobalErrG
 gdFsSetTmode
 gdFsStrcmpi
@@ -2958,6 +3055,7 @@ kmChangeContextStripLength
 kmChangeContextSuperSample
 kmChangeContextUserClipMode
 kmChangeContextZWriteDisable
+kmChangeDisplayFilterMode
 kmChangeVertexOffset
 kmChangeVertexPCW
 kmCreateContiguousTextureSurface
@@ -2966,6 +3064,7 @@ kmCreateTABuffer
 kmCreateTextureSurface
 kmCreateVertexBuffer
 kmDiscardVertexBuffer
+kmFlipFrameBuffer
 kmFreeTexture
 kmGarbageCollectTexture
 kmGetCurrentScanline
@@ -2981,6 +3080,7 @@ kmLoadYUVTexture
 kmProcessVertexRenderState
 kmQueryFinishFlushVertexBuffer
 kmQueryFinishLastTextureDMA
+kmRender
 kmRenderDirect
 kmRenderTextureDirect
 kmResetRenderer
@@ -3038,6 +3138,7 @@ kmiFBGarbageCollect
 kmiFBSortQueue
 kmiFBallocEx
 kmiFBfreeEx
+kmiFBgetfreemem
 kmiFBinit
 kmiFastTA
 kmiFastTADirect
@@ -3054,6 +3155,7 @@ kmiInitInterrupt
 kmiInitNTSC
 kmiInitPAL
 kmiInitRenderer
+kmiInitializeDevice
 kmiInitializeHardware
 kmiInterruptHandlerSH
 kmiPurgeMemory
@@ -3064,6 +3166,7 @@ kmiRegisterPhIntHandler
 kmiReleaseHardware
 kmiResetTA
 kmiSetSysConfigFlag
+kmiStartRenderTextureEntry
 kmiUnloadDevice
 kmiVQalloc
 kmiVertexTransferTADirect
@@ -3115,35 +3218,22 @@ mpdrv_recognize
 mpdrv_rootplay
 mpdrv_sdckbdisable
 mpdrv_set_allstatreq
-mpdrv_set_allstatreq_ns
 mpdrv_set_arctrl
-mpdrv_set_arctrl_ns
 mpdrv_set_bread
-mpdrv_set_bread_ns
 mpdrv_set_bwrite
-mpdrv_set_bwrite_ns
 mpdrv_set_dkill
-mpdrv_set_dkill_ns
 mpdrv_set_dreq
-mpdrv_set_dreq_ns
 mpdrv_set_dreset
-mpdrv_set_dreset_ns
 mpdrv_set_end
 mpdrv_set_end_ns
 mpdrv_set_ft4ctrl
-mpdrv_set_ft4ctrl_ns
 mpdrv_set_getcond
-mpdrv_set_getcond_ns
 mpdrv_set_getlerr
-mpdrv_set_getlerr_ns
 mpdrv_set_getminfo
-mpdrv_set_getminfo_ns
 mpdrv_set_hreset
 mpdrv_set_hreset_ns
 mpdrv_set_setcond
-mpdrv_set_setcond_ns
 mpdrv_set_transagain
-mpdrv_set_transagain_ns
 mpdrv_setcmd
 mpdrv_setcmd_force
 mpdrv_speed
@@ -3177,6 +3267,7 @@ nlCreateTextureParam
 nlExp
 nlFloor
 nlFogTableColor
+nlFreeCommonTextureAll
 nlFreePalette
 nlGetAverageVector
 nlGetMatrix
@@ -3208,6 +3299,7 @@ nlRotateXSC
 nlRotateYSC
 nlScaleUnitVector
 nlSec
+nlSetPaletteData
 nlSubVector
 nlSubVector3op
 nlTransposeMatrix
@@ -3305,6 +3397,7 @@ syG2DmaResume
 syG2DmaResumeAll
 syG2DmaSetProtect
 syG2DmaSuspendAll
+syG2Read
 syG2Write
 syHwCacheFinish
 syHwFinish
@@ -3317,6 +3410,7 @@ syIntInit
 syMalloc
 syMallocChangeIF
 syMallocFinish
+syMalloc_default_malloc
 syMmuDeleteAllEntries
 syMmuDeleteEntry
 syRealloc
@@ -3428,6 +3522,7 @@ vmsfs_init_work_new
 vmsfs_init_work_normal
 vmsfs_ismount
 vmsfs_isready
+vmsfs_load_file
 vmsfs_memcmp
 vmsfs_mount
 vmsfs_mount2
@@ -3447,10 +3542,14 @@ vmsfs_xcreate
 vmsfs_xdefrag
 vmsfs_xfind
 vmsfs_xwrite1
+vmsio_block_read
+vmsio_block_write
 vmsio_exit
+vmsio_get_media_info
 vmsio_init
 vmsio_ismount
 vmsio_isready
 wait_done
 write_dir
+write_dir_all
 write_sys

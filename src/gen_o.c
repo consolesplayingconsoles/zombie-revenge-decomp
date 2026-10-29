@@ -599,32 +599,8 @@ int FUN_0c22f818(int a4, int a5)
     return t6;
 }
 
-int mpdrv_set_bwrite_ns(int a4, int a5, int a6, int a7, int a8, int a9, int a10)
-{
-    int stk[7];
 
-    *(unsigned int *)((((int)stk + 12) + 0x0)) = a5;
-    *(unsigned int *)((((int)stk + 12) + 0x4)) = ((((a6 << 16) << 8) | (a7 << 16)) | a8);
-    return (mpdrv_setcmd(a4, 0xC, ((int)stk + 12), 0x2, a9));
-}
 
-int mpdrv_set_bread_ns(int a4, int a5, int a6, int a7, int a8)
-{
-    int stk[7];
-
-    *(unsigned int *)((((int)stk + 12) + 0x0)) = a5;
-    *(unsigned int *)((((int)stk + 12) + 0x4)) = ((((a6 << 16) << 8) | (a7 << 16)) | a8);
-    return (mpdrv_setcmd(a4, 0xB, ((int)stk + 12), 0x2, 0x0));
-}
-
-int mpdrv_set_getlerr_ns(int a4, int a5, int a6, int a7, int a8)
-{
-    int stk[7];
-
-    *(unsigned int *)((((int)stk + 12) + 0x0)) = a5;
-    *(unsigned int *)((((int)stk + 12) + 0x4)) = ((((a6 << 16) << 8) | (a7 << 16)) | a8);
-    return (mpdrv_setcmd(a4, 0xD, ((int)stk + 12), 0x2, 0x0));
-}
 
 int FUN_0c22ee60(void)
 {
@@ -904,14 +880,6 @@ void syMmuDeleteEntry(int a4, int a5, int a6)
     }
 }
 
-int mpdrv_set_getminfo_ns(int a4, int a5, int a6)
-{
-    int stk[7];
-
-    *(unsigned int *)((((int)stk + 12) + 0x0)) = a5;
-    *(unsigned int *)((((int)stk + 12) + 0x4)) = ((a6 << 16) << 8);
-    return (mpdrv_setcmd(a4, 0xA, ((int)stk + 12), 0x2, 0x0));
-}
 
 int FUN_0c232f64(void)
 {
@@ -957,34 +925,8 @@ void FUN_0c22eeb2(int a4, int a5, int a6, int a7)
     }
 }
 
-int mpdrv_set_arctrl_ns(int a4, int a5)
-{
-    int stk[6];
 
-    *(unsigned int *)(((int)stk + 16)) = a5;
-    *(unsigned int *)(((int)stk + 12)) = 0x20;
-    return (mpdrv_setcmd(a4, 0x10, (((int)stk + 4) + 0x8), 0x1, ((*(int *)(((int)stk + 16))))));
-}
 
-int mpdrv_set_ft4ctrl_ns(int a4, int a5)
-{
-    int stk[6];
-
-    *(unsigned int *)(((int)stk + 16)) = a5;
-    *(unsigned int *)(((int)stk + 12)) = 0x10;
-    return (mpdrv_setcmd(a4, 0xF, (((int)stk + 4) + 0x8), 0x1, ((*(int *)(((int)stk + 16))))));
-}
-
-int mpdrv_set_setcond_ns(int a4, int a5, int a6, int a7)
-{
-    int stk[7];
-
-    *(unsigned int *)(((int)stk + 16)) = a6;
-    *(unsigned int *)(((int)stk + 20)) = a7;
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    *(volatile int *)(((int)stk + 20));
-    return (mpdrv_setcmd(a4, 0xE, (((int)stk + 4) + 0x8), 0x1, ((*(int *)(((int)stk + 16))))));
-}
 
 int ADXB_Destroy(int a4)
 {
@@ -1151,13 +1093,6 @@ int FUN_0c22fa60(int a4, int a5, int a6)
     return FUN_0c22fa7e(a4, a5, a6);
 }
 
-int mpdrv_set_getcond_ns(int a4, int a5)
-{
-    int stk[5];
-
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    return (mpdrv_setcmd(a4, 0x9, (((int)stk + 4) + 0x8), 0x1, 0x0));
-}
 
 void FUN_0c22cd34(void)
 {
@@ -1255,30 +1190,10 @@ int mpdrv_get_version(int a4, int a5)
     return t5;
 }
 
-int mpdrv_set_dreq_ns(int a4)
-{
-    return (mpdrv_setcmd(a4, 0x1, 0x0, 0x0, 0x0));
-}
 
-int mpdrv_set_dkill_ns(int a4)
-{
-    return (mpdrv_setcmd(a4, 0x4, 0x0, 0x0, 0x0));
-}
 
-int mpdrv_set_dreset_ns(int a4)
-{
-    return (mpdrv_setcmd(a4, 0x3, 0x0, 0x0, 0x0));
-}
 
-int mpdrv_set_allstatreq_ns(int a4)
-{
-    return (mpdrv_setcmd(a4, 0x2, 0x0, 0x0, 0x0));
-}
 
-int mpdrv_set_transagain_ns(int a4)
-{
-    return (mpdrv_setcmd(a4, 0xFC, 0x0, 0x0, 0x0));
-}
 
 int vmsfb_create(int a4, int a5, int a6)
 {
@@ -1764,3 +1679,17 @@ int ADXB_GetAdxpd(int a4)
 {
     return (*(int *)((a4 + 0x8)));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -81,38 +81,6 @@ int FUN_0c0cf942(int a4, int a5, int a6, int a7)
     return t9;
 }
 
-void FUN_0c20d7d4(int a4)
-{
-    int stk[3];
-
-    if (a4 != 1) {
-        if (a4 != 2) {
-            if (a4 != 3) {
-                if (a4 != 4) {
-                    kmSetBorderColor(((*(int *)((((int)stk + 8) + 0x0)))));
-                    for (;;) {
-                    }
-                }
-                *(unsigned int *)((((int)stk + 8) + 0x0)) = 0xFFFF00FF;
-                kmSetBorderColor(((*(int *)((((int)stk + 8) + 0x0)))));
-                for (;;) {
-                }
-            }
-            *(unsigned int *)((((int)stk + 8) + 0x0)) = 0xFF00FF00;
-            kmSetBorderColor(((*(int *)((((int)stk + 8) + 0x0)))));
-            for (;;) {
-            }
-        }
-        *(unsigned int *)((((int)stk + 8) + 0x0)) = 0xFFFF0000;
-        kmSetBorderColor(((*(int *)((((int)stk + 8) + 0x0)))));
-        for (;;) {
-        }
-    }
-    *(unsigned int *)((((int)stk + 8) + 0x0)) = 0xFF0000FF;
-    kmSetBorderColor(((*(int *)((((int)stk + 8) + 0x0)))));
-    for (;;) {
-    }
-}
 
 int mpdrv_set_bwrite(int a4, int a5, int a6, int a7, int a8, int a9, int a10)
 {
@@ -265,3 +233,5 @@ int mpdrv_set_hreset(int a4)
 {
     return mpdrv_set_hreset_ns(a4);
 }
+
+

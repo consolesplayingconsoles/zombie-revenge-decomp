@@ -26,52 +26,6 @@ int fmMngInit(int a4, int a5, int a6);
 void FUN_0c03e5bc(int a4);
 int FUN_0c057c50(int a4);
 
-int FUN_0c02d22a(int a4, int a5, int a6, float f4, float f5)
-{
-    int t5;
-    float u7;
-    int t9;
-    float u16;
-
-    if ((*(int *)((a4 + 0x330))) != 0) {
-        *(unsigned int *)((a4 + 0x4F0)) = 0x16;
-        *(unsigned int *)((a4 + 0x5CC)) = 0x0;
-        *(unsigned int *)((a4 + 0x508)) = 0x0;
-        if ((*(int *)((a4 + 0x554))) == 2) {
-            *(unsigned int *)((a4 + 0x4F4)) = 0x19;
-        } else {
-            *(unsigned int *)((a4 + 0x4F4)) = 0x18;
-        }
-    } else {
-        *(unsigned int *)((a4 + 0x4F0)) = 0x15;
-        *(unsigned int *)((a4 + 0x5CC)) = 0x1;
-        t5 = FUN_0c035f64(a4);
-        if ((int)t5 >= 0) {
-            u7 = *(float *)((((*(int *)(((0xBC + a4) + 0x0))) << 2) + ((((t5 << 2) << 2) << 2) + 0xC247694)));
-            t9 = *(int *)((((t5 << 2) + 0xC2475D4) + 0x0));
-            u16 = 999.998962f;
-            if ((*(int *)((a4 + 0x50C))) != 0) {
-                u16 = (*(float *)(((((*(int *)(((0xBC + a4) + 0x0))) << 2) + (0xC247084 + ((((*(int *)((a4 + 0x510))) << 2) << 2) << 2))) + 0x0)));
-            }
-            if (!(u7 > u16)) {
-                *(unsigned int *)((a4 + 0x558)) = t5;
-                *(unsigned int *)((a4 + 0x508)) = 0x1;
-                *(unsigned int *)((a4 + 0x514)) = 0x1;
-                _quick_odd_mvn(t5, t9, 0xC2475D4, u16, u7);
-                *(unsigned int *)((a4 + 0x4F4)) = 0x17;
-            } else {
-                *(unsigned int *)((a4 + 0x558)) = 0x0;
-                *(unsigned int *)((a4 + 0x508)) = 0x0;
-                *(unsigned int *)((a4 + 0x4F4)) = 0x1;
-            }
-        } else {
-            *(unsigned int *)((a4 + 0x558)) = 0x0;
-            *(unsigned int *)((a4 + 0x508)) = 0x0;
-            *(unsigned int *)((a4 + 0x4F4)) = 0x1;
-        }
-    }
-    return 0x4F4;
-}
 
 int FUN_0c0352b4(int a4, int a5, int a6, int a7)
 {

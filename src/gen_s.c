@@ -170,17 +170,6 @@ int FUN_0c030592(int a4)
     return 0x3B0;
 }
 
-int FUN_0c01d276(int a4, int a5, int a6, int a7)
-{
-    int t0;
-
-    t0 = FUN_0c0e18ce(0xC01D1AC, 0x80);
-    FUN_0c0e19d0(t0);
-    *(unsigned int *)((t0 + 0x38)) = (*(int *)((a4 + 0xBC)));
-    *(unsigned int *)((t0 + 0x30)) = (*(int *)((a4 + 0xC0)));
-    *(unsigned int *)((t0 + 0x34)) = ((a5 << 16) | a6);
-    return (_quick_odd_mvn());
-}
 
 int FUN_0c0548cc(int a4)
 {
@@ -295,32 +284,7 @@ int FUN_0c08498e(float f4, float f5, float f6)
     return nlObjPutSetSaturate((-1.0f), (-1.0f));
 }
 
-int FUN_0c086c1e(int a4, int a5, int a6, float f4)
-{
-    int t1;
 
-    t1 = FUN_0c0e19aa(0xC086CAC, 0x50, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    _quick_evn_mvn();
-    *(float *)((t1 + 0x40)) = f4;
-    *(unsigned int *)((t1 + 0x48)) = a5;
-    *(unsigned int *)((t1 + 0x4C)) = a6;
-    return 0x4C;
-}
-
-int FUN_0c08f5d0(int a4, int a5)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC08C4D8, 0xA4, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    *(unsigned short *)((t1 + 0x8A)) = a5;
-    *(float *)((t1 + 0x90)) = (*(float *)0xC08F720);
-    *(unsigned short *)((t1 + 0x9A)) = 0x328;
-    *(unsigned short *)((t1 + 0xA0)) = 0x15;
-    return 0xA0;
-}
 
 int FUN_0c0b8590(void)
 {
@@ -391,10 +355,6 @@ int FUN_0c0d70c8(int a4)
     return 0x0;
 }
 
-int FUN_0c0d6592(int a4, int a5)
-{
-    return (_quick_evn_mvn());
-}
 
 void FUN_0c0da510(float f4)
 {

@@ -459,17 +459,6 @@ int FUN_0c0868d6(int a4, int a5)
     return 0x1;
 }
 
-int FUN_0c08b088(int a4, int a5)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC08B124, 0x5C, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    *(unsigned int *)((t1 + 0x48)) = 0x1555;
-    *(unsigned int *)((t1 + 0x58)) = a5;
-    return 0x58;
-}
 
 int FUN_0c0a2914(int a4, int a5, int a6)
 {
@@ -662,32 +651,7 @@ int FUN_0c0562b4(int a4)
     return 0x0;
 }
 
-int FUN_0c037430(int a4)
-{
-    int t5;
 
-    FUN_0c085704(a4);
-    _quick_odd_mvn();
-    FUN_0c0bbbf4(a4);
-    t5 = *(int *)(((*(int *)((((*(int *)((a4 + 0xBC))) << 2) + 0xC246FF0))) + 0x4C8));
-    if (t5 == 15) {
-        *(unsigned int *)((a4 + 0x0)) = 0xC0373E0;
-    }
-    return t5;
-}
-
-int FUN_0c06a978(void)
-{
-    int t1;
-    int t4;
-
-    t1 = FUN_0c0e19aa(0xC06AB24, 0xB4, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t1);
-    _quick_odd_mvn();
-    t4 = *(short *)0xC0FA57A;
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)t4;
-    return (unsigned short)t4;
-}
 
 int FUN_0c0855ba(int a4)
 {
@@ -894,27 +858,7 @@ int FUN_0c0b0cb8(int a4, int a5, int a6, int a7)
     return t8;
 }
 
-int FUN_0c0b251c(void)
-{
-    int t2;
 
-    FUN_0c0a8d80(0xC11160C);
-    t2 = FUN_0c0e19aa(0xC018450, 0xB4, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t2);
-    _quick_odd_mvn();
-    *(unsigned int *)((t2 + 0x78)) = 0xCE4;
-    return 0x78;
-}
-
-int FUN_0c0b2984(int a4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC0B29E8, 0x474, (*(int *)0xC23ECE4));
-    FUN_0c0e19d0(t1);
-    FUN_0c0b25e4(t1, a4);
-    return (_quick_odd_mvn());
-}
 
 int FUN_0c0b4098(int a4)
 {
@@ -973,15 +917,6 @@ int FUN_0c082f78(int a4, int a5, int a6)
     return 0x0;
 }
 
-int FUN_0c089ac0(int a4)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC089B50, 0x6C, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    *(unsigned int *)((t1 + 0x64)) = 0x78;
-    return (_quick_odd_mvn());
-}
 
 int FUN_0c08e46e(int a4)
 {
@@ -1083,28 +1018,7 @@ int FUN_0c08e12c(int a4)
     return t3;
 }
 
-int FUN_0c09c460(int a4)
-{
-    int t0;
-    int stk[8];
 
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    t0 = FUN_0c09c39c(a4);
-    *(unsigned int *)((t0 + 0x44)) = 0x1;
-    _quick_evn_mvn();
-    return (FUN_0c063df0((*(int *)(((int)stk + 4))), (t0 + 0x4C), (((int)stk + 4) + 0x4)));
-}
-
-int FUN_0c09c42c(int a4)
-{
-    int stk[8];
-
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    *(unsigned int *)(((int)stk + 8)) = (FUN_0c09c39c(a4));
-    _quick_evn_mvn();
-    FUN_0c063df0((*(int *)(((int)stk + 4))), ((*(int *)(((int)stk + 8))) + 0x4C), (((int)stk + 4) + 0x8));
-    return (FUN_0c0cc3f8(0x424A9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28)));
-}
 
 int FUN_0c0a9f0e(int a4)
 {
@@ -1116,14 +1030,6 @@ int FUN_0c0a9f0e(int a4)
     return 0x2E8;
 }
 
-int FUN_0c044060(int a4)
-{
-    *(float *)((a4 + 0x390)) = (*(float *)((a4 + 0xB4)));
-    FUN_0c085704(a4);
-    _quick_odd_mvn();
-    FUN_0c0bbbf4(a4);
-    return FUN_0c01cdf2(a4);
-}
 
 int FUN_0c06cb94(int a4)
 {
@@ -1158,16 +1064,6 @@ int FUN_0c0b49fa(void)
     return 0x30;
 }
 
-int FUN_0c010f0a(void)
-{
-    int stk[5];
-
-    _quick_odd_mvn();
-    nlPushMatrix(0x0);
-    FUN_0c0dcca0(((int)stk + 4));
-    FUN_0c0c465c(0x13FD);
-    return (nlPopMatrix(0x1));
-}
 
 int FUN_0c0a86d6(void)
 {
@@ -1225,16 +1121,6 @@ int FUN_0c0b09c4(void)
     return t11;
 }
 
-int FUN_0c0b1fb4(void)
-{
-    int t1;
-
-    t1 = FUN_0c0e19aa(0xC0B1FE4, 0xB0, (*(int *)0xC23ECF4));
-    FUN_0c0e19d0(t1);
-    _quick_evn_mvn();
-    *(unsigned int *)((t1 + 0x90)) = 0x1A4;
-    return 0x90;
-}
 
 int FUN_0c0a9cb8(void)
 {
@@ -1372,13 +1258,6 @@ int FUN_0c076fb2(void)
     return t3;
 }
 
-int FUN_0c082260(void)
-{
-    *(unsigned int *)0xC247D9C = (*(int *)0xC23ED50);
-    *(volatile int *)0xC23ED50;
-    _quick_evn_mvn();
-    return 0xC247D74;
-}
 
 int FUN_0c08467c(int a4, int a5)
 {
