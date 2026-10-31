@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=98.7&b=96.7&a=69&s=0)
+![decomp progress](badges/progress.svg?p=80.3&b=90.8&a=60&s=0)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,18 +21,18 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE           69.0%  the instructions the cases ran, of all instructions, over the 4090 functions that can be C; the 3555 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (98.7% complete) 55  of the 4090 functions that can be C (142 with no C form are counted apart)
-BYTES LEFT   (96.7% complete) 22838  of 695658 bytes of code that can be C
-FUNCTIONS                            
-  unnamed                      3073  functions still called FUN_... (3073 of 4232)
-  Not written C                  20  5356 bytes
-  Written C with errors           0  0 bytes
-  Not drawn                       1  198 bytes
-  Drawn with errors              21  7394 bytes
-  Checked with errors            13  9890 bytes
-  No C form                    3.4%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
-  documented                  19.7%  832 named functions in docs/*.md
+TOTAL TEST COVERAGE             59.6%  the instructions the cases ran, of all instructions, over the 5484 functions that can be C; the 3925 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (80.3% complete) 1079  of the 5484 functions that can be C (222 with no C form are counted apart)
+BYTES LEFT     (90.8% complete) 85232  of 921666 bytes of code that can be C
+FUNCTIONS                              
+  unnamed                        4572  functions still called FUN_... (4572 of 5706)
+  Not written C                  1046  68944 bytes
+  Written C with errors             0  0 bytes
+  Not drawn                         0  0 bytes
+  Drawn with errors                18  8206 bytes
+  Checked with errors              15  8082 bytes
+  No C form                      3.9%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
+  documented                    14.2%  808 named functions in docs/*.md
 ```
 <!-- /progress -->
 
