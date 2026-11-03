@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=98.2&b=95.9&a=65&s=0)
+![decomp progress](badges/progress.svg?p=98.5&b=96.0&a=65&s=0)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,12 +21,12 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE           65.2%  the instructions the cases ran, of all instructions, over the 5485 functions that can be C; the 4908 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (98.2% complete) 97  of the 5485 functions that can be C (221 with no C form are counted apart)
-BYTES LEFT   (95.9% complete) 37612  of 921670 bytes of code that can be C
+TOTAL TEST COVERAGE           65.3%  the instructions the cases ran, of all instructions, over the 5485 functions that can be C; the 4921 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (98.5% complete) 84  of the 5485 functions that can be C (221 with no C form are counted apart)
+BYTES LEFT   (96.0% complete) 36480  of 921670 bytes of code that can be C
 FUNCTIONS                            
   unnamed                      4572  functions still called FUN_... (4572 of 5706)
-  Not written C                  65  21356 bytes
+  Not written C                  52  20224 bytes
   Written C with errors           0  0 bytes
   Not drawn                       0  0 bytes
   Drawn with errors              15  7922 bytes
