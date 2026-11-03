@@ -68,7 +68,7 @@ int FUN_0c0b81ac(int a4, int a5, int a6, int a7);
 int FUN_0c04720a(int a4, int a5, int a6, int a7);
 int kmiGetPackOBPParam(int a4, int a5, int a6, int a7, int a8, int a9);
 int vmsfs_init_work_normal(int a4, int a5, int a6);
-float FUN_0c0d6e5a(int a4, int a5, int a6, int a7);
+int FUN_0c0d6e5a(int a4, int a5, int a6, int a7);
 int FUN_0c0366b4(int a4);
 int FUN_0c04b344(int a4, int a5);
 int FUN_0c05518c(int a4, int a5, int a6);
@@ -576,7 +576,7 @@ int vmsfs_init_work_normal(int a4, int a5, int a6)
     goto L_C225086;
 }
 
-float FUN_0c0d6e5a(int a4, int a5, int a6, int a7)
+int FUN_0c0d6e5a(int a4, int a5, int a6, int a7)
 {
     int t2;
     int t3;
@@ -588,7 +588,6 @@ float FUN_0c0d6e5a(int a4, int a5, int a6, int a7)
     float u30;
     int t43;
     int t44;
-    float u68;
     float u5;
     float u6;
     int t8;
@@ -653,17 +652,15 @@ float FUN_0c0d6e5a(int a4, int a5, int a6, int a7)
                 t44 = (t44 + 0x1);
                 t43 = (t43 + 0x4);
                 if ((int)t44 >= (int)t27) {
-                    *(volatile int *)(((((int)stk + 4) + 0x3C) + (t28 << 2)));
-                    return u5;
+                    return *(volatile int *)(((((int)stk + 4) + 0x3C) + (t28 << 2)));
                 }
             }
-            *(volatile int *)((a4 + 0x78));
+            return *(volatile int *)((a4 + 0x78));
         } else {
-            *(volatile int *)(((((int)stk + 4) + 0x3C) + (t28 << 2)));
+            return *(volatile int *)(((((int)stk + 4) + 0x3C) + (t28 << 2)));
         }
-        u68 = u5;
     }
-    return u68;
+    return 0xFFFFFFFF;
 }
 
 int FUN_0c0366b4(int a4)

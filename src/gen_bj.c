@@ -30,7 +30,7 @@ int nlAddVector(int, int);
 int nlAddVector3op(int, int, int);
 float nlLength(int, int);
 int vmsfb_sleep(void);
-float FUN_0c01f4fe(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9);
+int FUN_0c01f4fe(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9);
 int FUN_0c0d2b30(int a4, int a5);
 int vmsio_get_media_info(int a4, int a5);
 void FUN_0c0d1b00(int a4);
@@ -38,7 +38,7 @@ int ADXF_AddPartition(int a4, int a5, int a6, int a7);
 int FUN_0c02286c(int a4, int a5, float f4, float f5);
 void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
 
-float FUN_0c01f4fe(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9)
+int FUN_0c01f4fe(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9)
 {
     int t6;
     float u9;
@@ -103,7 +103,7 @@ float FUN_0c01f4fe(int a4, int a5, float f4, float f5, float f6, float f7, float
     L_C01F6E2:;
     R0 = (0xFFFFFFFF);
     L_C01F6E4:;
-    return F0;
+    return R0;
     L_C01F560:;
     R0 = (0x2);
     goto L_C01F6E4;

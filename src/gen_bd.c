@@ -65,7 +65,7 @@ int kmChangeContextSRCBlendMode(int a4);
 int FUN_0c06c938(int a4);
 int FUN_0c057aa8(int a4);
 int FUN_0c074bb2(int a4);
-float FUN_0c0d6fae(int a4, int a5, int a6);
+int FUN_0c0d6fae(int a4, int a5, int a6);
 int FUN_0c02761e(int a4);
 int FUN_0c02750a(int a4, float f4);
 int FUN_0c0c60d0(int a4, int a5, int a6);
@@ -527,7 +527,7 @@ int FUN_0c074bb2(int a4)
     return 0x60;
 }
 
-float FUN_0c0d6fae(int a4, int a5, int a6)
+int FUN_0c0d6fae(int a4, int a5, int a6)
 {
     int t0;
     int t1;
@@ -542,7 +542,6 @@ float FUN_0c0d6fae(int a4, int a5, int a6)
     int t40;
     int t41;
     int t44;
-    float u64;
     int t2;
     int t5;
     float u8;
@@ -635,14 +634,14 @@ float FUN_0c0d6fae(int a4, int a5, int a6)
                 }
                 t44 = (t44 + 0x1);
                 if ((int)t44 >= (int)t27) {
-                    return u8;
+                    return t41;
                 }
             }
-            *(volatile int *)((a4 + 0x78));
+            return *(volatile int *)((a4 + 0x78));
         }
-        u64 = u8;
+        return t41;
     }
-    return u64;
+    return 0xFFFFFFFF;
 }
 
 int FUN_0c02761e(int a4)

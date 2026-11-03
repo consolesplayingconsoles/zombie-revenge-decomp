@@ -7,11 +7,11 @@ int FUN_0c0a68ec(int, float, float);
 int FUN_0c0a7714(int, int, float, float, float);
 int FUN_0c0e262a(int);
 int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
-float FUN_0c0e07b4(int a4, float f4, float f5, float f6, float f7, float f8, float f9);
+int FUN_0c0e07b4(int a4, float f4, float f5, float f6, float f7, float f8, float f9);
 int FUN_0c0c86ac(int a4, int a5, int a6, int a7);
 int FUN_0c01c46a(int a4, int a5);
 
-float FUN_0c0e07b4(int a4, float f4, float f5, float f6, float f7, float f8, float f9)
+int FUN_0c0e07b4(int a4, float f4, float f5, float f6, float f7, float f8, float f9)
 {
     int t0;
     int t7;
@@ -608,7 +608,7 @@ float FUN_0c0e07b4(int a4, float f4, float f5, float f6, float f7, float f8, flo
     goto L_C0E0900;
     L_C0E0CA2:;
     *(unsigned int *)0xC94C6C0 = R7;
-    return F0;
+    return R7;
     L_C0E0816:;
     *(float *)(((int)stk + 156)) = F9;
     *(float *)(((int)stk + 132)) = F6;

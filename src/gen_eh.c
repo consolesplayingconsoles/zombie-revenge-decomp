@@ -145,7 +145,7 @@ int FUN_0c065398(int a4, int a5, int a6, int a7, float f4);
 int FUN_0c06b114(int a4);
 int FUN_0c067cd4(void);
 void FUN_0c0ce7e0(int a4, int a5, int a6, int a7);
-float FUN_0c0ceee4(int a4);
+int FUN_0c0ceee4(int a4);
 int FUN_0c0e432e(int a4, int a5, int a6);
 int adxf_SetFileInfo(int a4, int a5);
 int syTmrInt1Cancel(void);
@@ -1219,7 +1219,7 @@ void FUN_0c0ce7e0(int a4, int a5, int a6, int a7)
     }
 }
 
-float FUN_0c0ceee4(int a4)
+int FUN_0c0ceee4(int a4)
 {
     float u0;
     int t1;
@@ -1245,7 +1245,7 @@ float FUN_0c0ceee4(int a4)
                 t1 = 0x0;
                 for (;;) {
                     if ((int)t1 >= (int)(*(int *)0xC943164)) {
-                        return u3;
+                        return 0;
                     }
                     u3 = (((float (*)(int, int))(nlLength))(a4, t2));
                     if ((*(float *)((t2 + 0xC))) > u3) {
@@ -1254,7 +1254,7 @@ float FUN_0c0ceee4(int a4)
                     t1 = (t1 + 0x1);
                     t2 = (t2 + 0x10);
                 }
-                return u3;
+                return 2;
             }
             continue;
         }
@@ -1265,7 +1265,7 @@ float FUN_0c0ceee4(int a4)
             t1 = 0x0;
             for (;;) {
                 if ((int)t1 >= (int)(*(int *)0xC943164)) {
-                    return u3;
+                    return 0;
                 }
                 u3 = (((float (*)(int, int))(nlLength))(a4, t2));
                 if ((*(float *)((t2 + 0xC))) > u3) {
@@ -1274,10 +1274,10 @@ float FUN_0c0ceee4(int a4)
                 t1 = (t1 + 0x1);
                 t2 = (t2 + 0x10);
             }
-            return u3;
+            return 2;
         }
     }
-    return u3;
+    return 1;
 }
 
 int FUN_0c0e432e(int a4, int a5, int a6)

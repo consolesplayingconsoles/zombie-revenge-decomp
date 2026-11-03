@@ -50,7 +50,7 @@ int FUN_0c03e388(int a4, float f4);
 void FUN_0c01c274(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8);
 int ADX_DecodeSteFloat(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, float f4, float f5, float f6);
 int FUN_0c0c8e40(int a4, int a5, int a6, int a7, float f4);
-float vmsio_block_write(int a4, int a5, int a6);
+int vmsio_block_write(int a4, int a5, int a6);
 
 int FUN_0c039e96(int a4)
 {
@@ -1455,7 +1455,7 @@ int FUN_0c0c8e40(int a4, int a5, int a6, int a7, float f4)
     return t1;
 }
 
-float vmsio_block_write(int a4, int a5, int a6)
+int vmsio_block_write(int a4, int a5, int a6)
 {
     int t2;
     int t14;
@@ -1514,7 +1514,7 @@ float vmsio_block_write(int a4, int a5, int a6)
     L_C23252E:;
     R0 = (0xFFFFFF01);
     L_C232530:;
-    return F0;
+    return R0;
     L_C2323CC:;
     R14 = ((*(int *)(((int)stk + 24))));
     t14 = *(int *)(((R14 << 2) + 0xC2382DC));

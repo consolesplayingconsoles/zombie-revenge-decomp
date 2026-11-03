@@ -41,7 +41,7 @@ float FUN_0c0c8138(int a4, int a5, int a6, float f4, float f5);
 int FUN_0c0a6928(int a4, int a5, int a6, Stk4 s, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
 int FUN_0c0d0648(int a4, int a5, int a6, int a7);
 int FUN_0c0e2400(void);
-float FUN_0c036806(int a4, int a5, int a6, int a7, int a8, int a9, int a10);
+int FUN_0c036806(int a4, int a5, int a6, int a7, int a8, int a9, int a10);
 int FUN_0c092884(int a4, int a5);
 float FUN_0c0dbe40(int a4, int a5, int a6, float f4, float f5);
 int FUN_0c0e509a(int a4, int a5, int a6);
@@ -1532,7 +1532,7 @@ int FUN_0c0e2400(void)
     return 0xC94C7F0;
 }
 
-float FUN_0c036806(int a4, int a5, int a6, int a7, int a8, int a9, int a10)
+int FUN_0c036806(int a4, int a5, int a6, int a7, int a8, int a9, int a10)
 {
     float u0;
     float u1;
@@ -1602,8 +1602,7 @@ float FUN_0c036806(int a4, int a5, int a6, int a7, int a8, int a9, int a10)
     F15 = (9999.89941f);
     L_C036960:;
     if (((int)(*(int *)(((int)stk + 8))) <= (int)(*(int *)(((int)stk + 32))))) goto L_C0368A6;
-    *(volatile int *)(((int)stk + 40));
-    return F0;
+    return *(volatile int *)(((int)stk + 40));
     L_C0368A6:;
     t22 = *(int *)(((int)stk + 36));
     R10 = (((((t22 << 1) + t22) << 2) + R8));

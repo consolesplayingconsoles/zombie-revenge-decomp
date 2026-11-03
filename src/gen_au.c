@@ -60,7 +60,7 @@ int FUN_0c0c6ef4(int a4, int a5, int a6, int a7);
 int FUN_0c0553b6(int a4, int a5, int a6);
 int FUN_0c029646(int a4, int a5, int a6);
 int FUN_0c0b5030(int a4, float f4);
-float FUN_0c0278d0(int a4, int a5);
+int FUN_0c0278d0(int a4, int a5);
 int FUN_0c08bb20(int a4, int a5, int a6, int a7);
 int FUN_0c0a1c76(int a4);
 
@@ -701,7 +701,7 @@ int FUN_0c0b5030(int a4, float f4)
     return FUN_0c0d8c40(t102, t102, t102);
 }
 
-float FUN_0c0278d0(int a4, int a5)
+int FUN_0c0278d0(int a4, int a5)
 {
     int t8;
     float u70;
@@ -780,7 +780,7 @@ float FUN_0c0278d0(int a4, int a5)
     u77 = u76;
     u77 = u77 + (u75 - u74) * (u75 - u74);
     
-    return (u75 - u74);
+    return !(_builtin_sqrtf(u77) > 0.0299999993f);
 }
 
 int FUN_0c08bb20(int a4, int a5, int a6, int a7)

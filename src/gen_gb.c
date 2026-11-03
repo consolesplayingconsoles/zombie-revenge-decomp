@@ -46,12 +46,12 @@ int kmiSetOpaqueDummy(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int syCfgSetSoundMode(int, int, int);
-float FUN_0c0e2d6c(int a4, float f4, float f5, float f6, float f7);
+int FUN_0c0e2d6c(int a4, float f4, float f5, float f6, float f7);
 int FUN_0c012e36(int a4, int a5, int a6, int a7);
 int kmRender(void);
 int FUN_0c013c38(void);
 
-float FUN_0c0e2d6c(int a4, float f4, float f5, float f6, float f7)
+int FUN_0c0e2d6c(int a4, float f4, float f5, float f6, float f7)
 {
     int t8;
     int t10;
@@ -696,7 +696,7 @@ float FUN_0c0e2d6c(int a4, float f4, float f5, float f6, float f7)
     L_C0E2F78:;
     goto L_C0E348C;
     L_C0E350A:;
-    return F0;
+    return R9;
 }
 
 int FUN_0c012e36(int a4, int a5, int a6, int a7)
