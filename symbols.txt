@@ -1,0 +1,1 @@
+# <addr> <name> for what the C uses that no file defines yet (RAM, data still inside asm); the linker gets them as defines. None yet.

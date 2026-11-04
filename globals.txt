@@ -1,0 +1,1 @@
+# Named globals: address, name. None named yet in this decomp.
