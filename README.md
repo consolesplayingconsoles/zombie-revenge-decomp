@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=97.3&b=95.6&a=65&s=0)
+![decomp progress](badges/progress.svg?p=97.7&b=96.8&a=66&s=0)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,18 +21,18 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE            64.9%  the instructions the cases ran, of all instructions, over the 5550 functions that can be C; the 4921 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (97.3% complete) 149  of the 5550 functions that can be C (230 with no C form are counted apart)
-BYTES LEFT    (95.6% complete) 40720  of 925910 bytes of code that can be C
+TOTAL TEST COVERAGE            65.8%  the instructions the cases ran, of all instructions, over the 5550 functions that can be C; the 4943 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (97.7% complete) 127  of the 5550 functions that can be C (230 with no C form are counted apart)
+BYTES LEFT    (96.8% complete) 29634  of 925910 bytes of code that can be C
 FUNCTIONS                             
   unnamed                       4646  functions still called FUN_... (4646 of 5780)
-  Not written C                  117  24464 bytes
+  Not written C                   10  2764 bytes
   Written C with errors            0  0 bytes
-  Not drawn                        0  0 bytes
-  Drawn with errors               15  7922 bytes
-  Checked with errors             17  8334 bytes
+  Not drawn                       66  4316 bytes
+  Drawn with errors               33  15200 bytes
+  Checked with errors             18  7354 bytes
   No C form                     4.0%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
-  documented                   14.0%  809 named functions in docs/*.md
+  documented                   14.0%  810 named functions in docs/*.md
 ```
 <!-- /progress -->
 
