@@ -8,6 +8,17 @@ int kmSetHSyncLine(int a4);
 int thunk_kmSetFogTable(void);
 int thunk_mwRnaGetTime(void);
 
+
+int thunk_kmSetFogTable(void)
+{
+    return kmSetFogTable();
+}
+
+int thunk_mwRnaGetTime(void)
+{
+    return mwRnaGetTime();
+}
+
 int kmSetHSyncLine(int a4)
 {
     int t0;
@@ -54,12 +65,3 @@ int kmSetHSyncLine(int a4)
     return 0x0;
 }
 
-int thunk_kmSetFogTable(void)
-{
-    return kmSetFogTable();
-}
-
-int thunk_mwRnaGetTime(void)
-{
-    return mwRnaGetTime();
-}

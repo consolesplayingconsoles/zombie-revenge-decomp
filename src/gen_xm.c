@@ -1,0 +1,90 @@
+/* Straight-line functions with calls and guards (batch gen_xm): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0c465c(int);
+int FUN_0c0dcc70(float, float, float);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlScale(float, float, float);
+int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7);
+
+int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7)
+{
+    int stk[5];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R9;
+    register float F3;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register float w0_0;
+    register float w0_1;
+    register float w0_2;
+    register float w0_3;
+    register float w0_4;
+    v0_2 = a4;
+    w0_4 = f4;
+    w0_0 = f5;
+    w0_2 = f6;
+    w0_1 = f7;
+    *(float *)(((int)stk + 4)) = w0_4;
+    *(float *)(((int)stk + 8)) = w0_0;
+    *(float *)(((int)stk + 12)) = w0_2;
+    nlPushMatrix(0x0);
+    nlScale(w0_1, w0_1, 1.0f);
+    FUN_0c0dcc70((*(float *)(((int)stk + 4))), (*(float *)(((int)stk + 8))), (*(float *)(((int)stk + 12))));
+    *(unsigned int *)(((int)stk + 16)) = 0xC1EF29C;
+    v0_0 = (0xC1EEFC4);
+    v0_1 = (0xC1EEEC4);
+    v0_3 = (0xC0DCC70);
+    v0_3 = (v0_2);
+    v0_2 = (0xC0DC510);
+    w0_0 = (0.0f);
+    w0_1 = (w0_1);
+    w0_3 = (0.0f);
+    w0_2 = (0.0f);
+    L_C010BE2:;
+    v0_4 = *(signed char *)((v0_3 + 0x0));
+    v0_3 = ((v0_3 + 0x1));
+    v0_5 = (0xC0DC4C0);
+    v0_2 = (v0_4);
+    if (((signed char)v0_4 != 0)) goto L_C010B5E;
+    return (nlPopMatrix(0x1));
+    L_C010B5E:;
+    v0_4 = ((signed char)v0_2);
+    if (((signed char)v0_2 == 32)) goto L_C010B6C;
+    if ((v0_4 == 10)) goto L_C010B7C;
+    v0_5 = (((((signed char)v0_2 << 2) << 1) + v0_1));
+    if (((unsigned int)((((signed char)v0_2 << 2) << 1) + v0_1) <= (unsigned int)v0_0)) goto L_C010BDA;
+    if (((unsigned int)v0_5 >= (unsigned int)(*(int *)(((int)stk + 16))))) goto L_C010BDA;
+    FUN_0c0c465c((*(int *)((v0_5 + 0x0))));
+    w0_3 = ((*(float *)((v0_5 + 0x4))));
+    if (((*(signed char *)((v0_3 + 0x0))) == 0)) goto L_C010BDA;
+    L_C010BCC:;
+    w0_3 = ((w0_3 + (*(float *)((((((*(signed char *)((v0_3 + 0x0))) << 2) << 1) + v0_1) + 0x4)))));
+    L_C010BDA:;
+    FUN_0c0dcc70(w0_3, w0_2, w0_2);
+    goto L_C010BE2;
+    L_C010B7C:;
+    w0_3 = *(float *)0xC010C30;
+    nlPopMatrix(0x1);
+    nlPushMatrix(0x0);
+    nlScale(w0_1, w0_1, 1.0f);
+    FUN_0c0dcc70((*(float *)(((int)stk + 4))), ((*(float *)(((int)stk + 8))) + (w0_0 - w0_3)), (*(float *)(((int)stk + 12))));
+    w0_0 = ((w0_0 - w0_3));
+    w0_3 = (w0_2);
+    goto L_C010BDA;
+    L_C010B6C:;
+    w0_4 = *(float *)0xC010C2C;
+    w0_3 = (w0_4);
+    w0_4 = (w0_4);
+    if (((*(signed char *)((v0_3 + 0x0))) != 0)) goto L_C010BCC;
+    goto L_C010BDA;
+}

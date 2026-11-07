@@ -1467,24 +1467,6 @@ int FUN_0c08b810(int a4)
     return (FUN_0c0de2c0((((int)stk + 4) + 0x4)));
 }
 
-int FUN_0c0a2122(int a4, int a5)
-{
-    int t1;
-    int t3;
-
-    t1 = FUN_0c0e19aa(0xC0A1E7E, 0x214, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    *(unsigned int *)((t1 + 0x30)) = a4;
-    t3 = *(int *)((a4 + 0x2E8));
-    *(unsigned int *)((t1 + 0x40)) = (((int)t3 >= 0) ? (0x2 << (t3 & 31)) : ((-(int)t3 & 31) ? ((int)0x2 >> (-(int)t3 & 31)) : ((int)0x2 >> 31)));
-    *(unsigned int *)(((0x44 + t1) + 0x0)) = (unsigned short)(*(short *)((a5 + 0x6)));
-    *(unsigned int *)((t1 + 0x38)) = (unsigned short)(*(short *)((a5 + 0x4)));
-    *(unsigned int *)((t1 + 0x48)) = 0x392;
-    if ((*(int *)((a4 + 0x3E4))) == 0) {
-        FUN_0c0bb0f4(a4);
-    }
-    return FUN_0c0cbafc(0x392, 0x2, 0xFC000000, 0x84000000);
-}
 
 
 int FUN_0c0b33a8(int a4, int a5)

@@ -1,0 +1,97 @@
+/* Straight-line functions with calls and guards (batch gen_ww): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c231fb4(int, int, int);
+int kdGetDevice(int);
+int kdGetStatus(int);
+int kdIsChanged(int);
+int kdSetBlockRead(int, ...);
+int vmsfb_sleep(void);
+int vmsio_ismount(int);
+int vmsio_block_read(int a4, int a5, int a6);
+
+int vmsio_block_read(int a4, int a5, int a6)
+{
+    int stk[5];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R7;
+    register float F0;
+    register float F15;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    v0_3 = a4;
+    v0_0 = a5;
+    v0_1 = a6;
+    *(unsigned int *)(((int)stk + 16)) = v0_0;
+    *(unsigned int *)(((int)stk + 8)) = v0_1;
+    v0_2 = (vmsio_ismount(v0_3)) != 0;
+    v0_0 = (((v0_3 * 0x148) + 0xC956768));
+    v0_1 = (0xC232022);
+    v0_1 = (v0_3);
+    if (v0_2) goto L_C23226A;
+    vmsfb_sleep();
+    L_C232320:;
+    v0_4 = (0xFFFFFF01);
+    L_C232352:;
+    return v0_4;
+    L_C23226A:;
+    v0_1 = *(int *)(((v0_1 << 2) + 0xC2382DC));
+    kdGetDevice(v0_1);
+    v0_4 = *(int *)(((int)stk + 8));
+    *(unsigned int *)(((int)stk + 8)) = 0x0;
+    v0_2 = (0x0);
+    v0_1 = (v0_1);
+    v0_3 = (0x0);
+    v0_3 = (v0_4);
+    L_C232346:;
+    if (((int)(*(int *)(((int)stk + 8))) < (int)(*(int *)(((*(int *)((v0_0 + 0x1C))) + 0x3C))))) goto L_C2322D0;
+    v0_4 = (0x0);
+    goto L_C232352;
+    L_C2322D0:;
+    v0_5 = (0xC223CB6);
+    v0_4 = (kdIsChanged(v0_1)) != 0;
+    if (v0_4) goto L_C2322FA;
+    v0_4 = (*(int *)(((int)stk + 16)));
+    *(int *)((int)stk + 4) = v0_4;
+    v0_4 = kdSetBlockRead(v0_4);
+    v0_5 = (v0_4);
+    if (((int)v0_4 >= 0)) goto L_C2322D6;
+    vmsfb_sleep();
+    goto L_C2322D0;
+    L_C2322D6:;
+    v0_4 = (kdGetStatus(v0_1)) != 0;
+    if (v0_4) goto L_C2322EA;
+    vmsfb_sleep();
+    goto L_C2322D6;
+    L_C2322EA:;
+    *(unsigned int *)(((int)stk + 12)) = (kdGetDevice(v0_1));
+    v0_4 = (kdIsChanged(v0_1)) == 0;
+    if (!(v0_4)) goto L_C2322FA;
+    v0_6 = *(signed char *)(((*(int *)(((int)stk + 12))) + 0x4));
+    v0_4 = ((unsigned char)v0_6);
+    v0_5 = ((*(int *)(((*(int *)(((int)stk + 12))) + 0x8))));
+    if (((unsigned char)v0_6 == 8)) goto L_C232326;
+    if ((v0_4 == 0xFC)) goto L_C2322D0;
+    if ((v0_4 != 0xFB)) goto L_C232320;
+    v0_4 = (0xFFFF0000);
+    goto L_C232352;
+    L_C2322FA:;
+    v0_4 = (0xFFFFFF30);
+    goto L_C232352;
+    L_C232326:;
+    FUN_0c231fb4(v0_3, (v0_5 + 0xC), (*(int *)(((*(int *)((v0_0 + 0x1C))) + 0x44))));
+    v0_4 = *(int *)(((*(int *)((v0_0 + 0x1C))) + 0x44));
+    *(unsigned int *)(((int)stk + 8)) = ((*(int *)(((int)stk + 8))) + 0x1);
+    v0_2 = ((v0_2 + 0x1));
+    v0_3 = ((v0_3 + v0_4));
+    goto L_C232346;
+}

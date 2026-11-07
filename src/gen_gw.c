@@ -1,3 +1,4 @@
+typedef struct { int w[1]; } Stk1;
 /* Straight-line functions with calls and guards (batch gen_gw): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
@@ -51,7 +52,7 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e6248(void);
 int adxt_start_stm(int);
 int kgCmiNewId(void);
-int kmSetBorderColor(Stk4);
+int kmSetBorderColor(Stk1);
 int kmSetFogTableColor(Stk4);
 int kmSetFogVertexColor(Stk4);
 int nlAddVector(int, int);
@@ -1010,7 +1011,7 @@ int FUN_0c0d8f50(int a4)
 
     *(unsigned int *)(((int)stk + 8)) = (a4 | 0xFF000000);
     *(int *)((int)stk + 4) = (a4 | 0xFF000000);
-    return (kmSetBorderColor(*(Stk4 *)((int)stk + 4)));
+    return (kmSetBorderColor(*(Stk1 *)((int)stk + 4)));
 }
 
 int FUN_0c0d8ed0(int a4)

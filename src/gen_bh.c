@@ -53,6 +53,24 @@ int FUN_0c07903a(int a4, int a5, int a6, int a7)
     return t3;
 }
 
+
+int FUN_0c0cc752(int a4)
+{
+    int t1;
+    int t3;
+
+    t1 = 0xC20AB70;
+    if ((*(int *)0xC23A180) == 2) {
+        t1 = 0xC20A818;
+    }
+    t3 = *(int *)(((t1 + ((a4 << 2) << 1)) + 0x0));
+    if (t3 == 1) {
+        FUN_0c0cc720();
+        return FUN_0c0cc3f8((*(int *)(((t1 + ((a4 << 2) << 1)) + 0x4))));
+    }
+    return t3;
+}
+
 int FUN_0c04073a(int a4, float f4)
 {
     int t0;
@@ -123,19 +141,3 @@ int FUN_0c04073a(int a4, float f4)
     return t52;
 }
 
-int FUN_0c0cc752(int a4)
-{
-    int t1;
-    int t3;
-
-    t1 = 0xC20AB70;
-    if ((*(int *)0xC23A180) == 2) {
-        t1 = 0xC20A818;
-    }
-    t3 = *(int *)(((t1 + ((a4 << 2) << 1)) + 0x0));
-    if (t3 == 1) {
-        FUN_0c0cc720();
-        return FUN_0c0cc3f8((*(int *)(((t1 + ((a4 << 2) << 1)) + 0x4))));
-    }
-    return t3;
-}

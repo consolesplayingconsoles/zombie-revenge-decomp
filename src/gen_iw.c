@@ -167,65 +167,6 @@ int FUN_0c08afc6(int a4)
     return 0x8E;
 }
 
-int FUN_0c089494(int a4)
-{
-    register int t0;
-    register float u0;
-
-    if ((*(int *)((a4 + 0x44))) == 0) {
-        t0 = *(int *)((a4 + 0x58));
-        *(unsigned int *)((a4 + 0x58)) = (t0 - 1);
-        if ((int)(t0 - 1) <= 0) {
-            t0 = *(int *)((a4 + 0x30));
-            *(unsigned int *)((a4 + 0x44)) = 0x1;
-            *(float *)((a4 + 0x34)) = (*(float *)(((t0 + 0x22C) + 0x0)));
-            *(float *)((a4 + 0x38)) = ((*(float *)(((*(int *)((a4 + 0x30))) + 0x34))) + 1.0f);
-            *(float *)((a4 + 0x3C)) = (*(float *)(((t0 + 0x22C) + 0x8)));
-            *(unsigned short *)(((0x4A + a4) + 0x0)) = ((*(short *)(((*(int *)((a4 + 0x30))) + 0x6E))) + 0x7FFF);
-            nlPushMatrix(0x0);
-            FUN_0c0dcca0((a4 + 0x34));
-            nlRotateAY((*(short *)((a4 + 0x4A))));
-            u0 = *(float *)((a4 + 0x40));
-            nlScale(u0, u0, u0);
-            FUN_0c0de000((*(float *)((a4 + 0x40))));
-            FUN_0c0c465c((*(int *)((a4 + 0x50))));
-            nlPopMatrix(0x1);
-            t0 = *(int *)((a4 + 0x54));
-            *(unsigned int *)((a4 + 0x54)) = (t0 + 0x1);
-            if ((int)(t0 + 0x1) > (int)0x2) {
-                *(unsigned int *)((a4 + 0x50)) = ((*(int *)((a4 + 0x50))) + 0x1);
-                t0 = *(int *)((a4 + 0x5C));
-                *(unsigned int *)((a4 + 0x5C)) = (t0 - 1);
-                if ((int)(t0 - 1) < 0) {
-                    return FUN_0c0e19f2();
-                }
-                return 0x5C;
-            }
-            return 0x54;
-        }
-        return 0x58;
-    }
-    nlPushMatrix(0x0);
-    FUN_0c0dcca0((a4 + 0x34));
-    nlRotateAY((*(short *)((a4 + 0x4A))));
-    u0 = *(float *)((a4 + 0x40));
-    nlScale(u0, u0, u0);
-    FUN_0c0de000((*(float *)((a4 + 0x40))));
-    FUN_0c0c465c((*(int *)((a4 + 0x50))));
-    nlPopMatrix(0x1);
-    t0 = *(int *)((a4 + 0x54));
-    *(unsigned int *)((a4 + 0x54)) = (t0 + 0x1);
-    if ((int)(t0 + 0x1) > (int)0x2) {
-        *(unsigned int *)((a4 + 0x50)) = ((*(int *)((a4 + 0x50))) + 0x1);
-        t0 = *(int *)((a4 + 0x5C));
-        *(unsigned int *)((a4 + 0x5C)) = (t0 - 1);
-        if ((int)(t0 - 1) < 0) {
-            return FUN_0c0e19f2();
-        }
-        return 0x5C;
-    }
-    return 0x54;
-}
 
 int FUN_0c08f440(int a4)
 {
@@ -349,3 +290,64 @@ int FUN_0c0abe80(int a4)
     }
     return 0x38;
 }
+
+int FUN_0c089494(int a4)
+{
+    register int t0;
+    register float u0;
+
+    if ((*(int *)((a4 + 0x44))) == 0) {
+        t0 = *(int *)((a4 + 0x58));
+        *(unsigned int *)((a4 + 0x58)) = (t0 - 1);
+        if ((int)(t0 - 1) <= 0) {
+            t0 = *(int *)((a4 + 0x30));
+            *(unsigned int *)((a4 + 0x44)) = 0x1;
+            *(float *)((a4 + 0x34)) = (*(float *)(((t0 + 0x22C) + 0x0)));
+            *(float *)((a4 + 0x38)) = ((*(float *)(((*(int *)((a4 + 0x30))) + 0x34))) + 1.0f);
+            *(float *)((a4 + 0x3C)) = (*(float *)(((t0 + 0x22C) + 0x8)));
+            *(unsigned short *)(((0x4A + a4) + 0x0)) = ((*(short *)(((*(int *)((a4 + 0x30))) + 0x6E))) + 0x7FFF);
+            nlPushMatrix(0x0);
+            FUN_0c0dcca0((a4 + 0x34));
+            nlRotateAY((*(short *)((a4 + 0x4A))));
+            u0 = *(float *)((a4 + 0x40));
+            nlScale(u0, u0, u0);
+            FUN_0c0de000((*(float *)((a4 + 0x40))));
+            FUN_0c0c465c((*(int *)((a4 + 0x50))));
+            nlPopMatrix(0x1);
+            t0 = *(int *)((a4 + 0x54));
+            *(unsigned int *)((a4 + 0x54)) = (t0 + 0x1);
+            if ((int)(t0 + 0x1) > (int)0x2) {
+                *(unsigned int *)((a4 + 0x50)) = ((*(int *)((a4 + 0x50))) + 0x1);
+                t0 = *(int *)((a4 + 0x5C));
+                *(unsigned int *)((a4 + 0x5C)) = (t0 - 1);
+                if ((int)(t0 - 1) < 0) {
+                    return FUN_0c0e19f2();
+                }
+                return 0x5C;
+            }
+            return 0x54;
+        }
+        return 0x58;
+    }
+    nlPushMatrix(0x0);
+    FUN_0c0dcca0((a4 + 0x34));
+    nlRotateAY((*(short *)((a4 + 0x4A))));
+    u0 = *(float *)((a4 + 0x40));
+    nlScale(u0, u0, u0);
+    FUN_0c0de000((*(float *)((a4 + 0x40))));
+    FUN_0c0c465c((*(int *)((a4 + 0x50))));
+    nlPopMatrix(0x1);
+    t0 = *(int *)((a4 + 0x54));
+    *(unsigned int *)((a4 + 0x54)) = (t0 + 0x1);
+    if ((int)(t0 + 0x1) > (int)0x2) {
+        *(unsigned int *)((a4 + 0x50)) = ((*(int *)((a4 + 0x50))) + 0x1);
+        t0 = *(int *)((a4 + 0x5C));
+        *(unsigned int *)((a4 + 0x5C)) = (t0 - 1);
+        if ((int)(t0 - 1) < 0) {
+            return FUN_0c0e19f2();
+        }
+        return 0x5C;
+    }
+    return 0x54;
+}
+

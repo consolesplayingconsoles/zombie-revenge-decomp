@@ -1,0 +1,98 @@
+/* Straight-line functions with calls and guards (batch gen_sg): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0e2b0e(int a4);
+
+int FUN_0c0e2b0e(int a4)
+{
+    int stk[3];
+
+    register int R0;
+    register int R2;
+    register int R3;
+    register int R9;
+    register int R12;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    v0_0 = a4;
+    *(unsigned int *)0xC94C7F0 = ((*(int *)0xC94C7F0) + (*(int *)(((v0_0 - 12) + 0x0))));
+    v0_6 = (int)(*(int *)((((v0_0 - 12) - 4) + 0x0))) < 0;
+    v0_5 = ((v0_0 - 12) - 4);
+    v0_4 = ((((v0_0 - 12) - 0xC52315C) >> 1) >> 1);
+    v0_7 = (0xC94C7EC);
+    v0_2 = (((v0_0 - 12) + 0x8));
+    v0_3 = (((v0_0 - 12) + 0x4));
+    v0_0 = ((v0_0 - 12));
+    v0_1 = (0xC52315C);
+    v0_5 = v0_5;
+    v0_4 = v0_4;
+    if (v0_6) goto L_C0E2B76;
+    if (((int)(*(int *)((v0_0 + ((*(int *)((v0_0 + 0x0))) << 2)))) < 0)) goto L_C0E2B76;
+    *(unsigned int *)((v0_7 + 0x0)) = ((*(int *)((v0_7 + 0x0))) + 0x1);
+    v0_5 = *(int *)((v0_0 + 0x0));
+    *(unsigned int *)((v0_0 + 0x0)) = (-v0_5);
+    *(unsigned int *)((v0_0 + (((-(-v0_5)) - 1) << 2))) = (-v0_5);
+    *(unsigned int *)((v0_3 + 0x0)) = (*(int *)(((v0_1 + 0x4) + 0x0)));
+    *(unsigned int *)((v0_2 + 0x0)) = 0x0;
+    *(unsigned int *)((v0_1 + (((*(int *)(((v0_1 + 0x4) + 0x0))) + 0x2) << 2))) = v0_4;
+    *(unsigned int *)(((v0_1 + 0x4) + 0x0)) = v0_4;
+    L_C0E2CAC:;
+    *(unsigned int *)((v0_1 + (((*(int *)(((v0_0 + 0x4) + 0x0))) + 0x2) << 2))) = (*(int *)(((v0_0 + 0x8) + 0x0)));
+    *(unsigned int *)((v0_1 + (((*(int *)(((v0_0 + 0x8) + 0x0))) + 0x1) << 2))) = (*(int *)(((v0_0 + 0x4) + 0x0)));
+    *(unsigned int *)(((v0_0 + 0x4) + 0x0)) = 0x0;
+    *(unsigned int *)(((v0_0 + 0x8) + 0x0)) = (*(int *)(((v0_1 + 0x8) + 0x0)));
+    v0_2 = *(int *)(((v0_1 + 0x8) + 0x0));
+    *(unsigned int *)((v0_1 + ((v0_2 + 0x1) << 2))) = (((v0_0 - v0_1) >> 1) >> 1);
+    *(unsigned int *)(((v0_1 + 0x8) + 0x0)) = (((v0_0 - v0_1) >> 1) >> 1);
+    return ((v0_2 + 0x1) << 2);
+    L_C0E2B76:;
+    if (((int)(*(int *)((v0_5 + 0x0))) >= 0)) goto L_C0E2C38;
+    if (!(((int)(*(int *)((v0_0 + ((*(int *)((v0_0 + 0x0))) << 2)))) < 0))) goto L_C0E2C8A;
+    *(unsigned int *)((v0_7 + 0x0)) = ((*(int *)((v0_7 + 0x0))) - 1);
+    v0_2 = *(int *)((v0_0 + 0x0));
+    *(unsigned int *)(((int)stk + 8)) = (((v0_2 << 2) + v0_0) + 0x4);
+    v0_3 = *(int *)(((((v0_2 << 2) + v0_0) + 0x4) + 0x0));
+    *(unsigned int *)(((int)stk + 4)) = (((v0_2 << 2) + v0_0) + 0x8);
+    *(unsigned int *)((v0_1 + ((v0_3 + 0x2) << 2))) = (*(int *)(((((v0_2 << 2) + v0_0) + 0x8) + 0x0)));
+    *(unsigned int *)((v0_1 + (((*(int *)(((*(int *)(((int)stk + 4))) + 0x0))) + 0x1) << 2))) = (*(int *)(((*(int *)(((int)stk + 8))) + 0x0)));
+    v0_2 = *(int *)((v0_5 + 0x0));
+    v0_3 = *(int *)((v0_0 + 0x0));
+    v0_4 = *(int *)((v0_0 + (v0_3 << 2)));
+    v0_5 = *(int *)((((v0_2 << 2) + v0_0) + 0x0));
+    *(unsigned int *)((((v0_2 << 2) + v0_0) + 0x0)) = (v0_5 + (v0_4 - v0_3));
+    *(unsigned int *)((((v0_2 << 2) + v0_0) + (((-(v0_5 + (v0_4 - v0_3))) - 1) << 2))) = (v0_5 + (v0_4 - v0_3));
+    v0_0 = (((v0_2 << 2) + v0_0));
+    goto L_C0E2CAC;
+    L_C0E2C8A:;
+    if (((int)(*(int *)((v0_5 + 0x0))) >= 0)) goto L_C0E2CAC;
+    v0_2 = *(int *)((v0_5 + 0x0));
+    v0_3 = *(int *)((v0_0 + 0x0));
+    v0_4 = *(int *)((((v0_2 << 2) + v0_0) + 0x0));
+    *(unsigned int *)((((v0_2 << 2) + v0_0) + 0x0)) = (v0_4 - v0_3);
+    *(unsigned int *)((((v0_2 << 2) + v0_0) + (((-(v0_4 - v0_3)) - 1) << 2))) = (v0_4 - v0_3);
+    v0_0 = (((v0_2 << 2) + v0_0));
+    goto L_C0E2CAC;
+    L_C0E2C38:;
+    if (((int)(*(int *)((v0_0 + ((*(int *)((v0_0 + 0x0))) << 2)))) >= 0)) goto L_C0E2C8A;
+    v0_5 = *(int *)((v0_0 + 0x0));
+    *(unsigned int *)(((int)stk + 4)) = v0_5;
+    v0_6 = *(int *)(((int)stk + 4));
+    v0_7 = *(int *)((((v0_5 << 2) + v0_0) + 0x0));
+    *(unsigned int *)((v0_0 + 0x0)) = (v0_7 - v0_6);
+    *(unsigned int *)(((int)stk + 4)) = (v0_7 - v0_6);
+    *(unsigned int *)((v0_0 + (((-(v0_7 - v0_6)) - 1) << 2))) = (*(int *)(((int)stk + 4)));
+    *(unsigned int *)(((int)stk + 4)) = (((v0_5 << 2) + v0_0) + 0x4);
+    *(unsigned int *)((v0_1 + (((*(int *)(((((v0_5 << 2) + v0_0) + 0x4) + 0x0))) + 0x2) << 2))) = v0_4;
+    *(unsigned int *)(((int)stk + 8)) = (((v0_5 << 2) + v0_0) + 0x8);
+    *(unsigned int *)((v0_1 + (((*(int *)(((((v0_5 << 2) + v0_0) + 0x8) + 0x0))) + 0x1) << 2))) = v0_4;
+    *(unsigned int *)((v0_3 + 0x0)) = (*(int *)(((*(int *)(((int)stk + 4))) + 0x0)));
+    *(unsigned int *)((v0_2 + 0x0)) = (*(int *)(((*(int *)(((int)stk + 8))) + 0x0)));
+    goto L_C0E2CAC;
+}

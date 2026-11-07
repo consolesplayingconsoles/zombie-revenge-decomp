@@ -1,74 +1,105 @@
 /* Straight-line functions with calls and guards (batch gen_ba): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-float FUN_0c01f172(int);
-int FUN_0c055874(void);
-int FUN_0c0e19aa(int, int, int);
-int FUN_0c0e19d0(int);
-int _quick_odd_mvn(int);
-int FUN_0c0556ce(int a4, int a5, int a6);
+int FUN_0c0685a4(int, int, int, int);
+int FUN_0c08b2d0(int, int);
+int FUN_0c0c465c(int);
+int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0db470(int, int);
+int FUN_0c0dc5a0(void);
+int FUN_0c0dcca0(int);
+int FUN_0c0e5dc0(void);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAZ(int);
+int FUN_0c06c01c(int a4, int a5, int a6, int a7);
 
-int FUN_0c0556ce(int a4, int a5, int a6)
+int FUN_0c06c01c(int a4, int a5, int a6, int a7)
 {
-    int t57;
-    int t1;
-    int t46;
-    int t2;
-    int t6;
-    int t13;
-    int t0;
+    int stk[10];
+    register int t8;
+    register int t23;
+    register int t18;
+    register int t20;
+    register int t48;
+    register int t60;
+    register int t69;
+    register int t63;
+    register int t53;
+    register int t28;
 
-    t57 = 0xFFFFFFFF;
-    if (((int)a4 < (int)0x16) && (t0 = *(int *)0xC247994, (int)t0 < (int)0xC)) {
-        t1 = FUN_0c055874();
-        t46 = 0xFFFFFFFF;
-        if (t1 != 0) {
-        } else {
-            t2 = 0xFFFFFFFF;
-            for (;;) {
-                t2 = (t2 + 0x1);
-                if ((*(int *)((((t2 << 2) + 0xC247604) + 0x0))) == 0) {
-                    break;
+    FUN_0c0685a4(a4, a5, a6, a7);
+    nlPushMatrix(0x0);
+    FUN_0c0dcca0((a4 + 0x30));
+    nlRotateAZ((*(short *)((a4 + 0x64))));
+    FUN_0c0c465c((*(int *)((a4 + 0x78))));
+    nlPopMatrix(0x1);
+    t8 = *(int *)((a4 + 0x80));
+    if (t8 != 0) {
+        if (t8 != 1) {
+            if (t8 != 2) {
+                if (t8 == 3) {
+                    *(unsigned short *)((a4 + 0x64)) = ((*(short *)((a4 + 0x64))) + (*(int *)(((0x98 + a4) + 0x0))));
+                    *(unsigned int *)((a4 + 0x98)) = ((*(int *)((a4 + 0x98))) - 4);
+                    t23 = 0x64;
+                    if ((int)(*(short *)((a4 + 0x64))) < (int)0xFFFFE93F) {
+                        FUN_0c0cc3f8(0x628A9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+                        *(unsigned short *)((a4 + 0x64)) = 0xFFFFE93F;
+                        *(volatile int *)((a4 + 0x98));
+                        *(unsigned int *)(((0x98 + a4) + 0x0)) = (-(FUN_0c0e5dc0()));
+                        t18 = *(int *)((a4 + 0xA0));
+                        *(unsigned int *)((a4 + 0xA0)) = (t18 + 0x1);
+                        t20 = 0xA0;
+                        if ((int)(t18 + 0x1) >= (int)0x3) {
+                            *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+                            t20 = 0x80;
+                        }
+                        t23 = t20;
+                    }
+                    t28 = t23;
+                } else {
+                    *(unsigned short *)((a4 + 0x64)) = 0xFFFFE93F;
+                    t28 = 0x64;
                 }
-            }
-            t6 = FUN_0c0e19aa((*(int *)(((a4 << 2) + 0xC1FF74C))), 0x288, (*(int *)0xC23ECF0));
-            FUN_0c0e19d0(t6);
-            *(unsigned int *)0xC247994 = ((*(int *)0xC247994) + 0x1);
-            *(unsigned int *)(((0xC247604 + (t2 << 2)) + 0x0)) = a5;
-            *(unsigned int *)(((0xC247634 + (t2 << 2)) + 0x0)) = a4;
-            *(unsigned int *)((((t2 << 2) + 0xC2475D4) + 0x0)) = t6;
-            *(unsigned int *)((t6 + 0xBC)) = t2;
-            *(unsigned int *)((t6 + 0xC8)) = 0x40000;
-            *(unsigned int *)((t6 + 0x220)) = a4;
-            *(unsigned int *)(((0x240 + t6) + 0x0)) = (unsigned short)(*(short *)(((a4 << 1) + 0xC1FE8AA)));
-            *(unsigned int *)(((0x244 + t6) + 0x0)) = (unsigned short)(*(short *)(((a4 << 1) + 0xC1FE8E4)));
-            *(float *)(((0x258 + t6) + 0x0)) = (*(float *)(((a4 << 2) + 0xC1FF5B4)));
-            *(unsigned int *)(((0x22C + t6) + 0x0)) = (*(int *)(((a4 << 2) + 0xC1FE9CC)));
-            *(unsigned int *)((t6 + 0x224)) = 0x63;
-            t13 = 0x0;
-            if (((((int)a4 >= 0) ? (0x1 << (a4 & 31)) : ((-(int)a4 & 31) ? ((int)0x1 >> (-(int)a4 & 31)) : ((int)0x1 >> 31))) & 0xFC77800) != 0) {
-                t13 = 0x1;
-            }
-            *(unsigned int *)((t6 + 0x228)) = t13;
-            if ((*(short *)(((*(int *)0xC23ECFC) + 0x0))) == 3) {
-                *(unsigned int *)((t6 + 0x230)) = 0x1;
-            }
-            *(unsigned int *)((t6 + 0x234)) = (*(int *)0xC23ED50);
-            if (((*(int *)0xC23A1A8) & 0x100) == 0) {
-                *(unsigned int *)(((0x21C + t6) + 0x0)) = (*(int *)(((a4 << 2) + 0xC1FF60C)));
+                t53 = t28;
             } else {
-                *(unsigned int *)((t6 + 0x21C)) = (*(int *)((((a4 << 2) << 2) + 0xC20C0B8)));
+                *(unsigned short *)((a4 + 0x64)) = ((*(short *)((a4 + 0x64))) + (*(int *)(((0x98 + a4) + 0x0))));
+                *(unsigned int *)((a4 + 0x98)) = ((*(int *)((a4 + 0x98))) - 4);
+                t48 = 0x64;
+                if ((int)(*(short *)((a4 + 0x64))) < (int)0xFFFFE93F) {
+                    FUN_0c0cc3f8(0xF2BA9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+                    FUN_0c0dc5a0();
+                    *(float *)(((int)stk + 4)) = 50.0f;
+                    *(float *)(((int)stk + 8)) = 0.0f;
+                    *(float *)(((int)stk + 12)) = 0.0f;
+                    FUN_0c0dcca0((a4 + 0x30));
+                    nlRotateAZ((*(short *)((a4 + 0x64))));
+                    FUN_0c0db470(((int)stk + 4), (((int)stk + 4) + 0xC));
+                    FUN_0c08b2d0((((int)stk + 4) + 0xC), 0x4000);
+                    nlPopMatrix(0x1);
+                    *(unsigned short *)((a4 + 0x64)) = 0xFFFFE93F;
+                    *(volatile int *)((a4 + 0x98));
+                    *(unsigned int *)(((0x98 + a4) + 0x0)) = (-(FUN_0c0e5dc0()));
+                    *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+                    *(unsigned int *)((a4 + 0xA0)) = 0x0;
+                    t48 = 0xA0;
+                }
+                t53 = t48;
             }
-            if (a6 != 0) {
-                _quick_odd_mvn(0x1);
+            t63 = t53;
+        } else {
+            t60 = t8;
+            if (((*(int *)0xC23ED88) & 0x200) != 0) {
+                *(unsigned int *)((a4 + 0x98)) = 0x0;
+                *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+                t60 = 0x80;
             }
-            if (a5 != 11) {
-            } else {
-                *(float *)((t6 + 0x34)) = ((FUN_0c01f172(t6)) + (*(float *)0xC0558EC));
-            }
-            t46 = t2;
+            t63 = t60;
         }
-        t57 = t46;
+        t69 = t63;
+    } else {
+        *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+        t69 = 0x80;
     }
-    return t57;
+    return t69;
 }

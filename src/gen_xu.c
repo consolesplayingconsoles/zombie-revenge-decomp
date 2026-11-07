@@ -1,0 +1,90 @@
+/* Straight-line functions with calls and guards (batch gen_xu): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0db0a0(int, int);
+int nlPrintf(int, ...);
+int FUN_0c0c1248(int a4, int a5);
+
+int FUN_0c0c1248(int a4, int a5)
+{
+    int stk[10];
+
+    register int R0;
+    register int R1;
+    int R9;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    v0_5 = a4;
+    v0_0 = a5;
+    *(unsigned int *)(((int)stk + 12)) = v0_0;
+    v0_2 = v0_5 == 0;
+    v0_1 = (v0_5);
+    v0_0 = ((((*(int *)0xC52315C) << 2) + 0xC52315C));
+    v0_5 = (0xC52315C);
+    if (v0_2) goto L_C0C1272;
+    R0 = ((FUN_0c0db0a0(0x17, 0xA)));
+    L_C0C1272:;
+    *(unsigned int *)(((int)stk + 16)) = 0xC2622C4;
+    *(unsigned int *)(((int)stk + 20)) = 0xC2622C8;
+    *(unsigned int *)(((int)stk + 36)) = 0xC2622CC;
+    *(unsigned int *)(((int)stk + 32)) = 0xC2622D0;
+    *(unsigned int *)(((int)stk + 28)) = 0xC2622D4;
+    *(unsigned int *)(((int)stk + 24)) = 0xC2622D8;
+    v0_2 = (0x512EFFFF);
+    v0_3 = (0xC0DB0E0);
+    v0_5 = (0xC2622D8);
+    v0_3 = (0xC2622C0);
+    R9 = (0xBFFFFFFF);
+    L_C0C130C:;
+    if (((unsigned int)v0_0 < (unsigned int)(*(int *)0xC20B184))) goto L_C0C12A0;
+    if ((v0_1 == 0)) goto L_C0C1320;
+    *(int *)((int)stk + 8) = 0xC1E3A88;
+    R0 = ((nlPrintf(0xC1E3A88)));
+    L_C0C1320:;
+    return R0;
+    L_C0C12A0:;
+    v0_5 = *(int *)((v0_0 + 0x0));
+    v0_4 = (v0_5);
+    if (((int)v0_5 >= 0)) goto L_C0C12B8;
+    v0_4 = ((-v0_4));
+    if ((v0_1 == 0)) goto L_C0C12C6;
+    v0_5 = v0_4;
+    *(int *)((int)stk + 8) = v0_5;
+    *(int *)((int)stk + 4) = 0xC1E3A90;
+    R0 = ((nlPrintf(0xC1E3A90, v0_5)));
+    L_C0C12C6:;
+    v0_5 = ((((v0_4 - 1) << 2) + v0_0));
+    if (((((*(int *)(((((v0_4 - 1) << 2) + v0_0) + 0x0))) ^ (*(int *)((v0_0 + 0x0)))) & R9) == 0)) goto L_C0C1308;
+    *(unsigned int *)((v0_3 + 0x0)) = v0_2;
+    *(unsigned int *)(((*(int *)(((int)stk + 16))) + 0x0)) = v0_0;
+    *(unsigned int *)(((*(int *)(((int)stk + 20))) + 0x0)) = (*(int *)(((int)stk + 12)));
+    *(unsigned int *)(((*(int *)(((int)stk + 36))) + 0x0)) = v0_4;
+    *(unsigned int *)(((*(int *)(((int)stk + 32))) + 0x0)) = (*(int *)((v0_0 + 0x0)));
+    *(unsigned int *)(((*(int *)(((int)stk + 28))) + 0x0)) = (*(int *)((v0_5 + 0x0)));
+    v0_1 = ((*(int *)(((int)stk + 24))));
+    if (((int)(*(int *)((v0_0 + 0x0))) <= 0)) goto L_C0C1300;
+    v0_0 = (0x4D);
+    L_C0C1302:;
+    *(unsigned int *)((v0_1 + 0x0)) = v0_0;
+    L_C0C1304:;
+    goto L_C0C1304;
+    L_C0C1300:;
+    v0_0 = (0x46);
+    goto L_C0C1302;
+    L_C0C1308:;
+    v0_0 = ((v0_0 + (v0_4 << 2)));
+    v0_4 = ((v0_4 << 2));
+    goto L_C0C130C;
+    L_C0C12B8:;
+    if ((v0_1 == 0)) goto L_C0C12C6;
+    v0_5 = v0_4;
+    *(int *)((int)stk + 8) = v0_5;
+    *(int *)((int)stk + 4) = 0xC1E3A98;
+    R0 = ((nlPrintf(0xC1E3A98, v0_5)));
+    goto L_C0C12C6;
+}

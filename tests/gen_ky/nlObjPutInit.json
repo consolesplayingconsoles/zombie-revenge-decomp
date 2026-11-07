@@ -1,0 +1,70 @@
+{
+ "dev": [
+  {
+   "about": "hand 0: float at 0c20ce48 = 0",
+   "poke": {
+    "0C20CE48": "00000000"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 2: float at 0c20ce48 = -1",
+   "poke": {
+    "0C20CE48": "000080bf"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 4: float at 0c20ce48 = 100",
+   "poke": {
+    "0C20CE48": "0000c842"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 6: float at 0c20ce48 = 1e+09",
+   "poke": {
+    "0C20CE48": "286b6e4e"
+   },
+   "calls": [],
+   "steps": 2000000
+  }
+ ],
+ "holdout": [
+  {
+   "about": "hand 1: float at 0c20ce48 = 1",
+   "poke": {
+    "0C20CE48": "0000803f"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 3: float at 0c20ce48 = 2.5",
+   "poke": {
+    "0C20CE48": "00002040"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 5: float at 0c20ce48 = 0.1",
+   "poke": {
+    "0C20CE48": "cdcccc3d"
+   },
+   "calls": [],
+   "steps": 2000000
+  },
+  {
+   "about": "hand 7: float at 0c20ce48 = -3",
+   "poke": {
+    "0C20CE48": "000040c0"
+   },
+   "calls": [],
+   "steps": 2000000
+  }
+ ]
+}

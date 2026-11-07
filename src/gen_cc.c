@@ -33,81 +33,135 @@ int FUN_0c077da4(int a4);
 int FUN_0c03ceec(int a4);
 int FUN_0c063994(int a4, int a5);
 
-int FUN_0c03374c(int a4)
-{
-    int t0;
-    int t5;
-    int t9;
-    int t11;
-    int t32;
-    int t26;
-    int t22;
-    int t25;
-    int t44;
-    int t40;
-    int t43;
-    int t56;
-    int t14;
-    int t10;
-    int t50;
-    int t23;
-    int t41;
-    int stk[11];
 
-    t0 = *(int *)((a4 + 0x488));
-    if ((*(int *)((t0 + 0xD8))) != 0) {
-        *(unsigned int *)((a4 + 0x510)) = (*(int *)((t0 + 0x1C4)));
-        *(unsigned int *)((a4 + 0xE4)) = (*(int *)((t0 + 0x1C4)));
-        t5 = *(int *)((((*(int *)((a4 + 0x510))) << 2) + 0xC246FF0));
-        FUN_0c03442c(a4, t5, (((int)stk + 4) + 0xC), (((int)stk + 4) + 0x8));
-        if ((*(int *)((t0 + 0xD8))) != 2) {
-            FUN_0c0909fc(t0);
-            t9 = FUN_0c034b1c(a4, t5);
-            t11 = 0x1;
-            if ((t9 == 0) && (t10 = *(int *)(((int)stk + 12)), t10 == 0)) {
-                t11 = 0x2;
-            }
-            t14 = t11;
-        } else {
-            FUN_0c090f70(t0);
-            t14 = 0x1;
-        }
-        t56 = t14;
-    } else {
-        if (!((*(float *)((a4 + 0x34))) > ((*(float *)((a4 + 0x390))) + 12.0f))) {
-            t32 = 0x1;
-            if (!(-0.0272199996f > (*(float *)((a4 + 0x64))))) {
-                t26 = 0x1;
-                if ((*(float *)((a4 + 0x34))) > (*(float *)((a4 + 0x390)))) {
-                    t22 = FUN_0c02a416(a4);
-                    t25 = 0x1;
-                    if ((t22 == 0) && (t23 = *(int *)((a4 + 0x49C)), t23 != 3)) {
-                        FUN_0c01cdc2(t0);
-                        t25 = 0x0;
-                    }
-                    t26 = t25;
-                }
-                t32 = t26;
-            }
-            t50 = t32;
-        } else {
-            t44 = 0x1;
-            if ((*(float *)((a4 + 0x34))) > (*(float *)((a4 + 0x390)))) {
-                t40 = FUN_0c02a416(a4);
-                t43 = 0x1;
-                if ((t40 == 0) && (t41 = *(int *)((a4 + 0x49C)), t41 != 3)) {
-                    FUN_0c01cdc2(t0);
-                    t43 = 0x0;
-                }
-                t44 = t43;
-            }
-            t50 = t44;
-        }
-        t56 = t50;
+
+
+int FUN_0c03ce1e(int a4)
+{
+    int t7;
+    int t8;
+    int t18;
+    int t3;
+    int t4;
+    int t14;
+    int t15;
+    int t9;
+
+    if (((*(int *)((a4 + 0x20C))) & 64) != 0) {
+        *(unsigned int *)((a4 + 0x560)) = 0x0;
+        return 0x560;
     }
-    return t56;
+    FUN_0c03bd28(a4, 0x0, 0x3, 0x5, 0x0);
+    if (((int)(*(int *)((a4 + 0x304))) > 0) && ((t3 = *(int *)((a4 + 0x57C)), t3 != 4) && (t4 = *(int *)((a4 + 0x560)), t4 == 0))) {
+    } else {
+        t7 = *(int *)((a4 + 0x4F8));
+        if ((t7 == 12) || (t7 == 13)) {
+            *(unsigned int *)0xC247D04 = 0xA;
+        }
+        t8 = *(int *)((a4 + 0x4F8));
+        if (((t8 != 4) && (t8 != 5)) || (t9 = *(int *)((a4 + 0x544)), t9 != 3)) {
+        } else {
+            *(unsigned int *)0xC247D04 = 0xA;
+        }
+        t14 = 0xA;
+        t15 = t8;
+    }
+    if ((int)(*(int *)((a4 + 0x304))) > 0) {
+        t18 = *(int *)((a4 + 0x57C));
+        if ((t18 != 0) && (t18 != 1)) {
+            if ((t18 != 2) && (t18 != 3)) {
+                
+                return t18;
+            }
+            return FUN_0c0cc3f8(0xDB, t14, t15);
+        }
+        return FUN_0c0cc3f8(0xD9, t14, t15);
+    }
+    return 0x304;
 }
 
+int FUN_0c077da4(int a4)
+{
+    int t0;
+    float u23;
+    int t28;
+    float u21;
+
+    t0 = *(int *)((a4 + 0x60));
+    if (((int)t0 < (int)0x5A) && ((0x1 & t0) != 0)) {
+    } else {
+        nlPushMatrix(0x0);
+        FUN_0c0dcca0((a4 + 0x30));
+        nlRotateAY((*(short *)((a4 + 0x56))));
+        nlRotateAX((*(short *)((a4 + 0x54))));
+        nlRotateAZ((*(short *)((a4 + 0x58))));
+        FUN_0c0c475c((*(short *)((a4 + 0x5A))), (*(float *)((a4 + 0x5C))));
+        nlPopMatrix(0x1);
+    }
+    nlAddVector((a4 + 0x48), (a4 + 0x3C));
+    FUN_0c0dce80((a4 + 0x48), (a4 + 0x48), 0.979999959f);
+    nlAddVector((a4 + 0x30), (a4 + 0x48));
+    if (!((*(float *)((a4 + 0x34))) > 0.0f) && (u21 = *(float *)((a4 + 0x4C)), 0.0f > u21)) {
+        *(float *)((a4 + 0x34)) = 0.0f;
+        u23 = (*(float *)((a4 + 0x4C)));
+        u23 *= -0.979999959f;
+        *(float *)((a4 + 0x4C)) = u23;
+    }
+    t28 = *(int *)((a4 + 0x60));
+    *(unsigned int *)((a4 + 0x60)) = (t28 - 1);
+    if ((int)(t28 - 1) < (int)0x1E) {
+        *(float *)((a4 + 0x5C)) = ((*(float *)((a4 + 0x5C))) - 0.0333333313f);
+        if ((*(int *)((a4 + 0x60))) == 0) {
+            return FUN_0c0e19f2();
+        }
+        return 0x60;
+    }
+    return 0x60;
+}
+
+int FUN_0c03ceec(int a4)
+{
+    int t7;
+    int t8;
+    int t18;
+    int t3;
+    int t4;
+    int t14;
+    int t15;
+    int t9;
+
+    if (((*(int *)((a4 + 0x20C))) & 64) != 0) {
+        *(unsigned int *)((a4 + 0x560)) = 0x0;
+        return 0x560;
+    }
+    FUN_0c03bd28(a4, 0x0, 0x3, 0x5, 0x0);
+    if (((int)(*(int *)((a4 + 0x304))) > 0) && ((t3 = *(int *)((a4 + 0x57C)), t3 != 4) && (t4 = *(int *)((a4 + 0x560)), t4 == 0))) {
+    } else {
+        t7 = *(int *)((a4 + 0x4F8));
+        if ((t7 == 12) || (t7 == 13)) {
+            *(unsigned int *)0xC247D04 = 0xA;
+        }
+        t8 = *(int *)((a4 + 0x4F8));
+        if (((t8 != 4) && (t8 != 5)) || (t9 = *(int *)((a4 + 0x544)), t9 != 3)) {
+        } else {
+            *(unsigned int *)0xC247D04 = 0xA;
+        }
+        t14 = 0xA;
+        t15 = t8;
+    }
+    if ((int)(*(int *)((a4 + 0x304))) > 0) {
+        t18 = *(int *)((a4 + 0x57C));
+        if ((t18 != 0) && (t18 != 1)) {
+            if ((t18 != 2) && (t18 != 3)) {
+                
+                return t18;
+            }
+            return FUN_0c0cc3f8(0xDF, t14, t15);
+        }
+        return FUN_0c0cc3f8(0xDD, t14, t15);
+    }
+    return 0x304;
+}
 
 void FUN_0c08b580(int a4, int a5, int a6, float f4, float f5)
 {
@@ -242,130 +296,78 @@ void FUN_0c08b580(int a4, int a5, int a6, float f4, float f5)
     }
 }
 
-int FUN_0c03ce1e(int a4)
-{
-    int t7;
-    int t8;
-    int t18;
-    int t3;
-    int t4;
-    int t14;
-    int t15;
-    int t9;
-
-    if (((*(int *)((a4 + 0x20C))) & 64) != 0) {
-        *(unsigned int *)((a4 + 0x560)) = 0x0;
-        return 0x560;
-    }
-    FUN_0c03bd28(a4, 0x0, 0x3, 0x5, 0x0);
-    if (((int)(*(int *)((a4 + 0x304))) > 0) && ((t3 = *(int *)((a4 + 0x57C)), t3 != 4) && (t4 = *(int *)((a4 + 0x560)), t4 == 0))) {
-    } else {
-        t7 = *(int *)((a4 + 0x4F8));
-        if ((t7 == 12) || (t7 == 13)) {
-            *(unsigned int *)0xC247D04 = 0xA;
-        }
-        t8 = *(int *)((a4 + 0x4F8));
-        if (((t8 != 4) && (t8 != 5)) || (t9 = *(int *)((a4 + 0x544)), t9 != 3)) {
-        } else {
-            *(unsigned int *)0xC247D04 = 0xA;
-        }
-        t14 = 0xA;
-        t15 = t8;
-    }
-    if ((int)(*(int *)((a4 + 0x304))) > 0) {
-        t18 = *(int *)((a4 + 0x57C));
-        if ((t18 != 0) && (t18 != 1)) {
-            if ((t18 != 2) && (t18 != 3)) {
-                
-                return t18;
-            }
-            return FUN_0c0cc3f8(0xDB, t14, t15);
-        }
-        return FUN_0c0cc3f8(0xD9, t14, t15);
-    }
-    return 0x304;
-}
-
-int FUN_0c077da4(int a4)
+int FUN_0c03374c(int a4)
 {
     int t0;
-    float u23;
-    int t28;
-    float u21;
-
-    t0 = *(int *)((a4 + 0x60));
-    if (((int)t0 < (int)0x5A) && ((0x1 & t0) != 0)) {
-    } else {
-        nlPushMatrix(0x0);
-        FUN_0c0dcca0((a4 + 0x30));
-        nlRotateAY((*(short *)((a4 + 0x56))));
-        nlRotateAX((*(short *)((a4 + 0x54))));
-        nlRotateAZ((*(short *)((a4 + 0x58))));
-        FUN_0c0c475c((*(short *)((a4 + 0x5A))), (*(float *)((a4 + 0x5C))));
-        nlPopMatrix(0x1);
-    }
-    nlAddVector((a4 + 0x48), (a4 + 0x3C));
-    FUN_0c0dce80((a4 + 0x48), (a4 + 0x48), 0.979999959f);
-    nlAddVector((a4 + 0x30), (a4 + 0x48));
-    if (!((*(float *)((a4 + 0x34))) > 0.0f) && (u21 = *(float *)((a4 + 0x4C)), 0.0f > u21)) {
-        *(float *)((a4 + 0x34)) = 0.0f;
-        u23 = (*(float *)((a4 + 0x4C)));
-        u23 *= -0.979999959f;
-        *(float *)((a4 + 0x4C)) = u23;
-    }
-    t28 = *(int *)((a4 + 0x60));
-    *(unsigned int *)((a4 + 0x60)) = (t28 - 1);
-    if ((int)(t28 - 1) < (int)0x1E) {
-        *(float *)((a4 + 0x5C)) = ((*(float *)((a4 + 0x5C))) - 0.0333333313f);
-        if ((*(int *)((a4 + 0x60))) == 0) {
-            return FUN_0c0e19f2();
-        }
-        return 0x60;
-    }
-    return 0x60;
-}
-
-int FUN_0c03ceec(int a4)
-{
-    int t7;
-    int t8;
-    int t18;
-    int t3;
-    int t4;
-    int t14;
-    int t15;
+    int t5;
     int t9;
+    int t11;
+    int t32;
+    int t26;
+    int t22;
+    int t25;
+    int t44;
+    int t40;
+    int t43;
+    int t56;
+    int t14;
+    int t10;
+    int t50;
+    int t23;
+    int t41;
+    int stk[11];
 
-    if (((*(int *)((a4 + 0x20C))) & 64) != 0) {
-        *(unsigned int *)((a4 + 0x560)) = 0x0;
-        return 0x560;
-    }
-    FUN_0c03bd28(a4, 0x0, 0x3, 0x5, 0x0);
-    if (((int)(*(int *)((a4 + 0x304))) > 0) && ((t3 = *(int *)((a4 + 0x57C)), t3 != 4) && (t4 = *(int *)((a4 + 0x560)), t4 == 0))) {
-    } else {
-        t7 = *(int *)((a4 + 0x4F8));
-        if ((t7 == 12) || (t7 == 13)) {
-            *(unsigned int *)0xC247D04 = 0xA;
-        }
-        t8 = *(int *)((a4 + 0x4F8));
-        if (((t8 != 4) && (t8 != 5)) || (t9 = *(int *)((a4 + 0x544)), t9 != 3)) {
-        } else {
-            *(unsigned int *)0xC247D04 = 0xA;
-        }
-        t14 = 0xA;
-        t15 = t8;
-    }
-    if ((int)(*(int *)((a4 + 0x304))) > 0) {
-        t18 = *(int *)((a4 + 0x57C));
-        if ((t18 != 0) && (t18 != 1)) {
-            if ((t18 != 2) && (t18 != 3)) {
-                
-                return t18;
+    t0 = *(int *)((a4 + 0x488));
+    if ((*(int *)((t0 + 0xD8))) != 0) {
+        *(unsigned int *)((a4 + 0x510)) = (*(int *)((t0 + 0x1C4)));
+        *(unsigned int *)((a4 + 0xE4)) = (*(int *)((t0 + 0x1C4)));
+        t5 = *(int *)((((*(int *)((a4 + 0x510))) << 2) + 0xC246FF0));
+        FUN_0c03442c(a4, t5, (((int)stk + 4) + 0xC), (((int)stk + 4) + 0x8));
+        if ((*(int *)((t0 + 0xD8))) != 2) {
+            FUN_0c0909fc(t0);
+            t9 = FUN_0c034b1c(a4, t5);
+            t11 = 0x1;
+            if ((t9 == 0) && (t10 = *(int *)(((int)stk + 12)), t10 == 0)) {
+                t11 = 0x2;
             }
-            return FUN_0c0cc3f8(0xDF, t14, t15);
+            t14 = t11;
+        } else {
+            FUN_0c090f70(t0);
+            t14 = 0x1;
         }
-        return FUN_0c0cc3f8(0xDD, t14, t15);
+        t56 = t14;
+    } else {
+        if (!((*(float *)((a4 + 0x34))) > ((*(float *)((a4 + 0x390))) + 12.0f))) {
+            t32 = 0x1;
+            if (!(-0.0272199996f > (*(float *)((a4 + 0x64))))) {
+                t26 = 0x1;
+                if ((*(float *)((a4 + 0x34))) > (*(float *)((a4 + 0x390)))) {
+                    t22 = FUN_0c02a416(a4);
+                    t25 = 0x1;
+                    if ((t22 == 0) && (t23 = *(int *)((a4 + 0x49C)), t23 != 3)) {
+                        FUN_0c01cdc2(t0);
+                        t25 = 0x0;
+                    }
+                    t26 = t25;
+                }
+                t32 = t26;
+            }
+            t50 = t32;
+        } else {
+            t44 = 0x1;
+            if ((*(float *)((a4 + 0x34))) > (*(float *)((a4 + 0x390)))) {
+                t40 = FUN_0c02a416(a4);
+                t43 = 0x1;
+                if ((t40 == 0) && (t41 = *(int *)((a4 + 0x49C)), t41 != 3)) {
+                    FUN_0c01cdc2(t0);
+                    t43 = 0x0;
+                }
+                t44 = t43;
+            }
+            t50 = t44;
+        }
+        t56 = t50;
     }
-    return 0x304;
+    return t56;
 }
 

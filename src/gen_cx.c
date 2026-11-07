@@ -32,57 +32,6 @@ int FUN_0c0d6254(int a4, int a5, int a6);
 int FUN_0c084f18(int a4);
 int vmsfs_fdelete_ex(int a4, int a5, int a6);
 
-int FUN_0c01788c(int a4)
-{
-    int t11;
-    int t19;
-    int t28;
-
-    if (((*(int *)0xC23ED5C) & 6) != 0) {
-        mwPlySetLpFlg(a4);
-        FUN_0c01d9c2(a4);
-        FUN_0c0e19f2();
-    }
-    if ((*(int *)((a4 + 0x1BC))) != 0) {
-        if ((int)(*(int *)((a4 + 0x1C4))) < (int)0x2) {
-            t11 = *(int *)((a4 + 0x1C4));
-            *(unsigned int *)(((t11 << 2) + 0xC247584)) = ((*(int *)(((t11 << 2) + 0xC247584))) + 0x3E8);
-        }
-        *(unsigned int *)0xC23ED88 = ((*(int *)0xC23ED88) | 0x100);
-        *(unsigned int *)((a4 + 0x1BC)) = 0x0;
-        t19 = *(int *)((a4 + 0x1C4));
-        *(unsigned int *)((a4 + 0x1B0)) = (((int)t19 >= 0) ? (0x1 << (t19 & 31)) : ((-(int)t19 & 31) ? ((int)0x1 >> (-(int)t19 & 31)) : ((int)0x1 >> 31)));
-        *(unsigned int *)((a4 + 0x220)) = ((*(int *)((a4 + 0x220))) + 0x1);
-    }
-    if ((*(int *)((a4 + 0x220))) != 0) {
-        t28 = 0x0;
-        for (;;) {
-            FUN_0c017718(a4, t28, 0.0f);
-            FUN_0c017718(a4, t28, 12.0f);
-            t28 = (t28 + 0x1);
-            if ((unsigned int)t28 >= (unsigned int)0xA) {
-                break;
-            }
-        }
-        if ((*(int *)0xC23ED50) == 20) {
-            *(unsigned int *)(((((*(int *)((a4 + 0x22C))) << 2) << 1) + 0xC23EE14)) = 0x0;
-        }
-        mwPlySetLpFlg(a4);
-        FUN_0c01d9c2(a4);
-        FUN_0c0e19f2();
-    }
-    nlPushMatrix(0x0);
-    FUN_0c0dcc70((*(float *)((a4 + 0x30))), (*(float *)((a4 + 0x34))), (*(float *)((a4 + 0x38))));
-    nlRotateAY((*(short *)((a4 + 0x6E))));
-    FUN_0c0c465c((*(int *)((a4 + 0x21C))));
-    nlPopMatrix(0x1);
-    nlPushMatrix(0x0);
-    FUN_0c0dcc70((*(float *)((a4 + 0x30))), ((*(float *)((a4 + 0x34))) + 12.0f), (*(float *)((a4 + 0x38))));
-    nlRotateAY((*(short *)((a4 + 0x6E))));
-    FUN_0c0c465c((*(int *)((a4 + 0x21C))));
-    nlPopMatrix(0x1);
-    return FUN_0c01cdf2(a4);
-}
 
 
 int FUN_0c084f18(int a4)
@@ -260,3 +209,56 @@ int vmsfs_fdelete_ex(int a4, int a5, int a6)
     R0 = (0x0);
     goto L_C226FFE;
 }
+
+int FUN_0c01788c(int a4)
+{
+    int t11;
+    int t19;
+    int t28;
+
+    if (((*(int *)0xC23ED5C) & 6) != 0) {
+        mwPlySetLpFlg(a4);
+        FUN_0c01d9c2(a4);
+        FUN_0c0e19f2();
+    }
+    if ((*(int *)((a4 + 0x1BC))) != 0) {
+        if ((int)(*(int *)((a4 + 0x1C4))) < (int)0x2) {
+            t11 = *(int *)((a4 + 0x1C4));
+            *(unsigned int *)(((t11 << 2) + 0xC247584)) = ((*(int *)(((t11 << 2) + 0xC247584))) + 0x3E8);
+        }
+        *(unsigned int *)0xC23ED88 = ((*(int *)0xC23ED88) | 0x100);
+        *(unsigned int *)((a4 + 0x1BC)) = 0x0;
+        t19 = *(int *)((a4 + 0x1C4));
+        *(unsigned int *)((a4 + 0x1B0)) = (((int)t19 >= 0) ? (0x1 << (t19 & 31)) : ((-(int)t19 & 31) ? ((int)0x1 >> (-(int)t19 & 31)) : ((int)0x1 >> 31)));
+        *(unsigned int *)((a4 + 0x220)) = ((*(int *)((a4 + 0x220))) + 0x1);
+    }
+    if ((*(int *)((a4 + 0x220))) != 0) {
+        t28 = 0x0;
+        for (;;) {
+            FUN_0c017718(a4, t28, 0.0f);
+            FUN_0c017718(a4, t28, 12.0f);
+            t28 = (t28 + 0x1);
+            if ((unsigned int)t28 >= (unsigned int)0xA) {
+                break;
+            }
+        }
+        if ((*(int *)0xC23ED50) == 20) {
+            *(unsigned int *)(((((*(int *)((a4 + 0x22C))) << 2) << 1) + 0xC23EE14)) = 0x0;
+        }
+        mwPlySetLpFlg(a4);
+        FUN_0c01d9c2(a4);
+        FUN_0c0e19f2();
+    }
+    nlPushMatrix(0x0);
+    FUN_0c0dcc70((*(float *)((a4 + 0x30))), (*(float *)((a4 + 0x34))), (*(float *)((a4 + 0x38))));
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    FUN_0c0c465c((*(int *)((a4 + 0x21C))));
+    nlPopMatrix(0x1);
+    nlPushMatrix(0x0);
+    FUN_0c0dcc70((*(float *)((a4 + 0x30))), ((*(float *)((a4 + 0x34))) + 12.0f), (*(float *)((a4 + 0x38))));
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    FUN_0c0c465c((*(int *)((a4 + 0x21C))));
+    nlPopMatrix(0x1);
+    return FUN_0c01cdf2(a4);
+}
+

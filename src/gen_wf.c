@@ -1,0 +1,91 @@
+/* Straight-line functions with calls and guards (batch gen_wf): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c220e10(int);
+int bcdtime2fad(int);
+int crcchk(int, int, int, int);
+int gdDecSubcode(int a4, int a5);
+
+int gdDecSubcode(int a4, int a5)
+{
+    int stk[9];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    int R6;
+    int R9;
+    register float F0;
+    register float F15;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    register int v0_8;
+    v0_2 = a4;
+    v0_3 = a5;
+    v0_0 = (v0_3);
+    if (((*(signed char *)((v0_2 + 0x0))) == 0)) goto L_C220E7E;
+    v0_0 = (0xFFFFFFFF);
+    L_C220F6A:;
+    return v0_0;
+    L_C220E7E:;
+    if ((((*(signed char *)((v0_2 + 0x3))) + ((*(signed char *)((v0_2 + 0x2))) << 8)) == 100)) goto L_C220E90;
+    v0_0 = (0xFFFFFFFE);
+    goto L_C220F6A;
+    L_C220E90:;
+    v0_4 = (0x6);
+    v0_5 = ((v0_2 + 0x4));
+    v0_1 = ((((int)stk + 8) + 0x4));
+    v0_3 = (0x0);
+    R6 = (0x40);
+    v0_6 = (0x0);
+    v0_7 = (0x7);
+    R9 = (0xF);
+    L_C220F02:;
+    if (((int)v0_3 < (int)0xC)) goto L_C220EA6;
+    v0_2 = (crcchk((v0_1 + 0xC), (((unsigned char)(*(signed char *)(((v0_1 + 0xC) + 0xA))) << 8) | (unsigned char)(*(signed char *)(((v0_1 + 0xC) + 0xB)))), R6, v0_6)) == 0;
+    if (v0_2) goto L_C220F26;
+    v0_0 = (0xFFFFFFFD);
+    goto L_C220F6A;
+    L_C220F26:;
+    *(unsigned int *)((v0_0 + 0x0)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0xD)))));
+    *(unsigned int *)((v0_0 + 0x4)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0xF)))));
+    *(unsigned int *)((v0_0 + 0x8)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0x10)))));
+    *(unsigned int *)((v0_0 + 0xC)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0x11)))));
+    *(unsigned int *)(((int)stk + 8)) = (v0_1 + 0xC);
+    v0_2 = *(signed char *)(((v0_1 + 0xC) + 0x0));
+    *(int *)((int)stk + 4) = ((v0_2 << 16) << 8);
+    *(unsigned int *)((v0_0 + 0x10)) = ((bcdtime2fad(((*(int *)(((int)stk + 8))) + 0x7))) | ((v0_2 << 16) << 8));
+    *(unsigned int *)((v0_0 + 0x14)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0xE)))));
+    v0_0 = (0x0);
+    goto L_C220F6A;
+    L_C220EA6:;
+    *(unsigned char *)(((v0_1 + v0_3) + 0x0)) = v0_6;
+    *(unsigned char *)((((v0_1 + 0xC) + v0_3) + 0x0)) = v0_6;
+    v0_2 = (v0_7);
+    L_C220EB6:;
+    v0_8 = (((v0_1 + 0xC) + v0_3));
+    if ((v0_2 != 7)) goto L_C220EDC;
+    *(unsigned char *)((v0_8 + 0x0)) = ((*(signed char *)((v0_8 + 0x0))) | (((*(signed char *)((v0_5 + 0x0))) & R6) << 1));
+    v0_5 = ((v0_5 + 0x1));
+    L_C220EEE:;
+    v0_8 = (int)(v0_2 - 1) >= 0;
+    v0_2 = ((v0_2 - 1));
+    if (v0_8) goto L_C220EB6;
+    if ((((*(signed char *)((v0_1 + 0xC))) & R9) == 1)) goto L_C220F00;
+    v0_0 = (0xFFFFFFFB);
+    goto L_C220F6A;
+    L_C220F00:;
+    v0_3 = ((v0_3 + 0x1));
+    goto L_C220F02;
+    L_C220EDC:;
+    *(unsigned char *)((v0_8 + 0x0)) = ((*(signed char *)((v0_8 + 0x0))) | ((int)((*(signed char *)((v0_5 + 0x0))) & R6) << (int)(-(v0_4 - v0_2))));
+    v0_5 = ((v0_5 + 0x1));
+    goto L_C220EEE;
+}

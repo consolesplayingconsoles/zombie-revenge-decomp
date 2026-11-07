@@ -75,75 +75,7 @@ int adxf_LoadData(int a4, int a5, int a6)
     return ADXF_GetNumReadSct(a4);
 }
 
-int FUN_0c055a40(int a4)
-{
-    int t0;
-    int t1;
-    int t14;
-    int t18;
-    int t21;
-    int t12;
 
-    t0 = *(int *)((a4 + 0x33C));
-    t1 = *(int *)(((0xC2475D4 + (t0 << 2)) + 0x0));
-    *(unsigned int *)((((t0 << 2) + 0xC247604) + 0x0)) = 0x1;
-    *(unsigned int *)((t1 + 0x23C)) = (*(int *)((a4 + 0xBC)));
-    if ((*(int *)((a4 + 0x210))) == 85) {
-        *(unsigned int *)((a4 + 0x348)) = (*(int *)((t1 + 0x220)));
-        *(unsigned int *)((a4 + 0x350)) = (*(int *)((a4 + 0x33C)));
-        *(unsigned int *)((a4 + 0x330)) = 0x2;
-        t12 = (*(int *)((a4 + 0x348)));
-    } else {
-        *(unsigned int *)((a4 + 0x344)) = (*(int *)((t1 + 0x220)));
-        *(unsigned int *)((a4 + 0x34C)) = (*(int *)((a4 + 0x33C)));
-        *(unsigned int *)((a4 + 0x330)) = 0x4;
-        t12 = (*(int *)((a4 + 0x344)));
-    }
-    *(unsigned int *)((a4 + 0x340)) = t12;
-    t14 = *(int *)(((0x220 + t1) + 0x0));
-    *(unsigned int *)((a4 + 0x338)) = ((*(int *)((a4 + 0x338))) | (((int)t14 >= 0) ? (0x1 << (t14 & 31)) : ((-(int)t14 & 31) ? ((int)0x1 >> (-(int)t14 & 31)) : ((int)0x1 >> 31))));
-    *(unsigned int *)((a4 + 0x33C)) = 0x0;
-    *(unsigned int *)((a4 + 0x39C)) = ((*(int *)((a4 + 0x39C))) | (*(int *)(((0x22C + t1) + 0x0))));
-    t18 = *(int *)((t1 + 0x220));
-    if ((*(int *)((0xC1FF6D8 + (t18 << 2)))) != 0) {
-        t21 = *(int *)((0xC1FF6D8 + ((*(int *)((t1 + 0x220))) << 2)));
-        return ((int (*)(int, int, int, int))(t21))(a4, ((t0 << 2) + 0xC247604), 0xC2475D4, (((int)t14 >= 0) ? (0x1 << (t14 & 31)) : ((-(int)t14 & 31) ? ((int)0x1 >> (-(int)t14 & 31)) : ((int)0x1 >> 31))));
-    }
-    return (t18 << 2);
-}
-
-int FUN_0c055f24(int a4)
-{
-    int t0;
-    int t1;
-    int t5;
-    int t17;
-    int t20;
-
-    t0 = *(int *)((a4 + 0x358));
-    t1 = *(int *)(((0xC2475D4 + (t0 << 2)) + 0x0));
-    *(unsigned int *)((((t0 << 2) + 0xC247604) + 0x0)) = 0x1;
-    *(unsigned int *)((t1 + 0x23C)) = (*(int *)((a4 + 0xBC)));
-    *(unsigned int *)((a4 + 0x34C)) = (*(int *)((t1 + 0xBC)));
-    *(unsigned int *)((a4 + 0x344)) = (*(int *)((t1 + 0x220)));
-    t5 = *(int *)(((0x220 + t1) + 0x0));
-    *(unsigned int *)((a4 + 0x338)) = ((*(int *)((a4 + 0x338))) | (((int)t5 >= 0) ? (0x1 << (t5 & 31)) : ((-(int)t5 & 31) ? ((int)0x1 >> (-(int)t5 & 31)) : ((int)0x1 >> 31))));
-    *(unsigned int *)((a4 + 0x39C)) = ((*(int *)((a4 + 0x39C))) | (*(int *)(((0x22C + t1) + 0x0))));
-    if ((*(int *)((a4 + 0x330))) == 2) {
-        *(unsigned int *)((a4 + 0x330)) = 0x3;
-    } else {
-        *(unsigned int *)((a4 + 0x330)) = 0x1;
-        *(unsigned int *)((a4 + 0x340)) = (*(int *)((a4 + 0x344)));
-    }
-    FUN_0c0bb1a8(a4, 0x0);
-    FUN_0c0519f0(a4);
-    t17 = *(int *)((a4 + 0x344));
-    if ((*(int *)((0xC1FF6D8 + (t17 << 2)))) != 0) {
-        t20 = *(int *)((0xC1FF6D8 + ((*(int *)((a4 + 0x344))) << 2)));
-        return ((int (*)(int))(t20))(a4);
-    }
-    return (t17 << 2);
-}
 
 int FUN_0c07ed4c(int a4)
 {

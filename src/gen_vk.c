@@ -1,0 +1,65 @@
+/* Straight-line functions with calls and guards (batch gen_vk): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0e5c10(void);
+
+int FUN_0c0e5c10(void)
+{
+    register int t0;
+    register int t1;
+    register int t2;
+    register int t3;
+
+    *(unsigned int *)0xC20CF88 = 0x0;
+    t0 = 0x0;
+    t1 = 0x1;
+    for (;;) {
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x14)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x0)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x18)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x4)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x1C)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x8)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x20)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0xC)));
+        *(unsigned short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0)) = (*(int *)((0xC94D578 + (t0 << 2))));
+        t3 = *(short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0));
+        t0 = (t0 + 0x1);
+        if (t3 == 1) {
+            *(unsigned int *)0xC20CF88 = ((*(int *)0xC20CF88) | t1);
+        }
+        t1 = (t1 << 1);
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x14)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x0)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x18)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x4)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x1C)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x8)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x20)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0xC)));
+        *(unsigned short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0)) = (*(int *)((0xC94D578 + (t0 << 2))));
+        t3 = *(short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0));
+        t0 = (t0 + 0x1);
+        if (t3 == 1) {
+            *(unsigned int *)0xC20CF88 = ((*(int *)0xC20CF88) | t1);
+        }
+        t1 = (t1 << 1);
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x14)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x0)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x18)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x4)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x1C)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x8)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x20)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0xC)));
+        *(unsigned short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0)) = (*(int *)((0xC94D578 + (t0 << 2))));
+        t3 = *(short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0));
+        t0 = (t0 + 0x1);
+        if (t3 == 1) {
+            *(unsigned int *)0xC20CF88 = ((*(int *)0xC20CF88) | t1);
+        }
+        t1 = (t1 << 1);
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x14)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x0)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x18)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x4)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x1C)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0x8)));
+        *(float *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x20)) = (*(float *)(((((t0 << 2) << 2) + 0xC94D5B8) + 0xC)));
+        *(unsigned short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0)) = (*(int *)((0xC94D578 + (t0 << 2))));
+        t2 = *(short *)((((short)((short)t0 * (short)0xB0) + 0xC94CA68) + 0x0));
+        t0 = (t0 + 0x1);
+        if (t2 == 1) {
+            *(unsigned int *)0xC20CF88 = ((*(int *)0xC20CF88) | t1);
+        }
+        t1 = (t1 << 1);
+        if ((int)t0 < (int)0x10) continue;
+        break;
+    }
+    return t2;
+}

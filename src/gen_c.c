@@ -97,70 +97,6 @@ int FUN_0c22bece(int a4, int a5, int a6, int a7);
 int FUN_0c046a20(int a4);
 int FUN_0c22c602(int a4, int a5, int a6, int a7);
 
-int kmGetCurrentScanline(int a4)
-{
-    int t4;
-    int t5;
-    int t1;
-    int t7;
-    int t8;
-    int t36;
-    int t38;
-    float u39;
-    int t31;
-    int t33;
-    float u34;
-    int t27;
-    float u28;
-    int t40;
-    int t46;
-    int t48;
-    int t21;
-    int t42;
-
-    t4 = a4;
-    t5 = 0x0;
-    if (((*(int *)0xC952300) & 2) != 0) {
-        t1 = kmiReadRegister(0x10C);
-        t4 = t1;
-        t5 = (0x3FF & t1);
-    }
-    t7 = *(int *)0xC952350;
-    t8 = *(int *)0xC952358;
-    t36 = 0x1E0;
-    t38 = (t8 + t7);
-    u39 = 1.0f;
-    if ((((*(int *)0xC95231C) & 0x1) != 1) || (0x1 == 0)) {
-        t31 = 0xF0;
-        t33 = (t8 + t7);
-        u34 = 1.0f;
-        if ((((*(int *)0xC95231C) & 0x1) != 1) && ((t21 = *(int *)0xC95231C, (t21 & 44) != 0) && (0x1 != 0))) {
-            t27 = 0xF0;
-            u28 = 0.5f;
-            if (((*(int *)0xC95231C) & 32) != 0) {
-                t27 = 0x1E0;
-                u28 = 1.0f;
-            }
-            t31 = t27;
-            t33 = ((t8 + t7) + (t8 + t7));
-            u34 = u28;
-        }
-        t36 = t31;
-        t38 = t33;
-        u39 = u34;
-    }
-    t40 = *(int *)0xC9525EC;
-    t46 = t5;
-    if ((((*(int *)0xC95231C) & 0x1) != 1) && ((t42 = *(int *)0xC95231C, (t42 & 44) != 0) && ((0x1 != 0) && ((t4 & 0x40000) != 0)))) {
-        t46 = (t5 + 0x1);
-    }
-    t48 = ((int)((float)(t46 - t38) * u39) - ((unsigned int)t40 >> 16));
-    if ((int)(int)((float)(t46 - t38) * u39) <= (int)t36) {
-        t48 = (int)((float)(t46 - t38) * u39);
-    }
-    *(unsigned int *)((a4 + 0x0)) = t48;
-    return 0x0;
-}
 
 int FUN_0c08bf92(int a4, int a5, int a6, int a7)
 {
@@ -411,167 +347,7 @@ int vmsfs_init(int a4, int a5, int a6)
     return 0x0;
 }
 
-int vmsfs_save_exec_file(int a4, int a5, int a6, int a7, int a8, int a9)
-{
-    int t0;
-    int t42;
-    int t36;
-    int t5;
-    int t30;
-    int t7;
-    int t8;
-    int t10;
-    int t11;
-    int t13;
-    int t31;
-    int stk[12];
 
-    *(unsigned int *)(((int)stk + 20)) = a5;
-    *(unsigned int *)(((int)stk + 16)) = a6;
-    t0 = vmsfs_diskfree(a4, 0x1);
-    t42 = t0;
-    if ((int)t0 >= 0) {
-        t36 = 0xFFFFFF04;
-        if ((unsigned int)t0 < (unsigned int)a7) {
-        } else {
-            if ((0x80000000 & a9) != 0) {
-                t31 = (vmsfs_save_exec_file_verify(a4, (*(int *)(((int)stk + 20))), (*(int *)(((int)stk + 16))), a7, a8, a9));
-            } else {
-                t5 = vmsfs_xcreate(a4, (*(int *)(((int)stk + 20))), a8, ((int)stk + 12));
-                t30 = t5;
-                if ((int)t5 >= 0) {
-                    *(unsigned char *)(((*(int *)(((int)stk + 12))) + 0x1)) = a9;
-                    t7 = *(int *)(((int)stk + 16));
-                    *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x30)) = 0x1;
-                    t8 = *(int *)((((a4 * 0x148) + 0xC956768) + 0x4));
-                    *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x34)) = ((*(int *)((((((t8 << 2) + t8) << 2) << 2) + 0xC239D40))) + a7);
-                    if ((unsigned int)0x0 < (unsigned int)a7) {
-                        t10 = 0x0;
-                        t11 = t7;
-                        for (;;) {
-                            t13 = vmsfs_xwrite1((*(int *)(((int)stk + 12))), t11);
-                            if ((int)t13 >= 0) {
-                                t10 = (t10 + 0x1);
-                                t11 = (t11 + 0x200);
-                                if ((unsigned int)t10 >= (unsigned int)a7) {
-                                    break;
-                                }
-                                continue;
-                            }
-                            vmsfs_fclose((*(int *)(((int)stk + 12))), 0x0);
-                            return t13;
-                        }
-                    }
-                    vmsfs_fclose((*(int *)(((int)stk + 12))), 0x0);
-                    t30 = 0x0;
-                }
-                t31 = t30;
-            }
-            t36 = t31;
-        }
-        t42 = t36;
-    }
-    return t42;
-}
-
-void vmsfs_fread1(int a4, int a5)
-{
-    int t2;
-    int t9;
-    int t15;
-    int t33;
-    int t35;
-    int t41;
-    int stk[6];
-
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R7;
-    int R9;
-    int R12;
-    int R13;
-    int R14;
-    float F0;
-    float F15;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    L_C226750:;
-    *(unsigned int *)(((int)stk + 4)) = R5;
-    t2 = (vmsio_isready((*(int *)((R4 + 0x28))))) != 0;
-    R14 = (R4);
-    if (t2) goto L_C226772;
-    goto L_C226768;
-    L_C226768:;
-    vmsfs_unmount((*(int *)((R14 + 0x28))));
-    goto L_C22678C;
-    L_C22678C:;
-    R0 = (0xFFFFFF01);
-    goto L_C226832;
-    L_C226832:;
-    return;
-    L_C226772:;
-    t9 = (vmsio_ismount((*(int *)((R14 + 0x28))))) == 0;
-    if (t9) goto L_C22678C;
-    goto L_C22677C;
-    L_C22677C:;
-    if (((*(signed char *)((((*(int *)((R14 + 0x28))) * 0x148) + 0xC956770))) != 0)) goto L_C2267BC;
-    goto L_C22678C;
-    L_C2267BC:;
-    t15 = (int)(buIsFormat((*(int *)((R14 + 0x28))))) >= 0;
-    if (t15) goto L_C2267CC;
-    goto L_C2267C6;
-    L_C2267C6:;
-    R0 = (0xFFFFFF03);
-    goto L_C226832;
-    L_C2267CC:;
-    R0 = (0x40);
-    R13 = ((*(int *)((R14 + 0x28))));
-    if (((*(int *)((R14 + 0x40))) != 0xFFFA)) goto L_C2267E4;
-    goto L_C2267D8;
-    L_C2267D8:;
-    if (((*(int *)((R14 + 0x34))) == 0)) goto L_C2267EA;
-    goto L_C2267DE;
-    L_C2267DE:;
-    R0 = (0xFFFF0000);
-    goto L_C226832;
-    L_C2267EA:;
-    R0 = (0x0);
-    goto L_C226832;
-    L_C2267E4:;
-    if (((*(int *)((R14 + 0x34))) != 0)) goto L_C2267EE;
-    goto L_C2267EA;
-    L_C2267EE:;
-    if (((*(int *)((R14 + R0))) == 0xFFFC)) goto L_C2267FE;
-    goto L_C2267F6;
-    L_C2267F6:;
-    if (((*(int *)((R14 + R0))) != 0xFFFF)) goto L_C226804;
-    goto L_C2267FE;
-    L_C2267FE:;
-    R0 = (0xFFFFFF41);
-    goto L_C226832;
-    L_C226804:;
-    t33 = *(int *)((R14 + R0));
-    t35 = vmsfs_read_retry(R13, t33, (*(int *)(((int)stk + 4))));
-    R12 = (t33);
-    R4 = (t35);
-    if (((int)t35 >= 0)) goto L_C22681A;
-    goto L_C226816;
-    L_C226816:;
-    R0 = (R4);
-    goto L_C226832;
-    L_C22681A:;
-    *(unsigned int *)(((0x40 + R14) + 0x0)) = (unsigned short)(get_fat(R13, R12, R6, R7));
-    t41 = *(int *)((R14 + 0x34));
-    *(unsigned int *)((R14 + 0x34)) = (t41 - 1);
-    R0 = ((t41 - 1));
-    goto L_C226832;
-}
 
 int vmsfs_fgetinfo(int a4, int a5, int a6)
 {
@@ -629,272 +405,8 @@ int vmsfs_fgetinfo(int a4, int a5, int a6)
     return t34;
 }
 
-int FUN_0c034fbc(int a4, int a5, int a6, int a7)
-{
-    int t25;
-    int t35;
-    int stk[8];
 
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R7;
-    int R8;
-    int R11;
-    int R12;
-    int R13;
-    int R14;
-    float F3;
-    float F4;
-    float F5;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    R6 = a6;
-    R7 = a7;
-    L_C034FBC:;
-    *(unsigned int *)(((int)stk + 8)) = R5;
-    *(unsigned int *)(((int)stk + 12)) = R6;
-    *(unsigned int *)(((int)stk + 16)) = R7;
-    R14 = (R4);
-    if (((*(int *)((R4 + 0x508))) != 0)) goto L_C035008;
-    goto L_C034FD4;
-    L_C034FD4:;
-    if (((*(int *)((R14 + 0x50C))) == 0)) goto L_C035016;
-    goto L_C034FDC;
-    L_C034FDC:;
-    R0 = (0x510);
-    R4 = (0xC246FF0);
-    if (((*(int *)(((((*(int *)((R14 + 0x510))) << 2) + 0xC247030) + 0x0))) != 0)) goto L_C034FF8;
-    goto L_C034FF0;
-    L_C034FF0:;
-    *(unsigned int *)((R14 + 0x50C)) = 0x0;
-    goto L_C035016;
-    L_C035016:;
-    R0 = (0x0);
-    goto L_C03509A;
-    L_C03509A:;
-    return R0;
-    L_C034FF8:;
-    R13 = (((*(int *)(((((*(int *)((R14 + R0))) << 2) + R4) + 0x0))) + 0x30));
-    goto L_C035040;
-    L_C035040:;
-    FUN_0c0a68ec(((int)stk + 4), ((*(float *)((R14 + 0x30))) - (*(float *)((R13 + 0x0)))), ((*(float *)((R14 + 0x38))) - (*(float *)((R13 + 0x8)))));
-    if (((*(int *)(((int)stk + 16))) == 0)) goto L_C03508C;
-    goto L_C03505E;
-    L_C03505E:;
-    R0 = (0x4D8);
-    R4 = (0x8000);
-    if (((int)(*(int *)((R14 + 0x4D8))) <= (int)0x8000)) goto L_C03507C;
-    goto L_C035068;
-    L_C035068:;
-    t25 = *(int *)((R14 + R0));
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + ((((int)((unsigned int)((int)((unsigned int)t25 + (unsigned int)0x0)) + ((((int)0x0 > (int)t25)) ? 1u : 0u))) >> 1) + R4));
-    goto L_C03508C;
-    L_C03508C:;
-    FUN_0c0546fe(R14, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8))), (*(int *)(((int)stk + 12))));
-    R0 = (0x1);
-    goto L_C03509A;
-    L_C03507C:;
-    t35 = *(int *)((R14 + R0));
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + (((int)((unsigned int)((int)((unsigned int)t35 + (unsigned int)0x0)) + ((((int)0x0 > (int)t35)) ? 1u : 0u))) >> 1));
-    goto L_C03508C;
-    L_C035008:;
-    if (((*(int *)((R14 + 0x514))) == 0)) goto L_C035016;
-    goto L_C035010;
-    L_C035010:;
-    R13 = ((0x518 + R14));
-    goto L_C035040;
-}
 
-int FUN_0c0df660(int a4, int a5, int a6)
-{
-    int t5;
-    int t6;
-    int t8;
-    int t9;
-    int t10;
-    int t11;
-    int t18;
-    int stk[6];
-
-    *(unsigned int *)(((int)stk + 16)) = a4;
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    *(unsigned int *)(((int)stk + 8)) = a6;
-    *(unsigned int *)0xC94C698 = 0xFFFFFFFF;
-    if ((int)(*(int *)(((int)stk + 12))) > (int)(*(int *)(((int)stk + 8)))) {
-        *(unsigned int *)0xC94C698 = 0x0;
-        for (;;) {
-        }
-    }
-    FUN_0c0dfcee(640.0f, 480.0f);
-    *(unsigned int *)0xC94C6A0 = (*(int *)(((int)stk + 12)));
-    *(unsigned int *)0xC94C69C = (*(int *)(((int)stk + 16)));
-    t5 = *(int *)(((int)stk + 8));
-    t6 = *(int *)(((int)stk + 16));
-    *(unsigned int *)(((int)stk + 16)) = ((((t5 << 1) + t6) + 0x3) & 0xFFFFFFFC);
-    *(unsigned int *)0xC94C6A4 = ((((t5 << 1) + t6) + 0x3) & 0xFFFFFFFC);
-    *(volatile int *)(((int)stk + 12));
-    t8 = FUN_0c0e5dc0();
-    t9 = *(int *)(((int)stk + 16));
-    *(unsigned int *)(((int)stk + 16)) = ((((t8 << 2) + t9) + 0x3) & 0xFFFFFFFC);
-    *(unsigned int *)0xC94C6A8 = ((((t8 << 2) + t9) + 0x3) & 0xFFFFFFFC);
-    *(unsigned int *)(((int)stk + 4)) = 0x0;
-    t10 = ((((t8 << 2) + t9) + 0x3) & 0xFFFFFFFC);
-    t11 = 0xFFFFFFFC;
-    for (;;) {
-        if ((int)(*(int *)(((int)stk + 4))) >= (int)(*(int *)(((int)stk + 8)))) {
-            break;
-        }
-        t11 = (*(int *)(((int)stk + 4)));
-        t11 = (t11 << 1);
-        t10 = (*(int *)0xC94C69C);
-        *(unsigned short *)((t11 + t10)) = 0xFFFFFFFF;
-        t11 = (*(int *)(((int)stk + 4)));
-        t11 = (t11 + 0x1);
-        *(unsigned int *)(((int)stk + 4)) = t11;
-    }
-    *(unsigned int *)(((int)stk + 4)) = 0x0;
-    for (;;) {
-        *(volatile int *)0xC94C6A0;
-        t18 = FUN_0c0e5dc0();
-        if ((int)(*(int *)(((int)stk + 4))) >= (int)t18) {
-            break;
-        }
-        *(unsigned int *)((((*(int *)(((int)stk + 4))) << 2) + (*(int *)0xC94C6A4))) = 0x0;
-        *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + 0x1);
-    }
-    return t18;
-}
-
-int FUN_0c034c26(int a4)
-{
-    int t0;
-    int t7;
-    float u8;
-    float u9;
-    float u10;
-    float u11;
-    int t12;
-    float u13;
-    float u14;
-    float u15;
-    float u16;
-    float u17;
-    float u18;
-    int t29;
-    float u30;
-    float u31;
-    float u32;
-    float u33;
-    int t34;
-    float u35;
-    float u36;
-    float u37;
-    float u38;
-    float u39;
-    float u40;
-    int t2;
-    int t24;
-
-    t0 = *(int *)0xC23A1A8;
-    if ((0x100 & t0) != 0) {
-        if ((0x80000 & t0) == 0) {
-            if ((t0 & 0x100000) == 0) {
-                if (((*(int *)0xC247030) == 4) && (t2 = *(int *)0xC247034, t2 == 4)) {
-                    t7 = *(int *)0xC246FF0;
-                    u8 = *(float *)((a4 + 0x30));
-                    u9 = *(float *)((t7 + 0x30));
-                    u10 = *(float *)((t7 + 0x38));
-                    u11 = *(float *)((a4 + 0x38));
-                    t12 = *(int *)0xC246FF4;
-                    u13 = ((u11 - u10) * (u11 - u10));
-                    u13 = u13 + (u8 - u9) * (u8 - u9);
-                    u14 = *(float *)((a4 + 0x30));
-                    u15 = *(float *)((t12 + 0x30));
-                    u16 = *(float *)((t12 + 0x38));
-                    u17 = *(float *)((a4 + 0x38));
-                    u18 = ((u17 - u16) * (u17 - u16));
-                    u18 = u18 + (u14 - u15) * (u14 - u15);
-                    if (!(_builtin_sqrtf(u13) > _builtin_sqrtf(u18))) {
-                        *(unsigned int *)((a4 + 0x510)) = 0x0;
-                    } else {
-                        *(unsigned int *)((a4 + 0x510)) = 0x1;
-                    }
-                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
-                    *(unsigned int *)((a4 + 0x524)) = 0x0;
-                    return 0x1;
-                }
-                if ((*(int *)0xC247030) == 4) {
-                    *(unsigned int *)((a4 + 0x510)) = 0x0;
-                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
-                    *(unsigned int *)((a4 + 0x524)) = 0x0;
-                    return 0x1;
-                }
-                if ((*(int *)0xC247034) == 4) {
-                    *(unsigned int *)((a4 + 0x510)) = 0x1;
-                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
-                    *(unsigned int *)((a4 + 0x524)) = 0x0;
-                    return 0x1;
-                }
-                *(unsigned int *)((a4 + 0x50C)) = 0x0;
-                *(unsigned int *)((a4 + 0x524)) = 0x0;
-                return 0x0;
-            }
-            *(unsigned int *)((a4 + 0x510)) = 0x0;
-            *(unsigned int *)((a4 + 0x50C)) = 0x1;
-            *(unsigned int *)((a4 + 0x524)) = 0x0;
-            return 0x1;
-        }
-        *(unsigned int *)((a4 + 0x510)) = 0x1;
-        *(unsigned int *)((a4 + 0x50C)) = 0x1;
-        *(unsigned int *)((a4 + 0x524)) = 0x0;
-        return 0x1;
-    }
-    if (((*(int *)0xC247030) == 4) && (t24 = *(int *)0xC247034, t24 == 4)) {
-        t29 = *(int *)0xC246FF0;
-        u30 = *(float *)((a4 + 0x30));
-        u31 = *(float *)((t29 + 0x30));
-        u32 = *(float *)((t29 + 0x38));
-        u33 = *(float *)((a4 + 0x38));
-        t34 = *(int *)0xC246FF4;
-        u35 = ((u33 - u32) * (u33 - u32));
-        u35 = u35 + (u30 - u31) * (u30 - u31);
-        u36 = *(float *)((a4 + 0x30));
-        u37 = *(float *)((t34 + 0x30));
-        u38 = *(float *)((t34 + 0x38));
-        u39 = *(float *)((a4 + 0x38));
-        u40 = ((u39 - u38) * (u39 - u38));
-        u40 = u40 + (u36 - u37) * (u36 - u37);
-        if (!(_builtin_sqrtf(u35) > _builtin_sqrtf(u40))) {
-            *(unsigned int *)((a4 + 0x510)) = 0x0;
-        } else {
-            *(unsigned int *)((a4 + 0x510)) = 0x1;
-        }
-        *(unsigned int *)((a4 + 0x50C)) = 0x1;
-        *(unsigned int *)((a4 + 0x524)) = 0x0;
-        return 0x1;
-    }
-    if ((*(int *)0xC247030) == 4) {
-        *(unsigned int *)((a4 + 0x510)) = 0x0;
-        *(unsigned int *)((a4 + 0x50C)) = 0x1;
-        *(unsigned int *)((a4 + 0x524)) = 0x0;
-        return 0x1;
-    }
-    if ((*(int *)0xC247034) == 4) {
-        *(unsigned int *)((a4 + 0x510)) = 0x1;
-        *(unsigned int *)((a4 + 0x50C)) = 0x1;
-        *(unsigned int *)((a4 + 0x524)) = 0x0;
-        return 0x1;
-    }
-    *(unsigned int *)((a4 + 0x50C)) = 0x0;
-    *(unsigned int *)((a4 + 0x524)) = 0x0;
-    return 0x0;
-}
 
 int adxsjd_decode_prep(int a4)
 {
@@ -950,104 +462,6 @@ int adxsjd_decode_prep(int a4)
     return t35;
 }
 
-int FUN_0c054fb0(int a4, int a5, int a6, int a7)
-{
-    int t2;
-    int t3;
-    int t5;
-    int t7;
-    int t8;
-    int t9;
-    int t10;
-    int t18;
-    int t28;
-    int t35;
-    int t6;
-    int t20;
-
-    if ((*(int *)((a4 + 0x330))) != 0) {
-        t2 = *(int *)((a4 + 0x330));
-        t3 = 0x1;
-        if (t2 == 3) {
-            t3 = 0x2;
-        }
-        t5 = t2;
-        t7 = t3;
-        t8 = 0x0;
-        for (;;) {
-            t9 = (t7 == 0);
-            t7 = (t7 - 1);
-            if (t9) {
-                t5 = 0x0;
-                return t5;
-            }
-            t10 = 0x0;
-            for (;;) {
-                if ((*(int *)(((0xC2479B4 + (((t10 << 2) << 2) << 1)) + 0x0))) != 0) {
-                    t5 = t10;
-                    if (t5 != 9) {
-                        t5 = 0xA;
-                        t18 = (0xC2479B4 + (((t10 << 2) << 2) << 1));
-                        t10 = (t10 + 0x1);
-                        if ((int)t10 >= (int)t5) {
-                            t20 = t18; break;
-                        }
-                        continue;
-                    }
-                    t5 = 0xFFFFFFFF;
-                    return t5;
-                }
-                t20 = (0xC2479B4 + (((t10 << 2) << 2) << 1)); break;
-            }
-            t5 = 0x344;
-            if (((*(int *)((a4 + t5))) != 0) && ((0x1 & t8) == 0)) {
-                t5 = 0x34C;
-                t6 = (*(int *)((a4 + t5)));
-                *(unsigned int *)((t20 + 0x8)) = 0x0;
-                t8 = (t8 | 0x1);
-                *(unsigned int *)((t20 + 0x0)) = 0x1;
-                *(unsigned int *)((t20 + 0x4)) = t6;
-                t5 = t6;
-                t5 = (t5 << 2);
-                t6 = 0xC2475D4;
-                *(unsigned int *)((t20 + 0x14)) = (*(int *)((0xC2475D4 + t5)));
-                t6 = (*(int *)((t6 + t5)));
-                *(unsigned int *)((t20 + 0x18)) = (*(int *)((t6 + 0x0)));
-                *(unsigned int *)((t6 + 0x0)) = 0xC056B20;
-                *(unsigned int *)((t20 + 0x1C)) = a4;
-                t28 = *(int *)((0xC247634 + t5));
-                t5 = (t5 + 0xC247604);
-                *(unsigned int *)((t20 + 0xC)) = t28;
-                *(unsigned int *)((t20 + 0x10)) = (*(int *)((t5 + 0x0)));
-                continue;
-            }
-            t5 = 0x348;
-            if (((*(int *)((a4 + t5))) != 0) && ((0x2 & t8) == 0)) {
-                t5 = 0x350;
-                t6 = (*(int *)((a4 + t5)));
-                *(unsigned int *)((t20 + 0x8)) = 0x1;
-                t8 = (t8 | 0x2);
-                *(unsigned int *)((t20 + 0x0)) = 0x1;
-                *(unsigned int *)((t20 + 0x4)) = t6;
-                t5 = t6;
-                t5 = (t5 << 2);
-                t6 = 0xC2475D4;
-                *(unsigned int *)((t20 + 0x14)) = (*(int *)((0xC2475D4 + t5)));
-                t6 = (*(int *)((t6 + t5)));
-                *(unsigned int *)((t20 + 0x18)) = (*(int *)((t6 + 0x0)));
-                *(unsigned int *)((t6 + 0x0)) = 0xC056B20;
-                *(unsigned int *)((t20 + 0x1C)) = a4;
-                t35 = *(int *)((0xC247634 + t5));
-                t5 = (t5 + 0xC247604);
-                *(unsigned int *)((t20 + 0xC)) = t35;
-                *(unsigned int *)((t20 + 0x10)) = (*(int *)((t5 + 0x0)));
-                continue;
-            }
-            break;
-        }
-    }
-    return 0xFFFFFFFF;
-}
 
 int FUN_0c02ee08(int a4)
 {
@@ -1106,123 +520,7 @@ int FUN_0c02ee08(int a4)
     return 0x0;
 }
 
-int FUN_0c02b648(int a4)
-{
-    int t0;
-    int t1;
-    int t8;
-    int t9;
-    int t10;
-    int t15;
-    int t4;
-    int t2;
 
-    t0 = FUN_0c02a416(a4);
-    if (t0 != 0) {
-        *(unsigned int *)((a4 + 0x538)) = 0xA;
-        *(unsigned int *)((a4 + 0x4F8)) = 0x0;
-    } else {
-        t1 = FUN_0c02a35a();
-        if (t1 != 0) {
-            if (t1 != 1) {
-                if (t1 != 2) {
-                    if (t1 != 3) {
-                        *(unsigned int *)((a4 + 0x538)) = 0x2;
-                        t2 = 0x0;
-                    } else {
-                        *(unsigned int *)((a4 + 0x538)) = 0x2;
-                        t2 = 0xC;
-                    }
-                    t4 = t2;
-                } else {
-                    *(unsigned int *)((a4 + 0x538)) = 0x2;
-                    t4 = 0x6;
-                }
-                *(unsigned int *)((a4 + 0x4F8)) = t4;
-            } else {
-                *(unsigned int *)((a4 + 0x538)) = 0x2;
-                *(unsigned int *)((a4 + 0x4F8)) = 0x2;
-            }
-        } else {
-            t8 = FUN_0c035b26(a4);
-            if (t8 != 0) {
-                t9 = FUN_0c035ce4(a4);
-                if (t9 != 0) {
-                    *(unsigned int *)((a4 + 0x4F8)) = 0x4;
-                } else {
-                    t10 = *(int *)((a4 + 0x538));
-                    if ((t10 == 8) || ((t10 == 6) || ((t10 == 7) || ((t10 == 4) || ((t10 == 5) || (t10 == 10)))))) {
-                        *(unsigned int *)((a4 + 0x524)) = 0x0;
-                        FUN_0c0236ce(a4);
-                    }
-                    *(unsigned int *)((a4 + 0x4F8)) = 0x0;
-                }
-            } else {
-                t15 = *(int *)((a4 + 0x538));
-                if ((t15 == 8) || ((t15 == 6) || ((t15 == 7) || ((t15 == 4) || ((t15 == 5) || (t15 == 10)))))) {
-                    *(unsigned int *)((a4 + 0x524)) = 0x0;
-                    FUN_0c0236ce(a4);
-                }
-                *(unsigned int *)((a4 + 0x4F8)) = 0x0;
-            }
-        }
-    }
-    return 0x4F8;
-}
-
-int FUN_0c0a7b90(int a4, int a5, int a6)
-{
-    int t1;
-    int t4;
-    float t5;
-    float t6;
-    float u7;
-    int t9;
-    int t11;
-    int t14;
-    int t16;
-    int t26;
-    float u27;
-    float u29;
-    int t30;
-    int t20;
-    int stk[27];
-
-    *(unsigned int *)(((int)stk + 8)) = a4;
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    *(unsigned int *)(((int)stk + 4)) = a6;
-    nlGetMatrix((((int)stk + 4) + 0xC));
-    t1 = *(int *)(((int)stk + 12));
-    t4 = FUN_0c0d9dc0((-(*(float *)(((int)stk + 24)))), (*(float *)(((int)stk + 16))));
-    *(unsigned int *)((t1 + 0x0)) = (short)t4;
-    t5 = FUN_0c0da410((short)t4);
-    t6 = FUN_0c0d9e90((short)t4);
-    u7 = *(float *)(((int)stk + 20));
-    if ((((short)t4 + 0x2000) & 0x4000) == 0) {
-        t9 = FUN_0c0d9dc0((u7 * t6), (*(float *)(((int)stk + 16))));
-        t11 = ((short)t9 + 0x8000);
-        if (!(0.0f > t6)) {
-            t11 = (short)t9;
-        }
-        t20 = t11;
-    } else {
-        t14 = FUN_0c0d9dc0((u7 * t5), (-(*(float *)(((int)stk + 24)))));
-        t16 = (short)t14;
-        if (0.0f > t5) {
-            t16 = ((short)t14 + 0x8000);
-        }
-        t20 = t16;
-    }
-    *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = (short)t20;
-    t26 = *(int *)(((int)stk + 8));
-    u27 = ((*(float *)(((int)stk + 48))) * t5);
-    u27 = u27 + t6 * (*(float *)(((int)stk + 56)));
-    u29 = ((*(float *)(((int)stk + 32))) * t5);
-    u29 = u29 + t6 * (*(float *)(((int)stk + 40)));
-    t30 = FUN_0c0d9dc0(u29, u27);
-    *(unsigned int *)((t26 + 0x0)) = (short)t30;
-    return (short)t30;
-}
 
 int FUN_0c02b0c2(int a4)
 {
@@ -1543,3 +841,329 @@ int FUN_0c22c602(int a4, int a5, int a6, int a7)
     }
     return t37;
 }
+
+int FUN_0c02b648(int a4)
+{
+    int t0;
+    int t1;
+    int t8;
+    int t9;
+    int t10;
+    int t15;
+    int t4;
+    int t2;
+
+    t0 = FUN_0c02a416(a4);
+    if (t0 != 0) {
+        *(unsigned int *)((a4 + 0x538)) = 0xA;
+        *(unsigned int *)((a4 + 0x4F8)) = 0x0;
+    } else {
+        t1 = FUN_0c02a35a();
+        if (t1 != 0) {
+            if (t1 != 1) {
+                if (t1 != 2) {
+                    if (t1 != 3) {
+                        *(unsigned int *)((a4 + 0x538)) = 0x2;
+                        t2 = 0x0;
+                    } else {
+                        *(unsigned int *)((a4 + 0x538)) = 0x2;
+                        t2 = 0xC;
+                    }
+                    t4 = t2;
+                } else {
+                    *(unsigned int *)((a4 + 0x538)) = 0x2;
+                    t4 = 0x6;
+                }
+                *(unsigned int *)((a4 + 0x4F8)) = t4;
+            } else {
+                *(unsigned int *)((a4 + 0x538)) = 0x2;
+                *(unsigned int *)((a4 + 0x4F8)) = 0x2;
+            }
+        } else {
+            t8 = FUN_0c035b26(a4);
+            if (t8 != 0) {
+                t9 = FUN_0c035ce4(a4);
+                if (t9 != 0) {
+                    *(unsigned int *)((a4 + 0x4F8)) = 0x4;
+                } else {
+                    t10 = *(int *)((a4 + 0x538));
+                    if ((t10 == 8) || ((t10 == 6) || ((t10 == 7) || ((t10 == 4) || ((t10 == 5) || (t10 == 10)))))) {
+                        *(unsigned int *)((a4 + 0x524)) = 0x0;
+                        FUN_0c0236ce(a4);
+                    }
+                    *(unsigned int *)((a4 + 0x4F8)) = 0x0;
+                }
+            } else {
+                t15 = *(int *)((a4 + 0x538));
+                if ((t15 == 8) || ((t15 == 6) || ((t15 == 7) || ((t15 == 4) || ((t15 == 5) || (t15 == 10)))))) {
+                    *(unsigned int *)((a4 + 0x524)) = 0x0;
+                    FUN_0c0236ce(a4);
+                }
+                *(unsigned int *)((a4 + 0x4F8)) = 0x0;
+            }
+        }
+    }
+    return 0x4F8;
+}
+
+int FUN_0c034c26(int a4)
+{
+    int t0;
+    int t7;
+    float u8;
+    float u9;
+    float u10;
+    float u11;
+    int t12;
+    float u13;
+    float u14;
+    float u15;
+    float u16;
+    float u17;
+    float u18;
+    int t29;
+    float u30;
+    float u31;
+    float u32;
+    float u33;
+    int t34;
+    float u35;
+    float u36;
+    float u37;
+    float u38;
+    float u39;
+    float u40;
+    int t2;
+    int t24;
+
+    t0 = *(int *)0xC23A1A8;
+    if ((0x100 & t0) != 0) {
+        if ((0x80000 & t0) == 0) {
+            if ((t0 & 0x100000) == 0) {
+                if (((*(int *)0xC247030) == 4) && (t2 = *(int *)0xC247034, t2 == 4)) {
+                    t7 = *(int *)0xC246FF0;
+                    u8 = *(float *)((a4 + 0x30));
+                    u9 = *(float *)((t7 + 0x30));
+                    u10 = *(float *)((t7 + 0x38));
+                    u11 = *(float *)((a4 + 0x38));
+                    t12 = *(int *)0xC246FF4;
+                    u13 = ((u11 - u10) * (u11 - u10));
+                    u13 = u13 + (u8 - u9) * (u8 - u9);
+                    u14 = *(float *)((a4 + 0x30));
+                    u15 = *(float *)((t12 + 0x30));
+                    u16 = *(float *)((t12 + 0x38));
+                    u17 = *(float *)((a4 + 0x38));
+                    u18 = ((u17 - u16) * (u17 - u16));
+                    u18 = u18 + (u14 - u15) * (u14 - u15);
+                    if (!(_builtin_sqrtf(u13) > _builtin_sqrtf(u18))) {
+                        *(unsigned int *)((a4 + 0x510)) = 0x0;
+                    } else {
+                        *(unsigned int *)((a4 + 0x510)) = 0x1;
+                    }
+                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
+                    *(unsigned int *)((a4 + 0x524)) = 0x0;
+                    return 0x1;
+                }
+                if ((*(int *)0xC247030) == 4) {
+                    *(unsigned int *)((a4 + 0x510)) = 0x0;
+                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
+                    *(unsigned int *)((a4 + 0x524)) = 0x0;
+                    return 0x1;
+                }
+                if ((*(int *)0xC247034) == 4) {
+                    *(unsigned int *)((a4 + 0x510)) = 0x1;
+                    *(unsigned int *)((a4 + 0x50C)) = 0x1;
+                    *(unsigned int *)((a4 + 0x524)) = 0x0;
+                    return 0x1;
+                }
+                *(unsigned int *)((a4 + 0x50C)) = 0x0;
+                *(unsigned int *)((a4 + 0x524)) = 0x0;
+                return 0x0;
+            }
+            *(unsigned int *)((a4 + 0x510)) = 0x0;
+            *(unsigned int *)((a4 + 0x50C)) = 0x1;
+            *(unsigned int *)((a4 + 0x524)) = 0x0;
+            return 0x1;
+        }
+        *(unsigned int *)((a4 + 0x510)) = 0x1;
+        *(unsigned int *)((a4 + 0x50C)) = 0x1;
+        *(unsigned int *)((a4 + 0x524)) = 0x0;
+        return 0x1;
+    }
+    if (((*(int *)0xC247030) == 4) && (t24 = *(int *)0xC247034, t24 == 4)) {
+        t29 = *(int *)0xC246FF0;
+        u30 = *(float *)((a4 + 0x30));
+        u31 = *(float *)((t29 + 0x30));
+        u32 = *(float *)((t29 + 0x38));
+        u33 = *(float *)((a4 + 0x38));
+        t34 = *(int *)0xC246FF4;
+        u35 = ((u33 - u32) * (u33 - u32));
+        u35 = u35 + (u30 - u31) * (u30 - u31);
+        u36 = *(float *)((a4 + 0x30));
+        u37 = *(float *)((t34 + 0x30));
+        u38 = *(float *)((t34 + 0x38));
+        u39 = *(float *)((a4 + 0x38));
+        u40 = ((u39 - u38) * (u39 - u38));
+        u40 = u40 + (u36 - u37) * (u36 - u37);
+        if (!(_builtin_sqrtf(u35) > _builtin_sqrtf(u40))) {
+            *(unsigned int *)((a4 + 0x510)) = 0x0;
+        } else {
+            *(unsigned int *)((a4 + 0x510)) = 0x1;
+        }
+        *(unsigned int *)((a4 + 0x50C)) = 0x1;
+        *(unsigned int *)((a4 + 0x524)) = 0x0;
+        return 0x1;
+    }
+    if ((*(int *)0xC247030) == 4) {
+        *(unsigned int *)((a4 + 0x510)) = 0x0;
+        *(unsigned int *)((a4 + 0x50C)) = 0x1;
+        *(unsigned int *)((a4 + 0x524)) = 0x0;
+        return 0x1;
+    }
+    if ((*(int *)0xC247034) == 4) {
+        *(unsigned int *)((a4 + 0x510)) = 0x1;
+        *(unsigned int *)((a4 + 0x50C)) = 0x1;
+        *(unsigned int *)((a4 + 0x524)) = 0x0;
+        return 0x1;
+    }
+    *(unsigned int *)((a4 + 0x50C)) = 0x0;
+    *(unsigned int *)((a4 + 0x524)) = 0x0;
+    return 0x0;
+}
+
+int FUN_0c0a7b90(int a4, int a5, int a6)
+{
+    int t1;
+    int t4;
+    float t5;
+    float t6;
+    float u7;
+    int t9;
+    int t11;
+    int t14;
+    int t16;
+    int t26;
+    float u27;
+    float u29;
+    int t30;
+    int t20;
+    int stk[27];
+
+    *(unsigned int *)(((int)stk + 8)) = a4;
+    *(unsigned int *)(((int)stk + 12)) = a5;
+    *(unsigned int *)(((int)stk + 4)) = a6;
+    nlGetMatrix((((int)stk + 4) + 0xC));
+    t1 = *(int *)(((int)stk + 12));
+    t4 = FUN_0c0d9dc0((-(*(float *)(((int)stk + 24)))), (*(float *)(((int)stk + 16))));
+    *(unsigned int *)((t1 + 0x0)) = (short)t4;
+    t5 = FUN_0c0da410((short)t4);
+    t6 = FUN_0c0d9e90((short)t4);
+    u7 = *(float *)(((int)stk + 20));
+    if ((((short)t4 + 0x2000) & 0x4000) == 0) {
+        t9 = FUN_0c0d9dc0((u7 * t6), (*(float *)(((int)stk + 16))));
+        t11 = ((short)t9 + 0x8000);
+        if (!(0.0f > t6)) {
+            t11 = (short)t9;
+        }
+        t20 = t11;
+    } else {
+        t14 = FUN_0c0d9dc0((u7 * t5), (-(*(float *)(((int)stk + 24)))));
+        t16 = (short)t14;
+        if (0.0f > t5) {
+            t16 = ((short)t14 + 0x8000);
+        }
+        t20 = t16;
+    }
+    *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = (short)t20;
+    t26 = *(int *)(((int)stk + 8));
+    u27 = ((*(float *)(((int)stk + 48))) * t5);
+    u27 = u27 + t6 * (*(float *)(((int)stk + 56)));
+    u29 = ((*(float *)(((int)stk + 32))) * t5);
+    u29 = u29 + t6 * (*(float *)(((int)stk + 40)));
+    t30 = FUN_0c0d9dc0(u29, u27);
+    *(unsigned int *)((t26 + 0x0)) = (short)t30;
+    return (short)t30;
+}
+
+int FUN_0c034fbc(int a4, int a5, int a6, int a7)
+{
+    int t25;
+    int t35;
+    int stk[8];
+
+    int R0;
+    int R1;
+    int R2;
+    int R3;
+    int R4;
+    int R5;
+    int R6;
+    int R7;
+    int R8;
+    int R11;
+    int R12;
+    int R13;
+    int R14;
+    float F3;
+    float F4;
+    float F5;
+    int T_;
+    R4 = a4;
+    R5 = a5;
+    R6 = a6;
+    R7 = a7;
+    L_C034FBC:;
+    *(unsigned int *)(((int)stk + 8)) = R5;
+    *(unsigned int *)(((int)stk + 12)) = R6;
+    *(unsigned int *)(((int)stk + 16)) = R7;
+    R14 = (R4);
+    if (((*(int *)((R4 + 0x508))) != 0)) goto L_C035008;
+    goto L_C034FD4;
+    L_C034FD4:;
+    if (((*(int *)((R14 + 0x50C))) == 0)) goto L_C035016;
+    goto L_C034FDC;
+    L_C034FDC:;
+    R0 = (0x510);
+    R4 = (0xC246FF0);
+    if (((*(int *)(((((*(int *)((R14 + 0x510))) << 2) + 0xC247030) + 0x0))) != 0)) goto L_C034FF8;
+    goto L_C034FF0;
+    L_C034FF0:;
+    *(unsigned int *)((R14 + 0x50C)) = 0x0;
+    goto L_C035016;
+    L_C035016:;
+    R0 = (0x0);
+    goto L_C03509A;
+    L_C03509A:;
+    return R0;
+    L_C034FF8:;
+    R13 = (((*(int *)(((((*(int *)((R14 + R0))) << 2) + R4) + 0x0))) + 0x30));
+    goto L_C035040;
+    L_C035040:;
+    FUN_0c0a68ec(((int)stk + 4), ((*(float *)((R14 + 0x30))) - (*(float *)((R13 + 0x0)))), ((*(float *)((R14 + 0x38))) - (*(float *)((R13 + 0x8)))));
+    if (((*(int *)(((int)stk + 16))) == 0)) goto L_C03508C;
+    goto L_C03505E;
+    L_C03505E:;
+    R0 = (0x4D8);
+    R4 = (0x8000);
+    if (((int)(*(int *)((R14 + 0x4D8))) <= (int)0x8000)) goto L_C03507C;
+    goto L_C035068;
+    L_C035068:;
+    t25 = *(int *)((R14 + R0));
+    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + ((((int)((unsigned int)((int)((unsigned int)t25 + (unsigned int)0x0)) + ((((int)0x0 > (int)t25)) ? 1u : 0u))) >> 1) + R4));
+    goto L_C03508C;
+    L_C03508C:;
+    FUN_0c0546fe(R14, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8))), (*(int *)(((int)stk + 12))));
+    R0 = (0x1);
+    goto L_C03509A;
+    L_C03507C:;
+    t35 = *(int *)((R14 + R0));
+    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + (((int)((unsigned int)((int)((unsigned int)t35 + (unsigned int)0x0)) + ((((int)0x0 > (int)t35)) ? 1u : 0u))) >> 1));
+    goto L_C03508C;
+    L_C035008:;
+    if (((*(int *)((R14 + 0x514))) == 0)) goto L_C035016;
+    goto L_C035010;
+    L_C035010:;
+    R13 = ((0x518 + R14));
+    goto L_C035040;
+}
+

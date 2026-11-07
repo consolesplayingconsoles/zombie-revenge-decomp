@@ -1,0 +1,136 @@
+/* Straight-line functions with calls and guards (batch gen_qt): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0685a4(int, int, int, int);
+int FUN_0c0848bc(float, float, float);
+int FUN_0c0849da(void);
+int FUN_0c0c465c(int);
+float FUN_0c0d9e90(int);
+float FUN_0c0da410(int);
+int FUN_0c0dcc70(float, float, float);
+int FUN_0c0dcca0(int);
+int FUN_0c0de000(float);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
+int nlScale(float, float, float);
+int FUN_0c07d72e(int a4, int a5, int a6, int a7);
+
+int FUN_0c07d72e(int a4, int a5, int a6, int a7)
+{
+    int stk[7];
+    register int t6;
+    register int t8;
+    register int t11;
+    register int t9;
+    register int t15;
+    register int t13;
+    register int t16;
+    register float t17;
+    register float t18;
+    register int t20;
+    register int t23;
+    register int t21;
+    register float t24;
+    register float u25;
+    register float t26;
+    register float u27;
+    register int t31;
+    register int t29;
+    register float t32;
+    register float t33;
+    register float u34;
+    register float u35;
+    register int t36;
+    register int t37;
+    int t38;
+    register float u41;
+    register float u42;
+    register float u43;
+    register float u44;
+    register float u45;
+    register int t48;
+    register float t50;
+    register float u53;
+    register float u55;
+    register float u68;
+    register float u69;
+    register float u71;
+    register int t76;
+
+    *(unsigned int *)(((int)stk + 4)) = (*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC)));
+    *(unsigned int *)(((int)stk + 12)) = 0xD;
+    FUN_0c0685a4(a4, a5, a6, a7);
+    *(unsigned int *)(((int)stk + 20)) = ((*(int *)0xC23A258) * 0x2A);
+    nlPushMatrix(0x0);
+    FUN_0c0dcca0(0xC200994);
+    *(unsigned int *)(((int)stk + 8)) = 0x40;
+    t6 = 0x47AE927;
+    for (;;) {
+        t8 = *(int *)(((int)stk + 12));
+        t11 = (t6 & 0x1);
+        t9 = (int)(((unsigned int)t11 >> 1) | ((unsigned int)t11 << 31));
+        t15 = ((((t6 >> 1) | t9) ^ t8) & 0x1);
+        t13 = (int)(((unsigned int)t15 >> 1) | ((unsigned int)t15 << 31));
+        *(unsigned int *)(((int)stk + 16)) = (((((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1) | ((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1))) * 0x22AC8EE1);
+        t16 = *(int *)(((int)stk + 20));
+        t17 = FUN_0c0da410((t16 + (((t6 >> 1) | t9) ^ t8)));
+        t18 = FUN_0c0d9e90((t16 + (((t6 >> 1) | t9) ^ t8)));
+        t20 = *(int *)(((int)stk + 16));
+        t23 = (((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) & 0x1);
+        t21 = (int)(((unsigned int)t23 >> 1) | ((unsigned int)t23 << 31));
+        t24 = FUN_0c0da410((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20));
+        u25 = (t17 * 127.0f);
+        *(float *)(((int)stk + 24)) = (u25 * t24);
+        t26 = FUN_0c0d9e90((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20));
+        u27 = (t17 * 127.0f);
+        t31 = ((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) & 0x1);
+        t29 = (int)(((unsigned int)t31 >> 1) | ((unsigned int)t31 << 31));
+        t32 = FUN_0c0d9e90(((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) >> 1) | t29) ^ (((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1)));
+        t33 = FUN_0c0da410(((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) >> 1) | t29) ^ (((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1)));
+        u34 = (t18 * 127.0f);
+        u35 = (t18 * 127.0f);
+        t36 = ((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) >> 1) | t29) ^ (((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1));
+        t37 = (((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1) | ((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) >> 1) | t29) ^ (((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1))) * 0x22AC8EE1);
+        t38 = (t16 + (((t6 >> 1) | t9) ^ t8));
+        t6 = ((((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) >> 1) | t29) ^ (((((((((((t6 >> 1) | t9) ^ t8) >> 1) | t13) ^ (((((t6 >> 1) | t9) ^ t8) | t8) * 0x22AC8EE1)) >> 1) | t21) ^ t20) | t20) * 0x22AC8EE1));
+        t6 = (t6 >> 1);
+        u41 = (u27 * t26);
+        u42 = (u35 * t33);
+        u42 = u42 + t32 * u41;
+        u43 = (u27 * t26);
+        u44 = (u34 * t32);
+        u45 = (u43 * t33);
+        t48 = (t36 & 0x1);
+        t6 = (t6 | ((int)(((unsigned int)t48 >> 1) | ((unsigned int)t48 << 31))));
+        t6 = (t6 ^ t37);
+        *(unsigned int *)(((int)stk + 12)) = ((t37 | t6) * 0x22AC8EE1);
+        nlPushMatrix(0x0);
+        t50 = FUN_0c0da410((int)((float)(0x1FFF & t38) * 4.00048828f));
+        u53 = 1.0f;
+        if (((*(int *)0xC23A258) & 1) != 0) {
+            u53 = 0.299999982f;
+        }
+        u55 = *(float *)0xC07D9CC;
+        FUN_0c0dcc70(u42, (*(float *)(((int)stk + 24))), (u44 - u45));
+        nlRotateAY((*(short *)(((*(int *)(((int)stk + 4))) + 0x3CE))));
+        nlRotateAX((*(short *)(((*(int *)(((int)stk + 4))) + 0x3CC))));
+        nlRotateAZ(t6);
+        nlScale(u55, u55, 1.0f);
+        u68 = (t50 * u53);
+        u69 = (t50 * u53);
+        u71 = (t50 * u53);
+        FUN_0c0848bc((u71 * (*(float *)0xC07D9EC)), (u69 * (*(float *)0xC07D9E8)), (u68 * (*(float *)0xC07D9E4)));
+        FUN_0c0de000(u55);
+        FUN_0c0c465c(0x291);
+        nlPopMatrix(0x1);
+        t76 = *(int *)(((int)stk + 8));
+        *(unsigned int *)(((int)stk + 8)) = (t76 - 1);
+        if ((t76 - 1) != 0) continue;
+        break;
+    }
+    nlPopMatrix(0x1);
+    return FUN_0c0849da();
+}

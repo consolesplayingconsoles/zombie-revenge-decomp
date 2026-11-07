@@ -186,62 +186,6 @@ int gdFsDaReleaseG(int a4)
     return t55;
 }
 
-int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
-{
-    int t0;
-    int t2;
-    int t4;
-    int t5;
-    int t17;
-    int t18;
-    int t19;
-    int t23;
-    int t24;
-    int t1;
-
-    t0 = *(int *)0xC2393C4;
-    if ((t0 != 0) && (t1 = *(short *)((t0 + 0x38)), t1 == 1)) {
-        return 0x0;
-    }
-    if ((a5 & 31) != 0) {
-        return 0xFFFFFFF2;
-    }
-    t2 = FUN_0c2212c0();
-    t4 = ((int (*)(void))((*(int *)((t2 + 0x0)))))();
-    t5 = _builtin_get_imask();
-    _builtin_set_imask(0xF);
-    *(unsigned int *)0xC2393C4 = a5;
-    *(unsigned short *)((a5 + 0x38)) = 0x0;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x20)) = 0x0;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x0)) = a4;
-    *(unsigned int *)((((*(int *)0xC2393C4) + 0x10) + 0x0)) = (gdFsCreateDirhn(a7, a6));
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0xC)) = t2;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x1C)) = 0x0;
-    *(unsigned short *)(((*(int *)0xC2393C4) + 0x3A)) = 0x0;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x24)) = 0x0;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x34)) = 0x0;
-    *(unsigned int *)(((*(int *)0xC2393C4) + 0x3C)) = a8;
-    t17 = 0x3A;
-    t18 = ((*(int *)0xC2393C4) + 0x1080);
-    t19 = 0x0;
-    for (;;) {
-        if ((int)t19 >= (int)((*(int *)(((*(int *)0xC2393C4) + 0x0))) + 0x1)) {
-            break;
-        }
-        t17 = 0x4C;
-        *(unsigned short *)((t18 + t17)) = 0x0;
-        t19 = (t19 + 0x1);
-        *(unsigned int *)((t18 + 0x0)) = (*(int *)0xC2393C4);
-        t18 = (t18 + 0x54);
-    }
-    t23 = *(int *)0xC2393C4;
-    *(unsigned int *)((t23 + 0x14)) = (0x1080 + t23);
-    t24 = *(int *)0xC2393C4;
-    *(unsigned int *)((t24 + 0x18)) = ((0x1080 + t24) + 0x54);
-    gdFsCreateHnG((*(int *)(((*(int *)0xC2393C4) + 0x14))), 0x0, 0x0, 0x0);
-    _builtin_set_imask(((unsigned int)(((t5 & 0xF) << 2) << 2) >> 4));
-    return ((int (*)(void))(0xC20F2C4))();
-}
 
 
 int vmsfs_fwrite1(int a4, int a5)
@@ -387,180 +331,7 @@ int FUN_0c0c5a4c(int a4)
     return 0x60;
 }
 
-int vmsfs_getinfo(int a4, int a5)
-{
-    int t48;
-    int t1;
-    int t3;
-    int t38;
-    int t6;
-    int t33;
-    int t7;
-    int t11;
-    int t15;
-    int t16;
-    int t17;
-    int t43;
-    int t4;
-    int t5;
-    int t9;
-    int t10;
-    int stk[9];
 
-    *(unsigned int *)(((int)stk + 4)) = (a4 * 0x148);
-    t48 = 0xFFFFFF01;
-    if ((*(signed char *)((((a4 * 0x148) + 0xC956768) + 0x2))) != 0) {
-        t1 = vmsio_isready(a4);
-        if (t1 == 0) {
-            vmsfs_unmount(a4);
-            t43 = 0xFFFFFF01;
-        } else {
-            t3 = vmsio_ismount(a4);
-            t38 = 0xFFFFFF01;
-            if ((t3 != 0) && (t4 = *(int *)(((int)stk + 4)), t5 = *(signed char *)(((t4 + 0xC956768) + 0x8)), t5 != 0)) {
-                t6 = buIsFormat(a4);
-                t33 = 0xFFFFFF03;
-                if ((int)t6 >= 0) {
-                    t7 = t6;
-                    t11 = 0x0;
-                    for (;;) {
-                        if ((int)t11 >= (int)0x20) {
-                            break;
-                        }
-                        t10 = t11;
-                        t7 = (*(int *)((((a4 * 0x148) + 0xC956768) + 0x20)));
-                        t10 = (t10 + 0x10);
-                        t9 = a5;
-                        t9 = (t9 + t11);
-                        t11 = (t11 + 0x1);
-                        *(unsigned char *)((t9 + 0x0)) = ((*(signed char *)((t10 + t7))));
-                    }
-                    t15 = t10;
-                    t16 = (((int)stk + 4) + 0x4);
-                    t17 = ((*(int *)((((a4 * 0x148) + 0xC956768) + 0x20))) + 0x30);
-                    for (;;) {
-                        if ((unsigned int)t16 >= (unsigned int)((((int)stk + 4) + 0x4) + 0x8)) {
-                            break;
-                        }
-                        t15 = (*(signed char *)((t17 + 0x0)));
-                        t17 = (t17 + 0x1);
-                        *(unsigned char *)((t16 + 0x0)) = t15;
-                        t16 = (t16 + 0x1);
-                    }
-                    get_vmstime((a5 + 0x30), (((int)stk + 4) + 0x4));
-                    *(unsigned short *)((a5 + 0x20)) = ((*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x0))) + 0x1);
-                    *(unsigned short *)((a5 + 0x22)) = (*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x30)));
-                    *(unsigned short *)(((0x26 + a5) + 0x0)) = (vmsfs_diskfree(a4, 0x0));
-                    *(unsigned short *)((a5 + 0x24)) = (*(short *)((a5 + 0x26)));
-                    *(unsigned short *)((a5 + 0x28)) = (*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x38)));
-                    *(unsigned short *)(((0x2A + a5) + 0x0)) = (vmsfs_diskfree(a4, 0x1));
-                    *(unsigned short *)((a5 + 0x2C)) = ((*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x2C))) + 0x1);
-                    *(unsigned short *)((a5 + 0x2E)) = (unsigned char)(*(signed char *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x20))) + 0x4E)));
-                    t33 = 0x0;
-                }
-                t38 = t33;
-            }
-            t43 = t38;
-        }
-        t48 = t43;
-    }
-    return t48;
-}
-
-int FUN_0c0350a4(int a4, int a5, int a6, int a7)
-{
-    int t12;
-    int t16;
-    int t28;
-    int t38;
-    int stk[14];
-
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R7;
-    int R12;
-    int R13;
-    int R14;
-    float F3;
-    float F4;
-    float F5;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    R6 = a6;
-    R7 = a7;
-    L_C0350A4:;
-    *(unsigned int *)(((int)stk + 20)) = R5;
-    *(unsigned int *)(((int)stk + 24)) = R6;
-    *(unsigned int *)(((int)stk + 16)) = R7;
-    R14 = (R4);
-    if (((*(int *)((R4 + 0x508))) != 0)) goto L_C0350F2;
-    goto L_C0350BE;
-    L_C0350BE:;
-    if (((*(int *)((R14 + 0x50C))) == 0)) goto L_C035100;
-    goto L_C0350C6;
-    L_C0350C6:;
-    R0 = (0x510);
-    R4 = (0xC246FF0);
-    if (((*(int *)(((((*(int *)((R14 + 0x510))) << 2) + 0xC247030) + 0x0))) != 0)) goto L_C0350E2;
-    goto L_C0350DA;
-    L_C0350DA:;
-    *(unsigned int *)((R14 + 0x50C)) = 0x0;
-    goto L_C035100;
-    L_C035100:;
-    R0 = (0x0);
-    goto L_C0351B0;
-    L_C0351B0:;
-    return R0;
-    L_C0350E2:;
-    t12 = *(int *)(((((*(int *)((R14 + R0))) << 2) + R4) + 0x0));
-    R13 = ((t12 + 0x30));
-    R4 = (t12);
-    goto L_C035104;
-    L_C035104:;
-    t16 = (FUN_0c0349ea(R14, (((int)stk + 4) + 0x8), (((int)stk + 4) + 0x4))) == 0;
-    R12 = (0x8000);
-    if (t16) goto L_C035150;
-    goto L_C035116;
-    L_C035116:;
-    FUN_0c0a68ec(((int)stk + 4), ((*(float *)((R14 + 0x30))) - (*(float *)((R13 + 0x0)))), ((*(float *)((R14 + 0x38))) - (*(float *)((R13 + 0x8)))));
-    goto L_C035170;
-    L_C035170:;
-    if (((*(int *)(((int)stk + 16))) == 0)) goto L_C0351A2;
-    goto L_C035176;
-    L_C035176:;
-    R0 = (0x4D8);
-    if (((int)(*(int *)((R14 + 0x4D8))) <= (int)R12)) goto L_C035192;
-    goto L_C03517E;
-    L_C03517E:;
-    t28 = *(int *)((R14 + R0));
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + ((((int)((unsigned int)((int)((unsigned int)t28 + (unsigned int)0x0)) + ((((int)0x0 > (int)t28)) ? 1u : 0u))) >> 1) + R12));
-    goto L_C0351A2;
-    L_C0351A2:;
-    FUN_0c0546fe(R14, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 20))), (*(int *)(((int)stk + 24))));
-    R0 = (0x1);
-    goto L_C0351B0;
-    L_C035192:;
-    t38 = *(int *)((R14 + R0));
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + (((int)((unsigned int)((int)((unsigned int)t38 + (unsigned int)0x0)) + ((((int)0x0 > (int)t38)) ? 1u : 0u))) >> 1));
-    goto L_C0351A2;
-    L_C035150:;
-    FUN_0c042b60(R14, (((int)stk + 4) + 0x18), (*(int *)(((int)stk + 8))));
-    FUN_0c0a68ec(((int)stk + 4), (*(float *)(((int)stk + 28))), (*(float *)(((int)stk + 36))));
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + R12);
-    goto L_C035170;
-    L_C0350F2:;
-    if (((*(int *)((R14 + 0x514))) == 0)) goto L_C035100;
-    goto L_C0350FA;
-    L_C0350FA:;
-    R13 = ((0x518 + R14));
-    goto L_C035104;
-}
 
 int FUN_0c036470(int a4)
 {
@@ -894,129 +665,6 @@ int kmiFinalizeRender(int a4, int a5, int a6)
     return 0x4C;
 }
 
-int vmsfs_diskfree(int a4, int a5)
-{
-    int t5;
-    int t9;
-    int t14;
-    int t28;
-    int t37;
-    int t39;
-    int t47;
-    int stk[9];
-
-    int R0;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R10;
-    int R11;
-    int R12;
-    int R13;
-    int R14;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    L_C225C34:;
-    *(unsigned int *)(((int)stk + 4)) = R5;
-    *(unsigned int *)(((int)stk + 8)) = (R4 * 0x148);
-    R12 = (((R4 * 0x148) + 0xC956768));
-    R14 = (R4);
-    if (((*(signed char *)((((R4 * 0x148) + 0xC956768) + 0x2))) == 0)) goto L_C225C80;
-    goto L_C225C58;
-    L_C225C58:;
-    t5 = (vmsio_isready(R14)) != 0;
-    if (t5) goto L_C225C6A;
-    goto L_C225C62;
-    L_C225C62:;
-    vmsfs_unmount(R14);
-    goto L_C225C80;
-    L_C225C80:;
-    R0 = (0xFFFFFF01);
-    goto L_C225D3A;
-    L_C225D3A:;
-    return R0;
-    L_C225C6A:;
-    t9 = (vmsio_ismount(R14)) == 0;
-    if (t9) goto L_C225C80;
-    goto L_C225C74;
-    L_C225C74:;
-    if (((*(signed char *)((((*(int *)(((int)stk + 8))) + 0xC956768) + 0x8))) != 0)) goto L_C225C86;
-    goto L_C225C80;
-    L_C225C86:;
-    t14 = (int)(buIsFormat(R14)) >= 0;
-    if (t14) goto L_C225C96;
-    goto L_C225C90;
-    L_C225C90:;
-    R0 = (0xFFFFFF03);
-    goto L_C225D3A;
-    L_C225C96:;
-    R10 = (0x0);
-    R13 = (0xFFFC);
-    R4 = (0x0);
-    if (((*(int *)(((int)stk + 4))) != 1)) goto L_C225CE4;
-    goto L_C225CA2;
-    L_C225CA2:;
-    R11 = (R4);
-    goto L_C225CB6;
-    L_C225CB6:;
-    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x38))))) goto L_C225CA6;
-    goto L_C225CBE;
-    L_C225CBE:;
-    R10 = (R11);
-    goto L_C225D38;
-    L_C225D38:;
-    R0 = (R10);
-    goto L_C225D3A;
-    L_C225CA6:;
-    t28 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
-    if (t28) goto L_C225CBE;
-    goto L_C225CB4;
-    L_C225CB4:;
-    R11 = ((R11 + 0x1));
-    goto L_C225CB6;
-    L_C225CE4:;
-    if (((*(int *)0xC237C10) == 0)) goto L_C225D1A;
-    goto L_C225CEC;
-    L_C225CEC:;
-    R11 = (R4);
-    goto L_C225D0E;
-    L_C225D0E:;
-    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x30))))) goto L_C225CF0;
-    goto L_C225D16;
-    L_C225D16:;
-    goto L_C225D38;
-    L_C225CF0:;
-    t37 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
-    if (t37) goto L_C225D0C;
-    goto L_C225CFE;
-    L_C225CFE:;
-    t39 = (int)(check_fat_xross(R14, R11)) < 0;
-    if (t39) goto L_C225D0C;
-    goto L_C225D0A;
-    L_C225D0A:;
-    R10 = ((R10 + 0x1));
-    goto L_C225D0C;
-    L_C225D0C:;
-    R11 = ((R11 + 0x1));
-    goto L_C225D0E;
-    L_C225D1A:;
-    R11 = (R4);
-    goto L_C225D30;
-    L_C225D30:;
-    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x30))))) goto L_C225D1E;
-    goto L_C225D38;
-    L_C225D1E:;
-    t47 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
-    R11 = ((R11 + 0x1));
-    if (t47) goto L_C225D30;
-    goto L_C225D2E;
-    L_C225D2E:;
-    R10 = ((R10 + 0x1));
-    goto L_C225D30;
-}
 
 int vmsfs_frename(int a4, int a5, int a6)
 {
@@ -1230,121 +878,6 @@ int FUN_0c055dfa(int a4)
     return FUN_0c0519f0(a4);
 }
 
-float FUN_0c08640a(int a4, int a5, int a6, int a7, int a8, int a9)
-{
-    int t0;
-    int t1;
-    int t2;
-    int t3;
-    int t4;
-    int t5;
-    int t6;
-    int t7;
-    int t8;
-    int t9;
-    int t10;
-    int t11;
-    int t12;
-    int t13;
-    int t14;
-    int t15;
-    int t16;
-    int t17;
-    int t29;
-    int t30;
-    int t31;
-    int t32;
-    int t33;
-    int t34;
-    int t37;
-    int t35;
-    float u39;
-    float u53;
-
-    if (a9 != 0) {
-        if (a9 == 1) {
-            t0 = 0x18;
-            t1 = (a6 + 0x6);
-            t2 = (a4 + 0x6);
-            t3 = (a5 + 0x6);
-            for (;;) {
-                t4 = *(short *)((t3 + 0x0));
-                t3 = (t3 + 0x2);
-                t0 = (t0 - 0x1);
-                t5 = *(short *)((t2 + 0x0));
-                t2 = (t2 + 0x2);
-                *(unsigned short *)((t1 + 0x0)) = (t4 - (((int)(-a7) >= 0) ? (((short)(t4 - t5) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t4 - t5) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t4 - t5) * a8) >> 31))));
-                t1 = (t1 + 0x2);
-                if (t0 == 0) {
-                    break;
-                }
-            }
-        } else {
-            t6 = a4;
-            t7 = a5;
-            t8 = a6;
-            t9 = 0x2;
-            for (;;) {
-                t10 = *(short *)((t7 + 0x0));
-                t7 = (t7 + 0x2);
-                t9 = (t9 - 0x1);
-                t11 = *(short *)((t6 + 0x0));
-                t6 = (t6 + 0x2);
-                *(unsigned short *)((t8 + 0x0)) = (t10 - (((int)(-a7) >= 0) ? (((short)(t10 - t11) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t10 - t11) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t10 - t11) * a8) >> 31))));
-                t8 = (t8 + 0x2);
-                if (t9 == 0) {
-                    break;
-                }
-            }
-            t12 = (a4 + 0x36);
-            t13 = 0x15;
-            t14 = (a5 + 0x36);
-            t15 = (a6 + 0x36);
-            for (;;) {
-                t16 = *(short *)((t14 + 0x0));
-                t14 = (t14 + 0x2);
-                t13 = (t13 - 0x1);
-                t17 = *(short *)((t12 + 0x0));
-                t12 = (t12 + 0x2);
-                *(unsigned short *)((t15 + 0x0)) = (t16 - (((int)(-a7) >= 0) ? (((short)(t16 - t17) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t16 - t17) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t16 - t17) * a8) >> 31))));
-                t15 = (t15 + 0x2);
-                if (t13 == 0) {
-                    break;
-                }
-            }
-        }
-    } else {
-        t29 = 0x30;
-        t30 = a6;
-        t31 = a5;
-        t32 = a4;
-        for (;;) {
-            t33 = *(short *)((t31 + 0x0));
-            t34 = *(short *)((t32 + 0x0));
-            t37 = (((unsigned short)t34 - (unsigned short)t33) - 0x10000);
-            if ((int)((unsigned short)t34 - (unsigned short)t33) > (int)0x8000) {
-            } else {
-                t35 = ((unsigned short)t34 - (unsigned short)t33);
-                if ((int)((unsigned short)t34 - (unsigned short)t33) < (int)0xFFFF8000) {
-                    t35 = (((unsigned short)t34 - (unsigned short)t33) + 0x10000);
-                }
-                t37 = t35;
-            }
-            t31 = (t31 + 0x2);
-            t29 = (t29 - 0x1);
-            t32 = (t32 + 0x2);
-            u39 = ((float)(t37 + (unsigned short)t33) * ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31)))));
-            u39 = u39 + (1.0f - ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31))))) * (float)(unsigned short)t33;
-            *(unsigned short *)((t30 + 0x0)) = (int)u39;
-            t30 = (t30 + 0x2);
-            if (t29 == 0) {
-                break;
-            }
-        }
-        u53 = (1.0f - ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31)))));
-    }
-    return u53;
-}
 
 int FUN_0c096094(int a4, int a5)
 {
@@ -1612,6 +1145,369 @@ int FUN_0c0a72a0(float f4, float f5, float f6, float f7, float f8, float f9)
     return (nlRotateAX((-(*(int *)(((int)stk + 4))))));
 }
 
+
+int FUN_0c22c3b8(int a4, int a5, int a6, int a7)
+{
+    int t0;
+    int t1;
+    int t3;
+    int t10;
+    int t13;
+    int t20;
+    int t24;
+    int t27;
+    int t32;
+    int t38;
+    int t47;
+    int t69;
+    int t2;
+    int t9;
+    int t33;
+    int t34;
+    int t62;
+    int t63;
+    int t64;
+    int t70;
+
+    t0 = *(int *)((a4 + 0x98));
+    if (t0 != 1) {
+        t1 = ((int (*)(int, int, int, int))(mwRnaGetTransSw))(a4, a5, a6, a7);
+        if ((t1 == 1) && (t2 = *(signed char *)((a4 + 0x5)), (unsigned char)t2 == 1)) {
+            t3 = FUN_0c22bb3e(a4);
+            if (t3 == 1) {
+                FUN_0c22bd70(a4);
+                *(unsigned char *)((a4 + 0x5)) = 0x0;
+            }
+        }
+        if (((unsigned char)(*(signed char *)((a4 + 0x6))) == 1) && (t9 = *(signed char *)((a4 + 0x5)), t9 == 0)) {
+            t10 = *(int *)((a4 + 0x10));
+            t13 = ((int (*)(int, int))((*(int *)(((*(int *)((t10 + 0x0))) + 0x24)))))(t10, 0x1);
+            if ((int)t13 < (int)0x20) {
+                FUN_0c22bece(a4, 0x0);
+                *(unsigned char *)((a4 + 0x6)) = 0x0;
+            }
+        }
+        t20 = mwRnaGetPlaySw(a4);
+        if (t20 == 1) {
+            FUN_0c22bcdc(a4);
+        }
+        t24 = ((int (*)(int))(mwRnaGetTransSw))(a4);
+        if (t24 == 1) {
+            if ((*(signed char *)((a4 + 0x5))) == 0) {
+                t27 = FUN_0c22c05a(a4);
+                if ((int)t27 <= 0) {
+                } else {
+                    *(unsigned char *)((a4 + 0x5)) = 0x1;
+                }
+            }
+        } else {
+            t32 = mwRnaGetPlaySw(a4);
+            if ((t32 == 1) && (t33 = *(int *)((a4 + 0x30)), t34 = *(int *)((a4 + 0x5C)), (int)t34 < (int)t33)) {
+                if ((unsigned char)(*(signed char *)((a4 + 0x5))) == 1) {
+                    t38 = FUN_0c22bb3e(a4);
+                    if (t38 == 1) {
+                        mwlRnaAddFlshPos(a4);
+                        *(unsigned char *)((a4 + 0x5)) = 0x0;
+                    }
+                }
+                if ((*(signed char *)((a4 + 0x5))) == 0) {
+                    t47 = FUN_0c22c262(a4);
+                    if ((int)t47 > 0) {
+                        *(unsigned char *)((a4 + 0x5)) = 0x1;
+                    }
+                }
+            }
+        }
+        if (((unsigned char)(*(signed char *)((a4 + 0x1))) == 5) && ((t62 = *(int *)((a4 + 0x3C)), t63 = *(int *)((a4 + 0x48)), (int)t62 >= (int)t63) && (t64 = *(signed char *)((a4 + 0x7)), t64 == 0))) {
+            FUN_0c22bfa2(a4, 0x1);
+            *(unsigned int *)((a4 + 0x48)) = 0x7FFFFFFF;
+        }
+        t69 = *(signed char *)((a4 + 0x1));
+        if (((unsigned char)t69 == 6) && (t70 = *(int *)((a4 + 0x3C)), t70 == 0)) {
+            FUN_0c22bfa2(a4, 0x0);
+            return FUN_0c22ba6a();
+        }
+        return (unsigned char)t69;
+    }
+    return t0;
+}
+
+int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
+{
+    int t0;
+    int t2;
+    int t4;
+    int t5;
+    int t17;
+    int t18;
+    int t19;
+    int t23;
+    int t24;
+    int t1;
+
+    t0 = *(int *)0xC2393C4;
+    if ((t0 != 0) && (t1 = *(short *)((t0 + 0x38)), t1 == 1)) {
+        return 0x0;
+    }
+    if ((a5 & 31) != 0) {
+        return 0xFFFFFFF2;
+    }
+    t2 = FUN_0c2212c0();
+    t4 = ((int (*)(void))((*(int *)((t2 + 0x0)))))();
+    t5 = _builtin_get_imask();
+    _builtin_set_imask(0xF);
+    *(unsigned int *)0xC2393C4 = a5;
+    *(unsigned short *)((a5 + 0x38)) = 0x0;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x20)) = 0x0;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x0)) = a4;
+    *(unsigned int *)((((*(int *)0xC2393C4) + 0x10) + 0x0)) = (gdFsCreateDirhn(a7, a6));
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0xC)) = t2;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x1C)) = 0x0;
+    *(unsigned short *)(((*(int *)0xC2393C4) + 0x3A)) = 0x0;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x24)) = 0x0;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x34)) = 0x0;
+    *(unsigned int *)(((*(int *)0xC2393C4) + 0x3C)) = a8;
+    t17 = 0x3A;
+    t18 = ((*(int *)0xC2393C4) + 0x1080);
+    t19 = 0x0;
+    for (;;) {
+        if ((int)t19 >= (int)((*(int *)(((*(int *)0xC2393C4) + 0x0))) + 0x1)) {
+            break;
+        }
+        t17 = 0x4C;
+        *(unsigned short *)((t18 + t17)) = 0x0;
+        t19 = (t19 + 0x1);
+        *(unsigned int *)((t18 + 0x0)) = (*(int *)0xC2393C4);
+        t18 = (t18 + 0x54);
+    }
+    t23 = *(int *)0xC2393C4;
+    *(unsigned int *)((t23 + 0x14)) = (0x1080 + t23);
+    t24 = *(int *)0xC2393C4;
+    *(unsigned int *)((t24 + 0x18)) = ((0x1080 + t24) + 0x54);
+    gdFsCreateHnG((*(int *)(((*(int *)0xC2393C4) + 0x14))), 0x0, 0x0, 0x0);
+    _builtin_set_imask(((unsigned int)(((t5 & 0xF) << 2) << 2) >> 4));
+    return ((int (*)(void))(0xC20F2C4))();
+}
+
+int FUN_0c0350a4(int a4, int a5, int a6, int a7)
+{
+    int t12;
+    int t16;
+    int t28;
+    int t38;
+    int stk[14];
+
+    int R0;
+    int R1;
+    int R2;
+    int R3;
+    int R4;
+    int R5;
+    int R6;
+    int R7;
+    int R12;
+    int R13;
+    int R14;
+    float F3;
+    float F4;
+    float F5;
+    int T_;
+    R4 = a4;
+    R5 = a5;
+    R6 = a6;
+    R7 = a7;
+    L_C0350A4:;
+    *(unsigned int *)(((int)stk + 20)) = R5;
+    *(unsigned int *)(((int)stk + 24)) = R6;
+    *(unsigned int *)(((int)stk + 16)) = R7;
+    R14 = (R4);
+    if (((*(int *)((R4 + 0x508))) != 0)) goto L_C0350F2;
+    goto L_C0350BE;
+    L_C0350BE:;
+    if (((*(int *)((R14 + 0x50C))) == 0)) goto L_C035100;
+    goto L_C0350C6;
+    L_C0350C6:;
+    R0 = (0x510);
+    R4 = (0xC246FF0);
+    if (((*(int *)(((((*(int *)((R14 + 0x510))) << 2) + 0xC247030) + 0x0))) != 0)) goto L_C0350E2;
+    goto L_C0350DA;
+    L_C0350DA:;
+    *(unsigned int *)((R14 + 0x50C)) = 0x0;
+    goto L_C035100;
+    L_C035100:;
+    R0 = (0x0);
+    goto L_C0351B0;
+    L_C0351B0:;
+    return R0;
+    L_C0350E2:;
+    t12 = *(int *)(((((*(int *)((R14 + R0))) << 2) + R4) + 0x0));
+    R13 = ((t12 + 0x30));
+    R4 = (t12);
+    goto L_C035104;
+    L_C035104:;
+    t16 = (FUN_0c0349ea(R14, (((int)stk + 4) + 0x8), (((int)stk + 4) + 0x4))) == 0;
+    R12 = (0x8000);
+    if (t16) goto L_C035150;
+    goto L_C035116;
+    L_C035116:;
+    FUN_0c0a68ec(((int)stk + 4), ((*(float *)((R14 + 0x30))) - (*(float *)((R13 + 0x0)))), ((*(float *)((R14 + 0x38))) - (*(float *)((R13 + 0x8)))));
+    goto L_C035170;
+    L_C035170:;
+    if (((*(int *)(((int)stk + 16))) == 0)) goto L_C0351A2;
+    goto L_C035176;
+    L_C035176:;
+    R0 = (0x4D8);
+    if (((int)(*(int *)((R14 + 0x4D8))) <= (int)R12)) goto L_C035192;
+    goto L_C03517E;
+    L_C03517E:;
+    t28 = *(int *)((R14 + R0));
+    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + ((((int)((unsigned int)((int)((unsigned int)t28 + (unsigned int)0x0)) + ((((int)0x0 > (int)t28)) ? 1u : 0u))) >> 1) + R12));
+    goto L_C0351A2;
+    L_C0351A2:;
+    FUN_0c0546fe(R14, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 20))), (*(int *)(((int)stk + 24))));
+    R0 = (0x1);
+    goto L_C0351B0;
+    L_C035192:;
+    t38 = *(int *)((R14 + R0));
+    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + (((int)((unsigned int)((int)((unsigned int)t38 + (unsigned int)0x0)) + ((((int)0x0 > (int)t38)) ? 1u : 0u))) >> 1));
+    goto L_C0351A2;
+    L_C035150:;
+    FUN_0c042b60(R14, (((int)stk + 4) + 0x18), (*(int *)(((int)stk + 8))));
+    FUN_0c0a68ec(((int)stk + 4), (*(float *)(((int)stk + 28))), (*(float *)(((int)stk + 36))));
+    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + R12);
+    goto L_C035170;
+    L_C0350F2:;
+    if (((*(int *)((R14 + 0x514))) == 0)) goto L_C035100;
+    goto L_C0350FA;
+    L_C0350FA:;
+    R13 = ((0x518 + R14));
+    goto L_C035104;
+}
+
+int vmsfs_diskfree(int a4, int a5)
+{
+    int t5;
+    int t9;
+    int t14;
+    int t28;
+    int t37;
+    int t39;
+    int t47;
+    int stk[9];
+
+    int R0;
+    int R2;
+    int R3;
+    int R4;
+    int R5;
+    int R6;
+    int R10;
+    int R11;
+    int R12;
+    int R13;
+    int R14;
+    int T_;
+    R4 = a4;
+    R5 = a5;
+    L_C225C34:;
+    *(unsigned int *)(((int)stk + 4)) = R5;
+    *(unsigned int *)(((int)stk + 8)) = (R4 * 0x148);
+    R12 = (((R4 * 0x148) + 0xC956768));
+    R14 = (R4);
+    if (((*(signed char *)((((R4 * 0x148) + 0xC956768) + 0x2))) == 0)) goto L_C225C80;
+    goto L_C225C58;
+    L_C225C58:;
+    t5 = (vmsio_isready(R14)) != 0;
+    if (t5) goto L_C225C6A;
+    goto L_C225C62;
+    L_C225C62:;
+    vmsfs_unmount(R14);
+    goto L_C225C80;
+    L_C225C80:;
+    R0 = (0xFFFFFF01);
+    goto L_C225D3A;
+    L_C225D3A:;
+    return R0;
+    L_C225C6A:;
+    t9 = (vmsio_ismount(R14)) == 0;
+    if (t9) goto L_C225C80;
+    goto L_C225C74;
+    L_C225C74:;
+    if (((*(signed char *)((((*(int *)(((int)stk + 8))) + 0xC956768) + 0x8))) != 0)) goto L_C225C86;
+    goto L_C225C80;
+    L_C225C86:;
+    t14 = (int)(buIsFormat(R14)) >= 0;
+    if (t14) goto L_C225C96;
+    goto L_C225C90;
+    L_C225C90:;
+    R0 = (0xFFFFFF03);
+    goto L_C225D3A;
+    L_C225C96:;
+    R10 = (0x0);
+    R13 = (0xFFFC);
+    R4 = (0x0);
+    if (((*(int *)(((int)stk + 4))) != 1)) goto L_C225CE4;
+    goto L_C225CA2;
+    L_C225CA2:;
+    R11 = (R4);
+    goto L_C225CB6;
+    L_C225CB6:;
+    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x38))))) goto L_C225CA6;
+    goto L_C225CBE;
+    L_C225CBE:;
+    R10 = (R11);
+    goto L_C225D38;
+    L_C225D38:;
+    R0 = (R10);
+    goto L_C225D3A;
+    L_C225CA6:;
+    t28 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
+    if (t28) goto L_C225CBE;
+    goto L_C225CB4;
+    L_C225CB4:;
+    R11 = ((R11 + 0x1));
+    goto L_C225CB6;
+    L_C225CE4:;
+    if (((*(int *)0xC237C10) == 0)) goto L_C225D1A;
+    goto L_C225CEC;
+    L_C225CEC:;
+    R11 = (R4);
+    goto L_C225D0E;
+    L_C225D0E:;
+    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x30))))) goto L_C225CF0;
+    goto L_C225D16;
+    L_C225D16:;
+    goto L_C225D38;
+    L_C225CF0:;
+    t37 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
+    if (t37) goto L_C225D0C;
+    goto L_C225CFE;
+    L_C225CFE:;
+    t39 = (int)(check_fat_xross(R14, R11)) < 0;
+    if (t39) goto L_C225D0C;
+    goto L_C225D0A;
+    L_C225D0A:;
+    R10 = ((R10 + 0x1));
+    goto L_C225D0C;
+    L_C225D0C:;
+    R11 = ((R11 + 0x1));
+    goto L_C225D0E;
+    L_C225D1A:;
+    R11 = (R4);
+    goto L_C225D30;
+    L_C225D30:;
+    if (((int)R11 < (int)(*(int *)(((*(int *)((R12 + 0x1C))) + 0x30))))) goto L_C225D1E;
+    goto L_C225D38;
+    L_C225D1E:;
+    t47 = (unsigned short)(get_fat(R14, R11, R6)) != R13;
+    R11 = ((R11 + 0x1));
+    if (t47) goto L_C225D30;
+    goto L_C225D2E;
+    L_C225D2E:;
+    R10 = ((R10 + 0x1));
+    goto L_C225D30;
+}
+
 int vmsfs_fopen(int a4, int a5, int a6)
 {
     int t6;
@@ -1715,88 +1611,199 @@ int vmsfs_fopen(int a4, int a5, int a6)
     goto L_C225F1C;
 }
 
-int FUN_0c22c3b8(int a4, int a5, int a6, int a7)
+int vmsfs_getinfo(int a4, int a5)
+{
+    int t48;
+    int t1;
+    int t3;
+    int t38;
+    int t6;
+    int t33;
+    int t7;
+    int t11;
+    int t15;
+    int t16;
+    int t17;
+    int t43;
+    int t4;
+    int t5;
+    int t9;
+    int t10;
+    int stk[9];
+
+    *(unsigned int *)(((int)stk + 4)) = (a4 * 0x148);
+    t48 = 0xFFFFFF01;
+    if ((*(signed char *)((((a4 * 0x148) + 0xC956768) + 0x2))) != 0) {
+        t1 = vmsio_isready(a4);
+        if (t1 == 0) {
+            vmsfs_unmount(a4);
+            t43 = 0xFFFFFF01;
+        } else {
+            t3 = vmsio_ismount(a4);
+            t38 = 0xFFFFFF01;
+            if ((t3 != 0) && (t4 = *(int *)(((int)stk + 4)), t5 = *(signed char *)(((t4 + 0xC956768) + 0x8)), t5 != 0)) {
+                t6 = buIsFormat(a4);
+                t33 = 0xFFFFFF03;
+                if ((int)t6 >= 0) {
+                    t7 = t6;
+                    t11 = 0x0;
+                    for (;;) {
+                        if ((int)t11 >= (int)0x20) {
+                            break;
+                        }
+                        t10 = t11;
+                        t7 = (*(int *)((((a4 * 0x148) + 0xC956768) + 0x20)));
+                        t10 = (t10 + 0x10);
+                        t9 = a5;
+                        t9 = (t9 + t11);
+                        t11 = (t11 + 0x1);
+                        *(unsigned char *)((t9 + 0x0)) = ((*(signed char *)((t10 + t7))));
+                    }
+                    t15 = t10;
+                    t16 = (((int)stk + 4) + 0x4);
+                    t17 = ((*(int *)((((a4 * 0x148) + 0xC956768) + 0x20))) + 0x30);
+                    for (;;) {
+                        if ((unsigned int)t16 >= (unsigned int)((((int)stk + 4) + 0x4) + 0x8)) {
+                            break;
+                        }
+                        t15 = (*(signed char *)((t17 + 0x0)));
+                        t17 = (t17 + 0x1);
+                        *(unsigned char *)((t16 + 0x0)) = t15;
+                        t16 = (t16 + 0x1);
+                    }
+                    get_vmstime((a5 + 0x30), (((int)stk + 4) + 0x4));
+                    *(unsigned short *)((a5 + 0x20)) = ((*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x0))) + 0x1);
+                    *(unsigned short *)((a5 + 0x22)) = (*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x30)));
+                    *(unsigned short *)(((0x26 + a5) + 0x0)) = (vmsfs_diskfree(a4, 0x0));
+                    *(unsigned short *)((a5 + 0x24)) = (*(short *)((a5 + 0x26)));
+                    *(unsigned short *)((a5 + 0x28)) = (*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x38)));
+                    *(unsigned short *)(((0x2A + a5) + 0x0)) = (vmsfs_diskfree(a4, 0x1));
+                    *(unsigned short *)((a5 + 0x2C)) = ((*(int *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x1C))) + 0x2C))) + 0x1);
+                    *(unsigned short *)((a5 + 0x2E)) = (unsigned char)(*(signed char *)(((*(int *)((((a4 * 0x148) + 0xC956768) + 0x20))) + 0x4E)));
+                    t33 = 0x0;
+                }
+                t38 = t33;
+            }
+            t43 = t38;
+        }
+        t48 = t43;
+    }
+    return t48;
+}
+
+float FUN_0c08640a(int a4, int a5, int a6, int a7, int a8, int a9)
 {
     int t0;
     int t1;
-    int t3;
-    int t10;
-    int t13;
-    int t20;
-    int t24;
-    int t27;
-    int t32;
-    int t38;
-    int t47;
-    int t69;
     int t2;
+    int t3;
+    int t4;
+    int t5;
+    int t6;
+    int t7;
+    int t8;
     int t9;
+    int t10;
+    int t11;
+    int t12;
+    int t13;
+    int t14;
+    int t15;
+    int t16;
+    int t17;
+    int t29;
+    int t30;
+    int t31;
+    int t32;
     int t33;
     int t34;
-    int t62;
-    int t63;
-    int t64;
-    int t70;
+    int t37;
+    int t35;
+    float u39;
+    float u53;
 
-    t0 = *(int *)((a4 + 0x98));
-    if (t0 != 1) {
-        t1 = ((int (*)(int, int, int, int))(mwRnaGetTransSw))(a4, a5, a6, a7);
-        if ((t1 == 1) && (t2 = *(signed char *)((a4 + 0x5)), (unsigned char)t2 == 1)) {
-            t3 = FUN_0c22bb3e(a4);
-            if (t3 == 1) {
-                FUN_0c22bd70(a4);
-                *(unsigned char *)((a4 + 0x5)) = 0x0;
-            }
-        }
-        if (((unsigned char)(*(signed char *)((a4 + 0x6))) == 1) && (t9 = *(signed char *)((a4 + 0x5)), t9 == 0)) {
-            t10 = *(int *)((a4 + 0x10));
-            t13 = ((int (*)(int, int))((*(int *)(((*(int *)((t10 + 0x0))) + 0x24)))))(t10, 0x1);
-            if ((int)t13 < (int)0x20) {
-                FUN_0c22bece(a4, 0x0);
-                *(unsigned char *)((a4 + 0x6)) = 0x0;
-            }
-        }
-        t20 = mwRnaGetPlaySw(a4);
-        if (t20 == 1) {
-            FUN_0c22bcdc(a4);
-        }
-        t24 = ((int (*)(int))(mwRnaGetTransSw))(a4);
-        if (t24 == 1) {
-            if ((*(signed char *)((a4 + 0x5))) == 0) {
-                t27 = FUN_0c22c05a(a4);
-                if ((int)t27 <= 0) {
-                } else {
-                    *(unsigned char *)((a4 + 0x5)) = 0x1;
+    if (a9 != 0) {
+        if (a9 == 1) {
+            t0 = 0x18;
+            t1 = (a6 + 0x6);
+            t2 = (a4 + 0x6);
+            t3 = (a5 + 0x6);
+            for (;;) {
+                t4 = *(short *)((t3 + 0x0));
+                t3 = (t3 + 0x2);
+                t0 = (t0 - 0x1);
+                t5 = *(short *)((t2 + 0x0));
+                t2 = (t2 + 0x2);
+                *(unsigned short *)((t1 + 0x0)) = (t4 - (((int)(-a7) >= 0) ? (((short)(t4 - t5) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t4 - t5) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t4 - t5) * a8) >> 31))));
+                t1 = (t1 + 0x2);
+                if (t0 == 0) {
+                    break;
                 }
             }
         } else {
-            t32 = mwRnaGetPlaySw(a4);
-            if ((t32 == 1) && (t33 = *(int *)((a4 + 0x30)), t34 = *(int *)((a4 + 0x5C)), (int)t34 < (int)t33)) {
-                if ((unsigned char)(*(signed char *)((a4 + 0x5))) == 1) {
-                    t38 = FUN_0c22bb3e(a4);
-                    if (t38 == 1) {
-                        mwlRnaAddFlshPos(a4);
-                        *(unsigned char *)((a4 + 0x5)) = 0x0;
-                    }
+            t6 = a4;
+            t7 = a5;
+            t8 = a6;
+            t9 = 0x2;
+            for (;;) {
+                t10 = *(short *)((t7 + 0x0));
+                t7 = (t7 + 0x2);
+                t9 = (t9 - 0x1);
+                t11 = *(short *)((t6 + 0x0));
+                t6 = (t6 + 0x2);
+                *(unsigned short *)((t8 + 0x0)) = (t10 - (((int)(-a7) >= 0) ? (((short)(t10 - t11) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t10 - t11) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t10 - t11) * a8) >> 31))));
+                t8 = (t8 + 0x2);
+                if (t9 == 0) {
+                    break;
                 }
-                if ((*(signed char *)((a4 + 0x5))) == 0) {
-                    t47 = FUN_0c22c262(a4);
-                    if ((int)t47 > 0) {
-                        *(unsigned char *)((a4 + 0x5)) = 0x1;
-                    }
+            }
+            t12 = (a4 + 0x36);
+            t13 = 0x15;
+            t14 = (a5 + 0x36);
+            t15 = (a6 + 0x36);
+            for (;;) {
+                t16 = *(short *)((t14 + 0x0));
+                t14 = (t14 + 0x2);
+                t13 = (t13 - 0x1);
+                t17 = *(short *)((t12 + 0x0));
+                t12 = (t12 + 0x2);
+                *(unsigned short *)((t15 + 0x0)) = (t16 - (((int)(-a7) >= 0) ? (((short)(t16 - t17) * a8) << ((-a7) & 31)) : ((-(int)(-a7) & 31) ? ((int)((short)(t16 - t17) * a8) >> (-(int)(-a7) & 31)) : ((int)((short)(t16 - t17) * a8) >> 31))));
+                t15 = (t15 + 0x2);
+                if (t13 == 0) {
+                    break;
                 }
             }
         }
-        if (((unsigned char)(*(signed char *)((a4 + 0x1))) == 5) && ((t62 = *(int *)((a4 + 0x3C)), t63 = *(int *)((a4 + 0x48)), (int)t62 >= (int)t63) && (t64 = *(signed char *)((a4 + 0x7)), t64 == 0))) {
-            FUN_0c22bfa2(a4, 0x1);
-            *(unsigned int *)((a4 + 0x48)) = 0x7FFFFFFF;
+    } else {
+        t29 = 0x30;
+        t30 = a6;
+        t31 = a5;
+        t32 = a4;
+        for (;;) {
+            t33 = *(short *)((t31 + 0x0));
+            t34 = *(short *)((t32 + 0x0));
+            t37 = (((unsigned short)t34 - (unsigned short)t33) - 0x10000);
+            if ((int)((unsigned short)t34 - (unsigned short)t33) > (int)0x8000) {
+            } else {
+                t35 = ((unsigned short)t34 - (unsigned short)t33);
+                if ((int)((unsigned short)t34 - (unsigned short)t33) < (int)0xFFFF8000) {
+                    t35 = (((unsigned short)t34 - (unsigned short)t33) + 0x10000);
+                }
+                t37 = t35;
+            }
+            t31 = (t31 + 0x2);
+            t29 = (t29 - 0x1);
+            t32 = (t32 + 0x2);
+            u39 = ((float)(t37 + (unsigned short)t33) * ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31)))));
+            u39 = u39 + (1.0f - ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31))))) * (float)(unsigned short)t33;
+            *(unsigned short *)((t30 + 0x0)) = (int)u39;
+            t30 = (t30 + 0x2);
+            if (t29 == 0) {
+                break;
+            }
         }
-        t69 = *(signed char *)((a4 + 0x1));
-        if (((unsigned char)t69 == 6) && (t70 = *(int *)((a4 + 0x3C)), t70 == 0)) {
-            FUN_0c22bfa2(a4, 0x0);
-            return FUN_0c22ba6a();
-        }
-        return (unsigned char)t69;
+        u53 = (1.0f - ((float)a8 / (float)(((int)a7 >= 0) ? (0x1 << (a7 & 31)) : ((-(int)a7 & 31) ? ((int)0x1 >> (-(int)a7 & 31)) : ((int)0x1 >> 31)))));
     }
-    return t0;
+    return u53;
 }
+

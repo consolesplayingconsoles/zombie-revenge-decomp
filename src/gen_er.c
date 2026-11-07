@@ -205,54 +205,6 @@ float FUN_0c0bdb70(int a4, int a5, int a6)
     goto L_C0BDC42;
 }
 
-int FUN_0c0b736e(int a4, int a5)
-{
-    int t0;
-    int t1;
-    int t2;
-    int t12;
-    float u22;
-    float u28;
-    int t11;
-
-    if ((int)0x9 > (int)a5) {
-        t0 = 0xC24FB14;
-        t1 = 0x9;
-        t2 = 0xC24FB2C;
-        for (;;) {
-            t2 = (t2 - 12);
-            { struct mv3 { int w[3]; }; *(struct mv3 *)(t2) = *(struct mv3 *)(t0); }
-            t1 = (t1 - 1);
-            t0 = (t0 - 12);
-            if ((int)t1 <= (int)a5) {
-                break;
-            }
-        }
-    }
-    if (((*(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x0))) != 0) && (t11 = *(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)), (int)(unsigned short)t11 >= (int)a5)) {
-        t12 = *(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2));
-        *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)) = (t12 + 0x1);
-        if ((int)(unsigned short)(t12 + 0x1) > (int)0x9) {
-            *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)) = 0x0;
-            *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x0)) = 0x0;
-        }
-    }
-    *(unsigned int *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x0)) = (*(int *)(((a4 << 2) + 0xC247584)));
-    *(unsigned short *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0xA)) = (*(int *)(((a4 << 2) + 0xC23EDC0)));
-    u22 = *(float *)0xC0B74CC;
-    u28 = 0.0f;
-    if ((int)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0))) > 0) {
-        u28 = (((float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4))) / (float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0)))) * u22);
-    }
-    *(float *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x4)) = u28;
-    if (u28 > u22) {
-        *(float *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x4)) = u22;
-    }
-    *(unsigned short *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x8)) = (FUN_0c0b719e(a4, ((((a4 << 2) << 2) << 1) + 0xC247544)));
-    *(unsigned short *)((((a4 << 2) + 0xC24FB2C) + 0x0)) = 0x1;
-    *(unsigned short *)((((a4 << 2) + 0xC24FB2C) + 0x2)) = a5;
-    return a5;
-}
 
 void FUN_0c0810c6(int a4)
 {
@@ -846,3 +798,53 @@ void FUN_0c0cee6a(int a4, float f4)
         *(unsigned int *)0xC943164 = ((*(int *)0xC943164) + 0x1);
     }
 }
+
+int FUN_0c0b736e(int a4, int a5)
+{
+    int t0;
+    int t1;
+    int t2;
+    int t12;
+    float u22;
+    float u28;
+    int t11;
+
+    if ((int)0x9 > (int)a5) {
+        t0 = 0xC24FB14;
+        t1 = 0x9;
+        t2 = 0xC24FB2C;
+        for (;;) {
+            t2 = (t2 - 12);
+            { struct mv3 { int w[3]; }; *(struct mv3 *)(t2) = *(struct mv3 *)(t0); }
+            t1 = (t1 - 1);
+            t0 = (t0 - 12);
+            if ((int)t1 <= (int)a5) {
+                break;
+            }
+        }
+    }
+    if (((*(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x0))) != 0) && (t11 = *(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)), (int)(unsigned short)t11 >= (int)a5)) {
+        t12 = *(short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2));
+        *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)) = (t12 + 0x1);
+        if ((int)(unsigned short)(t12 + 0x1) > (int)0x9) {
+            *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x2)) = 0x0;
+            *(unsigned short *)(((((0x1 & (a4 + 0x1)) << 2) + 0xC24FB2C) + 0x0)) = 0x0;
+        }
+    }
+    *(unsigned int *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x0)) = (*(int *)(((a4 << 2) + 0xC247584)));
+    *(unsigned short *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0xA)) = (*(int *)(((a4 << 2) + 0xC23EDC0)));
+    u22 = *(float *)0xC0B74CC;
+    u28 = 0.0f;
+    if ((int)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0))) > 0) {
+        u28 = (((float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4))) / (float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0)))) * u22);
+    }
+    *(float *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x4)) = u28;
+    if (u28 > u22) {
+        *(float *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x4)) = u22;
+    }
+    *(unsigned short *)((((((a5 << 1) + a5) << 2) + 0xC24FAB4) + 0x8)) = (FUN_0c0b719e(a4, ((((a4 << 2) << 2) << 1) + 0xC247544)));
+    *(unsigned short *)((((a4 << 2) + 0xC24FB2C) + 0x0)) = 0x1;
+    *(unsigned short *)((((a4 << 2) + 0xC24FB2C) + 0x2)) = a5;
+    return a5;
+}
+

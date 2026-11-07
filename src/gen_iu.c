@@ -67,72 +67,6 @@ int FUN_0c0c69f6(int a4, int a5, int a6, int a7)
     return FUN_0c0e16c0((*(int *)((a4 + 0x30))));
 }
 
-int FUN_0c02691c(int a4, float f4)
-{
-    int stk[13];
-    register float u0;
-    register float u23;
-    register float u24;
-    register float u6;
-    register float u19;
-    register float u20;
-    register float u16;
-    register float u13;
-    register int t36;
-    register int t37;
-    register int t40;
-    register int t45;
-
-    u0 = *(float *)0xC026A48;
-    u23 = 0.0f;
-    u24 = u0;
-    if ((*(int *)((a4 + 0x500))) == 2) {
-    } else {
-        u6 = *(float *)0xC026A4C;
-        u19 = 0.0f;
-        u20 = u6;
-        if ((*(int *)((a4 + 0x500))) == 3) {
-        } else {
-            u16 = u0;
-            if ((*(int *)((a4 + 0x500))) == 4) {
-            } else {
-                u13 = 0.0f;
-                if ((*(int *)((a4 + 0x500))) == 5) {
-                    u13 = u6;
-                }
-                u16 = u13;
-            }
-            u19 = u16;
-            u20 = 0.0f;
-        }
-        u23 = u19;
-        u24 = u20;
-    }
-    nlPushMatrix(0x0);
-    nlUnitMatrix();
-    nlRotateAY((*(short *)((a4 + 0x6E))));
-    *(float *)(((int)stk + 20)) = u23;
-    *(float *)(((int)stk + 24)) = 0.0f;
-    *(float *)(((int)stk + 28)) = u24;
-    FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((0x4B0 + a4) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)((((int)stk + 4) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((0x4B8 + a4) + 0x0)) = (*(float *)(((int)stk + 16)));
-    nlPopMatrix(0x1);
-    t36 = FUN_0c0350a4(a4, 0x200, 0x1, 0x0);
-    if (t36 != 0) {
-        t37 = *(int *)((a4 + 0x3AC));
-        *(unsigned int *)((a4 + 0x3AC)) = (t37 + 0x1);
-        t40 = 0x3B0;
-        if ((int)(t37 + 0x1) > (int)(*(int *)((a4 + 0x3B0)))) {
-            t40 = (FUN_0c02a19a(a4));
-        }
-        t45 = t40;
-    } else {
-        t45 = (FUN_0c02a19a(a4));
-    }
-    return t45;
-}
 
 int FUN_0c06b544(int a4)
 {
@@ -213,3 +147,71 @@ int FUN_0c0ab990(int a4, float f4)
     *(unsigned int *)0xC247CF8 = 0x1;
     return nlGetMatrix(((*(int *)0xC247CB0) + 0x2AC));
 }
+
+int FUN_0c02691c(int a4, float f4)
+{
+    int stk[13];
+    register float u0;
+    register float u23;
+    register float u24;
+    register float u6;
+    register float u19;
+    register float u20;
+    register float u16;
+    register float u13;
+    register int t36;
+    register int t37;
+    register int t40;
+    register int t45;
+
+    u0 = *(float *)0xC026A48;
+    u23 = 0.0f;
+    u24 = u0;
+    if ((*(int *)((a4 + 0x500))) == 2) {
+    } else {
+        u6 = *(float *)0xC026A4C;
+        u19 = 0.0f;
+        u20 = u6;
+        if ((*(int *)((a4 + 0x500))) == 3) {
+        } else {
+            u16 = u0;
+            if ((*(int *)((a4 + 0x500))) == 4) {
+            } else {
+                u13 = 0.0f;
+                if ((*(int *)((a4 + 0x500))) == 5) {
+                    u13 = u6;
+                }
+                u16 = u13;
+            }
+            u19 = u16;
+            u20 = 0.0f;
+        }
+        u23 = u19;
+        u24 = u20;
+    }
+    nlPushMatrix(0x0);
+    nlUnitMatrix();
+    nlRotateAY((*(short *)((a4 + 0x6E))));
+    *(float *)(((int)stk + 20)) = u23;
+    *(float *)(((int)stk + 24)) = 0.0f;
+    *(float *)(((int)stk + 28)) = u24;
+    FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
+    *(float *)(((0x4B0 + a4) + 0x0)) = (*(float *)(((int)stk + 8)));
+    *(float *)((((int)stk + 4) + 0x0)) = (*(float *)(((int)stk + 12)));
+    *(float *)(((0x4B8 + a4) + 0x0)) = (*(float *)(((int)stk + 16)));
+    nlPopMatrix(0x1);
+    t36 = FUN_0c0350a4(a4, 0x200, 0x1, 0x0);
+    if (t36 != 0) {
+        t37 = *(int *)((a4 + 0x3AC));
+        *(unsigned int *)((a4 + 0x3AC)) = (t37 + 0x1);
+        t40 = 0x3B0;
+        if ((int)(t37 + 0x1) > (int)(*(int *)((a4 + 0x3B0)))) {
+            t40 = (FUN_0c02a19a(a4));
+        }
+        t45 = t40;
+    } else {
+        t45 = (FUN_0c02a19a(a4));
+    }
+    return t45;
+}
+

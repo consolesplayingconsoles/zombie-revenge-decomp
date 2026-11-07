@@ -279,44 +279,6 @@ float FUN_0c01ec10(int a4, float f4, float f5, float f6)
     return (*(float *)(((int)stk + 16)));
 }
 
-int FUN_0c037e44(int a4)
-{
-    float u0;
-    float u1;
-    float u10;
-    float u17;
-    float u23;
-
-    u0 = *(float *)((a4 + 0x224));
-    u1 = *(float *)((a4 + 0x3EC));
-    if ((u0 > (-(u1 * (1.0f + 1.0f)))) && ((u1 * (1.0f + 1.0f)) > u0)) {
-        if ((*(float *)0xC037FA4) > (*(float *)((a4 + 0x34)))) {
-            if (0.0f > (*(float *)((a4 + 0x224)))) {
-                u10 = (*(float *)((a4 + 0x224)));
-                u10 *= -0.25f;
-                *(float *)((a4 + 0x224)) = u10;
-            }
-            return 0x0;
-        }
-        *(float *)((a4 + 0x3EC)) = 0.0f;
-        *(float *)((a4 + 0x220)) = 0.0f;
-        *(float *)((a4 + 0x224)) = 0.0f;
-        *(float *)((a4 + 0x228)) = 0.0f;
-        *(unsigned int *)((a4 + 0x3DC)) = (*(int *)((a4 + 0x3E0)));
-        FUN_0c037acc(a4);
-        u17 = *(float *)0xC037FAC;
-        *(unsigned int *)((a4 + 0x22C)) = (int)((float)(*(int *)((a4 + 0x22C))) * u17);
-        *(unsigned int *)((a4 + 0x230)) = (int)((float)(*(int *)((a4 + 0x230))) * u17);
-        *(unsigned int *)((a4 + 0x234)) = (int)((float)(*(int *)((a4 + 0x234))) * u17);
-        return 0x1;
-    }
-    if (0.0f > (*(float *)((a4 + 0x224)))) {
-        u23 = (*(float *)((a4 + 0x224)));
-        u23 *= -0.25f;
-        *(float *)((a4 + 0x224)) = u23;
-    }
-    return 0x0;
-}
 
 int FUN_0c037ee8(int a4)
 {

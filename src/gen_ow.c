@@ -1,0 +1,134 @@
+/* Straight-line functions with calls and guards (batch gen_ow): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c01cdc2(int, int);
+int FUN_0c01e7e8(int, int, int);
+float FUN_0c01f172(int);
+int FUN_0c054c8a(int);
+int FUN_0c05a98a(int);
+int FUN_0c090bf0(int);
+int FUN_0c0a7714(int, int, float, float, float);
+int FUN_0c0c465c(int);
+int FUN_0c0cc054(int, int);
+int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0db470(int, int);
+int FUN_0c0dcca0(int);
+extern int FUN_0c0e19f2();
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAX(int);
+int nlRotateAY(int);
+int nlRotateAZ(int);
+int nlUnitMatrix(void);
+int FUN_0c05f3e0(int a4, int a5, int a6, int a7);
+
+int FUN_0c05f3e0(int a4, int a5, int a6, int a7)
+{
+    int stk[12];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register float F0;
+    register float F2;
+    register float F3;
+    register float F4;
+    register float F5;
+    register float F6;
+    register int T_;
+    register int FPUL_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    v0_3 = a4;
+    v0_0 = a5;
+    v0_4 = a6;
+    v0_5 = *(int *)((((*(int *)((v0_3 + 0xCC))) << 2) + 0xC2475D4));
+    v0_6 = (0xC2475D4);
+    v0_1 = (v0_5);
+    v0_2 = (v0_3);
+    if ((v0_5 != 0)) goto L_C05F402;
+    v0_6 = ((((int (*)(int, int, int, int))(FUN_0c0e19f2))(v0_3, v0_0, v0_4, a7)));
+    L_C05F402:;
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_2 + 0x3C)) = *(struct mv3 *)((v0_2 + 0x30)); }
+    *(unsigned short *)((v0_2 + 0x6C)) = ((*(short *)((v0_2 + 0x6C))) - 0x2000);
+    *(float *)((v0_2 + 0x64)) = ((*(float *)((v0_2 + 0x64))) + -0.00999999978f);
+    *(float *)((v0_2 + 0x54)) = (*(float *)((v0_2 + 0x60)));
+    *(float *)((v0_2 + 0x58)) = (*(float *)((v0_2 + 0x64)));
+    *(float *)((v0_2 + 0x5C)) = (*(float *)((v0_2 + 0x68)));
+    FPUL_ = (0xBC23D70A);
+    if ((((*(int *)0xC23A258) & 7) != 0)) goto L_C05F45A;
+    FUN_0c0cc3f8(0x12DA9, v0_0, v0_4, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+    FUN_0c0cc054((*(int *)((v0_2 + 0x1C4))), 0xE);
+    L_C05F45A:;
+    if (((*(int *)((v0_2 + 0xD8))) == 0)) goto L_C05F494;
+    FUN_0c0cc3f8(0x52CA9, v0_0, v0_4, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+    FUN_0c0cc054((*(int *)((v0_2 + 0xBC))), 0xF);
+    FUN_0c05a98a(v0_2);
+    if (((*(int *)((v0_2 + 0xD8))) != 1)) goto L_C05F48E;
+    FUN_0c054c8a(v0_2);
+    FUN_0c090bf0(v0_2);
+    L_C05F48E:;
+    *(unsigned int *)((v0_2 + 0xD8)) = 0x0;
+    L_C05F494:;
+    FUN_0c01e7e8(v0_2, 0xA7D, (*(int *)((v0_2 + 0xBC))));
+    v0_5 = (0xC0DC890);
+    v0_5 = (0xC0DC6E0);
+    if (!(((*(int *)((v0_2 + 0xA8))) != 0))) goto L_C05F614;
+    if (((int)(*(int *)((v0_2 + 0xAC))) <= (int)0x16)) goto L_C05F4BE;
+    goto L_C05F602;
+    L_C05F614:;
+    v0_5 = !((FUN_0c01f172(v0_2)) > ((*(float *)((v0_2 + 0x34))) - (*(float *)((v0_1 + 0x258)))));
+    if (v0_5) goto L_C05F642;
+    L_C05F628:;
+    *(unsigned int *)((v0_1 + 0x260)) = 0x1;
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_1 + 0x30)) = *(struct mv3 *)((v0_2 + 0x30)); }
+    v0_3 = ((int (*)(int, int, int))(FUN_0c0e19f2))(v0_3, v0_0, v0_4);
+    L_C05F642:;
+    *(float *)((v0_2 + 0x30)) = ((*(float *)((v0_2 + 0x30))) + (*(float *)(((0x54 + v0_2) + 0x0))));
+    *(float *)((v0_2 + 0x34)) = ((*(float *)((v0_2 + 0x34))) + (*(float *)(((0x58 + v0_2) + 0x0))));
+    *(float *)((v0_2 + 0x38)) = ((*(float *)((v0_2 + 0x38))) + (*(float *)(((0x5C + v0_2) + 0x0))));
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_1 + 0x30)) = *(struct mv3 *)((v0_2 + 0x30)); }
+    FUN_0c01cdc2(v0_2, v0_0);
+    nlPushMatrix(0x0);
+    FUN_0c0dcca0((v0_2 + 0x30));
+    nlRotateAZ((*(short *)((v0_2 + 0x70))));
+    nlRotateAY((*(short *)((v0_2 + 0x6E))));
+    nlRotateAX((*(short *)((v0_2 + 0x6C))));
+    FUN_0c0c465c((*(int *)((v0_2 + 0x220))));
+    return (nlPopMatrix(0x1));
+    L_C05F602:;
+    if (((*(int *)((v0_2 + 0xA8))) == 0)) goto L_C05F614;
+    if (((int)(*(int *)((v0_2 + 0xAC))) <= (int)0x2)) goto L_C05F628;
+    goto L_C05F614;
+    L_C05F4BE:;
+    nlPushMatrix(0x0);
+    FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (*(float *)((v0_2 + 0x98))), (*(float *)((v0_2 + 0x9C))), (*(float *)((v0_2 + 0xA0))));
+    nlUnitMatrix();
+    nlRotateAX((-(*(int *)(((int)stk + 4)))));
+    nlRotateAY((-(*(int *)(((int)stk + 8)))));
+    *(float *)(((int)stk + 36)) = (*(float *)((v0_2 + 0x60)));
+    *(float *)(((int)stk + 40)) = (*(float *)((v0_2 + 0x64)));
+    *(float *)(((int)stk + 44)) = (*(float *)((v0_2 + 0x68)));
+    FUN_0c0db470((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x14));
+    *(float *)(((((int)stk + 4) + 0x10) + 0x0)) = (*(float *)(((int)stk + 24)));
+    *(float *)(((((int)stk + 4) + 0xC) + 0x0)) = (*(float *)(((int)stk + 28)));
+    *(float *)(((((int)stk + 4) + 0x8) + 0x0)) = (*(float *)(((int)stk + 32)));
+    nlUnitMatrix();
+    nlRotateAY((*(int *)(((int)stk + 8))));
+    nlRotateAX((*(int *)(((int)stk + 4))));
+    *(float *)(((int)stk + 36)) = ((*(float *)(((int)stk + 20))) * 0.199999988f);
+    *(float *)(((int)stk + 40)) = ((*(float *)(((int)stk + 16))) * 0.199999988f);
+    *(float *)(((int)stk + 44)) = (-((*(float *)(((int)stk + 12))) * 0.199999988f));
+    FUN_0c0db470((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x14));
+    *(float *)(((v0_2 + 0x54) + 0x0)) = (*(float *)(((int)stk + 24)));
+    *(float *)(((v0_2 + 0x58) + 0x0)) = (*(float *)(((int)stk + 28)));
+    *(float *)(((v0_2 + 0x5C) + 0x0)) = (*(float *)(((int)stk + 32)));
+    nlPopMatrix(0x1);
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_2 + 0x60)) = *(struct mv3 *)((v0_2 + 0x54)); }
+    goto L_C05F602;
+}

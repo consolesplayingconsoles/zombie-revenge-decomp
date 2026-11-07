@@ -2,6 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 typedef struct { int w[4]; } Stk4;
+typedef struct { int w[1]; } Stk1;
 int FUN_0c0df4c0(int);
 int FUN_0c0df4f0(int);
 int FUN_0c22bcdc(int);
@@ -21,7 +22,7 @@ int kmSetFogTable(int a4);
 int mwRnaGetTime(int a4, int a5, int a6, int a7);
 int kmiResetTA(void);
 int FUN_0c0df490(void);
-int kmSetBorderColor(Stk4 s);
+int kmSetBorderColor(Stk1 s);
 int kmSetFogVertexColor(Stk4 s);
 int kmSetFogTableColor(Stk4 s);
 int kmiWriteRegister(int a4, int a5);
@@ -188,44 +189,6 @@ int kmiFBinit(void)
     return t48;
 }
 
-int FUN_0c21efbc(int a4, int a5, int a6)
-{
-    int t1;
-    int t3;
-    int t5;
-    int t7;
-    int t8;
-    int t9;
-    int t10;
-    int t11;
-    int t12;
-    int t14;
-    int t16;
-    int t24;
-    int t21;
-    int t22;
-
-    t1 = ((int (*)(int, int, int))(kmiWriteRegister))(0x124, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952774))), a6);
-    t3 = ((int (*)(int, int))(kmiWriteRegister))(0x12C, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952778))));
-    t5 = ((int (*)(int, int))(kmiWriteRegister))(0x128, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952780))));
-    t7 = ((int (*)(int, int))(kmiWriteRegister))(0x130, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952784))));
-    t8 = ((int (*)(int, int))(kmiWriteRegister))(0x13C, ((((a5 - 1) << 16) + a4) - 1));
-    t9 = *(int *)0xC9527AC;
-    t10 = *(int *)0xC9527B0;
-    t11 = *(int *)0xC9527B4;
-    t12 = *(int *)0xC9527B8;
-    if ((*(int *)0xC9522FC) == 6) {
-        t14 = *(int *)0xC9527A8;
-        t21 = ((((((t9 & 0x3) | (((t10 & 0x3) << 2) << 2)) | ((t11 & 0x3) << 8)) | ((((t12 & 0x3) << 8) << 2) << 2)) | ((((0x1 & t14) << 16) << 2) << 2)) | ((0x3 & (*(int *)0xC9527BC)) << 16));
-        t22 = ((((0x1 & t14) << 16) << 2) << 2);
-    } else {
-        t16 = *(int *)0xC9527A8;
-        t21 = (((((t9 & 0x3) | (((t10 & 0x3) << 2) << 2)) | ((t11 & 0x3) << 8)) | ((((t12 & 0x3) << 8) << 2) << 2)) | ((0x1 & t16) << 16));
-        t22 = ((0x1 & t16) << 16);
-    }
-    t24 = ((int (*)(int, int, int))(kmiWriteRegister))(0x140, t21, t22);
-    return (((int (*)(int, int))(kmiWriteRegister))(0x144, 0x80000000));
-}
 
 int kmfSetVirticalFilterMode(int a4)
 {
@@ -383,7 +346,7 @@ int FUN_0c0df490(void)
     return FUN_0c0df4f0(0x1);
 }
 
-int kmSetBorderColor(Stk4 s)
+int kmSetBorderColor(Stk1 s)
 {
     kmiWriteRegister(0x40, s.w[0]);
     return 0x0;
@@ -411,3 +374,43 @@ int thunk_kmSetCheapShadowMode(void)
 {
     return kmSetCheapShadowMode();
 }
+
+int FUN_0c21efbc(int a4, int a5, int a6)
+{
+    int t1;
+    int t3;
+    int t5;
+    int t7;
+    int t8;
+    int t9;
+    int t10;
+    int t11;
+    int t12;
+    int t14;
+    int t16;
+    int t24;
+    int t21;
+    int t22;
+
+    t1 = ((int (*)(int, int, int))(kmiWriteRegister))(0x124, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952774))), a6);
+    t3 = ((int (*)(int, int))(kmiWriteRegister))(0x12C, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952778))));
+    t5 = ((int (*)(int, int))(kmiWriteRegister))(0x128, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952780))));
+    t7 = ((int (*)(int, int))(kmiWriteRegister))(0x130, (*(int *)(((((a6 << 2) << 2) << 1) + 0xC952784))));
+    t8 = ((int (*)(int, int))(kmiWriteRegister))(0x13C, ((((a5 - 1) << 16) + a4) - 1));
+    t9 = *(int *)0xC9527AC;
+    t10 = *(int *)0xC9527B0;
+    t11 = *(int *)0xC9527B4;
+    t12 = *(int *)0xC9527B8;
+    if ((*(int *)0xC9522FC) == 6) {
+        t14 = *(int *)0xC9527A8;
+        t21 = ((((((t9 & 0x3) | (((t10 & 0x3) << 2) << 2)) | ((t11 & 0x3) << 8)) | ((((t12 & 0x3) << 8) << 2) << 2)) | ((((0x1 & t14) << 16) << 2) << 2)) | ((0x3 & (*(int *)0xC9527BC)) << 16));
+        t22 = ((((0x1 & t14) << 16) << 2) << 2);
+    } else {
+        t16 = *(int *)0xC9527A8;
+        t21 = (((((t9 & 0x3) | (((t10 & 0x3) << 2) << 2)) | ((t11 & 0x3) << 8)) | ((((t12 & 0x3) << 8) << 2) << 2)) | ((0x1 & t16) << 16));
+        t22 = ((0x1 & t16) << 16);
+    }
+    t24 = ((int (*)(int, int, int))(kmiWriteRegister))(0x140, t21, t22);
+    return (((int (*)(int, int))(kmiWriteRegister))(0x144, 0x80000000));
+}
+

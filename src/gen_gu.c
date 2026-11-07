@@ -15,42 +15,6 @@ int nlRotateAY(int);
 float FUN_0c0685b6(void);
 int FUN_0c044580(int a4);
 
-float FUN_0c0685b6(void)
-{
-    float u0;
-    float u1;
-    float u2;
-    int t3;
-    int t4;
-    int t6;
-    float u12;
-    int stk[15];
-
-    { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 4)) = *(struct mv3 *)(0xC0FA2C4); }
-    u0 = *(float *)0xC0686E4;
-    u1 = *(float *)0xC0686E8;
-    u2 = *(float *)0xC0686EC;
-    t3 = 0xA;
-    t4 = 0xC0FA2D8;
-    for (;;) {
-        t6 = FUN_0c0e19aa(0xC06867A, 0xB4, (*(int *)0xC23ECE4), *(Stk3 *)(((int)stk + 4)));
-        { struct mv3 { int w[3]; }; *(struct mv3 *)((t6 + 0x30)) = *(struct mv3 *)(t4); }
-        FUN_0c0e6248();
-        *(unsigned int *)(((0x78 + t6) + 0x0)) = (unsigned short)(*(short *)((t4 + 0x12)));
-        *(unsigned int *)((t6 + 0x80)) = 0x0;
-        *(float *)((t6 + 0x48)) = (((*(float *)((t6 + 0x30))) - (*(float *)((((int)stk + 4) + 0x0)))) * u2);
-        t3 = (t3 - 0x1);
-        u12 = u1;
-        u12 = u12 + u0 * (float)((FUN_0c0da2e0()) & 0x7);
-        *(float *)((t6 + 0x4C)) = u12;
-        *(float *)((t6 + 0x50)) = (((*(float *)((t6 + 0x38))) - (*(float *)((((int)stk + 4) + 0x8)))) * u2);
-        t4 = (t4 + 0x14);
-        if (t3 == 0) {
-            break;
-        }
-    }
-    return u0;
-}
 
 int FUN_0c044580(int a4)
 {
