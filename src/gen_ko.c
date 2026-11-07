@@ -13,6 +13,14 @@ int FUN_0c047e9c(int, int, int, int);
 int FUN_0c047ff6(int);
 int FUN_0c048594(int a4, int a5, int a6, int a7);
 int FUN_0c0254a8(int a4, int a5, int a6, int a7);
+struct o20C_uint { char p[0x20C]; unsigned int v; };
+struct o210_uint { char p[0x210]; unsigned int v; };
+struct o2CC_uint { char p[0x2CC]; unsigned int v; };
+struct o330_int { char p[0x330]; int v; };
+struct o4C8_uint { char p[0x4C8]; unsigned int v; };
+struct o4F8_int { char p[0x4F8]; int v; };
+struct o4F8_uint { char p[0x4F8]; unsigned int v; };
+
 
 int FUN_0c048594(int a4, int a5, int a6, int a7)
 {
@@ -54,13 +62,13 @@ int FUN_0c048594(int a4, int a5, int a6, int a7)
 
 int FUN_0c0254a8(int a4, int a5, int a6, int a7)
 {
-    *(unsigned int *)((a4 + 0x4C8)) = 0x3;
-    if ((*(int *)((a4 + 0x330))) == 0) {
+    (((struct o4C8_uint *)(a4))->v) = 0x3;
+    if (((((struct o330_int *)(a4))->v)) == 0) {
         return FUN_0c02a19a(a4, a5, a6, a7);
     }
-    *(unsigned int *)((a4 + 0x20C)) = 0x200000;
-    *(unsigned int *)((a4 + 0x210)) = 0x38;
-    *(unsigned int *)((a4 + 0x4F8)) = ((*(int *)((a4 + 0x4F8))) + 0x1);
-    *(unsigned int *)((a4 + 0x2CC)) = 0x1;
+    (((struct o20C_uint *)(a4))->v) = 0x200000;
+    (((struct o210_uint *)(a4))->v) = 0x38;
+    (((struct o4F8_uint *)(a4))->v) = (((((struct o4F8_int *)(a4))->v)) + 0x1);
+    (((struct o2CC_uint *)(a4))->v) = 0x1;
     return 0x2CC;
 }

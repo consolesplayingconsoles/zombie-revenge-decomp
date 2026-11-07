@@ -1,49 +1,67 @@
 /* Straight-line functions with calls and guards (batch gen_da): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c056234(int, int);
-int _quick_odd_mvn(int, int, int, int);
-void FUN_0c056118(int a4, int a5, int a6, int a7);
+int FUN_0c0dbda0(int);
+int FUN_0c0dcc70(float, float, float);
+int nlRotateAY(int, float, float);
+int nlRotateAZ(int, float, float);
+int FUN_0c09eec4(int a4, int a5, int a6);
 
-void FUN_0c056118(int a4, int a5, int a6, int a7)
+int FUN_0c09eec4(int a4, int a5, int a6)
 {
-    int t0;
-    int t2;
-    int t16;
+    int stk[2];
+    int t3;
 
-    t0 = *(int *)((((0x34C + a4) + ((a7 & 0x1) << 2)) + 0x0));
-    t2 = *(int *)((((t0 << 2) + 0xC2475D4) + 0x0));
-    if ((int)(*(int *)((((0x344 + a4) + (a7 << 2)) + 0x0))) > (int)0x3) {
-        if ((*(int *)((((a7 << 2) + (0x344 + a4)) + 0x0))) != 0) {
-            *(unsigned int *)(((0xC247604 + (t0 << 2)) + 0x0)) = a5;
-            if (a5 != 3) {
-                if ((a5 == 7) || (a5 == 6)) {
-                    *(unsigned int *)((t2 + 0x25C)) = 0x0;
-                }
-            } else {
-                _quick_odd_mvn(((a7 << 2) + (0x344 + a4)), a5, a6, 0xC2475D4);
-                *(unsigned int *)((t2 + 0x224)) = ((*(int *)((t2 + 0x224))) - 1);
-                *(unsigned int *)((t2 + 0x23C)) = 0x0;
-                FUN_0c056234(a4, t2);
-            }
-            t16 = *(int *)((((0x344 + a4) + ((a7 & 0x1) << 2)) + 0x0));
-            *(unsigned int *)((a4 + 0x338)) = ((*(int *)((a4 + 0x338))) & (~(((int)t16 >= 0) ? (0x1 << (t16 & 31)) : ((-(int)t16 & 31) ? ((int)0x1 >> (-(int)t16 & 31)) : ((int)0x1 >> 31)))));
-            *(unsigned int *)((a4 + 0x334)) = 0x0;
-            *(unsigned int *)((((0x344 + a4) + ((a7 & 0x1) << 2)) + 0x0)) = 0x0;
-            *(unsigned int *)((((0x34C + a4) + ((a7 & 0x1) << 2)) + 0x0)) = 0x0;
-            *(unsigned int *)((a4 + 0x39C)) = ((*(int *)((a4 + 0x39C))) & (~(*(int *)(((0x22C + t2) + 0x0)))));
-            if (a7 != 0) {
-                *(unsigned int *)((a4 + 0x340)) = (*(int *)((a4 + 0x344)));
-                if ((*(int *)((a4 + 0x330))) == 3) {
-                    *(unsigned int *)((a4 + 0x330)) = 0x1;
-                } else {
-                    *(unsigned int *)((a4 + 0x330)) = 0x0;
-                }
-            } else {
-                *(unsigned int *)((a4 + 0x340)) = 0x0;
-                *(unsigned int *)((a4 + 0x330)) = 0x0;
-            }
-        }
-    }
+    register int R0;
+    register int R1;
+    register int R2;
+    register int R3;
+    register float F2;
+    register float F4;
+    register float F5;
+    register int T_;
+    register int FPUL_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register float w0_0;
+    register float w0_1;
+    v0_1 = a4;
+    v0_3 = a5;
+    v0_0 = a6;
+    *(unsigned int *)(((int)stk + 4)) = v0_1;
+    t3 = *(int *)(((((((v0_3 << 1) + v0_3) << 2) << 1) + 0xC10C7A8) + 0x14));
+    FUN_0c0dbda0(((*(int *)((v0_1 + 0x3E4))) + ((((*(int *)(((((((v0_3 << 1) + v0_3) << 2) << 1) + 0xC10C7A8) + 0x0))) << 2) << 2) << 2)));
+    v0_1 = (0xC0DCC70);
+    v0_2 = ((0x40 & t3));
+    v0_1 = (t3);
+    v0_3 = ((((((v0_3 << 1) + v0_3) << 2) << 1) + 0xC10C7A8));
+    w0_0 = (0.0f);
+    w0_1 = (((float)v0_0 * 1.32999992f));
+    if (((0x20 & t3) == 0)) goto L_C09EF56;
+    FUN_0c0dcc70(w0_0, ((*(float *)((v0_3 + 0x8))) * (*(float *)((v0_3 + 0x4)))), w0_0);
+    w0_0 = (32768.0f);
+    if ((v0_2 == 0)) goto L_C09EF38;
+    w0_0 = (((w0_1 / (*(float *)((v0_3 + 0x8)))) * w0_0));
+    L_C09EF4A:;
+    nlRotateAZ((int)w0_0, F4, F5);
+    L_C09EF98:;
+    return nlRotateAY(0x4000, F4, F5);
+    L_C09EF38:;
+    w0_0 = ((((-((w0_1 / (*(float *)((v0_3 + 0x8)))) * w0_0))) + w0_0));
+    goto L_C09EF4A;
+    L_C09EF56:;
+    F4 = (w0_0);
+    if ((v0_2 == 0)) goto L_C09EF6E;
+    F5 = ((((*(float *)((v0_3 + 0x8))) - w0_1) * (*(float *)((v0_3 + 0x4)))));
+    w0_0 = (w0_0);
+    L_C09EF78:;
+    FUN_0c0dcc70(F4, F5, w0_0);
+    if (((v0_1 & 0x10) == 0)) goto L_C09EF98;
+    return nlRotateAY(0xC000, F4, F5);
+    L_C09EF6E:;
+    F5 = ((w0_1 * (*(float *)((v0_3 + 0x4)))));
+    w0_0 = (w0_0);
+    goto L_C09EF78;
 }
-

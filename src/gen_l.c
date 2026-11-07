@@ -653,16 +653,11 @@ int buExit(void)
 int FUN_0c0f2fa8(Stk4 s)
 {
     int t4;
-    int stk[13];
 
-    stk[1] = s.w[0];
-    stk[2] = s.w[1];
-    stk[3] = s.w[2];
-    stk[4] = s.w[3];
-    if (((*(int *)(((((int)stk + 4) + 0x4) + 0x0))) & 0x7FF00000) != 0x7FF00000) {
+    if (((*(int *)(((int)&s + 4))) & 0x7FF00000) != 0x7FF00000) {
         return 0x0;
     }
-    if ((((*(int *)(((((int)stk + 4) + 0x4) + 0x0))) & 0xFFFFF) == 0) && (t4 = *(int *)((((((int)stk + 4) + 0x4) - 4) + 0x0)), t4 == 0)) {
+    if ((((*(int *)(((int)&s + 4))) & 0xFFFFF) == 0) && (t4 = *(int *)(((((int)&s + 4) - 4) + 0x0)), t4 == 0)) {
         return 0x2;
     }
     return 0x1;

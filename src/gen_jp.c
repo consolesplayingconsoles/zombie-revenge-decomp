@@ -12,6 +12,12 @@ int FUN_0c027736(int a4, int a5, int a6, int a7);
 int FUN_0c028efc(int a4, int a5, int a6, int a7);
 int FUN_0c02e9a8(int a4);
 int FUN_0c02e9ce(int a4);
+struct o2C4_uint { char p[0x2C4]; unsigned int v; };
+struct o2CC_uint { char p[0x2CC]; unsigned int v; };
+struct o4C8_uint { char p[0x4C8]; unsigned int v; };
+struct o4F8_int { char p[0x4F8]; int v; };
+struct o4F8_uint { char p[0x4F8]; unsigned int v; };
+
 
 int FUN_0c082118(int a4, int a5, int a6, int a7)
 {
@@ -39,19 +45,19 @@ int FUN_0c082118(int a4, int a5, int a6, int a7)
 
 int FUN_0c027736(int a4, int a5, int a6, int a7)
 {
-    *(unsigned int *)((a4 + 0x2C4)) = 0x2D5;
-    *(unsigned int *)((a4 + 0x2CC)) = 0x1;
-    *(unsigned int *)((a4 + 0x4C8)) = 0x3;
-    *(unsigned int *)((a4 + 0x4F8)) = ((*(int *)((a4 + 0x4F8))) + 0x1);
+    (((struct o2C4_uint *)(a4))->v) = 0x2D5;
+    (((struct o2CC_uint *)(a4))->v) = 0x1;
+    (((struct o4C8_uint *)(a4))->v) = 0x3;
+    (((struct o4F8_uint *)(a4))->v) = (((((struct o4F8_int *)(a4))->v)) + 0x1);
     return FUN_0c02286c(a4, 0x28, a6, a7, 0.0f, (*(float *)0xC0277B8));
 }
 
 int FUN_0c028efc(int a4, int a5, int a6, int a7)
 {
-    *(unsigned int *)((a4 + 0x2C4)) = 0x2D5;
-    *(unsigned int *)((a4 + 0x2CC)) = 0x1;
-    *(unsigned int *)((a4 + 0x4C8)) = 0x3;
-    *(unsigned int *)((a4 + 0x4F8)) = ((*(int *)((a4 + 0x4F8))) + 0x1);
+    (((struct o2C4_uint *)(a4))->v) = 0x2D5;
+    (((struct o2CC_uint *)(a4))->v) = 0x1;
+    (((struct o4C8_uint *)(a4))->v) = 0x3;
+    (((struct o4F8_uint *)(a4))->v) = (((((struct o4F8_int *)(a4))->v)) + 0x1);
     return FUN_0c02286c(a4, 0x28, a6, a7, 0.0f, (*(float *)0xC028FAC));
 }
 

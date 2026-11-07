@@ -432,63 +432,6 @@ int vmsfs_init_work_normal(int a4, int a5, int a6)
     goto L_C225086;
 }
 
-int FUN_0c0d9450(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-    register int t1;
-    register float u0;
-
-    t0 = *(int *)0xC943E34;
-    t1 = (((t0 + a5) + a6) + a7);
-    if ((*(int *)0xC943E30) == 3) {
-        t1 = (((((t0 + a5) + a6) + a7) + a4) + ((((t0 + a5) + a6) + a7) + a4));
-    }
-    *(unsigned int *)0xC943DF0 = t1;
-    u0 = *(float *)0xC0D95FC;
-    if ((*(int *)0xC943E30) == 3) {
-        t0 = (int)((unsigned int)((int)((unsigned int)t1 + (unsigned int)0x0)) + ((((int)0x0 > (int)t1)) ? 1u : 0u));
-        *(float *)0xC943DF4 = (((float)a4 * u0) / (float)(t0 >> 1));
-        *(float *)0xC943DF8 = (((float)a5 * u0) / (float)(t0 >> 1));
-        *(float *)0xC943DFC = (((float)a6 * u0) / (float)(t0 >> 1));
-        *(float *)0xC943E00 = (((float)a7 * u0) / (float)(t0 >> 1));
-        *(float *)0xC943E04 = (((float)(*(int *)0xC943E34) * u0) / (float)(t0 >> 1));
-    } else {
-        t0 = *(int *)0xC943E24;
-        if (t0 == 32) {
-            *(float *)0xC943DF4 = 0.0f;
-            *(float *)0xC943DF8 = (((float)a5 * u0) / (float)t1);
-            *(float *)0xC943DFC = (((float)a6 * u0) / (float)t1);
-            *(float *)0xC943E00 = (((float)a7 * u0) / (float)t1);
-            *(float *)0xC943E04 = (((float)(*(int *)0xC943E34) * u0) / (float)t1);
-        } else {
-            if (t0 == 34) {
-                *(float *)0xC943DF4 = (((float)a4 * u0) / (float)t1);
-                *(float *)0xC943DF8 = (((float)a5 * u0) / (float)t1);
-                *(float *)0xC943DFC = 0.0f;
-                *(float *)0xC943E00 = (((float)a7 * u0) / (float)t1);
-                *(float *)0xC943E04 = (((float)(*(int *)0xC943E34) * u0) / (float)t1);
-            } else {
-                if ((*(int *)0xC943E24) == 36) {
-                    *(float *)0xC943DF4 = (((float)a4 * u0) / (float)t1);
-                    *(float *)0xC943DF8 = (((float)a5 * u0) / (float)t1);
-                    *(float *)0xC943DFC = (((float)a6 * u0) / (float)t1);
-                    *(float *)0xC943E00 = (((float)a7 * u0) / (float)t1);
-                    *(float *)0xC943E04 = 0.0f;
-                }
-            }
-        }
-    }
-    t0 = kmSetSystemConfiguration(0xC943DC8);
-    if (t0 != 0) {
-        _builtin_trapa(65);
-    }
-    *(unsigned int *)(((*(int *)0xC944454) + 0x0)) = 0x800000;
-    if ((*(int *)0xC943EAC) == 0) {
-        FUN_0c0d8590();
-        *(unsigned int *)0xC943EAC = 0x1;
-    }
-    return t0;
-}
 
 int adxt_RcvrReplay(int a4, int a5)
 {

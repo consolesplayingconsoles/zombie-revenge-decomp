@@ -5,6 +5,14 @@ int FUN_0c9e2780(int);
 extern float _builtin_fipr(float *, float *);
 extern void _builtin_ftrv(float *, float *);
 extern void _builtin_prefetch(void *);
+struct o0_float { float v; };
+struct o0_int { int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o4_float { char p[0x4]; float v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o8_float { char p[0x8]; float v; };
+struct oC_int { char p[0xC]; int v; };
+
 static float iaFsrra(float x)
 {
     return _builtin_fsrra(x);
@@ -56,9 +64,9 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     v0_4 = a7;
     v0_2 = v0_2;
     *(int *)((int)stk + 4) = v0_2;
-    v0_1 = (((*(int *)0xC990EAC) + 0xC));
+    v0_1 = ((((((struct o0_int *)0xC990EAC)->v)) + 0xC));
     v0_2 = (v0_2);
-    v0_3 = (((*(int *)0xC990EB8) + 0x8));
+    v0_3 = ((((((struct oC_int *)0xC990EAC)->v)) + 0x8));
     v0_4 = ((FUN_0c9e2780((v0_4 + 0x10))));
     L_C9DF248:;
     w0_0 = *(float *)((v0_0 + 0x0));
@@ -71,9 +79,9 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     v0_0 = (((((((v0_0 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4));
     w0_0 = (w0_0);
     w0_1 = (w0_1);
-    w0_2 = ((*(float *)0xC94D56C));
-    w0_5 = ((*(float *)0xC94D570));
-    w0_3 = ((*(float *)0xC94D574));
+    w0_2 = (((((struct o0_float *)0xC94D56C)->v)));
+    w0_5 = (((((struct o4_float *)0xC94D56C)->v)));
+    w0_3 = (((((struct o8_float *)0xC94D56C)->v)));
     w0_4 = (w0_4);
     w0_7 = (1.0f);
     if (!((v0_4 != 0))) goto L_C9DF360;
@@ -133,8 +141,8 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     goto L_C9DF248;
     L_C9DF3CE:;
     v0_3 = ((v0_3 + 0x10));
-    *(unsigned int *)0xC990EB0 = (v0_1 - 12);
-    *(unsigned int *)0xC990EBC = (v0_3 - 8);
+    (((struct o4_uint *)0xC990EAC)->v) = (v0_1 - 12);
+    (((struct o10_uint *)0xC990EAC)->v) = (v0_3 - 8);
     return 0xC990EB0;
     L_C9DF33E:;
     v0_7 = (0xB0);

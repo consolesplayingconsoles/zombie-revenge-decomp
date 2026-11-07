@@ -19,19 +19,24 @@ int FUN_0c0d8730(int a4, int a5)
     register int t29;
     register int t20;
     register int t24;
+    int R1004;
+    int R1008;
 
-    *(unsigned int *)(((int)stk + 4)) = 0xC943DC0;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
+
+    R1004 = 0xC943DC0;
     if (a4 == 16) {
         t0 = 0x0;
         t1 = 0x0;
         t2 = 0xFFFFFFFF;
         for (;;) {
-            *(unsigned int *)(((int)stk + 8)) = ((t1 << 1) + (*(int *)(((int)stk + 4))));
+            R1008 = ((t1 << 1) + (R1004));
             t5 = 0x1;
             t6 = 0x0;
             t7 = ((t1 << 2) << 2);
             for (;;) {
-                if (((*(short *)(((*(int *)(((int)stk + 8))) + 0x0))) & t5) == 0) {
+                if (((*(short *)(((R1008) + 0x0))) & t5) == 0) {
                     t12 = t0 == 0;
                     t0 = (t0 + 0x1);
                     if (t12) {
@@ -64,7 +69,7 @@ int FUN_0c0d8730(int a4, int a5)
         t20 = t2;
         t24 = t0;
     } else {
-        t14 = (*(int *)(((int)stk + 4)));
+        t14 = (R1004);
         t15 = 0x0;
         t16 = 0x0;
         for (;;) {

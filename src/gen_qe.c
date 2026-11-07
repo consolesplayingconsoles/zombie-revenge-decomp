@@ -19,6 +19,14 @@ int nlRotateAZ(int);
 int nlRotateV(int, int);
 int nlSubVector3op(int, int, int);
 int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12);
+struct o72_ushort { char p[0x72]; unsigned short v; };
+struct o74_float { char p[0x74]; float v; };
+struct oA2_short { char p[0xA2]; short v; };
+struct oA2_ushort { char p[0xA2]; unsigned short v; };
+struct oA4_uint { char p[0xA4]; unsigned int v; };
+struct oA8_short { char p[0xA8]; short v; };
+struct oA8_ushort { char p[0xA8]; unsigned short v; };
+
 
 int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12)
 {
@@ -29,18 +37,27 @@ int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     register int t31;
     register int t43;
     register int t44;
+    int R1004;
+    int R1008;
+    int R1012;
+    int R1016;
 
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    *(unsigned int *)(((int)stk + 16)) = a5;
-    *(unsigned int *)(((int)stk + 8)) = a6;
-    *(unsigned int *)(((int)stk + 12)) = a7;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
+    R1012 = *(int *)((int)stk + 12);
+    R1016 = *(int *)((int)stk + 16);
+
+    R1004 = a4;
+    R1016 = a5;
+    R1008 = a6;
+    R1012 = a7;
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x58)) = *(struct mv3 *)(0xC10101C); }
-    t3 = FUN_0c0e19aa(0xC07CE44, 0xAC, (*(int *)(((((*(int *)(((int)stk + 16))) << 2) + ((*(int *)(((int)stk + 4))) + 0x30)) + 0x0))));
+    t3 = FUN_0c0e19aa(0xC07CE44, 0xAC, (*(int *)(((((R1016) << 2) + ((R1004) + 0x30)) + 0x0))));
     FUN_0c0e19d0(t3);
-    *(unsigned short *)((t3 + 0x72)) = ((short)(a9 >> 0));
-    *(float *)((t3 + 0x74)) = 3.21943283f;
-    { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x4C)) = *(struct mv3 *)((*(int *)(((int)stk + 8)))); }
-    { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x40)) = *(struct mv3 *)((*(int *)(((int)stk + 12)))); }
+    (((struct o72_ushort *)(t3))->v) = ((short)(a9 >> 0));
+    (((struct o74_float *)(t3))->v) = 3.21943283f;
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x4C)) = *(struct mv3 *)((R1008)); }
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x40)) = *(struct mv3 *)((R1012)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x34)) = *(struct mv3 *)(a8); }
     nlSubVector3op((((int)stk + 4) + 0x1C), (((int)stk + 4) + 0x4C), (((int)stk + 4) + 0x40));
     nlAddVector3op((t3 + 0x78), (((int)stk + 4) + 0x4C), (((int)stk + 4) + 0x40));
@@ -64,7 +81,7 @@ int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     nlRotateAZ(t22);
     nlGetMatrix((t3 + 0x30));
     nlPopMatrix(0x1);
-    *(unsigned int *)((t3 + 0xA4)) = (0x176 + (*(int *)(((int)stk + 4))));
+    (((struct oA4_uint *)(t3))->v) = (0x176 + (R1004));
     if (a11 == 0) {
         *(unsigned short *)(((0xA2 + t3) + 0x0)) = ((FUN_0c0da2e0()) & 0x3F);
     } else {
@@ -76,17 +93,17 @@ int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
                 break;
             }
         }
-        *(unsigned short *)((t3 + 0xA2)) = ((*(short *)((t3 + 0xA2))) + 0x3F);
+        (((struct oA2_ushort *)(t3))->v) = (((((struct oA2_short *)(t3))->v)) + 0x3F);
     }
-    *(unsigned short *)((t3 + 0xA2)) = ((*(short *)((t3 + 0xA2))) + 0xF0);
+    (((struct oA2_ushort *)(t3))->v) = (((((struct oA2_short *)(t3))->v)) + 0xF0);
     FUN_0c0dd0a0((t3 + 0x78), (((int)stk + 4) + 0x28));
-    *(unsigned short *)((t3 + 0xA8)) = (int)((((*(float *)(((int)stk + 48))) + 1.0f) / (1.0f + 1.0f)) * 240.0f);
+    (((struct oA8_ushort *)(t3))->v) = (int)((((*(float *)(((int)stk + 48))) + 1.0f) / (1.0f + 1.0f)) * 240.0f);
     t43 = FUN_0c0da2e0();
     t44 = *(short *)(((0xA8 + t3) + 0x0));
     *(unsigned short *)(((0xA8 + t3) + 0x0)) = (t44 + ((t43 & 0x1F) - 8));
     if ((int)(short)(t44 + ((t43 & 0x1F) - 8)) > (int)0xF0) {
-        *(unsigned short *)((t3 + 0xA8)) = 0xF0;
+        (((struct oA8_ushort *)(t3))->v) = 0xF0;
     }
-    *(unsigned short *)((t3 + 0xA8)) = ((short)(*(short *)((t3 + 0xA8))) * (short)0xFFFFFFFF);
+    (((struct oA8_ushort *)(t3))->v) = ((short)((((struct oA8_short *)(t3))->v)) * (short)0xFFFFFFFF);
     return 0xA8;
 }

@@ -12,6 +12,10 @@ int nlRotateAY(int);
 int nlRotateAZ(int);
 int nlScale(float, float, float);
 int FUN_0c075d20(int a4, int a5, int a6, int a7);
+struct o3CC_short { char p[0x3CC]; short v; };
+struct o3CE_short { char p[0x3CE]; short v; };
+struct o90_float { char p[0x90]; float v; };
+
 
 int FUN_0c075d20(int a4, int a5, int a6, int a7)
 {
@@ -53,7 +57,7 @@ int FUN_0c075d20(int a4, int a5, int a6, int a7)
     v0_1 = a7;
     v0_2 = *(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC));
     FUN_0c0685a4(v0_6, v0_0, a6, v0_1);
-    *(float *)((v0_6 + 0x90)) = ((*(float *)((v0_6 + 0x90))) - 6.0f);
+    (((struct o90_float *)(v0_6))->v) = (((((struct o90_float *)(v0_6))->v)) - 6.0f);
     v0_7 = (0x90);
     v0_0 = (0xD);
     v0_1 = (0x47AE927);
@@ -61,7 +65,7 @@ int FUN_0c075d20(int a4, int a5, int a6, int a7)
     v0_3 = (v0_6);
     w0_0 = (3200.0f);
     FPUL_ = (0x40C00000);
-    if ((!(0.0f > (*(float *)((v0_6 + 0x90)))))) goto L_C075D70;
+    if ((!(0.0f > ((((struct o90_float *)(v0_6))->v))))) goto L_C075D70;
     *(float *)((v0_3 + v0_7)) = ((*(float *)((v0_3 + v0_7))) + w0_0);
     L_C075D70:;
     v0_4 = (0x0);
@@ -88,7 +92,7 @@ int FUN_0c075d20(int a4, int a5, int a6, int a7)
     w0_4 = w0_2;
     w0_4 = w0_4 + 0.781440735f * w0_5;
     *(float *)(((int)stk + 12)) = w0_4;
-    w0_5 = *(float *)((v0_3 + 0x90));
+    w0_5 = (((struct o90_float *)(v0_3))->v);
     *(float *)(((int)stk + 12)) = (w0_4 + w0_5);
     v0_10 = (((((((((v0_1 >> 1) | v0_6) ^ v0_0) >> 1) | v0_7) ^ (((((v0_1 >> 1) | v0_6) ^ v0_0) | v0_0) * v0_5)) >> 1) | v0_8) ^ (((((((v0_1 >> 1) | v0_6) ^ v0_0) | v0_0) * v0_5) | ((((((v0_1 >> 1) | v0_6) ^ v0_0) >> 1) | v0_7) ^ (((((v0_1 >> 1) | v0_6) ^ v0_0) | v0_0) * v0_5))) * v0_5));
     v0_11 = ((((((v0_1 >> 1) | v0_6) ^ v0_0) >> 1) | v0_7) ^ (((((v0_1 >> 1) | v0_6) ^ v0_0) | v0_0) * v0_5));
@@ -103,8 +107,8 @@ int FUN_0c075d20(int a4, int a5, int a6, int a7)
     *(float *)(((int)stk + 12)) = ((*(float *)(((int)stk + 12))) + -1600.0f);
     nlPushMatrix(0x0);
     FUN_0c0dcca0(((int)stk + 4));
-    nlRotateAY((*(short *)((v0_2 + 0x3CE))));
-    nlRotateAX((*(short *)((v0_2 + 0x3CC))));
+    nlRotateAY(((((struct o3CE_short *)(v0_2))->v)));
+    nlRotateAX(((((struct o3CC_short *)(v0_2))->v)));
     nlRotateAZ(v0_4);
     nlScale(w0_3, w0_3, w0_3);
     FUN_0c0de000(w0_3);

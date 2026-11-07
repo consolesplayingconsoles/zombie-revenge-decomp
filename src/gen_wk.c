@@ -12,6 +12,11 @@ int nlRotateAX(int);
 int nlRotateAY(int);
 int nlUnitMatrix(void);
 int FUN_0c03242c(int a4, float f4, float f5);
+struct o4_float { char p[0x4]; float v; };
+struct o49C_int { char p[0x49C]; int v; };
+struct o510_int { char p[0x510]; int v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 int FUN_0c03242c(int a4, float f4, float f5)
 {
@@ -34,17 +39,17 @@ int FUN_0c03242c(int a4, float f4, float f5)
     *(float *)(((int)stk + 12)) = f4;
     *(float *)(((int)stk + 16)) = f5;
     t42 = 0x0;
-    if ((*(int *)((0xC247030 + ((*(int *)((a4 + 0x510))) << 2)))) == 4) {
-        t2 = *(int *)((a4 + 0x510));
+    if ((*(int *)((0xC247030 + (((((struct o510_int *)(a4))->v)) << 2)))) == 4) {
+        t2 = (((struct o510_int *)(a4))->v);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x40)) = *(struct mv3 *)(((((((t2 << 1) + t2) << 2) << 2) << 2) + 0xC23F274)); }
         { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x34)) = *(struct mv3 *)((a4 + 0x30)); }
-        FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), ((*(float *)(((((int)stk + 4) + 0x40) + 0x0))) - (*(float *)(((((int)stk + 4) + 0x34) + 0x0)))), ((*(float *)(((((int)stk + 4) + 0x40) + 0x4))) - (*(float *)(((((int)stk + 4) + 0x34) + 0x4)))), ((*(float *)(((((int)stk + 4) + 0x40) + 0x8))) - (*(float *)(((((int)stk + 4) + 0x34) + 0x8)))));
+        FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), ((*(float *)(((((int)stk + 4) + 0x40) + 0x0))) - (*(float *)(((((int)stk + 4) + 0x34) + 0x0)))), (((((struct o4_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o4_float *)((((int)stk + 4) + 0x34)))->v))), (((((struct o8_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o8_float *)((((int)stk + 4) + 0x34)))->v))));
         u11 = *(float *)(((((int)stk + 4) + 0x40) + 0x0));
-        u12 = *(float *)(((((int)stk + 4) + 0x40) + 0x4));
-        u13 = *(float *)(((((int)stk + 4) + 0x34) + 0x4));
+        u12 = (((struct o4_float *)((((int)stk + 4) + 0x40)))->v);
+        u13 = (((struct o4_float *)((((int)stk + 4) + 0x34)))->v);
         u14 = *(float *)(((((int)stk + 4) + 0x34) + 0x0));
-        u15 = *(float *)(((((int)stk + 4) + 0x40) + 0x8));
-        u16 = *(float *)(((((int)stk + 4) + 0x34) + 0x8));
+        u15 = (((struct o8_float *)((((int)stk + 4) + 0x40)))->v);
+        u16 = (((struct o8_float *)((((int)stk + 4) + 0x34)))->v);
         u19 = ((u13 - u12) * (u13 - u12));
         u19 = u19 + ((u14 - u11)) * ((u14 - u11));
         u22 = u19;
@@ -66,7 +71,7 @@ int FUN_0c03242c(int a4, float f4, float f5)
         if (_builtin_sqrtf(u22) > (*(float *)(((int)stk + 16)))) {
             t37 = FUN_0c02a416(a4);
             t39 = 0x0;
-            if ((t37 == 0) && (t38 = *(int *)((a4 + 0x49C)), t38 != 3)) {
+            if ((t37 == 0) && (t38 = (((struct o49C_int *)(a4))->v), t38 != 3)) {
                 t39 = 0x1;
             }
             t40 = t39;

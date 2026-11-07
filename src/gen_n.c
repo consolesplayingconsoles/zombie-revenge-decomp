@@ -308,15 +308,10 @@ int ADXERR_CallErrFunc(Stk4 s)
     int t0;
     int t3;
     int t6;
-    int stk[15];
 
-    stk[3] = s.w[0];
-    stk[4] = s.w[1];
-    stk[5] = s.w[2];
-    stk[6] = s.w[3];
-    t0 = ((((int)stk + 4) + 0x8) + 0x4);
-    if ((0x3 & ((((int)stk + 4) + 0x8) + 0x4)) != 0) {
-        t0 = ((((int)stk + 4) + 0x8) + 0x8);
+    t0 = ((int)&s + 4);
+    if ((0x3 & ((int)&s + 4)) != 0) {
+        t0 = ((int)&s + 8);
     }
     t3 = *(int *)0xC239E60;
     t6 = (FUN_0c0edc20(0xC95CD88, s.w[0], t0));
@@ -355,15 +350,10 @@ int vmsfs_dpf(Stk4 s)
     int t0;
     int t3;
     int t5;
-    int stk[15];
 
-    stk[3] = s.w[0];
-    stk[4] = s.w[1];
-    stk[5] = s.w[2];
-    stk[6] = s.w[3];
-    t0 = ((((int)stk + 4) + 0x8) + 0x4);
-    if ((0x3 & ((((int)stk + 4) + 0x8) + 0x4)) != 0) {
-        t0 = ((((int)stk + 4) + 0x8) + 0x8);
+    t0 = ((int)&s + 4);
+    if ((0x3 & ((int)&s + 4)) != 0) {
+        t0 = ((int)&s + 8);
     }
     t3 = *(int *)0xC239CEC;
     t5 = (FUN_0c0edc20(0xC95C674, s.w[0], t0));

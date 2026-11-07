@@ -1,0 +1,90 @@
+/* Straight-line functions with calls and guards (batch gen_ada): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0da9a0(int, int, int, int);
+extern void _builtin_prefetch(void *);
+int FUN_0c0daf70(int a4);
+
+int FUN_0c0daf70(int a4)
+{
+    int stk[2];
+    int t6;
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R6;
+    register int R7;
+    register int R9;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    register int v0_8;
+    v0_1 = a4;
+    v0_2 = (v0_1);
+    v0_1 = (0xC944204);
+    if (((*(int *)0xC944218) == 0)) goto L_C0DAF90;
+    v0_5 = (0x0);
+    L_C0DAF92:;
+    *(unsigned int *)(((int)stk + 4)) = (v0_5 << 2);
+    t6 = *(int *)(((v0_5 << 2) + (*(int *)0xC952968)));
+    v0_3 = *(int *)0xC9441A8;
+    v0_5 = *(int *)0xC9441AC;
+    v0_0 = *(int *)0xC9441B0;
+    *(unsigned int *)0xFF000038 = ((unsigned int)((unsigned int)t6 >> 16) >> 8);
+    *(unsigned int *)0xFF00003C = ((unsigned int)((unsigned int)t6 >> 16) >> 8);
+    *(unsigned int *)((((0x3FFFFFF & t6) | 0xE0000000) + 0x0)) = (*(int *)((v0_1 + 0x0)));
+    *(unsigned int *)((((0x3FFFFFF & t6) | 0xE0000000) + 0x4)) = (*(int *)((v0_1 + 0x4)));
+    *(unsigned int *)((((0x3FFFFFF & t6) | 0xE0000000) + 0x8)) = (*(int *)((v0_1 + 0x8)));
+    *(unsigned int *)((((0x3FFFFFF & t6) | 0xE0000000) + 0xC)) = (*(int *)((v0_1 + 0xC)));
+    *(unsigned int *)((((0x3FFFFFF & t6) | 0xE0000000) + 0x10)) = (*(int *)((v0_1 + 0x10)));
+    _builtin_prefetch((void *)((0x3FFFFFF & t6) | 0xE0000000));
+    v0_3 = ((v0_3 & 0x1));
+    v0_4 = (v0_0);
+    v0_0 = ((((0x3FFFFFF & t6) | 0xE0000000) + 0x20));
+    v0_6 = (v0_5);
+    L_C0DB064:;
+    if (((*(signed char *)((v0_2 + 0x0))) != 0)) goto L_C0DAFE0;
+    *(unsigned int *)0xC9441AC = v0_6;
+    *(unsigned int *)0xC9441B0 = v0_4;
+    v0_1 = *(int *)(((int)stk + 4));
+    v0_2 = *(int *)0xC952968;
+    v0_3 = *(int *)(((v0_1 + v0_2) + 0x0));
+    *(unsigned int *)(((v0_1 + v0_2) + 0x0)) = ((v0_3 & 0xFC000000) | (v0_0 & 0x3FFFFFF));
+    return ((v0_3 & 0xFC000000) | (v0_0 & 0x3FFFFFF));
+    L_C0DAFE0:;
+    if (((*(signed char *)((v0_2 + 0x0))) == 32)) goto L_C0DB05C;
+    v0_7 = *(signed char *)((v0_2 + 0x0));
+    v0_8 = (v0_7);
+    v0_1 = (0x0);
+    v0_5 = ((*(int *)0xC9441BC));
+    if ((v0_7 != 10)) goto L_C0DB010;
+    v0_6 = (v0_1);
+    if ((v0_3 == 0)) goto L_C0DAFFA;
+    v0_6 = (v0_5);
+    L_C0DAFFA:;
+    v0_4 = ((v0_4 + (*(int *)0xC9441B8)));
+    L_C0DB062:;
+    v0_2 = ((v0_2 + 0x1));
+    goto L_C0DB064;
+    L_C0DB010:;
+    if ((v0_8 != 13)) goto L_C0DB050;
+    v0_6 = (v0_1);
+    if ((v0_3 == 0)) goto L_C0DB062;
+    v0_6 = (v0_5);
+    goto L_C0DB062;
+    L_C0DB050:;
+    v0_0 = ((FUN_0c0da9a0(v0_6, v0_4, (*(signed char *)((v0_2 + 0x0))), v0_0)));
+    L_C0DB05C:;
+    v0_6 = ((v0_6 + (*(int *)0xC9441B4)));
+    goto L_C0DB062;
+    L_C0DAF90:;
+    v0_5 = (0x2);
+    goto L_C0DAF92;
+}

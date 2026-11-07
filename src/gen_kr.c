@@ -15,6 +15,12 @@ int FUN_0c0e6248(void);
 int nlAddVector(int, int);
 int FUN_0c061418(int a4);
 int FUN_0c07a520(void);
+struct o74_uint { char p[0x74]; unsigned int v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+struct o88_uint { char p[0x88]; unsigned int v; };
+struct o8C_uint { char p[0x8C]; unsigned int v; };
+struct oBC_uint { char p[0xBC]; unsigned int v; };
+
 
 
 int FUN_0c07a520(void)
@@ -31,9 +37,9 @@ int FUN_0c07a520(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FFCEC); }
     FUN_0c0e6248();
     *(unsigned int *)(((0x21C + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FFCFE);
-    *(unsigned int *)((t1 + 0x78)) = 0xC1B6844;
-    *(unsigned int *)((t1 + 0x74)) = 0x15;
-    *(unsigned int *)((t1 + 0xBC)) = 0x10;
+    (((struct o78_uint *)(t1))->v) = 0xC1B6844;
+    (((struct o74_uint *)(t1))->v) = 0x15;
+    (((struct oBC_uint *)(t1))->v) = 0x10;
     FUN_0c01ce40(t1, 0xC1B6844, (*(float *)0xC07A64C));
     FUN_0c07a89a(t1);
     t8 = 0x0;
@@ -50,8 +56,8 @@ int FUN_0c07a520(void)
         *(unsigned short *)(((0x62 + t11) + 0x0)) = (t13 + t14);
         *(unsigned short *)(((0x60 + t11) + 0x0)) = (t13 + t14);
         *(unsigned int *)(((0x78 + t11) + 0x0)) = (unsigned short)(*(short *)((t9 + 0x12)));
-        *(unsigned int *)((t11 + 0x8C)) = t1;
-        *(unsigned int *)((t11 + 0x88)) = t8;
+        (((struct o8C_uint *)(t11))->v) = t1;
+        (((struct o88_uint *)(t11))->v) = t8;
         t8 = (t8 + 0x1);
         t9 = (t9 + 0x14);
         if ((int)t8 >= (int)0x4) {

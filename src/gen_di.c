@@ -54,191 +54,68 @@ int FUN_0c0c1af4(int a4);
 
 int FUN_0c0c058e(int a4)
 {
-    int t20;
-    int t180;
-    int t190;
+    static const short dst[13] = {0x238, 0x23C, 0x234, 0x24C, 0x250, 0x254, 0x258, 0x25C, 0x260, 0x264, 0x268, 0x26C, 0x270};
+    static const short src[13] = {0x30, 0x2C, 0x28, 0x18, 0x1C, 0x20, 0x00, 0x04, 0x08, 0x0C, 0x10, 0x14, 0x24};
+    static const short fld[3][3] = {{0x258, 0x25C, 0x260}, {0x264, 0x268, 0x26C}, {0x250, 0x254, 0x270}};
+    static const int mod[3] = {0x20000, 0x4000000, 0x40000};
+    static const unsigned char up[3] = {0x10, 0x80, 0x4};
+    static const unsigned char dn[3] = {0x20, 0x40, 0x2};
+    int g;
+    int k;
+    int i;
+    int t245;
     int t298;
     int t307;
-    int t245;
+    float *f;
 
-    if ((*(int *)((a4 + 0x21C))) == 0) {
-        *(unsigned int *)((a4 + 0x238)) = (*(int *)0xC247F24);
-        *(unsigned int *)((a4 + 0x23C)) = (*(int *)0xC247F20);
-        *(float *)((a4 + 0x234)) = (*(float *)0xC247F1C);
-        *(unsigned int *)((a4 + 0x24C)) = (*(int *)0xC247F0C);
-        *(float *)((a4 + 0x250)) = (*(float *)0xC247F10);
-        *(float *)((a4 + 0x254)) = (*(float *)0xC247F14);
-        *(float *)((a4 + 0x258)) = (*(float *)0xC247EF4);
-        *(float *)((a4 + 0x25C)) = (*(float *)0xC247EF8);
-        *(float *)((a4 + 0x260)) = (*(float *)0xC247EFC);
-        *(float *)((a4 + 0x264)) = (*(float *)0xC247F00);
-        *(float *)((a4 + 0x268)) = (*(float *)0xC247F04);
-        *(float *)((a4 + 0x26C)) = (*(float *)0xC247F08);
-        *(float *)((a4 + 0x270)) = (*(float *)0xC247F18);
+    if (*(int *)(a4 + 0x21C) == 0) {
+        for (i = 0; i < 13; i++) {
+            *(int *)(a4 + dst[i]) = *(int *)(0xC247EF4 + src[i]);
+        }
         return 0x270;
     }
-    if (((*(int *)0xC2497B8) & 0x400) != 0) {
-        *(unsigned int *)((a4 + 0x24C)) = ((*(int *)((a4 + 0x24C))) ^ 0x1);
+    if ((*(int *)0xC2497B8 & 0x400) != 0) {
+        *(int *)(a4 + 0x24C) ^= 1;
     }
-    t20 = *(int *)0xC2497B0;
-    if ((0x20000 & t20) != 0) {
-        if ((0x10 & t20) != 0) {
-            *(float *)((a4 + 0x258)) = ((*(float *)((a4 + 0x258))) + 0.00499999989f);
-            if ((*(float *)((a4 + 0x258))) > 1.0f) {
-                *(float *)((a4 + 0x258)) = 1.0f;
-            }
-        } else {
-            if ((t20 & 0x20) != 0) {
-                *(float *)((a4 + 0x258)) = ((*(float *)((a4 + 0x258))) - 0.00499999989f);
-                if (0.0f > (*(float *)((a4 + 0x258)))) {
-                    *(float *)((a4 + 0x258)) = 0.0f;
+    g = *(int *)0xC2497B0;
+    for (k = 0; k < 3 && (g & mod[k]) == 0; k++) {
+    }
+    if (k < 3) {
+        for (i = 0; i < 3; i++) {
+            f = (float *)(a4 + fld[k][i]);
+            if ((g & up[i]) != 0) {
+                *f = *f + 0.00499999989f;
+                if (*f > 1.0f) {
+                    *f = 1.0f;
                 }
-            }
-        }
-        if ((0x80 & (*(int *)0xC2497B0)) != 0) {
-            *(float *)((a4 + 0x25C)) = ((*(float *)((a4 + 0x25C))) + 0.00499999989f);
-            if ((*(float *)((a4 + 0x25C))) > 1.0f) {
-                *(float *)((a4 + 0x25C)) = 1.0f;
-            }
-        } else {
-            if ((0x40 & (*(int *)0xC2497B0)) != 0) {
-                *(float *)((a4 + 0x25C)) = ((*(float *)((a4 + 0x25C))) - 0.00499999989f);
-                if (0.0f > (*(float *)((a4 + 0x25C)))) {
-                    *(float *)((a4 + 0x25C)) = 0.0f;
-                }
-            }
-        }
-        if ((0x4 & (*(int *)0xC2497B0)) != 0) {
-            *(float *)((a4 + 0x260)) = ((*(float *)((a4 + 0x260))) + 0.00499999989f);
-            if (!((*(float *)((a4 + 0x260))) > 1.0f)) {
-            } else {
-                *(float *)((a4 + 0x260)) = 1.0f;
-            }
-        } else {
-            if ((0x2 & (*(int *)0xC2497B0)) == 0) {
-            } else {
-                *(float *)((a4 + 0x260)) = ((*(float *)((a4 + 0x260))) - 0.00499999989f);
-                if (!(0.0f > (*(float *)((a4 + 0x260))))) {
-                } else {
-                    *(float *)((a4 + 0x260)) = 0.0f;
+            } else if ((g & dn[i]) != 0) {
+                *f = *f - 0.00499999989f;
+                if (0.0f > *f) {
+                    *f = 0.0f;
                 }
             }
         }
     } else {
-        if ((0x4000000 & t20) != 0) {
-            if ((0x10 & t20) != 0) {
-                *(float *)((a4 + 0x264)) = ((*(float *)((a4 + 0x264))) + 0.00499999989f);
-                if ((*(float *)((a4 + 0x264))) > 1.0f) {
-                    *(float *)((a4 + 0x264)) = 1.0f;
-                }
-            } else {
-                if ((t20 & 0x20) != 0) {
-                    *(float *)((a4 + 0x264)) = ((*(float *)((a4 + 0x264))) - 0.00499999989f);
-                    if (0.0f > (*(float *)((a4 + 0x264)))) {
-                        *(float *)((a4 + 0x264)) = 0.0f;
-                    }
-                }
+        if ((g & 0x10) != 0) {
+            *(int *)(a4 + 0x238) += 0x100;
+        } else if ((g & 0x20) != 0) {
+            *(int *)(a4 + 0x238) -= 0x100;
+        }
+        if ((g & 0x40) != 0) {
+            *(int *)(a4 + 0x23C) += 0x100;
+        } else if ((g & 0x80) != 0) {
+            *(int *)(a4 + 0x23C) -= 0x100;
+        }
+        f = (float *)(a4 + 0x234);
+        if ((g & 0x4) != 0) {
+            *f = *f + 0.00499999989f;
+            if (*f > 1.0f) {
+                *f = 1.0f;
             }
-            if ((0x80 & (*(int *)0xC2497B0)) != 0) {
-                *(float *)((a4 + 0x268)) = ((*(float *)((a4 + 0x268))) + 0.00499999989f);
-                if ((*(float *)((a4 + 0x268))) > 1.0f) {
-                    *(float *)((a4 + 0x268)) = 1.0f;
-                }
-            } else {
-                if ((0x40 & (*(int *)0xC2497B0)) != 0) {
-                    *(float *)((a4 + 0x268)) = ((*(float *)((a4 + 0x268))) - 0.00499999989f);
-                    if (0.0f > (*(float *)((a4 + 0x268)))) {
-                        *(float *)((a4 + 0x268)) = 0.0f;
-                    }
-                }
-            }
-            if ((0x4 & (*(int *)0xC2497B0)) != 0) {
-                *(float *)((a4 + 0x26C)) = ((*(float *)((a4 + 0x26C))) + 0.00499999989f);
-                if (!((*(float *)((a4 + 0x26C))) > 1.0f)) {
-                } else {
-                    *(float *)((a4 + 0x26C)) = 1.0f;
-                }
-            } else {
-                if ((0x2 & (*(int *)0xC2497B0)) == 0) {
-                } else {
-                    *(float *)((a4 + 0x26C)) = ((*(float *)((a4 + 0x26C))) - 0.00499999989f);
-                    if (!(0.0f > (*(float *)((a4 + 0x26C))))) {
-                    } else {
-                        *(float *)((a4 + 0x26C)) = 0.0f;
-                    }
-                }
-            }
-        } else {
-            if ((0x40000 & t20) != 0) {
-                if ((0x10 & t20) != 0) {
-                    *(float *)((a4 + 0x250)) = ((*(float *)((a4 + 0x250))) + 0.00499999989f);
-                    if ((*(float *)((a4 + 0x250))) > 1.0f) {
-                        *(float *)((a4 + 0x250)) = 1.0f;
-                    }
-                } else {
-                    if ((t20 & 0x20) != 0) {
-                        *(float *)((a4 + 0x250)) = ((*(float *)((a4 + 0x250))) - 0.00499999989f);
-                        if (0.0f > (*(float *)((a4 + 0x250)))) {
-                            *(float *)((a4 + 0x250)) = 0.0f;
-                        }
-                    }
-                }
-                if ((0x80 & (*(int *)0xC2497B0)) != 0) {
-                    *(float *)((a4 + 0x254)) = ((*(float *)((a4 + 0x254))) + 0.00499999989f);
-                    if ((*(float *)((a4 + 0x254))) > 1.0f) {
-                        *(float *)((a4 + 0x254)) = 1.0f;
-                    }
-                } else {
-                    if ((0x40 & (*(int *)0xC2497B0)) != 0) {
-                        *(float *)((a4 + 0x254)) = ((*(float *)((a4 + 0x254))) - 0.00499999989f);
-                        if (0.0f > (*(float *)((a4 + 0x254)))) {
-                            *(float *)((a4 + 0x254)) = 0.0f;
-                        }
-                    }
-                }
-                if ((0x4 & (*(int *)0xC2497B0)) != 0) {
-                    *(float *)((a4 + 0x270)) = ((*(float *)((a4 + 0x270))) + 0.00499999989f);
-                    if ((*(float *)((a4 + 0x270))) > 1.0f) {
-                        *(float *)((a4 + 0x270)) = 1.0f;
-                    }
-                } else {
-                    if ((0x2 & (*(int *)0xC2497B0)) != 0) {
-                        *(float *)((a4 + 0x270)) = ((*(float *)((a4 + 0x270))) - 0.00499999989f);
-                        if (0.0f > (*(float *)((a4 + 0x270)))) {
-                            *(float *)((a4 + 0x270)) = 0.0f;
-                        }
-                    }
-                }
-            } else {
-                if ((0x10 & t20) != 0) {
-                    *(unsigned int *)((a4 + 0x238)) = ((*(int *)((a4 + 0x238))) + 0x100);
-                } else {
-                    if ((t20 & 0x20) != 0) {
-                        *(unsigned int *)((a4 + 0x238)) = ((*(int *)((a4 + 0x238))) - 0x100);
-                    }
-                }
-                t180 = *(int *)0xC2497B0;
-                if ((0x40 & t180) != 0) {
-                    *(unsigned int *)((a4 + 0x23C)) = ((*(int *)((a4 + 0x23C))) + 0x100);
-                } else {
-                    if ((t180 & 0x80) != 0) {
-                        *(unsigned int *)((a4 + 0x23C)) = ((*(int *)((a4 + 0x23C))) - 0x100);
-                    }
-                }
-                t190 = *(int *)0xC2497B0;
-                if ((0x4 & t190) != 0) {
-                    *(float *)((a4 + 0x234)) = ((*(float *)((a4 + 0x234))) + 0.00499999989f);
-                    if ((*(float *)((a4 + 0x234))) > 1.0f) {
-                        *(float *)((a4 + 0x234)) = 1.0f;
-                    }
-                } else {
-                    if ((t190 & 0x2) != 0) {
-                        *(float *)((a4 + 0x234)) = ((*(float *)((a4 + 0x234))) - 0.00499999989f);
-                        if (0.0f > (*(float *)((a4 + 0x234)))) {
-                            *(float *)((a4 + 0x234)) = 0.0f;
-                        }
-                    }
-                }
+        } else if ((g & 0x2) != 0) {
+            *f = *f - 0.00499999989f;
+            if (0.0f > *f) {
+                *f = 0.0f;
             }
         }
     }
@@ -595,283 +472,113 @@ void FUN_0c042570(int a4)
 {
     int t0;
     int t6;
-    int t27;
+    int f;
+    int v;
+    int x;
+    int b;
+    float c;
 
-    *(unsigned int *)((a4 + 0x4E0)) = 0x0;
-    t0 = *(int *)((a4 + 0x4DC));
-    *(unsigned int *)((a4 + 0x4E4)) = (*(int *)((((((*(int *)((a4 + 0x4E0))) << 2) << 1) + (*(int *)((((((t0 - 76) << 1) + (t0 - 76)) << 2) + 0xC1F518C)))) + 0x4)));
-    *(unsigned int *)((a4 + 0x4E8)) = 0x0;
-    *(unsigned int *)((a4 + 0x4EC)) = 0x0;
-    *(unsigned int *)((a4 + 0x20C)) = 0x40000000;
-    *(unsigned int *)((a4 + 0x210)) = 0x9E;
-    *(unsigned int *)((a4 + 0x1B0)) = 0xFFFFFFFF;
-    *(unsigned int *)((a4 + 0x1BC)) = 0x0;
-    *(unsigned int *)((a4 + 0x4FC)) = 0x0;
-    *(unsigned int *)((a4 + 0x2F0)) = 0x0;
-    *(unsigned int *)((((*(int *)((a4 + 0xBC))) << 2) + 0xC247030)) = 0x3;
+    *(int *)(a4 + 0x4E0) = 0;
+    t0 = *(int *)(a4 + 0x4DC);
+    *(int *)(a4 + 0x4E4) = *(int *)((*(int *)(a4 + 0x4E0) << 3) + *(int *)((t0 - 76) * 12 + 0xC1F518C) + 4);
+    *(int *)(a4 + 0x4E8) = 0;
+    *(int *)(a4 + 0x4EC) = 0;
+    *(int *)(a4 + 0x20C) = 0x40000000;
+    *(int *)(a4 + 0x210) = 0x9E;
+    *(int *)(a4 + 0x1B0) = -1;
+    *(int *)(a4 + 0x1BC) = 0;
+    *(int *)(a4 + 0x4FC) = 0;
+    *(int *)(a4 + 0x2F0) = 0;
+    *(int *)((*(int *)(a4 + 0xBC) << 2) + 0xC247030) = 3;
     FUN_0c041dd0(a4);
-    t6 = *(int *)((a4 + 0x4DC));
-    if ((unsigned int)((t6 - 76) - 1) >= (unsigned int)0x48) {
+    t6 = *(int *)(a4 + 0x4DC) - 77;
+    if ((unsigned int)t6 >= 0x48) {
         return;
     }
-    switch ((((t6 - 76) - 1) << 1)) {
-        case 0:
-        {
-            ((int (*)(int, int, int, int, float))(0xC041E1E))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 2:
-        {
-            ((int (*)(int, int, int, int, float))(0xC041E90))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 4:
-        {
-            ((int (*)(int, int, int, int, float))(0xC041EE8))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 6:
-        {
-            ((int (*)(int, int, int, int, float))(0xC041F04))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 8:
-        {
-            *(unsigned int *)((a4 + 0x1EC)) = 0xFFFFFFFF;
-            *(unsigned int *)((a4 + 0x5B8)) = 0x0;
-            return;
-        }
-        case 10:
-        case 12:
-        case 14:
-        case 18:
-        case 22:
-        case 24:
-        case 26:
-        case 28:
-        case 56:
-        case 60:
-        case 62:
-        case 66:
-        case 68:
-        case 70:
-        case 72:
-        case 76:
-        case 84:
-        case 90:
-        case 92:
-        case 94:
-        case 96:
-        case 98:
-        case 106:
-        case 116:
-        case 118:
-        case 120:
-        case 122:
-        case 124:
-        case 128:
-        case 130:
-        case 134:
-        case 136:
-        case 138:
-        {
-            return;
-        }
-        case 16:
-        {
-            ((int (*)(int, int, int, int, float))(0xC03F68A))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 20:
-        {
-            *(unsigned int *)((a4 + 0x1EC)) = 0xFFFFFFFF;
-            *(unsigned int *)0xC247D04 = 0x7;
-            *(unsigned int *)0xC247CD0 = 0xC102ADC;
-            return;
-        }
-        case 30:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            FUN_0c021266();
+    switch (t6) {
+    case 0: f = 0xC041E1E; goto call;
+    case 1: f = 0xC041E90; goto call;
+    case 2: f = 0xC041EE8; goto call;
+    case 3: f = 0xC041F04; goto call;
+    case 8: case 18: case 21: case 22: case 23: f = 0xC03F68A; goto call;
+    case 16: case 17: case 39: f = 0xC03F5B0;
+call:
+        ((int (*)(int, int, int, int, float))f)(a4, 0xC23EDB0, 0xC23EDB4, 4, 0.0f);
+        return;
+    case 4:
+        *(int *)(a4 + 0x1EC) = -1;
+        *(int *)(a4 + 0x5B8) = 0;
+        return;
+    case 10:
+        *(int *)(a4 + 0x1EC) = -1;
+        *(int *)0xC247D04 = 7;
+        *(int *)0xC247CD0 = 0xC102ADC;
+        return;
+    case 15: case 56: v = 0x12F; x = 1; goto cam;
+    case 32: v = 0xC3; x = 1; goto cam;
+    case 40: v = 0xC9; x = 0; goto cam;
+    case 50: v = 0xB4; x = 0;
+cam:
+        *(int *)0xC23EDB0 = 1;
+        *(int *)0xC23EDB4 = 1;
+        FUN_0c021266();
+        if (x) {
             FUN_0c0213ac();
-            *(unsigned int *)0xC247D04 = 0x6;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0x12F;
+        }
+        *(int *)0xC247D04 = 6;
+        *(char *)0xC247CB8 = *(signed char *)(a4 + 0xBC);
+        *(short *)0xC247CBE = v;
+        return;
+    case 24:
+        *(int *)(a4 + 0x1EC) = -1;
+        return;
+    case 25:
+        *(int *)(a4 + 0xA4) = 0x400;
+        return;
+    case 27:
+        if (*(int *)0xC2462F4 > 1) {
             return;
         }
-        case 32:
-        case 34:
-        {
-            ((int (*)(int, int, int, int, float))(0xC03F5B0))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 36:
-        {
-            ((int (*)(int, int, int, int, float))(0xC03F68A))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 38:
-        case 40:
-        {
-            FUN_0c0ccd5a(0x0, 0x2D0, (*(int *)((a4 + 0xBC))));
-    return;
-        }
-        case 42:
-        case 44:
-        case 46:
-        {
-            ((int (*)(int, int, int, int, float))(0xC03F68A))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 48:
-        {
-            *(unsigned int *)((a4 + 0x1EC)) = 0xFFFFFFFF;
-            return;
-        }
-        case 50:
-        {
-            *(unsigned int *)((a4 + 0xA4)) = 0x400;
-            return;
-        }
-        case 52:
-        {
-            return;
-        }
-        case 54:
-        {
-            if ((int)(*(int *)0xC2462F4) > (int)0x1) {
-            } else {
-                *(unsigned int *)0xC247D04 = 0x4;
-                *(unsigned short *)0xC247CC8 = 0xFFFFEAAB;
-                *(unsigned short *)0xC247CCA = (*(short *)((a4 + 0x6E)));
-                *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-                *(float *)0xC247CC0 = 20.0f;
-                *(unsigned short *)0xC247CBE = 0x78;
-            }
-            return;
-        }
-        case 58:
-        {
-            *(unsigned int *)0xC247D04 = 0x4;
-            *(unsigned short *)0xC247CC8 = 0x31C7;
-            *(unsigned short *)0xC247CCA = ((*(short *)((a4 + 0x6E))) - 32768);
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(float *)0xC247CC0 = 70.0f;
-            *(unsigned short *)0xC247CBE = 0x5A;
-            return;
-        }
-        case 64:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            FUN_0c021266();
-            FUN_0c0213ac();
-            *(unsigned int *)0xC247D04 = 0x6;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0xC3;
-            return;
-        }
-        case 74:
-        {
-            return;
-        }
-        case 78:
-        {
-            ((int (*)(int, int, int, int, float))(0xC03F5B0))(a4, 0xC23EDB0, 0xC23EDB4, 0x4, 0.0f);
-    return;
-        }
-        case 80:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            FUN_0c021266();
-            *(unsigned int *)0xC247D04 = 0x6;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0xC9;
-            return;
-        }
-        case 82:
-        case 86:
-        case 88:
-        {
-            *(float *)((a4 + 0x458)) = 0.0f;
-            *(unsigned short *)((a4 + 0x454)) = 0x1;
-            return;
-        }
-        case 100:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            FUN_0c021266();
-            *(unsigned int *)0xC247D04 = 0x6;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0xB4;
-            return;
-        }
-        case 102:
-        case 104:
-        {
-            t27 = *(int *)((a4 + 0xBC));
-            *(unsigned int *)0xC23ED88 = ((*(int *)0xC23ED88) | (((int)t27 >= 0) ? (0x1 << (t27 & 31)) : ((-(int)t27 & 31) ? ((int)0x1 >> (-(int)t27 & 31)) : ((int)0x1 >> 31))));
-            return;
-        }
-        case 108:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            *(unsigned int *)0xC247D04 = 0x5;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0xF0;
-            *(float *)0xC247CC0 = 10.0f;
-            *(unsigned short *)0xC247CC8 = 0x0;
-            *(unsigned short *)0xC247CCA = ((*(short *)((a4 + 0x6E))) + 0x7000);
-            *(unsigned short *)0xC247CBC = 0x1;
-            *(float *)0xC247CC4 = 50.0f;
-            *(unsigned short *)0xC247CCC = 0xFFFFF556;
-            *(unsigned short *)0xC247CCE = ((*(short *)((a4 + 0x6E))) - 28672);
-            return;
-        }
-        case 110:
-        {
-            return;
-        }
-        case 112:
-        {
-            *(unsigned int *)0xC23EDB0 = 0x1;
-            *(unsigned int *)0xC23EDB4 = 0x1;
-            FUN_0c021266();
-            FUN_0c0213ac();
-            *(unsigned int *)0xC247D04 = 0x6;
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(unsigned short *)0xC247CBE = 0x12F;
-            return;
-        }
-        case 114:
-        {
-            *(unsigned int *)0xC247D04 = 0x4;
-            *(unsigned short *)0xC247CC8 = 0xFFFFEAAB;
-            *(unsigned short *)0xC247CCA = ((*(short *)((a4 + 0x6E))) - 32768);
-            *(unsigned char *)0xC247CB8 = (*(signed char *)((a4 + 0xBC)));
-            *(float *)0xC247CC0 = 60.0f;
-            *(unsigned short *)0xC247CBE = 0x78;
-            return;
-        }
-        case 126:
-        {
-            *(float *)((a4 + 0x458)) = 0.0f;
-            *(unsigned short *)((a4 + 0x454)) = 0x1;
-            return;
-        }
-        case 132:
-        {
-            return;
-        }
-        default:
-        {
-            FUN_0c0ccd5a(0x0, 0x2D0, (*(int *)((a4 + 0xBC))));
-    return;
-        }
+        v = 0xEAAB; b = 0; c = 20.0f; x = 0x78; goto shot;
+    case 29: v = 0x31C7; b = -32768; c = 70.0f; x = 0x5A; goto shot;
+    case 57: v = 0xEAAB; b = -32768; c = 60.0f; x = 0x78;
+shot:
+        *(int *)0xC247D04 = 4;
+        *(short *)0xC247CC8 = v;
+        *(short *)0xC247CCA = *(short *)(a4 + 0x6E) + b;
+        *(char *)0xC247CB8 = *(signed char *)(a4 + 0xBC);
+        *(float *)0xC247CC0 = c;
+        *(short *)0xC247CBE = x;
+        return;
+    case 41: case 43: case 44: case 63:
+        *(float *)(a4 + 0x458) = 0.0f;
+        *(short *)(a4 + 0x454) = 1;
+        return;
+    case 51: case 52:
+        x = *(int *)(a4 + 0xBC);
+        *(int *)0xC23ED88 |= (x >= 0) ? (1 << (x & 31)) : ((-x & 31) ? (1 >> (-x & 31)) : (1 >> 31));
+        return;
+    case 54:
+        *(int *)0xC23EDB0 = 1;
+        *(int *)0xC23EDB4 = 1;
+        *(int *)0xC247D04 = 5;
+        *(char *)0xC247CB8 = *(signed char *)(a4 + 0xBC);
+        *(short *)0xC247CBE = 0xF0;
+        *(float *)0xC247CC0 = 10.0f;
+        *(short *)0xC247CC8 = 0;
+        *(short *)0xC247CCA = *(short *)(a4 + 0x6E) + 0x7000;
+        *(short *)0xC247CBC = 1;
+        *(float *)0xC247CC4 = 50.0f;
+        *(short *)0xC247CCC = 0xF556;
+        *(short *)0xC247CCE = *(short *)(a4 + 0x6E) - 28672;
+        return;
+    case 5: case 6: case 7: case 9: case 11: case 12: case 13: case 14: case 26: case 28: case 30: case 31: case 33:
+    case 34: case 35: case 36: case 37: case 38: case 42: case 45: case 46: case 47: case 48: case 49: case 53: case 55:
+    case 58: case 59: case 60: case 61: case 62: case 64: case 65: case 66: case 67: case 68: case 69:
+        return;
+    default:
+        FUN_0c0ccd5a(0, 0x2D0, *(int *)(a4 + 0xBC));
+        return;
     }
 }
 

@@ -1,0 +1,88 @@
+/* Straight-line functions with calls and guards (batch gen_aeo): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0d9bd0(float);
+int FUN_0c0d9dc0(int, int, float, float);
+extern float _builtin_sqrtf(float);
+int FUN_0c0a760e(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9);
+
+int FUN_0c0a760e(int a4, int a5, float f4, float f5, float f6, float f7, float f8, float f9)
+{
+    int stk[3];
+
+    register int R3;
+    register int R8;
+    register float F0;
+    register float F2;
+    register float F3;
+    register float F12;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register float w0_0;
+    register float w0_1;
+    register float w0_2;
+    register float w0_3;
+    register float w0_4;
+    register float w0_5;
+    register float w0_6;
+    register float w0_7;
+    register float w0_8;
+    v0_1 = a4;
+    v0_0 = a5;
+    w0_2 = f4;
+    w0_3 = f5;
+    w0_4 = f6;
+    w0_5 = f7;
+    w0_0 = f8;
+    w0_1 = f9;
+    *(float *)(((int)stk + 8)) = w0_2;
+    *(float *)(((int)stk + 4)) = w0_4;
+    w0_6 = *(float *)(((int)stk + 8));
+    w0_2 = ((w0_3 - w0_5) * (w0_3 - w0_5));
+    w0_2 = w0_2 + ((w0_6 - w0_4)) * ((w0_6 - w0_4));
+    v0_2 = FUN_0c0d9dc0(v0_1, v0_0, (w0_4 - (*(float *)(((int)stk + 8)))), (w0_3 - w0_5));
+    v0_4 = !(_builtin_sqrtf(w0_2) > (w0_0 + w0_1));
+    v0_3 = (v0_2);
+    v0_0 = (v0_0);
+    v0_1 = (v0_1);
+    v0_2 = ((-(short)v0_2));
+    w0_2 = (_builtin_sqrtf(w0_2));
+    w0_1 = (w0_1);
+    w0_0 = (w0_0);
+    if (v0_4) goto L_C0A7694;
+    *(unsigned int *)((v0_1 + 0x0)) = v0_2;
+    v0_1 = (0x0);
+    L_C0A76AE:;
+    *(unsigned int *)((v0_0 + 0x0)) = v0_1;
+    L_C0A76F4:;
+    return v0_3;
+    L_C0A7694:;
+    if ((!(w0_1 > (w0_0 + w0_2)))) goto L_C0A76A2;
+    v0_2 = ((v0_2 - 32768));
+    L_C0A76AA:;
+    *(unsigned int *)((v0_1 + 0x0)) = v0_2;
+    v0_1 = (0x8000);
+    goto L_C0A76AE;
+    L_C0A76A2:;
+    if ((!(w0_0 > (w0_1 + w0_2)))) goto L_C0A76B2;
+    goto L_C0A76AA;
+    L_C0A76B2:;
+    w0_3 = (w0_1 * w0_1);
+    w0_4 = (w0_0 * w0_0);
+    w0_5 = (w0_2 * w0_2);
+    w0_6 = (w0_0 * w0_1);
+    w0_7 = (w0_2 * w0_2);
+    w0_8 = (w0_0 * w0_0);
+    w0_0 = (w0_0 * w0_2);
+    w0_1 = (w0_1 * w0_1);
+    *(unsigned int *)((v0_0 + 0x0)) = ((FUN_0c0d9bd0((((w0_3 + w0_4) - w0_5) / (w0_6 * (1.0f + 1.0f))))) + 0x8000);
+    v0_0 = FUN_0c0d9bd0((((w0_7 + w0_8) - w0_1) / (w0_0 * (1.0f + 1.0f))));
+    *(unsigned int *)((v0_1 + 0x0)) = (v0_2 + v0_0);
+    v0_3 = (v0_0);
+    v0_2 = ((v0_2 + v0_0));
+    goto L_C0A76F4;
+}

@@ -1,0 +1,96 @@
+/* Straight-line functions with calls and guards (batch gen_adp): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int FUN_0c0848bc(float, float, float);
+extern int FUN_0c0849da();
+int FUN_0c0c465c(int);
+float FUN_0c0da410(int);
+int FUN_0c0dcc70(float, float, float);
+int FUN_0c0dcca0(int);
+int FUN_0c0de000(float);
+int nlPopMatrix(int);
+int nlPushMatrix(int);
+int nlRotateAY(int);
+int nlScale(float, float, float);
+int FUN_0c07c004(int a4);
+
+int FUN_0c07c004(int a4)
+{
+    int stk[15];
+
+    register int R0;
+    register int R1;
+    register int R2;
+    register int R3;
+    register float F0;
+    register float F4;
+    register float F5;
+    register float F6;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register float w0_0;
+    register float w0_1;
+    register float w0_2;
+    register float w0_3;
+    register float w0_4;
+    v0_0 = a4;
+    v0_0 = (v0_0);
+    if ((((*(int *)0xC23ED88) & 16) == 0)) goto L_C07C02C;
+    *(unsigned int *)((v0_0 + 0x30)) = 0x80;
+    L_C07C02C:;
+    nlPushMatrix(0x0);
+    *(unsigned int *)(((int)stk + 8)) = 0x18;
+    FUN_0c0dcca0(0xC100DC0);
+    v0_1 = (0xC0DE000);
+    v0_1 = (0xC0DCC70);
+    v0_1 = (0xC0C465C);
+    v0_1 = (0xC0DA410);
+    v0_1 = (((v0_0 + 0x34) + 0x60));
+    w0_0 = (1.0f);
+    w0_1 = (3.0f);
+    w0_2 = (0.0f);
+    L_C07C052:;
+    v0_3 = *(int *)(((v0_1 - 4) + 0x0));
+    nlPushMatrix(0x0);
+    v0_2 = (v0_3);
+    v0_1 = ((v0_1 - 4));
+    w0_3 = (10.6999998f);
+    if (((int)v0_3 > (int)0x3FFF)) goto L_C07C06C;
+    w0_3 = ((w0_3 * (FUN_0c0da410(v0_2))));
+    L_C07C06C:;
+    FUN_0c0dcc70(w0_2, w0_2, w0_3);
+    FUN_0c0de000(w0_0);
+    v0_3 = ((int (*)(int, int, int, int, int, int, int, int))(FUN_0c0849da))(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 8), *(int *)((int)stk + 8 + 4), *(int *)((int)stk + 8 + 8), *(int *)((int)stk + 8 + 12));
+    FUN_0c0c465c(0x1220);
+    FUN_0c0dcc70(w0_2, w0_2, (*(float *)0xC20093C));
+    FUN_0c0de000(w0_1);
+    nlScale(w0_1, w0_1, w0_0);
+    if ((((*(int *)0xC23A258) & 1) == 0)) goto L_C07C0AA;
+    w0_3 = ((1.0f + 1.0f));
+    L_C07C0AE:;
+    *(float *)(((int)stk + 4)) = w0_3;
+    w0_4 = FUN_0c0da410(v0_2);
+    FUN_0c0848bc((w0_3 * ((-w0_4) + w0_0)), (w0_3 * ((-w0_4) + w0_0)), (w0_3 * ((-w0_4) + w0_0)));
+    FUN_0c0c465c(0x295);
+    nlPopMatrix(0x1);
+    nlRotateAY(0xAAA);
+    v0_3 = *(int *)((v0_0 + 0x30));
+    v0_4 = (int)(v0_2 - v0_3) > 0;
+    v0_2 = ((v0_2 - v0_3));
+    if (v0_4) goto L_C07C0E4;
+    v0_2 = (0x0);
+    L_C07C0E4:;
+    *(unsigned int *)((v0_1 + 0x0)) = v0_2;
+    v0_2 = *(int *)(((int)stk + 8));
+    *(unsigned int *)(((int)stk + 8)) = (v0_2 - 1);
+    if (((v0_2 - 1) != 0)) goto L_C07C052;
+    nlPopMatrix(0x1);
+    return ((int (*)(void))(FUN_0c0849da))();
+    L_C07C0AA:;
+    w0_3 = (0.299999982f);
+    goto L_C07C0AE;
+}

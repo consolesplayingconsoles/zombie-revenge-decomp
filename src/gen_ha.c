@@ -16,6 +16,25 @@ int FUN_0c0277c4(int a4, float f4);
 int FUN_0c01f00c(int a4, int a5);
 int FUN_0c0341a6(int a4, int a5);
 int FUN_0c037002(int a4, int a5);
+struct o214_float { char p[0x214]; float v; };
+struct o218_float { char p[0x218]; float v; };
+struct o30_float { char p[0x30]; float v; };
+struct o34_float { char p[0x34]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o4F4_int { char p[0x4F4]; int v; };
+struct o54_float { char p[0x54]; float v; };
+struct o58_float { char p[0x58]; float v; };
+struct o5C_float { char p[0x5C]; float v; };
+struct o7C_float { char p[0x7C]; float v; };
+struct o8_float { char p[0x8]; float v; };
+struct o80_float { char p[0x80]; float v; };
+struct o84_float { char p[0x84]; float v; };
+struct o8C_float { char p[0x8C]; float v; };
+struct o90_float { char p[0x90]; float v; };
+struct o94_float { char p[0x94]; float v; };
+struct o94_int { char p[0x94]; int v; };
+
 
 
 
@@ -122,20 +141,20 @@ int FUN_0c01f00c(int a4, int a5)
     float u6;
     float u9;
 
-    t0 = *(int *)((a5 + 0x94));
-    u1 = *(float *)((a4 + 0x54));
-    u2 = *(float *)(((a4 + 0x30) + 0x0));
-    u3 = *(float *)(((t0 + 0x30) + 0x0));
-    u4 = *(float *)((a4 + 0x5C));
-    u5 = *(float *)(((a4 + 0x30) + 0x8));
-    u6 = *(float *)(((t0 + 0x30) + 0x8));
+    t0 = (((struct o94_int *)(a5))->v);
+    u1 = (((struct o54_float *)(a4))->v);
+    u2 = (((struct o30_float *)(a4))->v);
+    u3 = (((struct o30_float *)(t0))->v);
+    u4 = (((struct o5C_float *)(a4))->v);
+    u5 = (((struct o8_float *)((a4 + 0x30)))->v);
+    u6 = (((struct o8_float *)((t0 + 0x30)))->v);
     u9 = (((u5 + u4) - u6) * ((u5 + u4) - u6));
     u9 = u9 + ((u2 + u1) - u3) * ((u2 + u1) - u3);
-    if (((*(float *)((a4 + 0x214))) + (*(float *)((t0 + 0x214)))) > _builtin_sqrtf(u9)) {
-        if (((*(float *)((a4 + 0x218))) + (*(float *)((t0 + 0x218)))) > _builtin_fabsf((((*(float *)(((a4 + 0x30) + 0x4))) + (*(float *)((a4 + 0x58)))) - (*(float *)(((t0 + 0x30) + 0x4)))))) {
-            *(float *)((a4 + 0x8C)) = (((*(float *)((a4 + 0x30))) + (*(float *)((t0 + 0x30)))) * 0.5f);
-            *(float *)((a4 + 0x90)) = (((*(float *)((a4 + 0x34))) + (*(float *)((t0 + 0x34)))) * 0.5f);
-            *(float *)((a4 + 0x94)) = (((*(float *)((a4 + 0x38))) + (*(float *)((t0 + 0x38)))) * 0.5f);
+    if ((((((struct o214_float *)(a4))->v)) + ((((struct o214_float *)(t0))->v))) > _builtin_sqrtf(u9)) {
+        if ((((((struct o218_float *)(a4))->v)) + ((((struct o218_float *)(t0))->v))) > _builtin_fabsf(((((((struct o4_float *)((a4 + 0x30)))->v)) + ((((struct o58_float *)(a4))->v))) - ((((struct o4_float *)((t0 + 0x30)))->v))))) {
+            (((struct o8C_float *)(a4))->v) = ((((((struct o30_float *)(a4))->v)) + ((((struct o30_float *)(t0))->v))) * 0.5f);
+            (((struct o90_float *)(a4))->v) = ((((((struct o34_float *)(a4))->v)) + ((((struct o34_float *)(t0))->v))) * 0.5f);
+            (((struct o94_float *)(a4))->v) = ((((((struct o38_float *)(a4))->v)) + ((((struct o38_float *)(t0))->v))) * 0.5f);
             return 0x4;
         }
         return 0x0;
@@ -154,22 +173,22 @@ int FUN_0c0341a6(int a4, int a5)
     int t14;
     int t20;
 
-    u0 = *(float *)((a4 + 0x30));
-    u1 = *(float *)((a5 + 0x30));
-    u2 = *(float *)((a4 + 0x38));
-    u3 = *(float *)((a5 + 0x38));
-    t4 = *(int *)((a4 + 0x4F4));
+    u0 = (((struct o30_float *)(a4))->v);
+    u1 = (((struct o30_float *)(a5))->v);
+    u2 = (((struct o38_float *)(a4))->v);
+    u3 = (((struct o38_float *)(a5))->v);
+    t4 = (((struct o4F4_int *)(a4))->v);
     u5 = ((u2 - u3) * (u2 - u3));
     u5 = u5 + (u0 - u1) * (u0 - u1);
-    if (_builtin_sqrtf(u5) > (*(float *)((((*(int *)((((((t4 << 1) + t4) << 2) + 0xC1F79B4) + 0x8))) + 0x7C) + 0x0)))) {
+    if (_builtin_sqrtf(u5) > ((((struct o7C_float *)((*(int *)((((((t4 << 1) + t4) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
         return 0x0;
     }
-    t14 = *(int *)((a4 + 0x4F4));
-    if (_builtin_sqrtf(u5) > (*(float *)(((*(int *)((((((t14 << 1) + t14) << 2) + 0xC1F79B4) + 0x8))) + 0x80)))) {
+    t14 = (((struct o4F4_int *)(a4))->v);
+    if (_builtin_sqrtf(u5) > ((((struct o80_float *)((*(int *)((((((t14 << 1) + t14) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
         return 0x1;
     }
-    t20 = *(int *)((a4 + 0x4F4));
-    if (_builtin_sqrtf(u5) > (*(float *)(((*(int *)(((0xC1F79B4 + (((t20 << 1) + t20) << 2)) + 0x8))) + 0x84)))) {
+    t20 = (((struct o4F4_int *)(a4))->v);
+    if (_builtin_sqrtf(u5) > ((((struct o84_float *)((*(int *)(((0xC1F79B4 + (((t20 << 1) + t20) << 2)) + 0x8)))))->v))) {
         return 0x2;
     }
     return 0x3;
@@ -217,126 +236,4 @@ int FUN_0c037002(int a4, int a5)
     return 0x0;
 }
 
-int FUN_0c0b719e(int a4, int a5)
-{
-    float u1;
-    float u18;
-    int t2;
-    int t3;
-    float u10;
-    float u6;
-    int t20;
-    float u21;
-    float u22;
-    float u23;
-    float u24;
-    float u33;
-    int t27;
-    float u28;
-    float u39;
-    float u55;
-    int t40;
-    int t41;
-    int t42;
-    float u43;
-    int t45;
-    float u46;
-    float u48;
-    int t59;
-    int t60;
-    float u61;
-    int t63;
-    int t64;
-    float u65;
-    float u66;
-    int t68;
-    float u69;
-    float u70;
-    int t72;
-    float u73;
-    float u77;
-    float u78;
-    float u79;
-
-    u1 = *(float *)0xC0B732C;
-    u18 = 0.0f;
-    if ((int)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0))) > 0) {
-        t2 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4));
-        t3 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0));
-        u10 = (((float)t2 / (float)t3) * u1);
-        if ((int)t3 < (int)0x32) {
-            u6 = (((float)t2 / (float)t3) * u1);
-            u10 = (u6 * ((float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x0))) / (*(float *)0xC0B7330)));
-        }
-        u18 = u10;
-    }
-    t20 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4));
-    u21 = *(float *)0xC0B7334;
-    u22 = *(float *)0xC0B7338;
-    u23 = *(float *)0xC0B733C;
-    u24 = ((float)t20 * u22);
-    if (((float)t20 * u22) > u23) {
-        u24 = u23;
-    }
-    u33 = ((u18 * u21) + u24);
-    if ((int)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x8))) > 0) {
-        t27 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0xC));
-        u28 = ((float)t27 * u21);
-        if (((float)t27 * u21) > (1.0f + 1.0f)) {
-            u28 = (1.0f + 1.0f);
-        }
-        u33 = (((u18 * u21) + u24) + u28);
-    }
-    u39 = *(float *)0xC0B7340;
-    u55 = u33;
-    if ((int)((*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4))) + (*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0xC)))) > 0) {
-        t40 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4));
-        t41 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0xC));
-        t42 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0xC));
-        u43 = ((float)(t40 + t41) / u1);
-        if (((float)(t40 + t41) / u1) > 1.0f) {
-            u43 = 1.0f;
-        }
-        t45 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4));
-        u46 = ((((float)t42 / (float)(t45 + t42)) / u39) * u43);
-        if (((((float)t42 / (float)(t45 + t42)) / u39) * u43) > 1.0f) {
-            u46 = 1.0f;
-        }
-        u48 = u33;
-        u48 = u48 + (1.0f + 1.0f) * u46;
-        u55 = u48;
-    }
-    t59 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x14));
-    t60 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x10));
-    u61 = (float)(t59 - t60);
-    if (!((float)(t59 - t60) > 0.0f)) {
-        u61 = 1.0f;
-    }
-    t63 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0xC));
-    t64 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x4));
-    u65 = *(float *)0xC0B7344;
-    u66 = (((float)(t64 + t63) / u61) * u65);
-    if ((((float)(t64 + t63) / u61) * u65) > (1.0f + 1.0f)) {
-        u66 = (1.0f + 1.0f);
-    }
-    t68 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x10));
-    u69 = *(float *)0xC0B7348;
-    u70 = ((float)t68 * u69);
-    if (((float)t68 * u69) > u39) {
-        u70 = u39;
-    }
-    t72 = *(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x18));
-    u73 = ((float)t72 * u65);
-    if (((float)t72 * u65) > u39) {
-        u73 = u39;
-    }
-    u77 = *(float *)0xC0B7350;
-    u78 = (((u55 + u66) + u70) + u73);
-    u78 = u78 + (*(float *)0xC0B734C) * (float)(*(int *)((((((a4 << 2) << 2) << 1) + 0xC247544) + 0x1C)));
-    u79 = u78;
-    if (u78 > u77) {
-        u79 = u77;
-    }
-    return (int)u79;
-}
 

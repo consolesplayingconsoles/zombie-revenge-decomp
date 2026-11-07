@@ -16,7 +16,7 @@ int nlSubVector3op(int, int, int);
 int FUN_0c0dfd50(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int FUN_0c0e5f1c(int);
 int _quick_odd_mvn(void);
 int FUN_0c0a3cdc(int a4, int a5, int a6, int a7);
@@ -24,8 +24,15 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7);
 int FUN_0c063df0(int a4, int a5, int a6);
 int FUN_0c03261c(int a4, float f4, float f5);
 int FUN_0c064640(int a4, int a5);
-int FUN_0c0b2126(int a4, int a5, int a6, int a7);
-void FUN_0c058e7c(int a4, int a5, int a6, int a7);
+int FUN_0c0b2126(int);
+void FUN_0c058e7c(int, int);
+struct o3C_float { char p[0x3C]; float v; };
+struct o44_int { char p[0x44]; int v; };
+struct o44_uint { char p[0x44]; unsigned int v; };
+struct o45C_float { char p[0x45C]; float v; };
+struct o460_float { char p[0x460]; float v; };
+struct o464_float { char p[0x464]; float v; };
+
 
 int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
 {
@@ -39,14 +46,14 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
     float u31;
     int stk[10];
 
-    t0 = *(int *)((a4 + 0x44));
+    t0 = (((struct o44_int *)(a4))->v);
     t1 = *(int *)((a4 + 0x30));
-    *(unsigned int *)((a4 + 0x44)) = (t0 - 1);
+    (((struct o44_uint *)(a4))->v) = (t0 - 1);
     if ((int)(t0 - 1) <= 0) {
-        *(float *)((t1 + 0x45C)) = 1.0f;
-        *(float *)((t1 + 0x460)) = 1.0f;
-        *(float *)((t1 + 0x464)) = 1.0f;
-        FUN_0c0e19f2(a4, a5, a6, a7);
+        (((struct o45C_float *)(t1))->v) = 1.0f;
+        (((struct o460_float *)(t1))->v) = 1.0f;
+        (((struct o464_float *)(t1))->v) = 1.0f;
+        FUN_0c0e19f2();
     }
     t7 = *(int *)((a4 + 0x34));
     if (t7 != 0) {
@@ -54,14 +61,14 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
             if (t7 != 2) {
             } else {
                 if (((*(int *)0xC23A258) & 1) != 0) {
-                    *(float *)((a4 + 0x3C)) = 0.0f;
+                    (((struct o3C_float *)(a4))->v) = 0.0f;
                 } else {
-                    *(float *)((a4 + 0x3C)) = 1.0f;
+                    (((struct o3C_float *)(a4))->v) = 1.0f;
                 }
             }
         } else {
-            if ((int)(*(int *)((a4 + 0x44))) < (int)0x3C) {
-                u31 = ((*(float *)((a4 + 0x3C))) * 0.969999969f);
+            if ((int)((((struct o44_int *)(a4))->v)) < (int)0x3C) {
+                u31 = (((((struct o3C_float *)(a4))->v)) * 0.969999969f);
             } else {
                 t22 = FUN_0c0da2e0();
                 t23 = *(int *)(((0x40 + a4) + 0x0));
@@ -70,16 +77,16 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
                 u25 = u25 + 0.299999982f * (FUN_0c0d9e90((t23 + ((t22 + 0x1234) & 0xFFF))));
                 u31 = (u25 * 0.799999952f);
             }
-            *(float *)((a4 + 0x3C)) = u31;
+            (((struct o3C_float *)(a4))->v) = u31;
         }
     } else {
-        u43 = *(float *)((a4 + 0x3C));
-        *(float *)((a4 + 0x3C)) = (u43 + 0.0399999954f);
+        u43 = (((struct o3C_float *)(a4))->v);
+        (((struct o3C_float *)(a4))->v) = (u43 + 0.0399999954f);
         if (!(0.799999952f > (u43 + 0.0399999954f))) {
             *(unsigned int *)((a4 + 0x34)) = ((*(int *)((a4 + 0x34))) + 0x1);
         }
     }
-    FUN_0c0dce80(((int)stk + 4), (*(int *)((a4 + 0x38))), (*(float *)((a4 + 0x3C))));
+    FUN_0c0dce80(((int)stk + 4), (*(int *)((a4 + 0x38))), ((((struct o3C_float *)(a4))->v)));
     return (nlSubVector3op((0x45C + t1), 0xC10D078, ((int)stk + 4)));
 }
 
@@ -124,68 +131,4 @@ int FUN_0c03261c(int a4, float f4, float f5)
 
 
 
-int FUN_0c036a4c(int a4, int a5, int a6, int a7)
-{
-    int t1;
-    int t6;
-    int t27;
-    int t23;
-    int t24;
-    int t51;
-    int t52;
-    int t55;
-    int stk[13];
-
-    t1 = *(int *)((((*(int *)((a4 + 0x30))) << 2) + 0xC246FF0));
-    if (t1 == 0) {
-        FUN_0c0e19f2(a4, a5, a6, a7);
-    }
-    t6 = *(int *)((a4 + 0x3C));
-    if (t6 != 0) {
-        t27 = t6;
-        if (t6 != 1) {
-        } else {
-            FUN_0c036994((*(int *)((a4 + 0x30))), (*(int *)((a4 + 0x48))), ((*(int *)((t1 + 0xA4))) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
-            *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (a4 + 0x50)) + 0x0)) = (*(int *)((a4 + 0x48)));
-            *(volatile int *)((a4 + 0x4C));
-            _quick_odd_mvn();
-            *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xD0 + a4)) + 0x0)) = (*(float *)(((int)stk + 20)));
-            *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xF0 + a4)) + 0x0)) = (float)(*(int *)(((int)stk + 16)));
-            *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (0x110 + a4)) + 0x0)) = (*(int *)(((int)stk + 24)));
-            *(unsigned int *)((a4 + 0x48)) = ((*(int *)((a4 + 0x48))) - 0x2000);
-            t23 = *(int *)((a4 + 0x4C));
-            *(unsigned int *)((a4 + 0x4C)) = (t23 + 0x1);
-            t24 = 0x4C;
-            if ((int)(t23 + 0x1) >= (int)0x8) {
-                *(unsigned int *)((a4 + 0x38)) = 0x1;
-                *(unsigned int *)((a4 + 0x3C)) = 0x0;
-                t24 = 0x1;
-            }
-            t27 = t24;
-        }
-        t55 = t27;
-    } else {
-        *(unsigned int *)((a4 + 0x48)) = 0x10000;
-        *(unsigned int *)((a4 + 0x4C)) = 0x0;
-        *(unsigned int *)((a4 + 0x3C)) = ((*(int *)((a4 + 0x3C))) + 0x1);
-        FUN_0c036994((*(int *)((a4 + 0x30))), (*(int *)((a4 + 0x48))), ((*(int *)((t1 + 0xA4))) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
-        *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (a4 + 0x50)) + 0x0)) = (*(int *)((a4 + 0x48)));
-        *(volatile int *)((a4 + 0x4C));
-        _quick_odd_mvn();
-        *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xD0 + a4)) + 0x0)) = (*(float *)(((int)stk + 20)));
-        *(float *)(((((*(int *)((a4 + 0x4C))) << 2) + (0xF0 + a4)) + 0x0)) = (float)(*(int *)(((int)stk + 16)));
-        *(unsigned int *)(((((*(int *)((a4 + 0x4C))) << 2) + (0x110 + a4)) + 0x0)) = (*(int *)(((int)stk + 24)));
-        *(unsigned int *)((a4 + 0x48)) = ((*(int *)((a4 + 0x48))) - 0x2000);
-        t51 = *(int *)((a4 + 0x4C));
-        *(unsigned int *)((a4 + 0x4C)) = (t51 + 0x1);
-        t52 = 0x4C;
-        if ((int)(t51 + 0x1) >= (int)0x8) {
-            *(unsigned int *)((a4 + 0x38)) = 0x1;
-            *(unsigned int *)((a4 + 0x3C)) = 0x0;
-            t52 = 0x1;
-        }
-        t55 = t52;
-    }
-    return t55;
-}
 

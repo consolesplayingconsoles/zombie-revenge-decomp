@@ -53,6 +53,12 @@ extern void _builtin_ftrv(float *, float *);
 extern void _builtin_ld_ext(float (*)[4]);
 extern float _builtin_sqrtf(float);
 extern void _builtin_st_ext(float (*)[4]);
+struct o2C_short { char p[0x2C]; short v; };
+struct o2C_ushort { char p[0x2C]; unsigned short v; };
+struct o2E_short { char p[0x2E]; short v; };
+struct o2E_ushort { char p[0x2E]; unsigned short v; };
+struct o4_float { char p[0x4]; float v; };
+
 static float iaFscaC(int a)
 {
     float s;
@@ -228,258 +234,7 @@ float FUN_0c0d9f30(int a4)
     return 3.40282347e+38f;
 }
 
-float nlMultiMatrixRevOrder(int a4)
-{
-    float u0;
-    float u1;
-    float u2;
-    float u3;
-    float u4;
-    float u5;
-    float u6;
-    float u7;
-    float u8;
-    float u9;
-    float u10;
-    float u11;
-    float u12;
-    float u13;
-    float u14;
-    float u15;
-    float u16[16];
-    float u17[4];
-    float u18[16];
-    float u19[16];
-    float u20[4];
-    float u21[16];
-    float u22[4];
-    float u23[16];
-    float u24[4];
-    float u25[16];
 
-    u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)(((a4 + 0x4) + 0x0));
-    u2 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    u3 = *(float *)(((((a4 + 0x4) + 0x4) + 0x4) + 0x0));
-    u4 = *(float *)((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u5 = *(float *)(((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u6 = *(float *)((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u7 = *(float *)(((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u8 = *(float *)((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u9 = *(float *)(((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u10 = *(float *)((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u11 = *(float *)(((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u12 = *(float *)((((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u13 = *(float *)(((((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u14 = *(float *)((((((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u15 = *(float *)(((((((((((((((((a4 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
-    u16[0] = u0;
-    u16[1] = u1;
-    u16[2] = u2;
-    u16[3] = u3;
-    u16[4] = u4;
-    u16[5] = u5;
-    u16[6] = u6;
-    u16[7] = u7;
-    u16[8] = u8;
-    u16[9] = u9;
-    u16[10] = u10;
-    u16[11] = u11;
-    u16[12] = u12;
-    u16[13] = u13;
-    u16[14] = u14;
-    u16[15] = u15;
-    _builtin_st_ext((float (*)[4])u18);
-    u17[0] = u18[0];
-    u17[1] = u18[1];
-    u17[2] = u18[2];
-    u17[3] = u18[3];
-    _builtin_ld_ext((float (*)[4])u16);
-    _builtin_ftrv(u17, u17);
-    u19[0] = u0;
-    u19[1] = u1;
-    u19[2] = u2;
-    u19[3] = u3;
-    u19[4] = u4;
-    u19[5] = u5;
-    u19[6] = u6;
-    u19[7] = u7;
-    u19[8] = u8;
-    u19[9] = u9;
-    u19[10] = u10;
-    u19[11] = u11;
-    u19[12] = u12;
-    u19[13] = u13;
-    u19[14] = u14;
-    u19[15] = u15;
-    u20[0] = u18[4];
-    u20[1] = u18[5];
-    u20[2] = u18[6];
-    u20[3] = u18[7];
-    _builtin_ld_ext((float (*)[4])u19);
-    _builtin_ftrv(u20, u20);
-    u21[0] = u0;
-    u21[1] = u1;
-    u21[2] = u2;
-    u21[3] = u3;
-    u21[4] = u4;
-    u21[5] = u5;
-    u21[6] = u6;
-    u21[7] = u7;
-    u21[8] = u8;
-    u21[9] = u9;
-    u21[10] = u10;
-    u21[11] = u11;
-    u21[12] = u12;
-    u21[13] = u13;
-    u21[14] = u14;
-    u21[15] = u15;
-    u22[0] = u18[8];
-    u22[1] = u18[9];
-    u22[2] = u18[10];
-    u22[3] = u18[11];
-    _builtin_ld_ext((float (*)[4])u21);
-    _builtin_ftrv(u22, u22);
-    u23[0] = u0;
-    u23[1] = u1;
-    u23[2] = u2;
-    u23[3] = u3;
-    u23[4] = u4;
-    u23[5] = u5;
-    u23[6] = u6;
-    u23[7] = u7;
-    u23[8] = u8;
-    u23[9] = u9;
-    u23[10] = u10;
-    u23[11] = u11;
-    u23[12] = u12;
-    u23[13] = u13;
-    u23[14] = u14;
-    u23[15] = u15;
-    u24[0] = u18[12];
-    u24[1] = u18[13];
-    u24[2] = u18[14];
-    u24[3] = u18[15];
-    _builtin_ld_ext((float (*)[4])u23);
-    _builtin_ftrv(u24, u24);
-    _builtin_st_ext((float (*)[4])u25);
-    u25[0] = u17[0];
-    u25[1] = u17[1];
-    u25[2] = u17[2];
-    u25[3] = u17[3];
-    u25[4] = u20[0];
-    u25[5] = u20[1];
-    u25[6] = u20[2];
-    u25[7] = u20[3];
-    u25[8] = u22[0];
-    u25[9] = u22[1];
-    u25[10] = u22[2];
-    u25[11] = u22[3];
-    u25[12] = u24[0];
-    u25[13] = u24[1];
-    u25[14] = u24[2];
-    u25[15] = u24[3];
-    _builtin_ld_ext((float (*)[4])u25);
-    return u0;
-}
-
-int nlPopMatrix(int a4)
-{
-    int t0;
-    int t2;
-    int t3;
-    int t4;
-    int t6;
-    float u8;
-    float u9;
-    float u11;
-    float u12;
-    float u14;
-    float u15;
-    float u17;
-    float u18;
-    float u20;
-    float u21;
-    float u23;
-    float u24;
-    float u26;
-    float u27;
-    float u29;
-    float u30;
-    float u10[16];
-    float u13[16];
-    float u16[16];
-    float u19[16];
-    float u22[16];
-    float u25[16];
-    float u28[16];
-    float u31[16];
-
-    t0 = a4;
-    if ((int)a4 <= 0) {
-        t0 = 0x1;
-    }
-    t2 = *(short *)0xC9482B4;
-    t3 = *(short *)0xC9482B6;
-    t4 = (t2 - t0);
-    if ((int)t2 < (int)t0) {
-        t4 = 0x0;
-    }
-    t6 = *(int *)0xC9482B8;
-    *(unsigned short *)0xC9482B4 = t4;
-    if ((int)t4 < (int)t3) {
-        *(unsigned int *)0xC9482BC = (t6 + ((unsigned int)(t4 << 8) >> 2));
-    }
-    u8 = *(float *)(((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x0));
-    u9 = *(float *)((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u10);
-    u10[0] = u9;
-    u10[1] = u8;
-    _builtin_ld_ext((float (*)[4])u10);
-    u11 = *(float *)((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x0));
-    u12 = *(float *)(((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u13);
-    u13[2] = u12;
-    u13[3] = u11;
-    _builtin_ld_ext((float (*)[4])u13);
-    u14 = *(float *)(((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x0));
-    u15 = *(float *)((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u16);
-    u16[4] = u15;
-    u16[5] = u14;
-    _builtin_ld_ext((float (*)[4])u16);
-    u17 = *(float *)((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x0));
-    u18 = *(float *)(((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u19);
-    u19[6] = u18;
-    u19[7] = u17;
-    _builtin_ld_ext((float (*)[4])u19);
-    u20 = *(float *)(((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u21 = *(float *)((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u22);
-    u22[8] = u21;
-    u22[9] = u20;
-    _builtin_ld_ext((float (*)[4])u22);
-    u23 = *(float *)((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u24 = *(float *)(((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u25);
-    u25[10] = u24;
-    u25[11] = u23;
-    _builtin_ld_ext((float (*)[4])u25);
-    u26 = *(float *)(((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u27 = *(float *)((((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u28);
-    u28[12] = u27;
-    u28[13] = u26;
-    _builtin_ld_ext((float (*)[4])u28);
-    u29 = *(float *)((((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u30 = *(float *)(((((((((((t6 + ((unsigned int)(t4 << 8) >> 2)) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u31);
-    u31[14] = u30;
-    u31[15] = u29;
-    _builtin_ld_ext((float (*)[4])u31);
-    return ((((int)t2 >= (int)t0)) ? 1 : 0);
-}
 
 int FUN_0c0dea10(int a4, float f4, float f5)
 {
@@ -562,7 +317,7 @@ int FUN_0c0e1bd0(int a4)
     FUN_0c0e1b72(a4);
     *(unsigned int *)((a4 + 0x14)) = (*(int *)0xC94C790);
     *(unsigned int *)((a4 + 0x18)) = (*(int *)(((*(int *)0xC94C790) + 0x18)));
-    *(unsigned short *)((a4 + 0x2E)) = ((*(short *)((a4 + 0x2E))) & 0xFFFC);
+    (((struct o2E_ushort *)(a4))->v) = (((((struct o2E_short *)(a4))->v)) & 0xFFFC);
     *(unsigned int *)(((*(int *)(((*(int *)0xC94C790) + 0x18))) + 0x14)) = a4;
     *(unsigned int *)(((*(int *)0xC94C790) + 0x18)) = a4;
     *(unsigned int *)((a4 + 0x10)) = (*(int *)(((*(int *)0xC94C790) + 0x10)));
@@ -595,9 +350,9 @@ int FUN_0c0e2030(int a4)
     int t13;
 
     t7 = 0x2C;
-    if ((*(short *)((a4 + 0x2C))) != 0) {
+    if (((((struct o2C_short *)(a4))->v)) != 0) {
         t3 = (*(int *)((a4 + 0x20)));
-        t4 = (unsigned short)(*(short *)((a4 + 0x2C)));
+        t4 = (unsigned short)((((struct o2C_short *)(a4))->v));
         for (;;) {
             t5 = *(int *)((t3 + 0x24));
             t6 = FUN_0c0e2030(t3);
@@ -717,88 +472,16 @@ int FUN_0c0c0304(int a4, int a5, int a6, float f4, float f5, float f6, float f7,
 int nlPrintf(Stk4 s)
 {
     int t0;
-    int stk[14];
 
-    stk[2] = s.w[0];
-    stk[3] = s.w[1];
-    stk[4] = s.w[2];
-    stk[5] = s.w[3];
-    t0 = ((((int)stk + 4) + 0x4) + 0x4);
-    if ((0x3 & ((((int)stk + 4) + 0x4) + 0x4)) != 0) {
-        t0 = ((((int)stk + 4) + 0x4) + 0x8);
+    t0 = ((int)&s + 4);
+    if ((0x3 & ((int)&s + 4)) != 0) {
+        t0 = ((int)&s + 8);
     }
     FUN_0c0edc20(0xC943FA8, s.w[0], t0);
     FUN_0c0daf70(0xC943FA8);
     return 0x0;
 }
 
-void nlQuickInvertMatrix(void)
-{
-    float u4;
-    float u7;
-    int t8;
-    float u11;
-    int t13;
-    int t15;
-    float u0[16];
-    float u2[4];
-    float u3[4];
-    float u5[4];
-    float u6[4];
-    float u9[4];
-    float u10[4];
-    float u16[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    u2[0] = u0[12];
-    u2[1] = u0[13];
-    u2[2] = u0[14];
-    u2[3] = 1.0f;
-    u3[0] = u0[0];
-    u3[1] = u0[1];
-    u3[2] = u0[2];
-    u3[3] = 0.0f;
-    u4 = _builtin_fipr(u2, u3);
-    u5[0] = u0[12];
-    u5[1] = u0[13];
-    u5[2] = u0[14];
-    u5[3] = 1.0f;
-    u6[0] = u0[4];
-    u6[1] = u0[5];
-    u6[2] = u0[6];
-    u6[3] = 0.0f;
-    u7 = _builtin_fipr(u5, u6);
-    t8 = (*(int *)&(u0[1]));
-    u9[0] = u0[12];
-    u9[1] = u0[13];
-    u9[2] = u0[14];
-    u9[3] = 1.0f;
-    u10[0] = u0[8];
-    u10[1] = u0[9];
-    u10[2] = u0[10];
-    u10[3] = (u0[11] - u0[11]);
-    u11 = _builtin_fipr(u9, u10);
-    t13 = (*(int *)&(u0[2]));
-    t15 = (*(int *)&(u0[6]));
-    _builtin_st_ext((float (*)[4])u16);
-    u16[0] = u0[0];
-    u16[1] = u0[4];
-    u16[2] = u0[8];
-    u16[3] = (u4 - u4);
-    u16[4] = (*(float *)&t8);
-    u16[5] = u0[5];
-    u16[6] = u0[9];
-    u16[7] = (u7 - u7);
-    u16[8] = (*(float *)&t13);
-    u16[9] = (*(float *)&t15);
-    u16[10] = u0[10];
-    u16[11] = (u11 - u11);
-    u16[12] = (0.0f - u4);
-    u16[13] = (0.0f - u7);
-    u16[14] = ((u0[14] - u0[14]) - u11);
-    u16[15] = 1.0f;
-    _builtin_ld_ext((float (*)[4])u16);
-}
 
 float nlScaleUnitVector(int a4, int a5, float f4)
 {
@@ -913,11 +596,11 @@ int FUN_0c0e1dc4(int a4)
     int t3;
     int t6;
 
-    *(unsigned short *)((a4 + 0x2C)) = 0x0;
+    (((struct o2C_ushort *)(a4))->v) = 0x0;
     *(unsigned int *)((a4 + 0x20)) = 0x0;
     t0 = *(int *)((a4 + 0x1C));
-    *(unsigned short *)((t0 + 0x2C)) = ((*(short *)((t0 + 0x2C))) + 0x1);
-    t3 = *(short *)((0x2C + (*(int *)((a4 + 0x1C)))));
+    (((struct o2C_ushort *)(t0))->v) = (((((struct o2C_short *)(t0))->v)) + 0x1);
+    t3 = (((struct o2C_short *)((*(int *)((a4 + 0x1C)))))->v);
     if ((unsigned short)t3 == 1) {
         *(unsigned int *)(((*(int *)((a4 + 0x1C))) + 0x20)) = a4;
         *(unsigned int *)((a4 + 0x24)) = a4;
@@ -1088,7 +771,7 @@ int FUN_0c0e1b9a(int a4)
     FUN_0c0e1b72(a4);
     *(unsigned int *)((a4 + 0x14)) = (*(int *)(((*(int *)((a4 + 0x10))) + 0x14)));
     *(unsigned int *)((a4 + 0x18)) = (*(int *)((a4 + 0x10)));
-    *(unsigned short *)((a4 + 0x2E)) = ((*(short *)((a4 + 0x2E))) & 0xFFFC);
+    (((struct o2E_ushort *)(a4))->v) = (((((struct o2E_short *)(a4))->v)) & 0xFFFC);
     *(unsigned int *)(((*(int *)(((*(int *)((a4 + 0x10))) + 0x14))) + 0x18)) = a4;
     *(unsigned int *)(((*(int *)((a4 + 0x10))) + 0x14)) = a4;
     return 0x2E;
@@ -1100,7 +783,7 @@ int FUN_0c0e1c0e(int a4, int a5)
     FUN_0c0e1b72(a4);
     *(unsigned int *)((a4 + 0x14)) = (*(int *)((a5 + 0x14)));
     *(unsigned int *)((a4 + 0x18)) = a5;
-    *(unsigned short *)((a4 + 0x2E)) = ((*(short *)((a4 + 0x2E))) & 0xFFFC);
+    (((struct o2E_ushort *)(a4))->v) = (((((struct o2E_short *)(a4))->v)) & 0xFFFC);
     *(unsigned int *)(((*(int *)((a5 + 0x14))) + 0x18)) = a4;
     *(unsigned int *)((a5 + 0x14)) = a4;
     *(unsigned int *)((a4 + 0x10)) = a5;
@@ -1145,247 +828,8 @@ int FUN_0c0d9bd0(float f4)
     return (((-t0) + 0x4000) & 0xFFFF);
 }
 
-int nlGetMatrix(int a4)
-{
-    int t1;
-    float u3[16];
-    float u4[16];
 
-    t1 = a4;
-    if (a4 == 0) {
-        t1 = (*(int *)0xC9482BC);
-    }
-    _builtin_st_ext((float (*)[4])u3);
-    *(float *)((((t1 + 0x40) - 0x4) + 0x0)) = u3[15];
-    *(float *)(((((t1 + 0x40) - 0x4) - 0x4) + 0x0)) = u3[14];
-    *(float *)((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[13];
-    *(float *)(((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[12];
-    *(float *)((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[11];
-    *(float *)(((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[10];
-    *(float *)((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[9];
-    *(float *)(((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[8];
-    *(float *)((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[7];
-    *(float *)(((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[6];
-    *(float *)((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[5];
-    *(float *)(((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[4];
-    *(float *)((((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[3];
-    *(float *)(((((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[2];
-    *(float *)((((((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[1];
-    *(float *)(((((((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[0];
-    _builtin_st_ext((float (*)[4])u4);
-    u4[0] = u3[0];
-    u4[1] = u3[1];
-    u4[2] = u3[2];
-    u4[3] = u3[3];
-    u4[4] = u3[4];
-    u4[5] = u3[5];
-    u4[6] = u3[6];
-    u4[7] = u3[7];
-    u4[8] = u3[8];
-    u4[9] = u3[9];
-    u4[10] = u3[10];
-    u4[11] = u3[11];
-    u4[12] = u3[12];
-    u4[13] = u3[13];
-    u4[14] = u3[14];
-    u4[15] = u3[15];
-    _builtin_ld_ext((float (*)[4])u4);
-    return (((((((((((((((((t1 + 0x40) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4) - 0x4);
-}
 
-int FUN_0c0db6b0(int a4)
-{
-    float u0[16];
-    float u1[16];
-
-    if (a4 == 0) {
-        return 0x0;
-    }
-    _builtin_st_ext((float (*)[4])u0);
-    *(float *)((((a4 + 0x2C) - 0x4) + 0x0)) = u0[10];
-    *(float *)(((((a4 + 0x2C) - 0x4) - 0x4) + 0x0)) = u0[9];
-    *(float *)((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[8];
-    *(float *)((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) + 0x0)) = u0[6];
-    *(float *)(((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) + 0x0)) = u0[5];
-    *(float *)((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[4];
-    *(float *)((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) + 0x0)) = u0[2];
-    *(float *)(((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) + 0x0)) = u0[1];
-    *(float *)((((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[0];
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = u0[0];
-    u1[1] = u0[1];
-    u1[2] = u0[2];
-    u1[3] = u0[3];
-    u1[4] = u0[4];
-    u1[5] = u0[5];
-    u1[6] = u0[6];
-    u1[7] = u0[7];
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
-    return ((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4);
-}
-
-float nlMultiMatrixRevOrder8(int a4)
-{
-    float u0;
-    float u1;
-    float u2;
-    float u3;
-    float u4;
-    float u5;
-    float u6;
-    float u7;
-    float u8;
-    float u9;
-    float u10;
-    float u11;
-    float u12;
-    float u13;
-    float u14;
-    float u15;
-    float u16[16];
-    float u17[4];
-    float u18[16];
-    float u19[16];
-    float u20[4];
-    float u21[16];
-    float u22[4];
-    float u23[16];
-    float u24[4];
-    float u25[16];
-
-    u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)(((a4 + 0x0) + 4));
-    u2 = *(float *)(((a4 + 0x8) + 0x0));
-    u3 = *(float *)((((a4 + 0x8) + 0x0) + 4));
-    u4 = *(float *)((((a4 + 0x8) + 0x8) + 0x0));
-    u5 = *(float *)(((((a4 + 0x8) + 0x8) + 0x0) + 4));
-    u6 = *(float *)(((((a4 + 0x8) + 0x8) + 0x8) + 0x0));
-    u7 = *(float *)((((((a4 + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    u8 = *(float *)((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u9 = *(float *)(((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    u10 = *(float *)(((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u11 = *(float *)((((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    u12 = *(float *)((((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u13 = *(float *)(((((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    u14 = *(float *)(((((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u15 = *(float *)((((((((((a4 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    u16[0] = u1;
-    u16[1] = u0;
-    u16[2] = u3;
-    u16[3] = u2;
-    u16[4] = u5;
-    u16[5] = u4;
-    u16[6] = u7;
-    u16[7] = u6;
-    u16[8] = u9;
-    u16[9] = u8;
-    u16[10] = u11;
-    u16[11] = u10;
-    u16[12] = u13;
-    u16[13] = u12;
-    u16[14] = u15;
-    u16[15] = u14;
-    _builtin_st_ext((float (*)[4])u18);
-    u17[0] = u18[0];
-    u17[1] = u18[1];
-    u17[2] = u18[2];
-    u17[3] = u18[3];
-    _builtin_ld_ext((float (*)[4])u16);
-    _builtin_ftrv(u17, u17);
-    u19[0] = u1;
-    u19[1] = u0;
-    u19[2] = u3;
-    u19[3] = u2;
-    u19[4] = u5;
-    u19[5] = u4;
-    u19[6] = u7;
-    u19[7] = u6;
-    u19[8] = u9;
-    u19[9] = u8;
-    u19[10] = u11;
-    u19[11] = u10;
-    u19[12] = u13;
-    u19[13] = u12;
-    u19[14] = u15;
-    u19[15] = u14;
-    u20[0] = u18[4];
-    u20[1] = u18[5];
-    u20[2] = u18[6];
-    u20[3] = u18[7];
-    _builtin_ld_ext((float (*)[4])u19);
-    _builtin_ftrv(u20, u20);
-    u21[0] = u1;
-    u21[1] = u0;
-    u21[2] = u3;
-    u21[3] = u2;
-    u21[4] = u5;
-    u21[5] = u4;
-    u21[6] = u7;
-    u21[7] = u6;
-    u21[8] = u9;
-    u21[9] = u8;
-    u21[10] = u11;
-    u21[11] = u10;
-    u21[12] = u13;
-    u21[13] = u12;
-    u21[14] = u15;
-    u21[15] = u14;
-    u22[0] = u18[8];
-    u22[1] = u18[9];
-    u22[2] = u18[10];
-    u22[3] = u18[11];
-    _builtin_ld_ext((float (*)[4])u21);
-    _builtin_ftrv(u22, u22);
-    u23[0] = u1;
-    u23[1] = u0;
-    u23[2] = u3;
-    u23[3] = u2;
-    u23[4] = u5;
-    u23[5] = u4;
-    u23[6] = u7;
-    u23[7] = u6;
-    u23[8] = u9;
-    u23[9] = u8;
-    u23[10] = u11;
-    u23[11] = u10;
-    u23[12] = u13;
-    u23[13] = u12;
-    u23[14] = u15;
-    u23[15] = u14;
-    u24[0] = u18[12];
-    u24[1] = u18[13];
-    u24[2] = u18[14];
-    u24[3] = u18[15];
-    _builtin_ld_ext((float (*)[4])u23);
-    _builtin_ftrv(u24, u24);
-    _builtin_st_ext((float (*)[4])u25);
-    u25[0] = u17[0];
-    u25[1] = u17[1];
-    u25[2] = u17[2];
-    u25[3] = u17[3];
-    u25[4] = u20[0];
-    u25[5] = u20[1];
-    u25[6] = u20[2];
-    u25[7] = u20[3];
-    u25[8] = u22[0];
-    u25[9] = u22[1];
-    u25[10] = u22[2];
-    u25[11] = u22[3];
-    u25[12] = u24[0];
-    u25[13] = u24[1];
-    u25[14] = u24[2];
-    u25[15] = u24[3];
-    _builtin_ld_ext((float (*)[4])u25);
-    return u1;
-}
 
 float nlOuterProduct(int a4, int a5, int a6)
 {
@@ -1439,9 +883,9 @@ int FUN_0c0e20b2(int a4)
     int t6;
 
     t11 = 0x0;
-    if ((*(short *)((a4 + 0x2C))) != 0) {
+    if (((((struct o2C_short *)(a4))->v)) != 0) {
         t3 = (*(int *)((a4 + 0x20)));
-        t4 = (unsigned short)(*(short *)((a4 + 0x2C)));
+        t4 = (unsigned short)((((struct o2C_short *)(a4))->v));
         t5 = 0x0;
         for (;;) {
             t6 = *(int *)((t3 + 0x24));
@@ -1528,7 +972,7 @@ float nlSec(int a4)
 int FUN_0c0e1cc6(int a4, int a5, int a6)
 {
     FUN_0c0e1e6a(a4);
-    *(unsigned short *)((a4 + 0x2E)) = ((*(short *)((a4 + 0x2E))) | 0x2);
+    (((struct o2E_ushort *)(a4))->v) = (((((struct o2E_short *)(a4))->v)) | 0x2);
     *(unsigned int *)((a4 + 0x30)) = a5;
     *(unsigned int *)((a4 + 0x34)) = (*(int *)((a5 + 0x8)));
     *(unsigned int *)((a4 + 0x38)) = a6;
@@ -1615,119 +1059,8 @@ int nlGetMatrix8(int a4)
     return (((((((((t1 + 0x40) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8) - 0x8);
 }
 
-float nlRotateAX(int a4)
-{
-    float u0;
-    float u1;
-    float u2[4];
-    float u3[4];
-    float u4[16];
-    float u5[16];
-    float u6[16];
-    float u7[16];
 
-    u0 = iaFscaS(a4);
-    u1 = iaFscaC(a4);
-    u2[0] = 0.0f;
-    u2[1] = u1;
-    u2[2] = u0;
-    u2[3] = 0.0f;
-    _builtin_ftrv(u2, u2);
-    u3[0] = 0.0f;
-    u3[1] = (-u0);
-    u3[2] = u1;
-    u3[3] = 0.0f;
-    _builtin_ftrv(u3, u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[4] = u2[0];
-    u4[5] = u2[1];
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[6] = u2[2];
-    u5[7] = u2[3];
-    _builtin_ld_ext((float (*)[4])u5);
-    _builtin_st_ext((float (*)[4])u6);
-    u6[8] = u3[0];
-    u6[9] = u3[1];
-    _builtin_ld_ext((float (*)[4])u6);
-    _builtin_st_ext((float (*)[4])u7);
-    u7[10] = u3[2];
-    u7[11] = u3[3];
-    _builtin_ld_ext((float (*)[4])u7);
-    return u2[0];
-}
 
-void FUN_0c0dcbb0(int a4)
-{
-    float u2;
-    float u3;
-    float u4;
-    int t5;
-    float u0[16];
-    float u6[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    u2 = *(float *)((a4 + 0x0));
-    u3 = *(float *)(((a4 + 0x4) + 0x0));
-    u4 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    t5 = (*(int *)&(u0[15]));
-    _builtin_st_ext((float (*)[4])u6);
-    u6[0] = (u0[0] * u2);
-    u6[1] = (u0[1] * u2);
-    u6[2] = (u0[2] * u2);
-    u6[3] = (u0[3] * u2);
-    u6[4] = (u0[4] * u3);
-    u6[5] = (u0[5] * u3);
-    u6[6] = (u0[6] * u3);
-    u6[7] = (u0[7] * u3);
-    u6[8] = (u0[8] * u4);
-    u6[9] = (u0[9] * u4);
-    u6[10] = (u0[10] * u4);
-    u6[11] = (u0[11] * u4);
-    u6[12] = u0[12];
-    u6[13] = u0[13];
-    u6[14] = u0[14];
-    u6[15] = (*(float *)&t5);
-    _builtin_ld_ext((float (*)[4])u6);
-}
-
-void nlTransposeMatrix(void)
-{
-    int t2;
-    int t4;
-    int t6;
-    int t8;
-    int t10;
-    int t12;
-    float u0[16];
-    float u13[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    t2 = (*(int *)&(u0[1]));
-    t4 = (*(int *)&(u0[2]));
-    t6 = (*(int *)&(u0[3]));
-    t8 = (*(int *)&(u0[6]));
-    t10 = (*(int *)&(u0[7]));
-    t12 = (*(int *)&(u0[11]));
-    _builtin_st_ext((float (*)[4])u13);
-    u13[0] = u0[0];
-    u13[1] = u0[4];
-    u13[2] = u0[8];
-    u13[3] = u0[12];
-    u13[4] = (*(float *)&t2);
-    u13[5] = u0[5];
-    u13[6] = u0[9];
-    u13[7] = u0[13];
-    u13[8] = (*(float *)&t4);
-    u13[9] = (*(float *)&t8);
-    u13[10] = u0[10];
-    u13[11] = u0[14];
-    u13[12] = (*(float *)&t6);
-    u13[13] = (*(float *)&t10);
-    u13[14] = (*(float *)&t12);
-    u13[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u13);
-}
 
 float nlGetAverageVector(int a4, int a5, int a6, float f4, float f5)
 {
@@ -1737,17 +1070,17 @@ float nlGetAverageVector(int a4, int a5, int a6, float f4, float f5)
     float u7;
     float u8;
 
-    u2 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    u5 = *(float *)((((a5 + 0x4) + 0x4) + 0x0));
+    u2 = (((struct o4_float *)((a4 + 0x4)))->v);
+    u5 = (((struct o4_float *)((a5 + 0x4)))->v);
     u6 = ((*(float *)((a4 + 0x0))) * f4);
     u6 = u6 + f5 * (*(float *)((a5 + 0x0)));
-    u7 = ((*(float *)(((a4 + 0x4) + 0x0))) * f4);
-    u7 = u7 + f5 * (*(float *)(((a5 + 0x4) + 0x0)));
+    u7 = (((((struct o4_float *)(a4))->v)) * f4);
+    u7 = u7 + f5 * ((((struct o4_float *)(a5))->v));
     *(float *)(((a6 + 0x4) + 0xFFFFFFFC)) = u6;
     u8 = (u2 * f4);
     u8 = u8 + f5 * u5;
-    *(float *)(((a6 + 0x4) + 0x0)) = u7;
-    *(float *)((((a6 + 0x4) + 0x4) + 0x0)) = u8;
+    (((struct o4_float *)(a6))->v) = u7;
+    (((struct o4_float *)((a6 + 0x4)))->v) = u8;
     return f5;
 }
 
@@ -1840,16 +1173,14 @@ int FUN_0c0e0784(int a4)
 
 void FUN_0c0e1e40(int a4, int a5, int a6, int a7)
 {
-    int t3;
     int t4;
     int t5;
     int t6;
 
     if ((*(int *)((a4 + 0x20))) != 0) {
-        t3 = *(int *)((a4 + 0x20));
-        t4 = *(short *)((a4 + 0x2C));
+        t5 = *(int *)((a4 + 0x20));
+        t4 = (((struct o2C_short *)(a4))->v);
         if ((int)(unsigned short)t4 > 0) {
-            t5 = t3;
             t6 = 0x0;
             for (;;) {
                 t6 = (t6 + 0x1);
@@ -1861,7 +1192,7 @@ void FUN_0c0e1e40(int a4, int a5, int a6, int a7)
             }
         }
         *(unsigned int *)((a4 + 0x20)) = 0x0;
-        *(unsigned short *)((a4 + 0x2C)) = 0x0;
+        (((struct o2C_ushort *)(a4))->v) = 0x0;
     }
 }
 
@@ -1895,209 +1226,9 @@ int FUN_0c0d95a0(int a4, int a5, int a6, int a7)
     return t3;
 }
 
-void nlLoadMatrix8(int a4)
-{
-    int t1;
-    float u3;
-    float u4;
-    float u6;
-    float u7;
-    float u9;
-    float u10;
-    float u12;
-    float u13;
-    float u15;
-    float u16;
-    float u18;
-    float u19;
-    float u21;
-    float u22;
-    float u24;
-    float u25;
-    float u5[16];
-    float u8[16];
-    float u11[16];
-    float u14[16];
-    float u17[16];
-    float u20[16];
-    float u23[16];
-    float u26[16];
 
-    t1 = a4;
-    if (a4 == 0) {
-        t1 = (*(int *)0xC9482BC);
-    }
-    u3 = *(float *)((t1 + 0x0));
-    u4 = *(float *)(((t1 + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u5);
-    u5[0] = u4;
-    u5[1] = u3;
-    _builtin_ld_ext((float (*)[4])u5);
-    u6 = *(float *)(((t1 + 0x8) + 0x0));
-    u7 = *(float *)((((t1 + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u8);
-    u8[2] = u7;
-    u8[3] = u6;
-    _builtin_ld_ext((float (*)[4])u8);
-    u9 = *(float *)((((t1 + 0x8) + 0x8) + 0x0));
-    u10 = *(float *)(((((t1 + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u11);
-    u11[4] = u10;
-    u11[5] = u9;
-    _builtin_ld_ext((float (*)[4])u11);
-    u12 = *(float *)(((((t1 + 0x8) + 0x8) + 0x8) + 0x0));
-    u13 = *(float *)((((((t1 + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u14);
-    u14[6] = u13;
-    u14[7] = u12;
-    _builtin_ld_ext((float (*)[4])u14);
-    u15 = *(float *)((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u16 = *(float *)(((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u17);
-    u17[8] = u16;
-    u17[9] = u15;
-    _builtin_ld_ext((float (*)[4])u17);
-    u18 = *(float *)(((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u19 = *(float *)((((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u20);
-    u20[10] = u19;
-    u20[11] = u18;
-    _builtin_ld_ext((float (*)[4])u20);
-    u21 = *(float *)((((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u22 = *(float *)(((((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u23);
-    u23[12] = u22;
-    u23[13] = u21;
-    _builtin_ld_ext((float (*)[4])u23);
-    u24 = *(float *)(((((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0));
-    u25 = *(float *)((((((((((t1 + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x8) + 0x0) + 4));
-    _builtin_st_ext((float (*)[4])u26);
-    u26[14] = u25;
-    u26[15] = u24;
-    _builtin_ld_ext((float (*)[4])u26);
-}
 
-float nlRotateXSC(float f4, float f5)
-{
-    float u0[4];
-    float u1[4];
-    float u2[16];
-    float u3[16];
-    float u4[16];
-    float u5[16];
 
-    u0[0] = 0.0f;
-    u0[1] = f5;
-    u0[2] = f4;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = 0.0f;
-    u1[1] = (-f4);
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[4] = u0[0];
-    u2[5] = u0[1];
-    _builtin_ld_ext((float (*)[4])u2);
-    _builtin_st_ext((float (*)[4])u3);
-    u3[6] = u0[2];
-    u3[7] = u0[3];
-    _builtin_ld_ext((float (*)[4])u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[8] = u1[0];
-    u4[9] = u1[1];
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[10] = u1[2];
-    u5[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u5);
-    return u0[0];
-}
-
-float nlRotateAY(int a4)
-{
-    float u0;
-    float u1;
-    float u2[4];
-    float u3[4];
-    float u4[16];
-    float u5[16];
-    float u6[16];
-    float u7[16];
-
-    u0 = iaFscaS(a4);
-    u1 = iaFscaC(a4);
-    u2[0] = u1;
-    u2[1] = 0.0f;
-    u2[2] = (-u0);
-    u2[3] = 0.0f;
-    _builtin_ftrv(u2, u2);
-    u3[0] = u0;
-    u3[1] = 0.0f;
-    u3[2] = u1;
-    u3[3] = 0.0f;
-    _builtin_ftrv(u3, u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[0] = u2[0];
-    u4[1] = u2[1];
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[2] = u2[2];
-    u5[3] = u2[3];
-    _builtin_ld_ext((float (*)[4])u5);
-    _builtin_st_ext((float (*)[4])u6);
-    u6[8] = u3[0];
-    u6[9] = u3[1];
-    _builtin_ld_ext((float (*)[4])u6);
-    _builtin_st_ext((float (*)[4])u7);
-    u7[10] = u3[2];
-    u7[11] = u3[3];
-    _builtin_ld_ext((float (*)[4])u7);
-    return u2[0];
-}
-
-float nlRotateAZ(int a4)
-{
-    float u0;
-    float u1;
-    float u2[4];
-    float u3[4];
-    float u4[16];
-    float u5[16];
-    float u6[16];
-    float u7[16];
-
-    u0 = iaFscaS(a4);
-    u1 = iaFscaC(a4);
-    u2[0] = u1;
-    u2[1] = u0;
-    u2[2] = 0.0f;
-    u2[3] = 0.0f;
-    _builtin_ftrv(u2, u2);
-    u3[0] = (-u0);
-    u3[1] = u1;
-    u3[2] = 0.0f;
-    u3[3] = 0.0f;
-    _builtin_ftrv(u3, u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[0] = u2[0];
-    u4[1] = u2[1];
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[2] = u2[2];
-    u5[3] = u2[3];
-    _builtin_ld_ext((float (*)[4])u5);
-    _builtin_st_ext((float (*)[4])u6);
-    u6[4] = u3[0];
-    u6[5] = u3[1];
-    _builtin_ld_ext((float (*)[4])u6);
-    _builtin_st_ext((float (*)[4])u7);
-    u7[6] = u3[2];
-    u7[7] = u3[3];
-    _builtin_ld_ext((float (*)[4])u7);
-    return u2[0];
-}
 
 int FUN_0c0dd280(void)
 {
@@ -2251,88 +1382,7 @@ void paletteUpload(void)
     }
 }
 
-float nlRotateYSC(float f4, float f5)
-{
-    float u0[4];
-    float u1[4];
-    float u2[16];
-    float u3[16];
-    float u4[16];
-    float u5[16];
 
-    u0[0] = f5;
-    u0[1] = 0.0f;
-    u0[2] = (-f4);
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = f4;
-    u1[1] = 0.0f;
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[0] = u0[0];
-    u2[1] = u0[1];
-    _builtin_ld_ext((float (*)[4])u2);
-    _builtin_st_ext((float (*)[4])u3);
-    u3[2] = u0[2];
-    u3[3] = u0[3];
-    _builtin_ld_ext((float (*)[4])u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[8] = u1[0];
-    u4[9] = u1[1];
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[10] = u1[2];
-    u5[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u5);
-    return u0[0];
-}
-
-void nlUnitMatrix(void)
-{
-    float u0[16];
-    float u1[16];
-    float u2[16];
-    float u3[16];
-    float u4[16];
-    float u5[16];
-    float u6[16];
-    float u7[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    u0[2] = 0.0f;
-    u0[3] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u0);
-    _builtin_st_ext((float (*)[4])u1);
-    u1[6] = 0.0f;
-    u1[7] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[8] = 0.0f;
-    u2[9] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u2);
-    _builtin_st_ext((float (*)[4])u3);
-    u3[12] = 0.0f;
-    u3[13] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[0] = 1.0f;
-    u4[1] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u4);
-    _builtin_st_ext((float (*)[4])u5);
-    u5[10] = 1.0f;
-    u5[11] = 0.0f;
-    _builtin_ld_ext((float (*)[4])u5);
-    _builtin_st_ext((float (*)[4])u6);
-    u6[4] = 0.0f;
-    u6[5] = 1.0f;
-    _builtin_ld_ext((float (*)[4])u6);
-    _builtin_st_ext((float (*)[4])u7);
-    u7[14] = 0.0f;
-    u7[15] = 1.0f;
-    _builtin_ld_ext((float (*)[4])u7);
-}
 
 float FUN_0c0dd0a0(int a4, int a5)
 {
@@ -2472,13 +1522,13 @@ float nlAddVector(int a4, int a5)
 
     u0 = *(float *)((a4 + 0x0));
     u1 = *(float *)((a5 + 0x0));
-    u2 = *(float *)(((a4 + 0x4) + 0x0));
-    u3 = *(float *)(((a5 + 0x4) + 0x0));
-    u4 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    u5 = *(float *)((((a5 + 0x4) + 0x4) + 0x0));
+    u2 = (((struct o4_float *)(a4))->v);
+    u3 = (((struct o4_float *)(a5))->v);
+    u4 = (((struct o4_float *)((a4 + 0x4)))->v);
+    u5 = (((struct o4_float *)((a5 + 0x4)))->v);
     *(float *)((((a4 + 0x4) + 0x4) + 0xFFFFFFF8)) = (u0 + u1);
     *(float *)((((a4 + 0x4) + 0x4) + 0xFFFFFFFC)) = (u2 + u3);
-    *(float *)((((a4 + 0x4) + 0x4) + 0x0)) = (u4 + u5);
+    (((struct o4_float *)((a4 + 0x4)))->v) = (u4 + u5);
     return (u0 + u1);
 }
 
@@ -2542,13 +1592,13 @@ float nlSubVector(int a4, int a5)
 
     u0 = *(float *)((a4 + 0x0));
     u1 = *(float *)((a5 + 0x0));
-    u2 = *(float *)(((a4 + 0x4) + 0x0));
-    u3 = *(float *)(((a5 + 0x4) + 0x0));
-    u4 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    u5 = *(float *)((((a5 + 0x4) + 0x4) + 0x0));
+    u2 = (((struct o4_float *)(a4))->v);
+    u3 = (((struct o4_float *)(a5))->v);
+    u4 = (((struct o4_float *)((a4 + 0x4)))->v);
+    u5 = (((struct o4_float *)((a5 + 0x4)))->v);
     *(float *)((((a4 + 0x4) + 0x4) + 0xFFFFFFF8)) = (u0 - u1);
     *(float *)((((a4 + 0x4) + 0x4) + 0xFFFFFFFC)) = (u2 - u3);
-    *(float *)((((a4 + 0x4) + 0x4) + 0x0)) = (u4 - u5);
+    (((struct o4_float *)((a4 + 0x4)))->v) = (u4 - u5);
     return (u0 - u1);
 }
 
@@ -2600,7 +1650,6 @@ int FUN_0c0e15b4(int a4)
 {
     int t0;
     int t6;
-    int t2;
 
     t0 = *(int *)((a4 + 0x10));
     if ((*(int *)((t0 + 0x34))) != 0) {
@@ -2608,9 +1657,8 @@ int FUN_0c0e15b4(int a4)
             if ((*(int *)((t0 + 0x34))) == 0) {
                 break;
             }
-            t2 = (FUN_0c0e1b9a((*(int *)((t0 + 0x34)))));
+            t6 = (FUN_0c0e1b9a((*(int *)((t0 + 0x34)))));
         }
-        t6 = t2;
     }
     return t6;
 }
@@ -2786,8 +1834,8 @@ void FUN_0c0db430(int a4, int a5)
     float u3[4];
 
     u3[0] = (*(float *)((a4 + 0x0)));
-    u3[1] = (*(float *)(((a4 + 0x4) + 0x0)));
-    u3[2] = (*(float *)((((a4 + 0x4) + 0x4) + 0x0)));
+    u3[1] = ((((struct o4_float *)(a4))->v));
+    u3[2] = ((((struct o4_float *)((a4 + 0x4)))->v));
     u3[3] = 1.0f;
     _builtin_ftrv(u3, u3);
     *(float *)((((a5 + 0x10) - 0x4) + 0x0)) = u3[3];
@@ -2824,28 +1872,3 @@ void FUN_0c0db4d0(int a4, int a5)
     *(float *)((((((a5 + 0xC) - 0x4) - 0x4) - 0x4) + 0x0)) = u3[0];
 }
 
-void FUN_0c0dc670(void)
-{
-    float u0[16];
-    float u1[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = (-u0[0]);
-    u1[1] = (-u0[1]);
-    u1[2] = (-u0[2]);
-    u1[3] = (-u0[3]);
-    u1[4] = (-u0[4]);
-    u1[5] = (-u0[5]);
-    u1[6] = (-u0[6]);
-    u1[7] = (-u0[7]);
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
-}

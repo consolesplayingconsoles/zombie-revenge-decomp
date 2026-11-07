@@ -13,6 +13,12 @@ int FUN_0c06ce0a(int a4);
 int FUN_0c0e22cc(int a4, int a5, int a6);
 int FUN_0c0be0e4(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9);
 int FUN_0c01a49c(void);
+struct o40_int { char p[0x40]; int v; };
+struct o44_int { char p[0x44]; int v; };
+struct o48_int { char p[0x48]; int v; };
+struct o4C_int { char p[0x4C]; int v; };
+struct o50_uint { char p[0x50]; unsigned int v; };
+
 
 int FUN_0c087016(int a4, int a5)
 {
@@ -27,29 +33,34 @@ int FUN_0c087016(int a4, int a5)
     int t19;
     int t23;
     int stk[12];
+    int R1008;
+    int R1012;
 
-    *(unsigned int *)(((int)stk + 8)) = a4;
+    R1008 = *(int *)((int)stk + 8);
+    R1012 = *(int *)((int)stk + 12);
+
+    R1008 = a4;
     t1 = FUN_0c0e19aa(0xC087290, 0x54, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t1);
     *(unsigned int *)((t1 + 0x4)) = 0xC086FE0;
-    *(unsigned int *)((t1 + 0x50)) = (a5 - 1);
+    (((struct o50_uint *)(t1))->v) = (a5 - 1);
     *(unsigned int *)((t1 + 0x3C)) = (FUN_0c0e262a(((a5 << 2) << 2)));
     *(unsigned int *)(((0x40 + t1) + 0x0)) = (FUN_0c0e262a((a5 << 2)));
     *(unsigned int *)(((0x44 + t1) + 0x0)) = (FUN_0c0e262a((a5 << 2)));
     *(unsigned int *)(((0x48 + t1) + 0x0)) = (FUN_0c0e262a((a5 << 2)));
     *(unsigned int *)(((0x4C + t1) + 0x0)) = (FUN_0c0e262a((a5 << 2)));
     t9 = *(int *)((t1 + 0x3C));
-    *(unsigned int *)(((int)stk + 12)) = ((*(int *)((t1 + 0x4C))) + (a5 << 2));
-    t13 = ((*(int *)((t1 + 0x48))) + (a5 << 2));
-    t14 = ((*(int *)((t1 + 0x44))) + (a5 << 2));
-    t15 = ((*(int *)((t1 + 0x40))) + (a5 << 2));
+    R1012 = (((((struct o4C_int *)(t1))->v)) + (a5 << 2));
+    t13 = (((((struct o48_int *)(t1))->v)) + (a5 << 2));
+    t14 = (((((struct o44_int *)(t1))->v)) + (a5 << 2));
+    t15 = (((((struct o40_int *)(t1))->v)) + (a5 << 2));
     t16 = t9;
     t17 = a5;
     for (;;) {
-        t18 = *(int *)(((int)stk + 8));
+        t18 = R1008;
         t19 = t16;
         t16 = (t16 + 0x10);
-        *(unsigned int *)(((int)stk + 8)) = (t18 + 0x10);
+        R1008 = (t18 + 0x10);
         { struct mv4 { int w[4]; }; *(struct mv4 *)(t19) = *(struct mv4 *)(((t18 + 0x10) - 16)); }
         *(unsigned int *)(((t15 - 0x4) + 0x0)) = ((FUN_0c0da2e0()) << 1);
         t15 = (t15 - 0x4);
@@ -57,8 +68,8 @@ int FUN_0c087016(int a4, int a5)
         t14 = (t14 - 0x4);
         *(unsigned int *)(((t13 - 0x4) + 0x0)) = ((FUN_0c0da2e0()) << 1);
         t13 = (t13 - 0x4);
-        t23 = *(int *)(((int)stk + 12));
-        *(unsigned int *)(((int)stk + 12)) = (t23 - 4);
+        t23 = R1012;
+        R1012 = (t23 - 4);
         t17 = (t17 - 0x1);
         *(unsigned int *)(((t23 - 4) + 0x0)) = (((FUN_0c0da2e0()) << 2) << 2);
         if (t17 == 0) {

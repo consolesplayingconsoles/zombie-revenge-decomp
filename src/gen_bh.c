@@ -23,6 +23,17 @@ extern float _builtin_sqrtf(float);
 int FUN_0c07903a(int a4, int a5, int a6, int a7);
 int FUN_0c04073a(int a4, float f4);
 int FUN_0c0cc752(int a4);
+struct o4C_float { char p[0x4C]; float v; };
+struct o60_short { char p[0x60]; short v; };
+struct o60_ushort { char p[0x60]; unsigned short v; };
+struct o62_short { char p[0x62]; short v; };
+struct o62_ushort { char p[0x62]; unsigned short v; };
+struct o64_short { char p[0x64]; short v; };
+struct o64_ushort { char p[0x64]; unsigned short v; };
+struct o78_int { char p[0x78]; int v; };
+struct o98_int { char p[0x98]; int v; };
+struct o98_uint { char p[0x98]; unsigned int v; };
+
 
 int FUN_0c07903a(int a4, int a5, int a6, int a7)
 {
@@ -30,24 +41,24 @@ int FUN_0c07903a(int a4, int a5, int a6, int a7)
     int t3;
 
     FUN_0c0685a4(a4, a5, a6, a7);
-    t1 = *(int *)((a4 + 0x98));
-    *(unsigned int *)((a4 + 0x98)) = (t1 - 1);
+    t1 = (((struct o98_int *)(a4))->v);
+    (((struct o98_uint *)(a4))->v) = (t1 - 1);
     if ((int)(t1 - 1) < 0) {
         return FUN_0c0e19f2();
     }
-    t3 = *(int *)((a4 + 0x98));
+    t3 = (((struct o98_int *)(a4))->v);
     if ((t3 & 1) != 0) {
         nlAddVector((a4 + 0x30), (a4 + 0x48));
-        *(float *)((a4 + 0x4C)) = ((*(float *)((a4 + 0x4C))) - 0.049999997f);
-        *(unsigned short *)((a4 + 0x60)) = ((*(short *)((a4 + 0x60))) + (*(int *)(((a4 + 0x68) + 0x0))));
-        *(unsigned short *)((a4 + 0x62)) = ((*(short *)((a4 + 0x62))) + (*(int *)(((0x6C + a4) + 0x0))));
-        *(unsigned short *)((a4 + 0x64)) = ((*(short *)((a4 + 0x64))) + (*(int *)(((0x70 + a4) + 0x0))));
+        (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) - 0.049999997f);
+        (((struct o60_ushort *)(a4))->v) = (((((struct o60_short *)(a4))->v)) + (*(int *)(((a4 + 0x68) + 0x0))));
+        (((struct o62_ushort *)(a4))->v) = (((((struct o62_short *)(a4))->v)) + (*(int *)(((0x6C + a4) + 0x0))));
+        (((struct o64_ushort *)(a4))->v) = (((((struct o64_short *)(a4))->v)) + (*(int *)(((0x70 + a4) + 0x0))));
         nlPushMatrix(0x0);
         FUN_0c0dcca0((a4 + 0x30));
-        nlRotateAZ((*(short *)((a4 + 0x64))));
-        nlRotateAY((*(short *)((a4 + 0x62))));
-        nlRotateAX((*(short *)((a4 + 0x60))));
-        FUN_0c0c465c((*(int *)((a4 + 0x78))));
+        nlRotateAZ(((((struct o64_short *)(a4))->v)));
+        nlRotateAY(((((struct o62_short *)(a4))->v)));
+        nlRotateAX(((((struct o60_short *)(a4))->v)));
+        FUN_0c0c465c(((((struct o78_int *)(a4))->v)));
         return nlPopMatrix(0x1);
     }
     return t3;

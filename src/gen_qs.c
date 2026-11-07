@@ -13,6 +13,15 @@ int nlPopMatrix(int);
 int nlRotateAY(int);
 int nlSubVector3op(int, int, int);
 int FUN_0c02f174(int a4);
+struct o28C_int { char p[0x28C]; int v; };
+struct o4F4_int { char p[0x4F4]; int v; };
+struct o508_int { char p[0x508]; int v; };
+struct o508_uint { char p[0x508]; unsigned int v; };
+struct o510_int { char p[0x510]; int v; };
+struct o514_int { char p[0x514]; int v; };
+struct o514_uint { char p[0x514]; unsigned int v; };
+struct o524_int { char p[0x524]; int v; };
+
 
 int FUN_0c02f174(int a4)
 {
@@ -37,13 +46,13 @@ int FUN_0c02f174(int a4)
     register float w0_1;
     v0_3 = a4;
     v0_6 = (0x28C);
-    v0_0 = ((*(int *)((v0_3 + 0x508))));
+    v0_0 = (((((struct o508_int *)(v0_3))->v)));
     v0_1 = (v0_3);
     v0_2 = (0x0);
-    if (((*(int *)((v0_3 + 0x28C))) != 0)) goto L_C02F19C;
+    if ((((((struct o28C_int *)(v0_3))->v)) != 0)) goto L_C02F19C;
     L_C02F37C:;
-    *(unsigned int *)((v0_1 + 0x508)) = v0_2;
-    *(unsigned int *)((v0_1 + 0x514)) = v0_2;
+    (((struct o508_uint *)(v0_1))->v) = v0_2;
+    (((struct o514_uint *)(v0_1))->v) = v0_2;
     v0_0 = (((v0_0 == 0)));
     L_C02F386:;
     return ((v0_0) ? 1 : 0);
@@ -51,11 +60,11 @@ int FUN_0c02f174(int a4)
     v0_4 = *(int *)(((((*(int *)((v0_1 + v0_6))) << 2) + 0xC246FF0) + 0x0));
     v0_7 = (v0_4);
     v0_3 = (0xC246FF0);
-    if (((*(int *)((v0_4 + 0x524))) != 0)) goto L_C02F1B4;
+    if ((((((struct o524_int *)(v0_4))->v)) != 0)) goto L_C02F1B4;
     goto L_C02F37C;
     L_C02F1B4:;
     v0_6 = (0x510);
-    if (((*(int *)((v0_1 + 0x510))) == (*(int *)((v0_7 + 0x510))))) goto L_C02F1C2;
+    if ((((((struct o510_int *)(v0_1))->v)) == ((((struct o510_int *)(v0_7))->v)))) goto L_C02F1C2;
     goto L_C02F37C;
     L_C02F1C2:;
     v0_4 = ((*(int *)(((((*(int *)((v0_1 + v0_6))) << 2) + v0_3) + 0x0))));
@@ -64,16 +73,16 @@ int FUN_0c02f174(int a4)
     v0_3 = (v0_5);
     L_C02F1DC:;
     v0_6 = (v0_4);
-    if (((*(int *)((v0_7 + 0x514))) == 0)) goto L_C02F214;
+    if ((((((struct o514_int *)(v0_7))->v)) == 0)) goto L_C02F214;
     v0_7 = ((0x518 + v0_7));
     L_C02F218:;
     nlSubVector3op((((int)stk + 4) + 0x24), (v0_6 + 0x30), v0_7);
-    v0_6 = *(int *)((v0_1 + 0x4F4));
+    v0_6 = (((struct o4F4_int *)(v0_1))->v);
     w0_0 = *(float *)((((((*(int *)(((0x528 + v0_1) + 0x0))) - 1) << 2) + ((*(int *)((0xC1F79BC + (((v0_6 << 1) + v0_6) << 2)))) + 0x7C)) + 0x0));
     w0_1 = FUN_0c0dcea0((((int)stk + 4) + 0x24));
     FUN_0c0dce80((((int)stk + 4) + 0x18), (((int)stk + 4) + 0x24), (w0_0 / w0_1));
-    *(unsigned int *)((v0_1 + 0x508)) = v0_5;
-    *(unsigned int *)((v0_1 + 0x514)) = v0_5;
+    (((struct o508_uint *)(v0_1))->v) = v0_5;
+    (((struct o514_uint *)(v0_1))->v) = v0_5;
     nlAddVector3op((0x518 + v0_1), (v0_4 + 0x30), (((int)stk + 4) + 0x18));
     v0_5 = (FUN_0c02f0e4(v0_1, v0_3)) != 0;
     if (v0_5) goto L_C02F338;

@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0848d6(float, float, float);
-int FUN_0c0849da(int, int, int, int, int, int, int, int);
+int FUN_0c0849da(void);
 int FUN_0c0a7714(int, int, float, float, float);
 int FUN_0c0a8016(int, int, int);
 int FUN_0c0be6ee(int, int);
@@ -21,6 +21,12 @@ int nlRotateAY(int);
 int nlSubVector3op(int, int, int);
 int nlUnitMatrix(void);
 int FUN_0c09406c(int a4);
+struct o84_int { char p[0x84]; int v; };
+struct o88_int { char p[0x88]; int v; };
+struct o8C_int { char p[0x8C]; int v; };
+struct o90_int { char p[0x90]; int v; };
+struct o90_uint { char p[0x90]; unsigned int v; };
+
 
 int FUN_0c09406c(int a4)
 {
@@ -40,7 +46,7 @@ int FUN_0c09406c(int a4)
     register int t67;
     register int t69;
 
-    nlPushMatrix((((((*(int *)((a4 + 0x84))) << 8) + 0xC25F840) + (((((*(int *)((a4 + 0x88))) << 2) << 2) << 2) << 1)) + (((((*(int *)0xC23A258) & 0x1) << 2) << 2) << 2)));
+    nlPushMatrix(((((((((struct o84_int *)(a4))->v)) << 8) + 0xC25F840) + ((((((((struct o88_int *)(a4))->v)) << 2) << 2) << 2) << 1)) + (((((*(int *)0xC23A258) & 0x1) << 2) << 2) << 2)));
     *(unsigned int *)(((int)stk + 36)) = (*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC)));
     *(unsigned int *)(((int)stk + 20)) = 0x0;
     *(unsigned int *)(((int)stk + 16)) = (a4 + 0x34);
@@ -48,7 +54,7 @@ int FUN_0c09406c(int a4)
     t7 = *(int *)((a4 + 0x30));
     t9 = t7;
     t10 = (t7 + 0xC);
-    t11 = (*(int *)((a4 + 0x8C)));
+    t11 = ((((struct o8C_int *)(a4))->v));
     for (;;) {
         t12 = t10;
         t10 = (t10 + 0xC);
@@ -61,7 +67,7 @@ int FUN_0c09406c(int a4)
         }
     }
     FUN_0c0db840((((int)stk + 4) + 0x34));
-    t16 = *(int *)((a4 + 0x8C));
+    t16 = (((struct o8C_int *)(a4))->v);
     { struct mv3 { int w[3]; }; *(struct mv3 *)(((((t16 << 1) + t16) << 2) + (*(int *)((a4 + 0x30))))) = *(struct mv3 *)((((int)stk + 4) + 0x34)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x40)) = *(struct mv3 *)((*(int *)((a4 + 0x30)))); }
     *(unsigned int *)(((int)stk + 24)) = 0xC200B60;
@@ -107,10 +113,10 @@ int FUN_0c09406c(int a4)
         if ((t64 - 1) != 0) continue;
         break;
     }
-    FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
+    FUN_0c0849da();
     nlPopMatrix(0x1);
-    t67 = *(int *)((a4 + 0x90));
-    *(unsigned int *)((a4 + 0x90)) = (t67 - 1);
+    t67 = (((struct o90_int *)(a4))->v);
+    (((struct o90_uint *)(a4))->v) = (t67 - 1);
     t69 = 0x90;
     if ((int)(t67 - 1) <= 0) {
         t69 = (FUN_0c0e19f2());

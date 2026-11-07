@@ -1,77 +1,103 @@
 /* Straight-line functions with calls and guards (batch gen_lg): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0da2e0(void);
-int FUN_0c0db470(int, int);
-int FUN_0c0dc5a0(void);
-int FUN_0c0e1830(int, int);
-int FUN_0c0e19d0(int);
-int FUN_0c0e19f2(void);
-int nlPopMatrix(int);
-int nlRotateAX(int);
-int nlRotateAY(int);
-int nlRotateAZ(int);
-int FUN_0c0885d4(int a4);
+int FUN_0c0c0340(int);
+int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0c6352(int a4, int a5, int a6, int a7);
 
-int FUN_0c0885d4(int a4)
+int FUN_0c0c6352(int a4, int a5, int a6, int a7)
 {
-    int stk[15];
-    register int t1;
-    register int t2;
-    register int t3;
-    register int t5;
-    register float u7;
-    register float u11;
-    register int t15;
-    register int t16;
-    register int t19;
-    register int t20;
-    register int t26;
-    register int t31;
+    int stk[3];
 
-    t1 = *(int *)((a4 + 0x30));
-    *(unsigned int *)(((int)stk + 8)) = (*(int *)((a4 + 0x40)));
-    t2 = 0x0;
-    for (;;) {
-        t3 = FUN_0c0e1830(0xC088D54, 0x64);
-        FUN_0c0e19d0(t3);
-        t5 = *(int *)((t1 + 0xBC));
-        { struct mv3 { int w[3]; }; *(struct mv3 *)((t3 + 0x30)) = *(struct mv3 *)(((((((t5 << 1) + t5) << 2) << 2) << 2) + 0xC23F268)); }
-        u7 = (1.0f + 1.0f);
-        u7 = u7 + 7.62962736e-05f * (float)(FUN_0c0da2e0());
-        *(float *)((t3 + 0x50)) = u7;
-        *(unsigned int *)(((0x48 + t3) + 0x0)) = (((*(int *)((a4 + 0x3C))) & 0x3) + 0xFB);
-        *(unsigned short *)(((0x5C + t3) + 0x0)) = (FUN_0c0da2e0());
-        *(float *)((t3 + 0x4C)) = 1.0f;
-        *(unsigned int *)((t3 + 0x60)) = 0xA;
-        u11 = 0.5f;
-        u11 = u11 + 4.57777642e-05f * (float)(FUN_0c0da2e0());
-        *(float *)((t3 + 0x44)) = ((*(float *)((a4 + 0x34))) * u11);
-        FUN_0c0dc5a0();
-        t15 = (*(short *)((t1 + 0x6E)));
-        *(int *)((int)stk + 4) = t15;
-        t16 = FUN_0c0da2e0();
-        nlRotateAY(((((t16 & 0x3FFF) + t15) + t2) - 8192));
-        t19 = (*(short *)((t1 + 0x6C)));
-        *(int *)((int)stk + 4) = t19;
-        t20 = FUN_0c0da2e0();
-        nlRotateAX((((t20 & 0x1FFF) + t19) - 7168));
-        nlRotateAZ((*(short *)((t1 + 0x70))));
-        FUN_0c0db470((t3 + 0x3C), (t3 + 0x3C));
-        nlPopMatrix(0x1);
-        t26 = *(int *)((a4 + 0x3C));
-        *(unsigned int *)((a4 + 0x3C)) = (t26 - 1);
-        if ((int)(t26 - 1) <= 0) {
-            FUN_0c0e19f2();
-        }
-        t31 = *(int *)(((int)stk + 8));
-        t2 = (t2 + 0x7FFF);
-        *(unsigned int *)(((int)stk + 8)) = (t31 - 1);
-        if ((t31 - 1) == 0) {
-            break;
-        }
-    }
-    *(float *)((a4 + 0x34)) = ((*(float *)((a4 + 0x34))) * 0.98999995f);
-    return 0x34;
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R8;
+    register int R9;
+    register int R10;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register float w0_0;
+    register float w0_1;
+    register float w0_2;
+    v0_4 = a4;
+    v0_5 = a5;
+    v0_1 = *(short *)((v0_4 + 0x78));
+    *(unsigned int *)(((int)stk + 8)) = (*(int *)((v0_4 + 0x70)));
+    *(unsigned char *)(((int)stk + 4)) = 0xFFFFFFFF;
+    v0_3 = (0x7E);
+    v0_0 = (0xC1E8760);
+    v0_2 = (v0_1);
+    v0_1 = (v0_4);
+    if (((*(short *)((v0_4 + 0x7E))) == 0)) goto L_C0C6384;
+    *(unsigned short *)((v0_1 + v0_3)) = ((*(short *)((v0_1 + v0_3))) - 1);
+    L_C0C6484:;
+    return v0_3;
+    L_C0C6384:;
+    v0_3 = (0x80);
+    if (((*(short *)((v0_1 + 0x80))) == 0)) goto L_C0C639E;
+    v0_6 = *(short *)((v0_1 + v0_3));
+    *(unsigned short *)((v0_1 + v0_3)) = (v0_6 - 1);
+    if (((short)(v0_6 - 1) != 0)) goto L_C0C639E;
+    FUN_0c0e19f2(v0_4, v0_5, a6, a7);
+    L_C0C639E:;
+    v0_3 = *(short *)((v0_1 + 0x7A));
+    *(unsigned short *)((v0_1 + 0x7A)) = (v0_3 + 0x1);
+    if (((int)(short)(v0_3 + 0x1) < (int)(*(short *)((v0_1 + 0x7C))))) goto L_C0C63BE;
+    *(unsigned short *)((v0_1 + 0x7A)) = 0x0;
+    *(unsigned short *)((v0_1 + 0x78)) = ((*(short *)((v0_1 + 0x78))) + 0x1);
+    L_C0C63BE:;
+    *(float *)((v0_1 + 0x34)) = (*(float *)((v0_1 + 0x68)));
+    *(float *)((v0_1 + 0x38)) = (*(float *)((v0_1 + 0x6C)));
+    v0_3 = (0xC0C0340);
+    w0_0 = (18.0f);
+    w0_1 = (34.0f);
+    L_C0C6436:;
+    if ((v0_2 == 0)) goto L_C0C644A;
+    v0_3 = *(int *)(((int)stk + 8));
+    *(unsigned int *)(((int)stk + 8)) = (v0_3 + 0x1);
+    v0_3 = *(signed char *)((((v0_3 + 0x1) - 1) + 0x0));
+    *(unsigned char *)(((int)stk + 4)) = v0_3;
+    if (!((v0_3 != 0))) goto L_C0C644A;
+    if (((*(signed char *)(((int)stk + 4))) != 10)) goto L_C0C6418;
+    *(float *)((v0_1 + 0x34)) = (*(float *)((v0_1 + 0x68)));
+    v0_3 = (0x38);
+    w0_2 = (((*(float *)((v0_1 + 0x38))) + w0_1));
+    goto L_C0C6432;
+    L_C0C644A:;
+    v0_3 = *(short *)((v0_1 + 0x76));
+    v0_4 = (v0_3);
+    if (((int)v0_3 >= 0)) goto L_C0C646A;
+    v0_3 = (v0_4);
+    if ((v0_4 != -1)) goto L_C0C6484;
+    if ((v0_2 == 0)) goto L_C0C6484;
+    v0_2 = *(int *)(((int)stk + 8));
+    *(unsigned int *)(((int)stk + 8)) = (v0_2 - 1);
+    if (((*(signed char *)(((v0_2 - 1) + 0x0))) == 0)) goto L_C0C6484;
+    L_C0C646A:;
+    v0_2 = *(int *)0xC23A258;
+    v0_3 = (v0_2);
+    if (((v0_2 & 4) == 0)) goto L_C0C6484;
+    *(unsigned int *)((v0_1 + 0x30)) = (*(short *)((v0_0 + 0x80)));
+    *(float *)((v0_1 + 0x5C)) = 1.0f;
+    v0_3 = ((FUN_0c0c0340((v0_1 + 0x30))));
+    goto L_C0C6484;
+    L_C0C6432:;
+    *(float *)((v0_1 + v0_3)) = w0_2;
+    v0_2 = ((v0_2 - 1));
+    goto L_C0C6436;
+    L_C0C6418:;
+    if (((*(signed char *)(((int)stk + 4))) == 32)) goto L_C0C642C;
+    *(unsigned int *)((v0_1 + 0x30)) = (*(short *)((v0_0 + ((*(signed char *)(((int)stk + 4))) << 1))));
+    FUN_0c0c0340((v0_1 + 0x30));
+    L_C0C642C:;
+    v0_3 = (0x34);
+    w0_2 = (((*(float *)((v0_1 + 0x34))) + w0_0));
+    goto L_C0C6432;
 }
-

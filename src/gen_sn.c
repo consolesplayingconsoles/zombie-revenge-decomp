@@ -12,6 +12,15 @@ int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlUnitMatrix(void);
 int FUN_0c0a9988(int a4, int a5, int a6, int a7);
+struct o2E8_uint { char p[0x2E8]; unsigned int v; };
+struct o0_int { int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o8_int { char p[0x8]; int v; };
+struct oC_int { char p[0xC]; int v; };
+
+
 
 int FUN_0c0a9988(int a4, int a5, int a6, int a7)
 {
@@ -32,14 +41,16 @@ int FUN_0c0a9988(int a4, int a5, int a6, int a7)
     register int v0_3;
     register int v0_4;
     register int v0_5;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
     v0_2 = a6;
     v0_4 = a7;
-    *(unsigned int *)(((*(int *)0xC246FF0) + 0x2E8)) = 0x2;
-    *(unsigned int *)(((*(int *)0xC246FF4) + 0x2E8)) = 0x2;
-    *(unsigned int *)(((*(int *)0xC246FF8) + 0x2E8)) = 0x2;
+    (((struct o2E8_uint *)(((((struct o0_int *)0xC246FF0)->v))))->v) = 0x2;
+    (((struct o2E8_uint *)(((((struct o4_int *)0xC246FF0)->v))))->v) = 0x2;
+    (((struct o2E8_uint *)(((((struct o8_int *)0xC246FF0)->v))))->v) = 0x2;
     FUN_0c019a5c(0x2, 0xC246FF0, v0_2, v0_4);
     FUN_0c0bfabc();
-    FUN_0c0e16c0((*(int *)0xC23ECE0));
+    FUN_0c0e16c0(((((struct o0_int *)0xC23ECE0)->v)));
     nlPushMatrix(0x0);
     FUN_0c0dc0b0(0x3);
     nlUnitMatrix();
@@ -47,14 +58,14 @@ int FUN_0c0a9988(int a4, int a5, int a6, int a7)
     FUN_0c0dc0b0(0x1);
     nlPopMatrix(0x1);
     FUN_0c0a9f70((*(int *)0xC24FA44));
-    FUN_0c0e16c0((*(int *)0xC23ECEC));
-    FUN_0c0e16c0((*(int *)0xC23ECE4));
-    FUN_0c0e16c0((*(int *)0xC23ECF0));
-    FUN_0c0e16c0((*(int *)0xC23ECF4));
+    FUN_0c0e16c0(((((struct oC_int *)0xC23ECE0)->v)));
+    FUN_0c0e16c0(((((struct o4_int *)0xC23ECE0)->v)));
+    FUN_0c0e16c0(((((struct o10_int *)0xC23ECE0)->v)));
+    FUN_0c0e16c0(((((struct o14_int *)0xC23ECE0)->v)));
     v0_0 = (0xC24FA44);
     v0_3 = (0xC2497E0);
     v0_2 = (0xC249830);
-    if (((*(int *)0xC204998) != 0)) goto L_C0A9A1A;
+    if ((((((struct o0_int *)0xC204998)->v)) != 0)) goto L_C0A9A1A;
     L_C0A9B26:;
     *(unsigned int *)((v0_0 + 0x0)) = ((*(int *)((v0_0 + 0x0))) + 0x1);
     v0_1 = FUN_0c016a86();
@@ -75,16 +86,16 @@ int FUN_0c0a9988(int a4, int a5, int a6, int a7)
     L_C0A9B52:;
     return v0_4;
     L_C0A9A1A:;
-    if (((*(int *)0xC2049A8) != 0)) goto L_C0A9A26;
+    if ((((((struct o10_int *)0xC204998)->v)) != 0)) goto L_C0A9A26;
     goto L_C0A9B26;
     L_C0A9A26:;
-    *(unsigned int *)(((int)stk + 4)) = 0xC249880;
+    R1004 = 0xC249880;
     v0_1 = (0xC24FA40);
     v0_4 = (0xC249880);
     if (((int)(*(int *)0xC249884) >= (int)0xFFFFFFC0)) goto L_C0A9A3E;
     if (((unsigned int)(*(int *)((v0_3 + 0x28))) <= (unsigned int)0x1)) goto L_C0A9A50;
     L_C0A9A3E:;
-    if (((int)(*(int *)(((*(int *)(((int)stk + 4))) + 0xC))) >= (int)0xFFFFFFC0)) goto L_C0A9AC4;
+    if (((int)(*(int *)(((R1004) + 0xC))) >= (int)0xFFFFFFC0)) goto L_C0A9AC4;
     if (((unsigned int)(*(int *)((v0_2 + 0x28))) > (unsigned int)0x1)) goto L_C0A9AC4;
     L_C0A9A50:;
     v0_2 = *(int *)((v0_1 + 0x0));
@@ -95,13 +106,13 @@ int FUN_0c0a9988(int a4, int a5, int a6, int a7)
     *(unsigned int *)0xC260840 = (*(int *)((((*(int *)((v0_1 + 0x0))) << 2) + 0xC10D920)));
     goto L_C0A9B26;
     L_C0A9AC4:;
-    *(unsigned int *)(((int)stk + 4)) = v0_4;
+    R1004 = v0_4;
     if (((int)(*(int *)((v0_4 + 0x4))) <= (int)0x40)) goto L_C0A9AE8;
     if (((unsigned int)(*(int *)((v0_3 + 0x28))) <= (unsigned int)0x1)) goto L_C0A9B0A;
     if (((unsigned int)(*(int *)((v0_3 + 0x28))) <= (unsigned int)0x1E)) goto L_C0A9AE8;
     if ((((*(int *)0xC23A258) & 3) == 0)) goto L_C0A9B0A;
     L_C0A9AE8:;
-    if (((int)(*(int *)(((*(int *)(((int)stk + 4))) + 0xC))) <= (int)0x40)) goto L_C0A9B1A;
+    if (((int)(*(int *)(((R1004) + 0xC))) <= (int)0x40)) goto L_C0A9B1A;
     if (((unsigned int)(*(int *)((v0_2 + 0x28))) <= (unsigned int)0x1)) goto L_C0A9B0A;
     if (((unsigned int)(*(int *)((v0_2 + 0x28))) <= (unsigned int)0x1E)) goto L_C0A9B1A;
     if ((((*(int *)0xC23A258) & 3) != 0)) goto L_C0A9B1A;

@@ -4,6 +4,11 @@
 int FUN_0c0db470(int, int);
 int FUN_0c0db4d0(int, int);
 float FUN_0c0be958(int a4);
+struct o18_float { char p[0x18]; float v; };
+struct o1C_float { char p[0x1C]; float v; };
+struct o32C_float { char p[0x32C]; float v; };
+struct o334_float { char p[0x334]; float v; };
+
 
 float FUN_0c0be958(int a4)
 {
@@ -43,12 +48,12 @@ float FUN_0c0be958(int a4)
         u16 = (1.0f / (_builtin_fabsf(u11) * (1.0f + 1.0f)));
         *(float *)(((int)stk + 20)) = (u15 * u16);
         u20 = (*(float *)(((int)stk + 16)));
-        u20 = u20 + u5 * ((*(float *)(((int)stk + 4))) + (*(float *)((t2 + 0x32C))));
-        *(float *)((t9 + 0x18)) = (u20 + u4);
+        u20 = u20 + u5 * ((*(float *)(((int)stk + 4))) + ((((struct o32C_float *)(t2))->v)));
+        (((struct o18_float *)(t9))->v) = (u20 + u4);
         u24 = (*(float *)(((int)stk + 20)));
-        u24 = u24 + u5 * ((*(float *)(((int)stk + 8))) + (*(float *)((t2 + 0x334))));
+        u24 = u24 + u5 * ((*(float *)(((int)stk + 8))) + ((((struct o334_float *)(t2))->v)));
         t8 = (t8 - 0x1);
-        *(float *)((t9 + 0x1C)) = (u24 + u4);
+        (((struct o1C_float *)(t9))->v) = (u24 + u4);
         *(unsigned int *)(((t9 + 0x1C) + 0x0)) = ((*(int *)(((t9 + 0x1C) + 0x0))) | 0x1);
         if (t8 == 0) {
             break;

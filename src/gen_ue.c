@@ -66,3 +66,4 @@ int FUN_0c024938(int a4, int a5, int a6, int a7)
     *(unsigned int *)((a4 + 0x4F8)) = ((*(int *)((a4 + 0x4F8))) + 0x1);
     return 0x4F8;
 }
+

@@ -1,0 +1,94 @@
+/* Straight-line functions with calls and guards (batch gen_abw): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+extern int _builtin_get_imask(void);
+extern void _builtin_set_imask(int);
+int kmSetHSyncCallback(int, int);
+int kmSetVSyncCallback(int, int);
+void syChainDeleteHandler(int a4);
+
+void syChainDeleteHandler(int a4)
+{
+    int stk[2];
+
+    register int R2;
+    register int R3;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_10;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    register int v0_8;
+    register int v0_9;
+    v0_4 = a4;
+    *(unsigned short *)(((int)stk + 4)) = (_builtin_get_imask());
+    _builtin_set_imask(0xF);
+    v0_1 = (((v0_4 << 2) << 2));
+    v0_2 = ((((v0_4 << 2) << 2) + 0xC9529E8));
+    v0_4 = (0x100);
+    v0_0 = (0x1);
+    v0_7 = (0x1);
+    v0_3 = (0xC9529E8);
+    L_C2224A2:;
+    v0_5 = ((((v0_7 << 2) << 2) + v0_3));
+    if (((*(int *)(((((v0_7 << 2) << 2) + v0_3) + 0x4))) != v0_2)) goto L_C2224B8;
+    if ((((*(int *)((v0_5 + 0xC))) & 0x80000000) != 0)) goto L_C2224BE;
+    L_C2224B8:;
+    v0_5 = (unsigned int)(v0_7 + 0x1) < (unsigned int)v0_4;
+    v0_7 = ((v0_7 + 0x1));
+    if (v0_5) goto L_C2224A2;
+    L_C2224BE:;
+    v0_6 = (0x0);
+    if ((v0_7 == v0_4)) goto L_C2224D6;
+    *(unsigned int *)(((((v0_7 << 2) << 2) + v0_3) + 0x4)) = (*(int *)(((v0_1 + v0_3) + 0x4)));
+    *(unsigned int *)(((v0_1 + v0_3) + 0xC)) = v0_6;
+    L_C2225B0:;
+    _builtin_set_imask(((unsigned int)((((unsigned short)(*(short *)(((int)stk + 4))) & 0xF) << 2) << 2) >> 4));
+    return;
+    L_C2224D6:;
+    v0_2 = (v0_1 + v0_3);
+    v0_7 = (0xA05F6920);
+    v0_1 = (0xC0);
+    v0_2 = v0_2;
+    v0_5 = (v0_0);
+    v0_4 = (0xC9539E8);
+    v0_3 = (0x90);
+    v0_8 = (0x200);
+    v0_9 = (0xA05F6924);
+    L_C2224E8:;
+    if (((*(int *)((v0_4 + (v0_5 << 2)))) != v0_2)) goto L_C2225A8;
+    *(unsigned int *)((((v0_5 << 2) + v0_4) + 0x0)) = (*(int *)((v0_2 + 0x4)));
+    *(unsigned int *)((v0_2 + 0xC)) = v0_6;
+    if (((*(int *)((((v0_5 << 2) + v0_4) + 0x0))) != 0)) goto L_C2225AE;
+    if ((v0_5 != v0_3)) goto L_C222514;
+    kmSetVSyncCallback(0x0, 0x0);
+    L_C2225AE:;
+    goto L_C2225B0;
+    L_C222514:;
+    if ((v0_5 != 0x92)) goto L_C222526;
+    kmSetHSyncCallback(0x0, 0x0);
+    goto L_C2225AE;
+    L_C222526:;
+    v0_1 = (((int)(short)((v0_5 << 2) << 2) >> 8));
+    v0_2 = (((v0_5 << 2) << 2));
+    v0_3 = (((unsigned int)((unsigned int)((unsigned int)(unsigned char)((v0_5 << 2) << 2) >> 2) >> 2) >> 1));
+    if ((((int)(short)((v0_5 << 2) << 2) >> 8) != 10)) goto L_C222552;
+    *(unsigned int *)((v0_7 + 0x0)) = ((*(int *)((v0_7 + 0x0))) & (~((int)v0_0 << (int)(v0_3 + 0xC))));
+    L_C222562:;
+    *(unsigned int *)((((((int)_builtin_get_vbr()) + ((unsigned int)((unsigned int)(v0_2 - 512) >> 2) >> 1)) + v0_8) + 0x0)) = 0xC22FAF8;
+    goto L_C2225AE;
+    L_C222552:;
+    if ((v0_1 != 11)) goto L_C222562;
+    *(unsigned int *)((v0_9 + 0x0)) = ((*(int *)((v0_9 + 0x0))) & (~((int)v0_0 << (int)v0_3)));
+    goto L_C222562;
+    L_C2225A8:;
+    v0_10 = (unsigned int)(v0_5 + 0x1) < (unsigned int)v0_1;
+    v0_5 = ((v0_5 + 0x1));
+    if (v0_10) goto L_C2224E8;
+    goto L_C2225AE;
+}

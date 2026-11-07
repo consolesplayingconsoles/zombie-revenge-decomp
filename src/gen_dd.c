@@ -70,6 +70,20 @@ int kmiInitNTSC(void);
 int FUN_0c21b228(int a4, int a5, int a6, int a7);
 int FUN_0c0f2100(int a4, int a5, int a6, int a7, int a8, int a9);
 int kmSetDisplayMode(int a4, int a5, int a6, int a7);
+struct o70_float { char p[0x70]; float v; };
+struct o74_float { char p[0x74]; float v; };
+struct o78_float { char p[0x78]; float v; };
+struct o7C_float { char p[0x7C]; float v; };
+struct o80_float { char p[0x80]; float v; };
+struct o84_float { char p[0x84]; float v; };
+struct o88_float { char p[0x88]; float v; };
+struct o8C_float { char p[0x8C]; float v; };
+struct o90_int { char p[0x90]; int v; };
+struct o94_int { char p[0x94]; int v; };
+struct o98_int { char p[0x98]; int v; };
+struct o9C_int { char p[0x9C]; int v; };
+struct oA0_int { char p[0xA0]; int v; };
+
 
 
 
@@ -79,30 +93,24 @@ int kmSetVertexRenderState(int a4, int a5, float f4)
     int t19;
     int t22;
     int t27;
-    int t97;
-    int t38;
     int t105;
-    int t90;
-    int t79;
-    int t64;
-    int t55;
 
-    *(unsigned int *)0xC952878 = (*(int *)((a4 + 0x90)));
-    *(unsigned int *)0xC952888 = (*(int *)((a4 + 0x94)));
-    *(unsigned int *)0xC95288C = (*(int *)((a4 + 0x98)));
+    *(unsigned int *)0xC952878 = ((((struct o90_int *)(a4))->v));
+    *(unsigned int *)0xC952888 = ((((struct o94_int *)(a4))->v));
+    *(unsigned int *)0xC95288C = ((((struct o98_int *)(a4))->v));
     if ((((unsigned int)((unsigned int)(*(int *)0xC952878) >> 16) >> 8) & 7) == 0) {
         *(unsigned int *)0xC95288C = (((*(int *)0xC95288C) & 0x3FFFFFF) | 0x20000000);
     }
-    *(unsigned int *)0xC952890 = (*(int *)((a4 + 0x9C)));
-    *(float *)0xC952898 = (*(float *)((a4 + 0x70)));
-    *(float *)0xC95289C = (*(float *)((a4 + 0x74)));
-    *(float *)0xC9528A0 = (*(float *)((a4 + 0x78)));
-    *(float *)0xC9528A4 = (*(float *)((a4 + 0x7C)));
-    *(float *)0xC9528A8 = (*(float *)((a4 + 0x80)));
-    *(float *)0xC9528AC = (*(float *)((a4 + 0x84)));
-    *(float *)0xC9528B0 = (*(float *)((a4 + 0x88)));
-    *(float *)0xC9528B4 = (*(float *)((a4 + 0x8C)));
-    *(unsigned int *)0xC9528B8 = (*(int *)((a4 + 0xA0)));
+    *(unsigned int *)0xC952890 = ((((struct o9C_int *)(a4))->v));
+    *(float *)0xC952898 = ((((struct o70_float *)(a4))->v));
+    *(float *)0xC95289C = ((((struct o74_float *)(a4))->v));
+    *(float *)0xC9528A0 = ((((struct o78_float *)(a4))->v));
+    *(float *)0xC9528A4 = ((((struct o7C_float *)(a4))->v));
+    *(float *)0xC9528A8 = ((((struct o80_float *)(a4))->v));
+    *(float *)0xC9528AC = ((((struct o84_float *)(a4))->v));
+    *(float *)0xC9528B0 = ((((struct o88_float *)(a4))->v));
+    *(float *)0xC9528B4 = ((((struct o8C_float *)(a4))->v));
+    *(unsigned int *)0xC9528B8 = ((((struct oA0_int *)(a4))->v));
     t19 = *(int *)0xC952878;
     *(unsigned int *)0xC9528E8 = (*(int *)((((((((((unsigned int)((unsigned int)(0x20000000 & t19) >> 16) >> 8) | ((unsigned int)((unsigned int)((unsigned int)(0x1000000 & t19) >> 16) >> 2) >> 2)) | ((unsigned int)((unsigned int)(0x40 & t19) >> 2) >> 1)) | ((unsigned int)((unsigned int)(0x20 & t19) >> 2) >> 1)) | ((unsigned int)((unsigned int)(0x10 & t19) >> 2) >> 1)) | ((unsigned int)(0x4 & t19) >> 2)) << 2) + 0xC239B6C)));
     *(unsigned int *)0xC239B2C = (*(int *)0xC952878);
@@ -116,19 +124,18 @@ int kmSetVertexRenderState(int a4, int a5, float f4)
         *(unsigned int *)0xC239B34 = (*(int *)0xC95288C);
         *(unsigned int *)0xC239B38 = (*(int *)0xC952890);
         t27 = *(int *)0xC9528E8;
-        t97 = 0xC239B4C;
+        t105 = 0xC239B4C;
         if (t27 != 0) {
             if (t27 != 1) {
                 if (t27 != 2) {
                     if (t27 != 3) {
                         if (t27 != 4) {
-                            t38 = 0xC239B3C;
+                            t105 = 0xC239B3C;
                             if (t27 == 16) {
                                 *(unsigned int *)0xC239B3C = ((((((int)((*(float *)0xC952898) * 255.0f) << 16) << 8) | ((int)((*(float *)0xC95289C) * 255.0f) << 16)) | ((int)((*(float *)0xC9528A0) * 255.0f) << 8)) | (int)((*(float *)0xC9528A4) * 255.0f));
                                 *(unsigned int *)0xC239B40 = ((((((int)((*(float *)0xC9528A8) * 255.0f) << 16) << 8) | ((int)((*(float *)0xC9528AC) * 255.0f) << 16)) | ((int)((*(float *)0xC9528B0) * 255.0f) << 8)) | (int)((*(float *)0xC9528B4) * 255.0f));
-                                t38 = 0xC239B4C;
+                                t105 = 0xC239B4C;
                             }
-                            t55 = t38;
                         } else {
                             *(unsigned int *)0xC239B3C = (*(int *)0xC9528BC);
                             *(unsigned int *)0xC239B40 = (*(int *)0xC9528C0);
@@ -140,15 +147,13 @@ int kmSetVertexRenderState(int a4, int a5, float f4)
                             *(unsigned int *)0xC239B60 = (*(int *)0xC9528CC);
                             *(unsigned int *)0xC239B64 = (*(int *)0xC9528D0);
                             *(unsigned int *)0xC239B68 = (*(int *)0xC9528D4);
-                            t55 = 0xC239B6C;
+                            t105 = 0xC239B6C;
                         }
-                        t64 = t55;
                     } else {
                         *(unsigned int *)0xC239B3C = (*(int *)0xC9528BC);
                         *(unsigned int *)0xC239B40 = (*(int *)0xC9528C0);
-                        t64 = 0xC239B4C;
+                        t105 = 0xC239B4C;
                     }
-                    t79 = t64;
                 } else {
                     *(unsigned int *)0xC239B4C = (*(int *)0xC952898);
                     *(unsigned int *)0xC239B50 = (*(int *)0xC95289C);
@@ -158,19 +163,16 @@ int kmSetVertexRenderState(int a4, int a5, float f4)
                     *(unsigned int *)0xC239B60 = (*(int *)0xC9528AC);
                     *(unsigned int *)0xC239B64 = (*(int *)0xC9528B0);
                     *(unsigned int *)0xC239B68 = (*(int *)0xC9528B4);
-                    t79 = 0xC239B6C;
+                    t105 = 0xC239B6C;
                 }
-                t90 = t79;
             } else {
                 *(unsigned int *)0xC239B3C = (*(int *)0xC952898);
                 *(unsigned int *)0xC239B40 = (*(int *)0xC95289C);
                 *(unsigned int *)0xC239B44 = (*(int *)0xC9528A0);
                 *(unsigned int *)0xC239B48 = (*(int *)0xC9528A4);
-                t90 = 0xC239B4C;
+                t105 = 0xC239B4C;
             }
-            t97 = t90;
         }
-        t105 = t97;
     }
     *(unsigned int *)0xC952954 = (*(int *)0xC9529C8);
     *(unsigned int *)0xC952958 = (t105 - 0xC239B2C);
@@ -558,581 +560,6 @@ int kmiInitNTSC(void)
 }
 
 
-int FUN_0c0f2100(int a4, int a5, int a6, int a7, int a8, int a9)
-{
-    int t1;
-    int t2;
-    int t3;
-    int t92;
-    int t18;
-    int t86;
-    int t20;
-    int t80;
-    int t74;
-    int t21;
-    int t29;
-    int t36;
-    int t30;
-    int t31;
-    int t32;
-    int t37;
-    int t38;
-    int t45;
-    int t52;
-    int t46;
-    int t47;
-    int t53;
-    int t54;
-    int t63;
-    int t66;
-    int t68;
-    int t71;
-    int t100;
-    int t108;
-    int t115;
-    int t109;
-    int t110;
-    int t111;
-    int t116;
-    int t117;
-    int t124;
-    int t131;
-    int t125;
-    int t126;
-    int t132;
-    int t133;
-    int t142;
-    int t145;
-    int t147;
-    int t150;
-    int t255;
-    int t181;
-    int t249;
-    int t183;
-    int t243;
-    int t237;
-    int t184;
-    int t192;
-    int t199;
-    int t193;
-    int t194;
-    int t195;
-    int t200;
-    int t201;
-    int t208;
-    int t215;
-    int t209;
-    int t210;
-    int t216;
-    int t217;
-    int t226;
-    int t229;
-    int t231;
-    int t234;
-    int t263;
-    int t271;
-    int t278;
-    int t272;
-    int t273;
-    int t274;
-    int t279;
-    int t280;
-    int t287;
-    int t294;
-    int t288;
-    int t289;
-    int t295;
-    int t296;
-    int t305;
-    int t308;
-    int t310;
-    int t313;
-    int t324;
-    int t161;
-    int t153;
-    int t25;
-    int t69;
-    int t104;
-    int t148;
-    int t316;
-    int t188;
-    int t232;
-    int t267;
-    int t311;
-    int stk[34];
-
-    stk[24] = a8;
-    stk[25] = a9;
-    *(unsigned int *)(((int)stk + 20)) = 0x8;
-    *(unsigned short *)(((int)stk + 28)) = 0x0;
-    *(unsigned int *)(((int)stk + 16)) = ((((int)stk + 12) + 0x54) + 0x7);
-    if (((unsigned char)(*(signed char *)((((((int)stk + 12) + 0x54) + 0x7) + 0x0))) & 127) == 0) {
-        t1 = FUN_0c0f2598((((int)stk + 12) + 0x54), 0x7);
-        if (t1 != 0) {
-            t2 = (0x0 + a5);
-            t3 = 0x0;
-            for (;;) {
-                if ((int)t3 >= (int)0x8) {
-                    break;
-                }
-                t3 = (t3 + 0x1);
-                *(unsigned char *)((t2 + 0x0)) = 0x0;
-                t2 = (t2 + 0x1);
-            }
-            *(unsigned int *)((a6 + 0x0)) = 0x0;
-            if (((unsigned char)(*(signed char *)(((*(int *)(((int)stk + 16))) + 0x0))) & 128) != 0) {
-                *(unsigned char *)((a7 + 0x0)) = 0xFFFFFFFF;
-            } else {
-                *(unsigned char *)((a7 + 0x0)) = 0x1;
-            }
-            t161 = 0x0;
-        } else {
-            FUN_0c0f2b70(a7, (((int)stk + 4) + 0x8), (((int)stk + 4) + 0x34), 0x0, a8, a9);
-            if ((*(signed char *)((a7 + 0x0))) == -1) {
-                *(unsigned char *)(((((int)stk + 12) + 0x54) + 0x7)) = ((*(signed char *)(((((int)stk + 12) + 0x54) + 0x7))) & 0x7F);
-            }
-            if ((*(short *)(((int)stk + 12))) == 0x7FF) {
-                t92 = 0x2;
-                if ((unsigned char)(*(signed char *)(((((int)stk + 12) + 0x54) + 0x6))) == 0xF0) {
-                    t18 = FUN_0c0f2598((((int)stk + 12) + 0x54), 0x6);
-                    t86 = 0x2;
-                    if (t18 != 0) {
-                        t20 = *(signed char *)((a7 + 0x0));
-                        t80 = 0x1;
-                        if (t20 != 1) {
-                            t74 = 0xFFFFFFFF;
-                            if (t20 != -1) {
-                                t21 = *(short *)(((int)stk + 12));
-                                *(unsigned short *)(((int)stk + 12)) = (t21 - 0x3FF);
-                                if ((int)(short)(t21 - 0x3FF) >= 0) {
-                                    t25 = (FUN_0c0f26bc(a8, a9));
-                                } else {
-                                    t25 = ((FUN_0c0f26bc(a8, a9)) - 1);
-                                }
-                                *(unsigned char *)(((int)stk + 63)) = 0x0;
-                                *(unsigned int *)((a6 + 0x0)) = ((t25 - a4) + 0x1);
-                                FUN_0c0f2a30(a4, (((int)stk + 12) + 0x24));
-                                *(volatile int *)(((int)stk + 20));
-                                t29 = FUN_0c0e5dc0();
-                                t36 = 0x0;
-                                if ((int)(0x8 - t29) > 0) {
-                                    t30 = 0x0;
-                                    for (;;) {
-                                        t31 = t30;
-                                        t32 = ((t30 + t29) + (((int)stk + 12) + 0x24));
-                                        t30 = (t30 + 0x1);
-                                        *(unsigned char *)(((((int)stk + 12) + 0x24) + t31)) = (*(signed char *)((t32 + 0x0)));
-                                        if ((int)t30 >= (int)(0x8 - t29)) {
-                                            break;
-                                        }
-                                    }
-                                    t36 = t30;
-                                }
-                                if ((int)t36 < (int)0x8) {
-                                    t37 = t36;
-                                    t38 = (t36 + (((int)stk + 12) + 0x24));
-                                    for (;;) {
-                                        *(unsigned char *)((t38 + 0x0)) = 0x0;
-                                        t37 = (t37 + 0x1);
-                                        t38 = (t38 + 0x1);
-                                        if ((int)t37 >= (int)0x8) {
-                                            break;
-                                        }
-                                    }
-                                }
-                                FUN_0c0f29d8((((int)stk + 12) + 0x24), 0x8, (a4 - ((t29 << 2) << 1)));
-                                *(unsigned int *)(((int)stk + 24)) = (a4 - 1);
-                                FUN_0c0f2a30((a4 - 1), (((int)stk + 12) + 0x1C));
-                                *(volatile int *)(((int)stk + 24));
-                                *(volatile int *)(((int)stk + 20));
-                                t45 = FUN_0c0e5dc0();
-                                *(unsigned int *)(((int)stk + 16)) = t45;
-                                t52 = 0x0;
-                                if ((int)(0x8 - t45) > 0) {
-                                    t46 = 0x0;
-                                    for (;;) {
-                                        t47 = t46;
-                                        t46 = (t46 + 0x1);
-                                        *(unsigned char *)(((((int)stk + 12) + 0x1C) + t47)) = (*(signed char *)(((((*(int *)(((int)stk + 16))) + t47) + (((int)stk + 12) + 0x1C)) + 0x0)));
-                                        if ((int)t46 >= (int)(0x8 - t45)) {
-                                            break;
-                                        }
-                                    }
-                                    t52 = t46;
-                                }
-                                if ((int)t52 < (int)0x8) {
-                                    t53 = t52;
-                                    t54 = (t52 + (((int)stk + 12) + 0x1C));
-                                    for (;;) {
-                                        t53 = (t53 + 0x1);
-                                        *(unsigned char *)((t54 + 0x0)) = 0x0;
-                                        t54 = (t54 + 0x1);
-                                        if ((int)t53 >= (int)0x8) {
-                                            break;
-                                        }
-                                    }
-                                }
-                                FUN_0c0f29d8((((int)stk + 12) + 0x1C), 0x8, ((a4 - (((*(int *)(((int)stk + 16))) << 2) << 1)) - 1));
-                                for (;;) {
-                                    FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (*(int *)((a6 + 0x0))), a5);
-                                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                    t63 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                                    if ((int)t63 > 0) {
-                                        *(unsigned short *)(((int)stk + 28)) = 0x1;
-                                        *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) + 0x1);
-                                        continue;
-                                    }
-                                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                    t66 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                                    if (t66 == 0) {
-                                        break;
-                                    }
-                                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                    t68 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x1C), 0x8);
-                                    if (((int)t68 < 0) && (t69 = *(short *)(((int)stk + 28)), t69 == 0)) {
-                                        *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) - 1);
-                                        continue;
-                                    }
-                                    return 0x0;
-                                }
-                                t71 = *(int *)((a6 + 0x0));
-                                *(unsigned int *)((a6 + 0x0)) = (t71 + 0x1);
-                                FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (t71 + 0x1), a5);
-                                t74 = 0x0;
-                            }
-                            t80 = t74;
-                        }
-                        t86 = t80;
-                    }
-                    t92 = t86;
-                }
-                t153 = t92;
-            } else {
-                t100 = *(short *)(((int)stk + 12));
-                *(unsigned short *)(((int)stk + 12)) = (t100 - 0x3FF);
-                if ((int)(short)(t100 - 0x3FF) >= 0) {
-                    t104 = (FUN_0c0f26bc(a8, a9));
-                } else {
-                    t104 = ((FUN_0c0f26bc(a8, a9)) - 1);
-                }
-                *(unsigned char *)(((int)stk + 63)) = 0x0;
-                *(unsigned int *)((a6 + 0x0)) = ((t104 - a4) + 0x1);
-                FUN_0c0f2a30(a4, (((int)stk + 12) + 0x24));
-                *(volatile int *)(((int)stk + 20));
-                t108 = FUN_0c0e5dc0();
-                t115 = 0x0;
-                if ((int)(0x8 - t108) > 0) {
-                    t109 = 0x0;
-                    for (;;) {
-                        t110 = t109;
-                        t111 = ((t109 + t108) + (((int)stk + 12) + 0x24));
-                        t109 = (t109 + 0x1);
-                        *(unsigned char *)(((((int)stk + 12) + 0x24) + t110)) = (*(signed char *)((t111 + 0x0)));
-                        if ((int)t109 >= (int)(0x8 - t108)) {
-                            break;
-                        }
-                    }
-                    t115 = t109;
-                }
-                if ((int)t115 < (int)0x8) {
-                    t116 = t115;
-                    t117 = (t115 + (((int)stk + 12) + 0x24));
-                    for (;;) {
-                        *(unsigned char *)((t117 + 0x0)) = 0x0;
-                        t116 = (t116 + 0x1);
-                        t117 = (t117 + 0x1);
-                        if ((int)t116 >= (int)0x8) {
-                            break;
-                        }
-                    }
-                }
-                FUN_0c0f29d8((((int)stk + 12) + 0x24), 0x8, (a4 - ((t108 << 2) << 1)));
-                *(unsigned int *)(((int)stk + 24)) = (a4 - 1);
-                FUN_0c0f2a30((a4 - 1), (((int)stk + 12) + 0x1C));
-                *(volatile int *)(((int)stk + 24));
-                *(volatile int *)(((int)stk + 20));
-                t124 = FUN_0c0e5dc0();
-                *(unsigned int *)(((int)stk + 16)) = t124;
-                t131 = 0x0;
-                if ((int)(0x8 - t124) > 0) {
-                    t125 = 0x0;
-                    for (;;) {
-                        t126 = t125;
-                        t125 = (t125 + 0x1);
-                        *(unsigned char *)(((((int)stk + 12) + 0x1C) + t126)) = (*(signed char *)(((((*(int *)(((int)stk + 16))) + t126) + (((int)stk + 12) + 0x1C)) + 0x0)));
-                        if ((int)t125 >= (int)(0x8 - t124)) {
-                            break;
-                        }
-                    }
-                    t131 = t125;
-                }
-                if ((int)t131 < (int)0x8) {
-                    t132 = t131;
-                    t133 = (t131 + (((int)stk + 12) + 0x1C));
-                    for (;;) {
-                        t132 = (t132 + 0x1);
-                        *(unsigned char *)((t133 + 0x0)) = 0x0;
-                        t133 = (t133 + 0x1);
-                        if ((int)t132 >= (int)0x8) {
-                            break;
-                        }
-                    }
-                }
-                FUN_0c0f29d8((((int)stk + 12) + 0x1C), 0x8, ((a4 - (((*(int *)(((int)stk + 16))) << 2) << 1)) - 1));
-                for (;;) {
-                    FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (*(int *)((a6 + 0x0))), a5);
-                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                    t142 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                    if ((int)t142 > 0) {
-                        *(unsigned short *)(((int)stk + 28)) = 0x1;
-                        *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) + 0x1);
-                        continue;
-                    }
-                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                    t145 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                    if (t145 == 0) {
-                        break;
-                    }
-                    FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                    t147 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x1C), 0x8);
-                    if (((int)t147 < 0) && (t148 = *(short *)(((int)stk + 28)), t148 == 0)) {
-                        *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) - 1);
-                        continue;
-                    }
-                    return 0x0;
-                }
-                t150 = *(int *)((a6 + 0x0));
-                *(unsigned int *)((a6 + 0x0)) = (t150 + 0x1);
-                FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (t150 + 0x1), a5);
-                t153 = 0x0;
-            }
-            t161 = t153;
-        }
-        t324 = t161;
-    } else {
-        FUN_0c0f2b70(a7, (((int)stk + 4) + 0x8), (((int)stk + 4) + 0x34), a7, a8, a9);
-        if ((*(signed char *)((a7 + 0x0))) == -1) {
-            *(unsigned char *)(((((int)stk + 12) + 0x54) + 0x7)) = ((*(signed char *)(((((int)stk + 12) + 0x54) + 0x7))) & 0x7F);
-        }
-        if ((*(short *)(((int)stk + 12))) == 0x7FF) {
-            t255 = 0x2;
-            if ((unsigned char)(*(signed char *)(((((int)stk + 12) + 0x54) + 0x6))) == 0xF0) {
-                t181 = FUN_0c0f2598((((int)stk + 12) + 0x54), 0x6);
-                t249 = 0x2;
-                if (t181 != 0) {
-                    t183 = *(signed char *)((a7 + 0x0));
-                    t243 = 0x1;
-                    if (t183 != 1) {
-                        t237 = 0xFFFFFFFF;
-                        if (t183 != -1) {
-                            t184 = *(short *)(((int)stk + 12));
-                            *(unsigned short *)(((int)stk + 12)) = (t184 - 0x3FF);
-                            if ((int)(short)(t184 - 0x3FF) >= 0) {
-                                t188 = (FUN_0c0f26bc(a8, a9));
-                            } else {
-                                t188 = ((FUN_0c0f26bc(a8, a9)) - 1);
-                            }
-                            *(unsigned char *)(((int)stk + 63)) = 0x0;
-                            *(unsigned int *)((a6 + 0x0)) = ((t188 - a4) + 0x1);
-                            FUN_0c0f2a30(a4, (((int)stk + 12) + 0x24));
-                            *(volatile int *)(((int)stk + 20));
-                            t192 = FUN_0c0e5dc0();
-                            t199 = 0x0;
-                            if ((int)(0x8 - t192) > 0) {
-                                t193 = 0x0;
-                                for (;;) {
-                                    t194 = t193;
-                                    t195 = ((t193 + t192) + (((int)stk + 12) + 0x24));
-                                    t193 = (t193 + 0x1);
-                                    *(unsigned char *)(((((int)stk + 12) + 0x24) + t194)) = (*(signed char *)((t195 + 0x0)));
-                                    if ((int)t193 >= (int)(0x8 - t192)) {
-                                        break;
-                                    }
-                                }
-                                t199 = t193;
-                            }
-                            if ((int)t199 < (int)0x8) {
-                                t200 = t199;
-                                t201 = (t199 + (((int)stk + 12) + 0x24));
-                                for (;;) {
-                                    *(unsigned char *)((t201 + 0x0)) = 0x0;
-                                    t200 = (t200 + 0x1);
-                                    t201 = (t201 + 0x1);
-                                    if ((int)t200 >= (int)0x8) {
-                                        break;
-                                    }
-                                }
-                            }
-                            FUN_0c0f29d8((((int)stk + 12) + 0x24), 0x8, (a4 - ((t192 << 2) << 1)));
-                            *(unsigned int *)(((int)stk + 24)) = (a4 - 1);
-                            FUN_0c0f2a30((a4 - 1), (((int)stk + 12) + 0x1C));
-                            *(volatile int *)(((int)stk + 24));
-                            *(volatile int *)(((int)stk + 20));
-                            t208 = FUN_0c0e5dc0();
-                            *(unsigned int *)(((int)stk + 16)) = t208;
-                            t215 = 0x0;
-                            if ((int)(0x8 - t208) > 0) {
-                                t209 = 0x0;
-                                for (;;) {
-                                    t210 = t209;
-                                    t209 = (t209 + 0x1);
-                                    *(unsigned char *)(((((int)stk + 12) + 0x1C) + t210)) = (*(signed char *)(((((*(int *)(((int)stk + 16))) + t210) + (((int)stk + 12) + 0x1C)) + 0x0)));
-                                    if ((int)t209 >= (int)(0x8 - t208)) {
-                                        break;
-                                    }
-                                }
-                                t215 = t209;
-                            }
-                            if ((int)t215 < (int)0x8) {
-                                t216 = t215;
-                                t217 = (t215 + (((int)stk + 12) + 0x1C));
-                                for (;;) {
-                                    t216 = (t216 + 0x1);
-                                    *(unsigned char *)((t217 + 0x0)) = 0x0;
-                                    t217 = (t217 + 0x1);
-                                    if ((int)t216 >= (int)0x8) {
-                                        break;
-                                    }
-                                }
-                            }
-                            FUN_0c0f29d8((((int)stk + 12) + 0x1C), 0x8, ((a4 - (((*(int *)(((int)stk + 16))) << 2) << 1)) - 1));
-                            for (;;) {
-                                FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (*(int *)((a6 + 0x0))), a5);
-                                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                t226 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                                if ((int)t226 > 0) {
-                                    *(unsigned short *)(((int)stk + 28)) = 0x1;
-                                    *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) + 0x1);
-                                    continue;
-                                }
-                                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                t229 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                                if (t229 == 0) {
-                                    break;
-                                }
-                                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                                t231 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x1C), 0x8);
-                                if (((int)t231 < 0) && (t232 = *(short *)(((int)stk + 28)), t232 == 0)) {
-                                    *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) - 1);
-                                    continue;
-                                }
-                                return 0x0;
-                            }
-                            t234 = *(int *)((a6 + 0x0));
-                            *(unsigned int *)((a6 + 0x0)) = (t234 + 0x1);
-                            FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (t234 + 0x1), a5);
-                            t237 = 0x0;
-                        }
-                        t243 = t237;
-                    }
-                    t249 = t243;
-                }
-                t255 = t249;
-            }
-            t316 = t255;
-        } else {
-            t263 = *(short *)(((int)stk + 12));
-            *(unsigned short *)(((int)stk + 12)) = (t263 - 0x3FF);
-            if ((int)(short)(t263 - 0x3FF) >= 0) {
-                t267 = (FUN_0c0f26bc(a8, a9));
-            } else {
-                t267 = ((FUN_0c0f26bc(a8, a9)) - 1);
-            }
-            *(unsigned char *)(((int)stk + 63)) = 0x0;
-            *(unsigned int *)((a6 + 0x0)) = ((t267 - a4) + 0x1);
-            FUN_0c0f2a30(a4, (((int)stk + 12) + 0x24));
-            *(volatile int *)(((int)stk + 20));
-            t271 = FUN_0c0e5dc0();
-            t278 = 0x0;
-            if ((int)(0x8 - t271) > 0) {
-                t272 = 0x0;
-                for (;;) {
-                    t273 = t272;
-                    t274 = ((t272 + t271) + (((int)stk + 12) + 0x24));
-                    t272 = (t272 + 0x1);
-                    *(unsigned char *)(((((int)stk + 12) + 0x24) + t273)) = (*(signed char *)((t274 + 0x0)));
-                    if ((int)t272 >= (int)(0x8 - t271)) {
-                        break;
-                    }
-                }
-                t278 = t272;
-            }
-            if ((int)t278 < (int)0x8) {
-                t279 = t278;
-                t280 = (t278 + (((int)stk + 12) + 0x24));
-                for (;;) {
-                    *(unsigned char *)((t280 + 0x0)) = 0x0;
-                    t279 = (t279 + 0x1);
-                    t280 = (t280 + 0x1);
-                    if ((int)t279 >= (int)0x8) {
-                        break;
-                    }
-                }
-            }
-            FUN_0c0f29d8((((int)stk + 12) + 0x24), 0x8, (a4 - ((t271 << 2) << 1)));
-            *(unsigned int *)(((int)stk + 24)) = (a4 - 1);
-            FUN_0c0f2a30((a4 - 1), (((int)stk + 12) + 0x1C));
-            *(volatile int *)(((int)stk + 24));
-            *(volatile int *)(((int)stk + 20));
-            t287 = FUN_0c0e5dc0();
-            *(unsigned int *)(((int)stk + 16)) = t287;
-            t294 = 0x0;
-            if ((int)(0x8 - t287) > 0) {
-                t288 = 0x0;
-                for (;;) {
-                    t289 = t288;
-                    t288 = (t288 + 0x1);
-                    *(unsigned char *)(((((int)stk + 12) + 0x1C) + t289)) = (*(signed char *)(((((*(int *)(((int)stk + 16))) + t289) + (((int)stk + 12) + 0x1C)) + 0x0)));
-                    if ((int)t288 >= (int)(0x8 - t287)) {
-                        break;
-                    }
-                }
-                t294 = t288;
-            }
-            if ((int)t294 < (int)0x8) {
-                t295 = t294;
-                t296 = (t294 + (((int)stk + 12) + 0x1C));
-                for (;;) {
-                    t295 = (t295 + 0x1);
-                    *(unsigned char *)((t296 + 0x0)) = 0x0;
-                    t296 = (t296 + 0x1);
-                    if ((int)t295 >= (int)0x8) {
-                        break;
-                    }
-                }
-            }
-            FUN_0c0f29d8((((int)stk + 12) + 0x1C), 0x8, ((a4 - (((*(int *)(((int)stk + 16))) << 2) << 1)) - 1));
-            for (;;) {
-                FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (*(int *)((a6 + 0x0))), a5);
-                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                t305 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                if ((int)t305 > 0) {
-                    *(unsigned short *)(((int)stk + 28)) = 0x1;
-                    *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) + 0x1);
-                    continue;
-                }
-                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                t308 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x24), 0x8);
-                if (t308 == 0) {
-                    break;
-                }
-                FUN_0c0e631c((((int)stk + 12) + 0x14), a5, 0x8);
-                t310 = FUN_0c0e62e0((((int)stk + 12) + 0x14), (((int)stk + 12) + 0x1C), 0x8);
-                if (((int)t310 < 0) && (t311 = *(short *)(((int)stk + 28)), t311 == 0)) {
-                    *(unsigned int *)((a6 + 0x0)) = ((*(int *)((a6 + 0x0))) - 1);
-                    continue;
-                }
-                return 0x0;
-            }
-            t313 = *(int *)((a6 + 0x0));
-            *(unsigned int *)((a6 + 0x0)) = (t313 + 0x1);
-            FUN_0c0f25b8((*(short *)(((int)stk + 12))), (((int)stk + 12) + 0x2C), (t313 + 0x1), a5);
-            t316 = 0x0;
-        }
-        t324 = t316;
-    }
-    return t324;
-}
 
 int kmSetDisplayMode(int a4, int a5, int a6, int a7)
 {
@@ -1141,17 +568,11 @@ int kmSetDisplayMode(int a4, int a5, int a6, int a7)
     int t18;
     int t20;
     int t109;
-    int t43;
-    int t56;
     int t50;
     int t71;
-    int t75;
     int t11;
     int t67;
     int t29;
-    int t61;
-    int t93;
-    int t84;
     int stk[16];
 
     *(unsigned int *)(((int)stk + 12)) = a4;
@@ -1208,47 +629,131 @@ int kmSetDisplayMode(int a4, int a5, int a6, int a7)
                 *(unsigned int *)(((int)stk + 20)) = 0x140;
             }
             if (((*(int *)0xC95231C) & 32) != 0) {
-                t43 = 0x1E0;
+                t67 = 0x1E0;
                 if (((*(int *)0xC95231C) & 0x42) == 66) {
-                    t43 = (*(int *)((((*(int *)0xC95232C) << 2) + 0xC9527D4)));
+                    t67 = (*(int *)((((*(int *)0xC95232C) << 2) + 0xC9527D4)));
                 }
-                *(unsigned int *)0xC95261C = (((int)((unsigned int)((int)((unsigned int)t43 + (unsigned int)0x0)) + ((((int)0x0 > (int)t43)) ? 1u : 0u))) >> 1);
-                t61 = t43;
+                *(unsigned int *)0xC95261C = (((int)((unsigned int)((int)((unsigned int)t67 + (unsigned int)0x0)) + ((((int)0x0 > (int)t67)) ? 1u : 0u))) >> 1);
             } else {
-                t56 = 0xF0;
+                t67 = 0xF0;
                 if (((*(int *)0xC95231C) & 0x42) == 66) {
                     t50 = *(int *)((((*(int *)0xC95232C) << 2) + 0xC9527D4));
-                    t56 = (((int)((unsigned int)((int)((unsigned int)t50 + (unsigned int)0x0)) + ((((int)0x0 > (int)t50)) ? 1u : 0u))) >> 1);
+                    t67 = (((int)((unsigned int)((int)((unsigned int)t50 + (unsigned int)0x0)) + ((((int)0x0 > (int)t50)) ? 1u : 0u))) >> 1);
                 }
-                *(unsigned int *)0xC95261C = t56;
-                t61 = t56;
+                *(unsigned int *)0xC95261C = t67;
             }
-            t67 = t61;
         }
         t71 = *(int *)0xC952318;
         if (t71 != 1) {
             if (t71 != 0) {
-                t75 = 0x1;
+                t109 = 0x1;
                 if (t71 != 2) {
                 } else {
                     kmiInitPAL();
-                    t75 = 0x0;
+                    t109 = 0x0;
                 }
-                t84 = t75;
             } else {
                 kmiInitNTSC();
-                t84 = 0x0;
+                t109 = 0x0;
             }
-            t93 = t84;
         } else {
             kmiInitVGA();
-            t93 = 0x0;
+            t109 = 0x0;
         }
         kmiFBControl((*(int *)(((int)stk + 20))), t67, a5, (*(int *)(((int)stk + 16))), ((*(int *)(((int)stk + 12)))), (t20));
         kmiWriteDispModeRegisters();
-        t109 = t93;
     }
     return t109;
 }
 
+int FUN_0c0f2100(int a4, int a5, int a6, int a7, int a8, int a9)
+{
+    short ex;
+    short up;
+    unsigned char *s;
+    char a[8];
+    char b[8];
+    char c[8];
+    char d[8];
+    int e;
+    int k;
+    int i;
+
+    up = 0;
+    s = (unsigned char *)&a8;
+    if ((s[7] & 127) == 0) {
+        if (FUN_0c0f2598((int)s, 7) != 0) {
+            for (i = 0; i < 8; i++) {
+                ((char *)a5)[i] = 0;
+            }
+            *(int *)a6 = 0;
+            *(char *)a7 = (s[7] & 128) ? -1 : 1;
+            return 0;
+        }
+        FUN_0c0f2b70(a7, (int)&ex, (int)d, 0, a8, a9);
+    } else {
+        FUN_0c0f2b70(a7, (int)&ex, (int)d, a7, a8, a9);
+    }
+    if (*(signed char *)a7 == -1) {
+        s[7] &= 0x7F;
+    }
+    if (ex == 0x7FF) {
+        if (s[6] != 0xF0 || FUN_0c0f2598((int)s, 6) == 0) {
+            return 2;
+        }
+        if (*(signed char *)a7 == 1) {
+            return 1;
+        }
+        if (*(signed char *)a7 == -1) {
+            return -1;
+        }
+    }
+    ex -= 0x3FF;
+    e = FUN_0c0f26bc(a8, a9);
+    if (ex < 0) {
+        e--;
+    }
+    d[7] = 0;
+    *(int *)a6 = e - a4 + 1;
+    FUN_0c0f2a30(a4, (int)c);
+    k = FUN_0c0e5dc0();
+    for (i = 0; i < 8 - k; i++) {
+        c[i] = c[i + k];
+    }
+    for (; i < 8; i++) {
+        c[i] = 0;
+    }
+    FUN_0c0f29d8((int)c, 8, a4 - k * 8);
+    FUN_0c0f2a30(a4 - 1, (int)b);
+    k = FUN_0c0e5dc0();
+    for (i = 0; i < 8 - k; i++) {
+        b[i] = b[i + k];
+    }
+    for (; i < 8; i++) {
+        b[i] = 0;
+    }
+    FUN_0c0f29d8((int)b, 8, a4 - k * 8 - 1);
+    for (;;) {
+        FUN_0c0f25b8(ex, (int)d, *(int *)a6, a5);
+        FUN_0c0e631c((int)a, a5, 8);
+        if (FUN_0c0e62e0((int)a, (int)c, 8) > 0) {
+            up = 1;
+            (*(int *)a6)++;
+            continue;
+        }
+        FUN_0c0e631c((int)a, a5, 8);
+        if (FUN_0c0e62e0((int)a, (int)c, 8) == 0) {
+            break;
+        }
+        FUN_0c0e631c((int)a, a5, 8);
+        if (FUN_0c0e62e0((int)a, (int)b, 8) < 0 && up == 0) {
+            (*(int *)a6)--;
+            continue;
+        }
+        return 0;
+    }
+    (*(int *)a6)++;
+    FUN_0c0f25b8(ex, (int)d, *(int *)a6, a5);
+    return 0;
+}
 

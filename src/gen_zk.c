@@ -1,109 +1,78 @@
 /* Straight-line functions with calls and guards (batch gen_zk): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int ADXB_EntryData(int, int, int);
-int ADXB_GetFormat(int);
-int ADXB_Start(int);
-int FUN_0c22a578(int);
-int FUN_0c22a590(int);
-int adxsjd_decexec_start(int a4, int a5, int a6, int a7);
+int FUN_0c0e3630(int, int, int);
+int FUN_0c0e36ac(void);
+int FUN_0c0e38e8(int);
+int FUN_0c0e3930(int, int, int);
+int FUN_0c0e4428(int);
+int FUN_0c0e3f42(int a4);
 
-int adxsjd_decexec_start(int a4, int a5, int a6, int a7)
+int FUN_0c0e3f42(int a4)
 {
-    int t0;
-    int t1;
-    register int t2;
-    register int t3;
-    register int t4;
-    register int t5;
+    int stk[7];
 
-    t2 = *(int *)((a4 + 0x4));
-    t3 = *(int *)((a4 + 0x8));
-    if ((*(signed char *)((a4 + 0x3))) == 1) {
-        t4 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t3 + 0x0))) + 0x24)))))(t3, 0x1, a6, a7);
-        if (t4 == 0) {
-            *(unsigned char *)((a4 + 0x1)) = 0x3;
-            return 0x3;
-        }
-        t4 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t3 + 0x0))) + 0x18)))))(t3, 0x1, 0x7FFFFFFF, (a4 + 0x14));
-        t4 = ADXB_GetFormat(t2);
-        if ((t4 == 0) && (t0 = *(int *)((a4 + 0x18)), (int)t0 >= (int)0x2)) {
-            t0 = *(short *)(((*(int *)((a4 + 0x14))) + 0x0));
-            if ((unsigned short)((unsigned char)((int)t0 >> 8) | ((t0 << 8) & 0xFF00)) != 0x8001) {
-                t0 = FUN_0c22a590(a4);
-                if ((int)(*(int *)((a4 + 0x34))) >= (int)t0) {
-                    *(unsigned char *)((a4 + 0x1)) = 0x3;
-                    t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-                    return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-                }
-                t0 = FUN_0c22a578(a4);
-                t4 = *(int *)((a4 + 0xC));
-                t5 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t4 + 0x0))) + 0x24)))))(t4, 0x0, a6, a7);
-                if ((int)((unsigned int)t5 >> 1) < (int)t0) {
-                    t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-                    return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-                }
-                ADXB_EntryData(t2, (*(int *)((a4 + 0x14))), (*(int *)((a4 + 0x18))));
-                return ADXB_Start(t2);
-            }
-            *(unsigned char *)((a4 + 0x1)) = 0x3;
-            t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-            return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-        }
-        t0 = FUN_0c22a590(a4);
-        if ((int)(*(int *)((a4 + 0x34))) >= (int)t0) {
-            *(unsigned char *)((a4 + 0x1)) = 0x3;
-            t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-            return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-        }
-        t0 = FUN_0c22a578(a4);
-        t4 = *(int *)((a4 + 0xC));
-        t5 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t4 + 0x0))) + 0x24)))))(t4, 0x0, a6, a7);
-        if ((int)((unsigned int)t5 >> 1) < (int)t0) {
-            t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-            return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-        }
-        ADXB_EntryData(t2, (*(int *)((a4 + 0x14))), (*(int *)((a4 + 0x18))));
-        return ADXB_Start(t2);
-    }
-    t0 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t3 + 0x0))) + 0x18)))))(t3, 0x1, 0x7FFFFFFF, (a4 + 0x14));
-    t0 = ADXB_GetFormat(t2);
-    if ((t0 == 0) && (t1 = *(int *)((a4 + 0x18)), (int)t1 >= (int)0x2)) {
-        t0 = *(short *)(((*(int *)((a4 + 0x14))) + 0x0));
-        if ((unsigned short)((unsigned char)((int)t0 >> 8) | ((t0 << 8) & 0xFF00)) != 0x8001) {
-            t0 = FUN_0c22a590(a4);
-            if ((int)(*(int *)((a4 + 0x34))) >= (int)t0) {
-                *(unsigned char *)((a4 + 0x1)) = 0x3;
-                t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-                return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-            }
-            t0 = FUN_0c22a578(a4);
-            t1 = *(int *)((a4 + 0xC));
-            t4 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t1 + 0x0))) + 0x24)))))(t1, 0x0, a6, a7);
-            if ((int)((unsigned int)t4 >> 1) < (int)t0) {
-                t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-                return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-            }
-            ADXB_EntryData(t2, (*(int *)((a4 + 0x14))), (*(int *)((a4 + 0x18))));
-            return ADXB_Start(t2);
-        }
-        *(unsigned char *)((a4 + 0x1)) = 0x3;
-        t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-        return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-    }
-    t0 = FUN_0c22a590(a4);
-    if ((int)(*(int *)((a4 + 0x34))) >= (int)t0) {
-        *(unsigned char *)((a4 + 0x1)) = 0x3;
-        t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-        return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-    }
-    t0 = FUN_0c22a578(a4);
-    t1 = *(int *)((a4 + 0xC));
-    t4 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t1 + 0x0))) + 0x24)))))(t1, 0x0, a6, a7);
-    if ((int)((unsigned int)t4 >> 1) < (int)t0) {
-        t0 = *(int *)(((*(int *)((t3 + 0x0))) + 0x1C));
-        return ((int (*)(int, int, int, int))(t0))(t3, 0x1, (a4 + 0x14), a7);
-    }
-    ADXB_EntryData(t2, (*(int *)((a4 + 0x14))), (*(int *)((a4 + 0x18))));
-    return ADXB_Start(t2);
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R5;
+    register int R6;
+    register int R9;
+    register int R12;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    v0_0 = a4;
+    *(unsigned int *)(((int)stk + 24)) = v0_0;
+    v0_1 = FUN_0c0e38e8((*(int *)(((int)stk + 24))));
+    *(unsigned int *)(((int)stk + 4)) = v0_1;
+    v0_0 = (v0_1);
+    if ((v0_1 == 0)) goto L_C0E3F5C;
+    return v0_0;
+    L_C0E3F5C:;
+    v0_0 = *(int *)(((int)stk + 24));
+    *(unsigned int *)(((int)stk + 8)) = (*(int *)(((signed char)(((v0_0 << 1) + v0_0) << 2) + 0xC94C910)));
+    *(unsigned int *)(((int)stk + 20)) = (FUN_0c0e3930((*(int *)(((int)stk + 24))), (*(int *)(((int)stk + 8))), (((int)stk + 4) + 0x8)));
+    *(unsigned int *)(((int)stk + 16)) = 0x0;
+    L_C0E3FA6:;
+    if (((int)(*(int *)(((int)stk + 16))) < (int)0x400000)) goto L_C0E3F84;
+    return 0xFFFFFF00;
+    L_C0E3F84:;
+    v0_0 = (FUN_0c0e4428(0x18A0)) != 0;
+    if (v0_0) goto L_C0E3FA0;
+    *(unsigned int *)(((int)stk + 16)) = 0x0;
+    L_C0E3FD2:;
+    if (((int)(*(int *)(((int)stk + 16))) < (int)0x400000)) goto L_C0E3FC0;
+    return 0xFFFFFF00;
+    L_C0E3FC0:;
+    if (((*(int *)0xA08000B4) == 0)) goto L_C0E3FCC;
+    if (((*(int *)(((int)stk + 20))) == 0)) goto L_C0E4012;
+    v0_1 = FUN_0c0e3630((*(int *)(((int)stk + 20))), ((*(int *)(((int)stk + 20))) - (*(int *)(((int)stk + 8)))), (*(int *)(((int)stk + 12))));
+    *(unsigned int *)(((int)stk + 4)) = v0_1;
+    v0_0 = (v0_1);
+    if ((v0_1 == 0)) goto L_C0E4006;
+    return v0_0;
+    L_C0E4006:;
+    L_C0E400A:;
+    v0_0 = (FUN_0c0e36ac()) != 0;
+    if (v0_0) goto L_C0E400A;
+    L_C0E4012:;
+    *(unsigned int *)0xA08000B0 = 0x1;
+    *(unsigned int *)(((int)stk + 16)) = 0x0;
+    L_C0E4042:;
+    if (((int)(*(int *)(((int)stk + 16))) < (int)0x400000)) goto L_C0E4020;
+    return 0xFFFFFF00;
+    L_C0E4020:;
+    if (((*(int *)0xA08000B4) != 0)) goto L_C0E403C;
+    *(unsigned int *)0xA08000B0 = 0x0;
+    return 0x0;
+    L_C0E403C:;
+    *(unsigned int *)(((int)stk + 16)) = ((*(int *)(((int)stk + 16))) + 0x1);
+    goto L_C0E4042;
+    L_C0E3FCC:;
+    *(unsigned int *)(((int)stk + 16)) = ((*(int *)(((int)stk + 16))) + 0x1);
+    goto L_C0E3FD2;
+    L_C0E3FA0:;
+    *(unsigned int *)(((int)stk + 16)) = ((*(int *)(((int)stk + 16))) + 0x1);
+    goto L_C0E3FA6;
 }

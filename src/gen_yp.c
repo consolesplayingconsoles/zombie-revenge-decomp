@@ -2,6 +2,8 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c054fb0(int a4, int a5, int a6, int a7);
+struct o330_int { char p[0x330]; int v; };
+
 
 int FUN_0c054fb0(int a4, int a5, int a6, int a7)
 {
@@ -18,8 +20,8 @@ int FUN_0c054fb0(int a4, int a5, int a6, int a7)
     register int t6;
     register int t22;
 
-    if ((*(int *)((a4 + 0x330))) != 0) {
-        t2 = *(int *)((a4 + 0x330));
+    if (((((struct o330_int *)(a4))->v)) != 0) {
+        t2 = (((struct o330_int *)(a4))->v);
         t3 = 0x1;
         if (t2 == 3) {
             t3 = 0x2;

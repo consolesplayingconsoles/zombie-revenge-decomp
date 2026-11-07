@@ -1,358 +1,102 @@
 /* Straight-line functions with calls and guards (batch gen_tj): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0e1138(int a4, int a5, int a6, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
+int FUN_0c0b145c(int, int, int, float, float);
+int FUN_0c0b1542(int, float);
+int FUN_0c0e19f2(int, int, int);
+int FUN_0c0b16f0(int a4, int a5, int a6, float f4, float f5);
 
-int FUN_0c0e1138(int a4, int a5, int a6, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
+int FUN_0c0b16f0(int a4, int a5, int a6, float f4, float f5)
 {
-    register int t0;
-    register int t4;
-    register int t5;
-    register int t6;
-    register int t7;
-    register int t8;
-    register int t9;
-    register float u15;
-    register float u16;
-    register float u17;
-    register float u18;
-    register float u19;
-    register int t2;
-    register int t3;
-    register int t10;
-    register float u11;
-    register float u12;
-    register float u13;
-    register float u14;
-    register float u20;
-    register float u21;
+    int stk[3];
 
-    t0 = *(int *)0xC20D140;
-    t4 = 0xC20D140;
-    t5 = (a4 + 0x4);
-    t6 = a5;
-    t7 = a6;
-    t8 = 0x0;
-    t9 = (*(int *)((a4 + 0x0)));
-    u15 = f7;
-    u16 = f8;
-    u17 = f9;
-    u18 = f10;
-    u19 = f11;
-    for (;;) {
-        t9 = (t9 - 1);
-        if ((int)t9 >= 0) {
-            t7 = t5;
-            t10 = (*(int *)((t7 + 0x0)));
-            t7 = (t7 + 0x4);
-            u14 = (*(float *)((t7 + 0x0)));
-            t7 = (t7 + 0x4);
-            t3 = t10;
-            if (!(f4 > u14)) {
-                t7 = (t7 + 0x4);
-                u14 = (*(float *)((t7 + 0x0)));
-                t7 = (t7 + 0x4);
-                if (!(f6 > u14)) {
-                    u14 = (*(float *)((t7 + 0x0)));
-                    t7 = (t7 + 0x4);
-                    if (!(u14 > f4)) {
-                        u14 = (*(float *)((t7 + 0x0)));
-                        t7 = (t7 + 0x4);
-                        if (!(u14 > f5)) {
-                            u14 = (*(float *)((t7 + 0x0)));
-                            t7 = (t7 + 0x4);
-                            if (!(u14 > f6)) {
-                                for (;;) {
-                                    t3 = (t3 - 1);
-                                    if ((int)t3 >= 0) {
-                                        t2 = 0x4;
-                                        t6 = t7;
-                                        u15 = (*(float *)((t6 + t2)));
-                                        u14 = 0.0f;
-                                        u18 = (*(float *)((t6 + 0x0)));
-                                        if (!(u15 > u14)) {
-                                            if (t0 != 0) {
-                                                if (u15 != u14) {
-                                                    t2 = 0x8;
-                                                    u14 = f4;
-                                                    u19 = (*(float *)((t6 + t2)));
-                                                    u14 = (u14 * u18);
-                                                    u13 = f6;
-                                                    t2 = 0xC;
-                                                    u13 = (u13 * u19);
-                                                    u20 = (*(float *)((t6 + t2)));
-                                                    u14 = (-u14);
-                                                    u14 = (u14 - u13);
-                                                    u14 = (u14 - u20);
-                                                    u17 = u14;
-                                                    u17 = (u17 / u15);
-                                                    if (!(u17 > f5)) {
-                                                        t2 = 0x1C;
-                                                        u21 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x14;
-                                                        u11 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x20;
-                                                        u13 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x28;
-                                                        u14 = u21;
-                                                        u14 = (u14 - f6);
-                                                        u13 = (u13 - u11);
-                                                        u12 = (*(float *)((t6 + t2)));
-                                                        u12 = (u12 - u21);
-                                                        u14 = (u14 * u13);
-                                                        u13 = u11;
-                                                        u13 = (u13 - f4);
-                                                        u13 = (u13 * u12);
-                                                        u14 = (u14 - u13);
-                                                        u13 = u15;
-                                                        u13 = (u13 * u14);
-                                                        u14 = 0.0f;
-                                                        if (!(u14 > u13)) {
-                                                            u21 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x20;
-                                                            u11 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x2C;
-                                                            u13 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x34;
-                                                            u14 = u21;
-                                                            u14 = (u14 - f6);
-                                                            u13 = (u13 - u11);
-                                                            u12 = (*(float *)((t6 + t2)));
-                                                            u12 = (u12 - u21);
-                                                            u14 = (u14 * u13);
-                                                            u13 = u11;
-                                                            u13 = (u13 - f4);
-                                                            u13 = (u13 * u12);
-                                                            u14 = (u14 - u13);
-                                                            u13 = u15;
-                                                            u13 = (u13 * u14);
-                                                            u14 = 0.0f;
-                                                            if (!(u14 > u13)) {
-                                                                u21 = (*(float *)((t6 + t2)));
-                                                                t2 = 0x2C;
-                                                                u11 = (*(float *)((t6 + t2)));
-                                                                t2 = 0x38;
-                                                                u13 = (*(float *)((t6 + t2)));
-                                                                t2 = 0x40;
-                                                                u14 = u21;
-                                                                u14 = (u14 - f6);
-                                                                u13 = (u13 - u11);
-                                                                u12 = (*(float *)((t6 + t2)));
-                                                                u12 = (u12 - u21);
-                                                                u14 = (u14 * u13);
-                                                                u13 = u11;
-                                                                u13 = (u13 - f4);
-                                                                u13 = (u13 * u12);
-                                                                u14 = (u14 - u13);
-                                                                u13 = u15;
-                                                                u13 = (u13 * u14);
-                                                                u14 = 0.0f;
-                                                                if (!(u14 > u13)) {
-                                                                    u21 = (*(float *)((t6 + t2)));
-                                                                    t2 = 0x38;
-                                                                    u11 = (*(float *)((t6 + t2)));
-                                                                    t2 = 0x14;
-                                                                    u13 = (*(float *)((t6 + t2)));
-                                                                    t2 = 0x1C;
-                                                                    u14 = u21;
-                                                                    u14 = (u14 - f6);
-                                                                    u13 = (u13 - u11);
-                                                                    u12 = (*(float *)((t6 + t2)));
-                                                                    u12 = (u12 - u21);
-                                                                    u14 = (u14 * u13);
-                                                                    u13 = u11;
-                                                                    u13 = (u13 - f4);
-                                                                    u13 = (u13 * u12);
-                                                                    u14 = (u14 - u13);
-                                                                    u13 = u15;
-                                                                    u13 = (u13 * u14);
-                                                                    u14 = 0.0f;
-                                                                    if (!(u14 > u13)) {
-                                                                        u21 = f5;
-                                                                        u21 = (u21 - u17);
-                                                                        if ((t8 == 0) || (u16 > u21)) {
-                                                                            u14 = u21;
-                                                                            t2 = 0x44;
-                                                                            u16 = u21;
-                                                                            u14 = (u14 * u16);
-                                                                            t8 = (*(int *)((t6 + t2)));
-                                                                            t6 = 0xC94C6E0;
-                                                                            *(float *)((t6 + 0x0)) = u14;
-                                                                            t6 = 0xC94C6C4;
-                                                                            *(float *)((t6 + 0x0)) = f4;
-                                                                            t6 = 0xC94C6C8;
-                                                                            *(float *)((t6 + 0x0)) = u17;
-                                                                            t6 = 0xC94C6CC;
-                                                                            *(float *)((t6 + 0x0)) = f6;
-                                                                            t6 = 0xC94C6D0;
-                                                                            *(float *)((t6 + 0x0)) = u18;
-                                                                            t6 = 0xC94C6D4;
-                                                                            *(float *)((t6 + 0x0)) = u15;
-                                                                            t6 = 0xC94C6D8;
-                                                                            *(float *)((t6 + 0x0)) = u19;
-                                                                            t6 = 0xC94C6DC;
-                                                                            *(float *)((t6 + 0x0)) = u20;
-                                                                            t6 = 0xC94C6E4;
-                                                                            *(unsigned int *)((t6 + 0x0)) = t7;
-                                                                        }
-                                                                    }
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        } else {
-                                            t2 = 0x8;
-                                            u14 = f4;
-                                            u19 = (*(float *)((t6 + t2)));
-                                            u14 = (u14 * u18);
-                                            u13 = f6;
-                                            t2 = 0xC;
-                                            u13 = (u13 * u19);
-                                            u20 = (*(float *)((t6 + t2)));
-                                            u14 = (-u14);
-                                            u14 = (u14 - u13);
-                                            u14 = (u14 - u20);
-                                            u17 = u14;
-                                            u17 = (u17 / u15);
-                                            if (!(u17 > f5)) {
-                                                t2 = 0x1C;
-                                                u21 = (*(float *)((t6 + t2)));
-                                                t2 = 0x14;
-                                                u11 = (*(float *)((t6 + t2)));
-                                                t2 = 0x20;
-                                                u13 = (*(float *)((t6 + t2)));
-                                                t2 = 0x28;
-                                                u14 = u21;
-                                                u14 = (u14 - f6);
-                                                u13 = (u13 - u11);
-                                                u12 = (*(float *)((t6 + t2)));
-                                                u12 = (u12 - u21);
-                                                u14 = (u14 * u13);
-                                                u13 = u11;
-                                                u13 = (u13 - f4);
-                                                u13 = (u13 * u12);
-                                                u14 = (u14 - u13);
-                                                u13 = u15;
-                                                u13 = (u13 * u14);
-                                                u14 = 0.0f;
-                                                if (!(u14 > u13)) {
-                                                    u21 = (*(float *)((t6 + t2)));
-                                                    t2 = 0x20;
-                                                    u11 = (*(float *)((t6 + t2)));
-                                                    t2 = 0x2C;
-                                                    u13 = (*(float *)((t6 + t2)));
-                                                    t2 = 0x34;
-                                                    u14 = u21;
-                                                    u14 = (u14 - f6);
-                                                    u13 = (u13 - u11);
-                                                    u12 = (*(float *)((t6 + t2)));
-                                                    u12 = (u12 - u21);
-                                                    u14 = (u14 * u13);
-                                                    u13 = u11;
-                                                    u13 = (u13 - f4);
-                                                    u13 = (u13 * u12);
-                                                    u14 = (u14 - u13);
-                                                    u13 = u15;
-                                                    u13 = (u13 * u14);
-                                                    u14 = 0.0f;
-                                                    if (!(u14 > u13)) {
-                                                        u21 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x2C;
-                                                        u11 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x38;
-                                                        u13 = (*(float *)((t6 + t2)));
-                                                        t2 = 0x40;
-                                                        u14 = u21;
-                                                        u14 = (u14 - f6);
-                                                        u13 = (u13 - u11);
-                                                        u12 = (*(float *)((t6 + t2)));
-                                                        u12 = (u12 - u21);
-                                                        u14 = (u14 * u13);
-                                                        u13 = u11;
-                                                        u13 = (u13 - f4);
-                                                        u13 = (u13 * u12);
-                                                        u14 = (u14 - u13);
-                                                        u13 = u15;
-                                                        u13 = (u13 * u14);
-                                                        u14 = 0.0f;
-                                                        if (!(u14 > u13)) {
-                                                            u21 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x38;
-                                                            u11 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x14;
-                                                            u13 = (*(float *)((t6 + t2)));
-                                                            t2 = 0x1C;
-                                                            u14 = u21;
-                                                            u14 = (u14 - f6);
-                                                            u13 = (u13 - u11);
-                                                            u12 = (*(float *)((t6 + t2)));
-                                                            u12 = (u12 - u21);
-                                                            u14 = (u14 * u13);
-                                                            u13 = u11;
-                                                            u13 = (u13 - f4);
-                                                            u13 = (u13 * u12);
-                                                            u14 = (u14 - u13);
-                                                            u13 = u15;
-                                                            u13 = (u13 * u14);
-                                                            u14 = 0.0f;
-                                                            if (!(u14 > u13)) {
-                                                                u21 = f5;
-                                                                u21 = (u21 - u17);
-                                                                if ((t8 == 0) || (u16 > u21)) {
-                                                                    u14 = u21;
-                                                                    t2 = 0x44;
-                                                                    u16 = u21;
-                                                                    u14 = (u14 * u16);
-                                                                    t8 = (*(int *)((t6 + t2)));
-                                                                    t6 = 0xC94C6E0;
-                                                                    *(float *)((t6 + 0x0)) = u14;
-                                                                    t6 = 0xC94C6C4;
-                                                                    *(float *)((t6 + 0x0)) = f4;
-                                                                    t6 = 0xC94C6C8;
-                                                                    *(float *)((t6 + 0x0)) = u17;
-                                                                    t6 = 0xC94C6CC;
-                                                                    *(float *)((t6 + 0x0)) = f6;
-                                                                    t6 = 0xC94C6D0;
-                                                                    *(float *)((t6 + 0x0)) = u18;
-                                                                    t6 = 0xC94C6D4;
-                                                                    *(float *)((t6 + 0x0)) = u15;
-                                                                    t6 = 0xC94C6D8;
-                                                                    *(float *)((t6 + 0x0)) = u19;
-                                                                    t6 = 0xC94C6DC;
-                                                                    *(float *)((t6 + 0x0)) = u20;
-                                                                    t6 = 0xC94C6E4;
-                                                                    *(unsigned int *)((t6 + 0x0)) = t7;
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        t7 = (t7 + 0x48);
-                                        continue;
-                                    }
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            t4 = t10;
-            t10 = (t10 << 2);
-            t10 = (t10 << 1);
-            t10 = (t10 + t4);
-            t10 = (t10 << 1);
-            t10 = (t10 + 0x7);
-            t10 = (t10 << 2);
-            t5 = (t5 + t10);
-            continue;
-        }
-        break;
-    }
-    *(unsigned int *)0xC94C6C0 = t8;
-    return t8;
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R8;
+    register int R9;
+    register int R10;
+    register int R12;
+    register int R13;
+    register int R14;
+    register float F2;
+    register float F3;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register float w0_0;
+    register float w0_1;
+    v0_1 = a4;
+    v0_0 = a6;
+    w0_0 = f5;
+    v0_2 = R14;
+    *(int *)((int)stk + 8) = v0_2;
+    v0_3 = *(int *)((v0_1 + 0x30));
+    *(unsigned int *)(((int)stk + 4)) = v0_2;
+    v0_2 = (v0_3);
+    R14 = (v0_1);
+    v0_1 = (0x3C);
+    w0_1 = (0.0166666657f);
+    if ((v0_3 == 0)) goto L_C0B170E;
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    if ((v0_2 == 1)) goto L_C0B1718;
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    if ((v0_2 == 2)) goto L_C0B1738;
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    L_C0B1794:;
+    FUN_0c0b145c((*(int *)((R14 + 0x60))), a5, v0_0, (*(float *)((R14 + 0x78))), w0_0);
+    FUN_0c0b1542((*(int *)((R14 + 0x60))), (*(float *)((R14 + 0x78))));
+    FUN_0c0b1542(((*(int *)((R14 + 0x60))) + 0x1), (*(float *)((R14 + 0x78))));
+    FUN_0c0b1542(((*(int *)((R14 + 0x60))) + 0x2), (*(float *)((R14 + 0x78))));
+    FUN_0c0b1542(((*(int *)((R14 + 0x60))) + 0x3), (*(float *)((R14 + 0x78))));
+    w0_0 = *(float *)((R14 + 0x78));
+    v0_0 = *(int *)((R14 + 0x60));
+    *(volatile int *)((int)stk + 4);
+    return FUN_0c0b1542((v0_0 + 0x4), w0_0);
+    L_C0B1738:;
+    v0_2 = (int)(*(int *)((R14 + 0x58))) >= (int)v0_1;
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    if (v0_2) goto L_C0B1752;
+    *(float *)((R14 + 0x78)) = ((*(float *)((R14 + 0x78))) - w0_1);
+    *(float *)((R14 + 0x7C)) = ((*(float *)((R14 + 0x7C))) - w0_1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    L_C0B1782:;
+    v0_2 = *(int *)((R14 + 0x58));
+    *(unsigned int *)((R14 + 0x58)) = (v0_2 - 1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    if (((int)(v0_2 - 1) > 0)) goto L_C0B1794;
+    FUN_0c0e19f2(v0_1, 0x0, v0_0);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    goto L_C0B1794;
+    L_C0B1752:;
+    v0_3 = !(1.0f > (*(float *)((R14 + 0x7C))));
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    v0_2 = (0x7C);
+    w0_0 = (1.0f);
+    if (v0_3) goto L_C0B1780;
+    *(float *)((R14 + v0_2)) = ((*(float *)((R14 + v0_2))) + w0_1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    goto L_C0B1782;
+    L_C0B1780:;
+    *(float *)((R14 + v0_2)) = w0_0;
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    goto L_C0B1782;
+    L_C0B1718:;
+    *(float *)((R14 + 0x78)) = ((*(float *)((R14 + 0x78))) + w0_1);
+    v0_1 = *(int *)((R14 + 0x58));
+    *(unsigned int *)((R14 + 0x58)) = (v0_1 - 1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    v0_2 = (0x58);
+    if (((int)(v0_1 - 1) > 0)) goto L_C0B1794;
+    *(unsigned int *)((R14 + v0_2)) = 0x1AE;
+    *(unsigned int *)((R14 + 0x30)) = ((*(int *)((R14 + 0x30))) + 0x1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    goto L_C0B1794;
+    L_C0B170E:;
+    *(unsigned int *)((R14 + 0x58)) = v0_1;
+    *(unsigned int *)((R14 + 0x30)) = ((*(int *)((R14 + 0x30))) + 0x1);
+    *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
+    goto L_C0B1718;
 }

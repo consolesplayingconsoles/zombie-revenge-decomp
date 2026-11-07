@@ -1,158 +1,98 @@
 /* Straight-line functions with calls and guards (batch gen_vw): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-float FUN_0c0a7ed4(int a4, int a5, int a6, int a7);
+int FUN_0c05105c(int, int, int, int);
+int FUN_0c05026e(int a4);
 
-float FUN_0c0a7ed4(int a4, int a5, int a6, int a7)
+int FUN_0c05026e(int a4)
 {
-    int stk[3];
+    register int t0;
+    int t1;
+    register int t2;
+    register int t3;
+    register int t4;
+    register int t5;
+    register int t6;
+    register int t7;
+    register int t8;
+    register int t9;
+    register int t10;
+    register float u0;
     register float u1;
-    register float u2;
-    register float u3;
-    register float u4;
-    register float u5;
-    register float u6;
-    register float u7;
-    register float u8;
-    register float u9;
-    register float u10;
-    register float u11;
-    register float u12;
-    register float u13;
-    register float u16;
-    register float u17;
-    register float u18;
-    register float u20;
-    register float u21;
-    register float u23;
-    register float u24;
-    register float u27;
-    register float u28;
-    register float u30;
-    register float u31;
-    register float u33;
-    register float u34;
-    register float u37;
-    register float u38;
-    register float u40;
-    register float u41;
-    register float u43;
-    register float u44;
-    register int t47;
-    register int t50;
-    register float u51;
-    register float u52;
-    register float u53;
-    register float u54;
-    register float u55;
-    register float u56;
-    register int t57;
-    register int t58;
-    register float u59;
-    register float u60;
-    register float u61;
-    register float u62;
-    register float u63;
-    register float u64;
 
-    register int R0;
-    register int R1;
-    register int R2;
-    register int R3;
-    register int R4;
-    register int R5;
-    register int R6;
-    register int R7;
-    register int R11;
-    register int R12;
-    register float F0;
-    register float F1;
-    register float F2;
-    register float F3;
-    register float F4;
-    register float F5;
-    register float F6;
-    register float F7;
-    register float F8;
-    register float F9;
-    register float F10;
-    register float F11;
-    register float F12;
-    register int T_;
-    register int FPUL_;
-    R4 = a4;
-    R5 = a5;
-    R6 = a6;
-    R7 = a7;
-    *(int *)((int)stk + 8) = (R11);
-    *(float *)(((int)stk + 4)) = F12;
-    u1 = *(float *)0xC0A8198;
-    u2 = *(float *)0xC0A819C;
-    u3 = *(float *)0xC0A81A0;
-    u4 = (((float)(unsigned short)R5 / u1) * ((float)(unsigned short)R5 / u1));
-    u5 = ((1.0f - ((float)(unsigned short)R5 / u1)) * (1.0f - ((float)(unsigned short)R5 / u1)));
-    u6 = (u5 * (1.0f - ((float)(unsigned short)R5 / u1)));
-    u7 = (u4 * ((float)(unsigned short)R5 / u1));
-    u8 = (u7 * u3);
-    u9 = (((float)(unsigned short)R5 / u1) * ((float)(unsigned short)R5 / u1));
-    u10 = (((float)(unsigned short)R5 / u1) * ((float)(unsigned short)R5 / u1));
-    u11 = *(float *)0xC0A81A4;
-    u12 = *(float *)0xC0A81A8;
-    u13 = (u4 * ((float)(unsigned short)R5 / u1));
-    u16 = (u4 * ((float)(unsigned short)R5 / u1));
-    u17 = (u6 * u2);
-    u18 = ((*(float *)((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x4))) * ((u8 - u9) + u11));
-    u18 = u18 + u17 * (*(float *)(((((((short)((unsigned int)R5 >> 16) - 1) << 2) << 2) + R4) + 0x4)));
-    u20 = ((((((float)(unsigned short)R5 / u1) + u10) - u13) + u12) * u3);
-    u21 = u18;
-    u21 = u21 + u20 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x10) + 0x4)));
-    u23 = (u16 * u2);
-    u24 = u21;
-    u24 = u24 + u23 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x20) + 0x4)));
-    u27 = (u6 * u2);
-    u28 = ((*(float *)((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x8))) * ((u8 - u9) + u11));
-    u28 = u28 + u27 * (*(float *)(((((((short)((unsigned int)R5 >> 16) - 1) << 2) << 2) + R4) + 0x8)));
-    u30 = ((((((float)(unsigned short)R5 / u1) + u10) - u13) + u12) * u3);
-    u31 = u28;
-    u31 = u31 + u30 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x10) + 0x8)));
-    u33 = (u16 * u2);
-    u34 = u31;
-    u34 = u34 + u33 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x20) + 0x8)));
-    u37 = (u6 * u2);
-    u38 = ((*(float *)((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0xC))) * ((u8 - u9) + u11));
-    u38 = u38 + u37 * (*(float *)(((((((short)((unsigned int)R5 >> 16) - 1) << 2) << 2) + R4) + 0xC)));
-    u40 = ((((((float)(unsigned short)R5 / u1) + u10) - u13) + u12) * u3);
-    u41 = u38;
-    u41 = u41 + u40 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x10) + 0xC)));
-    u43 = (u16 * u2);
-    u44 = u41;
-    u44 = u44 + u43 * (*(float *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x20) + 0xC)));
-    t47 = *(short *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x20) + 0x2));
-    t50 = *(short *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x10) + 0x2));
-    u51 = (u6 * u2);
-    u52 = ((float)(*(short *)((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x0))) * ((u8 - u9) + u11));
-    u52 = u52 + u51 * (float)(*(short *)(((((((short)((unsigned int)R5 >> 16) - 1) << 2) << 2) + R4) + 0x0)));
-    u53 = ((((((float)(unsigned short)R5 / u1) + u10) - u13) + u12) * u3);
-    u54 = u52;
-    u54 = u54 + u53 * (float)(*(short *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x10) + 0x0)));
-    u55 = (u16 * u2);
-    u56 = u54;
-    u56 = u56 + u55 * (float)(*(short *)(((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x20) + 0x0)));
-    t57 = *(short *)(((((((short)((unsigned int)R5 >> 16) - 1) << 2) << 2) + R4) + 0x2));
-    t58 = *(short *)((((((short)((unsigned int)R5 >> 16) << 2) << 2) + R4) + 0x2));
-    *(float *)((R6 + 0x0)) = u24;
-    *(float *)((R6 + 0x4)) = u34;
-    *(float *)((R6 + 0x8)) = u44;
-    *(unsigned int *)((R7 + 0x0)) = (int)u56;
-    u59 = (u6 * u2);
-    u60 = ((float)t58 * ((u8 - u9) + u11));
-    u60 = u60 + u59 * (float)t57;
-    u61 = ((((((float)(unsigned short)R5 / u1) + u10) - u13) + u12) * u3);
-    u62 = u60;
-    u62 = u62 + u61 * (float)t50;
-    u63 = (u16 * u2);
-    u64 = u62;
-    u64 = u64 + u63 * (float)t47;
-    *(unsigned int *)((R7 + 0x4)) = (int)u64;
-    return (u16 * u2);
+    t0 = *(int *)((a4 + 0xBC));
+    t1 = *(int *)0xC23ED9C;
+    if ((t1 != 4) && (t1 != 7)) {
+        return t1;
+    }
+    u0 = *(float *)((((t0 << 2) + 0xC24758C) + 0x0));
+    u1 = (float)(int)((float)(*(int *)((a4 + 0x1CC))) * 3.0f);
+    *(float *)((((t0 << 2) + 0xC24758C) + 0x0)) = (u0 + u1);
+    t1 = ((t0 << 2) + 0xC24758C);
+    if ((u0 + u1) > (float)(*(int *)((0xC24759C + (t0 << 2))))) {
+        *(float *)(((0xC24758C + (t0 << 2)) + 0x0)) = (float)(*(int *)((0xC24759C + (t0 << 2))));
+        t1 = (t0 << 2);
+    }
+    t2 = (t0 << 2);
+    t3 = t0;
+    t4 = 0xC24759C;
+    if (((*(int *)0xC23A1A8) & 0x4000) == 0) {
+        if ((*(int *)0xC204998) != 0) {
+            t5 = *(int *)0xC2049AC;
+            t6 = t5;
+            if (t5 == 0) {
+                if ((int)(*(int *)0xC1FF894) >= 0) {
+                    t5 = *(int *)((a4 + 0xBC));
+                    *(unsigned int *)((0xC247594 + (t5 << 2))) = ((*(int *)((0xC247594 + (t5 << 2)))) - ((int)(*(int *)((a4 + 0x1CC))) >> 4));
+                    t7 = (t5 << 2);
+                } else {
+                    t5 = *(int *)((a4 + 0xBC));
+                    *(unsigned int *)((0xC247594 + (t5 << 2))) = ((*(int *)((0xC247594 + (t5 << 2)))) - (*(int *)(((0x1CC + a4) + 0x0))));
+                    t7 = (t5 << 2);
+                }
+                t6 = t7;
+            }
+            t5 = t6;
+        } else {
+            t6 = *(int *)((a4 + 0xBC));
+            *(unsigned int *)((0xC247594 + (t6 << 2))) = ((*(int *)((0xC247594 + (t6 << 2)))) - (*(int *)(((0x1CC + a4) + 0x0))));
+            t5 = (t6 << 2);
+        }
+        t6 = t5;
+        t7 = t0;
+        if ((int)(*(int *)((((t0 << 2) + 0xC247594) + 0x0))) <= 0) {
+            if (((*(int *)0xC23A1A8) & 0x100) == 0) {
+                if ((int)(*(int *)(((0x1C4 + a4) + 0x0))) < (int)0x2) {
+                    *(unsigned int *)((((t0 << 2) + 0xC247594) + 0x0)) = 0x1;
+                    t8 = *(int *)((0xC247030 + ((*(int *)((a4 + 0xBC))) << 2)));
+                    t9 = t8;
+                    if (t8 == 5) {
+                        *(unsigned int *)(((((*(int *)((a4 + 0xBC))) << 2) + 0xC247030) + 0x0)) = 0x4;
+                        t9 = 0xBC;
+                    }
+                    t8 = t9;
+                    t9 = 0xC246FF0;
+                } else {
+                    *(unsigned int *)((((t0 << 2) + 0xC247594) + 0x0)) = 0x0;
+                    t8 = 0x2;
+                    t9 = t0;
+                }
+                t10 = t8;
+                t8 = t9;
+            } else {
+                *(unsigned int *)((((t0 << 2) + 0xC247594) + 0x0)) = 0x0;
+                t10 = t5;
+                t8 = t0;
+            }
+            t6 = t10;
+            t7 = t8;
+        }
+        t2 = t6;
+        t3 = t7;
+        t4 = ((t0 << 2) + 0xC247594);
+    }
+    if (((*(int *)0xC23A1A8) & 0x100) == 0) {
+        return FUN_0c05105c(a4, t3, t4, t1);
+    }
+    return t2;
 }

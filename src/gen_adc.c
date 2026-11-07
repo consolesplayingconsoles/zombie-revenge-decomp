@@ -1,0 +1,98 @@
+/* Straight-line functions with calls and guards (batch gen_adc): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+float FUN_0c0d7114(int, int);
+float nlLength(int, int);
+int FUN_0c0d6fae(int a4);
+
+int FUN_0c0d6fae(int a4)
+{
+    int stk[35];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register int R8;
+    register float F2;
+    register float F3;
+    register int T_;
+    register int FPUL_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    register float w0_0;
+    register float w0_1;
+    v0_3 = a4;
+    v0_2 = *(int *)0xC94315C;
+    v0_0 = (v0_3);
+    v0_1 = (v0_2);
+    if ((v0_2 != 0)) goto L_C0D6FD0;
+    v0_7 = (0xFFFFFFFF);
+    L_C0D70B2:;
+    return v0_7;
+    L_C0D6FD0:;
+    v0_4 = ((((int)stk + 4) + 0x44));
+    v0_6 = (0x0);
+    v0_5 = (((int)stk + 4));
+    v0_2 = (0x0);
+    L_C0D7020:;
+    if ((v0_1 == 0)) goto L_C0D702A;
+    if (!(((int)v0_6 < (int)0x10))) goto L_C0D702A;
+    if (((int)(*(int *)((v0_1 + 0x228))) < (int)0xB)) goto L_C0D701C;
+    w0_0 = FUN_0c0d7114(((*(int *)((v0_0 + 0x6C))) + 0x30), (v0_1 + 0x30));
+    w0_1 = (w0_0);
+    if ((w0_0 != 0.0f)) goto L_C0D701C;
+    *(volatile int *)((v0_1 + 0x220));
+    *(unsigned int *)((v0_4 + (v0_6 << 2))) = v0_1;
+    w0_0 = nlLength(((*(int *)(((0x6C + v0_0) + 0x0))) + 0x30), (v0_1 + 0x30));
+    *(float *)((((v0_6 << 2) + v0_5) + 0x0)) = w0_0;
+    v0_6 = ((v0_6 + 0x1));
+    w0_1 = (w0_0);
+    goto L_C0D701C;
+    L_C0D702A:;
+    *(unsigned int *)((v0_4 + (v0_6 << 2))) = v0_2;
+    *(float *)((v0_5 + (v0_6 << 2))) = 999.998962f;
+    v0_3 = (0xFFFFFFFF);
+    v0_6 = (v0_6);
+    FPUL_ = (0x4479FFEF);
+    L_C0D7068:;
+    v0_1 = (*(int *)((v0_4 + ((v0_3 + 0x1) << 2)))) != 0;
+    v0_7 = (((v0_3 + 0x1) << 2));
+    v0_3 = ((v0_3 + 0x1));
+    if (v0_1) goto L_C0D7058;
+    v0_5 = *(int *)((((v0_6 << 2) + v0_4) + 0x0));
+    v0_7 = (0x74);
+    v0_1 = (((v0_6 << 2) + v0_4));
+    v0_4 = (v0_5);
+    if ((v0_5 != 0)) goto L_C0D7086;
+    v0_4 = (0xFFFFFFFF);
+    L_C0D7086:;
+    if (((*(int *)((v0_0 + v0_7))) != 3)) goto L_C0D70AE;
+    if ((v0_4 == -1)) goto L_C0D70AE;
+    v0_6 = (v0_2);
+    if (((int)v0_3 <= 0)) goto L_C0D70AE;
+    L_C0D709A:;
+    v0_7 = (0x78);
+    if (((*(int *)((v0_1 + 0x0))) != (*(int *)((v0_0 + 0x78))))) goto L_C0D70A8;
+    v0_7 = ((*(int *)((v0_0 + v0_7))));
+    goto L_C0D70B2;
+    L_C0D70A8:;
+    v0_2 = (int)(v0_6 + 0x1) < (int)v0_3;
+    v0_6 = ((v0_6 + 0x1));
+    if (v0_2) goto L_C0D709A;
+    L_C0D70AE:;
+    v0_7 = (v0_4);
+    goto L_C0D70B2;
+    L_C0D7058:;
+    if (((*(float *)((v0_5 + v0_7))) > (*(float *)((v0_5 + (v0_6 << 2)))))) goto L_C0D7068;
+    v0_6 = (v0_3);
+    goto L_C0D7068;
+    L_C0D701C:;
+    v0_1 = ((*(int *)((v0_1 + 0x284))));
+    goto L_C0D7020;
+}

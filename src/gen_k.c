@@ -309,34 +309,6 @@ float FUN_0c0da220(float f4)
     return (t0 / 0.693147123f);
 }
 
-void FUN_0c0db840(int a4)
-{
-    float u0[16];
-    float u1[16];
-
-    _builtin_st_ext((float (*)[4])u0);
-    *(float *)((((a4 + 0xC) - 0x4) + 0x0)) = u0[14];
-    *(float *)(((((a4 + 0xC) - 0x4) - 0x4) + 0x0)) = u0[13];
-    *(float *)((((((a4 + 0xC) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[12];
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = u0[0];
-    u1[1] = u0[1];
-    u1[2] = u0[2];
-    u1[3] = u0[3];
-    u1[4] = u0[4];
-    u1[5] = u0[5];
-    u1[6] = u0[6];
-    u1[7] = u0[7];
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
-}
 
 void FUN_0c0dcbe0(int a4)
 {
@@ -355,26 +327,6 @@ void FUN_0c0dcbe0(int a4)
     _builtin_ld_ext((float (*)[4])u3);
 }
 
-void FUN_0c0dcc70(float f4, float f5, float f6)
-{
-    float u0[4];
-    float u1[16];
-    float u2[16];
-
-    u0[0] = f4;
-    u0[1] = f5;
-    u0[2] = f6;
-    u0[3] = 1.0f;
-    _builtin_ftrv(u0, u0);
-    _builtin_st_ext((float (*)[4])u1);
-    u1[12] = u0[0];
-    u1[13] = u0[1];
-    _builtin_ld_ext((float (*)[4])u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[14] = u0[2];
-    u2[15] = u0[3];
-    _builtin_ld_ext((float (*)[4])u2);
-}
 
 int FUN_0c0de2c0(int a4)
 {

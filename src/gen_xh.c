@@ -1,11 +1,11 @@
 /* Straight-line functions with calls and guards (batch gen_xh): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0c4d50(void);
+int ADXPD_GetStat(int);
+int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7);
 
-int FUN_0c0c4d50(void)
+int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7)
 {
-    int stk[3];
     register int t0;
     register int t1;
     register int t2;
@@ -16,120 +16,83 @@ int FUN_0c0c4d50(void)
     register int t7;
     register int t8;
     register int t9;
-    register int t22;
-    register int t23;
-    register int t24;
-    register int t34;
-    register int t26;
-    register int t27;
-    register int t28;
-    register int t39;
-    register int t35;
-    register int t36;
-    register int t40;
-    register int t41;
-    register int t42;
-    register int t43;
-    register int t44;
-    register int t45;
-    register int t46;
-    register int t48;
+    register int t10;
+    register int t11;
 
-    t0 = *(int *)0xC1E80F0;
-    t1 = *(int *)0xC1E80F8;
-    t2 = (t0 + t1);
-    t3 = 0x0;
-    t4 = 0x0;
-    t5 = 0xC209E3C;
-    t6 = 0x0;
-    t7 = 0xC209E3C;
-    t8 = 0x0;
-    t9 = 0xC209E3C;
-    for (;;) {
-        *(unsigned int *)(((int)stk + 4)) = (*(short *)(((((t8 << 2) << 1) + 0xC209E3C) + 0x2)));
-        *(unsigned short *)(((((t8 << 2) << 1) + 0xC209E3C) + 0x2)) = t3;
-        t3 = (t3 + (*(int *)(((int)stk + 4))));
-        *(unsigned int *)(((int)stk + 4)) = (*(short *)(((((t8 << 2) << 1) + 0xC209E3C) + 0x0)));
-        *(unsigned short *)(((((t8 << 2) << 1) + 0xC209E3C) + 0x0)) = t4;
-        t4 = (t4 + (*(int *)(((int)stk + 4))));
-        if ((*(short *)(((((t8 << 2) << 1) + 0xC209E3C) + 0x6))) != 0) {
-            *(unsigned short *)((t7 + 0x6)) = t6;
-            t6 = (t6 + (*(int *)(((int)stk + 4))));
-        } else {
-            *(unsigned short *)((t5 + 0x6)) = t6;
-        }
-        t22 = *(short *)((t9 + 0x4));
-        t8 = (t8 + 0x1);
-        *(unsigned short *)((t9 + 0x4)) = t2;
-        t5 = (t5 + 0x8);
-        t23 = t2;
-        t2 = (t2 + t22);
-        t9 = (t9 + 0x8);
-        t7 = (t7 + 0x8);
-        if ((int)t8 >= (int)0x5D) {
-            break;
-        }
-    }
-    *(unsigned int *)(((int)stk + 8)) = 0xC20A130;
-    *(unsigned int *)(((int)stk + 4)) = (short)(t2 - 1);
-    t24 = *(int *)(((int)stk + 8));
-    t34 = ((short)(t2 - 1) + 0xC20A130);
-    if ((int)(*(int *)(((int)stk + 4))) >= 0) {
-        t26 = (t2 - 1);
-        t27 = ((short)(t2 - 1) + 0xC20A130);
-        t28 = ((((short)(t2 - 1) + (short)(t0 + t1)) + t24) + 0x1);
-        for (;;) {
-            t26 = (t26 - 1);
-            *(unsigned char *)(((t28 - 0x1) + 0x0)) = (*(signed char *)((t27 + 0x0)));
-            t28 = (t28 - 0x1);
-            t27 = (t27 - 1);
-            if ((int)(short)t26 < 0) {
-                break;
+    t0 = *(int *)(((a4 + 0x50) + 0x0));
+    t1 = a7;
+    if ((*(int *)((a4 + 0x4))) == 1) {
+        t2 = ADXPD_GetStat((*(int *)((a4 + 0x8))));
+        if (t2 == 0) {
+            t2 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x88)))))((*(int *)((a4 + 0x8C))), ((a4 + 0x50) + 0x20), ((a4 + 0x50) + 0x24), ((a4 + 0x50) + 0x28));
+            t2 = *(int *)(((a4 + 0x50) + 0x18));
+            t3 = *(int *)(((a4 + 0x50) + 0x20));
+            t4 = *(int *)(((a4 + 0x50) + 0x4));
+            t5 = (t2 - t3);
+            if ((int)(t2 - t3) > (int)(*(int *)(((a4 + 0x50) + 0x24)))) {
+                t5 = (*(int *)(((a4 + 0x50) + 0x24)));
             }
-        }
-        t34 = t27;
-    }
-    t39 = ((t0 + t1) - 1);
-    if ((int)(short)((t0 + t1) - 1) >= 0) {
-        t35 = (((short)((t0 + t1) - 1) + 0xC20A130) + 0x1);
-        t36 = ((t0 + t1) - 1);
-        for (;;) {
-            t36 = (t36 - 1);
-            *(unsigned char *)(((t35 - 0x1) + 0x0)) = 0x0;
-            t35 = (t35 - 0x1);
-            if ((int)(short)t36 < 0) {
-                break;
+            t2 = *(int *)(((a4 + 0x50) + 0x14));
+            t3 = t5;
+            if ((int)t5 > (int)t4) {
+                t3 = (*(int *)(((a4 + 0x50) + 0x4)));
             }
+            t4 = *(int *)(((a4 + 0x50) + 0x20));
+            if ((*(signed char *)((a4 + 0xE))) == 2) {
+                t5 = *(int *)(((a4 + 0x50) + 0x1C));
+                t6 = *(int *)(((a4 + 0x50) + 0x20));
+                t7 = 0x0;
+                if ((int)t3 > 0) {
+                    t8 = 0x0;
+                    t9 = 0x0;
+                    t10 = 0x0;
+                    for (;;) {
+                        *(unsigned short *)(((((t4 << 1) + t2) + t9) + 0x0)) = (((unsigned char)(*(signed char *)((t8 + t0))) - 128) << 8);
+                        t11 = *(signed char *)((((t8 + 0x1) + t0) + 0x0));
+                        t10 = (t10 + 0x1);
+                        t8 = (t8 + 0x2);
+                        *(unsigned short *)(((((t5 + t6) << 1) + t2) + t9)) = (((unsigned char)t11 - 128) << 8);
+                        t9 = (t9 + 0x2);
+                        if ((int)t10 >= (int)t3) {
+                            break;
+                        }
+                    }
+                    t7 = t10;
+                }
+                t5 = t7;
+            } else {
+                t6 = 0x0;
+                if ((int)t3 > 0) {
+                    t7 = (0x0 + t0);
+                    t0 = (0x0 + ((t4 << 1) + t2));
+                    t2 = 0x0;
+                    for (;;) {
+                        t4 = *(signed char *)((t7 + 0x0));
+                        t7 = (t7 + 0x1);
+                        t2 = (t2 + 0x1);
+                        *(unsigned short *)((t0 + 0x0)) = (((unsigned char)t4 - 128) << 8);
+                        t0 = (t0 + 0x2);
+                        if ((int)t2 >= (int)t3) {
+                            break;
+                        }
+                    }
+                    t6 = t2;
+                }
+                t5 = t6;
+            }
+            *(unsigned int *)((a4 + 0xA0)) = t3;
+            *(unsigned int *)((a4 + 0xA4)) = (t3 * (*(signed char *)((a4 + 0xE))));
+            *(unsigned int *)((a4 + 0x4)) = 0x2;
+            t0 = t5;
         }
-        t39 = t36;
+        t1 = t0;
     }
-    t40 = t23;
-    t41 = (short)((t0 + t1) - 1);
-    t42 = 0xC11989C;
-    t43 = t39;
-    t44 = 0x0;
-    t45 = t34;
-    t46 = 0xC1127D8;
-    for (;;) {
-        if ((int)t44 >= (int)(*(int *)0xC204750)) {
-            break;
-        }
-        t48 = *(short *)((t46 + 0x0));
-        t46 = (t46 + 0x2);
-        t45 = t48;
-        t44 = (t44 + 0x1);
-        t41 = (*(int *)((t42 + 0x0)));
-        t45 = (unsigned short)t45;
-        t43 = t45;
-        t43 = (t43 << 1);
-        t43 = (t43 + t45);
-        t43 = (t43 << 2);
-        t43 = (t43 + 0xC24FB50);
-        *(unsigned int *)((t43 + 0x0)) = t41;
-        *(unsigned int *)((t43 + 0x4)) = (*(int *)((t42 + 0x8)));
-        t40 = (*(short *)((t42 + 0xE)));
-        t42 = (t42 + 0x10);
-        *(unsigned short *)((t43 + 0x8)) = t40;
+    t0 = *(int *)((a4 + 0x4));
+    t2 = t0;
+    if (t0 == 2) {
+        t0 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x90)))))((*(int *)((a4 + 0x94))), (*(int *)((a4 + 0xA4))), (*(int *)((a4 + 0xA0))), t1);
+        *(unsigned int *)((a4 + 0x4)) = 0x3;
+        t2 = t0;
     }
-    return t40;
+    return t2;
 }

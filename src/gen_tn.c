@@ -6,6 +6,11 @@ int kmFreeTexture(int);
 int nlCommonTextureClearTextureIndex(int, int);
 int nlFreePalette(int);
 int FUN_0c0dfb08(int a4, int a5, int a6);
+struct o0_int { int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o20_int { char p[0x20]; int v; };
+
 
 int FUN_0c0dfb08(int a4, int a5, int a6)
 {
@@ -30,7 +35,7 @@ int FUN_0c0dfb08(int a4, int a5, int a6)
             if ((*(int *)((((t2 * 0x3C) + (*(int *)0xC947AA8)) + 0x28))) == 0) {
                 t4 = kmFreeTexture(((t2 * 0x3C) + (*(int *)0xC947AA8)));
                 if (t4 != 0) {
-                    *(unsigned int *)0xC94C698 = 0x2;
+                    (((struct o10_uint *)0xC94C688)->v) = 0x2;
                     for (;;) {
                     }
                 }
@@ -39,17 +44,17 @@ int FUN_0c0dfb08(int a4, int a5, int a6)
             }
             *(unsigned int *)((((t2 * 0x3C) + (*(int *)0xC947AA8)) + 0x2C)) = 0x0;
             *(unsigned int *)((((t2 * 0x3C) + (*(int *)0xC947AA8)) + 0x38)) = 0xFFFFFFFF;
-            t5 = *(short *)((((t0 + a6) << 1) + (*(int *)0xC94C69C)));
+            t5 = *(short *)((((t0 + a6) << 1) + ((((struct o14_int *)0xC94C688)->v))));
             nlCommonTextureClearTextureIndex(t2, t4);
             FUN_0c0e0784((short)t5);
             *(unsigned int *)((((((t0 + a6) << 2) << 1) + (*(int *)0xC943D78)) + 0x4)) = 0xFFFFFFFF;
-            *(unsigned short *)((((t0 + a6) << 1) + (*(int *)0xC94C69C))) = 0xFFFFFFFF;
+            *(unsigned short *)((((t0 + a6) << 1) + ((((struct o14_int *)0xC94C688)->v)))) = 0xFFFFFFFF;
             t0 = 0xC20CC50;
             if (((*(int *)0xC20CC50) == 0) && (a5 != 0)) {
                 t2 = *(int *)(((a6 << 2) + a5));
-                t4 = *(int *)(((((((short)t5 << 2) << 2) << 1) + (*(int *)0xC94C6A8)) + 0xC));
+                t4 = *(int *)(((((((short)t5 << 2) << 2) << 1) + ((((struct o20_int *)0xC94C688)->v))) + 0xC));
                 t5 = 0x7;
-                if ((*(int *)0xC94C688) != 0) {
+                if (((((struct o0_int *)0xC94C688)->v)) != 0) {
                     t6 = (((unsigned int)t4 >> 27) & 0x7);
                     if (((((unsigned int)t4 >> 27) & 0x7) != 5) && ((((unsigned int)t4 >> 27) & 0x7) != 6)) {
                     } else {

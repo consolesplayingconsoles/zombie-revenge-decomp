@@ -7,6 +7,18 @@ int kmiFBalloc(int, int);
 int kmiGetDisplayData(int, int, int);
 int kmiGetSysConfigFlag(void);
 int kmCreateFrameBufferSurface(int a4, int a5, int a6, int a7, int a8);
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o30_int { char p[0x30]; int v; };
+struct o34_int { char p[0x34]; int v; };
+struct o3C_int { char p[0x3C]; int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o8_int { char p[0x8]; int v; };
+struct oC_int { char p[0xC]; int v; };
+
 
 int kmCreateFrameBufferSurface(int a4, int a5, int a6, int a7, int a8)
 {
@@ -22,23 +34,23 @@ int kmCreateFrameBufferSurface(int a4, int a5, int a6, int a7, int a8)
     register int t72;
 
     *(unsigned int *)(((int)stk + 4)) = a6;
-    t0 = *(int *)0xC2374FC;
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x0)) = (*(int *)0xC2374F8);
+    t0 = (((struct o4_int *)0xC2374F8)->v);
+    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x0)) = ((((struct o0_int *)0xC2374F8)->v));
     *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x4)) = t0;
-    t3 = *(int *)0xC237504;
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x8)) = (*(int *)0xC237500);
+    t3 = (((struct oC_int *)0xC2374F8)->v);
+    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x8)) = ((((struct o8_int *)0xC2374F8)->v));
     *(unsigned int *)(((((int)stk + 4) + 0x4) + 0xC)) = t3;
-    t4 = *(int *)0xC23750C;
-    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x10)) = (*(int *)0xC237508);
+    t4 = (((struct o14_int *)0xC2374F8)->v);
+    *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x10)) = ((((struct o10_int *)0xC2374F8)->v));
     *(unsigned int *)(((((int)stk + 4) + 0x4) + 0x14)) = t4;
     *(unsigned int *)((((((*(int *)0xC239A94) << 2) << 2) + 0xC952908) + 0x0)) = a4;
     *(unsigned int *)((((((*(int *)0xC239A94) << 2) << 2) + 0xC952908) + 0x4)) = a5;
     *(unsigned int *)((((((*(int *)0xC239A94) << 2) << 2) + 0xC952908) + 0x8)) = (*(int *)(((int)stk + 4)));
-    *(unsigned int *)0xC952904 = a7;
+    (((struct o0_uint *)0xC952904)->v) = a7;
     *(unsigned int *)((((((*(int *)0xC239A94) << 2) << 2) + 0xC952908) + 0xC)) = a8;
     *(unsigned int *)0xC239A94 = (((*(int *)0xC239A94) + 0x1) & 0x1);
-    *(unsigned int *)0xC952330 = a7;
-    if ((*(int *)0xC952940) != 0) {
+    (((struct o10_uint *)0xC952320)->v) = a7;
+    if (((((struct o3C_int *)0xC952904)->v)) != 0) {
         kmiGetDisplayData(0xFF, a7, (*(int *)(((int)stk + 4))));
     }
     t24 = kmiGetSysConfigFlag();
@@ -47,10 +59,10 @@ int kmCreateFrameBufferSurface(int a4, int a5, int a6, int a7, int a8)
         t60 = t26;
         if (t26 == 0) {
             *(unsigned int *)((a4 + 0x0)) = 0x1;
-            *(unsigned int *)((a4 + 0x4)) = (*(int *)(((((*(int *)0xC952320) << 2) + (((int)stk + 4) + 0x4)) + 0x0)));
-            *(unsigned int *)((a4 + 0x8)) = (*(int *)0xC952320);
-            *(unsigned int *)((a4 + 0xC)) = (*(int *)0xC952934);
-            *(unsigned int *)((a4 + 0x10)) = (*(int *)0xC952938);
+            *(unsigned int *)((a4 + 0x4)) = (*(int *)((((((((struct o0_int *)0xC952320)->v)) << 2) + (((int)stk + 4) + 0x4)) + 0x0)));
+            *(unsigned int *)((a4 + 0x8)) = ((((struct o0_int *)0xC952320)->v));
+            *(unsigned int *)((a4 + 0xC)) = ((((struct o30_int *)0xC952904)->v));
+            *(unsigned int *)((a4 + 0x10)) = ((((struct o34_int *)0xC952904)->v));
             if (a7 == 1) {
                 *(unsigned int *)((a4 + 0x18)) = 0x1;
             } else {

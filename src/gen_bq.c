@@ -9,7 +9,7 @@ int nlRotateAY(int);
 int nlScale(float, float, float);
 int FUN_0c0dcca0(int);
 int FUN_0c0de000(float);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int _quick_odd_mvn(int);
 int FUN_0c092638(int a4);
 int FUN_0c059500(int a4);
@@ -45,7 +45,7 @@ int FUN_0c092638(int a4)
         return 0xA0;
     }
     *(unsigned int *)((t0 + 0x244)) = (*(int *)((a4 + 0x7C)));
-    return FUN_0c0e19f2(a4, t21, t0, 0x1);
+    return FUN_0c0e19f2();
 }
 
 

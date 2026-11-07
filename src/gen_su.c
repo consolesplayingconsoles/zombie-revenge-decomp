@@ -12,6 +12,15 @@ int FUN_0c23370e(int, int);
 extern int mwRnaErrCallFunc();
 int mwlSbAllocWork(int);
 int FUN_0c232f8a(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7);
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o44_ushort { char p[0x44]; unsigned short v; };
+struct o46_ushort { char p[0x46]; unsigned short v; };
+struct o48_ushort { char p[0x48]; unsigned short v; };
+struct o4A_ushort { char p[0x4A]; unsigned short v; };
+struct o4C_uchar { char p[0x4C]; unsigned char v; };
+struct o4D_uchar { char p[0x4D]; unsigned char v; };
+struct o4E_ushort { char p[0x4E]; unsigned short v; };
+
 
 int FUN_0c232f8a(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7)
 {
@@ -80,7 +89,7 @@ int FUN_0c232f8a(int a4, int a5, int a6, int a7, float f4, float f5, float f6, f
     goto L_C2330D6;
     L_C2330DA:;
     FUN_0c0e4e88((*(int *)(((*(int *)((v0_2 + 0x10))) + 0x4))));
-    *(unsigned char *)((v0_2 + 0x4C)) = v0_4;
+    (((struct o4C_uchar *)(v0_2))->v) = v0_4;
     *(unsigned char *)((v0_2 + 0x1)) = v0_4;
     *(unsigned int *)((v0_2 + 0xC)) = v0_4;
     *(unsigned int *)((v0_2 + 0x8)) = v0_3;
@@ -93,13 +102,13 @@ int FUN_0c232f8a(int a4, int a5, int a6, int a7, float f4, float f5, float f6, f
     L_C23310E:;
     FUN_0c23363e(v0_2, v0_0, v0_1);
     *(unsigned int *)((v0_2 + 0x3C)) = 0xFFFFFFFF;
-    *(unsigned int *)((v0_2 + 0x40)) = v0_4;
-    *(unsigned short *)((v0_2 + 0x44)) = v0_4;
-    *(unsigned short *)((v0_2 + 0x46)) = v0_4;
-    *(unsigned short *)((v0_2 + 0x48)) = v0_4;
-    *(unsigned short *)((v0_2 + 0x4A)) = v0_4;
-    *(unsigned char *)((v0_2 + 0x4D)) = 0xFFFFFFFF;
-    *(unsigned short *)((v0_2 + 0x4E)) = 0xFFFFFFFF;
+    (((struct o40_uint *)(v0_2))->v) = v0_4;
+    (((struct o44_ushort *)(v0_2))->v) = v0_4;
+    (((struct o46_ushort *)(v0_2))->v) = v0_4;
+    (((struct o48_ushort *)(v0_2))->v) = v0_4;
+    (((struct o4A_ushort *)(v0_2))->v) = v0_4;
+    (((struct o4D_uchar *)(v0_2))->v) = 0xFFFFFFFF;
+    (((struct o4E_ushort *)(v0_2))->v) = 0xFFFFFFFF;
     *(unsigned char *)((v0_2 + 0x0)) = 0x1;
     v0_0 = (v0_2);
     goto L_C233138;

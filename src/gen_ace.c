@@ -1,0 +1,91 @@
+/* Straight-line functions with calls and guards (batch gen_ace): generated from the code and checked by tests. Calls are
+   to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
+
+int kmiFatalErrorEntry(int);
+int FUN_0c218514(int a4, int a5, int a6, int a7);
+
+int FUN_0c218514(int a4, int a5, int a6, int a7)
+{
+    int stk[2];
+
+    register int R1;
+    register int R2;
+    register int R3;
+    register float F0;
+    register float F15;
+    register int T_;
+    register int v0_0;
+    register int v0_1;
+    register int v0_10;
+    register int v0_11;
+    register int v0_2;
+    register int v0_3;
+    register int v0_4;
+    register int v0_5;
+    register int v0_6;
+    register int v0_7;
+    register int v0_8;
+    register int v0_9;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
+    v0_10 = a4;
+    v0_0 = a5;
+    v0_1 = a6;
+    v0_2 = a7;
+    v0_11 = (v0_10);
+    v0_3 = (0xFFFFFF40);
+    v0_4 = (0x0);
+    v0_5 = (0xC952804);
+    if ((v0_10 == 0)) goto L_C218580;
+    if ((v0_11 == 1)) goto L_C2185C8;
+    L_C218660:;
+    return 0x0;
+    L_C2185C8:;
+    R1004 = v0_4;
+    v0_6 = (0xFFFFF800);
+    v0_7 = (v0_4);
+    v0_8 = (v0_4);
+    v0_9 = (v0_4);
+    L_C2185D2:;
+    v0_11 = R1004;
+    v0_10 = ((((v0_11 << 2) << 2) << 1));
+    if (((unsigned int)((*(int *)(((((v0_11 << 2) << 2) << 1) + 0xC952778))) + v0_6) <= (unsigned int)((*(int *)(((((v0_11 << 2) << 2) << 1) + 0xC952780))) + 0x140))) goto L_C218640;
+    v0_11 = (0xC952778);
+    if (((unsigned int)(*(int *)((((v0_5 + 0x24) + v0_8) + 0x0))) >= (unsigned int)((*(int *)((v0_9 + 0xC952778))) + v0_6))) goto L_C218610;
+    *(unsigned int *)((v0_7 + v0_11)) = ((*(int *)((v0_7 + v0_11))) - 0x800);
+    *(unsigned int *)(((0xC952784 + v0_7) + 0x0)) = ((*(int *)((v0_7 + v0_11))) + v0_3);
+    L_C218610:;
+    *(unsigned int *)((v0_5 + 0x10)) = v0_4;
+    L_C21864E:;
+    v0_10 = R1004;
+    R1004 = (v0_10 + 0x1);
+    v0_7 = ((v0_7 + 0x20));
+    v0_8 = ((v0_8 + 0x4));
+    v0_9 = ((v0_9 + 0x20));
+    if (((int)(v0_10 + 0x1) < (int)0x2)) goto L_C2185D2;
+    goto L_C218660;
+    L_C218640:;
+    if (((unsigned int)(*(int *)((v0_5 + 0x10))) <= (unsigned int)0xA)) goto L_C21864E;
+    kmiFatalErrorEntry(0x3);
+    goto L_C21864E;
+    L_C218580:;
+    v0_6 = (v0_4);
+    v0_7 = (v0_4);
+    v0_8 = (0x40);
+    v0_9 = (0x2000);
+    L_C218588:;
+    if (((unsigned int)((*(int *)((v0_7 + 0xC952784))) + v0_9) >= (unsigned int)((*(int *)((v0_7 + 0xC952774))) + v0_3))) goto L_C2185AE;
+    *(unsigned int *)((v0_6 + 0xC952784)) = ((*(int *)((v0_6 + 0xC952784))) + v0_9);
+    *(unsigned int *)((v0_6 + 0xC952778)) = ((*(int *)((v0_6 + 0xC952784))) + 0xC0);
+    *(unsigned int *)((v0_5 + 0x14)) = v0_4;
+    L_C2185BC:;
+    v0_10 = (unsigned int)(v0_7 + 0x20) < (unsigned int)v0_8;
+    v0_6 = ((v0_6 + 0x20));
+    v0_7 = ((v0_7 + 0x20));
+    if (v0_10) goto L_C218588;
+    goto L_C218660;
+    L_C2185AE:;
+    if (((unsigned int)(*(int *)((v0_5 + 0x14))) <= (unsigned int)0x0)) goto L_C2185BC;
+    kmiFatalErrorEntry(0x3);
+    goto L_C2185BC;
+}

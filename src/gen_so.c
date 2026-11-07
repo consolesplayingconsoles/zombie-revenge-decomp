@@ -11,6 +11,15 @@ int nlPushMatrix(int);
 int nlRotateAY(int);
 int nlUnitMatrix(void);
 int FUN_0c051e92(int a4);
+struct o20C_int { char p[0x20C]; int v; };
+struct o30_float { char p[0x30]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o48_float { char p[0x48]; float v; };
+struct o50_float { char p[0x50]; float v; };
+struct o8_float { char p[0x8]; float v; };
+struct oBC_int { char p[0xBC]; int v; };
+
 
 int FUN_0c051e92(int a4)
 {
@@ -36,7 +45,7 @@ int FUN_0c051e92(int a4)
     register float w0_2;
     register float w0_3;
     v0_2 = a4;
-    v0_3 = *(int *)((v0_2 + 0xBC));
+    v0_3 = (((struct oBC_int *)(v0_2))->v);
     v0_1 = ((v0_3 + 0x1));
     v0_0 = (v0_2);
     v0_4 = ((0x1 & (v0_3 + 0x1)));
@@ -49,16 +58,16 @@ int FUN_0c051e92(int a4)
     if (((int)(*(int *)(((0xC247030 + (v0_4 << 2)) + 0x0))) >= (int)0x3)) goto L_C051ED4;
     goto L_C052052;
     L_C051ED4:;
-    v0_4 = *(int *)((v0_0 + 0x20C));
+    v0_4 = (((struct o20C_int *)(v0_0))->v);
     v0_1 = (v0_4);
     if (((v0_4 & 0x5F0000) == 0)) goto L_C051EE2;
     goto L_C052052;
     L_C051EE2:;
     v0_2 = *(int *)(((v0_3 + v0_2) + 0x0));
-    w0_0 = *(float *)((v0_0 + 0x30));
-    w0_1 = *(float *)((v0_2 + 0x30));
-    w0_2 = *(float *)((v0_0 + 0x38));
-    w0_3 = *(float *)((v0_2 + 0x38));
+    w0_0 = (((struct o30_float *)(v0_0))->v);
+    w0_1 = (((struct o30_float *)(v0_2))->v);
+    w0_2 = (((struct o38_float *)(v0_0))->v);
+    w0_3 = (((struct o38_float *)(v0_2))->v);
     w0_2 = ((w0_2 - w0_3) * (w0_2 - w0_3));
     w0_2 = w0_2 + ((w0_0 - w0_1)) * ((w0_0 - w0_1));
     v0_1 = (0x38);
@@ -68,13 +77,13 @@ int FUN_0c051e92(int a4)
     goto L_C052052;
     L_C051F10:;
     *(unsigned int *)(((int)stk + 4)) = ((((int)stk + 4) + 0x28) + 0x4);
-    FUN_0c0a68ec(((((int)stk + 4) + 0x28) + 0x4), ((*(float *)((v0_0 + 0x30))) - (*(float *)((v0_2 + 0x30)))), ((*(float *)((v0_0 + 0x38))) - (*(float *)((v0_2 + 0x38)))));
+    FUN_0c0a68ec(((((int)stk + 4) + 0x28) + 0x4), (((((struct o30_float *)(v0_0))->v)) - ((((struct o30_float *)(v0_2))->v))), (((((struct o38_float *)(v0_0))->v)) - ((((struct o38_float *)(v0_2))->v))));
     nlPushMatrix(0x0);
     nlUnitMatrix();
     nlRotateAY((-(*(int *)(((*(int *)(((int)stk + 4))) + 0x0)))));
-    *(float *)(((int)stk + 20)) = (*(float *)((v0_0 + 0x48)));
+    *(float *)(((int)stk + 20)) = ((((struct o48_float *)(v0_0))->v));
     *(float *)(((int)stk + 24)) = 0.0f;
-    *(float *)(((int)stk + 28)) = (*(float *)((v0_0 + 0x50)));
+    *(float *)(((int)stk + 28)) = ((((struct o50_float *)(v0_0))->v));
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
     *(float *)(((((int)stk + 4) + 0x1C) + 0x0)) = (*(float *)(((int)stk + 8)));
     *(float *)((((((int)stk + 4) + 0x1C) + 0x4) + 0x0)) = (*(float *)(((int)stk + 12)));
@@ -82,20 +91,20 @@ int FUN_0c051e92(int a4)
     *(unsigned int *)(((int)stk + 4)) = ((((int)stk + 4) + 0x28) + 0x8);
     *(unsigned int *)((((((int)stk + 4) + 0x28) + 0x8) + 0x0)) = (short)(FUN_0c0d9dc0((*(float *)(((((int)stk + 4) + 0x1C) + 0x0))), 50.0f));
     w0_0 = FUN_0c0d9e90((*(int *)(((*(int *)(((int)stk + 4))) + 0x0))));
-    *(float *)(((((int)stk + 4) + 0x1C) + 0x4)) = ((50.0f / w0_0) + -50.0f);
+    (((struct o4_float *)((((int)stk + 4) + 0x1C)))->v) = ((50.0f / w0_0) + -50.0f);
     w0_0 = ((50.0f / w0_0) + -50.0f);
     w0_0 = -w0_0;
     v0_1 = ((((int)stk + 4) + 0x28));
     v0_2 = ((((int)stk + 4) + 0x1C));
     w0_1 = (0.0f);
-    if ((!((*(float *)(((((int)stk + 4) + 0x1C) + 0x8))) > w0_0))) goto L_C051FC6;
-    *(float *)((v0_2 + 0x8)) = (-(*(float *)((v0_2 + 0x4))));
+    if ((!(((((struct o8_float *)((((int)stk + 4) + 0x1C)))->v)) > w0_0))) goto L_C051FC6;
+    (((struct o8_float *)(v0_2))->v) = (-((((struct o4_float *)(v0_2))->v)));
     L_C051FC6:;
     nlUnitMatrix();
     nlRotateAY((*(int *)((v0_1 + 0x4))));
     *(float *)(((int)stk + 20)) = (*(float *)((v0_2 + 0x0)));
     *(float *)(((int)stk + 24)) = w0_1;
-    *(float *)(((int)stk + 28)) = (*(float *)((v0_2 + 0x8)));
+    *(float *)(((int)stk + 28)) = ((((struct o8_float *)(v0_2))->v));
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
     *(float *)(((v0_0 + 0x48) + 0x0)) = (*(float *)(((int)stk + 8)));
     *(float *)(((v0_2 + 0x4) + 0x0)) = (*(float *)(((int)stk + 12)));

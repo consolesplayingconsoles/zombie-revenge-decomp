@@ -26,7 +26,8 @@
      "r0": "FFFFFFFE",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 0",
@@ -54,7 +55,8 @@
      "r0": "80000000",
      "fr0": "42C80000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 2",
@@ -82,7 +84,8 @@
      "r0": "7FFFFFFF",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 3",
@@ -110,7 +113,8 @@
      "r0": "00000008",
      "fr0": "42C80000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 4",
@@ -138,7 +142,8 @@
      "r0": "00000003",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 5",
@@ -166,7 +171,8 @@
      "r0": "40200000",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 6",
@@ -194,7 +200,8 @@
      "r0": "00000100",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 7",
@@ -222,7 +229,8 @@
      "r0": "FFFFFFFE",
      "fr0": "3F000000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 8",
@@ -250,7 +258,8 @@
      "r0": "00000010",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 9",
@@ -278,7 +287,8 @@
      "r0": "000005F0",
      "fr0": "3F800000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 10",
@@ -306,7 +316,8 @@
      "r0": "40000000",
      "fr0": "3F800000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 11",
@@ -334,7 +345,8 @@
      "r0": "000002F9",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 12",
@@ -362,7 +374,8 @@
      "r0": "00000002",
      "fr0": "42C80000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 13",
@@ -390,7 +403,8 @@
      "r0": "00000010",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 14",
@@ -418,7 +432,8 @@
      "r0": "80000000",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 15",
@@ -446,7 +461,8 @@
      "r0": "00000010",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 16",
@@ -474,7 +490,8 @@
      "r0": "00000002",
      "fr0": "3F800000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 17",
@@ -502,7 +519,8 @@
      "r0": "00000001",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   }
  ],
  "holdout": [
@@ -532,7 +550,8 @@
      "r0": "000005F0",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 53",
@@ -560,7 +579,8 @@
      "r0": "000002F7",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 47",
@@ -588,7 +608,8 @@
      "r0": "40200000",
      "fr0": "3F800000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 119",
@@ -616,7 +637,8 @@
      "r0": "000002F8",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 95",
@@ -644,7 +666,8 @@
      "r0": "00000005",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 90",
@@ -672,7 +695,8 @@
      "r0": "C0400000",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 89",
@@ -700,7 +724,8 @@
      "r0": "00000003",
      "fr0": "3F000000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 48",
@@ -728,7 +753,8 @@
      "r0": "42C80000",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 46",
@@ -756,7 +782,8 @@
      "r0": "4E6E6B28",
      "fr0": "42C80000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 38",
@@ -784,7 +811,8 @@
      "r0": "FFFFFFFF",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 65",
@@ -812,7 +840,8 @@
      "r0": "3F800000",
      "fr0": "3F000000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 97",
@@ -840,7 +869,8 @@
      "r0": "40000000",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 92",
@@ -868,7 +898,8 @@
      "r0": "C0400000",
      "fr0": "3F800000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 79",
@@ -896,7 +927,8 @@
      "r0": "40200000",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 71",
@@ -924,7 +956,8 @@
      "r0": "000002F8",
      "fr0": "40200000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 81",
@@ -952,7 +985,8 @@
      "r0": "C0400000",
      "fr0": "C0400000"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 106",
@@ -980,7 +1014,8 @@
      "r0": "80000000",
      "fr0": "3DCCCCCD"
     }
-   ]
+   ],
+   "same_fault": true
   },
   {
    "about": "case 54",
@@ -1008,7 +1043,8 @@
      "r0": "00000001",
      "fr0": "3F000000"
     }
-   ]
+   ],
+   "same_fault": true
   }
  ]
 }

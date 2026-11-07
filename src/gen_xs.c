@@ -8,6 +8,8 @@ int vmsfs_unmount(int);
 int vmsio_ismount(int);
 int vmsio_isready(int);
 void vmsfs_fread1(int a4, int a5);
+struct o40_int { char p[0x40]; int v; };
+
 
 void vmsfs_fread1(int a4, int a5)
 {
@@ -27,13 +29,13 @@ void vmsfs_fread1(int a4, int a5)
                 if ((int)t1 < 0) {
                 } else {
                     t1 = *(int *)((a4 + 0x28));
-                    if ((*(int *)((a4 + 0x40))) == 0xFFFA) {
+                    if (((((struct o40_int *)(a4))->v)) == 0xFFFA) {
                         *(volatile int *)((a4 + 0x34));
                     } else {
                         if ((*(int *)((a4 + 0x34))) == 0) {
                         } else {
-                            if (((*(int *)((a4 + 0x40))) != 0xFFFC) && (t0 = *(int *)((a4 + 0x40)), t0 != 0xFFFF)) {
-                                t0 = *(int *)((a4 + 0x40));
+                            if ((((((struct o40_int *)(a4))->v)) != 0xFFFC) && (t0 = (((struct o40_int *)(a4))->v), t0 != 0xFFFF)) {
+                                t0 = (((struct o40_int *)(a4))->v);
                                 t2 = vmsfs_read_retry(t1, t0, a5);
                                 if ((int)t2 < 0) {
                                 } else {

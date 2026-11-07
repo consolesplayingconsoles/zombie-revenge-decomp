@@ -4,7 +4,7 @@
 int FUN_0c0141d4(int, int);
 int FUN_0c0c465c(int);
 int FUN_0c0c475c(int, float);
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0dcc70(float, float, float);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
@@ -146,7 +146,7 @@ int FUN_0c01430e(int a4, int a5, int a6)
     goto L_C014532;
     L_C01449C:;
     if (((0xC707 & R10) == 0)) goto L_C014532;
-    FUN_0c0cc3f8(0x828A9, v0_5, v0_2, R7, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+    FUN_0c0cc3f8(0x828A9, v0_5, v0_2, R7);
     *(unsigned int *)0xC23EAFC = 0x0;
     if (((int)v0_1 >= (int)0x7)) goto L_C0144E4;
     R4 = ((*(signed char *)((v0_1 + 0xC1EF5A0))));

@@ -15,6 +15,16 @@ int nlSubVector3op(int, int, int);
 int FUN_0c07b0bc(void);
 int FUN_0c0c6254(int a4, int a5, int a6, int a7);
 int FUN_0c0b0a8e(int a4, int a5, int a6, int a7);
+struct o48_float { char p[0x48]; float v; };
+struct o4C_float { char p[0x4C]; float v; };
+struct o68_short { char p[0x68]; short v; };
+struct o68_ushort { char p[0x68]; unsigned short v; };
+struct o6A_short { char p[0x6A]; short v; };
+struct o6A_ushort { char p[0x6A]; unsigned short v; };
+struct o6C_short { char p[0x6C]; short v; };
+struct o6C_ushort { char p[0x6C]; unsigned short v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+
 
 int FUN_0c07b0bc(void)
 {
@@ -25,8 +35,8 @@ int FUN_0c07b0bc(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC200780); }
     nlSubVector3op((t1 + 0x48), 0xC20078C, 0xC200780);
     FUN_0c0dd050((t1 + 0x48));
-    *(unsigned short *)(((0x64 + t1) + 0x0)) = ((FUN_0c0d9dc0((*(float *)((t1 + 0x4C))), (*(float *)((t1 + 0x48))))) - 32768);
-    *(unsigned int *)((t1 + 0x78)) = 0x119C;
+    *(unsigned short *)(((0x64 + t1) + 0x0)) = ((FUN_0c0d9dc0(((((struct o4C_float *)(t1))->v)), ((((struct o48_float *)(t1))->v)))) - 32768);
+    (((struct o78_uint *)(t1))->v) = 0x119C;
     return 0x78;
 }
 
@@ -36,24 +46,24 @@ int FUN_0c0c6254(int a4, int a5, int a6, int a7)
     int t15;
     int t18;
 
-    if ((unsigned short)(*(short *)((a4 + 0x68))) != 0) {
+    if ((unsigned short)((((struct o68_short *)(a4))->v)) != 0) {
         
-        if ((*(short *)((a4 + 0x6C))) != 0) {
-            t3 = *(short *)((a4 + 0x6C));
-            *(unsigned short *)((a4 + 0x6C)) = (t3 - 1);
+        if (((((struct o6C_short *)(a4))->v)) != 0) {
+            t3 = (((struct o6C_short *)(a4))->v);
+            (((struct o6C_ushort *)(a4))->v) = (t3 - 1);
             if ((int)(unsigned short)(t3 - 1) <= 0) {
                 FUN_0c0e19f2(a4, a5, a6, a7);
             }
         }
         return FUN_0c0c0340((a4 + 0x30));
     }
-    t15 = *(short *)((a4 + 0x6A));
-    *(unsigned short *)((a4 + 0x6A)) = (t15 - 1);
+    t15 = (((struct o6A_short *)(a4))->v);
+    (((struct o6A_ushort *)(a4))->v) = (t15 - 1);
     if ((int)(unsigned short)(t15 - 1) <= 0) {
-        *(unsigned short *)((a4 + 0x68)) = ((*(short *)((a4 + 0x68))) + 0x1);
-        if ((*(short *)((a4 + 0x6C))) != 0) {
-            t18 = *(short *)((a4 + 0x6C));
-            *(unsigned short *)((a4 + 0x6C)) = (t18 - 1);
+        (((struct o68_ushort *)(a4))->v) = (((((struct o68_short *)(a4))->v)) + 0x1);
+        if (((((struct o6C_short *)(a4))->v)) != 0) {
+            t18 = (((struct o6C_short *)(a4))->v);
+            (((struct o6C_ushort *)(a4))->v) = (t18 - 1);
             if ((int)(unsigned short)(t18 - 1) <= 0) {
                 FUN_0c0e19f2(a4, a5, a6, a7);
             }
