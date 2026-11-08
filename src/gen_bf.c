@@ -14,6 +14,8 @@ struct o514_uint { char p[0x514]; unsigned int v; };
 struct o554_int { char p[0x554]; int v; };
 struct o558_uint { char p[0x558]; unsigned int v; };
 struct o5CC_uint { char p[0x5CC]; unsigned int v; };
+struct oBC_int { char p[0xBC]; int v; };
+
 
 
 int FUN_0c02d12c(int a4, int a5, int a6, float f4, float f5)
@@ -37,10 +39,10 @@ int FUN_0c02d12c(int a4, int a5, int a6, float f4, float f5)
         (((struct o5CC_uint *)(a4))->v) = 0x1;
         t5 = FUN_0c035f64(a4);
         if ((int)t5 >= 0) {
-            u7 = *(float *)((((*(int *)(((0xBC + a4) + 0x0))) << 2) + ((((t5 << 2) << 2) << 2) + 0xC247694)));
+            u7 = *(float *)(((((((struct oBC_int *)(a4))->v)) << 2) + ((((t5 << 2) << 2) << 2) + 0xC247694)));
             t9 = *(int *)((((t5 << 2) + 0xC2475D4) + 0x0));
             if (((((struct o50C_int *)(a4))->v)) != 0) {
-                u17 = (*(float *)(((((*(int *)(((0xBC + a4) + 0x0))) << 2) + (0xC247084 + (((((((struct o510_int *)(a4))->v)) << 2) << 2) << 2))) + 0x0)));
+                u17 = (*(float *)((((((((struct oBC_int *)(a4))->v)) << 2) + (0xC247084 + (((((((struct o510_int *)(a4))->v)) << 2) << 2) << 2))) + 0x0)));
             } else {
                 u17 = (*(float *)0xC02D284);
             }

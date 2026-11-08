@@ -3,7 +3,7 @@
 
 int FUN_0c084800(float, float, float);
 int FUN_0c0848bc(float, float, float);
-int FUN_0c0849da(float);
+int FUN_0c0849da(void);
 int FUN_0c0c465c(int);
 int FUN_0c0c475c(int, float);
 int FUN_0c0d9dc0(float, float);
@@ -21,7 +21,7 @@ int nlUnitMatrix(void);
 int nlAddVector(int, int);
 int nlSubVector(int, int);
 int FUN_0c0de000(float);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
 
 int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
@@ -86,23 +86,27 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     float F14;
     float F15;
     int T_;
+    int R1004;
+    int R1008;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
     R4 = a4;
     R5 = a5;
     R6 = a6;
     F4 = f4;
     F6 = f6;
     L_C0622DC:;
-    *(unsigned int *)(((int)stk + 8)) = R4;
+    R1008 = R4;
     R12 = ((*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC))));
     if ((((*(int *)0xC23ED5C) & 6) == 0)) goto L_C062312;
     goto L_C062308;
     L_C062308:;
     *(unsigned int *)0xC247B84 = 0x0;
-    FUN_0c0e19f2(R4, R5, R6, a7);
+    FUN_0c0e19f2();
     goto L_C062312;
     L_C062312:;
-    t6 = *(int *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 8)) = 0x0;
+    t6 = R1008;
+    R1008 = 0x0;
     R14 = ((t6 + 0x34));
     goto L_C06231A;
     L_C06231A:;
@@ -111,18 +115,18 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     L_C062320:;
     goto L_C0628C2;
     L_C0628C2:;
-    t10 = *(int *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 8)) = (t10 + 0x1);
+    t10 = R1008;
+    R1008 = (t10 + 0x1);
     R14 = ((R14 + 0x28));
     if (((int)(t10 + 0x1) >= (int)0x100)) goto L_C0628D4;
     goto L_C0628D0;
     L_C0628D0:;
     goto L_C06231A;
     L_C0628D4:;
-    return (FUN_0c0849da(F4));
+    return (FUN_0c0849da());
     L_C062324:;
     t15 = *(int *)0xC247B94;
-    *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 8))) * 0x3763);
+    R1004 = ((R1008) * 0x3763);
     t16 = *(int *)((R14 + 0x20));
     R0 = (t16);
     R10 = (0xC0DC6E0);
@@ -148,7 +152,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)((R14 + 0x10)) = ((*(float *)((R14 + 0x10))) + (*(float *)(((0x74 + (*(int *)((R13 + 0x0)))) + 0x0))));
     R2 = ((*(int *)((R14 + 0x18))));
     F13 = ((u30 + u29));
-    if (((((*(int *)(((int)stk + 8))) + (*(int *)((R4 + 0x0)))) & 1) == 0)) goto L_C06255C;
+    if (((((R1008) + (*(int *)((R4 + 0x0)))) & 1) == 0)) goto L_C06255C;
     goto L_C062556;
     L_C062556:;
     F3 = (0.5f);
@@ -161,7 +165,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     goto L_C062582;
     L_C062582:;
     FUN_0c0db4d0((R14 + 0xC), (((int)stk + 4) + 0x8));
-    *(unsigned int *)(((int)stk + 4)) = (short)(FUN_0c0d9dc0((*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 12)))));
+    R1004 = (short)(FUN_0c0d9dc0((*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 12)))));
     u52 = *(float *)(((int)stk + 12));
     F4 = (u52);
     if ((u52 > 0.0f)) goto L_C0625AA;
@@ -196,7 +200,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     FUN_0c0dcca0(R14);
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     t78 = *(int *)((R13 + 0x0));
     u79 = *(float *)((t78 + 0x6C));
     nlScale((F15 * (*(float *)((t78 + 0x70)))), u79, u79);
@@ -234,7 +238,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
     nlScale(F13, F13, F15);
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     t110 = *(int *)((R13 + 0x0));
     FUN_0c0848bc(((*(float *)((t110 + 0x30))) * F14), ((*(float *)((t110 + 0x34))) * F14), ((*(float *)((t110 + 0x38))) * F14));
     if ((!(F15 > F13))) goto L_C0626B4;
@@ -261,7 +265,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     FUN_0c084800(F15, F15, F15);
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     nlScale(4.0f, 4.0f, F15);
     nlRotateAX(0x4000);
     FUN_0c0de000(4.0f);
@@ -273,7 +277,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     goto L_C0628B6;
     L_C06272E:;
     R4 = (0x5);
-    if ((((*(int *)(((int)stk + 8))) & 0x5) != 0)) goto L_C062790;
+    if ((((R1008) & 0x5) != 0)) goto L_C062790;
     goto L_C062736;
     L_C062736:;
     nlSubVector(R14, (R14 + 0xC));
@@ -303,7 +307,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     nlAddVector(R14, (R14 + 0xC));
     nlPushMatrix(0x0);
     FUN_0c0dcca0(R14);
-    nlRotateAY((*(int *)(((int)stk + 4))));
+    nlRotateAY((R1004));
     nlScale(u151, F15, u151);
     F13 = (((float)t150 * 0.03125f));
     F14 = (u151);
@@ -334,7 +338,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     FUN_0c0dcca0(R14);
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     nlScale(((float)t168 * 0.149999991f), ((float)t168 * 0.149999991f), F15);
     nlRotateAX(0x4000);
     F13 = (((float)t170 * 0.0299999975f));
@@ -360,7 +364,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)((R14 + 0x10)) = ((*(float *)((R14 + 0x10))) + (*(float *)(((0x1C + (*(int *)((R13 + 0x0)))) + 0x0))));
     R2 = ((*(int *)((R14 + 0x18))));
     F13 = ((u191 + u190));
-    if (((((*(int *)(((int)stk + 8))) + (*(int *)((R4 + 0x0)))) & 1) == 0)) goto L_C0623CC;
+    if (((((R1008) + (*(int *)((R4 + 0x0)))) & 1) == 0)) goto L_C0623CC;
     goto L_C062392;
     L_C062392:;
     F3 = (0.5f);
@@ -374,7 +378,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     goto L_C0623F6;
     L_C0623F6:;
     FUN_0c0db4d0((R14 + 0xC), (((int)stk + 4) + 0x8));
-    *(unsigned int *)(((int)stk + 4)) = (short)(FUN_0c0d9dc0((*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 12)))));
+    R1004 = (short)(FUN_0c0d9dc0((*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 12)))));
     u214 = *(float *)(((int)stk + 12));
     F4 = (u214);
     if ((u214 > 0.0f)) goto L_C06241E;
@@ -409,7 +413,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     FUN_0c0dcca0(R14);
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     t240 = *(int *)((R13 + 0x0));
     u241 = *(float *)((t240 + 0x14));
     nlScale((F15 * (*(float *)((t240 + 0x18)))), u241, u241);
@@ -441,7 +445,7 @@ int FUN_0c0622dc(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     nlRotateAY((*(short *)((R12 + 0x3CE))));
     nlRotateAX((*(short *)((R12 + 0x3CC))));
     nlScale(F13, F13, F15);
-    nlRotateAZ((*(int *)(((int)stk + 4))));
+    nlRotateAZ((R1004));
     t270 = *(int *)((R13 + 0x0));
     FUN_0c0848bc(((*(float *)((t270 + 0x24))) * F14), ((*(float *)((t270 + 0x28))) * F14), ((*(float *)((t270 + 0x2C))) * F14));
     if ((!(F15 > F13))) goto L_C06251C;

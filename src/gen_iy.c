@@ -84,7 +84,6 @@ int FUN_0c063d38(int a4, int a5, int a6, int a7)
     register int t0;
     register int t1;
     register int t2;
-    register int t3;
 
     t0 = *(int *)(((((((struct oBC_int *)(a4))->v)) << 2) + 0xC247030));
     if ((t0 != 4) && (t0 != 2)) {
@@ -106,12 +105,11 @@ int FUN_0c063d38(int a4, int a5, int a6, int a7)
     if ((int)((((struct o22C_int *)(a4))->v)) > 0) {
         t2 = (((struct o22C_int *)(a4))->v);
         (((struct o22C_uint *)(a4))->v) = (t2 - 1);
-        t3 = 0x22C;
+        t1 = 0x22C;
         if ((int)(t2 - 1) <= 0) {
             (((struct o1EC_uint *)(a4))->v) = ((((struct o1EC_int *)(t0))->v));
-            t3 = 0x1EC;
+            t1 = 0x1EC;
         }
-        t1 = t3;
     }
     return t1;
 }

@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_abg): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int get_fat(int, int, int, int);
+int get_fat(int, int);
 int search_fat_dir(int, int);
 extern int set_fat();
 int vmsfs_write_retry(int, int, int);
@@ -29,6 +29,10 @@ int write_dir_all(int a4, int a5, int a6, int a7)
     register int v0_7;
     register int v0_8;
     register int v0_9;
+    int R1012;
+    int R1016;
+    R1012 = *(int *)((int)stk + 12);
+    R1016 = *(int *)((int)stk + 16);
     v0_9 = a4;
     v0_8 = a6;
     v0_1 = a7;
@@ -47,7 +51,7 @@ int write_dir_all(int a4, int a5, int a6, int a7)
     if (((int)v0_10 <= 0)) goto L_C227B64;
     L_C227B40:;
     *(unsigned int *)(((int)stk + 4)) = (unsigned short)v0_7;
-    v0_9 = get_fat(v0_0, (unsigned short)v0_7, v0_8, v0_1);
+    v0_9 = get_fat(v0_0, (unsigned short)v0_7);
     v0_7 = ((int (*)(int, int, int))(set_fat))(v0_0, (*(int *)(((int)stk + 4))), v0_4);
     v0_7 = (v0_9);
     if (((unsigned short)v0_9 == v0_2)) goto L_C227B64;
@@ -57,13 +61,13 @@ int write_dir_all(int a4, int a5, int a6, int a7)
     if (v0_9) goto L_C227B40;
     L_C227B64:;
     v0_7 = *(short *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 12)) = (v0_5 - 1);
+    R1012 = (v0_5 - 1);
     v0_3 = (0x0);
     v0_7 = (v0_7);
     L_C227BEC:;
     if (((int)v0_3 < (int)v0_5)) goto L_C227B84;
     if (((unsigned short)(*(short *)(((int)stk + 8))) == (*(int *)(((*(int *)((v0_6 + 0x1C))) + 0x14))))) goto L_C227C14;
-    v0_1 = ((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)(((*(int *)0xC956764) + 0x10)))))((*(int *)((v0_6 + 0x20))), 0x4A, (*(short *)(((int)stk + 8))), v0_1, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24));
+    v0_1 = ((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)(((*(int *)0xC956764) + 0x10)))))((*(int *)((v0_6 + 0x20))), 0x4A, (*(short *)(((int)stk + 8))), v0_1, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), R1012, R1016, *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24));
     write_fat(v0_0);
     write_sys(v0_0);
     L_C227C14:;
@@ -88,12 +92,12 @@ int write_dir_all(int a4, int a5, int a6, int a7)
     if ((v0_3 != 0)) goto L_C227BC8;
     *(unsigned short *)(((int)stk + 8)) = v0_7;
     L_C227BC8:;
-    *(unsigned int *)(((int)stk + 16)) = (unsigned short)v0_7;
+    R1016 = (unsigned short)v0_7;
     v0_8 = ((int (*)(int, int, int, int))(set_fat))(v0_0, (unsigned short)v0_7, v0_8, v0_1);
-    if ((v0_3 == (*(int *)(((int)stk + 12))))) goto L_C227BEA;
+    if ((v0_3 == (R1012))) goto L_C227BEA;
     v0_7 = search_fat_dir(v0_0, v0_4);
     *(unsigned short *)(((int)stk + 4)) = v0_7;
-    v0_7 = ((int (*)(int, int, int))(set_fat))(v0_0, (*(int *)(((int)stk + 16))), v0_7);
+    v0_7 = ((int (*)(int, int, int))(set_fat))(v0_0, (R1016), v0_7);
     v0_7 = ((*(short *)(((int)stk + 4))));
     L_C227BEA:;
     v0_3 = ((v0_3 + 0x1));

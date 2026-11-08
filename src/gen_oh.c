@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c084800(float, float, float);
-int FUN_0c0849da(int, int, int, int, int, int, int, int);
+int FUN_0c0849da(void);
 int FUN_0c0c465c(int);
 int FUN_0c0caf6a(int, int, int, float);
 int FUN_0c0da2e0(void);
@@ -23,11 +23,14 @@ int FUN_0c0cb05c(int a4);
 struct o3CE_short { char p[0x3CE]; short v; };
 struct o4_float { char p[0x4]; float v; };
 struct o8_float { char p[0x8]; float v; };
+struct o0_float { float v; };
+struct o10_float { char p[0x10]; float v; };
+
 
 
 int FUN_0c0cb05c(int a4)
 {
-    int stk[9];
+    int stk[8];
 
     register int R1;
     register int R2;
@@ -53,12 +56,12 @@ int FUN_0c0cb05c(int a4)
     register float w0_6;
     float R1008;
     int R1012;
-    R1008 = *(float *)((int)stk + 8);
-    R1012 = *(int *)((int)stk + 12);
+    R1008 = *(float *)((int)stk + 4);
+    R1012 = *(int *)((int)stk + 8);
     v0_0 = a4;
-    *(unsigned int *)(((int)stk + 28)) = v0_0;
+    *(unsigned int *)(((int)stk + 24)) = v0_0;
     R1012 = 0xC247ED8;
-    *(unsigned int *)(((int)stk + 32)) = (*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC)));
+    *(unsigned int *)(((int)stk + 28)) = (*(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC)));
     v0_0 = *(int *)0xC23ED50;
     v0_1 = (v0_0);
     if ((v0_0 != 64)) goto L_C0CB094;
@@ -66,12 +69,12 @@ int FUN_0c0cb05c(int a4)
     return v0_1;
     L_C0CB094:;
     nlPushMatrix(0x0);
-    FUN_0c0dbda0(((*(int *)(((int)stk + 32))) + 0x2EC));
+    FUN_0c0dbda0(((*(int *)(((int)stk + 28))) + 0x2EC));
     v0_0 = *(int *)(((R1012) + 0x0));
     nlRotateAX((((int)((unsigned int)((int)((unsigned int)(-v0_0) + (unsigned int)0x0)) + ((((int)0x0 > (int)(-v0_0))) ? 1u : 0u))) >> 1));
-    FUN_0c0caf6a((((int)stk + 12) + 0x4), (((int)stk + 12) + 0x8), (((int)stk + 12) + 0xC), 0.00299999979f);
+    FUN_0c0caf6a((((int)stk + 8) + 0x4), (((int)stk + 8) + 0x8), (((int)stk + 8) + 0xC), 0.00299999979f);
     nlPopMatrix(0x1);
-    v0_0 = *(int *)(((int)stk + 28));
+    v0_0 = *(int *)(((int)stk + 24));
     R1012 = 0x0;
     v0_1 = (0xC0DC4C0);
     v0_1 = (0xC0DCC70);
@@ -108,9 +111,9 @@ int FUN_0c0cb05c(int a4)
     w0_1 = (0.049999997f);
     w0_3 = (25.0f);
     L_C0CB3A6:;
-    if (((int)v0_0 < (int)(*(int *)(((*(int *)(((int)stk + 28))) + 0x30))))) goto L_C0CB320;
+    if (((int)v0_0 < (int)(*(int *)(((*(int *)(((int)stk + 24))) + 0x30))))) goto L_C0CB320;
     nlPopMatrix(0x1);
-    v0_1 = ((FUN_0c0849da(0x0, 0x0, 0x0, 0x0, R1012, *(int *)((int)stk + 12 + 4), *(int *)((int)stk + 12 + 8), *(int *)((int)stk + 12 + 12))));
+    v0_1 = ((FUN_0c0849da()));
     goto L_C0CB3B8;
     L_C0CB320:;
     nlUnitMatrix();
@@ -118,23 +121,23 @@ int FUN_0c0cb05c(int a4)
     R1008 = (w0_4 + -1.0f);
     w0_5 = w0_0;
     w0_5 = w0_5 + 0.000732600689f * (float)((FUN_0c0da2e0()) & R13);
-    *(float *)(((int)stk + 4)) = w0_5;
+    *(float *)(((int)stk + 0)) = w0_5;
     w0_6 = w0_0;
     w0_6 = w0_6 + 0.000732600689f * (float)((FUN_0c0da2e0()) & R13);
     FUN_0c0dcc70(w0_6, w0_5, (w0_4 + -1.0f));
-    w0_4 = FUN_0c0da410(((((struct o3CE_short *)((*(int *)(((int)stk + 32)))))->v)));
-    nlRotateAZ((int)(w0_4 * (*(float *)0xC0CB3F8)));
-    nlScale((*(float *)0xC0CB400), w0_3, w0_2);
+    w0_4 = FUN_0c0da410(((((struct o3CE_short *)((*(int *)(((int)stk + 28)))))->v)));
+    nlRotateAZ((int)(w0_4 * ((((struct o0_float *)0xC0CB3F8)->v))));
+    nlScale(((((struct o8_float *)0xC0CB3F8)->v)), w0_3, w0_2);
     FUN_0c0de000(w0_3);
-    FUN_0c084800(w0_1, w0_1, (*(float *)0xC0CB408));
+    FUN_0c084800(w0_1, w0_1, ((((struct o10_float *)0xC0CB3F8)->v)));
     FUN_0c0c465c(v0_1);
     v0_0 = ((v0_0 + 0x1));
     goto L_C0CB3A6;
     L_C0CB1A0:;
     nlPushMatrix(0x0);
     nlUnitMatrix();
-    FUN_0c0dcc70((*(float *)(((int)stk + 16))), 0.5f, (*(float *)(((int)stk + 20))));
-    nlRotateAY((*(int *)(((int)stk + 24))));
+    FUN_0c0dcc70((*(float *)(((int)stk + 12))), 0.5f, (*(float *)(((int)stk + 16))));
+    nlRotateAY((*(int *)(((int)stk + 20))));
     v0_1 = FUN_0c0da2e0();
     R1008 = ((float)(v0_1 & R13) * 0.024420023f);
     w0_3 = -105.0f;

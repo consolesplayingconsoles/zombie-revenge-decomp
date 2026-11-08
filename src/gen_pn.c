@@ -20,6 +20,17 @@ int nlRotateAZ(int);
 int nlScale(float, float, float);
 int nlUnitMatrix(void);
 int FUN_0c0a1e7e(int a4, int a5, int a6, int a7);
+struct o2EC_int { char p[0x2EC]; int v; };
+struct o3E4_int { char p[0x3E4]; int v; };
+struct o40_int { char p[0x40]; int v; };
+struct o44_int { char p[0x44]; int v; };
+struct o48_int { char p[0x48]; int v; };
+struct o4C_int { char p[0x4C]; int v; };
+struct o50_int { char p[0x50]; int v; };
+struct o50_uint { char p[0x50]; unsigned int v; };
+struct oBC_int { char p[0xBC]; int v; };
+struct oC_float { char p[0xC]; float v; };
+
 
 int FUN_0c0a1e7e(int a4, int a5, int a6, int a7)
 {
@@ -55,27 +66,27 @@ int FUN_0c0a1e7e(int a4, int a5, int a6, int a7)
     t1 = *(int *)((a4 + 0x30));
     t2 = *(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC));
     FUN_0c0685a4(a4, a5, a6, a7);
-    if (((*(int *)((t1 + 0x2EC))) & 15) != 0) {
+    if ((((((struct o2EC_int *)(t1))->v)) & 15) != 0) {
         *(unsigned int *)((a4 + 0x34)) = 0x1;
     }
-    if ((*(int *)((((*(int *)((t1 + 0xBC))) << 2) + 0xC247030))) == 0) {
+    if ((*(int *)(((((((struct oBC_int *)(t1))->v)) << 2) + 0xC247030))) == 0) {
         t94 = (FUN_0c0e19f2());
     } else {
         nlPushMatrix(0x0);
-        FUN_0c0dbda0((((((*(int *)((a4 + 0x44))) << 2) << 2) << 2) + (*(int *)((t1 + 0x3E4)))));
+        FUN_0c0dbda0(((((((((struct o44_int *)(a4))->v)) << 2) << 2) << 2) + ((((struct o3E4_int *)(t1))->v))));
         FUN_0c0db470(0xC10CEAC, (((int)stk + 4) + 0x14));
-        if (((*(int *)((a4 + 0x34))) == 0) && (t15 = *(int *)((a4 + 0x4C)), t15 != 1)) {
-            t16 = *(int *)((a4 + 0x50));
-            *(unsigned int *)((((t16 * 0x1C) + (a4 + 0x54)) + 0x10)) = (*(int *)((a4 + 0x48)));
-            *(float *)((((t16 * 0x1C) + (a4 + 0x54)) + 0xC)) = 0.0f;
-            FUN_0c0dbda0((((((*(int *)((a4 + 0x44))) << 2) << 2) << 2) + (*(int *)((t1 + 0x3E4)))));
+        if (((*(int *)((a4 + 0x34))) == 0) && (t15 = (((struct o4C_int *)(a4))->v), t15 != 1)) {
+            t16 = (((struct o50_int *)(a4))->v);
+            *(unsigned int *)((((t16 * 0x1C) + (a4 + 0x54)) + 0x10)) = ((((struct o48_int *)(a4))->v));
+            (((struct oC_float *)(((t16 * 0x1C) + (a4 + 0x54))))->v) = 0.0f;
+            FUN_0c0dbda0(((((((((struct o44_int *)(a4))->v)) << 2) << 2) << 2) + ((((struct o3E4_int *)(t1))->v))));
             t21 = FUN_0c0da2e0();
             nlRotateAY((t21 << 1));
             FUN_0c0db470(0xC10CEB8, ((t16 * 0x1C) + (a4 + 0x54)));
-            t25 = *(int *)((a4 + 0x50));
-            *(unsigned int *)((a4 + 0x50)) = (t25 + 0x1);
+            t25 = (((struct o50_int *)(a4))->v);
+            (((struct o50_uint *)(a4))->v) = (t25 + 0x1);
             if ((int)(t25 + 0x1) >= (int)0x10) {
-                *(unsigned int *)((a4 + 0x50)) = 0x0;
+                (((struct o50_uint *)(a4))->v) = 0x0;
             }
         }
         nlPopMatrix(0x1);
@@ -177,7 +188,7 @@ int FUN_0c0a1e7e(int a4, int a5, int a6, int a7)
         *(unsigned int *)((a4 + 0x3C)) = (t85 - 1);
         t89 = t84;
         if ((int)(t85 - 1) < 0) {
-            *(unsigned int *)((a4 + 0x3C)) = (*(int *)((a4 + 0x40)));
+            *(unsigned int *)((a4 + 0x3C)) = ((((struct o40_int *)(a4))->v));
             t87 = *(int *)((a4 + 0x38));
             *(unsigned int *)((a4 + 0x38)) = (t87 - 1);
             if ((int)(t87 - 1) < 0) {

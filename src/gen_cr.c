@@ -163,6 +163,9 @@ struct oC0_int { char p[0xC0]; int v; };
 struct oC8_uint { char p[0xC8]; unsigned int v; };
 struct oCC_uint { char p[0xCC]; unsigned int v; };
 struct oD0_uint { char p[0xD0]; unsigned int v; };
+struct o2A0_int { char p[0x2A0]; int v; };
+struct o340_int { char p[0x340]; int v; };
+
 
 
 int FUN_0c0a0dfa(int a4, int a5, int a6, int a7)
@@ -507,7 +510,7 @@ int FUN_0c04c98e(int a4, int a5)
     (((struct oCC_uint *)(a4))->v) = 0x0;
     (((struct oD0_uint *)(a5))->v) = 0xFFFFFFFF;
     if ((((((struct o2EC_int *)(a4))->v)) & 0x100) != 0) {
-        t3 = *(int *)(((0x2A0 + a4) + 0x0));
+        t3 = (((struct o2A0_int *)(a4))->v);
         (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) + (*(short *)(((0xC0F85D8 + (t3 << 1)) + 0x0))));
         if (((((struct oB4_float *)(a4))->v)) > ((((struct o34_float *)(a4))->v))) {
             (((struct o34_float *)(a4))->v) = (((((struct oB4_float *)(a4))->v)) + 0.00999999978f);
@@ -518,10 +521,10 @@ int FUN_0c04c98e(int a4, int a5)
         }
         return FUN_0c050f1c(a4, (0xC0F85D8 + (t3 << 1)));
     }
-    (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) + ((*(short *)(((0xC0F85D8 + ((*(int *)(((0x2A0 + a4) + 0x0))) << 1)) + 0x0))) - 32768));
+    (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) + ((*(short *)(((0xC0F85D8 + (((((struct o2A0_int *)(a4))->v)) << 1)) + 0x0))) - 32768));
     (((struct o20C_uint *)(a4))->v) = 0x1;
     (((struct o210_uint *)(a4))->v) = 0x0;
-    (((struct o2C4_uint *)(a4))->v) = (unsigned short)(*(short *)((((*(int *)(((0x340 + a4) + 0x0))) << 1) + (((((((struct oC0_int *)(a4))->v)) >> 1) * 0x2C) + 0xC1FE210))));
+    (((struct o2C4_uint *)(a4))->v) = (unsigned short)(*(short *)(((((((struct o340_int *)(a4))->v)) << 1) + (((((((struct oC0_int *)(a4))->v)) >> 1) * 0x2C) + 0xC1FE210))));
     (((struct o2CC_uint *)(a4))->v) = 0x1;
     (((struct o394_uint *)(a4))->v) = 0x0;
     if ((*(int *)0xC23EDAC) == 1) {
@@ -615,7 +618,7 @@ int FUN_0c0b6bea(void)
     (((struct o170_uint *)(t0))->v) = 0x7FFF;
     (((struct o218_uint *)(t0))->v) = 0x7FFF;
     t20 = *(short *)(((*(int *)(((*(int *)0xC24FAB0) + 0x0))) + 0x2));
-    *(unsigned int *)(((0x228 + t0) + 0x0)) = (unsigned short)t20;
+    (((struct o228_uint *)(t0))->v) = (unsigned short)t20;
     t27 = (unsigned short)t20;
     if ((*(int *)0xC23A1A0) != 0) {
         t22 = *(short *)0xC11204A;

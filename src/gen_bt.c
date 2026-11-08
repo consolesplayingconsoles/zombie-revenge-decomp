@@ -4,6 +4,12 @@
 int FUN_0c0c0340(int, float);
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c0b1fe4(int a4, int a5, int a6, int a7, float f4);
+struct o5C_float { char p[0x5C]; float v; };
+struct o68_int { char p[0x68]; int v; };
+struct o68_uint { char p[0x68]; unsigned int v; };
+struct o90_int { char p[0x90]; int v; };
+struct o90_uint { char p[0x90]; unsigned int v; };
+
 
 int FUN_0c0b1fe4(int a4, int a5, int a6, int a7, float f4)
 {
@@ -12,20 +18,20 @@ int FUN_0c0b1fe4(int a4, int a5, int a6, int a7, float f4)
     float u32;
 
     u14 = f4;
-    if ((*(int *)((a4 + 0x68))) == 0) {
-        if (1.0f > (*(float *)((a4 + 0x5C)))) {
-            *(float *)((a4 + 0x5C)) = ((*(float *)((a4 + 0x5C))) + 0.0199999996f);
+    if (((((struct o68_int *)(a4))->v)) == 0) {
+        if (1.0f > ((((struct o5C_float *)(a4))->v))) {
+            (((struct o5C_float *)(a4))->v) = (((((struct o5C_float *)(a4))->v)) + 0.0199999996f);
         } else {
-            *(unsigned int *)((a4 + 0x68)) = 0x1;
-            *(float *)((a4 + 0x5C)) = 1.0f;
+            (((struct o68_uint *)(a4))->v) = 0x1;
+            (((struct o5C_float *)(a4))->v) = 1.0f;
         }
         u14 = 1.0f;
     }
-    if ((int)(*(int *)((a4 + 0x90))) < (int)0x3C) {
-        *(float *)((a4 + 0x5C)) = ((*(float *)((a4 + 0x5C))) - 0.0166666657f);
+    if ((int)((((struct o90_int *)(a4))->v)) < (int)0x3C) {
+        (((struct o5C_float *)(a4))->v) = (((((struct o5C_float *)(a4))->v)) - 0.0166666657f);
     }
-    t23 = *(int *)((a4 + 0x90));
-    *(unsigned int *)((a4 + 0x90)) = (t23 - 1);
+    t23 = (((struct o90_int *)(a4))->v);
+    (((struct o90_uint *)(a4))->v) = (t23 - 1);
     if ((int)(t23 - 1) <= 0) {
         FUN_0c0e19f2(a4, a5, a6, a7);
     } else {

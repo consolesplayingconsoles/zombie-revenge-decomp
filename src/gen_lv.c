@@ -1,15 +1,15 @@
 /* Straight-line functions with calls and guards (batch gen_lv): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c05a978(int, int, int, int);
+int FUN_0c05a978(int, int);
 int FUN_0c08640a(int, int, int, int, int, int);
 extern int FUN_0c086638();
 extern int FUN_0c0866c4();
 int FUN_0c086778(int, int, int);
 int FUN_0c0868d6(int, int);
-int FUN_0c092c2c(int, int, int, int);
+int FUN_0c092c2c(int, int);
 int FUN_0c0cc054(int, int);
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0db4d0(int, int);
 int FUN_0c0e6118(void);
 int nlPopMatrix(int);
@@ -206,7 +206,7 @@ int FUN_0c085752(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     v0_10 = (0xC);
     if (!((((((struct oC_float *)(v0_3))->v)) != 0.0f))) goto L_C086326;
     if (((unsigned short)(*(short *)((v0_3 + 0x6))) != (*(int *)((((0x2A4 + v0_2) + v0_1) + 0x0))))) goto L_C08631A;
-    FUN_0c05a978(v0_2, v0_3, v0_5, v0_0);
+    FUN_0c05a978(v0_2, v0_3);
     goto L_C08631A;
     L_C086326:;
     v0_6 = *(int *)((v0_8 + 0x4));
@@ -225,7 +225,7 @@ int FUN_0c085752(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     v0_10 = ((unsigned short)v0_6);
     if (((unsigned short)v0_6 != 75)) goto L_C0863D6;
     if ((((*(int *)0xC23A1A8) & 0x100) != 0)) goto L_C0863A4;
-    FUN_0c0cc3f8((*(int *)((v0_3 + 0x4))), v0_4, v0_5, v0_0, *(int *)((int)stk + 12), *(int *)((int)stk + 12 + 4), *(int *)((int)stk + 12 + 8), *(int *)((int)stk + 12 + 12), *(int *)((int)stk + 12 + 16), *(int *)((int)stk + 12 + 20), *(int *)((int)stk + 12 + 24), *(int *)((int)stk + 12 + 28));
+    FUN_0c0cc3f8((*(int *)((v0_3 + 0x4))), v0_4, v0_5, v0_0);
     v0_10 = (0xC0);
     if (((int)((((struct oC0_int *)(v0_2))->v)) < (int)0x29)) goto L_C0863B2;
     if (((*(int *)((v0_3 + 0x4))) != 0x62CA9)) goto L_C0863B2;
@@ -244,14 +244,14 @@ int FUN_0c085752(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     v0_6 = FUN_0c0868d6(v0_2, (*(int *)((v0_3 + 0x4))));
     v0_10 = (v0_6);
     if ((v0_6 == 0)) goto L_C0863B2;
-    v0_10 = ((FUN_0c0cc3f8((*(int *)((v0_3 + 0x4))), v0_4, v0_5, v0_0, *(int *)((int)stk + 12), *(int *)((int)stk + 12 + 4), *(int *)((int)stk + 12 + 8), *(int *)((int)stk + 12 + 12), *(int *)((int)stk + 12 + 16), *(int *)((int)stk + 12 + 20), *(int *)((int)stk + 12 + 24), *(int *)((int)stk + 12 + 28))));
+    v0_10 = ((FUN_0c0cc3f8((*(int *)((v0_3 + 0x4))), v0_4, v0_5, v0_0)));
     goto L_C0863B2;
     L_C0863D6:;
     if ((v0_10 != 59)) goto L_C0863E4;
     v0_10 = (0xC0);
     if (((int)((((struct oC0_int *)(v0_2))->v)) > (int)0x5)) goto L_C0863EC;
     L_C0863E4:;
-    v0_10 = ((FUN_0c092c2c(v0_2, v0_3, v0_5, v0_0)));
+    v0_10 = ((FUN_0c092c2c(v0_2, v0_3)));
     goto L_C0863EC;
     L_C08631A:;
     v0_3 = ((v0_3 + 0x10));

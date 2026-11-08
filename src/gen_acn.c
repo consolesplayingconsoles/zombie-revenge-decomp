@@ -25,8 +25,10 @@ int FUN_0c035f64(int a4)
     register int v0_6;
     register int v0_7;
     register int v0_8;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
     v0_7 = a4;
-    *(unsigned int *)(((int)stk + 4)) = v0_7;
+    R1004 = v0_7;
     v0_2 = (0xC2475D4);
     if (((*(int *)0xC247994) != 0)) goto L_C035F9C;
     v0_8 = (0xFFFFFFFF);
@@ -73,12 +75,12 @@ int FUN_0c035f64(int a4)
     v0_2 = (v0_7);
     goto L_C036074;
     L_C036008:;
-    v0_8 = *(int *)(((int)stk + 4));
+    v0_8 = R1004;
     v0_7 = ((v0_8 + 0x5D0));
     if (((*(int *)(((v0_8 + 0x5D0) + 0x8))) != 0)) goto L_C036044;
     if (((*(int *)((v0_7 + 0xC))) != 0)) goto L_C036044;
     *(unsigned int *)((v0_0 + (v0_3 << 2))) = v0_4;
-    *(float *)((v0_1 + (v0_3 << 2))) = (*(float *)(((((((v0_4 << 2) << 2) << 2) + (0xC0 + v0_2)) + ((*(int *)(((0xBC + (*(int *)(((int)stk + 4)))) + 0x0))) << 2)) + 0x0)));
+    *(float *)((v0_1 + (v0_3 << 2))) = (*(float *)(((((((v0_4 << 2) << 2) << 2) + (0xC0 + v0_2)) + ((*(int *)(((0xBC + (R1004)) + 0x0))) << 2)) + 0x0)));
     v0_3 = ((v0_3 + 0x1));
     goto L_C036044;
 }

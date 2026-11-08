@@ -8,6 +8,10 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int nlPopMatrix(int);
 void FUN_0c0ac8a2(int a4, float f4);
+struct o4_float { char p[0x4]; float v; };
+struct o4C_float { char p[0x4C]; float v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+
 
 void FUN_0c0ac8a2(int a4, float f4)
 {
@@ -20,8 +24,8 @@ void FUN_0c0ac8a2(int a4, float f4)
     FUN_0c0e19d0(t1);
     *(unsigned int *)0xC24FA64 = t1;
     *(unsigned int *)((t1 + 0x4)) = 0xC0AC898;
-    *(unsigned int *)((t1 + 0x78)) = 0xC0AC848;
-    *(float *)((t1 + 0x4C)) = f4;
+    (((struct o78_uint *)(t1))->v) = 0xC0AC848;
+    (((struct o4C_float *)(t1))->v) = f4;
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x58)) = *(struct mv3 *)(a4); }
     FUN_0c0dc5a0();
     FUN_0c0dcca0(0xC10E70C);
@@ -32,7 +36,7 @@ void FUN_0c0ac8a2(int a4, float f4)
     t9 = 0x14;
     for (;;) {
         { struct mv3 { int w[3]; }; *(struct mv3 *)(t7) = *(struct mv3 *)(t8); }
-        *(float *)((t7 + 0x4)) = ((*(float *)((t7 + 0x4))) - 5.0f);
+        (((struct o4_float *)(t7))->v) = (((((struct o4_float *)(t7))->v)) - 5.0f);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((t7 + 0xC)) = *(struct mv3 *)(t7); }
         t9 = (t9 - 0x1);
         *(unsigned int *)((t7 + 0x20)) = 0xC0651AC;

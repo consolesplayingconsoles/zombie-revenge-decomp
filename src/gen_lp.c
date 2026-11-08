@@ -18,6 +18,8 @@ int nlAddVector3op(int, int, int);
 int nlPopMatrix(int);
 int nlSubVector3op(int, int, int);
 int FUN_0c07d3dc(void);
+struct o170_float { char p[0x170]; float v; };
+
 
 int FUN_0c07d3dc(void)
 {
@@ -114,7 +116,7 @@ int FUN_0c07d3dc(void)
         if (t6 == 0) {
             nlSubVector3op((((int)stk + 24) + 0x40), (*(int *)(((int)stk + 36))), ((((t10 << 1) + t10) << 2) + t9));
             u59 = *(float *)0xC07D6F0;
-            *(float *)((t1 + 0x170)) = ((FUN_0c0dcea0((((int)stk + 24) + 0x40))) / _builtin_sqrtf(u59));
+            (((struct o170_float *)(t1))->v) = ((FUN_0c0dcea0((((int)stk + 24) + 0x40))) / _builtin_sqrtf(u59));
             _builtin_sqrtf(u59);
         }
         t6 = (t6 + 0x1);

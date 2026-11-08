@@ -256,6 +256,21 @@ void ADXSTM_EntryErrFunc(void);
 void adxt_stat_playend(void);
 void FUN_0c22b6f6(void);
 int vmsfs_c_fiber7(int a4, int a5, int a6);
+struct o10E8_int { char p[0x10E8]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o44_uint { char p[0x44]; unsigned int v; };
+struct o48_uint { char p[0x48]; unsigned int v; };
+struct o4C_uint { char p[0x4C]; unsigned int v; };
+struct o74_uint { char p[0x74]; unsigned int v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+struct o7C_uint { char p[0x7C]; unsigned int v; };
+struct oFC0_int { char p[0xFC0]; int v; };
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+
+
 
 int fmMngWrite(int a4, int a5)
 {
@@ -389,17 +404,22 @@ int pdVibGetInfo(int a4, int a5)
 {
     int t1;
     int t2;
-    int stk[6];
+    int stk[5];
+    int R1004;
+    int R1008;
 
-    *(unsigned int *)(((int)stk + 8)) = a4;
-    *(unsigned int *)(((int)stk + 4)) = a5;
-    t1 = kdGetDeviceInfo((*(int *)(((int)stk + 8))));
-    t2 = kdDevGetVibrationInfo((((int)stk + 4) + 0x8), t1);
+    R1004 = *(int *)((int)stk + 0);
+    R1008 = *(int *)((int)stk + 4);
+
+    R1008 = a4;
+    R1004 = a5;
+    t1 = kdGetDeviceInfo((R1008));
+    t2 = kdDevGetVibrationInfo((((int)stk + 0) + 0x8), t1);
     if ((int)t2 < 0) {
         return 0xFFFFFFFE;
     }
-    *(unsigned char *)(((*(int *)(((int)stk + 4))) + 0x0)) = (*(int *)(((int)stk + 12)));
-    *(unsigned char *)(((*(int *)(((int)stk + 4))) + 0x1)) = (*(signed char *)(((int)stk + 16)));
+    *(unsigned char *)(((R1004) + 0x0)) = (*(int *)(((int)stk + 8)));
+    *(unsigned char *)(((R1004) + 0x1)) = (*(signed char *)(((int)stk + 12)));
     return 0x0;
 }
 
@@ -549,7 +569,7 @@ int kdSetBlockWrite(Stk4 s)
     int t0;
 
     t0 = mpdrv_set_bwrite(s.w[0], s.w[1], s.w[2]);
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -674,8 +694,8 @@ int open_file_handle(void)
     t0 = 0xC95B428;
     t1 = 0x0;
     for (;;) {
-        if ((int)t1 >= (int)(*(int *)0xC95B668)) {
-            *(unsigned int *)0xC95B66C = 0xFFFFFF07;
+        if ((int)t1 >= (int)((((struct o0_int *)0xC95B668)->v))) {
+            (((struct o4_uint *)0xC95B668)->v) = 0xFFFFFF07;
             return 0x0;
         }
         if ((*(signed char *)((t0 + 0x0))) == 0) {
@@ -731,11 +751,14 @@ int ADXSTM_GetFsizeSct(int a4, int a5)
     int t2;
     int t4;
     int stk[6];
+    int R1004;
 
-    *(unsigned int *)(((int)stk + 4)) = a5;
+    R1004 = *(int *)((int)stk + 4);
+
+    R1004 = a5;
     t0 = FUN_0c210378();
     t1 = *(int *)(((int)stk + 12));
-    t2 = *(int *)(((int)stk + 4));
+    t2 = R1004;
     t4 = (t1 + 0x7FF);
     if ((int)(t1 + 0x7FF) < 0) {
         t4 = ((t1 + 0x7FF) + 0x7FF);
@@ -749,7 +772,7 @@ int kdSetBlockRead(Stk4 s)
     int t0;
 
     t0 = mpdrv_set_bread(s.w[0]);
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -760,7 +783,7 @@ int kdSetGetLastError(Stk4 s)
     int t0;
 
     t0 = mpdrv_set_getlerr(s.w[0]);
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -784,12 +807,12 @@ void ADXCRS_Lock(int a4, int a5)
 {
     int t1;
 
-    if ((*(int *)0xC239E58) == 0) {
+    if (((((struct o0_int *)0xC239E58)->v)) == 0) {
         t1 = _builtin_get_imask();
         _builtin_set_imask(0xF);
-        *(unsigned int *)0xC239E5C = t1;
+        (((struct o4_uint *)0xC239E58)->v) = t1;
     }
-    *(unsigned int *)0xC239E58 = ((*(int *)0xC239E58) + 0x1);
+    (((struct o0_uint *)0xC239E58)->v) = (((((struct o0_int *)0xC239E58)->v)) + 0x1);
 }
 
 void ADXSTM_Close(int a4)
@@ -871,7 +894,7 @@ int kdSetDeviceRequest(void)
     int t0;
 
     t0 = mpdrv_set_dreq();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -882,7 +905,7 @@ int kdSetAllStatusRequest(void)
     int t0;
 
     t0 = mpdrv_set_allstatreq();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -893,7 +916,7 @@ int kdSetDeviceKill(void)
     int t0;
 
     t0 = mpdrv_set_dkill();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -904,7 +927,7 @@ int kdSetDeviceReset(void)
     int t0;
 
     t0 = mpdrv_set_dreset();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -915,7 +938,7 @@ int kdSetGetCondition(void)
     int t0;
 
     t0 = mpdrv_set_getcond();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -926,7 +949,7 @@ int kdSetGetMediaInfo(void)
     int t0;
 
     t0 = mpdrv_set_getminfo();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -948,7 +971,7 @@ int kdSetFT4Control(void)
     int t0;
 
     t0 = mpdrv_set_ft4ctrl();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -959,7 +982,7 @@ int kdSetARControl(void)
     int t0;
 
     t0 = mpdrv_set_arctrl();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -970,7 +993,7 @@ int kdSetTransmitAgain(void)
     int t0;
 
     t0 = mpdrv_set_transagain();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -981,7 +1004,7 @@ int kdSetResetPattern(void)
     int t0;
 
     t0 = mpdrv_set_hreset();
-    if ((*(int *)(((*(int *)0xC98E18C) + 0x10E8))) != 0) {
+    if (((((struct o10E8_int *)((*(int *)0xC98E18C)))->v)) != 0) {
         kdRecvFrame();
     }
     return t0;
@@ -1041,7 +1064,7 @@ int kdSetCallback(int a4, int a5, int a6)
 {
     int t1;
 
-    t1 = *(int *)(((*(int *)0xC98E18C) + 0xFC0));
+    t1 = (((struct oFC0_int *)((*(int *)0xC98E18C)))->v);
     *(unsigned int *)((((((((a4 << 1) + t1) << 1) + ((a4 << 1) + t1)) << 2) + 0xC95406C) + 0x8)) = a5;
     *(unsigned int *)((((((((a4 << 1) + t1) << 1) + ((a4 << 1) + t1)) << 2) + 0xC95406C) + 0x4)) = a6;
     *(unsigned int *)((((((((a4 << 1) + t1) << 1) + ((a4 << 1) + t1)) << 2) + 0xC95406C) + 0x0)) = a4;
@@ -1112,8 +1135,8 @@ int adxsjd_clear(int a4)
     *(unsigned int *)((a4 + 0x34)) = 0x0;
     *(unsigned int *)((a4 + 0x38)) = 0x7FFFFFFF;
     *(unsigned int *)((a4 + 0x3C)) = 0xFFFFFFFF;
-    *(unsigned int *)((a4 + 0x40)) = 0x0;
-    *(unsigned int *)((a4 + 0x44)) = 0x0;
+    (((struct o40_uint *)(a4))->v) = 0x0;
+    (((struct o44_uint *)(a4))->v) = 0x0;
     *(unsigned char *)((a4 + 0x3)) = 0x0;
     return 0x0;
 }
@@ -1146,7 +1169,7 @@ int vmsfs_c_setcompletecallback(int a4)
 
     t0 = 0xC954350;
     for (;;) {
-        *(unsigned int *)((t0 + 0x74)) = a4;
+        (((struct o74_uint *)(t0))->v) = a4;
         t0 = (t0 + 0x80);
         if ((unsigned int)t0 >= (unsigned int)0xC954750) {
             break;
@@ -1161,7 +1184,7 @@ int vmsfs_c_setprogresscallback(int a4)
 
     t0 = 0xC954350;
     for (;;) {
-        *(unsigned int *)((t0 + 0x78)) = a4;
+        (((struct o78_uint *)(t0))->v) = a4;
         t0 = (t0 + 0x80);
         if ((unsigned int)t0 >= (unsigned int)0xC954750) {
             break;
@@ -1176,7 +1199,7 @@ int vmsfs_c_setcallbackparam(int a4)
 
     t0 = 0xC954350;
     for (;;) {
-        *(unsigned int *)((t0 + 0x7C)) = a4;
+        (((struct o7C_uint *)(t0))->v) = a4;
         t0 = (t0 + 0x80);
         if ((unsigned int)t0 >= (unsigned int)0xC954750) {
             break;
@@ -1263,8 +1286,8 @@ int FUN_0c229d5a(void)
     int t0;
 
     t0 = memset(0xC95CD88, 0x0, 0x100);
-    *(unsigned int *)0xC239E60 = 0x0;
-    *(unsigned int *)0xC239E64 = 0x0;
+    (((struct o0_uint *)0xC239E60)->v) = 0x0;
+    (((struct o4_uint *)0xC239E60)->v) = 0x0;
     return t0;
 }
 
@@ -1273,8 +1296,8 @@ int FUN_0c229d40(void)
     int t0;
 
     t0 = memset(0xC95CD88, 0x0, 0x100);
-    *(unsigned int *)0xC239E60 = 0x0;
-    *(unsigned int *)0xC239E64 = 0x0;
+    (((struct o0_uint *)0xC239E60)->v) = 0x0;
+    (((struct o4_uint *)0xC239E60)->v) = 0x0;
     return t0;
 }
 
@@ -1498,8 +1521,8 @@ int ADXSTMF_ExecHndl(int a4)
 
 void kdGetGunPosition(int a4, int a5)
 {
-    *(unsigned int *)((a4 + 0x0)) = (*(int *)0xC9542C8);
-    *(unsigned int *)((a5 + 0x0)) = (*(int *)0xC9542CC);
+    *(unsigned int *)((a4 + 0x0)) = ((((struct o0_int *)0xC9542C8)->v));
+    *(unsigned int *)((a5 + 0x0)) = ((((struct o4_int *)0xC9542C8)->v));
 }
 
 int syCblCheckCableType(void)
@@ -1613,8 +1636,8 @@ int FUN_0c229028(int a4, int a5, int a6)
 
 void ADXERR_EntryErrFunc(int a4, int a5)
 {
-    *(unsigned int *)0xC239E60 = a4;
-    *(unsigned int *)0xC239E64 = a5;
+    (((struct o0_uint *)0xC239E60)->v) = a4;
+    (((struct o4_uint *)0xC239E60)->v) = a5;
 }
 
 int FUN_0c229f08(void)
@@ -1624,8 +1647,8 @@ int FUN_0c229f08(void)
 
 int FUN_0c22a51e(int a4, int a5, int a6)
 {
-    *(unsigned int *)((a4 + 0x48)) = a5;
-    *(unsigned int *)((a4 + 0x4C)) = a6;
+    (((struct o48_uint *)(a4))->v) = a5;
+    (((struct o4C_uint *)(a4))->v) = a6;
     return 0x4C;
 }
 
@@ -1779,13 +1802,13 @@ int thunk_FUN_0c22c4ca(void)
 
 int FUN_0c22a530(int a4, int a5)
 {
-    *(unsigned int *)((a4 + 0x40)) = a5;
+    (((struct o40_uint *)(a4))->v) = a5;
     return 0x40;
 }
 
 int FUN_0c22a53c(int a4, int a5)
 {
-    *(unsigned int *)((a4 + 0x44)) = a5;
+    (((struct o44_uint *)(a4))->v) = a5;
     return 0x44;
 }
 

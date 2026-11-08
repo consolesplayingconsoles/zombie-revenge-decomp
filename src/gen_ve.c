@@ -2,9 +2,16 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 typedef struct { int w[3]; } Stk3;
-int FUN_0c05561a(int, int, int, int, Stk3);
+int FUN_0c05561a(int, int, int, int);
 extern int FUN_0c0e19f2();
 int FUN_0c03ecf2(int a4, int a5, int a6, int a7);
+struct o2AC_int { char p[0x2AC]; int v; };
+struct o2B4_int { char p[0x2B4]; int v; };
+struct o2BC_int { char p[0x2BC]; int v; };
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct oC8_int { char p[0xC8]; int v; };
+
 
 int FUN_0c03ecf2(int a4, int a5, int a6, int a7)
 {
@@ -33,7 +40,7 @@ int FUN_0c03ecf2(int a4, int a5, int a6, int a7)
     v0_1 = (v0_0);
     if (((*(int *)0xC23ED50) != (*(int *)((v0_0 + 0x30))))) goto L_C03ED1A;
     if (((unsigned int)(*(int *)((v0_1 + 0x34))) <= (unsigned int)0x200)) goto L_C03ED20;
-    if (((unsigned int)(*(int *)((v0_1 + 0x40))) < (unsigned int)0x6)) goto L_C03ED20;
+    if (((unsigned int)((((struct o40_int *)(v0_1))->v)) < (unsigned int)0x6)) goto L_C03ED20;
     L_C03ED1A:;
     v0_4 = ((int (*)(int, int, int, int))(FUN_0c0e19f2))(v0_0, R5, v0_2, v0_3);
     L_C03ED20:;
@@ -50,12 +57,12 @@ int FUN_0c03ecf2(int a4, int a5, int a6, int a7)
     v0_2 = *(int *)((((*(int *)((v0_1 + 0x3C))) << 2) + 0xC246FF0));
     v0_4 = (0x2BC);
     v0_0 = (v0_2);
-    if (((*(int *)((v0_2 + 0x2BC))) != 0x33B)) goto L_C03EE3A;
-    v0_2 = *(int *)((v0_0 + 0x2B4));
+    if ((((((struct o2BC_int *)(v0_2))->v)) != 0x33B)) goto L_C03EE3A;
+    v0_2 = (((struct o2B4_int *)(v0_0))->v);
     v0_4 = (v0_2);
     if ((v0_2 != 31)) goto L_C03EE3A;
     v0_4 = (0x2AC);
-    if (((*(int *)((v0_0 + 0x2AC))) != 0)) goto L_C03EE3A;
+    if ((((((struct o2AC_int *)(v0_0))->v)) != 0)) goto L_C03EE3A;
     v0_4 = *(int *)0xC2462F4;
     R5 = (((-v0_4) + 0x4));
     v0_2 = (0xC2462FC);
@@ -71,15 +78,15 @@ int FUN_0c03ecf2(int a4, int a5, int a6, int a7)
     if (v0_4) goto L_C03EDE2;
     L_C03EDFC:;
     v0_4 = (0x40);
-    if (((unsigned int)(*(int *)((v0_1 + 0x40))) >= (unsigned int)0x6)) goto L_C03EE3A;
+    if (((unsigned int)((((struct o40_int *)(v0_1))->v)) >= (unsigned int)0x6)) goto L_C03EE3A;
     v0_2 = *(int *)((((*(int *)((v0_1 + v0_4))) << 2) + 0xC0F56D0));
     R5 = (v0_2);
     if ((v0_2 == 0)) goto L_C03EE32;
-    v0_2 = *(int *)((v0_1 + 0x40));
+    v0_2 = (((struct o40_int *)(v0_1))->v);
     { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 4)) = *(struct mv3 *)(0xC0F5730); }
-    FUN_0c05561a(v0_0, R5, ((((v0_2 << 1) + v0_2) << 2) + 0xC0F56E8), ((int)stk + 4), *(Stk3 *)(((int)stk + 4)));
+    FUN_0c05561a(v0_0, R5, ((((v0_2 << 1) + v0_2) << 2) + 0xC0F56E8), ((int)stk + 4));
     L_C03EE32:;
-    *(unsigned int *)((v0_1 + 0x40)) = ((*(int *)((v0_1 + 0x40))) + 0x1);
+    (((struct o40_uint *)(v0_1))->v) = (((((struct o40_int *)(v0_1))->v)) + 0x1);
     v0_4 = (0x40);
     goto L_C03EE3A;
     L_C03ED2E:;
@@ -90,7 +97,7 @@ int FUN_0c03ecf2(int a4, int a5, int a6, int a7)
     L_C03ED36:;
     if (((int)(*(int *)((((v0_0 << 2) + (v0_5 + 0x40)) + 0x0))) < (int)v0_2)) goto L_C03ED62;
     v0_4 = (0xC8);
-    if ((((*(int *)(((*(int *)((((v0_0 << 2) + v0_5) + 0x0))) + 0xC8))) & R5) == 0)) goto L_C03ED62;
+    if (((((((struct oC8_int *)((*(int *)((((v0_0 << 2) + v0_5) + 0x0)))))->v)) & R5) == 0)) goto L_C03ED62;
     *(unsigned int *)((v0_1 + 0x3C)) = v0_0;
     *(unsigned int *)((v0_1 + 0x38)) = ((*(int *)((v0_1 + 0x38))) + 0x1);
     goto L_C03EE3A;

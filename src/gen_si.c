@@ -11,6 +11,10 @@ int kdRecognizeChanged(int);
 int kdSetGetMediaInfo(void);
 int vmsfb_sleep(void);
 int vmsio_get_media_info(int a4, int a5);
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o44_uint { char p[0x44]; unsigned int v; };
+struct o48_uint { char p[0x48]; unsigned int v; };
+
 
 int vmsio_get_media_info(int a4, int a5)
 {
@@ -26,11 +30,13 @@ int vmsio_get_media_info(int a4, int a5)
     register int v0_3;
     register int v0_4;
     register int v0_5;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
     v0_3 = a4;
     v0_0 = a5;
     v0_3 = *(int *)(((v0_3 << 2) + 0xC2382DC));
-    *(unsigned int *)(((int)stk + 4)) = (kdGetDevice(v0_3));
-    v0_2 = (*(signed char *)(((*(int *)(((int)stk + 4))) + 0x0))) != 0;
+    R1004 = (kdGetDevice(v0_3));
+    v0_2 = (*(signed char *)(((R1004) + 0x0))) != 0;
     v0_4 = (0xC2239DC);
     v0_1 = (0xC232022);
     v0_1 = (v0_3);
@@ -100,11 +106,11 @@ int vmsio_get_media_info(int a4, int a5)
     v0_1 = (int)(kdDevGetStorageInfo((((int)stk + 4) + 0x4), v0_1)) < 0;
     if (v0_1) goto L_C23221C;
     *(unsigned int *)((v0_0 + 0x3C)) = (unsigned short)(*(short *)(((int)stk + 14)));
-    *(unsigned int *)(((0x40 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((int)stk + 12)));
+    (((struct o40_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((int)stk + 12)));
     *(volatile short *)(((int)stk + 14));
-    *(unsigned int *)(((0x44 + v0_0) + 0x0)) = (FUN_0c0e5dc0());
+    (((struct o44_uint *)(v0_0))->v) = (FUN_0c0e5dc0());
     *(volatile short *)(((int)stk + 12));
-    *(unsigned int *)(((0x48 + v0_0) + 0x0)) = (FUN_0c0e5dc0());
+    (((struct o48_uint *)(v0_0))->v) = (FUN_0c0e5dc0());
     v0_2 = (0x0);
     goto L_C232222;
 }

@@ -4,6 +4,11 @@
 float FUN_0c0d7114(int, int);
 float nlLength(int, int);
 int FUN_0c0d6fae(int a4);
+struct o228_int { char p[0x228]; int v; };
+struct o284_int { char p[0x284]; int v; };
+struct o6C_int { char p[0x6C]; int v; };
+struct o78_int { char p[0x78]; int v; };
+
 
 int FUN_0c0d6fae(int a4)
 {
@@ -43,13 +48,13 @@ int FUN_0c0d6fae(int a4)
     L_C0D7020:;
     if ((v0_1 == 0)) goto L_C0D702A;
     if (!(((int)v0_6 < (int)0x10))) goto L_C0D702A;
-    if (((int)(*(int *)((v0_1 + 0x228))) < (int)0xB)) goto L_C0D701C;
-    w0_0 = FUN_0c0d7114(((*(int *)((v0_0 + 0x6C))) + 0x30), (v0_1 + 0x30));
+    if (((int)((((struct o228_int *)(v0_1))->v)) < (int)0xB)) goto L_C0D701C;
+    w0_0 = FUN_0c0d7114((((((struct o6C_int *)(v0_0))->v)) + 0x30), (v0_1 + 0x30));
     w0_1 = (w0_0);
     if ((w0_0 != 0.0f)) goto L_C0D701C;
     *(volatile int *)((v0_1 + 0x220));
     *(unsigned int *)((v0_4 + (v0_6 << 2))) = v0_1;
-    w0_0 = nlLength(((*(int *)(((0x6C + v0_0) + 0x0))) + 0x30), (v0_1 + 0x30));
+    w0_0 = nlLength((((((struct o6C_int *)(v0_0))->v)) + 0x30), (v0_1 + 0x30));
     *(float *)((((v0_6 << 2) + v0_5) + 0x0)) = w0_0;
     v0_6 = ((v0_6 + 0x1));
     w0_1 = (w0_0);
@@ -78,7 +83,7 @@ int FUN_0c0d6fae(int a4)
     if (((int)v0_3 <= 0)) goto L_C0D70AE;
     L_C0D709A:;
     v0_7 = (0x78);
-    if (((*(int *)((v0_1 + 0x0))) != (*(int *)((v0_0 + 0x78))))) goto L_C0D70A8;
+    if (((*(int *)((v0_1 + 0x0))) != ((((struct o78_int *)(v0_0))->v)))) goto L_C0D70A8;
     v0_7 = ((*(int *)((v0_0 + v0_7))));
     goto L_C0D70B2;
     L_C0D70A8:;
@@ -93,6 +98,6 @@ int FUN_0c0d6fae(int a4)
     v0_6 = (v0_3);
     goto L_C0D7068;
     L_C0D701C:;
-    v0_1 = ((*(int *)((v0_1 + 0x284))));
+    v0_1 = (((((struct o284_int *)(v0_1))->v)));
     goto L_C0D7020;
 }

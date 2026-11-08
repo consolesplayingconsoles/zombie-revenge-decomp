@@ -2,8 +2,14 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c036994(int, int, int, int, int, int, int, float);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int FUN_0c036a4c(int a4, int a5, int a6, int a7);
+struct o48_int { char p[0x48]; int v; };
+struct o48_uint { char p[0x48]; unsigned int v; };
+struct o4C_int { char p[0x4C]; int v; };
+struct o4C_uint { char p[0x4C]; unsigned int v; };
+struct oA4_int { char p[0xA4]; int v; };
+
 
 int FUN_0c036a4c(int a4, int a5, int a6, int a7)
 {
@@ -33,7 +39,7 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7)
     v0_1 = (v0_6);
     v0_0 = (v0_2);
     if ((v0_6 != 0)) goto L_C036A68;
-    FUN_0c0e19f2(v0_2, v0_3, v0_4, v0_5);
+    FUN_0c0e19f2();
     L_C036A68:;
     v0_3 = *(int *)((v0_0 + 0x3C));
     v0_2 = (v0_3);
@@ -45,17 +51,17 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7)
     *(int *)((int)stk + 12) = (((int)stk + 16) + 0x8);
     *(int *)((int)stk + 8) = (((int)stk + 12) + 0x8);
     *(int *)((int)stk + 4) = (((int)stk + 8) + 0x14);
-    FUN_0c036994((*(int *)((v0_0 + 0x30))), (*(int *)((v0_0 + 0x48))), ((*(int *)((v0_1 + 0xA4))) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
-    *(unsigned int *)(((((*(int *)((v0_0 + 0x4C))) << 2) + (v0_0 + 0x50)) + 0x0)) = (*(int *)((v0_0 + 0x48)));
-    v0_1 = *(int *)((v0_0 + 0x4C));
+    FUN_0c036994((*(int *)((v0_0 + 0x30))), ((((struct o48_int *)(v0_0))->v)), (((((struct oA4_int *)(v0_1))->v)) & 0x8), (((int)stk + 4) + 0xC), (((int)stk + 8) + 0x14), (((int)stk + 12) + 0x8), (((int)stk + 16) + 0x8), (*(float *)0xC036BAC));
+    *(unsigned int *)((((((((struct o4C_int *)(v0_0))->v)) << 2) + (v0_0 + 0x50)) + 0x0)) = ((((struct o48_int *)(v0_0))->v));
+    v0_1 = (((struct o4C_int *)(v0_0))->v);
     { struct mv3 { int w[3]; }; *(struct mv3 *)(((((v0_1 << 1) + v0_1) << 2) + (v0_0 + 0x70))) = *(struct mv3 *)((((int)stk + 16) + 0xC)); }
-    *(float *)(((((*(int *)((v0_0 + 0x4C))) << 2) + (0xD0 + v0_0)) + 0x0)) = (*(float *)(((int)stk + 20)));
+    *(float *)((((((((struct o4C_int *)(v0_0))->v)) << 2) + (0xD0 + v0_0)) + 0x0)) = (*(float *)(((int)stk + 20)));
     v0_1 = *(int *)(((int)stk + 16));
-    *(float *)(((((*(int *)((v0_0 + 0x4C))) << 2) + (0xF0 + v0_0)) + 0x0)) = (float)v0_1;
-    *(unsigned int *)(((((*(int *)((v0_0 + 0x4C))) << 2) + (0x110 + v0_0)) + 0x0)) = (*(int *)(((int)stk + 24)));
-    *(unsigned int *)((v0_0 + 0x48)) = ((*(int *)((v0_0 + 0x48))) - 0x2000);
-    v0_3 = *(int *)((v0_0 + 0x4C));
-    *(unsigned int *)((v0_0 + 0x4C)) = (v0_3 + 0x1);
+    *(float *)((((((((struct o4C_int *)(v0_0))->v)) << 2) + (0xF0 + v0_0)) + 0x0)) = (float)v0_1;
+    *(unsigned int *)((((((((struct o4C_int *)(v0_0))->v)) << 2) + (0x110 + v0_0)) + 0x0)) = (*(int *)(((int)stk + 24)));
+    (((struct o48_uint *)(v0_0))->v) = (((((struct o48_int *)(v0_0))->v)) - 0x2000);
+    v0_3 = (((struct o4C_int *)(v0_0))->v);
+    (((struct o4C_uint *)(v0_0))->v) = (v0_3 + 0x1);
     v0_2 = (0x4C);
     FPUL_ = (v0_1);
     if (((int)(v0_3 + 0x1) < (int)0x8)) goto L_C036B5A;
@@ -64,8 +70,8 @@ int FUN_0c036a4c(int a4, int a5, int a6, int a7)
     v0_2 = (0x1);
     goto L_C036B5A;
     L_C036A98:;
-    *(unsigned int *)((v0_0 + 0x48)) = 0x10000;
-    *(unsigned int *)((v0_0 + 0x4C)) = 0x0;
+    (((struct o48_uint *)(v0_0))->v) = 0x10000;
+    (((struct o4C_uint *)(v0_0))->v) = 0x0;
     *(unsigned int *)((v0_0 + 0x3C)) = ((*(int *)((v0_0 + 0x3C))) + 0x1);
     goto L_C036AAA;
 }

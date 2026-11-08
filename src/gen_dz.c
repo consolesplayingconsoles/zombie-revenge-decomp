@@ -13,6 +13,14 @@ int nlPushMatrix(int);
 int nlQuickInvertMatrix(void);
 int nlRotateAZ(int);
 int FUN_0c075f30(int a4, float f4, float f5);
+struct o30_short { char p[0x30]; short v; };
+struct o30_ushort { char p[0x30]; unsigned short v; };
+struct o32_short { char p[0x32]; short v; };
+struct o32_ushort { char p[0x32]; unsigned short v; };
+struct o76_short { char p[0x76]; short v; };
+struct o78_int { char p[0x78]; int v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+
 
 int FUN_0c075f30(int a4, float f4, float f5)
 {
@@ -129,20 +137,20 @@ int FUN_0c075f30(int a4, float f4, float f5)
         t6 = t37;
         t9 = (t9 + 0x1);
     }
-    *(unsigned short *)((a4 + 0x32)) = (int)((float)(*(short *)((a4 + 0x32))) - ((float)(*(short *)(((0x30 + a4) + 0x0))) * 0.099999994f));
-    *(unsigned short *)((a4 + 0x30)) = ((*(short *)((a4 + 0x30))) + (*(short *)(((0x32 + a4) + 0x0))));
-    if ((int)((*(short *)((a4 + 0x30))) + (*(short *)((a4 + 0x32)))) > (int)(short)t10) {
-        if (((short)t10 == 0) && (t49 = *(int *)((a4 + 0x78)), t49 == 0)) {
+    (((struct o32_ushort *)(a4))->v) = (int)((float)((((struct o32_short *)(a4))->v)) - ((float)((((struct o30_short *)(a4))->v)) * 0.099999994f));
+    (((struct o30_ushort *)(a4))->v) = (((((struct o30_short *)(a4))->v)) + ((((struct o32_short *)(a4))->v)));
+    if ((int)(((((struct o30_short *)(a4))->v)) + ((((struct o32_short *)(a4))->v))) > (int)(short)t10) {
+        if (((short)t10 == 0) && (t49 = (((struct o78_int *)(a4))->v), t49 == 0)) {
             FUN_0c0cc3f8(0xF2BA9, u12, u13);
-            *(unsigned int *)((a4 + 0x78)) = 0x1;
+            (((struct o78_uint *)(a4))->v) = 0x1;
         }
-        u62 = (float)(*(short *)((a4 + 0x32)));
+        u62 = (float)((((struct o32_short *)(a4))->v));
         u62 *= -0.199999988f;
-        *(unsigned short *)((a4 + 0x32)) = (int)u62;
-        *(unsigned short *)((a4 + 0x30)) = t10;
+        (((struct o32_ushort *)(a4))->v) = (int)u62;
+        (((struct o30_ushort *)(a4))->v) = t10;
     }
     nlQuickInvertMatrix();
-    nlRotateAZ((*(short *)((a4 + 0x30))));
-    FUN_0c0c47ae((*(short *)((a4 + 0x76))));
+    nlRotateAZ(((((struct o30_short *)(a4))->v)));
+    FUN_0c0c47ae(((((struct o76_short *)(a4))->v)));
     return (nlPopMatrix(0x1));
 }

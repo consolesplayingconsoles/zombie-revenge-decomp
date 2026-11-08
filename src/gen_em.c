@@ -333,6 +333,9 @@ struct o3AC_uint { char p[0x3AC]; unsigned int v; };
 struct o498_int { char p[0x498]; int v; };
 struct o4D0_int { char p[0x4D0]; int v; };
 struct o6E_ushort { char p[0x6E]; unsigned short v; };
+struct o418_int { char p[0x418]; int v; };
+struct o540_int { char p[0x540]; int v; };
+
 
 
 
@@ -1779,9 +1782,9 @@ int FUN_0c0432e2(int a4)
     int t2;
     int t3;
 
-    t0 = *(int *)((a4 + 0x540));
+    t0 = (((struct o540_int *)(a4))->v);
     t1 = FUN_0c0346ca((a4 + 0x518));
-    if ((t1 != 0) && ((t2 = (((struct o0_int *)0xC246304)->v), (t2 & 1) == 0) || (t3 = *(int *)((t0 + 0x418)), (int)t3 >= 0))) {
+    if ((t1 != 0) && ((t2 = (((struct o0_int *)0xC246304)->v), (t2 & 1) == 0) || (t3 = (((struct o418_int *)(t0))->v), (int)t3 >= 0))) {
         return 0x1;
     }
     (((struct o0_uint *)0xC246304)->v) = (((((struct o0_int *)0xC246304)->v)) & 0xFFFFFFFE);

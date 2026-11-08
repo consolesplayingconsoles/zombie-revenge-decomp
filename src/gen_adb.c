@@ -2,6 +2,9 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 void FUN_0c042d28(void);
+struct o21C_int { char p[0x21C]; int v; };
+struct oBC_int { char p[0xBC]; int v; };
+
 
 void FUN_0c042d28(void)
 {
@@ -60,7 +63,7 @@ void FUN_0c042d28(void)
                 t6 = 0x0;
                 t7 = t5;
                 for (;;) {
-                    t1 = (*(int *)((t7 + 0xBC)));
+                    t1 = ((((struct oBC_int *)(t7))->v));
                     if ((t1 == t3) || (t6 = (t6 + 0x1), (int)t6 >= (int)0x4)) {
                         break;
                     }
@@ -74,7 +77,7 @@ void FUN_0c042d28(void)
                     *(unsigned int *)(((((t4 << 2) << 2) + 0xC246A40) + 0x0)) = 0xFFFFFFFF;
                     return;
                 }
-                if ((*(int *)((t7 + 0x21C))) == 0) {
+                if (((((struct o21C_int *)(t7))->v)) == 0) {
                     t2 = t7;
                     t2 = (t2 + 0x30);
                     *(unsigned int *)(((((t4 << 2) << 2) + 0xC246A40) + 0x0)) = t3;

@@ -13,7 +13,6 @@ int FUN_0c0831d0(int a4);
 
 int FUN_0c0831d0(int a4)
 {
-    int stk[2];
 
     register int R2;
     register int R3;

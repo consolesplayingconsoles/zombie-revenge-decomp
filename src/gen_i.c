@@ -87,12 +87,21 @@ void FUN_0c0c1480(void);
 void FUN_0c0c4654(void);
 void FUN_0c0cbaf8(void);
 int FUN_0c0cc3c8(void);
+struct o170_uint { char p[0x170]; unsigned int v; };
+struct o58_uint { char p[0x58]; unsigned int v; };
+struct o64_uint { char p[0x64]; unsigned int v; };
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o12_uchar { char p[0x12]; unsigned char v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+
+
 
 int FUN_0c0d6c52(int a4)
 {
-    *(unsigned int *)((a4 + 0x58)) = 0x0;
-    *(unsigned int *)((a4 + 0x64)) = 0x0;
-    *(unsigned int *)(((0x170 + a4) + 0x0)) = 0x0;
+    (((struct o58_uint *)(a4))->v) = 0x0;
+    (((struct o64_uint *)(a4))->v) = 0x0;
+    (((struct o170_uint *)(a4))->v) = 0x0;
     *(unsigned int *)(((0x170 + a4) + 0x24)) = 0x0;
     *(unsigned int *)(((0x170 + a4) + 0x28)) = 0x0;
     *(unsigned int *)(((0x170 + a4) + 0x2C)) = 0x0;
@@ -315,16 +324,16 @@ void FUN_0c0bd6f8(void)
 
 int FUN_0c0c49b0(int a4)
 {
-    int stk[2];
+    int stk[1];
 
-    *(unsigned short *)(((int)stk + 4)) = a4;
-    return FUN_0c0be88a((unsigned short)(*(short *)(((int)stk + 4))), 0xC1E5188);
+    *(unsigned short *)(((int)stk + 0)) = a4;
+    return FUN_0c0be88a((unsigned short)(*(short *)(((int)stk + 0))), 0xC1E5188);
 }
 
 int FUN_0c0ce87e(void)
 {
-    *(unsigned int *)0xC522E3C = (*(int *)0xC522E38);
-    *(unsigned char *)0xC522E4A = 0x1;
+    (((struct o4_uint *)0xC522E38)->v) = ((((struct o0_int *)0xC522E38)->v));
+    (((struct o12_uchar *)0xC522E38)->v) = 0x1;
     return 0xC522E38;
 }
 
@@ -381,8 +390,8 @@ int FUN_0c0bc744(int a4)
 
 void FUN_0c0cf386(void)
 {
-    *(unsigned int *)0xC94315C = 0x0;
-    *(unsigned int *)0xC943160 = 0x0;
+    (((struct o0_uint *)0xC94315C)->v) = 0x0;
+    (((struct o4_uint *)0xC94315C)->v) = 0x0;
 }
 
 int FUN_0c0c7ef8(void)

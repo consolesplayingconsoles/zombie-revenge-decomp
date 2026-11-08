@@ -2,6 +2,9 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int _pd_peripheral_set_data(int a4, int a5, int a6);
+struct o20_ushort { char p[0x20]; unsigned short v; };
+struct o22_ushort { char p[0x22]; unsigned short v; };
+
 
 int _pd_peripheral_set_data(int a4, int a5, int a6)
 {
@@ -76,11 +79,11 @@ int _pd_peripheral_set_data(int a4, int a5, int a6)
     if (((*(int *)((a4 + 0x4))) & 0x100000) != 0) {
         t1 = ((unsigned char)(*(signed char *)(((t0 + 0x8) + 0x6))) - 128);
     }
-    *(unsigned short *)((a4 + 0x20)) = t1;
+    (((struct o20_ushort *)(a4))->v) = t1;
     t1 = 0x0;
     if (((*(int *)((a4 + 0x4))) & 0x200000) != 0) {
         t1 = ((unsigned char)(*(signed char *)(((t0 + 0x8) + 0x7))) - 128);
     }
-    *(unsigned short *)((a4 + 0x22)) = t1;
+    (((struct o22_ushort *)(a4))->v) = t1;
     return 0x22;
 }

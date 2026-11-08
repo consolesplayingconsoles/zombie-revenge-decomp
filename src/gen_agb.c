@@ -3,6 +3,13 @@
 
 extern int FUN_0c0c4464();
 int FUN_0c0a8adc(int a4, int a5, int a6, int a7);
+struct o0_int { int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o20_int { char p[0x20]; int v; };
+struct o24_int { char p[0x24]; int v; };
+struct o4_int { char p[0x4]; int v; };
+
 
 int FUN_0c0a8adc(int a4, int a5, int a6, int a7)
 {
@@ -17,8 +24,12 @@ int FUN_0c0a8adc(int a4, int a5, int a6, int a7)
     register int v0_3;
     register int v0_4;
     register int v0_5;
+    int R1004;
+    int R1008;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
     v0_2 = a4;
-    *(unsigned int *)(((int)stk + 8)) = ((((int)stk + 4) + 0x8) + 0xC);
+    R1008 = ((((int)stk + 4) + 0x8) + 0xC);
     v0_0 = (v0_2);
     v0_1 = ((((int)stk + 4) + 0x8));
     v0_2 = (0x0);
@@ -30,31 +41,31 @@ int FUN_0c0a8adc(int a4, int a5, int a6, int a7)
     v0_3 = ((v0_3 - 0x4));
     v0_4 = ((v0_4 - 0x1));
     if (v0_5) goto L_C0A8AF8;
-    v0_3 = *(int *)0xC23EDE0;
+    v0_3 = (((struct o20_int *)0xC23EDC0)->v);
     v0_2 = (0xC0C4464);
     v0_2 = (v0_3);
     if ((v0_3 == 4)) goto L_C0A8B14;
     if ((v0_2 != 5)) goto L_C0A8B2E;
     L_C0A8B14:;
-    v0_2 = *(int *)0xC23EDD0;
-    *(unsigned int *)(((int)stk + 4)) = 0xC23EDC0;
-    v0_2 = ((int (*)(int, int, int, int))(FUN_0c0c4464))(v0_0, (*(int *)0xC23EDC0), v0_2, a7);
-    *(unsigned int *)((v0_1 + (((*(int *)(((*(int *)(((int)stk + 4))) + 0x0))) >> 1) << 2))) = 0x1;
+    v0_2 = (((struct o10_int *)0xC23EDC0)->v);
+    R1004 = 0xC23EDC0;
+    v0_2 = ((int (*)(int, int, int, int))(FUN_0c0c4464))(v0_0, ((((struct o0_int *)0xC23EDC0)->v)), v0_2, a7);
+    *(unsigned int *)((v0_1 + (((*(int *)(((R1004) + 0x0))) >> 1) << 2))) = 0x1;
     L_C0A8B2E:;
-    v0_3 = *(int *)0xC23EDE4;
+    v0_3 = (((struct o24_int *)0xC23EDC0)->v);
     v0_2 = (v0_3);
     if ((v0_3 == 4)) goto L_C0A8B42;
     v0_3 = (v0_2);
     if ((v0_2 != 5)) goto L_C0A8B5C;
     L_C0A8B42:;
-    v0_2 = *(int *)0xC23EDD4;
-    *(unsigned int *)(((int)stk + 4)) = 0xC23EDC4;
-    v0_2 = ((int (*)(int, int, int))(FUN_0c0c4464))(v0_0, (*(int *)0xC23EDC4), v0_2);
-    v0_2 = *(int *)(((*(int *)(((int)stk + 4))) + 0x0));
+    v0_2 = (((struct o14_int *)0xC23EDC0)->v);
+    R1004 = 0xC23EDC4;
+    v0_2 = ((int (*)(int, int, int))(FUN_0c0c4464))(v0_0, ((((struct o4_int *)0xC23EDC0)->v)), v0_2);
+    v0_2 = *(int *)(((R1004) + 0x0));
     *(unsigned int *)((v0_1 + ((v0_2 >> 1) << 2))) = 0x1;
     v0_3 = (((v0_2 >> 1) << 2));
     L_C0A8B5C:;
-    v0_2 = ((*(int *)(((int)stk + 8))));
+    v0_2 = ((R1008));
     v0_1 = (0x2);
     L_C0A8B60:;
     v0_4 = (*(int *)(((v0_2 - 4) + 0x0))) != 0;

@@ -11,6 +11,17 @@ int syIntAdrChk_init(void);
 int syIntAdrChk_printh(int);
 int syIntChkDump(int a4, int a5);
 int BL_Reset(void);
+struct o100_int { char p[0x100]; int v; };
+struct o104_int { char p[0x104]; int v; };
+struct o108_int { char p[0x108]; int v; };
+struct oA8_int { char p[0xA8]; int v; };
+struct oAC_int { char p[0xAC]; int v; };
+struct oF0_int { char p[0xF0]; int v; };
+struct oF0_uint { char p[0xF0]; unsigned int v; };
+struct oF4_int { char p[0xF4]; int v; };
+struct oF8_int { char p[0xF8]; int v; };
+struct oFC_int { char p[0xFC]; int v; };
+
 
 int syIntChkDump(int a4, int a5)
 {
@@ -35,32 +46,32 @@ int syIntChkDump(int a4, int a5)
     syIntAdrChk_dumpline(0xC238A20, 0x1A, 0x8);
     syIntAdrChk_dumpline(0xC238A2C, 0x22, 0x8);
     send_message_in_current_mode(0xC238A38);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0xA8))));
+    syIntAdrChk_printh(((((struct oA8_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238A40);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0xAC))));
+    syIntAdrChk_printh(((((struct oAC_int *)((*(int *)0xC98F1B4)))->v)));
     syIntAdrChk_dumpline(0xC238A4C, 0x2D, 0x8);
     t16 = *(int *)0xC98F1B4;
-    *(unsigned int *)(((int)stk + 8)) = (*(int *)(((t16 + 0xF0) + 0x0)));
-    *(unsigned int *)(((t16 + 0xF0) + 0x0)) = (*(int *)(((*(int *)0xC98F1B4) + 0x4)));
+    *(unsigned int *)(((int)stk + 8)) = ((((struct oF0_int *)(t16))->v));
+    (((struct oF0_uint *)(t16))->v) = (*(int *)(((*(int *)0xC98F1B4) + 0x4)));
     syIntAdrChk_dumpline(0xC238A5C, 0x35, 0x8);
-    *(unsigned int *)((0xF0 + (*(int *)0xC98F1B4))) = (*(int *)(((int)stk + 8)));
+    (((struct oF0_uint *)((*(int *)0xC98F1B4)))->v) = (*(int *)(((int)stk + 8)));
     syIntAdrChk_dumpline(0xC238A68, 0x2, 0x8);
     send_message_in_current_mode(0xC238A78);
-    syIntAdrChk_printh((*(int *)((0xF0 + (*(int *)0xC98F1B4)))));
+    syIntAdrChk_printh(((((struct oF0_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238A80);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0xF4))));
+    syIntAdrChk_printh(((((struct oF4_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238A88);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0xF8))));
+    syIntAdrChk_printh(((((struct oF8_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238A90);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0xFC))));
+    syIntAdrChk_printh(((((struct oFC_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238A98);
     syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0x0))));
     send_message_in_current_mode(0xC238AA0);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0x100))));
+    syIntAdrChk_printh(((((struct o100_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238AA8);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0x104))));
+    syIntAdrChk_printh(((((struct o104_int *)((*(int *)0xC98F1B4)))->v)));
     send_message_in_current_mode(0xC238AB0);
-    syIntAdrChk_printh((*(int *)(((*(int *)0xC98F1B4) + 0x108))));
+    syIntAdrChk_printh(((((struct o108_int *)((*(int *)0xC98F1B4)))->v)));
     t56 = 0x0;
     for (;;) {
         t57 = ((~(((~t56) + 0x1) & 0x3)) + 0x1);

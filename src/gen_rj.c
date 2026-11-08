@@ -9,7 +9,7 @@ int FUN_0c0dcca0(int);
 int FUN_0c0de000(float);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlRotateAX(int);
@@ -33,6 +33,8 @@ struct o90_float { char p[0x90]; float v; };
 struct o9A_ushort { char p[0x9A]; unsigned short v; };
 struct oA0_ushort { char p[0xA0]; unsigned short v; };
 struct oA2_ushort { char p[0xA2]; unsigned short v; };
+struct o44_float { char p[0x44]; float v; };
+
 
 
 int FUN_0c08bb20(int a4, int a5, int a6, int a7)
@@ -174,7 +176,7 @@ int FUN_0c08bb20(int a4, int a5, int a6, int a7)
     R1008 = R1008;
     R1004 = R1004;
     if (((int)(v0_4 + 0x1) >= (int)(((int)((unsigned int)((int)((unsigned int)v0_5 + (unsigned int)0x0)) + ((((int)0x0 > (int)v0_5)) ? 1u : 0u))) >> 1))) goto L_C08BC40;
-    (((struct o3C_float *)(v0_0))->v) = (((((struct o3C_float *)(v0_0))->v)) - (*(float *)(((0x44 + v0_0) + 0x0))));
+    (((struct o3C_float *)(v0_0))->v) = (((((struct o3C_float *)(v0_0))->v)) - ((((struct o44_float *)(v0_0))->v)));
     *(unsigned int *)(((int)stk + 20)) = *(int *)((int)stk + 20);
     R1016 = R1016;
     R1012 = R1012;
@@ -191,7 +193,7 @@ int FUN_0c08bb20(int a4, int a5, int a6, int a7)
     F12 = ((w0_0 - w0_1));
     goto L_C08BC52;
     L_C08BC40:;
-    FUN_0c0e19f2(v0_1, v0_2, 0x0, v0_3);
+    FUN_0c0e19f2();
     *(unsigned int *)(((int)stk + 20)) = *(int *)((int)stk + 20);
     R1016 = R1016;
     R1012 = R1012;
@@ -208,7 +210,7 @@ int FUN_0c08bb20(int a4, int a5, int a6, int a7)
     R1008 = R1008;
     R1004 = R1004;
     if (v0_1) goto L_C08BB94;
-    (((struct o3C_float *)(v0_0))->v) = (((((struct o3C_float *)(v0_0))->v)) + (*(float *)(((0x44 + v0_0) + 0x0))));
+    (((struct o3C_float *)(v0_0))->v) = (((((struct o3C_float *)(v0_0))->v)) + ((((struct o44_float *)(v0_0))->v)));
     *(unsigned int *)(((int)stk + 20)) = *(int *)((int)stk + 20);
     R1016 = R1016;
     R1012 = R1012;

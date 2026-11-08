@@ -38,6 +38,8 @@ struct oB4_float { char p[0xB4]; float v; };
 struct oC0_float { char p[0xC0]; float v; };
 struct oC4_int { char p[0xC4]; int v; };
 struct oC8_int { char p[0xC8]; int v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+
 
 
 int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
@@ -108,9 +110,9 @@ int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
     *(volatile int *)((v0_0 + 0x30));
     *(volatile int *)((v0_1 + 0xC));
     v0_4 = FUN_0c0e5dc0();
-    w0_0 = (*(float *)(((v0_0 + 0x34) + 0x0)));
+    w0_0 = ((((struct o34_float *)(v0_0))->v));
     w0_0 = w0_0 + (FUN_0c0d9e90(((*(int *)((v0_1 + 0x8))) + v0_4))) * (*(float *)((v0_1 + 0x0)));
-    *(float *)(((v0_0 + 0x34) + 0x0)) = w0_0;
+    (((struct o34_float *)(v0_0))->v) = w0_0;
     *(float *)((v0_1 + 0x0)) = ((*(float *)((v0_1 + 0x0))) * ((((struct o4_float *)(v0_1))->v)));
     v0_4 = (int)(v0_2 + 0x1) < (int)v0_3;
     v0_2 = ((v0_2 + 0x1));
@@ -120,8 +122,8 @@ int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
     *(volatile int *)(((v0_0 + 0x68) + 0xC));
     v0_1 = FUN_0c0e5dc0();
     w0_1 = FUN_0c0d9e90(((*(int *)(((v0_0 + 0x68) + 0x8))) + v0_1));
-    w0_2 = *(float *)(((v0_0 + 0x68) + 0x0));
-    *(float *)(((v0_0 + 0x68) + 0x0)) = ((*(float *)(((v0_0 + 0x68) + 0x0))) * ((((struct o4_float *)((v0_0 + 0x68)))->v)));
+    w0_2 = (((struct o68_float *)(v0_0))->v);
+    (((struct o68_float *)(v0_0))->v) = (((((struct o68_float *)(v0_0))->v)) * ((((struct o4_float *)((v0_0 + 0x68)))->v)));
     v0_3 = (0x34);
     w0_0 = ((w0_2 * w0_1));
     if ((!(_builtin_fabsf((w0_2 * w0_1)) > _builtin_fabsf(((((struct o34_float *)(v0_0))->v)))))) goto L_C06EF22;
@@ -158,7 +160,7 @@ int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
     (((struct o90_float *)(v0_1))->v) = ((((struct o94_float *)(v0_0))->v));
     (((struct o94_float *)(v0_1))->v) = ((((struct o98_float *)(v0_0))->v));
     FUN_0c0da2e0();
-    *(unsigned int *)(((0x78 + v0_1) + 0x0)) = ((FUN_0c0e5f1c()) + 0xD66);
+    (((struct o78_uint *)(v0_1))->v) = ((FUN_0c0e5f1c()) + 0xD66);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((0xB4 + v0_0)) = *(struct mv3 *)((v0_1 + 0x30)); }
     goto L_C06F170;
     L_C06F16A:;
@@ -190,7 +192,7 @@ int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
     (((struct o90_float *)(v0_1))->v) = ((((struct o94_float *)(v0_0))->v));
     (((struct o94_float *)(v0_1))->v) = ((((struct o98_float *)(v0_0))->v));
     FUN_0c0da2e0();
-    *(unsigned int *)(((0x78 + v0_1) + 0x0)) = ((FUN_0c0e5f1c()) + 0xD66);
+    (((struct o78_uint *)(v0_1))->v) = ((FUN_0c0e5f1c()) + 0xD66);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((0xB4 + v0_0)) = *(struct mv3 *)((v0_1 + 0x30)); }
     (((struct o90_uint *)(v0_0))->v) = 0x1;
     goto L_C06F170;

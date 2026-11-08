@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_lt): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0e19f2(void);
 int FUN_0c0307c0(int a4, int a5, int a6, int a7);
 struct o80_int { char p[0x80]; int v; };
@@ -26,12 +26,12 @@ int FUN_0c0307c0(int a4, int a5, int a6, int a7)
         t1 = (((struct oA0_int *)(a4))->v);
         (((struct oA0_uint *)(a4))->v) = (t1 - 1);
         if ((int)(t1 - 1) <= 0) {
-            FUN_0c0cc3f8(((((struct o9C_int *)(a4))->v)), a5, a6, a7, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+            FUN_0c0cc3f8(((((struct o9C_int *)(a4))->v)), a5, a6, a7);
             return FUN_0c0e19f2();
         }
         return 0xA0;
     }
-    FUN_0c0cc3f8(((((struct o98_int *)(a4))->v)), a5, a6, a7, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+    FUN_0c0cc3f8(((((struct o98_int *)(a4))->v)), a5, a6, a7);
     (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
     return 0x80;
 }

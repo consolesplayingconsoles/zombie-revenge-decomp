@@ -9,6 +9,12 @@ int FUN_0c0e19d0(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int FUN_0c0a0548(int a4);
+struct o2E8_int { char p[0x2E8]; int v; };
+struct o3E4_int { char p[0x3E4]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o48_uint { char p[0x48]; unsigned int v; };
+struct o498_int { char p[0x498]; int v; };
+
 
 int FUN_0c0a0548(int a4)
 {
@@ -23,17 +29,17 @@ int FUN_0c0a0548(int a4)
     t0 = FUN_0c0e19aa(0xC0A009C, 0x2868, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(t0);
     *(unsigned int *)((t0 + 0x30)) = a4;
-    *(unsigned int *)((t0 + 0x40)) = ((int)0x2 << (int)(*(int *)((a4 + 0x2E8))));
-    *(unsigned int *)((t0 + 0x48)) = (*(int *)((a4 + 0x498)));
+    (((struct o40_uint *)(t0))->v) = ((int)0x2 << (int)((((struct o2E8_int *)(a4))->v)));
+    (((struct o48_uint *)(t0))->v) = ((((struct o498_int *)(a4))->v));
     nlPushMatrix(0x0);
     if ((unsigned int)0xC201104 < (unsigned int)0xC20110C) {
         t1 = (0x2850 + t0);
         t0 = 0xC201104;
         for (;;) {
-            if ((*(int *)((a4 + 0x3E4))) != 0) {
+            if (((((struct o3E4_int *)(a4))->v)) != 0) {
                 t2 = *(int *)((t0 + 0x0));
                 t0 = (t0 + 0x4);
-                FUN_0c0dbda0(((((t2 << 2) << 2) << 2) + (*(int *)((a4 + 0x3E4)))));
+                FUN_0c0dbda0(((((t2 << 2) << 2) << 2) + ((((struct o3E4_int *)(a4))->v))));
                 FUN_0c0db840(t1);
                 t1 = (t1 + 0xC);
                 if ((unsigned int)t0 >= (unsigned int)0xC20110C) {

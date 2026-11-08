@@ -2,12 +2,12 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 typedef struct { int w[3]; } Stk3;
-int FUN_0c01d276(int, int, int, int, Stk3);
-int FUN_0c0a6356(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c01d276(int, int, int, int);
+int FUN_0c0a6356(void);
 int FUN_0c0cdfd8(void);
 int FUN_0c0ceee4(int);
 int FUN_0c0cef82(int, int, int, int, int);
-int FUN_0c0cf11c(int, int, Stk3);
+int FUN_0c0cf11c(int, int);
 int FUN_0c0d9900(void);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
@@ -47,7 +47,6 @@ void FUN_0c092320(int a4)
 int FUN_0c0ced7c(void)
 {
     int t9;
-    int stk[2];
 
     *(unsigned int *)0xC523158 = ((*(int *)0xC523158) + 0x1);
     if ((*(int *)0xC31FDA0) != 0) {
@@ -57,7 +56,7 @@ int FUN_0c0ced7c(void)
     t9 = FUN_0c0d9900();
     if (((int)t9 >= (int)0x4268) && ((int)t9 <= (int)0x88B8)) {
     } else {
-        FUN_0c0a6356(t9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+        FUN_0c0a6356();
     }
     if ((*(int *)0xC23A180) != 0) {
         FUN_0c0cdfd8();
@@ -70,11 +69,14 @@ void FUN_0c0cf09e(int a4, int a5, int a6, int a7, int a8)
     int t0;
     int t3;
     int stk[9];
+    int R1008;
 
-    *(unsigned int *)(((int)stk + 8)) = a4;
+    R1008 = *(int *)((int)stk + 8);
+
+    R1008 = a4;
     t0 = 0x0;
     for (;;) {
-        FUN_0c0cef82((*(int *)(((int)stk + 8))), a5, a6, a7, (((int)stk + 8) + 0x4));
+        FUN_0c0cef82((R1008), a5, a6, a7, (((int)stk + 8) + 0x4));
         t3 = FUN_0c0ceee4((((int)stk + 8) + 0x4));
         if (t3 != 0) {
             t0 = (t0 + 0x1);
@@ -127,11 +129,11 @@ void FUN_0c0c4f66(void)
 
 int FUN_0c0cf2ac(int a4, int a5)
 {
-    int stk[5];
+    int stk[4];
 
-    { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 4)) = *(struct mv3 *)(((*(int *)(((a5 << 2) + 0xC246FF0))) + 0x30)); }
-    *(float *)(((int)stk + 8)) = ((*(float *)(((int)stk + 8))) + (*(float *)0xC0CF34C));
-    return (FUN_0c0cf11c(a4, ((int)stk + 4), *(Stk3 *)(((int)stk + 4))));
+    { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 0)) = *(struct mv3 *)(((*(int *)(((a5 << 2) + 0xC246FF0))) + 0x30)); }
+    *(float *)(((int)stk + 4)) = ((*(float *)(((int)stk + 4))) + (*(float *)0xC0CF34C));
+    return (FUN_0c0cf11c(a4, ((int)stk + 0)));
 }
 
 void FUN_0c08b87a(int a4)
@@ -158,5 +160,5 @@ int FUN_0c07e034(int a4)
     int stk[5];
 
     { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 4)) = *(struct mv3 *)(0xC101218); }
-    return (FUN_0c01d276(a4, 0xD, 0x1, ((int)stk + 4), *(Stk3 *)(((int)stk + 4))));
+    return (FUN_0c01d276(a4, 0xD, 0x1, ((int)stk + 4)));
 }

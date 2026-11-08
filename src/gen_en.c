@@ -6,7 +6,7 @@ int FUN_0c0d9dc0(float, float);
 int FUN_0c0dd050(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int nlMultiMatrix(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
@@ -24,6 +24,8 @@ struct o6A_ushort { char p[0x6A]; unsigned short v; };
 struct o6C_short { char p[0x6C]; short v; };
 struct o6C_ushort { char p[0x6C]; unsigned short v; };
 struct o78_uint { char p[0x78]; unsigned int v; };
+struct o64_ushort { char p[0x64]; unsigned short v; };
+
 
 
 int FUN_0c07b0bc(void)
@@ -35,7 +37,7 @@ int FUN_0c07b0bc(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC200780); }
     nlSubVector3op((t1 + 0x48), 0xC20078C, 0xC200780);
     FUN_0c0dd050((t1 + 0x48));
-    *(unsigned short *)(((0x64 + t1) + 0x0)) = ((FUN_0c0d9dc0(((((struct o4C_float *)(t1))->v)), ((((struct o48_float *)(t1))->v)))) - 32768);
+    (((struct o64_ushort *)(t1))->v) = ((FUN_0c0d9dc0(((((struct o4C_float *)(t1))->v)), ((((struct o48_float *)(t1))->v)))) - 32768);
     (((struct o78_uint *)(t1))->v) = 0x119C;
     return 0x78;
 }
@@ -52,7 +54,7 @@ int FUN_0c0c6254(int a4, int a5, int a6, int a7)
             t3 = (((struct o6C_short *)(a4))->v);
             (((struct o6C_ushort *)(a4))->v) = (t3 - 1);
             if ((int)(unsigned short)(t3 - 1) <= 0) {
-                FUN_0c0e19f2(a4, a5, a6, a7);
+                FUN_0c0e19f2();
             }
         }
         return FUN_0c0c0340((a4 + 0x30));
@@ -65,7 +67,7 @@ int FUN_0c0c6254(int a4, int a5, int a6, int a7)
             t18 = (((struct o6C_short *)(a4))->v);
             (((struct o6C_ushort *)(a4))->v) = (t18 - 1);
             if ((int)(unsigned short)(t18 - 1) <= 0) {
-                FUN_0c0e19f2(a4, a5, a6, a7);
+                FUN_0c0e19f2();
             }
         }
         return FUN_0c0c0340((a4 + 0x30));
@@ -82,7 +84,7 @@ int FUN_0c0b0a8e(int a4, int a5, int a6, int a7)
     t0 = *(int *)((a4 + 0x30));
     t2 = *(int *)((((unsigned short)(*(short *)((t0 + 0x454))) << 2) + 0xC195F48));
     if ((*(int *)0xC24FA38) == 0x672) {
-        FUN_0c0e19f2(a4, a5, a6, a7);
+        FUN_0c0e19f2();
     }
     nlPushMatrix(0x0);
     nlMultiMatrix(((*(int *)((t0 + 0x3E4))) + 0x240));

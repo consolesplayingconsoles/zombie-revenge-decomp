@@ -37,13 +37,15 @@ int FUN_0c07c004(int a4)
     register float w0_2;
     register float w0_3;
     register float w0_4;
+    int R1008;
+    R1008 = *(int *)((int)stk + 8);
     v0_0 = a4;
     v0_0 = (v0_0);
     if ((((*(int *)0xC23ED88) & 16) == 0)) goto L_C07C02C;
     *(unsigned int *)((v0_0 + 0x30)) = 0x80;
     L_C07C02C:;
     nlPushMatrix(0x0);
-    *(unsigned int *)(((int)stk + 8)) = 0x18;
+    R1008 = 0x18;
     FUN_0c0dcca0(0xC100DC0);
     v0_1 = (0xC0DE000);
     v0_1 = (0xC0DCC70);
@@ -64,7 +66,7 @@ int FUN_0c07c004(int a4)
     L_C07C06C:;
     FUN_0c0dcc70(w0_2, w0_2, w0_3);
     FUN_0c0de000(w0_0);
-    v0_3 = ((int (*)(int, int, int, int, int, int, int, int))(FUN_0c0849da))(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 8), *(int *)((int)stk + 8 + 4), *(int *)((int)stk + 8 + 8), *(int *)((int)stk + 8 + 12));
+    v0_3 = ((int (*)(int, int, int, int, int, int, int, int))(FUN_0c0849da))(0x0, 0x0, 0x0, 0x0, R1008, *(int *)((int)stk + 8 + 4), *(int *)((int)stk + 8 + 8), *(int *)((int)stk + 8 + 12));
     FUN_0c0c465c(0x1220);
     FUN_0c0dcc70(w0_2, w0_2, (*(float *)0xC20093C));
     FUN_0c0de000(w0_1);
@@ -85,8 +87,8 @@ int FUN_0c07c004(int a4)
     v0_2 = (0x0);
     L_C07C0E4:;
     *(unsigned int *)((v0_1 + 0x0)) = v0_2;
-    v0_2 = *(int *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 8)) = (v0_2 - 1);
+    v0_2 = R1008;
+    R1008 = (v0_2 - 1);
     if (((v0_2 - 1) != 0)) goto L_C07C052;
     nlPopMatrix(0x1);
     return ((int (*)(void))(FUN_0c0849da))();

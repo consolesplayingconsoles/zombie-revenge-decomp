@@ -85,12 +85,23 @@ int thunk_FUN_0c073eb4(void);
 void FUN_0c082220(void);
 void FUN_0c092802(void);
 int FUN_0c0b0d14(void);
+struct o1C4_int { char p[0x1C4]; int v; };
+struct o0_float { float v; };
+struct o0_uchar { unsigned char v; };
+struct o0_uint { unsigned int v; };
+struct o4_float { char p[0x4]; float v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o4_ushort { char p[0x4]; unsigned short v; };
+struct o8_float { char p[0x8]; float v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+
+
 
 int FUN_0c0847de(int a4)
 {
-    *(float *)0xC247F00 = (*(float *)((a4 + 0x0)));
-    *(float *)0xC247F04 = (*(float *)(((a4 + 0x4) + 0x0)));
-    *(float *)0xC247F08 = (*(float *)((((a4 + 0x4) + 0x4) + 0x0)));
+    (((struct o0_float *)0xC247F00)->v) = (*(float *)((a4 + 0x0)));
+    (((struct o4_float *)0xC247F00)->v) = (*(float *)(((a4 + 0x4) + 0x0)));
+    (((struct o8_float *)0xC247F00)->v) = (*(float *)((((a4 + 0x4) + 0x4) + 0x0)));
     return 0x30;
 }
 
@@ -159,7 +170,7 @@ int FUN_0c07e0dc(void)
 
 int FUN_0c090a1c(int a4, int a5)
 {
-    return FUN_0c09084c(a4, a5, (*(int *)((0xC246FF0 + ((*(int *)((a4 + 0x1C4))) << 2)))));
+    return FUN_0c09084c(a4, a5, (*(int *)((0xC246FF0 + (((((struct o1C4_int *)(a4))->v)) << 2)))));
 }
 
 
@@ -219,16 +230,16 @@ int FUN_0c0685a4(int a4, int a5, int a6, int a7)
 int FUN_0c08220e(int a4, int a5)
 {
     *(unsigned int *)0xC247D04 = 0x3;
-    *(unsigned char *)0xC247CB8 = a4;
-    *(unsigned short *)0xC247CBC = a5;
+    (((struct o0_uchar *)0xC247CB8)->v) = a4;
+    (((struct o4_ushort *)0xC247CB8)->v) = a5;
     return a5;
 }
 
 void FUN_0c082ce0(int a4)
 {
-    *(unsigned int *)0xC247DAC = 0x0;
-    *(unsigned int *)0xC247DB0 = a4;
-    *(unsigned int *)0xC247DB4 = 0xC081E08;
+    (((struct o0_uint *)0xC247DAC)->v) = 0x0;
+    (((struct o4_uint *)0xC247DAC)->v) = a4;
+    (((struct o8_uint *)0xC247DAC)->v) = 0xC081E08;
 }
 
 int FUN_0c084610(int a4, int a5)
@@ -291,9 +302,9 @@ int FUN_0c08476e(float f4, float f5, float f6)
 
 int FUN_0c0847a8(float f4, float f5, float f6)
 {
-    *(float *)0xC247EF4 = f4;
-    *(float *)0xC247EF8 = f5;
-    *(float *)0xC247EFC = f6;
+    (((struct o0_float *)0xC247EF4)->v) = f4;
+    (((struct o4_float *)0xC247EF4)->v) = f5;
+    (((struct o8_float *)0xC247EF4)->v) = f6;
     return 0x24;
 }
 
@@ -332,8 +343,8 @@ int FUN_0c0ae258(void)
 
 int mwPlaEntryErrFn(int a4, int a5)
 {
-    *(unsigned int *)0xC248A9C = a4;
-    *(unsigned int *)0xC248A98 = a5;
+    (((struct o4_uint *)0xC248A98)->v) = a4;
+    (((struct o0_uint *)0xC248A98)->v) = a5;
     return 0xBC0;
 }
 
@@ -361,8 +372,8 @@ int kgCmiNewId(void)
 
 int FUN_0c084566(int a4, float f4)
 {
-    *(unsigned int *)0xC247ED8 = a4;
-    *(float *)0xC247EDC = f4;
+    (((struct o0_uint *)0xC247ED8)->v) = a4;
+    (((struct o4_float *)0xC247ED8)->v) = f4;
     return 0x4;
 }
 

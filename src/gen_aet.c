@@ -5,6 +5,11 @@ int _destructFiber(int, int);
 int longjmp(int, int);
 int setjmp(int, int, int, int, float, float, float, float, float, float, float, float);
 int buFbrExecFiberServer(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
+struct o204_int { char p[0x204]; int v; };
+struct o204_uint { char p[0x204]; unsigned int v; };
+struct o208_int { char p[0x208]; int v; };
+struct oD78_uint { char p[0xD78]; unsigned int v; };
+
 
 int buFbrExecFiberServer(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
 {
@@ -21,10 +26,10 @@ int buFbrExecFiberServer(int a4, int a5, int a6, int a7, float f4, float f5, flo
     t1 = 0x0;
     t2 = (0x210 + a4);
     for (;;) {
-        if ((int)t1 >= (int)(*(int *)((a4 + 0x208)))) {
+        if ((int)t1 >= (int)((((struct o208_int *)(a4))->v))) {
             break;
         }
-        *(unsigned int *)((a4 + 0xD78)) = t2;
+        (((struct oD78_uint *)(a4))->v) = t2;
         t3 = *(int *)((t2 + 0xC));
         if (t3 != 0) {
             if (t3 != 3) {
@@ -37,7 +42,7 @@ int buFbrExecFiberServer(int a4, int a5, int a6, int a7, float f4, float f5, flo
                     }
                 } else {
                     t3 = (*(int *)((t2 + 0x14)));
-                    if ((unsigned int)t3 <= (unsigned int)(*(int *)((a4 + 0x204)))) {
+                    if ((unsigned int)t3 <= (unsigned int)((((struct o204_int *)(a4))->v))) {
                         longjmp((t2 + 0x18), 0x1);
                     }
                 }
@@ -49,7 +54,7 @@ int buFbrExecFiberServer(int a4, int a5, int a6, int a7, float f4, float f5, flo
         t1 = (t1 + 0x1);
         t2 = (t2 + t3);
     }
-    *(unsigned int *)((a4 + 0x204)) = ((*(int *)((a4 + 0x204))) + 0x1);
+    (((struct o204_uint *)(a4))->v) = (((((struct o204_int *)(a4))->v)) + 0x1);
     *(unsigned int *)0xC990CB0 = (*(int *)0xC990CB4);
     _builtin_set_fpscr(t0);
     return 0x204;

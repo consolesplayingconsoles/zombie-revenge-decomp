@@ -39,6 +39,11 @@ float FUN_0c035828(int a4, int a5, int a6, int a7, int a8, float f4, float f5)
     register float u34;
     register float u35;
     register int t3;
+    float R1004;
+    float R1008;
+
+    R1004 = *(float *)((int)stk + 4);
+    R1008 = *(float *)((int)stk + 8);
 
     *(unsigned int *)(((int)stk + 24)) = a6;
     *(unsigned int *)(((int)stk + 20)) = a7;
@@ -48,10 +53,10 @@ float FUN_0c035828(int a4, int a5, int a6, int a7, int a8, float f4, float f5)
     for (;;) {
         t6 = nlTan(t4);
         u7 = *(float *)(((int)stk + 12));
-        *(float *)(((int)stk + 8)) = (t6 * u7);
+        R1008 = (t6 * u7);
         t8 = FUN_0c0d9e90(t4);
         u9 = (f4 * f4);
-        *(float *)(((int)stk + 4)) = (u9 * t8);
+        R1004 = (u9 * t8);
         u11 = (u9 * t8);
         u12 = (u11 * (FUN_0c0d9e90(t4)));
         u13 = *(float *)(((int)stk + 12));
@@ -74,10 +79,10 @@ float FUN_0c035828(int a4, int a5, int a6, int a7, int a8, float f4, float f5)
     for (;;) {
         t23 = nlTan(t21);
         u24 = *(float *)(((int)stk + 12));
-        *(float *)(((int)stk + 8)) = (t23 * u24);
+        R1008 = (t23 * u24);
         t25 = FUN_0c0d9e90(t21);
         u26 = (f4 * f4);
-        *(float *)(((int)stk + 4)) = (u26 * t25);
+        R1004 = (u26 * t25);
         t27 = FUN_0c0d9e90(t21);
         u28 = (u26 * t25);
         u29 = (u28 * t27);

@@ -256,21 +256,45 @@ int FUN_0c0e6f60(int a4, int a5);
 int FUN_0c0eaa20(int a4, int a5, float f4, float f5);
 int FUN_0c0eb9c0(int a4, int a5, float f4, float f5);
 int kmSetEndOfYUVCallback(int a4, int a5);
+struct o168_int { char p[0x168]; int v; };
+struct o20_ushort { char p[0x20]; unsigned short v; };
+struct o22_ushort { char p[0x22]; unsigned short v; };
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o0_ushort { unsigned short v; };
+struct o10_int { char p[0x10]; int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o14_uint { char p[0x14]; unsigned int v; };
+struct o18_uint { char p[0x18]; unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o4_ushort { char p[0x4]; unsigned short v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+struct o8_ushort { char p[0x8]; unsigned short v; };
+struct oC_int { char p[0xC]; int v; };
+struct oC_uint { char p[0xC]; unsigned int v; };
+struct oC_ushort { char p[0xC]; unsigned short v; };
+
+
 
 int ovSearchLib(int a4)
 {
     int t0;
     int t1;
     int stk[4];
+    int R1004;
 
-    *(unsigned int *)(((int)stk + 4)) = a4;
+    R1004 = *(int *)((int)stk + 4);
+
+    R1004 = a4;
     t0 = ovGetLibTbl((((int)stk + 4) + 0x4));
     t1 = 0x0;
     for (;;) {
         if ((int)t1 >= (int)(*(int *)((t0 + 0x0)))) {
             return 0xFFFFFFFD;
         }
-        if ((*(int *)(((int)stk + 4))) == (*(int *)(((((t1 << 2) << 1) + (t0 + 0x8)) + 0x0)))) {
+        if ((R1004) == (*(int *)(((((t1 << 2) << 1) + (t0 + 0x8)) + 0x0)))) {
             break;
         }
         t1 = (t1 + 0x1);
@@ -291,17 +315,17 @@ void gdFsEntryErrFuncAllG(int a4, int a5)
 
 float FUN_0c0f2c4c(float f4)
 {
-    int stk[3];
+    int stk[2];
 
-    *(float *)(((int)stk + 4)) = (FUN_0c0f2fe4(f4));
-    if (((*(int *)((((int)stk + 4) + 0x0))) & 0x7F800000) == 0x7F800000) {
-        if (((*(int *)((((int)stk + 4) + 0x0))) & 0x7FFFFF) != 0) {
+    *(float *)(((int)stk + 0)) = (FUN_0c0f2fe4(f4));
+    if (((*(int *)((((int)stk + 0) + 0x0))) & 0x7F800000) == 0x7F800000) {
+        if (((*(int *)((((int)stk + 0) + 0x0))) & 0x7FFFFF) != 0) {
             *(unsigned int *)0xC94D960 = 0x44D;
         } else {
             *(unsigned int *)0xC94D960 = 0x44C;
         }
     }
-    return (*(float *)(((int)stk + 4)));
+    return (*(float *)(((int)stk + 0)));
 }
 
 int FUN_0c0f3ccc(int a4, int a5, int a6)
@@ -359,8 +383,8 @@ int _pd_peripheral_set_null(int a4)
     }
     *(unsigned short *)((a4 + 0x18)) = 0x0;
     *(unsigned short *)((a4 + 0x1A)) = 0x0;
-    *(unsigned short *)((a4 + 0x22)) = 0x0;
-    *(unsigned short *)((a4 + 0x20)) = 0x0;
+    (((struct o22_ushort *)(a4))->v) = 0x0;
+    (((struct o20_ushort *)(a4))->v) = 0x0;
     *(unsigned short *)((a4 + 0x1E)) = 0x0;
     *(unsigned short *)((a4 + 0x1C)) = 0x0;
     *(unsigned int *)((a4 + 0x28)) = 0x0;
@@ -415,7 +439,7 @@ int check_valid(int a4)
                 return 0x0;
             }
             if (a4 == 2) {
-                if ((*(int *)((t0 + 0x168))) == 0x41474553) {
+                if (((((struct o168_int *)(t0))->v)) == 0x41474553) {
                     return 0x0;
                 }
                 return 0xFFFFFFFD;
@@ -526,22 +550,18 @@ int syCblCheckBroadcast(int a4, int a5, int a6)
 {
     int t2;
     int t8;
-    int t6;
-    int t4;
 
     kbCfgIni(0x0, a5, a6);
     t2 = *(signed char *)(((FUN_0c229028()) + 0xC));
     t8 = 0x1;
     if (t2 != 49) {
-        t6 = 0x2;
+        t8 = 0x2;
         if (t2 != 50) {
-            t4 = 0x3;
+            t8 = 0x3;
             if (t2 != 51) {
-                t4 = 0x0;
+                t8 = 0x0;
             }
-            t6 = t4;
         }
-        t8 = t6;
     }
     return t8;
 }
@@ -551,7 +571,6 @@ int FUN_0c0ed8a8(int a4, int a5, int a6)
     int t0;
     int t2;
     int t3;
-    int t5;
     int t6;
     int t7;
     int t1;
@@ -563,9 +582,8 @@ int FUN_0c0ed8a8(int a4, int a5, int a6)
     for (;;) {
         if (((unsigned int)t2 < (unsigned int)a6) && (t4 = *(signed char *)((t0 + 0x0)), t1 = t4, t1 != 0)) {
             t2 = (t2 + 0x1);
-            t5 = *(signed char *)((t0 + 0x0));
+            t1 = *(signed char *)((t0 + 0x0));
             t0 = (t0 + 0x1);
-            t1 = t5;
             *(unsigned char *)((t3 + 0x0)) = t1;
             t3 = (t3 + 0x1);
             continue;
@@ -603,28 +621,22 @@ int _pd_peripheral_error(int a4, int a5, int a6)
 
 int pdGunSetTrigger(int a4)
 {
-    int t1;
     int t13;
-    int t9;
-    int t5;
 
     if (a4 != 0) {
         if (a4 != 6) {
             if (a4 != 12) {
-                t1 = a4;
+                t13 = a4;
                 if (a4 != 18) {
                 } else {
-                    t1 = (kdSetGunTrigger(0x3));
+                    t13 = (kdSetGunTrigger(0x3));
                 }
-                t5 = t1;
             } else {
-                t5 = (kdSetGunTrigger(0x2));
+                t13 = (kdSetGunTrigger(0x2));
             }
-            t9 = t5;
         } else {
-            t9 = (kdSetGunTrigger(0x1));
+            t13 = (kdSetGunTrigger(0x1));
         }
-        t13 = t9;
     } else {
         t13 = (kdSetGunTrigger(0x0));
     }
@@ -693,7 +705,6 @@ int syRtcCompareDate(int a4, int a5)
 {
     int t4;
     int t10;
-    int t7;
     int stk[5];
 
     *(unsigned int *)(((int)stk + 12)) = a5;
@@ -704,11 +715,10 @@ int syRtcCompareDate(int a4, int a5)
     t10 = 0x0;
     if ((*(int *)(((int)stk + 8))) == t4) {
     } else {
-        t7 = 0xFFFFFFFF;
+        t10 = 0xFFFFFFFF;
         if ((unsigned int)(*(int *)(((int)stk + 8))) > (unsigned int)t4) {
-            t7 = 0x1;
+            t10 = 0x1;
         }
-        t10 = t7;
     }
     return t10;
 }
@@ -773,27 +783,25 @@ int syRtcExecServer(void)
 {
     int t6;
     int t8;
-    int t7;
 
-    if (((*(int *)0xC94DFB0) & 1) == 0) {
-        *(unsigned int *)0xC94DFAC = (syRtcGetAndCheckCount((*(int *)0xC94DFAC)));
+    if ((((((struct o4_int *)0xC94DFAC)->v)) & 1) == 0) {
+        (((struct o0_uint *)0xC94DFAC)->v) = (syRtcGetAndCheckCount(((((struct o0_int *)0xC94DFAC)->v))));
     }
-    t6 = *(int *)0xC94DFB0;
+    t6 = (((struct o4_int *)0xC94DFAC)->v);
     t8 = t6;
     if ((t6 & 2) != 0) {
-        t7 = syRtcGetCountForce();
-        *(unsigned int *)0xC94DFAC = t7;
-        t8 = t7;
+        t8 = syRtcGetCountForce();
+        (((struct o0_uint *)0xC94DFAC)->v) = t8;
     }
     return t8;
 }
 
 int syRtcInit(void)
 {
-    *(unsigned int *)0xC94DFAC = (syRtcGetCountForce());
-    *(unsigned int *)0xC94DFB0 = 0x0;
+    (((struct o0_uint *)0xC94DFAC)->v) = (syRtcGetCountForce());
+    (((struct o4_uint *)0xC94DFAC)->v) = 0x0;
     syRtcExecServer();
-    *(unsigned int *)0xC94DFB4 = (syChainAddHandler(0x900, 0xC211950, 0x5C, 0x0));
+    (((struct o8_uint *)0xC94DFAC)->v) = (syChainAddHandler(0x900, 0xC211950, 0x5C, 0x0));
     return 0x0;
 }
 
@@ -840,10 +848,10 @@ int gdFsGetDrvStatG(void)
 
 int syRtcAicaSetWriteFlag(void)
 {
-    int stk[6];
+    int stk[5];
 
-    *(unsigned short *)(((int)stk + 12)) = 0x1;
-    syG2Write((((int)stk + 4) + 0x8), 0xA0710008, 0x4, 0x1, 0x0, 0x0);
+    *(unsigned short *)(((int)stk + 8)) = 0x1;
+    syG2Write((((int)stk + 0) + 0x8), 0xA0710008, 0x4, 0x1, 0x0, 0x0);
     return 0x0;
 }
 
@@ -852,10 +860,10 @@ void hwInit(void)
     int t0;
     int t1;
 
-    *(unsigned short *)0xFFD00000 = 0x0;
-    *(unsigned short *)0xFFD00004 = 0x0;
-    *(unsigned short *)0xFFD00008 = 0x0;
-    *(unsigned short *)0xFFD0000C = 0x0;
+    (((struct o0_ushort *)0xFFD00000)->v) = 0x0;
+    (((struct o4_ushort *)0xFFD00000)->v) = 0x0;
+    (((struct o8_ushort *)0xFFD00000)->v) = 0x0;
+    (((struct oC_ushort *)0xFFD00000)->v) = 0x0;
     t0 = 0xFFD00004;
     t1 = 0xC236868;
     for (;;) {
@@ -883,14 +891,14 @@ int kmUseAnotherModifier(int a4)
     int t2;
 
     if ((a4 & 0x1) != 0) {
-        *(unsigned int *)0xC9524D0 = 0x1;
-        *(unsigned int *)0xC9524D4 = a4;
+        (((struct o14_uint *)0xC9524BC)->v) = 0x1;
+        (((struct o18_uint *)0xC9524BC)->v) = a4;
         t2 = 0x0;
     } else {
-        *(unsigned int *)0xC9524D0 = 0x0;
+        (((struct o14_uint *)0xC9524BC)->v) = 0x0;
         t2 = 0xB;
     }
-    *(unsigned int *)0xC9524BC = 0x3;
+    (((struct o0_uint *)0xC9524BC)->v) = 0x3;
     return t2;
 }
 
@@ -1054,14 +1062,12 @@ int gdFsExecServerG(void)
 
 int pdGunEnter(int a4)
 {
-    int t1;
     int t2;
 
     if (a4 != 0) {
         kdSetDriverMode(0x8, a4);
-        t1 = kdSetDriverMode(0x9, 0xFFFFFFFF);
+        t2 = kdSetDriverMode(0x9, 0xFFFFFFFF);
         *(unsigned int *)0xC94D9E8 = a4;
-        t2 = t1;
     }
     return t2;
 }
@@ -1256,10 +1262,10 @@ int syRtcDbgWriteLog(int a4, int a5, int a6)
     int t1;
     int t2;
 
-    t0 = *(int *)0xC94DFB0;
-    if (((t0 & 8) != 0) && (t1 = *(int *)0xC94DFC0, t2 = *(int *)0xC94DFBC, (unsigned int)t2 < (unsigned int)t1)) {
+    t0 = (((struct o0_int *)0xC94DFB0)->v);
+    if (((t0 & 8) != 0) && (t1 = (((struct o10_int *)0xC94DFB0)->v), t2 = (((struct oC_int *)0xC94DFB0)->v), (unsigned int)t2 < (unsigned int)t1)) {
         *(unsigned int *)((t2 + 0x0)) = a4;
-        *(unsigned int *)0xC94DFBC = ((*(int *)0xC94DFBC) + 0x4);
+        (((struct oC_uint *)0xC94DFB0)->v) = (((((struct oC_int *)0xC94DFB0)->v)) + 0x4);
     }
     return t0;
 }
@@ -1300,14 +1306,12 @@ int FUN_0c0ed5a0(int a4, int a5, int a6, float f4, float f5, float f6, float f7)
 int gdFsFinish(void)
 {
     int t0;
-    int t2;
     int t3;
 
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
-        t2 = ((int (*)(void))((*(int *)((t0 + 0x14)))))();
+        t3 = ((int (*)(void))((*(int *)((t0 + 0x14)))))();
         *(unsigned int *)0xC2393D0 = 0x0;
-        t3 = t2;
     }
     return t3;
 }
@@ -1493,10 +1497,10 @@ int FUN_0c0f0558(int a4)
 
 int kmSetGlobalClipping(int a4, int a5)
 {
-    *(unsigned int *)0xC9524C4 = 0x1;
-    *(unsigned int *)0xC9524C8 = a4;
-    *(unsigned int *)0xC9524CC = a5;
-    *(unsigned int *)0xC9524BC = 0x3;
+    (((struct o8_uint *)0xC9524BC)->v) = 0x1;
+    (((struct oC_uint *)0xC9524BC)->v) = a4;
+    (((struct o10_uint *)0xC9524BC)->v) = a5;
+    (((struct o0_uint *)0xC9524BC)->v) = 0x3;
     return 0x0;
 }
 
@@ -1658,10 +1662,10 @@ int syRtcDbgSetLogAddr(int a4, int a5)
 {
     int t0;
 
-    t0 = *(int *)0xC94DFB0;
+    t0 = (((struct o0_int *)0xC94DFB0)->v);
     if ((t0 & 8) != 0) {
-        *(unsigned int *)0xC94DFBC = a4;
-        *(unsigned int *)0xC94DFC0 = a5;
+        (((struct oC_uint *)0xC94DFB0)->v) = a4;
+        (((struct o10_uint *)0xC94DFB0)->v) = a5;
     }
     return t0;
 }
@@ -1712,8 +1716,8 @@ int pdGunGetFlashColor(void)
 
 int syRtcFinish(void)
 {
-    *(unsigned int *)0xC94DFAC = 0x0;
-    return syChainDeleteHandler((*(int *)0xC94DFB4));
+    (((struct o0_uint *)0xC94DFAC)->v) = 0x0;
+    return syChainDeleteHandler(((((struct o8_int *)0xC94DFAC)->v)));
 }
 
 void FUN_0c0ed4e0(float f4, float f5, float f6, float f7, float f8, float f9, float f10)
@@ -1723,8 +1727,8 @@ void FUN_0c0ed4e0(float f4, float f5, float f6, float f7, float f8, float f9, fl
 
 int kmfSetVertexBufferBaseAddress(int a4, int a5)
 {
-    *(unsigned int *)0xC95273C = a4;
-    *(unsigned int *)0xC952740 = a5;
+    (((struct o0_uint *)0xC95273C)->v) = a4;
+    (((struct o4_uint *)0xC95273C)->v) = a5;
     return 0x0;
 }
 
@@ -1761,8 +1765,8 @@ int kmSetWaitVsyncCount(int a4)
 
 void ovInit(int a4, int a5)
 {
-    *(unsigned int *)0x8C00FFF0 = a4;
-    *(unsigned int *)0x8C00FFF4 = a5;
+    (((struct o0_uint *)0x8C00FFF0)->v) = a4;
+    (((struct o4_uint *)0x8C00FFF0)->v) = a5;
 }
 
 int gdFsSetGlobalErrG(int a4)

@@ -32,6 +32,44 @@ int buFbrExecFiberServer(int, int, int, int, float, float, float, float, float, 
 int buFbrInit(void);
 int buFbrSleepVFiber(void);
 #pragma inline_asm(iaOcbwb)
+struct o10C0_uint { char p[0x10C0]; unsigned int v; };
+struct o10C4_uint { char p[0x10C4]; unsigned int v; };
+struct o10C8_uint { char p[0x10C8]; unsigned int v; };
+struct o10CC_uint { char p[0x10CC]; unsigned int v; };
+struct o10D0_uint { char p[0x10D0]; unsigned int v; };
+struct o10D8_uint { char p[0x10D8]; unsigned int v; };
+struct o10DC_uint { char p[0x10DC]; unsigned int v; };
+struct o10E0_uint { char p[0x10E0]; unsigned int v; };
+struct o10E4_uint { char p[0x10E4]; unsigned int v; };
+struct o10F4_uint { char p[0x10F4]; unsigned int v; };
+struct o24_short { char p[0x24]; short v; };
+struct o50_int { char p[0x50]; int v; };
+struct o58_uint { char p[0x58]; unsigned int v; };
+struct o5C_int { char p[0x5C]; int v; };
+struct o5C_uint { char p[0x5C]; unsigned int v; };
+struct o60_int { char p[0x60]; int v; };
+struct o60_uint { char p[0x60]; unsigned int v; };
+struct o88_uint { char p[0x88]; unsigned int v; };
+struct o8C_uint { char p[0x8C]; unsigned int v; };
+struct o90_uint { char p[0x90]; unsigned int v; };
+struct o94_uint { char p[0x94]; unsigned int v; };
+struct o9C_uint { char p[0x9C]; unsigned int v; };
+struct oA8_short { char p[0xA8]; short v; };
+struct oAA_short { char p[0xAA]; short v; };
+struct oFAC_uint { char p[0xFAC]; unsigned int v; };
+struct oFBC_uint { char p[0xFBC]; unsigned int v; };
+struct oFCC_int { char p[0xFCC]; int v; };
+struct oFCC_uint { char p[0xFCC]; unsigned int v; };
+struct oFD8_int { char p[0xFD8]; int v; };
+struct oFD8_uint { char p[0xFD8]; unsigned int v; };
+struct oFDC_int { char p[0xFDC]; int v; };
+struct oFDC_uint { char p[0xFDC]; unsigned int v; };
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+
+
 static void iaOcbwb(void *p)
 {
     .DATA.W H'04B3
@@ -270,7 +308,6 @@ int kmiABSalloc(int a4, int a5)
 int FUN_0c22ece0(int a4, int a5)
 {
     int t3;
-    int t4;
     int t12;
     int t5;
     int t6;
@@ -281,10 +318,9 @@ int FUN_0c22ece0(int a4, int a5)
         *(unsigned short *)((a5 + 0x0)) = 0x1;
     }
     t3 = *(short *)((a5 + 0x0));
-    t4 = *(int *)(((((t3 << 2) + t3) << 2) + 0xC239EF8));
+    t5 = *(int *)(((((t3 << 2) + t3) << 2) + 0xC239EF8));
     t12 = 0x0;
-    if (t4 != 0) {
-        t5 = t4;
+    if (t5 != 0) {
         t6 = 0x0;
         for (;;) {
             if ((*(int *)((t5 + 0xC))) == a4) {
@@ -319,17 +355,17 @@ int ADXB_GetOutBps(int a4)
 {
     int t15;
 
-    if ((*(short *)((a4 + 0xA8))) != 0) {
-        if ((*(short *)((a4 + 0xA8))) == 2) {
-            if ((*(short *)((a4 + 0xAA))) != 2) {
-                if ((*(short *)((a4 + 0xAA))) == 1) {
+    if (((((struct oA8_short *)(a4))->v)) != 0) {
+        if (((((struct oA8_short *)(a4))->v)) == 2) {
+            if (((((struct oAA_short *)(a4))->v)) != 2) {
+                if (((((struct oAA_short *)(a4))->v)) == 1) {
                     return 0x8;
                 }
                 return 0x10;
             }
             return 0x4;
         }
-        if (((*(short *)((a4 + 0xA8))) == 1) && (t15 = *(short *)((a4 + 0xAA)), t15 == 2)) {
+        if ((((((struct oA8_short *)(a4))->v)) == 1) && (t15 = (((struct oAA_short *)(a4))->v), t15 == 2)) {
             return 0x4;
         }
         return 0x10;
@@ -355,11 +391,11 @@ int mpdrv_hreset(int a4)
     int t6;
 
     t0 = *(int *)0xC98E18C;
-    *(unsigned int *)((t0 + 0xFCC)) = ((*(int *)((t0 + 0xFCC))) + ((*(int *)(((0xFD8 + t0) + 0x0))) << 2));
-    *(unsigned int *)(((*(int *)(((*(int *)0xC98E18C) + 0xFCC))) + 0x0)) = ((a4 << 16) | 0x300);
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0xFD8)) = 0x1;
+    (((struct oFCC_uint *)(t0))->v) = (((((struct oFCC_int *)(t0))->v)) + (((((struct oFD8_int *)(t0))->v)) << 2));
+    *(unsigned int *)((((((struct oFCC_int *)((*(int *)0xC98E18C)))->v)) + 0x0)) = ((a4 << 16) | 0x300);
+    (((struct oFD8_uint *)((*(int *)0xC98E18C)))->v) = 0x1;
     t6 = *(int *)0xC98E18C;
-    *(unsigned int *)((t6 + 0xFDC)) = ((*(int *)((t6 + 0xFDC))) + 0x4);
+    (((struct oFDC_uint *)(t6))->v) = (((((struct oFDC_int *)(t6))->v)) + 0x4);
     return 0x0;
 }
 
@@ -369,11 +405,11 @@ int mpdrv_sdckbdisable(int a4)
     int t6;
 
     t0 = *(int *)0xC98E18C;
-    *(unsigned int *)((t0 + 0xFCC)) = ((*(int *)((t0 + 0xFCC))) + ((*(int *)(((0xFD8 + t0) + 0x0))) << 2));
-    *(unsigned int *)(((*(int *)(((*(int *)0xC98E18C) + 0xFCC))) + 0x0)) = ((a4 << 16) | 0x400);
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0xFD8)) = 0x1;
+    (((struct oFCC_uint *)(t0))->v) = (((((struct oFCC_int *)(t0))->v)) + (((((struct oFD8_int *)(t0))->v)) << 2));
+    *(unsigned int *)((((((struct oFCC_int *)((*(int *)0xC98E18C)))->v)) + 0x0)) = ((a4 << 16) | 0x400);
+    (((struct oFD8_uint *)((*(int *)0xC98E18C)))->v) = 0x1;
     t6 = *(int *)0xC98E18C;
-    *(unsigned int *)((t6 + 0xFDC)) = ((*(int *)((t6 + 0xFDC))) + 0x4);
+    (((struct oFDC_uint *)(t6))->v) = (((((struct oFDC_int *)(t6))->v)) + 0x4);
     return 0x0;
 }
 
@@ -402,7 +438,7 @@ int ADXB_EvokeExpandSte(int a4, int a5)
     t0 = *(int *)(((a4 + 0x50) + 0x20));
     t2 = *(int *)((a4 + 0x8));
     t4 = *(int *)(((a4 + 0x50) + 0x14));
-    ADXPD_EntrySte(t2, (*(int *)((a4 + 0x50))), (a5 << 1), (t4 + (t0 << 1)), (((*(int *)(((a4 + 0x50) + 0x1C))) << 1) + (t4 + (t0 << 1))));
+    ADXPD_EntrySte(t2, ((((struct o50_int *)(a4))->v)), (a5 << 1), (t4 + (t0 << 1)), (((*(int *)(((a4 + 0x50) + 0x1C))) << 1) + (t4 + (t0 << 1))));
     return ADXPD_Start(t2);
 }
 
@@ -479,14 +515,14 @@ int FUN_0c233422(int a4, int a5, int a6)
     int t0;
     int t1;
     int t4;
-    int stk[7];
+    int stk[6];
 
-    *(unsigned int *)(((int)stk + 8)) = a4;
-    *(unsigned char *)(((int)stk + 4)) = a5;
-    *(unsigned int *)(((int)stk + 12)) = a6;
-    t0 = *(int *)(((int)stk + 8));
-    t1 = *(signed char *)(((int)stk + 4));
-    t4 = FUN_0c233800((*(int *)(((int)stk + 8))), 0x6, (*(signed char *)(((int)stk + 4))));
+    *(unsigned int *)(((int)stk + 4)) = a4;
+    *(unsigned char *)(((int)stk + 0)) = a5;
+    *(unsigned int *)(((int)stk + 8)) = a6;
+    t0 = *(int *)(((int)stk + 4));
+    t1 = *(signed char *)(((int)stk + 0));
+    t4 = FUN_0c233800((*(int *)(((int)stk + 4))), 0x6, (*(signed char *)(((int)stk + 0))));
     *(unsigned int *)((a6 + 0x0)) = t4;
     *(unsigned int *)((((t1 << 2) + (t0 + 0x34)) + 0x0)) = t4;
     return 0x0;
@@ -529,9 +565,9 @@ int mwlRnaAddFlshPos(int a4)
     *(volatile int *)((a4 + 0x60));
     *(volatile int *)((a4 + 0x58));
     *(volatile int *)((a4 + 0x30));
-    *(unsigned int *)(((0x58 + a4) + 0x0)) = (FUN_0c0e5f1c(a4));
-    *(unsigned int *)((a4 + 0x5C)) = ((*(int *)((a4 + 0x5C))) + (*(int *)(((0x60 + a4) + 0x0))));
-    *(unsigned int *)((a4 + 0x60)) = 0x0;
+    (((struct o58_uint *)(a4))->v) = (FUN_0c0e5f1c(a4));
+    (((struct o5C_uint *)(a4))->v) = (((((struct o5C_int *)(a4))->v)) + ((((struct o60_int *)(a4))->v)));
+    (((struct o60_uint *)(a4))->v) = 0x0;
     return 0x60;
 }
 
@@ -798,7 +834,7 @@ int ADXB_EvokeExpandMono(int a4, int a5)
     int t3;
 
     t3 = *(int *)((a4 + 0x8));
-    ADXPD_EntryMono(t3, (*(int *)((a4 + 0x50))), a5, ((*(int *)(((a4 + 0x50) + 0x14))) + ((*(int *)(((a4 + 0x50) + 0x20))) << 1)));
+    ADXPD_EntryMono(t3, ((((struct o50_int *)(a4))->v)), a5, ((*(int *)(((a4 + 0x50) + 0x14))) + ((*(int *)(((a4 + 0x50) + 0x20))) << 1)));
     return ADXPD_Start(t3);
 }
 
@@ -816,14 +852,12 @@ int vmsfb_end(int a4, int a5, int a6, int a7)
 
 int mwlSbFreeWork(int a4)
 {
-    int t2;
     int t3;
 
     if (a4 != 0) {
         memset((*(int *)((a4 + 0x4))), 0x0, 0x100);
-        t2 = memset(a4, 0x0, 0x8);
+        t3 = memset(a4, 0x0, 0x8);
         *(unsigned int *)((a4 + 0x0)) = 0x0;
-        t3 = t2;
     }
     return t3;
 }
@@ -930,14 +964,12 @@ void FUN_0c22eeb2(int a4, int a5, int a6, int a7)
 
 int ADXB_Destroy(int a4)
 {
-    int t2;
     int t3;
 
     if (a4 != 0) {
         ADXPD_Destroy((*(int *)((a4 + 0x8))));
-        t2 = memset(a4, 0x0, 0xAC);
+        t3 = memset(a4, 0x0, 0xAC);
         *(unsigned short *)((a4 + 0x0)) = 0x0;
-        t3 = t2;
     }
     return t3;
 }
@@ -1020,7 +1052,7 @@ int ADXB_Reset(int a4)
     t3 = t0;
     if (t0 == 3) {
         ADXPD_Reset((*(int *)((a4 + 0x8))));
-        *(unsigned int *)((a4 + 0x9C)) = 0x0;
+        (((struct o9C_uint *)(a4))->v) = 0x0;
         *(unsigned int *)((a4 + 0x4)) = 0x0;
         t3 = 0x9C;
     }
@@ -1032,34 +1064,30 @@ void mwRnaErrCallFunc(int a4)
     int t0;
     int t2;
 
-    t0 = *(int *)0xC239F5C;
+    t0 = (((struct o0_int *)0xC239F5C)->v);
     if (t0 != 0) {
-        t2 = ((int (*)(int, int))(t0))((*(int *)0xC239F60), a4);
+        t2 = ((int (*)(int, int))(t0))(((((struct o4_int *)0xC239F5C)->v)), a4);
     }
 }
 
 int FUN_0c22cdc4(int a4)
 {
-    int t0;
     int t1;
 
     if (a4 != 0) {
-        t0 = memset(a4, 0x0, 0x24);
+        t1 = memset(a4, 0x0, 0x24);
         *(unsigned int *)((a4 + 0x4)) = 0x0;
-        t1 = t0;
     }
     return t1;
 }
 
 int FUN_0c22d0a0(int a4)
 {
-    int t0;
     int t1;
 
     if (a4 != 0) {
-        t0 = memset(a4, 0x0, 0x30);
+        t1 = memset(a4, 0x0, 0x30);
         *(unsigned int *)((a4 + 0x4)) = 0x0;
-        t1 = t0;
     }
     return t1;
 }
@@ -1180,10 +1208,10 @@ int mpdrv_get_version(int a4, int a5)
     int t5;
 
     if (a4 != 0) {
-        *(unsigned int *)((a4 + 0x0)) = (*(int *)0xC2382D4);
+        *(unsigned int *)((a4 + 0x0)) = ((((struct o0_int *)0xC2382D4)->v));
     }
     if (a5 != 0) {
-        t4 = *(int *)0xC2382D8;
+        t4 = (((struct o4_int *)0xC2382D4)->v);
         *(unsigned int *)((a5 + 0x0)) = t4;
         t5 = t4;
     }
@@ -1241,7 +1269,7 @@ int mpdrv_set_end_ns(void)
 {
     int t1;
 
-    t1 = *(int *)(((*(int *)0xC98E18C) + 0xFCC));
+    t1 = (((struct oFCC_int *)((*(int *)0xC98E18C)))->v);
     *(unsigned int *)((t1 + 0x0)) = ((*(int *)((t1 + 0x0))) | 0x80000000);
     return 0x0;
 }
@@ -1317,8 +1345,8 @@ int mpdrv_get_timeout(void)
 
 int mpdrv_optimize(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10E0)) = a4;
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10E4)) = a4;
+    (((struct o10E0_uint *)((*(int *)0xC98E18C)))->v) = a4;
+    (((struct o10E4_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10E4;
 }
 
@@ -1337,7 +1365,7 @@ int mpdrv_get_portstatus(int a4)
 
 int mpdrv_swapmode(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10C4)) = (a4 & 0x1);
+    (((struct o10C4_uint *)((*(int *)0xC98E18C)))->v) = (a4 & 0x1);
     return 0x10C4;
 }
 
@@ -1355,13 +1383,13 @@ int kmiFBallocEx(int a4, int a5, int a6)
 
 int mpdrv_timeout(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10C0)) = (a4 << 16);
+    (((struct o10C0_uint *)((*(int *)0xC98E18C)))->v) = (a4 << 16);
     return 0x10C0;
 }
 
 int mpdrv_init_memory(void)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10F4)) = 0xA05F6C00;
+    (((struct o10F4_uint *)((*(int *)0xC98E18C)))->v) = 0xA05F6C00;
     return 0x10F4;
 }
 
@@ -1383,7 +1411,7 @@ int mpdrv_get_swapmode(void)
 
 int mpdrv_nopcount(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10CC)) = a4;
+    (((struct o10CC_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10CC;
 }
 
@@ -1394,7 +1422,7 @@ int mpdrv_get_nopcount(void)
 
 int mpdrv_speed(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10D0)) = a4;
+    (((struct o10D0_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10D0;
 }
 
@@ -1405,7 +1433,7 @@ int mpdrv_get_speed(void)
 
 int mpdrv_debugmode(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10C8)) = a4;
+    (((struct o10C8_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10C8;
 }
 
@@ -1416,7 +1444,7 @@ int mpdrv_get_debugmode(void)
 
 int mpdrv_dreqcount(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10D8)) = a4;
+    (((struct o10D8_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10D8;
 }
 
@@ -1437,7 +1465,7 @@ int mpdrv_get_lastsendaddr(void)
 
 int mpdrv_rootplay(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0x10DC)) = a4;
+    (((struct o10DC_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0x10DC;
 }
 
@@ -1448,7 +1476,7 @@ int mpdrv_get_rootplay(void)
 
 int mpdrv_gunmode(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0xFAC)) = a4;
+    (((struct oFAC_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0xFAC;
 }
 
@@ -1459,7 +1487,7 @@ int mpdrv_get_gunmode(void)
 
 int mpdrv_autoflash(int a4)
 {
-    *(unsigned int *)(((*(int *)0xC98E18C) + 0xFBC)) = a4;
+    (((struct oFBC_uint *)((*(int *)0xC98E18C)))->v) = a4;
     return 0xFBC;
 }
 
@@ -1502,22 +1530,22 @@ int FUN_0c23264c(int a4, int a5, int a6)
 
 int ADXB_EntryGetWrFunc(int a4, int a5, int a6)
 {
-    *(unsigned int *)((a4 + 0x88)) = a5;
-    *(unsigned int *)((a4 + 0x8C)) = a6;
+    (((struct o88_uint *)(a4))->v) = a5;
+    (((struct o8C_uint *)(a4))->v) = a6;
     return 0x8C;
 }
 
 int ADXB_EntryAddWrFunc(int a4, int a5, int a6)
 {
-    *(unsigned int *)((a4 + 0x90)) = a5;
-    *(unsigned int *)((a4 + 0x94)) = a6;
+    (((struct o90_uint *)(a4))->v) = a5;
+    (((struct o94_uint *)(a4))->v) = a6;
     return 0x94;
 }
 
 void FUN_0c232e9c(int a4, int a5)
 {
-    *(unsigned int *)0xC239F5C = a4;
-    *(unsigned int *)0xC239F60 = a5;
+    (((struct o0_uint *)0xC239F5C)->v) = a4;
+    (((struct o4_uint *)0xC239F5C)->v) = a5;
 }
 
 int vmsfb_exit(int a4, int a5, int a6, int a7)
@@ -1557,7 +1585,7 @@ int ADXB_GetFormat(int a4)
 
 int ADXB_GetNumLoop(int a4)
 {
-    return (*(short *)((a4 + 0x24)));
+    return ((((struct o24_short *)(a4))->v));
 }
 
 int ADXB_GetDecDtLen(int a4)

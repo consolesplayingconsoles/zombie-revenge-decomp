@@ -8,6 +8,17 @@ int kmiSetTAEnvironment(int, int, int, int, int, int, int, int);
 int kmiWriteDispModeRegisters(void);
 int kmiWriteRegister(int, int);
 int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7);
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o20_int { char p[0x20]; int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+struct oC_int { char p[0xC]; int v; };
+struct oC_uint { char p[0xC]; unsigned int v; };
+
 
 int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7)
 {
@@ -20,9 +31,6 @@ int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7)
     register int t30;
     register int t31;
     register int t32;
-    register int t20;
-    register int t22;
-    register int t25;
     register int t34;
     register int t36;
     register int t37;
@@ -32,14 +40,14 @@ int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7)
 
     *(unsigned int *)(((int)stk + 20)) = a4;
     *(unsigned int *)(((int)stk + 24)) = a5;
-    t1 = *(int *)0xC2364D0;
-    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x0)) = (*(int *)0xC2364CC);
+    t1 = (((struct o4_int *)0xC2364CC)->v);
+    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x0)) = ((((struct o0_int *)0xC2364CC)->v));
     *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x4)) = t1;
-    t3 = *(int *)0xC2364D8;
-    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x8)) = (*(int *)0xC2364D4);
+    t3 = (((struct oC_int *)0xC2364CC)->v);
+    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x8)) = ((((struct o8_int *)0xC2364CC)->v));
     *(unsigned int *)(((((int)stk + 20) + 0x8) + 0xC)) = t3;
-    t5 = *(int *)0xC2364E0;
-    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x10)) = (*(int *)0xC2364DC);
+    t5 = (((struct o14_int *)0xC2364CC)->v);
+    *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x10)) = ((((struct o10_int *)0xC2364CC)->v));
     *(unsigned int *)(((((int)stk + 20) + 0x8) + 0x14)) = t5;
     kmiDiscardRenderPipeline(a4, a5, a6, a7);
     t8 = 0x0;
@@ -50,28 +58,25 @@ int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7)
     if ((*(int *)(((int)stk + 20))) != 0) {
         t11 = 0x1;
     }
-    *(unsigned int *)0xC952324 = t11;
-    *(unsigned int *)0xC952328 = t8;
+    (((struct o8_uint *)0xC95231C)->v) = t11;
+    (((struct oC_uint *)0xC95231C)->v) = t8;
     t30 = 0x280;
     t31 = 0x1E0;
     t32 = 0x0;
-    if ((*(int *)0xC95231C) == 1) {
+    if (((((struct o0_int *)0xC95231C)->v)) == 1) {
     } else {
-        t20 = 0x0;
-        if ((((*(int *)0xC95231C) & 0x1) != 1) && ((t17 = *(int *)0xC95231C, (t17 & 44) != 0) && (0x1 != 0))) {
-            t20 = 0x1;
+        t32 = 0x0;
+        if (((((((struct o0_int *)0xC95231C)->v)) & 0x1) != 1) && ((t17 = (((struct o0_int *)0xC95231C)->v), (t17 & 44) != 0) && (0x1 != 0))) {
+            t32 = 0x1;
         }
-        t22 = 0x140;
-        if (((*(int *)0xC95231C) & 16) != 0) {
-            t22 = 0x280;
+        t30 = 0x140;
+        if ((((((struct o0_int *)0xC95231C)->v)) & 16) != 0) {
+            t30 = 0x280;
         }
-        t25 = 0xF0;
-        if (((*(int *)0xC95231C) & 32) != 0) {
-            t25 = 0x1E0;
+        t31 = 0xF0;
+        if ((((((struct o0_int *)0xC95231C)->v)) & 32) != 0) {
+            t31 = 0x1E0;
         }
-        t30 = t22;
-        t31 = t25;
-        t32 = t20;
     }
     t34 = *(int *)0xC95266C;
     for (;;) {
@@ -83,17 +88,17 @@ int kmChangeDisplayFilterMode(int a4, int a5, int a6, int a7)
     *(int *)((int)stk + 16) = t36;
     t37 = t11;
     *(int *)((int)stk + 12) = t37;
-    kmiFBControl(t30, t31, (*(int *)0xC952320), t32);
+    kmiFBControl(t30, t31, ((((struct o4_int *)0xC95231C)->v)), t32);
     kmiWriteDispModeRegisters();
-    kmiWriteRegister(0x44, ((*(int *)0xC9525C4) & 0xFFFFFFFE));
+    kmiWriteRegister(0x44, (((((struct o20_int *)0xC9525A4)->v)) & 0xFFFFFFFE));
     kmiWriteRegister(0xE8, (*(int *)0xC952600));
-    kmiWriteRegister(0x44, (*(int *)0xC9525C4));
+    kmiWriteRegister(0x44, ((((struct o20_int *)0xC9525A4)->v)));
     kmiResetBoard();
     *(int *)((int)stk + 8) = 0x0;
-    t49 = (*(int *)0xC952364);
+    t49 = ((((struct o0_int *)0xC952364)->v));
     *(int *)((int)stk + 4) = t49;
-    kmiSetTAEnvironment(((unsigned int)(*(int *)0xC952368) >> 7), ((unsigned int)(*(int *)0xC95236C) >> 7), ((unsigned int)(*(int *)0xC952370) >> 7), ((unsigned int)(*(int *)0xC952374) >> 7), t49, 0x0, t37, t36);
-    *(unsigned int *)0xC9525A4 = 0x1;
+    kmiSetTAEnvironment(((unsigned int)((((struct o4_int *)0xC952364)->v)) >> 7), ((unsigned int)((((struct o8_int *)0xC952364)->v)) >> 7), ((unsigned int)((((struct oC_int *)0xC952364)->v)) >> 7), ((unsigned int)((((struct o10_int *)0xC952364)->v)) >> 7), t49, 0x0, t37, t36);
+    (((struct o0_uint *)0xC9525A4)->v) = 0x1;
     t55 = *(int *)0xC95266C;
     for (;;) {
         if (t55 != (*(int *)0xC95266C)) {

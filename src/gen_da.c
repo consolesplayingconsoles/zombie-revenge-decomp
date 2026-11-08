@@ -3,8 +3,8 @@
 
 int FUN_0c0dbda0(int);
 int FUN_0c0dcc70(float, float, float);
-int nlRotateAY(int, float, float);
-int nlRotateAZ(int, float, float);
+int nlRotateAY(int);
+int nlRotateAZ(int);
 int FUN_0c09eec4(int a4, int a5, int a6);
 
 int FUN_0c09eec4(int a4, int a5, int a6)
@@ -45,9 +45,9 @@ int FUN_0c09eec4(int a4, int a5, int a6)
     if ((v0_2 == 0)) goto L_C09EF38;
     w0_0 = (((w0_1 / (*(float *)((v0_3 + 0x8)))) * w0_0));
     L_C09EF4A:;
-    nlRotateAZ((int)w0_0, F4, F5);
+    nlRotateAZ((int)w0_0);
     L_C09EF98:;
-    return nlRotateAY(0x4000, F4, F5);
+    return nlRotateAY(0x4000);
     L_C09EF38:;
     w0_0 = ((((-((w0_1 / (*(float *)((v0_3 + 0x8)))) * w0_0))) + w0_0));
     goto L_C09EF4A;
@@ -59,7 +59,7 @@ int FUN_0c09eec4(int a4, int a5, int a6)
     L_C09EF78:;
     FUN_0c0dcc70(F4, F5, w0_0);
     if (((v0_1 & 0x10) == 0)) goto L_C09EF98;
-    return nlRotateAY(0xC000, F4, F5);
+    return nlRotateAY(0xC000);
     L_C09EF6E:;
     F5 = ((w0_1 * (*(float *)((v0_3 + 0x4)))));
     w0_0 = (w0_0);

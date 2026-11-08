@@ -45,6 +45,11 @@ struct o0_int { int v; };
 struct o4_int { char p[0x4]; int v; };
 struct o8_int { char p[0x8]; int v; };
 struct oC_int { char p[0xC]; int v; };
+struct o3C_float { char p[0x3C]; float v; };
+struct o40_float { char p[0x40]; float v; };
+struct o44_float { char p[0x44]; float v; };
+struct o4C_float { char p[0x4C]; float v; };
+
 
 
 
@@ -61,17 +66,17 @@ int FUN_0c084f18(int a4)
     int t38;
     int t39;
 
-    u0 = *(float *)(((0x4C + a4) + 0x0));
+    u0 = (((struct o4C_float *)(a4))->v);
     t1 = (((struct o48_int *)(a4))->v);
     (((struct o48_uint *)(a4))->v) = (t1 + (int)u0);
     if ((int)(t1 + (int)u0) > (int)0xFF) {
         (((struct o50_uint *)(a4))->v) = (((((struct o50_int *)(a4))->v)) + 0x1);
         (((struct o48_uint *)(a4))->v) = (((((struct o48_int *)(a4))->v)) - 127);
     }
-    (((struct o30_float *)(a4))->v) = (((((struct o30_float *)(a4))->v)) - (*(float *)(((0x3C + a4) + 0x0))));
-    (((struct o34_float *)(a4))->v) = (((((struct o34_float *)(a4))->v)) - (*(float *)(((0x40 + a4) + 0x0))));
+    (((struct o30_float *)(a4))->v) = (((((struct o30_float *)(a4))->v)) - ((((struct o3C_float *)(a4))->v)));
+    (((struct o34_float *)(a4))->v) = (((((struct o34_float *)(a4))->v)) - ((((struct o40_float *)(a4))->v)));
     u11 = (((struct o38_float *)(a4))->v);
-    u12 = *(float *)(((0x44 + a4) + 0x0));
+    u12 = (((struct o44_float *)(a4))->v);
     (((struct o38_float *)(a4))->v) = (u11 - u12);
     FUN_0c084570(((((struct o48_int *)(a4))->v)), ((((struct o50_int *)(a4))->v)), (int)((((struct o30_float *)(a4))->v)), (int)((((struct o34_float *)(a4))->v)), (int)(u11 - u12));
     t18 = (((struct o60_int *)(a4))->v);

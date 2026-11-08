@@ -5,123 +5,113 @@ int FUN_0c07c570(int, float, float, float);
 int FUN_0c0c47ae(int);
 int FUN_0c0c4898(int, float);
 int FUN_0c0dcc70(float, float, float);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlRotateAX(int);
 int nlRotateAY(int);
 int FUN_0c07c664(int a4, int a5, int a6, int a7);
+struct o32_short { char p[0x32]; short v; };
+struct o32_ushort { char p[0x32]; unsigned short v; };
+struct o34_short { char p[0x34]; short v; };
+struct o78_float { char p[0x78]; float v; };
+struct o7C_float { char p[0x7C]; float v; };
+struct o80_short { char p[0x80]; short v; };
+struct o80_ushort { char p[0x80]; unsigned short v; };
+struct o82_short { char p[0x82]; short v; };
+struct o82_ushort { char p[0x82]; unsigned short v; };
+struct o86_short { char p[0x86]; short v; };
+struct o86_ushort { char p[0x86]; unsigned short v; };
+struct o88_float { char p[0x88]; float v; };
+struct o8C_float { char p[0x8C]; float v; };
+struct oA0_ushort { char p[0xA0]; unsigned short v; };
+struct oA2_ushort { char p[0xA2]; unsigned short v; };
+struct oA4_int { char p[0xA4]; int v; };
+struct oA8_int { char p[0xA8]; int v; };
+
 
 int FUN_0c07c664(int a4, int a5, int a6, int a7)
 {
-    int t0;
-    int t11;
-    int t40;
-    int t48;
-    int t61;
-    int t76;
-    int t84;
-    int t92;
-    int t103;
+    int st;
+    int t;
+    int i;
+    int n;
+    int off;
 
-    t0 = *(short *)((a4 + 0x32));
-    if (t0 != 0) {
-        if (t0 != 1) {
-            if (t0 != 2) {
-                if (t0 == 3) {
-                    *(float *)((a4 + 0x7C)) = ((*(float *)((a4 + 0x7C))) - 0.049999997f);
-                    *(float *)((a4 + 0x78)) = ((*(float *)((a4 + 0x78))) + (*(float *)(((0x7C + a4) + 0x0))));
-                    *(unsigned short *)((a4 + 0x80)) = ((*(short *)((a4 + 0x80))) + 0x40);
-                    *(unsigned short *)((a4 + 0x82)) = ((*(short *)((a4 + 0x82))) + 0x80);
-                    *(float *)((a4 + 0x88)) = ((*(float *)((a4 + 0x88))) - (*(float *)(((0x8C + a4) + 0x0))));
-                    t11 = *(short *)((a4 + 0x86));
-                    *(unsigned short *)((a4 + 0x86)) = (t11 - 1);
-                    if ((int)(short)(t11 - 1) <= 0) {
-                        if ((*(int *)((a4 + 0xA8))) != 0) {
-                            *(unsigned int *)(((*(int *)((a4 + 0xA8))) + 0xA4)) = 0x0;
-                        }
-                        FUN_0c0e19f2(0x4B, 0x80, a6, a7);
-                    }
-                    nlPushMatrix((a4 + 0x38));
-                    FUN_0c0dcc70(0.0f, (*(float *)((a4 + 0x78))), 0.0f);
-                    nlRotateAY((*(short *)((a4 + 0x82))));
-                    nlRotateAX((*(short *)((a4 + 0x80))));
-                    FUN_0c0c4898((*(short *)((a4 + 0x34))), (*(float *)((a4 + 0x88))));
-                    t40 = *(short *)((a4 + 0xA2));
-                    *(unsigned short *)((a4 + 0xA2)) = (t40 - 1);
-                    if ((int)(short)(t40 - 1) > 0) {
-                        FUN_0c07c570(0x0, (*(float *)((a4 + 0x9C))), (*(float *)((a4 + 0x94))), ((float)(*(short *)((a4 + 0xA2))) / 75.0f));
-                    }
-                    t48 = *(short *)((a4 + 0xA0));
-                    *(unsigned short *)((a4 + 0xA0)) = (t48 - 1);
-                    if ((int)(short)(t48 - 1) > 0) {
-                        FUN_0c07c570(0x1, (*(float *)((a4 + 0x98))), (*(float *)((a4 + 0x90))), ((float)(*(short *)((a4 + 0xA0))) / 75.0f));
-                    }
-                    return nlPopMatrix(0x1);
-                }
-                return t0;
+    st = (((struct o32_short *)(a4))->v);
+    if (st == 0) {
+        if ((((struct oA4_int *)(a4))->v) != 0) {
+            if ((int)((((struct o32_short *)((((struct oA4_int *)(a4))->v)))->v)) >= (int)0x2) {
+                (((struct o86_ushort *)(a4))->v) = 0xA;
+                (((struct oA2_ushort *)(a4))->v) = 0x4B;
+                (((struct o32_ushort *)(a4))->v) = (((struct o32_short *)(a4))->v) + 0x1;
             }
-            *(float *)((a4 + 0x7C)) = ((*(float *)((a4 + 0x7C))) - 0.049999997f);
-            *(float *)((a4 + 0x78)) = ((*(float *)((a4 + 0x78))) + (*(float *)(((0x7C + a4) + 0x0))));
-            *(unsigned short *)((a4 + 0x80)) = ((*(short *)((a4 + 0x80))) + 0x40);
-            *(unsigned short *)((a4 + 0x82)) = ((*(short *)((a4 + 0x82))) + 0x80);
-            t61 = *(short *)((a4 + 0x86));
-            *(unsigned short *)((a4 + 0x86)) = (t61 - 1);
-            if ((int)(short)(t61 - 1) <= 0) {
-                *(unsigned short *)((a4 + 0x86)) = 0x19;
-                *(float *)((a4 + 0x8C)) = 0.0399999991f;
-                *(unsigned short *)((a4 + 0x32)) = ((*(short *)((a4 + 0x32))) + 0x1);
-            }
-            nlPushMatrix((a4 + 0x38));
-            FUN_0c0dcc70(0.0f, (*(float *)((a4 + 0x78))), 0.0f);
-            nlRotateAY((*(short *)((a4 + 0x82))));
-            nlRotateAX((*(short *)((a4 + 0x80))));
-            FUN_0c0c47ae((*(short *)((a4 + 0x34))));
-            t76 = *(short *)((a4 + 0xA2));
-            *(unsigned short *)((a4 + 0xA2)) = (t76 - 1);
-            if ((int)(short)(t76 - 1) > 0) {
-                FUN_0c07c570(0x0, (*(float *)((a4 + 0x9C))), (*(float *)((a4 + 0x94))), ((float)(*(short *)((a4 + 0xA2))) / 75.0f));
-            }
-            t84 = *(short *)((a4 + 0xA0));
-            *(unsigned short *)((a4 + 0xA0)) = (t84 - 1);
-            if ((int)(short)(t84 - 1) > 0) {
-                FUN_0c07c570(0x1, (*(float *)((a4 + 0x98))), (*(float *)((a4 + 0x90))), ((float)(*(short *)((a4 + 0xA0))) / 75.0f));
-            }
-            return nlPopMatrix(0x1);
-        }
-        t92 = *(short *)((a4 + 0x86));
-        *(unsigned short *)((a4 + 0x86)) = (t92 - 1);
-        if ((int)(short)(t92 - 1) <= 0) {
-            *(unsigned short *)((a4 + 0x86)) = 0x4B;
-            if ((*(int *)((a4 + 0xA8))) != 0) {
-                *(unsigned short *)((a4 + 0xA0)) = 0x4B;
-            }
-            *(unsigned short *)((a4 + 0x32)) = ((*(short *)((a4 + 0x32))) + 0x1);
-        }
-        nlPushMatrix((a4 + 0x38));
-        FUN_0c0c47ae((*(short *)((a4 + 0x34))));
-        t103 = *(short *)((a4 + 0xA2));
-        *(unsigned short *)((a4 + 0xA2)) = (t103 - 1);
-        if ((int)(short)(t103 - 1) <= 0) {
         } else {
-            FUN_0c07c570(0x0, (*(float *)((a4 + 0x9C))), (*(float *)((a4 + 0x94))), ((float)(*(short *)((a4 + 0xA2))) / 75.0f));
+            (((struct o86_ushort *)(a4))->v) = 0x4B;
+            if ((((struct oA8_int *)(a4))->v) != 0) {
+                (((struct oA0_ushort *)(a4))->v) = 0x4B;
+            }
+            (((struct o32_ushort *)(a4))->v) = (((struct o32_short *)(a4))->v) + 0x2;
         }
+        nlPushMatrix(a4 + 0x38);
+        FUN_0c0c47ae((((struct o34_short *)(a4))->v));
         return nlPopMatrix(0x1);
     }
-    if ((*(int *)((a4 + 0xA4))) != 0) {
-        if ((int)(*(short *)(((*(int *)((a4 + 0xA4))) + 0x32))) >= (int)0x2) {
-            *(unsigned short *)((a4 + 0x86)) = 0xA;
-            *(unsigned short *)((a4 + 0xA2)) = 0x4B;
-            *(unsigned short *)((a4 + 0x32)) = ((*(short *)((a4 + 0x32))) + 0x1);
+    if (st == 1) {
+        t = (((struct o86_short *)(a4))->v);
+        (((struct o86_ushort *)(a4))->v) = t - 1;
+        if ((int)(short)(t - 1) <= 0) {
+            (((struct o86_ushort *)(a4))->v) = 0x4B;
+            if ((((struct oA8_int *)(a4))->v) != 0) {
+                (((struct oA0_ushort *)(a4))->v) = 0x4B;
+            }
+            (((struct o32_ushort *)(a4))->v) = (((struct o32_short *)(a4))->v) + 0x1;
         }
+        nlPushMatrix(a4 + 0x38);
+        FUN_0c0c47ae((((struct o34_short *)(a4))->v));
+        n = 1;
+    } else if (st == 2 || st == 3) {
+        (((struct o7C_float *)(a4))->v) = (((struct o7C_float *)(a4))->v) - 0.049999997f;
+        (((struct o78_float *)(a4))->v) = (((struct o78_float *)(a4))->v) + (((struct o7C_float *)(a4))->v);
+        (((struct o80_ushort *)(a4))->v) = (((struct o80_short *)(a4))->v) + 0x40;
+        (((struct o82_ushort *)(a4))->v) = (((struct o82_short *)(a4))->v) + 0x80;
+        if (st == 3) {
+            (((struct o88_float *)(a4))->v) = (((struct o88_float *)(a4))->v) - (((struct o8C_float *)(a4))->v);
+        }
+        t = (((struct o86_short *)(a4))->v);
+        (((struct o86_ushort *)(a4))->v) = t - 1;
+        if ((int)(short)(t - 1) <= 0) {
+            if (st == 3) {
+                if ((((struct oA8_int *)(a4))->v) != 0) {
+                    (((struct oA4_int *)((((struct oA8_int *)(a4))->v)))->v) = 0x0;
+                }
+                FUN_0c0e19f2();
+            } else {
+                (((struct o86_ushort *)(a4))->v) = 0x19;
+                (((struct o8C_float *)(a4))->v) = 0.0399999991f;
+                (((struct o32_ushort *)(a4))->v) = (((struct o32_short *)(a4))->v) + 0x1;
+            }
+        }
+        nlPushMatrix(a4 + 0x38);
+        FUN_0c0dcc70(0.0f, (((struct o78_float *)(a4))->v), 0.0f);
+        nlRotateAY((((struct o82_short *)(a4))->v));
+        nlRotateAX((((struct o80_short *)(a4))->v));
+        if (st == 3) {
+            FUN_0c0c4898((((struct o34_short *)(a4))->v), (((struct o88_float *)(a4))->v));
+        } else {
+            FUN_0c0c47ae((((struct o34_short *)(a4))->v));
+        }
+        n = 2;
     } else {
-        *(unsigned short *)((a4 + 0x86)) = 0x4B;
-        if ((*(int *)((a4 + 0xA8))) != 0) {
-            *(unsigned short *)((a4 + 0xA0)) = 0x4B;
-        }
-        *(unsigned short *)((a4 + 0x32)) = ((*(short *)((a4 + 0x32))) + 0x2);
+        return st;
     }
-    nlPushMatrix((a4 + 0x38));
-    FUN_0c0c47ae((*(short *)((a4 + 0x34))));
+    for (i = 0; i < n; i++) {
+        off = 0xA2 - i * 2;
+        t = *(short *)(a4 + off);
+        *(unsigned short *)(a4 + off) = t - 1;
+        if ((int)(short)(t - 1) > 0) {
+            FUN_0c07c570(i, *(float *)(a4 + 0x9C - i * 4), *(float *)(a4 + 0x94 - i * 4), (float)(*(short *)(a4 + off)) / 75.0f);
+        }
+    }
     return nlPopMatrix(0x1);
 }

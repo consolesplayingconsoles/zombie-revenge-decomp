@@ -15,7 +15,6 @@ struct o66_ushort { char p[0x66]; unsigned short v; };
 
 int FUN_0c095520(int a4)
 {
-    int stk[1];
 
     register int R2;
     register int R3;

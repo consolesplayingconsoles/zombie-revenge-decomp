@@ -11,6 +11,8 @@ struct oA0_int { char p[0xA0]; int v; };
 struct oA0_uint { char p[0xA0]; unsigned int v; };
 struct oA4_int { char p[0xA4]; int v; };
 struct oA4_uint { char p[0xA4]; unsigned int v; };
+struct o50_int { char p[0x50]; int v; };
+
 
 
 int ADXB_ExecOneAiff8(int a4, int a5, int a6, int a7)
@@ -28,7 +30,7 @@ int ADXB_ExecOneAiff8(int a4, int a5, int a6, int a7)
     register int t10;
     register int t11;
 
-    t0 = *(int *)(((a4 + 0x50) + 0x0));
+    t0 = (((struct o50_int *)(a4))->v);
     t1 = a7;
     if ((*(int *)((a4 + 0x4))) == 1) {
         t2 = ADXPD_GetStat((*(int *)((a4 + 0x8))));

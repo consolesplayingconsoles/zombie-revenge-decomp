@@ -259,6 +259,8 @@ struct oC_float { char p[0xC]; float v; };
 struct oC_int { char p[0xC]; int v; };
 struct oC_uint { char p[0xC]; unsigned int v; };
 struct o23C_uint { char p[0x23C]; unsigned int v; };
+struct o84_int { char p[0x84]; int v; };
+
 
 
 
@@ -909,7 +911,7 @@ int FUN_0c0a8c98(int a4)
     int t3;
 
     t1 = 0x84;
-    t4 = (*(int *)((a4 + 0x84)));
+    t4 = ((((struct o84_int *)(a4))->v));
     for (;;) {
         if ((*(int *)0xC24FA38) != (*(short *)((t4 + 0x0)))) {
             break;
@@ -930,7 +932,7 @@ int FUN_0c0a8c98(int a4)
         t1 = 0xC247030;
         *(unsigned int *)(((t14 << 2) + t1)) = 0x4;
     }
-    t15 = *(int *)((a4 + 0x88));
+    t15 = (((struct o88_int *)(a4))->v);
     return ((int (*)(int))(t15))(a4);
 }
 

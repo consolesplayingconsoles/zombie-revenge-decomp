@@ -3,6 +3,9 @@
 
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c03ea28(int a4, int a5, int a6, int a7);
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+
 
 int FUN_0c03ea28(int a4, int a5, int a6, int a7)
 {
@@ -34,8 +37,8 @@ int FUN_0c03ea28(int a4, int a5, int a6, int a7)
         }
         t34 = t10;
     } else {
-        t30 = *(int *)((a4 + 0x40));
-        *(unsigned int *)((a4 + 0x40)) = (t30 - 1);
+        t30 = (((struct o40_int *)(a4))->v);
+        (((struct o40_uint *)(a4))->v) = (t30 - 1);
         if ((int)(t30 - 1) > 0) {
         } else {
             *(unsigned int *)((a4 + 0x38)) = ((*(int *)((a4 + 0x38))) + 0x1);

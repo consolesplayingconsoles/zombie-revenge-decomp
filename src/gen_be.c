@@ -32,6 +32,9 @@ struct o44_uint { char p[0x44]; unsigned int v; };
 struct o45C_float { char p[0x45C]; float v; };
 struct o460_float { char p[0x460]; float v; };
 struct o464_float { char p[0x464]; float v; };
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+
 
 
 int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
@@ -71,8 +74,8 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
                 u31 = (((((struct o3C_float *)(a4))->v)) * 0.969999969f);
             } else {
                 t22 = FUN_0c0da2e0();
-                t23 = *(int *)(((0x40 + a4) + 0x0));
-                *(unsigned int *)(((0x40 + a4) + 0x0)) = (t23 + ((t22 + 0x1234) & 0xFFF));
+                t23 = (((struct o40_int *)(a4))->v);
+                (((struct o40_uint *)(a4))->v) = (t23 + ((t22 + 0x1234) & 0xFFF));
                 u25 = 0.699999988f;
                 u25 = u25 + 0.299999982f * (FUN_0c0d9e90((t23 + ((t22 + 0x1234) & 0xFFF))));
                 u31 = (u25 * 0.799999952f);

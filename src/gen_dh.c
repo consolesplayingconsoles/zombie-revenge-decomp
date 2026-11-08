@@ -60,6 +60,10 @@ int FUN_0c02829e(int a4, int a5, int a6, int a7);
 int FUN_0c02fc26(int a4, float f4);
 void FUN_0c089d04(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
 void FUN_0c022e60(int a4, int a5, int a6, int a7, float f4);
+struct o4DC_int { char p[0x4DC]; int v; };
+struct o4E8_int { char p[0x4E8]; int v; };
+struct o4E8_uint { char p[0x4E8]; unsigned int v; };
+
 
 void FUN_0c04228c(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
 {
@@ -69,16 +73,16 @@ void FUN_0c04228c(int a4, int a5, int a6, int a7, float f4, float f5, float f6, 
     int t3;
     int t11;
 
-    t0 = *(int *)((a4 + 0x4E8));
-    *(unsigned int *)((a4 + 0x4E8)) = (t0 + 0x1);
-    t1 = *(int *)((a4 + 0x4DC));
+    t0 = (((struct o4E8_int *)(a4))->v);
+    (((struct o4E8_uint *)(a4))->v) = (t0 + 0x1);
+    t1 = (((struct o4DC_int *)(a4))->v);
     t9 = a5;
     if ((t0 + 0x1) == (*(int *)(((((((t1 - 76) << 1) + (t1 - 76)) << 2) + 0xC1F518C) + 0x4)))) {
-        t3 = *(int *)((a4 + 0x4DC));
+        t3 = (((struct o4DC_int *)(a4))->v);
         *(unsigned int *)0xC23ED88 = ((*(int *)0xC23ED88) | (*(int *)(((0xC1F518C + ((((t3 - 76) << 1) + (t3 - 76)) << 2)) + 0x8))));
         t9 = 0xC23ED88;
     }
-    t11 = *(int *)((a4 + 0x4DC));
+    t11 = (((struct o4DC_int *)(a4))->v);
     if ((unsigned int)(t11 - 76) >= (unsigned int)0x4C) {
         FUN_0c041f2a(a4);
     return;

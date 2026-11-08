@@ -20,6 +20,10 @@ struct o78_uint { char p[0x78]; unsigned int v; };
 struct o88_uint { char p[0x88]; unsigned int v; };
 struct o8C_uint { char p[0x8C]; unsigned int v; };
 struct oBC_uint { char p[0xBC]; unsigned int v; };
+struct o21C_uint { char p[0x21C]; unsigned int v; };
+struct o60_ushort { char p[0x60]; unsigned short v; };
+struct o62_ushort { char p[0x62]; unsigned short v; };
+
 
 
 
@@ -36,7 +40,7 @@ int FUN_0c07a520(void)
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FFCEC); }
     FUN_0c0e6248();
-    *(unsigned int *)(((0x21C + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FFCFE);
+    (((struct o21C_uint *)(t1))->v) = (unsigned short)(*(short *)0xC0FFCFE);
     (((struct o78_uint *)(t1))->v) = 0xC1B6844;
     (((struct o74_uint *)(t1))->v) = 0x15;
     (((struct oBC_uint *)(t1))->v) = 0x10;
@@ -53,9 +57,9 @@ int FUN_0c07a520(void)
         if ((0x1 & t8) != 0) {
             t14 = 0xFFFFFC00;
         }
-        *(unsigned short *)(((0x62 + t11) + 0x0)) = (t13 + t14);
-        *(unsigned short *)(((0x60 + t11) + 0x0)) = (t13 + t14);
-        *(unsigned int *)(((0x78 + t11) + 0x0)) = (unsigned short)(*(short *)((t9 + 0x12)));
+        (((struct o62_ushort *)(t11))->v) = (t13 + t14);
+        (((struct o60_ushort *)(t11))->v) = (t13 + t14);
+        (((struct o78_uint *)(t11))->v) = (unsigned short)(*(short *)((t9 + 0x12)));
         (((struct o8C_uint *)(t11))->v) = t1;
         (((struct o88_uint *)(t11))->v) = t8;
         t8 = (t8 + 0x1);

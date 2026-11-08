@@ -3,7 +3,7 @@
 
 int FUN_0c0e1e6a(int);
 int FUN_0c0e22cc(int, int, int);
-int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0e2a4c(int);
 int FUN_0c0ed62c(int);
 int FUN_0c0ed650(int);
 int FUN_0c0e15d4(int a4);
@@ -19,14 +19,17 @@ int FUN_0c0e15d4(int a4)
     register int t16;
     register int t22;
     register int t34;
+    int R1004;
+
+    R1004 = *(int *)((int)stk + 4);
 
     t2 = a4;
     t3 = (*(int *)((a4 + 0x18)));
     for (;;) {
-        *(unsigned int *)(((int)stk + 4)) = (*(int *)((t3 + 0x18)));
+        R1004 = (*(int *)((t3 + 0x18)));
         if ((*(int *)((t3 + 0x4))) != 0) {
             t2 = t3;
-            t1 = (((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)((t3 + 0x4)))))(t2, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24)));
+            t1 = (((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)((t3 + 0x4)))))(t2, 0x0, 0x0, 0x0, R1004, *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24)));
         } else {
             t10 = t2;
         }
@@ -55,7 +58,7 @@ int FUN_0c0e15d4(int a4)
                 t1 = (FUN_0c0ed650(t2));
             } else {
                 t2 = t3;
-                t1 = (FUN_0c0e2a4c(t2, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24)));
+                t1 = (FUN_0c0e2a4c(t2));
                 *(unsigned int *)0xC94C7A0 = ((*(int *)0xC94C7A0) - 1);
             }
         } else {
@@ -63,7 +66,7 @@ int FUN_0c0e15d4(int a4)
         }
         t2 = t34;
         if (t3 != a4) {
-            t3 = (*(int *)(((int)stk + 4)));
+            t3 = (R1004);
             continue;
         }
         break;

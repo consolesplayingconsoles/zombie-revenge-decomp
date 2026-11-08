@@ -4,14 +4,14 @@
 int FUN_0c01ee84(int, int, int);
 int FUN_0c01f00c(int, int);
 int FUN_0c029646(int, int, int);
-int FUN_0c02a19a(int, int, int, int);
+int FUN_0c02a19a(int);
 int FUN_0c0372f8(int, int, int, int);
 int FUN_0c062d4a(int, int, int, int, int, int, int);
 int FUN_0c062f54(int, int, int);
 int FUN_0c084218(void);
 int FUN_0c0b4404(int);
 int FUN_0c0c6ac6(int, int, int);
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0db0a0(int, int);
 int FUN_0c0db4d0(int, int);
 int FUN_0c0dbda0(int);
@@ -21,7 +21,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e1e6a(int);
-int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0e2a4c(int);
 int FUN_0c0e5dc0(void);
 int FUN_0c0e6248(void);
 int FUN_0c0ed62c(int);
@@ -45,8 +45,8 @@ int vmsfs_fsetattr(int, int, int, int);
 int vmsfs_fwrite(int, int, int);
 int vmsfs_load_file(int, int, int, int);
 int vmsfs_load_file_ex(int, int, int, int, int);
-int vmsfs_mount(int, int, int, int, int, int, int, int, int, int, int, int);
-int vmsfs_read_disk_image(int, int, int, int);
+int vmsfs_mount(int);
+int vmsfs_read_disk_image(int, int);
 int vmsfs_rewrite_exec_file(int, int, int, int, int);
 int vmsfs_save_exec_file(int, int, int, int, int, int);
 int vmsfs_save_file(int, int, int, int, int, int);
@@ -132,6 +132,8 @@ struct oF8_float { char p[0xF8]; float v; };
 struct oFC_float { char p[0xFC]; float v; };
 struct o0_short { short v; };
 struct o6_short { char p[0x6]; short v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+
 
 
 
@@ -255,7 +257,7 @@ void vmsfs_c_dispatch(int a4, int a5, int a6, int a7, int a8)
     goto L_C224C5E;
     L_C224BA4:;
     *(unsigned int *)((v0_3 + 0x10)) = (*(int *)((v0_3 + 0x14)));
-    v0_6 = ((vmsfs_read_disk_image((*(int *)((v0_3 + 0x14))), (*(int *)((v0_3 + 0x18))), v0_6, v0_7)));
+    v0_6 = ((vmsfs_read_disk_image((*(int *)((v0_3 + 0x14))), (*(int *)((v0_3 + 0x18))))));
     goto L_C224C5E;
     L_C224B94:;
     *(unsigned int *)((v0_3 + 0x10)) = (*(int *)((v0_3 + 0x14)));
@@ -293,7 +295,7 @@ void vmsfs_c_dispatch(int a4, int a5, int a6, int a7, int a8)
     goto L_C224C5E;
     L_C224AF2:;
     *(unsigned int *)((v0_3 + 0x10)) = (*(int *)((v0_3 + 0x14)));
-    v0_6 = ((vmsfs_mount((*(int *)((v0_3 + 0x14))), v0_5, v0_6, v0_7, R1012, R1016, R1020, R1024, *(int *)((int)stk + 12 + 16), *(int *)((int)stk + 12 + 20), *(int *)((int)stk + 12 + 24), *(int *)((int)stk + 12 + 28))));
+    v0_6 = ((vmsfs_mount((*(int *)((v0_3 + 0x14))))));
     goto L_C224C5E;
     L_C224AE6:;
     *(unsigned int *)((v0_3 + 0x10)) = (*(int *)((v0_3 + 0x14)));
@@ -360,7 +362,7 @@ int FUN_0c029e06(int a4)
     if ((_builtin_fabsf((float)((((struct o220_short *)(v0_0))->v))) > 64.0f)) goto L_C02A002;
     v0_2 = (0x222);
     if ((_builtin_fabsf((float)((((struct o222_short *)(v0_0))->v))) > w0_0)) goto L_C02A002;
-    v0_2 = ((FUN_0c02a19a(v0_0, R5, R6, R7)));
+    v0_2 = ((FUN_0c02a19a(v0_0)));
     goto L_C02A002;
     L_C029E48:;
     if ((v0_2 != 4)) goto L_C029E50;
@@ -425,7 +427,6 @@ int FUN_0c0614fa(int a4, int a5)
 {
     int stk[11];
     register int t1;
-    register int t10;
     register int t24;
     register int t25;
     register float u28;
@@ -436,11 +437,10 @@ int FUN_0c0614fa(int a4, int a5)
     (((struct oBC_uint *)(t1))->v) = ((((struct oBC_int *)(a4))->v));
     *(unsigned int *)(((0x200 + t1) + 0x0)) = (unsigned char)(*(signed char *)((a5 + 0x2)));
     if ((int)((((struct oE8_short *)(a4))->v)) < (int)0x4) {
-        t10 = 0x0;
+        t14 = 0x0;
         if ((*(signed char *)((a5 + 0x4))) != 0) {
-            t10 = ((((struct o1EC_int *)(a4))->v));
+            t14 = ((((struct o1EC_int *)(a4))->v));
         }
-        t14 = t10;
     } else {
         t14 = ((int)0x1 << (int)((((struct oBC_int *)(a4))->v)));
     }
@@ -475,7 +475,7 @@ int FUN_0c0614fa(int a4, int a5)
     nlRotateAY((((((struct o6E_short *)(a4))->v)) + 0x8000));
     FUN_0c0db4d0(((int)stk + 4), (t1 + 0x48));
     nlPopMatrix(0x1);
-    return (FUN_0c0cc3f8(0x132A9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28)));
+    return (FUN_0c0cc3f8(0x132A9, 0x0, 0x0, 0x0));
 }
 
 
@@ -578,7 +578,6 @@ int FUN_0c0c6b48(int a4, int a5)
 int FUN_0c0e152a(int a4)
 {
     int stk[9];
-    register int t0;
     register int t3;
     register int t4;
     register int t6;
@@ -594,10 +593,9 @@ int FUN_0c0e152a(int a4)
     register int t32;
     register int t34;
 
-    t0 = *(int *)((a4 + 0x34));
-    if (t0 != 0) {
+    t4 = *(int *)((a4 + 0x34));
+    if (t4 != 0) {
         t3 = a4;
-        t4 = t0;
         for (;;) {
             t6 = *(int *)((t4 + 0x18));
             if ((*(int *)((t4 + 0x4))) != 0) {
@@ -644,7 +642,7 @@ int FUN_0c0e152a(int a4)
                 } else {
                     t2 = 0xC0E2A4C;
                     t3 = t4;
-                    t1 = (FUN_0c0e2a4c(t3, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24)));
+                    t1 = (FUN_0c0e2a4c(t3));
                 }
             } else {
                 t32 = t2;
@@ -705,7 +703,7 @@ int FUN_0c068d54(int a4)
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FA4F0); }
     FUN_0c0e6248();
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC0FA502);
+    (((struct o78_uint *)(t1))->v) = (unsigned short)(*(short *)0xC0FA502);
     (((struct o8C_uint *)(t1))->v) = a4;
     return 0x8C;
 }

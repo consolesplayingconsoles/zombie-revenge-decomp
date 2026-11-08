@@ -16,6 +16,12 @@ struct o4_float { char p[0x4]; float v; };
 struct o49C_int { char p[0x49C]; int v; };
 struct o510_int { char p[0x510]; int v; };
 struct o8_float { char p[0x8]; float v; };
+struct o28_float { char p[0x28]; float v; };
+struct o2C_float { char p[0x2C]; float v; };
+struct o30_float { char p[0x30]; float v; };
+struct o34_float { char p[0x34]; float v; };
+struct o40_float { char p[0x40]; float v; };
+
 
 
 int FUN_0c03242c(int a4, float f4, float f5)
@@ -35,6 +41,7 @@ int FUN_0c03242c(int a4, float f4, float f5)
     register int t37;
     register int t39;
     int t38;
+    float s1;
 
     *(float *)(((int)stk + 12)) = f4;
     *(float *)(((int)stk + 16)) = f5;
@@ -43,11 +50,11 @@ int FUN_0c03242c(int a4, float f4, float f5)
         t2 = (((struct o510_int *)(a4))->v);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x40)) = *(struct mv3 *)(((((((t2 << 1) + t2) << 2) << 2) << 2) + 0xC23F274)); }
         { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x34)) = *(struct mv3 *)((a4 + 0x30)); }
-        FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), ((*(float *)(((((int)stk + 4) + 0x40) + 0x0))) - (*(float *)(((((int)stk + 4) + 0x34) + 0x0)))), (((((struct o4_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o4_float *)((((int)stk + 4) + 0x34)))->v))), (((((struct o8_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o8_float *)((((int)stk + 4) + 0x34)))->v))));
-        u11 = *(float *)(((((int)stk + 4) + 0x40) + 0x0));
+        FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (((((struct o40_float *)(((int)stk + 4)))->v)) - ((((struct o34_float *)(((int)stk + 4)))->v))), (((((struct o4_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o4_float *)((((int)stk + 4) + 0x34)))->v))), (((((struct o8_float *)((((int)stk + 4) + 0x40)))->v)) - ((((struct o8_float *)((((int)stk + 4) + 0x34)))->v))));
+        u11 = (((struct o40_float *)(((int)stk + 4)))->v);
         u12 = (((struct o4_float *)((((int)stk + 4) + 0x40)))->v);
         u13 = (((struct o4_float *)((((int)stk + 4) + 0x34)))->v);
-        u14 = *(float *)(((((int)stk + 4) + 0x34) + 0x0));
+        u14 = (((struct o34_float *)(((int)stk + 4)))->v);
         u15 = (((struct o8_float *)((((int)stk + 4) + 0x40)))->v);
         u16 = (((struct o8_float *)((((int)stk + 4) + 0x34)))->v);
         u19 = ((u13 - u12) * (u13 - u12));
@@ -62,13 +69,14 @@ int FUN_0c03242c(int a4, float f4, float f5)
         *(float *)(((int)stk + 36)) = 0.0f;
         *(float *)(((int)stk + 40)) = (*(float *)(((int)stk + 12)));
         FUN_0c0db470((((int)stk + 4) + 0x1C), (((int)stk + 4) + 0x10));
-        *(float *)(((((int)stk + 4) + 0x28) + 0x0)) = (*(float *)(((int)stk + 20)));
-        *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = (*(float *)(((int)stk + 24)));
-        *(float *)(((((int)stk + 4) + 0x30) + 0x0)) = (*(float *)(((int)stk + 28)));
+        (((struct o28_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 20)));
+        (((struct o2C_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 24)));
+        (((struct o30_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 28)));
         nlPopMatrix(0x1);
         nlAddVector((0x4B0 + a4), (((int)stk + 4) + 0x28));
         t40 = 0x0;
-        if (_builtin_sqrtf(u22) > (*(float *)(((int)stk + 16)))) {
+        s1 = _builtin_sqrtf(u22);
+        if (s1 > (*(float *)(((int)stk + 16)))) {
             t37 = FUN_0c02a416(a4);
             t39 = 0x0;
             if ((t37 == 0) && (t38 = (((struct o49C_int *)(a4))->v), t38 != 3)) {
@@ -77,7 +85,7 @@ int FUN_0c03242c(int a4, float f4, float f5)
             t40 = t39;
         }
         t42 = t40;
-        _builtin_sqrtf(u22);
+        s1;
     }
     return t42;
 }

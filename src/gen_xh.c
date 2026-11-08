@@ -3,6 +3,16 @@
 
 int ADXPD_GetStat(int);
 int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7);
+struct o50_int { char p[0x50]; int v; };
+struct o88_int { char p[0x88]; int v; };
+struct o8C_int { char p[0x8C]; int v; };
+struct o90_int { char p[0x90]; int v; };
+struct o94_int { char p[0x94]; int v; };
+struct oA0_int { char p[0xA0]; int v; };
+struct oA0_uint { char p[0xA0]; unsigned int v; };
+struct oA4_int { char p[0xA4]; int v; };
+struct oA4_uint { char p[0xA4]; unsigned int v; };
+
 
 int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7)
 {
@@ -19,12 +29,12 @@ int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7)
     register int t10;
     register int t11;
 
-    t0 = *(int *)(((a4 + 0x50) + 0x0));
+    t0 = (((struct o50_int *)(a4))->v);
     t1 = a7;
     if ((*(int *)((a4 + 0x4))) == 1) {
         t2 = ADXPD_GetStat((*(int *)((a4 + 0x8))));
         if (t2 == 0) {
-            t2 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x88)))))((*(int *)((a4 + 0x8C))), ((a4 + 0x50) + 0x20), ((a4 + 0x50) + 0x24), ((a4 + 0x50) + 0x28));
+            t2 = ((int (*)(int, int, int, int))(((((struct o88_int *)(a4))->v))))(((((struct o8C_int *)(a4))->v)), ((a4 + 0x50) + 0x20), ((a4 + 0x50) + 0x24), ((a4 + 0x50) + 0x28));
             t2 = *(int *)(((a4 + 0x50) + 0x18));
             t3 = *(int *)(((a4 + 0x50) + 0x20));
             t4 = *(int *)(((a4 + 0x50) + 0x4));
@@ -80,8 +90,8 @@ int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7)
                 }
                 t5 = t6;
             }
-            *(unsigned int *)((a4 + 0xA0)) = t3;
-            *(unsigned int *)((a4 + 0xA4)) = (t3 * (*(signed char *)((a4 + 0xE))));
+            (((struct oA0_uint *)(a4))->v) = t3;
+            (((struct oA4_uint *)(a4))->v) = (t3 * (*(signed char *)((a4 + 0xE))));
             *(unsigned int *)((a4 + 0x4)) = 0x2;
             t0 = t5;
         }
@@ -90,7 +100,7 @@ int ADXB_ExecOneWav8(int a4, int a5, int a6, int a7)
     t0 = *(int *)((a4 + 0x4));
     t2 = t0;
     if (t0 == 2) {
-        t0 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x90)))))((*(int *)((a4 + 0x94))), (*(int *)((a4 + 0xA4))), (*(int *)((a4 + 0xA0))), t1);
+        t0 = ((int (*)(int, int, int, int))(((((struct o90_int *)(a4))->v))))(((((struct o94_int *)(a4))->v)), ((((struct oA4_int *)(a4))->v)), ((((struct oA0_int *)(a4))->v)), t1);
         *(unsigned int *)((a4 + 0x4)) = 0x3;
         t2 = t0;
     }

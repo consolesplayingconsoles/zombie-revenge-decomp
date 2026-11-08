@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_aef): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0c0340(int, float);
+int FUN_0c0c0340(int);
 void FUN_0c0cf6e4(int a4, int a5, float f4, float f5, float f6, float f7, float f8);
 
 void FUN_0c0cf6e4(int a4, int a5, float f4, float f5, float f6, float f7, float f8)
@@ -79,7 +79,7 @@ void FUN_0c0cf6e4(int a4, int a5, float f4, float f5, float f6, float f7, float 
     if (((v0_1 & 4) == 0)) goto L_C0CF7DA;
     *(unsigned int *)(((int)stk + 12)) = (*(short *)((v0_0 + 0x80)));
     *(float *)(((int)stk + 56)) = w0_2;
-    v0_5 = ((FUN_0c0c0340((((int)stk + 4) + 0x8), w0_0)));
+    v0_5 = ((FUN_0c0c0340((((int)stk + 4) + 0x8))));
     L_C0CF7DA:;
     return;
     L_C0CF75E:;
@@ -93,7 +93,7 @@ void FUN_0c0cf6e4(int a4, int a5, float f4, float f5, float f6, float f7, float 
     L_C0CF77C:;
     if ((v0_5 == 32)) goto L_C0CF78E;
     *(unsigned int *)(((int)stk + 12)) = (*(short *)((v0_0 + ((signed char)v0_3 << 1))));
-    FUN_0c0c0340((((int)stk + 4) + 0x8), w0_0);
+    FUN_0c0c0340((((int)stk + 4) + 0x8));
     L_C0CF78E:;
     *(float *)(((int)stk + 16)) = ((*(float *)(((int)stk + 16))) + (float)v0_1);
     FPUL_ = (v0_1);

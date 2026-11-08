@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c08498e(float, float, float);
-int FUN_0c0849da(int, int, int, int, int, int, int, int);
+int FUN_0c0849da(void);
 int FUN_0c0c465c(int);
 int FUN_0c0c9e86(int);
 int FUN_0c0d9dc0(float, float);
@@ -28,7 +28,7 @@ int FUN_0c0c9f70(int a4, int a5);
 
 int FUN_0c0c9f70(int a4, int a5)
 {
-    int stk[41];
+    int stk[40];
     register int t2;
     register float u10;
     register float u16;
@@ -77,70 +77,70 @@ int FUN_0c0c9f70(int a4, int a5)
         t2 = *(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC));
         nlPushMatrix(0x0);
         FUN_0c0dc0b0(0x3);
-        nlGetMatrix((((int)stk + 4) + 0x60));
+        nlGetMatrix((((int)stk + 0) + 0x60));
         FUN_0c0dc0b0(0x1);
-        FUN_0c0dbda0((((int)stk + 4) + 0x60));
+        FUN_0c0dbda0((((int)stk + 0) + 0x60));
         nlMultiMatrix((0x2AC + t2));
-        FUN_0c0db430(a5, (((int)stk + 4) + 0x50));
-        u10 = *(float *)(((int)stk + 96));
+        FUN_0c0db430(a5, (((int)stk + 0) + 0x50));
+        u10 = *(float *)(((int)stk + 92));
         if (u10 == 0.0f) {
         } else {
-            if (!((*(float *)(((int)stk + 92))) > 0.0f)) {
+            if (!((*(float *)(((int)stk + 88))) > 0.0f)) {
             } else {
-                *(float *)(((int)stk + 84)) = ((*(float *)(((int)stk + 84))) / u10);
-                *(float *)(((int)stk + 88)) = ((*(float *)(((int)stk + 88))) / (*(float *)(((int)stk + 96))));
-                u16 = *(float *)(((int)stk + 84));
+                *(float *)(((int)stk + 80)) = ((*(float *)(((int)stk + 80))) / u10);
+                *(float *)(((int)stk + 84)) = ((*(float *)(((int)stk + 84))) / (*(float *)(((int)stk + 92))));
+                u16 = *(float *)(((int)stk + 80));
                 if (!(u16 > -1.0f)) {
                 } else {
                     if (!(1.0f > u16)) {
                     } else {
-                        if (!((*(float *)(((int)stk + 88))) > -1.0f)) {
+                        if (!((*(float *)(((int)stk + 84))) > -1.0f)) {
                         } else {
-                            if (!(1.0f > (*(float *)(((int)stk + 88))))) {
+                            if (!(1.0f > (*(float *)(((int)stk + 84))))) {
                             } else {
                                 FUN_0c0c9e86(a5);
-                                { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x20)) = *(struct mv3 *)(0xC1E9CC4); }
+                                { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x20)) = *(struct mv3 *)(0xC1E9CC4); }
                                 FUN_0c0dbda0((a5 + 0x34));
-                                FUN_0c0db4d0((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x44));
-                                FUN_0c0dd050((((int)stk + 4) + 0x44));
+                                FUN_0c0db4d0((((int)stk + 0) + 0x20), (((int)stk + 0) + 0x44));
+                                FUN_0c0dd050((((int)stk + 0) + 0x44));
                                 FUN_0c0dbda0((0x2EC + t2));
-                                FUN_0c0db4d0((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x38));
-                                FUN_0c0dd050((((int)stk + 4) + 0x38));
-                                u35 = ((*(float *)(((int)stk + 76))) * (*(float *)(((int)stk + 64))));
-                                u35 = u35 + (*(float *)(((int)stk + 60))) * (*(float *)(((int)stk + 72)));
+                                FUN_0c0db4d0((((int)stk + 0) + 0x20), (((int)stk + 0) + 0x38));
+                                FUN_0c0dd050((((int)stk + 0) + 0x38));
+                                u35 = ((*(float *)(((int)stk + 72))) * (*(float *)(((int)stk + 60))));
+                                u35 = u35 + (*(float *)(((int)stk + 56))) * (*(float *)(((int)stk + 68)));
                                 u38 = u35;
-                                u38 = u38 + (*(float *)(((int)stk + 68))) * (*(float *)(((int)stk + 80)));
+                                u38 = u38 + (*(float *)(((int)stk + 64))) * (*(float *)(((int)stk + 76)));
                                 if (!(-0.699999988f > u38)) {
                                 } else {
-                                    *(float *)(((int)stk + 48)) = ((*(float *)((a5 + 0x0))) - (*(float *)((t2 + 0x31C))));
-                                    *(float *)(((int)stk + 52)) = ((*(float *)((a5 + 0x4))) - (*(float *)((t2 + 0x320))));
-                                    *(float *)(((int)stk + 56)) = ((*(float *)((a5 + 0x8))) - (*(float *)((t2 + 0x324))));
-                                    FUN_0c0dd050((((int)stk + 4) + 0x2C));
-                                    u50 = ((*(float *)(((int)stk + 52))) * (*(float *)(((int)stk + 64))));
-                                    u50 = u50 + (*(float *)(((int)stk + 60))) * (*(float *)(((int)stk + 48)));
+                                    *(float *)(((int)stk + 44)) = ((*(float *)((a5 + 0x0))) - (*(float *)((t2 + 0x31C))));
+                                    *(float *)(((int)stk + 48)) = ((*(float *)((a5 + 0x4))) - (*(float *)((t2 + 0x320))));
+                                    *(float *)(((int)stk + 52)) = ((*(float *)((a5 + 0x8))) - (*(float *)((t2 + 0x324))));
+                                    FUN_0c0dd050((((int)stk + 0) + 0x2C));
+                                    u50 = ((*(float *)(((int)stk + 48))) * (*(float *)(((int)stk + 60))));
+                                    u50 = u50 + (*(float *)(((int)stk + 56))) * (*(float *)(((int)stk + 44)));
                                     u53 = u50;
-                                    u53 = u53 + (*(float *)(((int)stk + 68))) * (*(float *)(((int)stk + 56)));
-                                    *(float *)(((int)stk + 12)) = u53;
+                                    u53 = u53 + (*(float *)(((int)stk + 64))) * (*(float *)(((int)stk + 52)));
+                                    *(float *)(((int)stk + 8)) = u53;
                                     if (!(-0.699999988f > u53)) {
                                     } else {
-                                        u54 = *(float *)(((int)stk + 84));
+                                        u54 = *(float *)(((int)stk + 80));
                                         u55 = 320.0f;
                                         u55 = u55 + u54 * 320.0f;
-                                        *(float *)(((int)stk + 16)) = u55;
-                                        u56 = *(float *)(((int)stk + 88));
+                                        *(float *)(((int)stk + 12)) = u55;
+                                        u56 = *(float *)(((int)stk + 84));
                                         u58 = (u56 * u56);
                                         u58 = u58 + u54 * u54;
-                                        *(float *)(((int)stk + 20)) = (((-(u56 * 240.0f))) + 240.0f);
+                                        *(float *)(((int)stk + 16)) = (((-(u56 * 240.0f))) + 240.0f);
                                         u59 = _builtin_sqrtf(u58);
                                         if (_builtin_sqrtf(u58) > 1.0f) {
                                             u59 = 1.0f;
                                         }
-                                        t63 = FUN_0c0d9dc0((*(float *)(((int)stk + 84))), (*(float *)(((int)stk + 88))));
-                                        u65 = ((-0.699999988f - u38) * (-0.699999988f - (*(float *)(((int)stk + 12)))));
+                                        t63 = FUN_0c0d9dc0((*(float *)(((int)stk + 80))), (*(float *)(((int)stk + 84))));
+                                        u65 = ((-0.699999988f - u38) * (-0.699999988f - (*(float *)(((int)stk + 8)))));
                                         u67 = ((FUN_0c0da410((short)t63)) * u59);
-                                        *(float *)(((int)stk + 8)) = (u67 * 270.0f);
+                                        *(float *)(((int)stk + 4)) = (u67 * 270.0f);
                                         u69 = ((FUN_0c0d9e90((short)t63)) * u59);
-                                        *(float *)(((int)stk + 4)) = (u69 * 270.0f);
+                                        *(float *)(((int)stk + 0)) = (u69 * 270.0f);
                                         t71 = 0x0;
                                         t72 = a4;
                                         u73 = 270.0f;
@@ -149,17 +149,17 @@ int FUN_0c0c9f70(int a4, int a5)
                                                 t70 = 0x4;
                                                 u75 = *(float *)((t72 + t70));
                                                 t70 = 0x4;
-                                                u76 = *(float *)((((int)stk + 4) + t70));
+                                                u76 = *(float *)((((int)stk + 0) + t70));
                                                 t70 = 0xC;
-                                                u77 = *(float *)((((int)stk + 4) + t70));
+                                                u77 = *(float *)((((int)stk + 0) + t70));
                                                 t70 = 0x14;
                                                 u78 = u77;
                                                 u78 = u78 + u76 * u75;
-                                                *(float *)((((int)stk + 4) + t70)) = u78;
+                                                *(float *)((((int)stk + 0) + t70)) = u78;
                                                 t70 = 0x10;
-                                                u80 = *(float *)((((int)stk + 4) + t70));
+                                                u80 = *(float *)((((int)stk + 0) + t70));
                                                 t70 = 0x18;
-                                                *(float *)((((int)stk + 4) + t70)) = (u80 - ((u75 * (*(float *)(((int)stk + 4))))));
+                                                *(float *)((((int)stk + 0) + t70)) = (u80 - ((u75 * (*(float *)(((int)stk + 0))))));
                                                 t70 = 0xC0CA298;
                                                 u82 = *(float *)((t70 + 0x0));
                                                 t70 = 0xC0CA29C;
@@ -167,7 +167,7 @@ int FUN_0c0c9f70(int a4, int a5)
                                                 u73 = (u73 - (((float)t71 * u82)));
                                                 t70 = (nlUnitMatrix());
                                                 t70 = 0x18;
-                                                u86 = *(float *)((((int)stk + 4) + t70));
+                                                u86 = *(float *)((((int)stk + 0) + t70));
                                                 t70 = 0xC0CA278;
                                                 u87 = *(float *)((t70 + 0x0));
                                                 t70 = 0xC0CA2A0;
@@ -176,7 +176,7 @@ int FUN_0c0c9f70(int a4, int a5)
                                                 u89 = ((u87 - u86) * u73);
                                                 u90 = *(float *)((t70 + 0x0));
                                                 t70 = 0x14;
-                                                u91 = *(float *)((((int)stk + 4) + t70));
+                                                u91 = *(float *)((((int)stk + 0) + t70));
                                                 t70 = 0xC0CA2A8;
                                                 u93 = ((u91 + u90) * u73);
                                                 t70 = (FUN_0c0dcc70((-(u93 * (*(float *)((t70 + 0x0))))), (-(u89 * u88)), u73));
@@ -217,7 +217,7 @@ int FUN_0c0c9f70(int a4, int a5)
                                             }
                                             break;
                                         }
-                                        FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
+                                        FUN_0c0849da();
                                     }
                                 }
                             }

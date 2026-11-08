@@ -2,6 +2,22 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c055aee(int a4, int a5);
+struct o210_uint { char p[0x210]; unsigned int v; };
+struct o23C_uint { char p[0x23C]; unsigned int v; };
+struct o2C4_uint { char p[0x2C4]; unsigned int v; };
+struct o2CC_uint { char p[0x2CC]; unsigned int v; };
+struct o2D4_uint { char p[0x2D4]; unsigned int v; };
+struct o330_int { char p[0x330]; int v; };
+struct o334_uint { char p[0x334]; unsigned int v; };
+struct o33C_uint { char p[0x33C]; unsigned int v; };
+struct o344_int { char p[0x344]; int v; };
+struct o348_int { char p[0x348]; int v; };
+struct o3AC_uint { char p[0x3AC]; unsigned int v; };
+struct oBC_int { char p[0xBC]; int v; };
+struct o0_short { short v; };
+struct o6_short { char p[0x6]; short v; };
+
+
 
 int FUN_0c055aee(int a4, int a5)
 {
@@ -23,12 +39,12 @@ int FUN_0c055aee(int a4, int a5)
     v0_1 = a5;
     v0_5 = *(int *)(((0xC247634 + (v0_1 << 2)) + 0x0));
     *(unsigned int *)(((int)stk + 4)) = (*(int *)(((0xC2475D4 + (v0_1 << 2)) + 0x0)));
-    *(unsigned int *)((v0_0 + 0x3AC)) = 0x0;
-    *(unsigned int *)((v0_0 + 0x33C)) = v0_1;
-    *(unsigned int *)((v0_0 + 0x2CC)) = 0x1;
+    (((struct o3AC_uint *)(v0_0))->v) = 0x0;
+    (((struct o33C_uint *)(v0_0))->v) = v0_1;
+    (((struct o2CC_uint *)(v0_0))->v) = 0x1;
     *(unsigned int *)((((v0_1 << 2) + 0xC247604) + 0x0)) = 0x2;
-    *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x23C)) = (*(int *)((v0_0 + 0xBC)));
-    v0_2 = *(int *)((v0_0 + 0x330));
+    (((struct o23C_uint *)((*(int *)(((int)stk + 4)))))->v) = ((((struct oBC_int *)(v0_0))->v));
+    v0_2 = (((struct o330_int *)(v0_0))->v);
     v0_3 = (v0_2);
     v0_4 = (((v0_5 << 2) << 1));
     v0_1 = ((((int)0x1 << (int)v0_5) & 0xFC77800));
@@ -43,53 +59,53 @@ int FUN_0c055aee(int a4, int a5)
     L_C055C2A:;
     v0_2 = (0xC1FEBA4);
     if ((v0_1 == 0)) goto L_C055C50;
-    v0_1 = *(int *)((v0_0 + 0x344));
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x0)));
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x6)));
+    v0_1 = (((struct o344_int *)(v0_0))->v);
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x0)));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x6)));
     v0_1 = (0x5B);
     L_C055C6E:;
-    *(unsigned int *)((v0_0 + 0x210)) = v0_1;
+    (((struct o210_uint *)(v0_0))->v) = v0_1;
     v0_3 = (0x210);
     goto L_C055C72;
     L_C055C50:;
-    v0_1 = *(int *)((v0_0 + 0x344));
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x0)));
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x6)));
+    v0_1 = (((struct o344_int *)(v0_0))->v);
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x0)));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + v0_2) + 0x6)));
     v0_1 = (0x5C);
     goto L_C055C6E;
     L_C055BE4:;
     if ((v0_1 == 0)) goto L_C055C0E;
-    v0_1 = *(int *)((v0_0 + 0x348));
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + 0xC1FEAEC) + 0x0)));
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + 0xC1FEAEC) + 0x6)));
-    *(unsigned int *)((v0_0 + 0x210)) = 0x59;
+    v0_1 = (((struct o348_int *)(v0_0))->v);
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + 0xC1FEAEC) + 0x0)));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((((v0_1 << 2) << 1) + 0xC1FEAEC) + 0x6)));
+    (((struct o210_uint *)(v0_0))->v) = 0x59;
     v0_3 = (0x210);
     goto L_C055C72;
     L_C055C0E:;
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)0xC1FEB9C);
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)0xC1FEBA2);
-    *(unsigned int *)((v0_0 + 0x210)) = 0x5A;
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)((((struct o0_short *)0xC1FEB9C)->v));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)((((struct o6_short *)0xC1FEB9C)->v));
+    (((struct o210_uint *)(v0_0))->v) = 0x5A;
     v0_3 = (0x210);
     goto L_C055C72;
     L_C055BA6:;
     if (!((v0_1 == 0))) goto L_C055BAA;
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)0xC1FEA2C);
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)0xC1FEA32);
-    *(unsigned int *)((v0_0 + 0x210)) = 0x58;
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)((((struct o0_short *)0xC1FEA2C)->v));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)((((struct o6_short *)0xC1FEA2C)->v));
+    (((struct o210_uint *)(v0_0))->v) = 0x58;
     v0_3 = (0x210);
     goto L_C055C72;
     L_C055BAA:;
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)(((0xC1FEA3C + v0_4) + 0x0)));
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((0xC1FEA3C + v0_4) + 0x4)));
-    *(unsigned int *)((v0_0 + 0x210)) = 0x55;
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((0xC1FEA3C + v0_4) + 0x0)));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((0xC1FEA3C + v0_4) + 0x4)));
+    (((struct o210_uint *)(v0_0))->v) = 0x55;
     v0_3 = (0x210);
     goto L_C055C72;
     L_C055B80:;
     if ((v0_1 != 0)) goto L_C055BAA;
-    *(unsigned int *)((v0_0 + 0x2D4)) = v0_5;
-    *(unsigned int *)((v0_0 + 0x2C4)) = (unsigned short)(*(short *)(((0xC1FEC54 + v0_4) + 0x0)));
-    *(unsigned int *)(((0x334 + v0_0) + 0x0)) = (unsigned short)(*(short *)(((0xC1FEC54 + v0_4) + 0x4)));
-    *(unsigned int *)((v0_0 + 0x210)) = 0x56;
+    (((struct o2D4_uint *)(v0_0))->v) = v0_5;
+    (((struct o2C4_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((0xC1FEC54 + v0_4) + 0x0)));
+    (((struct o334_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((0xC1FEC54 + v0_4) + 0x4)));
+    (((struct o210_uint *)(v0_0))->v) = 0x56;
     v0_3 = (0x210);
     goto L_C055C72;
 }

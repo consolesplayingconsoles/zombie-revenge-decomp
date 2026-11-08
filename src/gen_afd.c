@@ -4,6 +4,10 @@
 int FUN_0c0da2e0(void);
 int FUN_0c0e5f1c(void);
 int FUN_0c04313c(int a4);
+struct o498_int { char p[0x498]; int v; };
+struct o4E0_uint { char p[0x4E0]; unsigned int v; };
+struct oC0_int { char p[0xC0]; int v; };
+
 
 int FUN_0c04313c(int a4)
 {
@@ -43,10 +47,10 @@ int FUN_0c04313c(int a4)
     L_C0431C8:;
     v0_6 = *(int *)(((v0_2 + v0_3) + 0x0));
     v0_5 = (v0_6);
-    if (((*(int *)((v0_6 + 0xC0))) != 8)) goto L_C0431EC;
+    if ((((((struct oC0_int *)(v0_6))->v)) != 8)) goto L_C0431EC;
     *(unsigned int *)((v0_1 + 0x0)) = ((*(int *)((v0_1 + 0x0))) | v0_0);
-    *(unsigned int *)((v0_5 + 0x4E0)) = (*(int *)(((*(int *)(((int)stk + 4))) + 0x498)));
-    v0_0 = ((*(int *)((v0_5 + 0x498))));
+    (((struct o4E0_uint *)(v0_5))->v) = ((((struct o498_int *)((*(int *)(((int)stk + 4)))))->v));
+    v0_0 = (((((struct o498_int *)(v0_5))->v)));
     L_C0431F4:;
     return v0_0;
     L_C0431EC:;

@@ -8,6 +8,14 @@ int nlPopMatrix(int);
 int nlRotateAX(int);
 int nlRotateAY(int);
 void FUN_0c036256(int a4);
+struct o1E0_int { char p[0x1E0]; int v; };
+struct o304_int { char p[0x304]; int v; };
+struct o308_int { char p[0x308]; int v; };
+struct o48C_int { char p[0x48C]; int v; };
+struct o5C4_int { char p[0x5C4]; int v; };
+struct o5C4_uint { char p[0x5C4]; unsigned int v; };
+struct o6E_short { char p[0x6E]; short v; };
+
 
 void FUN_0c036256(int a4)
 {
@@ -45,19 +53,19 @@ void FUN_0c036256(int a4)
     goto L_C03637C;
     L_C036286:;
     v0_3 = (0x5C4);
-    v0_1 = ((*(int *)((v0_0 + 0x5C4))));
+    v0_1 = (((((struct o5C4_int *)(v0_0))->v)));
     if (((v0_2 & 0x1) != 0)) goto L_C0362A2;
     v0_3 = (0x308);
-    w0_0 = ((float)(*(int *)((v0_0 + 0x304))));
-    FPUL_ = ((*(int *)((v0_0 + 0x308))));
+    w0_0 = ((float)((((struct o304_int *)(v0_0))->v)));
+    FPUL_ = (((((struct o308_int *)(v0_0))->v)));
     L_C0362B4:;
     w0_0 = ((w0_0 / (float)FPUL_));
     if (((*(int *)((v0_1 + 0x4))) == 0)) goto L_C03637C;
     if ((w0_0 > (*(float *)((v0_1 + 0x0))))) goto L_C03637C;
     v0_2 = (0xFFFF8000);
-    if (((*(int *)((v0_0 + 0x48C))) != 46)) goto L_C036300;
+    if ((((((struct o48C_int *)(v0_0))->v)) != 46)) goto L_C036300;
     v0_3 = (0x6E);
-    v0_3 = ((*(short *)((v0_0 + 0x6E))));
+    v0_3 = (((((struct o6E_short *)(v0_0))->v)));
     L_C036304:;
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x18)) = *(struct mv3 *)((v0_0 + 0x30)); }
     *(float *)(((int)stk + 32)) = ((*(float *)(((int)stk + 32))) + (*(float *)0xC036448));
@@ -82,12 +90,12 @@ void FUN_0c036256(int a4)
     if (v0_2) goto L_C036378;
     if ((!(w0_0 > (*(float *)((v0_1 + 0x0)))))) goto L_C03633C;
     L_C036378:;
-    *(unsigned int *)((v0_0 + 0x5C4)) = v0_1;
+    (((struct o5C4_uint *)(v0_0))->v) = v0_1;
     v0_3 = (0x5C4);
     goto L_C03637C;
     L_C036300:;
     v0_3 = (0x1E0);
-    v0_3 = ((*(int *)((v0_0 + 0x1E0))));
+    v0_3 = (((((struct o1E0_int *)(v0_0))->v)));
     goto L_C036304;
     L_C0362A2:;
     v0_3 = *(int *)0xC9433B0;

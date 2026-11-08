@@ -12,6 +12,10 @@ int nlRotateAY(int);
 int nlRotateAZ(int);
 int nlUnitMatrix(void);
 int FUN_0c062180(int a4, int a5);
+struct o10_float { char p[0x10]; float v; };
+struct o14_float { char p[0x14]; float v; };
+struct oC_float { char p[0xC]; float v; };
+
 
 int FUN_0c062180(int a4, int a5)
 {
@@ -30,9 +34,11 @@ int FUN_0c062180(int a4, int a5)
     register int v0_0;
     register int v0_1;
     register int v0_2;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
     v0_0 = a4;
     v0_1 = a5;
-    *(unsigned int *)(((int)stk + 4)) = v0_0;
+    R1004 = v0_0;
     v0_2 = *(int *)0xC247B84;
     v0_0 = (v0_2);
     v0_1 = (v0_1);
@@ -53,7 +59,7 @@ int FUN_0c062180(int a4, int a5)
     *(unsigned int *)((v0_1 + 0x1C)) = 0x114;
     *(unsigned int *)((v0_1 + 0x20)) = 0x2;
     *(unsigned int *)((v0_1 + 0x18)) = 0x64;
-    { struct mv3 { int w[3]; }; *(struct mv3 *)(v0_1) = *(struct mv3 *)((*(int *)(((int)stk + 4)))); }
+    { struct mv3 { int w[3]; }; *(struct mv3 *)(v0_1) = *(struct mv3 *)((R1004)); }
     nlPushMatrix(0x0);
     v0_0 = FUN_0c0da2e0();
     nlRotateAZ((v0_0 << 1));
@@ -61,9 +67,9 @@ int FUN_0c062180(int a4, int a5)
     *(float *)(((int)stk + 24)) = 0.0299999993f;
     *(float *)(((int)stk + 28)) = (((-((float)((FUN_0c0da2e0()) & 0xFFF) * 2.44200219e-05f))) + -2.0f);
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0xC) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x10) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((v0_1 + 0x14) + 0x0)) = (*(float *)(((int)stk + 16)));
+    (((struct oC_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o10_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
+    (((struct o14_float *)(v0_1))->v) = (*(float *)(((int)stk + 16)));
     v0_0 = FUN_0c0da2e0();
     FUN_0c0dce80((((int)stk + 4) + 0x10), (v0_1 + 0xC), ((float)(v0_0 & 0xFFF) * 0.00024420023f));
     nlAddVector(v0_1, (((int)stk + 4) + 0x10));

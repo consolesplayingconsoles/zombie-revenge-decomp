@@ -164,7 +164,7 @@ int FUN_0c0b53c0(int a4, int a5, int a6)
     *(unsigned int *)((v0_2 + 0x0)) = ((R1012) + 0x1);
     *(unsigned int *)((v0_3 + 0x0)) = v0_1;
     if (((int)(*(int *)((v0_2 + 0x0))) < (int)0x4)) goto L_C0B562C;
-    *(unsigned int *)(((0x44 + v0_0) + 0x0)) = 0x9;
+    (((struct o44_uint *)(v0_0))->v) = 0x9;
     goto L_C0B562C;
     L_C0B5412:;
     if ((v0_4 != 5)) goto L_C0B541A;
@@ -221,7 +221,7 @@ int FUN_0c0b53c0(int a4, int a5, int a6)
     L_C0B56D2:;
     if (((int)(*(int *)0xC23EB24) >= 0)) goto L_C0B56EA;
     *(unsigned int *)((v0_2 + 0x0)) = 0xFFFFFFFF;
-    *(unsigned int *)(((0x44 + v0_0) + 0x0)) = 0xC;
+    (((struct o44_uint *)(v0_0))->v) = 0xC;
     goto L_C0B58D4;
     L_C0B56EA:;
     if (((int)((((struct o50_int *)(v0_0))->v)) < 0)) goto L_C0B56F6;

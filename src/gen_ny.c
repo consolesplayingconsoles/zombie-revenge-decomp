@@ -8,6 +8,9 @@ float nlLength(int, int);
 float nlTan(int);
 int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8);
 float FUN_0c035828(int a4, int a5, int a6, int a7, int a8, float f4, float f5);
+struct o0_float { float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8)
 {
@@ -16,7 +19,6 @@ int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8)
     register float u1;
     register float u2;
     register float u3;
-    register int t4;
     register int t13;
     register int t14;
     register int t15;
@@ -26,12 +28,10 @@ int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8)
     register int t21;
     register float u24;
     register float u25;
-    register int t29;
     register int t31;
     int t32;
     register int t43;
     register int t6;
-    register int t9;
     register int t18;
     register int t19;
 
@@ -39,38 +39,36 @@ int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8)
     *(unsigned int *)(((int)stk + 16)) = a6;
     *(unsigned int *)(((int)stk + 20)) = a7;
     u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)0xC23FE68;
+    u1 = (((struct o0_float *)0xC23FE68)->v);
     u2 = *(float *)((a4 + 0x8));
-    u3 = *(float *)0xC23FE70;
+    u3 = (((struct o8_float *)0xC23FE68)->v);
     *(unsigned int *)(((int)stk + 32)) = (((int)((u0 - u1) * 0.049999997f) & 0x3F) - 2);
     if ((int)(((int)((u0 - u1) * 0.049999997f) & 0x3F) - 2) < 0) {
         *(unsigned int *)(((int)stk + 32)) = 0x0;
         t6 = (((int)((u0 - u1) * 0.049999997f) & 0x3F) + 0x2);
     } else {
-        t4 = (((int)((u0 - u1) * 0.049999997f) & 0x3F) + 0x2);
+        t6 = (((int)((u0 - u1) * 0.049999997f) & 0x3F) + 0x2);
         if ((int)(((int)((u0 - u1) * 0.049999997f) & 0x3F) + 0x2) > (int)0x3F) {
-            t4 = 0x3F;
+            t6 = 0x3F;
         }
-        t6 = t4;
     }
     if ((int)(((int)((u2 - u3) * 0.049999997f) & 0x1F) - 2) < 0) {
         *(unsigned int *)(((int)stk + 36)) = (((int)((u2 - u3) * 0.049999997f) & 0x1F) + 0x2);
-        t9 = 0x0;
+        t16 = 0x0;
     } else {
         *(unsigned int *)(((int)stk + 36)) = (((int)((u2 - u3) * 0.049999997f) & 0x1F) + 0x2);
         if ((int)(((int)((u2 - u3) * 0.049999997f) & 0x1F) + 0x2) > (int)0x1F) {
             *(unsigned int *)(((int)stk + 36)) = 0x1F;
         }
-        t9 = (((int)((u2 - u3) * 0.049999997f) & 0x1F) - 2);
+        t16 = (((int)((u2 - u3) * 0.049999997f) & 0x1F) - 2);
     }
     *(unsigned int *)(((int)stk + 40)) = 0x0;
     *(unsigned int *)0xC245FA4 = ((*(int *)0xC245FA4) + 0x1);
-    *(unsigned int *)(((int)stk + 8)) = t9;
-    *(unsigned int *)(((int)stk + 28)) = ((((t9 << 1) + t9) << 8) + 0xC23FF94);
+    *(unsigned int *)(((int)stk + 8)) = t16;
+    *(unsigned int *)(((int)stk + 28)) = ((((t16 << 1) + t16) << 8) + 0xC23FF94);
     t13 = 0xC23FF94;
     t14 = 0x1F;
     t15 = (((int)((u2 - u3) * 0.049999997f) & 0x1F) + 0x2);
-    t16 = t9;
     t17 = ((int)((u2 - u3) * 0.049999997f) & 0x1F);
     t20 = (((int)((u0 - u1) * 0.049999997f) & 0x3F) + 0x2);
     t21 = 0x0;
@@ -81,13 +79,12 @@ int FUN_0c01e822(int a4, int a5, int a6, int a7, int a8)
             break;
         }
         t18 = (*(int *)(((int)stk + 32)));
-        t29 = *(int *)(((int)stk + 28));
+        t31 = *(int *)(((int)stk + 28));
         t19 = t18;
         t19 = (t19 << 1);
         t19 = (t19 + t18);
         t19 = (t19 << 2);
-        t19 = (t19 + t29);
-        t31 = t29;
+        t19 = (t19 + t31);
         t32 = t18;
         for (;;) {
             if ((int)t18 > (int)t6) {

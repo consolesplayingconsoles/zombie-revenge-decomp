@@ -4,7 +4,7 @@
 int FUN_0c010c40(int);
 int FUN_0c02286c(int, int, float, float);
 int FUN_0c02a19a(int);
-int FUN_0c03d588(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c03d588(int, int, int, int);
 int FUN_0c04685c(int, int, float, float);
 int FUN_0c05808a(void);
 int FUN_0c088ec4(int, int);
@@ -50,7 +50,7 @@ int FUN_0c03e178(int a4)
 
     *(int *)((int)stk + 4) = a4;
     FUN_0c088ec4(a4, 0xB4);
-    FUN_0c03d588(a4, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+    FUN_0c03d588(a4, 0x0, 0x0, 0x0);
     return FUN_0c0cc3f8(0x132A9);
 }
 

@@ -3,6 +3,9 @@
 
 int FUN_0c0dce80(int, int, float);
 int FUN_0c0be7ae(int a4, float f4);
+struct o4_float { char p[0x4]; float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 int FUN_0c0be7ae(int a4, float f4)
 {
@@ -56,8 +59,8 @@ int FUN_0c0be7ae(int a4, float f4)
     FUN_0c0dce80(((int)stk + 4), v0_3, w0_0);
     *(float *)((v0_3 + 0x0)) = (*(float *)(((int)stk + 4)));
     *(unsigned int *)((v0_3 + 0x0)) = ((*(int *)((v0_3 + 0x0))) | R13);
-    *(float *)((v0_3 + 0x4)) = (*(float *)(((int)stk + 8)));
-    *(float *)((v0_3 + 0x8)) = (*(float *)(((int)stk + 12)));
+    (((struct o4_float *)(v0_3))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o8_float *)(v0_3))->v) = (*(float *)(((int)stk + 12)));
     v0_0 = (0x8);
     v0_3 = ((v0_3 + 0x20));
     goto L_C0BE822;
@@ -80,8 +83,8 @@ int FUN_0c0be7ae(int a4, float f4)
     FUN_0c0dce80(((int)stk + 4), v0_3, w0_0);
     *(float *)((v0_3 + 0x0)) = (*(float *)(((int)stk + 4)));
     *(unsigned int *)((v0_3 + 0x0)) = ((*(int *)((v0_3 + 0x0))) | R13);
-    *(float *)((v0_3 + 0x4)) = (*(float *)(((int)stk + 8)));
-    *(float *)((v0_3 + 0x8)) = (*(float *)(((int)stk + 12)));
+    (((struct o4_float *)(v0_3))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o8_float *)(v0_3))->v) = (*(float *)(((int)stk + 12)));
     v0_0 = (0x8);
     v0_3 = ((v0_3 + 0x20));
     goto L_C0BE868;

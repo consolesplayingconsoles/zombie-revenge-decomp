@@ -4,6 +4,14 @@
 int FUN_0c0c0340(int, float);
 int FUN_0c0e19f2(int, int, int, int);
 int FUN_0c0b3e32(int a4, int a5, int a6, int a7, float f4);
+struct o420_int { char p[0x420]; int v; };
+struct o88_int { char p[0x88]; int v; };
+struct o88_uint { char p[0x88]; unsigned int v; };
+struct o94_int { char p[0x94]; int v; };
+struct o94_uint { char p[0x94]; unsigned int v; };
+struct o9C_int { char p[0x9C]; int v; };
+struct o9C_uint { char p[0x9C]; unsigned int v; };
+
 
 int FUN_0c0b3e32(int a4, int a5, int a6, int a7, float f4)
 {
@@ -11,22 +19,22 @@ int FUN_0c0b3e32(int a4, int a5, int a6, int a7, float f4)
     register int t1;
     register int t2;
 
-    t0 = *(int *)((a4 + 0x88));
+    t0 = (((struct o88_int *)(a4))->v);
     t1 = *(int *)0xC247CAC;
-    if ((*(int *)((a4 + 0x9C))) == 0) {
+    if (((((struct o9C_int *)(a4))->v)) == 0) {
         t2 = 0x420;
-        if ((int)(*(int *)((t1 + 0x420))) >= (int)(*(int *)((t0 + 0x0)))) {
-            *(unsigned int *)((a4 + 0x94)) = (*(int *)((t0 + 0x4)));
-            *(unsigned int *)((a4 + 0x9C)) = 0x1;
+        if ((int)((((struct o420_int *)(t1))->v)) >= (int)(*(int *)((t0 + 0x0)))) {
+            (((struct o94_uint *)(a4))->v) = (*(int *)((t0 + 0x4)));
+            (((struct o9C_uint *)(a4))->v) = 0x1;
             t2 = 0x9C;
         }
         return t2;
     }
-    t2 = *(int *)((a4 + 0x94));
-    *(unsigned int *)((a4 + 0x94)) = (t2 - 1);
+    t2 = (((struct o94_int *)(a4))->v);
+    (((struct o94_uint *)(a4))->v) = (t2 - 1);
     if ((int)(t2 - 1) <= 0) {
-        *(unsigned int *)((a4 + 0x88)) = (t0 + 0xC);
-        *(unsigned int *)((a4 + 0x9C)) = 0x0;
+        (((struct o88_uint *)(a4))->v) = (t0 + 0xC);
+        (((struct o9C_uint *)(a4))->v) = 0x0;
         if ((int)(*(int *)(((t0 + 0xC) + 0x0))) < 0) {
             return FUN_0c0e19f2((t0 + 0xC), t1, a6, a7);
         }

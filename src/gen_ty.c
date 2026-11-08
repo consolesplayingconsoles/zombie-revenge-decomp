@@ -3,6 +3,9 @@
 
 int FUN_0c01ef2a(int, int, int, int, int);
 float FUN_0c01f1b8(int a4, int a5);
+struct o0_float { float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 float FUN_0c01f1b8(int a4, int a5)
 {
@@ -36,9 +39,9 @@ float FUN_0c01f1b8(int a4, int a5)
 
     *(unsigned int *)(((int)stk + 12)) = a5;
     u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)0xC23FE68;
+    u1 = (((struct o0_float *)0xC23FE68)->v);
     u2 = *(float *)((a4 + 0x8));
-    u3 = *(float *)0xC23FE70;
+    u3 = (((struct o8_float *)0xC23FE68)->v);
     *(unsigned int *)(((int)stk + 16)) = (((int)((u0 - u1) * 0.049999997f) & 0x3F) - 2);
     if ((int)(((int)((u0 - u1) * 0.049999997f) & 0x3F) - 2) < 0) {
         *(unsigned int *)(((int)stk + 16)) = 0x0;

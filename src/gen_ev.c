@@ -2,6 +2,12 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0b6aa8(void);
+struct o0_int { int v; };
+struct o20_int { char p[0x20]; int v; };
+struct o24_int { char p[0x24]; int v; };
+struct o28_int { char p[0x28]; int v; };
+struct o4_int { char p[0x4]; int v; };
+
 
 int FUN_0c0b6aa8(void)
 {
@@ -23,15 +29,23 @@ int FUN_0c0b6aa8(void)
     register int v0_6;
     register int v0_7;
     register int v0_8;
-    v0_4 = *(int *)0xC2498B8;
-    v0_1 = *(int *)0xC2498B4;
-    v0_0 = *(int *)0xC2498D4;
-    *(unsigned int *)(((int)stk + 4)) = (*(int *)0xC2498D8);
-    v0_2 = *(int *)0xC2498DC;
+    int R1004;
+    int R1008;
+    int R1012;
+    int R1016;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
+    R1012 = *(int *)((int)stk + 12);
+    R1016 = *(int *)((int)stk + 16);
+    v0_4 = (((struct o4_int *)0xC2498B4)->v);
+    v0_1 = (((struct o0_int *)0xC2498B4)->v);
+    v0_0 = (((struct o20_int *)0xC2498B4)->v);
+    R1004 = ((((struct o24_int *)0xC2498B4)->v));
+    v0_2 = (((struct o28_int *)0xC2498B4)->v);
     v0_3 = *(int *)0xC24FAB0;
-    *(unsigned int *)(((int)stk + 16)) = (*(int *)((v0_3 + 0x1C)));
-    *(unsigned int *)(((int)stk + 8)) = (*(int *)((v0_3 + 0x20)));
-    *(unsigned int *)(((int)stk + 12)) = 0x0;
+    R1016 = (*(int *)((v0_3 + 0x1C)));
+    R1008 = (*(int *)((v0_3 + 0x20)));
+    R1012 = 0x0;
     v0_0 = (v0_0);
     R12 = (v0_1);
     v0_1 = (0x0);
@@ -39,11 +53,11 @@ int FUN_0c0b6aa8(void)
     v0_2 = (v0_2);
     v0_6 = (v0_4);
     L_C0B6ADA:;
-    v0_4 = *(int *)(((int)stk + 16));
-    *(unsigned int *)(((int)stk + 16)) = (v0_4 + 0x4);
-    v0_5 = *(int *)(((int)stk + 16));
+    v0_4 = R1016;
+    R1016 = (v0_4 + 0x4);
+    v0_5 = R1016;
     v0_4 = *(int *)((((v0_4 + 0x4) - 4) + 0x0));
-    *(unsigned int *)(((int)stk + 16)) = (v0_5 + 0x4);
+    R1016 = (v0_5 + 0x4);
     v0_5 = *(int *)((((v0_5 + 0x4) - 4) + 0x0));
     v0_8 = (v0_5);
     R5 = (v0_4);
@@ -61,7 +75,7 @@ int FUN_0c0b6aa8(void)
     L_C0B6B28:;
     *(unsigned char *)((R12 + 0x0)) = R5;
     *(unsigned char *)((v0_6 + 0x0)) = v0_4;
-    *(unsigned int *)(((int)stk + 12)) = ((*(int *)(((int)stk + 12))) + 0x1);
+    R1012 = ((R1012) + 0x1);
     v0_5 = (v0_8 - 1) != 0;
     v0_8 = ((v0_8 - 1));
     R12 = ((R12 + 0x1));
@@ -85,16 +99,16 @@ int FUN_0c0b6aa8(void)
     L_C0B6B40:;
     v0_4 = (0x4B0);
     L_C0B6B78:;
-    v0_5 = *(int *)(((int)stk + 12));
-    *(unsigned int *)(((int)stk + 12)) = (v0_5 + 0x1);
+    v0_5 = R1012;
+    R1012 = (v0_5 + 0x1);
     if (((int)((v0_5 + 0x1) - 1) < (int)v0_4)) goto L_C0B6B70;
     v0_5 = (v0_1);
     L_C0B6B86:;
-    v0_6 = *(int *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 8)) = (v0_6 + 0x4);
-    v0_7 = *(int *)(((int)stk + 8));
+    v0_6 = R1008;
+    R1008 = (v0_6 + 0x4);
+    v0_7 = R1008;
     v0_6 = *(int *)((((v0_6 + 0x4) - 4) + 0x0));
-    *(unsigned int *)(((int)stk + 8)) = (v0_7 + 0x4);
+    R1008 = (v0_7 + 0x4);
     v0_8 = *(int *)((((v0_7 + 0x4) - 4) + 0x0));
     v0_7 = (v0_8);
     R5 = (v0_6);
@@ -102,8 +116,8 @@ int FUN_0c0b6aa8(void)
     R12 = ((~R5));
     L_C0B6BA0:;
     *(unsigned int *)((v0_0 + 0x0)) = ((~v0_3) & R5);
-    v0_6 = *(int *)(((int)stk + 4));
-    *(unsigned int *)(((int)stk + 4)) = (v0_6 + 0x4);
+    v0_6 = R1004;
+    R1004 = (v0_6 + 0x4);
     *(unsigned int *)((((v0_6 + 0x4) - 0x4) + 0x0)) = (v0_3 & R12);
     *(unsigned int *)((v0_2 + 0x0)) = R5;
     v0_6 = (v0_7 - 0x1) != 0;
@@ -121,8 +135,8 @@ int FUN_0c0b6aa8(void)
     return R0;
     L_C0B6BC2:;
     *(unsigned int *)((v0_0 + 0x0)) = v0_1;
-    v0_3 = *(int *)(((int)stk + 4));
-    *(unsigned int *)(((int)stk + 4)) = (v0_3 + 0x4);
+    v0_3 = R1004;
+    R1004 = (v0_3 + 0x4);
     *(unsigned int *)((((v0_3 + 0x4) - 0x4) + 0x0)) = v0_1;
     *(unsigned int *)((v0_2 + 0x0)) = v0_1;
     v0_0 = ((v0_0 + 0x4));

@@ -6,6 +6,10 @@ int make_header(int, int);
 int mpdrv_clear_deviceinfo(int);
 int mpdrv_make_deviceinfo(int, int, int);
 int mpdrv_make_exdevicedata(int a4, int a5, int a6, int a7, int a8);
+struct o10_uchar { char p[0x10]; unsigned char v; };
+struct o10C4_int { char p[0x10C4]; int v; };
+struct o10D8_int { char p[0x10D8]; int v; };
+
 
 int mpdrv_make_exdevicedata(int a4, int a5, int a6, int a7, int a8)
 {
@@ -62,7 +66,7 @@ int mpdrv_make_exdevicedata(int a4, int a5, int a6, int a7, int a8)
     L_C2318E2:;
     if (((*(signed char *)((v0_5 + 0x0))) == 0)) goto L_C231914;
     if (((*(signed char *)((v0_5 + 0x7))) == 0)) goto L_C231914;
-    if (((*(int *)((0x10C4 + (*(int *)0xC98E18C)))) != 1)) goto L_C231914;
+    if ((((((struct o10C4_int *)((*(int *)0xC98E18C)))->v)) != 1)) goto L_C231914;
     v0_4 = *(int *)((v0_2 + 0x0));
     v0_0 = (v0_4);
     if ((v0_4 == -1)) goto L_C231914;
@@ -70,11 +74,11 @@ int mpdrv_make_exdevicedata(int a4, int a5, int a6, int a7, int a8)
     FUN_0c233dbc(v0_2, ((unsigned char)(*(int *)((v0_2 + 0x0))) + 0x1));
     L_C231914:;
     if (((*(signed char *)((v0_5 + 0x2))) == 0)) goto L_C231926;
-    *(unsigned char *)((v0_1 + 0x10)) = v0_3;
+    (((struct o10_uchar *)(v0_1))->v) = v0_3;
     mpdrv_make_deviceinfo(v0_1, v0_5, v0_2);
     L_C231926:;
     if (((*(signed char *)((v0_5 + 0x3))) == 0)) goto L_C231934;
-    *(unsigned char *)((v0_1 + 0x10)) = v0_3;
+    (((struct o10_uchar *)(v0_1))->v) = v0_3;
     mpdrv_clear_deviceinfo(v0_1);
     L_C231934:;
     return 0x0;
@@ -89,7 +93,7 @@ int mpdrv_make_exdevicedata(int a4, int a5, int a6, int a7, int a8)
     goto L_C2318CE;
     L_C231898:;
     *(unsigned int *)((v0_5 + 0x24)) = ((*(int *)((v0_5 + 0x24))) + 0x1);
-    if (((unsigned int)(*(int *)((v0_5 + 0x24))) > (unsigned int)(*(int *)(((*(int *)0xC98E18C) + 0x10D8))))) goto L_C2318BE;
+    if (((unsigned int)(*(int *)((v0_5 + 0x24))) > (unsigned int)((((struct o10D8_int *)((*(int *)0xC98E18C)))->v)))) goto L_C2318BE;
     *(unsigned char *)((v0_5 + 0x4)) = v0_0;
     goto L_C2318E2;
     L_C2318BE:;

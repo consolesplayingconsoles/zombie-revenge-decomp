@@ -36,6 +36,13 @@ struct oA4_uint { char p[0xA4]; unsigned int v; };
 struct oB4_int { char p[0xB4]; int v; };
 struct oB8_int { char p[0xB8]; int v; };
 struct oB8_uint { char p[0xB8]; unsigned int v; };
+struct oA8_int { char p[0xA8]; int v; };
+struct oA8_uint { char p[0xA8]; unsigned int v; };
+struct oAC_int { char p[0xAC]; int v; };
+struct oAC_uint { char p[0xAC]; unsigned int v; };
+struct oB0_int { char p[0xB0]; int v; };
+struct oB0_uint { char p[0xB0]; unsigned int v; };
+
 
 
 int FUN_0c0ac548(int a4, int a5, int a6, int a7)
@@ -120,18 +127,18 @@ int FUN_0c0ac548(int a4, int a5, int a6, int a7)
     L_C0AC648:;
     R1004 = (0xA8 + v0_0);
     v0_1 = FUN_0c0da2e0();
-    v0_2 = *(int *)(((0xA8 + v0_0) + 0x0));
-    *(unsigned int *)(((0xA8 + v0_0) + 0x0)) = (v0_2 + (v0_1 & 0x1FF));
+    v0_2 = (((struct oA8_int *)(v0_0))->v);
+    (((struct oA8_uint *)(v0_0))->v) = (v0_2 + (v0_1 & 0x1FF));
     w0_0 = FUN_0c0da410((v0_2 + (v0_1 & 0x1FF)));
     R1004 = (0xAC + v0_0);
     v0_1 = FUN_0c0da2e0();
-    v0_2 = *(int *)(((0xAC + v0_0) + 0x0));
-    *(unsigned int *)(((0xAC + v0_0) + 0x0)) = (v0_2 + (v0_1 & 0x1FF));
+    v0_2 = (((struct oAC_int *)(v0_0))->v);
+    (((struct oAC_uint *)(v0_0))->v) = (v0_2 + (v0_1 & 0x1FF));
     w0_1 = FUN_0c0da410((v0_2 + (v0_1 & 0x1FF)));
     R1004 = (0xB0 + v0_0);
     v0_1 = FUN_0c0da2e0();
-    v0_2 = *(int *)(((0xB0 + v0_0) + 0x0));
-    *(unsigned int *)(((0xB0 + v0_0) + 0x0)) = (v0_2 + (v0_1 & 0x1FF));
+    v0_2 = (((struct oB0_int *)(v0_0))->v);
+    (((struct oB0_uint *)(v0_0))->v) = (v0_2 + (v0_1 & 0x1FF));
     w0_2 = FUN_0c0da410((v0_2 + (v0_1 & 0x1FF)));
     (((struct o9C_uint *)(v0_0))->v) = (int)(w0_0 * 910.0f);
     (((struct oA0_uint *)(v0_0))->v) = (int)(w0_1 * 873.0f);

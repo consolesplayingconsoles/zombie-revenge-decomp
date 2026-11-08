@@ -14,7 +14,6 @@ int FUN_0c0be578(int a4, int a5)
     register int t6;
     register int t7;
     register int t11;
-    register int t13;
     register int t14;
     register int t15;
     register int t16;
@@ -48,11 +47,10 @@ int FUN_0c0be578(int a4, int a5)
         t5 = (t5 + t6);
     }
     t11 = FUN_0c0e262a(((t7 << 2) << 2));
-    t13 = FUN_0c0e262a(((((t3 << 2) << 1) + t3) << 2));
+    t15 = FUN_0c0e262a(((((t3 << 2) << 1) + t3) << 2));
     *(unsigned int *)((a5 + 0x0)) = t11;
     *(unsigned int *)((a5 + 0x4)) = t7;
-    t14 = t13;
-    t15 = t13;
+    t14 = t15;
     t16 = (t1 + 0x18);
     t17 = t7;
     t18 = (t11 - 16);

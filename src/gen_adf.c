@@ -8,6 +8,11 @@ extern void _builtin_set_imask(int);
 int gdFsCreateDirhn(int, int);
 int gdFsCreateHnG(int, int, int, int);
 int gdFsInitG(int a4, int a5, int a6, int a7, int a8);
+struct o38_short { char p[0x38]; short v; };
+struct o38_ushort { char p[0x38]; unsigned short v; };
+struct o3A_ushort { char p[0x3A]; unsigned short v; };
+struct o4C_ushort { char p[0x4C]; unsigned short v; };
+
 
 int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
 {
@@ -36,7 +41,7 @@ int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
     v0_0 = (0xC2393C4);
     v0_1 = (v0_2);
     if ((v0_2 == 0)) goto L_C20F5FC;
-    if (((*(short *)((v0_1 + 0x38))) != 1)) goto L_C20F5FC;
+    if ((((((struct o38_short *)(v0_1))->v)) != 1)) goto L_C20F5FC;
     v0_0 = (0x0);
     L_C20F6E4:;
     return v0_0;
@@ -51,13 +56,13 @@ int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
     _builtin_set_imask(0xF);
     v0_2 = *(int *)(((int)stk + 4));
     *(unsigned int *)((v0_0 + 0x0)) = v0_2;
-    *(unsigned short *)((v0_2 + 0x38)) = 0x0;
+    (((struct o38_ushort *)(v0_2))->v) = 0x0;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x20)) = 0x0;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x0)) = (*(int *)(((int)stk + 8)));
     *(unsigned int *)((((*(int *)((v0_0 + 0x0))) + 0x10) + 0x0)) = (gdFsCreateDirhn((*(int *)(((int)stk + 16))), (*(int *)(((int)stk + 20)))));
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0xC)) = v0_1;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x1C)) = 0x0;
-    *(unsigned short *)(((*(int *)((v0_0 + 0x0))) + 0x3A)) = 0x0;
+    (((struct o3A_ushort *)((*(int *)((v0_0 + 0x0)))))->v) = 0x0;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x24)) = 0x0;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x34)) = 0x0;
     *(unsigned int *)(((*(int *)((v0_0 + 0x0))) + 0x3C)) = a8;
@@ -74,7 +79,7 @@ int gdFsInitG(int a4, int a5, int a6, int a7, int a8)
     _builtin_set_imask(((unsigned int)((((*(int *)(((int)stk + 12))) & 0xF) << 2) << 2) >> 4));
     return FUN_0c20f2c4();
     L_C20F68C:;
-    *(unsigned short *)((v0_1 + 0x4C)) = v0_3;
+    (((struct o4C_ushort *)(v0_1))->v) = v0_3;
     *(unsigned int *)((v0_1 + 0x0)) = (*(int *)((v0_0 + 0x0)));
     v0_1 = ((v0_1 + 0x54));
     v0_2 = ((v0_2 + 0x1));

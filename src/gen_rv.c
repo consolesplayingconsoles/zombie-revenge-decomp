@@ -22,6 +22,9 @@ struct o54_float { char p[0x54]; float v; };
 struct o58_uint { char p[0x58]; unsigned int v; };
 struct o64_uint { char p[0x64]; unsigned int v; };
 struct oBC_int { char p[0xBC]; int v; };
+struct o48_float { char p[0x48]; float v; };
+struct o60_uint { char p[0x60]; unsigned int v; };
+
 
 
 int FUN_0c0947c8(int a4, int a5)
@@ -86,14 +89,14 @@ int FUN_0c0947c8(int a4, int a5)
     w0_3 = w0_2;
     w0_3 = w0_3 + 3.05185063e-06f * (float)(FUN_0c0da2e0());
     (((struct o40_float *)(v0_4))->v) = w0_3;
-    *(float *)(((v0_4 + 0x48) + 0x0)) = ((float)v0_5 * w0_1);
+    (((struct o48_float *)(v0_4))->v) = ((float)v0_5 * w0_1);
     (((struct o4C_float *)(v0_4))->v) = ((float)(FUN_0c0da2e0()) * w0_1);
     (((struct o50_float *)(v0_4))->v) = (1.0f - (((float)v0_5 * w0_1)));
     w0_3 = w0_0;
     w0_3 = w0_3 + 6.10370189e-05f * (float)(FUN_0c0da2e0());
     (((struct o54_float *)(v0_4))->v) = w0_3;
     (((struct o58_uint *)(v0_4))->v) = v0_1;
-    *(unsigned int *)(((0x60 + v0_4) + 0x0)) = ((FUN_0c0da2e0()) & 0x3);
+    (((struct o60_uint *)(v0_4))->v) = ((FUN_0c0da2e0()) & 0x3);
     (((struct o64_uint *)(v0_4))->v) = v0_2;
     nlUnitMatrix();
     nlRotateAY(((((struct o3CE_short *)(v0_0))->v)));

@@ -5,6 +5,9 @@ int FUN_0c0c1488(int, int, int, int);
 int FUN_0c0c1af4(int);
 int FUN_0c0c1f1e(int);
 int FUN_0c0c2126(int a4, int a5, int a6, int a7);
+struct o78_int { char p[0x78]; int v; };
+struct o90_int { char p[0x90]; int v; };
+
 
 int FUN_0c0c2126(int a4, int a5, int a6, int a7)
 {
@@ -18,7 +21,7 @@ int FUN_0c0c2126(int a4, int a5, int a6, int a7)
     t3 = *(int *)((a4 + 0x38));
     if (((*(int *)0xC2497B0) & 0x606) != 0) {
         FUN_0c0c1af4(a4);
-        t4 = *(int *)(((0x84 + a4) + ((*(int *)((a4 + 0x90))) << 2)));
+        t4 = *(int *)(((0x84 + a4) + (((((struct o90_int *)(a4))->v)) << 2)));
         if (t4 != 0) {
             if (t4 != 1) {
                 if (t4 != 2) {
@@ -35,7 +38,7 @@ int FUN_0c0c2126(int a4, int a5, int a6, int a7)
     }
     if (((*(int *)0xC2497B8) & 0x80008) == 0) {
         FUN_0c0c1af4(a4);
-        t4 = *(int *)(((0x84 + a4) + ((*(int *)((a4 + 0x90))) << 2)));
+        t4 = *(int *)(((0x84 + a4) + (((((struct o90_int *)(a4))->v)) << 2)));
         if (t4 != 0) {
             if (t4 != 1) {
                 if (t4 != 2) {
@@ -60,30 +63,30 @@ int FUN_0c0c2126(int a4, int a5, int a6, int a7)
     }
     t0 = t5;
     if ((0x8 & (*(int *)0xC2497B0)) != 0) {
-        t3 = *(int *)((a4 + 0x90));
+        t3 = (((struct o90_int *)(a4))->v);
         *(unsigned int *)((((t3 << 2) + (0x84 + a4)) + 0x0)) = ((*(int *)((((t3 << 2) + (0x84 + a4)) + 0x0))) + 0x1);
-        if (((int)(*(int *)((a4 + 0x78))) > (int)0x5) && (t1 = *(int *)((a4 + 0x90)), t2 = *(int *)(((0x84 + a4) + (t1 << 2))), t2 == 3)) {
-            t1 = *(int *)((a4 + 0x90));
+        if (((int)((((struct o78_int *)(a4))->v)) > (int)0x5) && (t1 = (((struct o90_int *)(a4))->v), t2 = *(int *)(((0x84 + a4) + (t1 << 2))), t2 == 3)) {
+            t1 = (((struct o90_int *)(a4))->v);
             *(unsigned int *)((((t1 << 2) + (0x84 + a4)) + 0x0)) = ((*(int *)((((t1 << 2) + (0x84 + a4)) + 0x0))) + 0x1);
         }
-        if ((int)(*(int *)(((((*(int *)((a4 + 0x90))) << 2) + (0x84 + a4)) + 0x0))) >= (int)0x4) {
-            *(unsigned int *)(((((*(int *)((a4 + 0x90))) << 2) + (0x84 + a4)) + 0x0)) = 0x0;
+        if ((int)(*(int *)((((((((struct o90_int *)(a4))->v)) << 2) + (0x84 + a4)) + 0x0))) >= (int)0x4) {
+            *(unsigned int *)((((((((struct o90_int *)(a4))->v)) << 2) + (0x84 + a4)) + 0x0)) = 0x0;
         }
         t0 = 0x90;
     }
     t1 = t0;
     if (((*(int *)0xC2497B0) & 0x80000) != 0) {
-        t0 = *(int *)((a4 + 0x90));
+        t0 = (((struct o90_int *)(a4))->v);
         *(unsigned int *)((((t0 << 2) + (0x84 + a4)) + 0x0)) = ((*(int *)((((t0 << 2) + (0x84 + a4)) + 0x0))) - 1);
-        if ((int)(*(int *)(((((*(int *)((a4 + 0x90))) << 2) + (0x84 + a4)) + 0x0))) < 0) {
-            *(unsigned int *)(((((*(int *)((a4 + 0x90))) << 2) + (0x84 + a4)) + 0x0)) = 0x3;
+        if ((int)(*(int *)((((((((struct o90_int *)(a4))->v)) << 2) + (0x84 + a4)) + 0x0))) < 0) {
+            *(unsigned int *)((((((((struct o90_int *)(a4))->v)) << 2) + (0x84 + a4)) + 0x0)) = 0x3;
         }
         t0 = 0x78;
-        if ((int)(*(int *)((a4 + 0x78))) > (int)0x5) {
-            t2 = *(int *)(((0x84 + a4) + ((*(int *)((a4 + 0x90))) << 2)));
+        if ((int)((((struct o78_int *)(a4))->v)) > (int)0x5) {
+            t2 = *(int *)(((0x84 + a4) + (((((struct o90_int *)(a4))->v)) << 2)));
             t3 = t2;
             if (t2 == 3) {
-                t2 = *(int *)((a4 + 0x90));
+                t2 = (((struct o90_int *)(a4))->v);
                 *(unsigned int *)((((t2 << 2) + (0x84 + a4)) + 0x0)) = ((*(int *)((((t2 << 2) + (0x84 + a4)) + 0x0))) - 1);
                 t3 = 0x90;
             }

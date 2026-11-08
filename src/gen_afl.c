@@ -32,11 +32,13 @@ void FUN_0c098c2e(int a4, int a5, float f4, float f5)
     register float w0_0;
     register float w0_1;
     register float w0_2;
+    float R1004;
+    R1004 = *(float *)((int)stk + 4);
     v0_1 = a4;
     v0_2 = a5;
     w0_1 = f4;
     w0_0 = f5;
-    *(float *)(((int)stk + 4)) = w0_1;
+    R1004 = w0_1;
     v0_0 = (v0_2);
     if (((int)v0_1 < (int)v0_2)) goto L_C098CEA;
     v0_2 = (int)(v0_1 - v0_0) > (int)0x8;
@@ -54,7 +56,7 @@ void FUN_0c098c2e(int a4, int a5, float f4, float f5)
     nlPushMatrix(0x0);
     w0_1 = ((float)FPUL_ * w0_1);
     w0_1 = (w0_1 * (*(float *)0xC098D4C));
-    FUN_0c0dcc70(0.0f, ((w0_1 - (*(float *)(((int)stk + 4)))) * (*(float *)0xC098D50)), 0.0f);
+    FUN_0c0dcc70(0.0f, ((w0_1 - (R1004)) * (*(float *)0xC098D50)), 0.0f);
     nlRotateAY((v0_0 * 0x7123));
     nlScale(w0_0, w0_0, w0_0);
     FUN_0c0de000(w0_0);

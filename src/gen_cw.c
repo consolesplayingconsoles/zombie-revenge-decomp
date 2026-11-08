@@ -158,6 +158,9 @@ struct o8_int { char p[0x8]; int v; };
 struct o8_uint { char p[0x8]; unsigned int v; };
 struct oC_int { char p[0xC]; int v; };
 struct oC_uint { char p[0xC]; unsigned int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o5C_uint { char p[0x5C]; unsigned int v; };
+
 
 
 
@@ -201,7 +204,7 @@ int FUN_0c0d1f12(int a4)
                 }
                 t23 = t15;
             } else {
-                *(unsigned int *)(((a4 + 0x5C) + 0x0)) = 0x0;
+                (((struct o5C_uint *)(a4))->v) = 0x0;
                 (((struct o60_uint *)(a4))->v) = 0x0;
                 FUN_0c011c6c();
                 *(unsigned int *)((a4 + 0x34)) = ((*(int *)((a4 + 0x34))) + 0x1);
@@ -351,7 +354,7 @@ int FUN_0c22b866(int a4, int a5, int a6, int a7, float f4, float f5, float f6, f
     if (t30) goto L_C22B902;
     goto L_C22B916;
     L_C22B916:;
-    *(unsigned int *)(((0x40 + R14) + 0x0)) = (FUN_0c232f8a(R13, R5, R6, R7));
+    (((struct o40_uint *)(R14))->v) = (FUN_0c232f8a(R13, R5, R6, R7));
     if ((((((struct o40_int *)(R14))->v)) != 0)) goto L_C22B934;
     goto L_C22B92A;
     L_C22B92A:;

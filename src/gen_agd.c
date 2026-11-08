@@ -8,7 +8,7 @@ int FUN_0c0498ce(void);
 int FUN_0c054d8e(void);
 int FUN_0c07e1e8(void);
 int FUN_0c084104(void);
-int FUN_0c0bf940(int, int, int, int, int, int);
+int FUN_0c0bf940(void);
 int FUN_0c0bfa90(void);
 int FUN_0c0c4290(int);
 int FUN_0c0c4464(int, int, int);
@@ -52,7 +52,7 @@ int FUN_0c0c25a4(void)
     FUN_0c0bfa90();
     FUN_0c0e2400(t0);
     FUN_0c0c45d0();
-    FUN_0c0bf940(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), R1008);
+    FUN_0c0bf940();
     FUN_0c0c4290(0x0);
     FUN_0c0c4464(0x3, 0x4, 0x0);
     FUN_0c0498ce();

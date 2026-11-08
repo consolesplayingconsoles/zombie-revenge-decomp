@@ -152,6 +152,8 @@ struct o0_float { float v; };
 struct o4_float { char p[0x4]; float v; };
 struct o8_float { char p[0x8]; float v; };
 struct oC_float { char p[0xC]; float v; };
+struct o4C_uint { char p[0x4C]; unsigned int v; };
+
 
 
 
@@ -867,6 +869,7 @@ int FUN_0c033c8c(int a4, int a5, int a6, float f4)
     float u24;
     int t29;
     int stk[10];
+    float s1;
 
     *(float *)(((int)stk + 16)) = f4;
     *(unsigned int *)(((int)stk + 12)) = a6;
@@ -888,13 +891,14 @@ int FUN_0c033c8c(int a4, int a5, int a6, float f4)
     FUN_0c0dcc70((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
     nlRotateAY((*(int *)(((int)stk + 8))));
     nlRotateAX((*(int *)(((int)stk + 4))));
-    nlScale((-(u10 / 1.0f)), (-(u10 / 1.0f)), (-(_builtin_sqrtf(u8) / u9)));
+    s1 = _builtin_sqrtf(u8);
+    nlScale((-(u10 / 1.0f)), (-(u10 / 1.0f)), (-(s1 / u9)));
     u22 = (u10 / 1.0f);
-    u23 = _builtin_fabsf((_builtin_sqrtf(u8) / u9));
-    u24 = _builtin_fabsf((_builtin_sqrtf(u8) / u9));
-    if (_builtin_fabsf((u10 / 1.0f)) > _builtin_fabsf((_builtin_sqrtf(u8) / u9))) {
+    u23 = _builtin_fabsf((s1 / u9));
+    u24 = _builtin_fabsf((s1 / u9));
+    if (_builtin_fabsf((u10 / 1.0f)) > _builtin_fabsf((s1 / u9))) {
         u22 = _builtin_fabsf((u10 / 1.0f));
-        u23 = (_builtin_sqrtf(u8) / u9);
+        u23 = (s1 / u9);
         u24 = _builtin_fabsf((u10 / 1.0f));
     }
     FUN_0c0de000(u24);
@@ -1137,7 +1141,7 @@ int FUN_0c0a4104(int a4, int a5, int a6, int a7)
         (((struct o40_float *)(t8))->v) = ((-((float)(FUN_0c0da2e0()) * 3.05185094e-05f)) + -0.299999982f);
         (((struct o48_float *)(t8))->v) = 1.0f;
         (((struct o50_uint *)(t8))->v) = 0x46;
-        *(unsigned int *)(((0x4C + t8) + 0x0)) = ((FUN_0c0da2e0()) & 0x3);
+        (((struct o4C_uint *)(t8))->v) = ((FUN_0c0da2e0()) & 0x3);
         (((struct o54_float *)(t8))->v) = (float)(((((((FUN_0c0da2e0()) & 0xF) - 8) << 2) << 2) << 2) + 0x20);
         (((struct o58_float *)(t8))->v) = ((((struct o278_float *)(t1))->v));
         nlPushMatrix(0x0);

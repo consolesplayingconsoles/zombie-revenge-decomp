@@ -6,6 +6,9 @@ int FUN_0c232624(int, int, int);
 int fmMngBit2Num(int, int);
 int fmcalccrc(int, int);
 int FUN_0c229172(int a4);
+struct o34_short { char p[0x34]; short v; };
+struct o3E_short { char p[0x3E]; short v; };
+
 
 int FUN_0c229172(int a4)
 {
@@ -42,10 +45,10 @@ int FUN_0c229172(int a4)
                         if (t6 == -1) {
                             break;
                         }
-                        if ((unsigned short)(*(short *)(((a4 + 0x34) + 0x0))) != 0xFFFF) {
+                        if ((unsigned short)((((struct o34_short *)(a4))->v)) != 0xFFFF) {
                             t6 = fmcalccrc(0x3E, (a4 + 0x34));
-                            if (((unsigned short)(*(short *)(((a4 + 0x34) + 0x3E))) == (unsigned short)t6) && (t0 = *(short *)(((a4 + 0x34) + 0x0)), t1 = *(int *)((a4 + 0x14)), (int)(unsigned short)t0 < (int)t1)) {
-                                FUN_0c229058((a4 + 0x34), ((((((unsigned short)(*(short *)(((a4 + 0x34) + 0x0))) + 0x1) << 2) << 2) << 2) + t2), 0x40);
+                            if (((unsigned short)((((struct o3E_short *)((a4 + 0x34)))->v)) == (unsigned short)t6) && (t0 = (((struct o34_short *)(a4))->v), t1 = *(int *)((a4 + 0x14)), (int)(unsigned short)t0 < (int)t1)) {
+                                FUN_0c229058((a4 + 0x34), ((((((unsigned short)((((struct o34_short *)(a4))->v)) + 0x1) << 2) << 2) << 2) + t2), 0x40);
                             }
                             t3 = (t3 - 1);
                             t9 = (t9 + 0x40);

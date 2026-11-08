@@ -314,7 +314,7 @@ int FUN_0c08f638(int a4, int a5, int a6, int a7, float f4, float f5, float f6, f
     (((struct o4C_float *)(t1))->v) = ((f5 * f7) / (float)a6);
     (((struct o50_float *)(t1))->v) = (((f8 / (float)a7) / (float)a7) / (float)a7);
     (((struct o60_uint *)(t1))->v) = 0x0;
-    *(unsigned int *)(((t1 + 0x64) + 0x0)) = a6;
+    (((struct o64_uint *)(t1))->v) = a6;
     (((struct o68_uint *)(t1))->v) = a7;
     (((struct o6C_uint *)(t1))->v) = a5;
     return 0x6C;
@@ -450,11 +450,11 @@ int FUN_0c0cd56c(int a4, float f4, float f5)
     nlAddVector((a4 + 0x18), (((int)stk + 4) + 0x10));
     FUN_0c0dce80((a4 + 0x18), (a4 + 0x18), (*(float *)0xC0CD6C4));
     nlAddVector((a4 + 0xC), (a4 + 0x18));
-    (((struct o10_float *)(a4))->v) = (((((struct o10_float *)(a4))->v)) - (*(float *)(((((int)stk + 4) + 0xC) + 0x0))));
+    (((struct o10_float *)(a4))->v) = (((((struct o10_float *)(a4))->v)) - ((((struct oC_float *)(((int)stk + 4)))->v)));
     FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), ((((struct o18_float *)(a4))->v)), ((((struct o1C_float *)(a4))->v)), ((((struct o20_float *)(a4))->v)));
     u14 = *(float *)0xC0CD6D0;
-    (((struct o24_ushort *)(a4))->v) = (int)((float)((((struct o24_short *)(a4))->v)) + ((float)((*(int *)(((int)stk + 4))) - (*(short *)(((0x24 + a4) + 0x0)))) * u14));
-    (((struct o26_ushort *)(a4))->v) = (int)((float)((((struct o26_short *)(a4))->v)) + ((float)((*(int *)(((int)stk + 8))) - (*(short *)(((0x26 + a4) + 0x0)))) * u14));
+    (((struct o24_ushort *)(a4))->v) = (int)((float)((((struct o24_short *)(a4))->v)) + ((float)((*(int *)(((int)stk + 4))) - ((((struct o24_short *)(a4))->v))) * u14));
+    (((struct o26_ushort *)(a4))->v) = (int)((float)((((struct o26_short *)(a4))->v)) + ((float)((*(int *)(((int)stk + 8))) - ((((struct o26_short *)(a4))->v))) * u14));
     return 0x26;
 }
 

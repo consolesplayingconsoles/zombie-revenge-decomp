@@ -3,6 +3,14 @@
 
 extern float _builtin_sqrtf(float);
 int FUN_0c034c26(int a4);
+struct o30_float { char p[0x30]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o40_int { char p[0x40]; int v; };
+struct o44_int { char p[0x44]; int v; };
+struct o50C_uint { char p[0x50C]; unsigned int v; };
+struct o510_uint { char p[0x510]; unsigned int v; };
+struct o524_uint { char p[0x524]; unsigned int v; };
+
 
 int FUN_0c034c26(int a4)
 {
@@ -45,38 +53,38 @@ int FUN_0c034c26(int a4)
     if (((*(int *)(((*(int *)(((int)stk + 4))) + 0x4))) != 4)) goto L_C034CA4;
     *(unsigned int *)(((int)stk + 4)) = R6;
     v0_3 = *(int *)((R6 + 0x0));
-    w0_1 = *(float *)((v0_0 + 0x30));
-    w0_2 = *(float *)((v0_3 + 0x30));
-    w0_0 = *(float *)((v0_3 + 0x38));
-    w0_3 = *(float *)((v0_0 + 0x38));
+    w0_1 = (((struct o30_float *)(v0_0))->v);
+    w0_2 = (((struct o30_float *)(v0_3))->v);
+    w0_0 = (((struct o38_float *)(v0_3))->v);
+    w0_3 = (((struct o38_float *)(v0_0))->v);
     v0_3 = *(int *)(((*(int *)(((int)stk + 4))) + 0x4));
     w0_0 = ((w0_3 - w0_0) * (w0_3 - w0_0));
     w0_0 = w0_0 + ((w0_1 - w0_2)) * ((w0_1 - w0_2));
-    w0_1 = *(float *)((v0_0 + 0x30));
-    w0_2 = *(float *)((v0_3 + 0x30));
-    w0_3 = *(float *)((v0_3 + 0x38));
-    w0_4 = *(float *)((v0_0 + 0x38));
+    w0_1 = (((struct o30_float *)(v0_0))->v);
+    w0_2 = (((struct o30_float *)(v0_3))->v);
+    w0_3 = (((struct o38_float *)(v0_3))->v);
+    w0_4 = (((struct o38_float *)(v0_0))->v);
     w0_3 = ((w0_4 - w0_3) * (w0_4 - w0_3));
     w0_3 = w0_3 + ((w0_1 - w0_2)) * ((w0_1 - w0_2));
     w0_1 = ((w0_1 - w0_2));
     if ((_builtin_sqrtf(w0_0) > _builtin_sqrtf(w0_3))) goto L_C034CE8;
     L_C034CB0:;
-    *(unsigned int *)((v0_0 + 0x510)) = v0_1;
+    (((struct o510_uint *)(v0_0))->v) = v0_1;
     L_C034CEC:;
-    *(unsigned int *)((v0_0 + 0x50C)) = v0_2;
-    *(unsigned int *)((v0_0 + 0x524)) = v0_1;
+    (((struct o50C_uint *)(v0_0))->v) = v0_2;
+    (((struct o524_uint *)(v0_0))->v) = v0_1;
     return v0_2;
     L_C034CE8:;
-    *(unsigned int *)((v0_0 + 0x510)) = v0_2;
+    (((struct o510_uint *)(v0_0))->v) = v0_2;
     goto L_C034CEC;
     L_C034CA4:;
-    if (((*(int *)(((R6 + 0x40) + 0x0))) != 4)) goto L_C034CE0;
+    if ((((((struct o40_int *)(R6))->v)) != 4)) goto L_C034CE0;
     goto L_C034CB0;
     L_C034CE0:;
-    if (((*(int *)((R6 + 0x44))) != 4)) goto L_C034CFC;
+    if ((((((struct o44_int *)(R6))->v)) != 4)) goto L_C034CFC;
     goto L_C034CE8;
     L_C034CFC:;
-    *(unsigned int *)((v0_0 + 0x50C)) = v0_1;
-    *(unsigned int *)((v0_0 + 0x524)) = v0_1;
+    (((struct o50C_uint *)(v0_0))->v) = v0_1;
+    (((struct o524_uint *)(v0_0))->v) = v0_1;
     return v0_1;
 }

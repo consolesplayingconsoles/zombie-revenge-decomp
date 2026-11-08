@@ -2,6 +2,10 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 float FUN_0c0a80e2(int a4, int a5, int a6);
+struct o10_float { char p[0x10]; float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 float FUN_0c0a80e2(int a4, int a5, int a6)
 {
@@ -29,21 +33,21 @@ float FUN_0c0a80e2(int a4, int a5, int a6)
     u7 = u7 + u0 * (*(float *)(((((((short)((unsigned int)a5 >> 16) - 1) << 2) << 1) + a4) + 0x0)));
     u0 = ((((((float)(unsigned short)a5 / 65536.0f) + u4) - u5) + 0.333333313f) * 0.5f);
     u8 = u7;
-    u8 = u8 + u0 * (*(float *)(((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x8) + 0x0)));
+    u8 = u8 + u0 * ((((struct o8_float *)(((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4)))->v));
     u0 = (u6 * 0.166669995f);
     u7 = u8;
-    u7 = u7 + u0 * (*(float *)(((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x10) + 0x0)));
+    u7 = u7 + u0 * ((((struct o10_float *)(((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4)))->v));
     u0 = (u2 * 0.166669995f);
-    u2 = ((*(float *)((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x4))) * ((u3 - u1) + 0.666666627f));
-    u2 = u2 + u0 * (*(float *)(((((((short)((unsigned int)a5 >> 16) - 1) << 2) << 1) + a4) + 0x4)));
+    u2 = (((((struct o4_float *)(((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4)))->v)) * ((u3 - u1) + 0.666666627f));
+    u2 = u2 + u0 * ((((struct o4_float *)((((((short)((unsigned int)a5 >> 16) - 1) << 2) << 1) + a4)))->v));
     u0 = ((((((float)(unsigned short)a5 / 65536.0f) + u4) - u5) + 0.333333313f) * 0.5f);
     u1 = u2;
-    u1 = u1 + u0 * (*(float *)(((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x8) + 0x4)));
-    u0 = *(float *)(((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x10) + 0x4));
+    u1 = u1 + u0 * ((((struct o4_float *)((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x8)))->v));
+    u0 = (((struct o4_float *)((((((short)((unsigned int)a5 >> 16) << 2) << 1) + a4) + 0x10)))->v);
     *(float *)((a6 + 0x0)) = u7;
     u2 = (u6 * 0.166669995f);
     u3 = u1;
     u3 = u3 + u2 * u0;
-    *(float *)((a6 + 0x4)) = u3;
+    (((struct o4_float *)(a6))->v) = u3;
     return (u6 * 0.166669995f);
 }

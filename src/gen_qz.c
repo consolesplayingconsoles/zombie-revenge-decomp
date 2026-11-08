@@ -10,6 +10,8 @@ int nlCommonTextureGetNextTextureIndex(void);
 int nlCreateTextureParam(int, int, int);
 int nlSetPaletteData(int, int, int);
 int FUN_0c0df758(int a4, int a5, int a6);
+struct o40_uint { char p[0x40]; unsigned int v; };
+
 
 int FUN_0c0df758(int a4, int a5, int a6)
 {
@@ -26,7 +28,7 @@ int FUN_0c0df758(int a4, int a5, int a6)
     v0_2 = a4;
     v0_0 = a5;
     v0_1 = a6;
-    *(unsigned int *)(((((int)stk + 4) + 0x40) + 0x0)) = v0_2;
+    (((struct o40_uint *)(((int)stk + 4)))->v) = v0_2;
     *(unsigned int *)(((int)stk + 64)) = v0_0;
     *(unsigned int *)(((int)stk + 60)) = v0_1;
     *(unsigned int *)(((int)stk + 20)) = (*(int *)(((int)stk + 60)));

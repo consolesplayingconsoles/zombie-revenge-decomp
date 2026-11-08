@@ -12,7 +12,6 @@ int FUN_0c0bf940(void);
 
 int FUN_0c0bf940(void)
 {
-    int stk[3];
 
     register int R1;
     register int R2;
@@ -69,7 +68,6 @@ int FUN_0c0bf940(void)
     L_C0BF98A:;
     FUN_0c0daf60(0x10, 0x10);
     FUN_0c0db0a0(0xE, 0xD);
-    *(int *)((int)stk + 4) = 0xC1A479C;
     nlPrintf(0xC1A479C);
     v0_1 = ((FUN_0c0daf60(0x8, 0x8)));
     goto L_C0BFA0E;

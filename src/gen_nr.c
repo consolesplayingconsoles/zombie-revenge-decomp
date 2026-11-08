@@ -45,12 +45,14 @@ struct o8_float { char p[0x8]; float v; };
 struct o90_float { char p[0x90]; float v; };
 struct o9A_ushort { char p[0x9A]; unsigned short v; };
 struct oA0_ushort { char p[0xA0]; unsigned short v; };
+struct o5E_ushort { char p[0x5E]; unsigned short v; };
+struct oC_float { char p[0xC]; float v; };
+
 
 
 int FUN_0c0cd9c0(int a4)
 {
     register int t0;
-    register int t1;
     register int t2;
     float u0;
     register float u1;
@@ -80,21 +82,21 @@ int FUN_0c0cd9c0(int a4)
     u5 = u5 + 0.000213629566f * ((float)((FUN_0c0da2e0()) - 16384));
     t0 = FUN_0c0d9dc0((u5 - ((((struct o4C_float *)(a4))->v))), (u3 - u4));
     u3 = (u1 * u2);
-    u4 = (*(float *)(((a4 + 0x50) + 0x0)));
+    u4 = ((((struct o50_float *)(a4))->v));
     u4 = u4 + u3 * (FUN_0c0d9e90((short)t0));
-    *(float *)(((a4 + 0x50) + 0x0)) = u4;
+    (((struct o50_float *)(a4))->v) = u4;
     (((struct o54_float *)(a4))->v) = (((((struct o54_float *)(a4))->v)) - 0.0102572199f);
     u3 = (u1 * u2);
-    u1 = (*(float *)(((a4 + 0x58) + 0x0)));
+    u1 = ((((struct o58_float *)(a4))->v));
     u1 = u1 + u3 * (FUN_0c0da410((short)t0));
-    *(float *)(((a4 + 0x58) + 0x0)) = u1;
+    (((struct o58_float *)(a4))->v) = u1;
     FUN_0c0dce80((a4 + 0x50), (a4 + 0x50), 0.979999959f);
     nlAddVector((a4 + 0x44), (a4 + 0x50));
     t0 = *(int *)((a4 + 0x30));
     if (t0 != 0) {
         if (t0 != 1) {
         } else {
-            (((struct o5C_ushort *)(a4))->v) = (int)((float)((((struct o5C_short *)(a4))->v)) + ((float)((-(*(short *)(((0x5C + a4) + 0x0)))) - 16383) * 0.049999997f));
+            (((struct o5C_ushort *)(a4))->v) = (int)((float)((((struct o5C_short *)(a4))->v)) + ((float)((-((((struct o5C_short *)(a4))->v))) - 16383) * 0.049999997f));
             if (((((struct o4C_float *)(a4))->v)) > 230.0f) {
                 (((struct o4C_float *)(a4))->v) = 230.0f;
             }
@@ -138,7 +140,7 @@ int FUN_0c0cd9c0(int a4)
         }
     }
     t0 = FUN_0c0d9dc0(((((struct o50_float *)(a4))->v)), ((((struct o58_float *)(a4))->v)));
-    *(unsigned short *)(((0x5E + a4) + 0x0)) = (int)((float)(*(short *)(((0x5E + a4) + 0x0))) + ((float)(FUN_0c07e636(((((struct o5E_short *)(a4))->v)), (0x7FFF + (short)t0))) * 0.099999994f));
+    (((struct o5E_ushort *)(a4))->v) = (int)((float)((((struct o5E_short *)(a4))->v)) + ((float)(FUN_0c07e636(((((struct o5E_short *)(a4))->v)), (0x7FFF + (short)t0))) * 0.099999994f));
     nlPushMatrix(0x0);
     FUN_0c0dcca0((a4 + 0x44));
     nlRotateAY(((((struct o5E_short *)(a4))->v)));
@@ -155,28 +157,27 @@ int FUN_0c0cd9c0(int a4)
     }
     t0 = 0xC0CDD08;
     if (!(_builtin_sqrtf(u8) > 5.0f)) {
-        t1 = (((struct o78_int *)(a4))->v);
-        (((struct o78_uint *)(a4))->v) = (t1 - 1);
-        if ((t1 - 1) == 0) {
+        t0 = (((struct o78_int *)(a4))->v);
+        (((struct o78_uint *)(a4))->v) = (t0 - 1);
+        if ((t0 - 1) == 0) {
             FUN_0c0e19f2();
         }
-        t1 = *(int *)((a4 + 0x34));
-        *(unsigned int *)((a4 + 0x34)) = (t1 + 0xC);
-        (((struct o38_float *)(a4))->v) = (*(float *)(((t1 + 0xC) + 0x0)));
+        t0 = *(int *)((a4 + 0x34));
+        *(unsigned int *)((a4 + 0x34)) = (t0 + 0xC);
+        (((struct o38_float *)(a4))->v) = ((((struct oC_float *)(t0))->v));
         (((struct o3C_float *)(a4))->v) = ((((struct o4_float *)((*(int *)((a4 + 0x34)))))->v));
         (((struct o40_float *)(a4))->v) = ((((struct o8_float *)((*(int *)((a4 + 0x34)))))->v));
-        t1 = 0x74;
+        t0 = 0x74;
         if (((((struct o74_int *)(a4))->v)) != 0) {
-            u0 = (*(float *)(((a4 + 0x38) + 0x0)));
+            u0 = ((((struct o38_float *)(a4))->v));
             u0 = u0 + 0.000976592302f * ((float)((FUN_0c0da2e0()) - 16384));
-            *(float *)(((a4 + 0x38) + 0x0)) = u0;
+            (((struct o38_float *)(a4))->v) = u0;
             t2 = FUN_0c0da2e0();
-            u0 = (*(float *)(((a4 + 0x40) + 0x0)));
+            u0 = ((((struct o40_float *)(a4))->v));
             u0 = u0 + 0.000976592302f * ((float)(t2 - 16384));
-            *(float *)(((a4 + 0x40) + 0x0)) = u0;
-            t1 = (t2 - 16384);
+            (((struct o40_float *)(a4))->v) = u0;
+            t0 = (t2 - 16384);
         }
-        t0 = t1;
     }
     return t0;
 }

@@ -6,6 +6,11 @@ extern void _builtin_set_imask(int);
 int kmSetHSyncCallback(int, int);
 int kmSetVSyncCallback(int, int);
 int syChainAddHandler(int a4, int a5, int a6, int a7);
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+
 
 int syChainAddHandler(int a4, int a5, int a6, int a7)
 {
@@ -19,9 +24,12 @@ int syChainAddHandler(int a4, int a5, int a6, int a7)
     register int t3;
     int t6;
     register int t79;
+    int R1004;
+
+    R1004 = *(int *)((int)stk + 4);
 
     *(unsigned short *)(((int)stk + 8)) = a4;
-    *(unsigned int *)(((int)stk + 4)) = a5;
+    R1004 = a5;
     *(unsigned short *)(((int)stk + 12)) = (_builtin_get_imask());
     _builtin_set_imask(0xF);
     t1 = *(short *)(((int)stk + 8));
@@ -66,15 +74,15 @@ int syChainAddHandler(int a4, int a5, int a6, int a7)
             }
             *(unsigned int *)((0xC9539E8 + (((int)t1 >> 4) << 2))) = (((t8 << 2) << 2) + 0xC9529E8);
             *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x4)) = 0x0;
-            *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x0)) = (*(int *)(((int)stk + 4)));
+            *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x0)) = (R1004);
             *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x8)) = a7;
             *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0xC)) = (a6 | 0x80000000);
             t48 = *(short *)(((int)stk + 8));
             if (((int)t1 >> 8) == 10) {
-                *(unsigned int *)0xA05F6920 = ((*(int *)0xA05F6920) | ((int)0x1 << (int)(((unsigned int)((unsigned int)((unsigned int)(unsigned char)t48 >> 2) >> 2) >> 1) + 0xC)));
+                (((struct o0_uint *)0xA05F6920)->v) = (((((struct o0_int *)0xA05F6920)->v)) | ((int)0x1 << (int)(((unsigned int)((unsigned int)((unsigned int)(unsigned char)t48 >> 2) >> 2) >> 1) + 0xC)));
             } else {
                 if (((int)t1 >> 8) == 11) {
-                    *(unsigned int *)0xA05F6924 = ((*(int *)0xA05F6924) | ((int)0x1 << (int)((unsigned int)((unsigned int)((unsigned int)(unsigned char)t48 >> 2) >> 2) >> 1)));
+                    (((struct o4_uint *)0xA05F6920)->v) = (((((struct o4_int *)0xA05F6920)->v)) | ((int)0x1 << (int)((unsigned int)((unsigned int)((unsigned int)(unsigned char)t48 >> 2) >> 2) >> 1)));
                 }
             }
         } else {
@@ -85,7 +93,7 @@ int syChainAddHandler(int a4, int a5, int a6, int a7)
                 *(unsigned int *)((t5 + 0x4)) = (((t8 << 2) << 2) + 0xC9529E8);
                 *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x4)) = t4;
             }
-            *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x0)) = (*(int *)(((int)stk + 4)));
+            *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x0)) = (R1004);
             *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0x8)) = a7;
             *(unsigned int *)(((((t8 << 2) << 2) + 0xC9529E8) + 0xC)) = (a6 | 0x80000000);
         }

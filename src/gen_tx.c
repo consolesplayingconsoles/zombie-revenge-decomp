@@ -22,6 +22,8 @@ struct o54_uint { char p[0x54]; unsigned int v; };
 struct o5C_float { char p[0x5C]; float v; };
 struct o60_int { char p[0x60]; int v; };
 struct o60_uint { char p[0x60]; unsigned int v; };
+struct o58_int { char p[0x58]; int v; };
+
 
 
 int FUN_0c07da7e(int a4)
@@ -66,7 +68,7 @@ int FUN_0c07da7e(int a4)
             }
         } else {
             (((struct o4E_ushort *)(a4))->v) = (int)(u0 * 16383.0f);
-            t0 = *(int *)(((0x58 + a4) + 0x0));
+            t0 = (((struct o58_int *)(a4))->v);
             t1 = (((struct o54_int *)(a4))->v);
             (((struct o54_uint *)(a4))->v) = (t1 + t0);
             if ((int)(t1 + t0) >= (int)0x3FFF) {
@@ -76,7 +78,7 @@ int FUN_0c07da7e(int a4)
     } else {
         FUN_0c0db470(0xC23F568, (a4 + 0x34));
         nlGetAverageVector((a4 + 0x40), (a4 + 0x34), (a4 + 0x34), u0, (1.0f - u0));
-        t0 = *(int *)(((0x58 + a4) + 0x0));
+        t0 = (((struct o58_int *)(a4))->v);
         t1 = (((struct o54_int *)(a4))->v);
         (((struct o54_uint *)(a4))->v) = (t1 + t0);
         if ((int)(t1 + t0) >= (int)0x3FFF) {

@@ -94,6 +94,15 @@ void FUN_0c0da320(int a4);
 void FUN_0c0de000(float f4);
 void FUN_0c0def50(int a4);
 void FUN_0c0e5790(int a4);
+struct o50_int { char p[0x50]; int v; };
+struct o50_uint { char p[0x50]; unsigned int v; };
+struct o0_float { float v; };
+struct o0_uint { unsigned int v; };
+struct o4_float { char p[0x4]; float v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o8_float { char p[0x8]; float v; };
+
+
 
 float FUN_0c0dcd80(int a4, int a5)
 {
@@ -150,7 +159,7 @@ int FUN_0c0df3a0(int a4, int a5)
     int t1;
 
     t1 = (int)((unsigned int)a5 & 0x3);
-    *(unsigned int *)((((a4 + 0x18) + 0x50) + 0x0)) = (((*(int *)((((a4 + 0x18) + 0x50) + 0x0))) & 0xFFFFFFFC) | ((unsigned int)t1 << 0));
+    (((struct o50_uint *)((a4 + 0x18)))->v) = ((((((struct o50_int *)((a4 + 0x18)))->v)) & 0xFFFFFFFC) | ((unsigned int)t1 << 0));
     return t1;
 }
 
@@ -159,7 +168,7 @@ int FUN_0c0df3c0(int a4, int a5)
     int t1;
 
     t1 = (int)((unsigned int)a5 & 0x1);
-    *(unsigned int *)((((a4 + 0x18) + 0x50) + 0x0)) = (((*(int *)((((a4 + 0x18) + 0x50) + 0x0))) & 0xFFFFFFBF) | ((unsigned int)t1 << 6));
+    (((struct o50_uint *)((a4 + 0x18)))->v) = ((((((struct o50_int *)((a4 + 0x18)))->v)) & 0xFFFFFFBF) | ((unsigned int)t1 << 6));
     return t1;
 }
 
@@ -386,17 +395,17 @@ int FUN_0c0dc240(void)
 
 int FUN_0c0de3a0(float f4, float f5, float f6)
 {
-    *(float *)0xC20CE80 = f4;
-    *(float *)0xC20CE84 = f5;
-    *(float *)0xC20CE88 = f6;
+    (((struct o0_float *)0xC20CE80)->v) = f4;
+    (((struct o4_float *)0xC20CE80)->v) = f5;
+    (((struct o8_float *)0xC20CE80)->v) = f6;
     return 0x8;
 }
 
 int FUN_0c0de3b0(float f4, float f5, float f6)
 {
-    *(float *)0xC20CE90 = f4;
-    *(float *)0xC20CE94 = f5;
-    *(float *)0xC20CE98 = f6;
+    (((struct o0_float *)0xC20CE90)->v) = f4;
+    (((struct o4_float *)0xC20CE90)->v) = f5;
+    (((struct o8_float *)0xC20CE90)->v) = f6;
     return 0x8;
 }
 
@@ -441,8 +450,8 @@ int FUN_0c0daf40(void)
 
 void FUN_0c0daf60(int a4, int a5)
 {
-    *(unsigned int *)0xC9441B4 = a4;
-    *(unsigned int *)0xC9441B8 = a5;
+    (((struct o0_uint *)0xC9441B4)->v) = a4;
+    (((struct o4_uint *)0xC9441B4)->v) = a5;
 }
 
 int FUN_0c0dc220(void)

@@ -19,7 +19,6 @@ struct oC_uint { char p[0xC]; unsigned int v; };
 
 int FUN_0c0a5dfa(void)
 {
-    int stk[2];
 
     register int R1;
     register int R2;
@@ -60,7 +59,6 @@ int FUN_0c0a5dfa(void)
     v0_8 = (0x200);
     if ((v0_5 != 5)) goto L_C0A5EDA;
     v0_11 = (((struct o20_short *)(v0_4))->v);
-    *(unsigned int *)(((int)stk + 4)) = v0_11;
     v0_5 = (0x22);
     v0_9 = (0x40);
     v0_10 = (0xFFFFFFC0);

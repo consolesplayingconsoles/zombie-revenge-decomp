@@ -11,6 +11,8 @@ int vmsfs_unmount(int);
 int vmsio_ismount(int);
 int vmsio_isready(int);
 int vmsfs_fopen(int a4, int a5, int a6);
+struct o40_uint { char p[0x40]; unsigned int v; };
+
 
 int vmsfs_fopen(int a4, int a5, int a6)
 {
@@ -73,7 +75,7 @@ int vmsfs_fopen(int a4, int a5, int a6)
                                         *(unsigned int *)((t8 + 0x34)) = (*(int *)(((int)stk + 48)));
                                         t12 = *(int *)(((int)stk + 20));
                                         *(unsigned int *)((t8 + 0x38)) = t12;
-                                        *(unsigned int *)((t8 + 0x40)) = t12;
+                                        (((struct o40_uint *)(t8))->v) = t12;
                                         *(unsigned int *)((t8 + 0x28)) = a4;
                                         *(unsigned short *)((t8 + 0x2)) = (*(short *)(((int)stk + 16)));
                                         *(unsigned char *)((t8 + 0x1)) = (*(signed char *)(((int)stk + 18)));

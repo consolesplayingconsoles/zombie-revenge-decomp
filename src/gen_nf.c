@@ -36,6 +36,12 @@ struct o64_float { char p[0x64]; float v; };
 struct o6C_short { char p[0x6C]; short v; };
 struct o6C_ushort { char p[0x6C]; unsigned short v; };
 struct o6E_short { char p[0x6E]; short v; };
+struct o54_float { char p[0x54]; float v; };
+struct o58_float { char p[0x58]; float v; };
+struct o5C_float { char p[0x5C]; float v; };
+struct o60_float { char p[0x60]; float v; };
+struct o68_float { char p[0x68]; float v; };
+
 
 
 int FUN_0c06c2ec(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
@@ -110,9 +116,9 @@ int FUN_0c06c2ec(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)(((int)stk + 24)) = w0_1;
     *(float *)(((int)stk + 28)) = w0_0;
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0x60) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x64) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((v0_1 + 0x68) + 0x0)) = (*(float *)(((int)stk + 16)));
+    (((struct o60_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o64_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
+    (((struct o68_float *)(v0_1))->v) = (*(float *)(((int)stk + 16)));
     nlAddVector((v0_1 + 0x60), 0xC0FB338);
     nlPopMatrix(0x1);
     (((struct o6C_ushort *)(v0_1))->v) = 0x0;
@@ -147,12 +153,12 @@ int FUN_0c06c2ec(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)(((int)stk + 24)) = -5.57999992f;
     *(float *)(((int)stk + 28)) = w0_0;
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0x60) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x64) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((v0_1 + 0x68) + 0x0)) = (*(float *)(((int)stk + 16)));
+    (((struct o60_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o64_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
+    (((struct o68_float *)(v0_1))->v) = (*(float *)(((int)stk + 16)));
     nlAddVector((v0_1 + 0x60), 0xC0FB344);
     nlPopMatrix(0x1);
-    *(unsigned short *)(((0x6C + v0_1) + 0x0)) = (-((*(short *)(((*(int *)(((int)stk + 4))) + 0x6))) << 1));
+    (((struct o6C_ushort *)(v0_1))->v) = (-((*(short *)(((*(int *)(((int)stk + 4))) + 0x6))) << 1));
     nlPushMatrix(0x0);
     FUN_0c0dcca0((v0_1 + 0x30));
     FUN_0c0dcc70(w0_0, w0_0, (-((((struct o44_float *)(v0_1))->v))));
@@ -177,16 +183,16 @@ int FUN_0c06c2ec(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)(((int)stk + 24)) = (1.0f + 1.0f);
     *(float *)(((int)stk + 28)) = w0_0;
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0x54) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x58) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((v0_1 + 0x5C) + 0x0)) = (*(float *)(((int)stk + 16)));
+    (((struct o54_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o58_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
+    (((struct o5C_float *)(v0_1))->v) = (*(float *)(((int)stk + 16)));
     FUN_0c086bda((v0_1 + 0x54), 1.0f);
     *(float *)(((int)stk + 20)) = -4.0f;
     *(float *)(((int)stk + 24)) = (1.0f + 1.0f);
     *(float *)(((int)stk + 28)) = w0_0;
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0x54) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x58) + 0x0)) = (*(float *)(((int)stk + 12)));
+    (((struct o54_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o58_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
     v0_0 = ((v0_1 + 0x5C));
     v0_4 = (v0_1);
     w0_2 = ((*(float *)(((int)stk + 16))));
@@ -238,9 +244,9 @@ int FUN_0c06c2ec(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(float *)(((int)stk + 24)) = w0_1;
     *(float *)(((int)stk + 28)) = w0_0;
     FUN_0c0db470((((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-    *(float *)(((v0_1 + 0x60) + 0x0)) = (*(float *)(((int)stk + 8)));
-    *(float *)(((v0_1 + 0x64) + 0x0)) = (*(float *)(((int)stk + 12)));
-    *(float *)(((v0_1 + 0x68) + 0x0)) = (*(float *)(((int)stk + 16)));
+    (((struct o60_float *)(v0_1))->v) = (*(float *)(((int)stk + 8)));
+    (((struct o64_float *)(v0_1))->v) = (*(float *)(((int)stk + 12)));
+    (((struct o68_float *)(v0_1))->v) = (*(float *)(((int)stk + 16)));
     nlAddVector((v0_1 + 0x60), 0xC0FB338);
     nlPopMatrix(0x1);
     nlPushMatrix(0x0);

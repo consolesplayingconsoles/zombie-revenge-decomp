@@ -21,6 +21,8 @@ struct o4EC_uint { char p[0x4EC]; unsigned int v; };
 struct o50_float { char p[0x50]; float v; };
 struct o6E_short { char p[0x6E]; short v; };
 struct o6E_ushort { char p[0x6E]; unsigned short v; };
+struct o48_float { char p[0x48]; float v; };
+
 
 
 int FUN_0c04045c(int a4)
@@ -35,8 +37,8 @@ int FUN_0c04045c(int a4)
         if (t0 != 1) {
             if (t0 != 2) {
                 if (t0 == 3) {
-                    *(float *)(((0x48 + a4) + 0x0)) = ((*(float *)(((0x48 + a4) + 0x0))) - (((FUN_0c0da410((((((struct o6E_short *)(a4))->v)) + 0x8000))) * 0.571428537f)));
-                    *(float *)(((0x50 + a4) + 0x0)) = ((*(float *)(((0x50 + a4) + 0x0))) - (((FUN_0c0d9e90((((((struct o6E_short *)(a4))->v)) + 0x8000))) * 0.571428537f)));
+                    (((struct o48_float *)(a4))->v) = (((((struct o48_float *)(a4))->v)) - (((FUN_0c0da410((((((struct o6E_short *)(a4))->v)) + 0x8000))) * 0.571428537f)));
+                    (((struct o50_float *)(a4))->v) = (((((struct o50_float *)(a4))->v)) - (((FUN_0c0d9e90((((((struct o6E_short *)(a4))->v)) + 0x8000))) * 0.571428537f)));
                     (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) - 390);
                     if (64.0f > _builtin_fabsf((float)(((((struct o6E_short *)(a4))->v)) - 16384))) {
                         (((struct o6E_ushort *)(a4))->v) = 0x4000;
@@ -79,13 +81,13 @@ int FUN_0c04045c(int a4)
             }
         } else {
             (((struct o26C_float *)(a4))->v) = (((((struct o26C_float *)(a4))->v)) - 0.049999997f);
-            (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) + ((*(float *)(((0x26C + a4) + 0x0))) + 0.5f));
-            u0 = (*(float *)(((a4 + 0x50) + 0x0)));
+            (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) + (((((struct o26C_float *)(a4))->v)) + 0.5f));
+            u0 = ((((struct o50_float *)(a4))->v));
             u0 = u0 + 0.5f * (FUN_0c0d9e90((((((struct o6E_short *)(a4))->v)) + 0x8000)));
-            *(float *)(((a4 + 0x50) + 0x0)) = u0;
-            u0 = (*(float *)(((a4 + 0x48) + 0x0)));
+            (((struct o50_float *)(a4))->v) = u0;
+            u0 = ((((struct o48_float *)(a4))->v));
             u0 = u0 + 0.5f * (FUN_0c0da410((((((struct o6E_short *)(a4))->v)) + 0x8000)));
-            *(float *)(((a4 + 0x48) + 0x0)) = u0;
+            (((struct o48_float *)(a4))->v) = u0;
             if (110.0f > ((((struct o34_float *)(a4))->v))) {
                 (((struct o4E0_uint *)(a4))->v) = (((((struct o4E0_int *)(a4))->v)) + 0x1);
                 (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
@@ -96,7 +98,7 @@ int FUN_0c04045c(int a4)
         }
         if (((((struct o4E0_int *)(a4))->v)) == 2) {
             if (!(75.0f > ((((struct o38_float *)(a4))->v)))) {
-                (((struct o50_float *)(a4))->v) = (((((struct o50_float *)(a4))->v)) + ((-(*(float *)(((0x38 + a4) + 0x0)))) + 75.0f));
+                (((struct o50_float *)(a4))->v) = (((((struct o50_float *)(a4))->v)) + ((-((((struct o38_float *)(a4))->v))) + 75.0f));
                 (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
             }
             t0 = (((struct o2EC_int *)(a4))->v);

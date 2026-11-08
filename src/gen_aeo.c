@@ -31,6 +31,8 @@ int FUN_0c0a760e(int a4, int a5, float f4, float f5, float f6, float f7, float f
     register float w0_6;
     register float w0_7;
     register float w0_8;
+    float R1008;
+    R1008 = *(float *)((int)stk + 8);
     v0_1 = a4;
     v0_0 = a5;
     w0_2 = f4;
@@ -39,12 +41,12 @@ int FUN_0c0a760e(int a4, int a5, float f4, float f5, float f6, float f7, float f
     w0_5 = f7;
     w0_0 = f8;
     w0_1 = f9;
-    *(float *)(((int)stk + 8)) = w0_2;
+    R1008 = w0_2;
     *(float *)(((int)stk + 4)) = w0_4;
-    w0_6 = *(float *)(((int)stk + 8));
+    w0_6 = R1008;
     w0_2 = ((w0_3 - w0_5) * (w0_3 - w0_5));
     w0_2 = w0_2 + ((w0_6 - w0_4)) * ((w0_6 - w0_4));
-    v0_2 = FUN_0c0d9dc0(v0_1, v0_0, (w0_4 - (*(float *)(((int)stk + 8)))), (w0_3 - w0_5));
+    v0_2 = FUN_0c0d9dc0(v0_1, v0_0, (w0_4 - (R1008)), (w0_3 - w0_5));
     v0_4 = !(_builtin_sqrtf(w0_2) > (w0_0 + w0_1));
     v0_3 = (v0_2);
     v0_0 = (v0_0);

@@ -95,7 +95,7 @@ int FUN_0c068b62(int a4)
         }
     } else {
         if (((((struct oC0_int *)(a4))->v)) != 0) {
-            (((struct o1BC_uint *)(a4))->v) = (((((struct o1BC_int *)(a4))->v)) | (*(int *)(((0x1BC + ((((struct o228_int *)(a4))->v))) + 0x0))));
+            (((struct o1BC_uint *)(a4))->v) = (((((struct o1BC_int *)(a4))->v)) | ((((struct o1BC_int *)(((((struct o228_int *)(a4))->v))))->v)));
         }
         if (((((struct o1BC_int *)(a4))->v)) == 0) {
         } else {

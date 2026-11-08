@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c09d278(int, int);
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0db470(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
@@ -66,5 +66,5 @@ int FUN_0c063ff8(int a4, int a5)
     nlPopMatrix(0x1);
     FUN_0c09d278((((int)stk + 4) + 0x24), (((int)stk + 4) + 0x18));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x48)) = *(struct mv3 *)((((int)stk + 4) + 0x18)); }
-    return (FUN_0c0cc3f8(0xA2BA9, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28)));
+    return (FUN_0c0cc3f8(0xA2BA9, 0x0, 0x0, 0x0));
 }

@@ -6,6 +6,22 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e262a(int);
 int FUN_0c0e2794(int, int);
 void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5);
+struct o18_float { char p[0x18]; float v; };
+struct o1C_float { char p[0x1C]; float v; };
+struct o3C_ushort { char p[0x3C]; unsigned short v; };
+struct o3E_ushort { char p[0x3E]; unsigned short v; };
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o44_float { char p[0x44]; float v; };
+struct o48_float { char p[0x48]; float v; };
+struct o4C_float { char p[0x4C]; float v; };
+struct o54_float { char p[0x54]; float v; };
+struct o58_float { char p[0x58]; float v; };
+struct o60_float { char p[0x60]; float v; };
+struct o64_float { char p[0x64]; float v; };
+struct o6C_float { char p[0x6C]; float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
 {
@@ -22,11 +38,9 @@ void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
     register int t23;
     register int t24;
     register int t27;
-    register int t29;
     register int t30;
     register int t44;
     register int t52;
-    register int t58;
     register int t60;
     register int t74;
     register int t82;
@@ -52,10 +66,10 @@ void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
         t5 = FUN_0c0e19aa(0xC076B0C, 0x74, (*(int *)0xC23ECE4));
         FUN_0c0e19d0(t5);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((t5 + 0x30)) = *(struct mv3 *)(0xC0FFB98); }
-        *(unsigned short *)((t5 + 0x3C)) = t0;
-        *(unsigned short *)((t5 + 0x3E)) = (unsigned short)t3;
-        *(unsigned int *)(((0x40 + t5) + 0x0)) = (FUN_0c0e262a(((unsigned short)t3 << 2)));
-        t10 = (FUN_0c0e2794(t5, (*(int *)((t5 + 0x40)))));
+        (((struct o3C_ushort *)(t5))->v) = t0;
+        (((struct o3E_ushort *)(t5))->v) = (unsigned short)t3;
+        (((struct o40_uint *)(t5))->v) = (FUN_0c0e262a(((unsigned short)t3 << 2)));
+        t10 = (FUN_0c0e2794(t5, ((((struct o40_int *)(t5))->v))));
         t15 = t14;
         t17 = t16;
         t19 = t18;
@@ -81,9 +95,8 @@ void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
                 t20 = 0x10;
                 t21 = 0x1;
                 if ((t12 & t20) != 0) {
-                    t29 = *(int *)((t22 + 0x0));
+                    t20 = *(int *)((t22 + 0x0));
                     t22 = (t22 + 0x4);
-                    t20 = t29;
                     t30 = t22;
                     for (;;) {
                         t13 = (*(int *)((t30 + 0x0)));
@@ -137,9 +150,8 @@ void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
                 } else {
                     t20 = 0x8;
                     if ((t27 & t20) != 0) {
-                        t58 = *(int *)((t22 + 0x0));
+                        t20 = *(int *)((t22 + 0x0));
                         t22 = (t22 + 0x4);
-                        t20 = t58;
                         t13 = t20;
                         t20 = (t20 << 1);
                         t20 = (t20 + t13);
@@ -197,17 +209,17 @@ void FUN_0c076cc0(int a4, int a5, int a6, int a7, float f4, float f5)
                 }
             }
         }
-        *(float *)((t5 + 0x44)) = (((*(float *)((t19 + 0x0))) - (*(float *)((t24 + 0x0)))) / (1.0f + 1.0f));
-        *(float *)((t5 + 0x48)) = (((*(float *)((t15 + 0x8))) - (*(float *)((t17 + 0x8)))) / (1.0f + 1.0f));
-        *(float *)((t5 + 0x54)) = (((((*(float *)((t19 + 0x18))) + (*(float *)((t24 + 0x18)))) + (*(float *)((t15 + 0x18)))) + (*(float *)((t17 + 0x18)))) / 4.0f);
-        *(float *)((t5 + 0x4C)) = (((((*(float *)((t19 + 0x1C))) + (*(float *)((t24 + 0x1C)))) + (*(float *)((t15 + 0x1C)))) + (*(float *)((t17 + 0x1C)))) / 4.0f);
-        u103 = *(float *)((t5 + 0x54));
-        *(float *)((t5 + 0x60)) = ((((((*(float *)((t19 + 0x18))) - u103) + u103) - (*(float *)((t24 + 0x18)))) / (1.0f + 1.0f)) / (*(float *)((t5 + 0x44))));
-        u107 = *(float *)((t5 + 0x4C));
-        *(float *)((t5 + 0x58)) = ((((((*(float *)((t19 + 0x1C))) - u107) + u107) - (*(float *)((t24 + 0x1C)))) / (1.0f + 1.0f)) / (*(float *)((t5 + 0x44))));
-        u111 = *(float *)((t5 + 0x54));
-        *(float *)((t5 + 0x6C)) = ((((((*(float *)((t15 + 0x18))) - u111) + u111) - (*(float *)((t17 + 0x18)))) / (1.0f + 1.0f)) / (*(float *)((t5 + 0x48))));
-        u115 = *(float *)((t5 + 0x4C));
-        *(float *)((t5 + 0x64)) = ((((((*(float *)((t15 + 0x1C))) - u115) + u115) - (*(float *)((t17 + 0x1C)))) / (1.0f + 1.0f)) / (*(float *)((t5 + 0x48))));
+        (((struct o44_float *)(t5))->v) = (((*(float *)((t19 + 0x0))) - (*(float *)((t24 + 0x0)))) / (1.0f + 1.0f));
+        (((struct o48_float *)(t5))->v) = ((((((struct o8_float *)(t15))->v)) - ((((struct o8_float *)(t17))->v))) / (1.0f + 1.0f));
+        (((struct o54_float *)(t5))->v) = ((((((((struct o18_float *)(t19))->v)) + ((((struct o18_float *)(t24))->v))) + ((((struct o18_float *)(t15))->v))) + ((((struct o18_float *)(t17))->v))) / 4.0f);
+        (((struct o4C_float *)(t5))->v) = ((((((((struct o1C_float *)(t19))->v)) + ((((struct o1C_float *)(t24))->v))) + ((((struct o1C_float *)(t15))->v))) + ((((struct o1C_float *)(t17))->v))) / 4.0f);
+        u103 = (((struct o54_float *)(t5))->v);
+        (((struct o60_float *)(t5))->v) = (((((((((struct o18_float *)(t19))->v)) - u103) + u103) - ((((struct o18_float *)(t24))->v))) / (1.0f + 1.0f)) / ((((struct o44_float *)(t5))->v)));
+        u107 = (((struct o4C_float *)(t5))->v);
+        (((struct o58_float *)(t5))->v) = (((((((((struct o1C_float *)(t19))->v)) - u107) + u107) - ((((struct o1C_float *)(t24))->v))) / (1.0f + 1.0f)) / ((((struct o44_float *)(t5))->v)));
+        u111 = (((struct o54_float *)(t5))->v);
+        (((struct o6C_float *)(t5))->v) = (((((((((struct o18_float *)(t15))->v)) - u111) + u111) - ((((struct o18_float *)(t17))->v))) / (1.0f + 1.0f)) / ((((struct o48_float *)(t5))->v)));
+        u115 = (((struct o4C_float *)(t5))->v);
+        (((struct o64_float *)(t5))->v) = (((((((((struct o1C_float *)(t15))->v)) - u115) + u115) - ((((struct o1C_float *)(t17))->v))) / (1.0f + 1.0f)) / ((((struct o48_float *)(t5))->v)));
     }
 }

@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0848bc(float, float, float);
-int FUN_0c0849da(int, int, int, int, int, int, int, int);
+int FUN_0c0849da(void);
 int FUN_0c0c465c(int);
 int FUN_0c0c475c(int, float);
 int FUN_0c0dcc70(float, float, float);
@@ -10,6 +10,12 @@ int FUN_0c0de3c0(int, int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int FUN_0c057c50(int a4);
+struct o20C_int { char p[0x20C]; int v; };
+struct o30_float { char p[0x30]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct oB4_float { char p[0xB4]; float v; };
+struct oBC_int { char p[0xBC]; int v; };
+
 
 int FUN_0c057c50(int a4)
 {
@@ -38,7 +44,7 @@ int FUN_0c057c50(int a4)
     v0_3 = a4;
     *(unsigned int *)(((int)stk + 4)) = 0xC2475D4;
     nlPushMatrix(0x0);
-    FUN_0c0dcc70((*(float *)((v0_3 + 0x30))), ((*(float *)((v0_3 + 0xB4))) + 0.0699999928f), (*(float *)((v0_3 + 0x38))));
+    FUN_0c0dcc70(((((struct o30_float *)(v0_3))->v)), (((((struct oB4_float *)(v0_3))->v)) + 0.0699999928f), ((((struct o38_float *)(v0_3))->v)));
     v0_0 = (v0_3);
     if ((((*(int *)0xC23A258) & 3) == 0)) goto L_C057D3A;
     R10 = (0x5);
@@ -54,9 +60,9 @@ int FUN_0c057c50(int a4)
     w0_1 = (6.0f);
     L_C057CA8:;
     if (((*(int *)(((v0_3 + 0x40) + (v0_2 << 2)))) != 4)) goto L_C057D08;
-    if (((*(int *)((((0x514 + v0_3) + v0_4) + 0x0))) != (*(int *)((v0_0 + 0xBC))))) goto L_C057D08;
-    if ((!(w0_1 > (*(float *)((v0_5 + (((*(int *)(((int)stk + 4))) + 0xC0) + ((((*(int *)(((0xBC + v0_0) + 0x0))) << 2) << 2) << 2)))))))) goto L_C057D08;
-    if ((((*(int *)(((*(int *)(((v0_3 + v0_6) + 0x0))) + 0x20C))) & R10) == 0)) goto L_C057D08;
+    if (((*(int *)((((0x514 + v0_3) + v0_4) + 0x0))) != ((((struct oBC_int *)(v0_0))->v)))) goto L_C057D08;
+    if ((!(w0_1 > (*(float *)((v0_5 + (((*(int *)(((int)stk + 4))) + 0xC0) + (((((((struct oBC_int *)(v0_0))->v)) << 2) << 2) << 2)))))))) goto L_C057D08;
+    if (((((((struct o20C_int *)((*(int *)(((v0_3 + v0_6) + 0x0)))))->v)) & R10) == 0)) goto L_C057D08;
     FUN_0c0de3c0(0x1, 0x1);
     FUN_0c0c475c(v0_1, w0_0);
     FUN_0c0de3c0(0x4, 0x5);
@@ -73,6 +79,6 @@ int FUN_0c057c50(int a4)
     FUN_0c0de3c0(0x1, 0x1);
     FUN_0c0c465c(v0_1);
     FUN_0c0de3c0(0x4, 0x5);
-    FUN_0c0849da(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
+    FUN_0c0849da();
     goto L_C057D3A;
 }

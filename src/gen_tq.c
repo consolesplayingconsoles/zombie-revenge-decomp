@@ -4,6 +4,18 @@
 int FUN_0c01ee84(int, int, int);
 float nlLength(int, int);
 int FUN_0c01f8d4(int a4, int a5, int a6);
+struct o30_float { char p[0x30]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o3C_float { char p[0x3C]; float v; };
+struct o44_float { char p[0x44]; float v; };
+struct o98_int { char p[0x98]; int v; };
+struct o0_float { float v; };
+struct o0_int { int v; };
+struct o8_float { char p[0x8]; float v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+
+
 
 int FUN_0c01f8d4(int a4, int a5, int a6)
 {
@@ -34,12 +46,12 @@ int FUN_0c01f8d4(int a4, int a5, int a6)
 
     *(unsigned int *)(((int)stk + 4)) = a5;
     *(unsigned int *)(((int)stk + 12)) = a6;
-    u0 = *(float *)0xC23FE68;
-    u1 = *(float *)((a4 + 0x3C));
-    u2 = *(float *)((a4 + 0x30));
-    u3 = *(float *)0xC23FE70;
-    u4 = *(float *)((a4 + 0x44));
-    *(unsigned int *)(((int)stk + 16)) = ((int)(((*(float *)((a4 + 0x38))) - u3) * 0.049999997f) & 0x1F);
+    u0 = (((struct o0_float *)0xC23FE68)->v);
+    u1 = (((struct o3C_float *)(a4))->v);
+    u2 = (((struct o30_float *)(a4))->v);
+    u3 = (((struct o8_float *)0xC23FE68)->v);
+    u4 = (((struct o44_float *)(a4))->v);
+    *(unsigned int *)(((int)stk + 16)) = ((int)((((((struct o38_float *)(a4))->v)) - u3) * 0.049999997f) & 0x1F);
     t7 = ((int)((u1 - u0) * 0.049999997f) & 0x3F);
     t8 = ((int)((u2 - u0) * 0.049999997f) & 0x3F);
     if ((int)((int)((u1 - u0) * 0.049999997f) & 0x3F) > (int)((int)((u2 - u0) * 0.049999997f) & 0x3F)) {
@@ -54,7 +66,7 @@ int FUN_0c01f8d4(int a4, int a5, int a6)
     }
     *(unsigned int *)(((int)stk + 32)) = 0x0;
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = 0x0;
-    *(unsigned int *)0xC245FA4 = ((*(int *)0xC245FA4) + 0x1);
+    (((struct o8_uint *)0xC245F9C)->v) = (((((struct o8_int *)0xC245F9C)->v)) + 0x1);
     *(unsigned int *)(((int)stk + 8)) = t12;
     *(unsigned int *)(((int)stk + 24)) = ((((t12 << 1) + t12) << 8) + 0xC23FF94);
     t18 = 0xC23FF94;
@@ -95,10 +107,10 @@ int FUN_0c01f8d4(int a4, int a5, int a6)
                 if (t37 != t19) {
                     *(unsigned int *)((t25 + 0x0)) = t19;
                     t18 = (*(int *)((t25 + 0x8)));
-                    t37 = (*(int *)0xC245F9C);
+                    t37 = ((((struct o0_int *)0xC245F9C)->v));
                     if (t18 != t37) {
                         t37 = (*(int *)(((int)stk + 12)));
-                        t36 = (*(int *)((t25 + 0x98)));
+                        t36 = ((((struct o98_int *)(t25))->v));
                         if ((t36 & t37) != 0) {
                             t21 = a4;
                             t20 = t25;

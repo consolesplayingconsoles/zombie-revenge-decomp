@@ -54,7 +54,7 @@ int FUN_0c0c4784(int, float);
 int FUN_0c0c47ae(int);
 int FUN_0c0c6ac6(int, int, int);
 int FUN_0c0cc054(int, int);
-int FUN_0c0cc3f8(int, int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0cc7d8(int);
 int FUN_0c0cdff2(void);
 int FUN_0c0ce87e(void);
@@ -84,8 +84,8 @@ int FUN_0c0e1138(int, float, float, float);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e19f2(int);
-int FUN_0c0e2400(int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0e19f2(void);
+int FUN_0c0e2400(void);
 int FUN_0c0e4428(int);
 int FUN_0c0e4c34(int);
 int FUN_0c0e4d2c(int);
@@ -115,7 +115,7 @@ int nlRotateAZ(int);
 int nlScale(float, float, float);
 int nlSubVector3op(int, int, int);
 int nlUnitMatrix(void);
-int vmsfs_c_progress(int, int, int, int);
+int vmsfs_c_progress(int);
 void FUN_0c0c9e86(int a4);
 int FUN_0c0d6d74(int a4);
 float FUN_0c01ec10(int a4, float f4, float f5, float f6);
@@ -126,7 +126,7 @@ void FUN_0c082fae(int a4, int a5, int a6, int a7, float f4, float f5);
 int FUN_0c086cac(int a4);
 int FUN_0c0c1714(int a4);
 int FUN_0c0d9dc0(float f4, float f5);
-int FUN_0c016dfe(int a4, int a5, float f4);
+int FUN_0c016dfe(int, int);
 int FUN_0c0351bc(int a4, int a5, int a6, int a7);
 int FUN_0c07b1ee(int a4, int a5, int a6, int a7);
 int FUN_0c0a73ec(float f4, float f5, float f6, float f7, float f8, float f9);
@@ -246,6 +246,44 @@ struct oCC_uint { char p[0xCC]; unsigned int v; };
 struct oD0_uint { char p[0xD0]; unsigned int v; };
 struct oE8_short { char p[0xE8]; short v; };
 struct oF4_float { char p[0xF4]; float v; };
+struct o0_float { float v; };
+struct o0_int { int v; };
+struct o0_uchar { unsigned char v; };
+struct o0_uint { unsigned int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o12_short { char p[0x12]; short v; };
+struct o14_uint { char p[0x14]; unsigned int v; };
+struct o18_short { char p[0x18]; short v; };
+struct o18_uint { char p[0x18]; unsigned int v; };
+struct o18_ushort { char p[0x18]; unsigned short v; };
+struct o1C_uint { char p[0x1C]; unsigned int v; };
+struct o20_uint { char p[0x20]; unsigned int v; };
+struct o24_int { char p[0x24]; int v; };
+struct o24_uint { char p[0x24]; unsigned int v; };
+struct o28_uint { char p[0x28]; unsigned int v; };
+struct o2C_uint { char p[0x2C]; unsigned int v; };
+struct o34_uint { char p[0x34]; unsigned int v; };
+struct o38_uint { char p[0x38]; unsigned int v; };
+struct o3C_int { char p[0x3C]; int v; };
+struct o3C_uint { char p[0x3C]; unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+struct oC_uint { char p[0xC]; unsigned int v; };
+struct o3B0_int { char p[0x3B0]; int v; };
+struct o500_int { char p[0x500]; int v; };
+struct o54_float { char p[0x54]; float v; };
+struct o54C_int { char p[0x54C]; int v; };
+struct o58_float { char p[0x58]; float v; };
+struct o5C_float { char p[0x5C]; float v; };
+struct o80_int { char p[0x80]; int v; };
+struct o80_uint { char p[0x80]; unsigned int v; };
+struct o90_float { char p[0x90]; float v; };
+struct oC0_int { char p[0xC0]; int v; };
+struct oC4_int { char p[0xC4]; int v; };
+
+
 
 
 void FUN_0c0c9e86(int a4)
@@ -283,55 +321,33 @@ void FUN_0c0c9e86(int a4)
 
 int FUN_0c0d6d74(int a4)
 {
-    int t0;
+    int *r;
     int t1;
     int t2;
-    int t19;
     int t20;
 
-    t0 = *(int *)((a4 + 0x8));
+    r = (int *)(0xC943614 + *(int *)(a4 + 0x8) * 80);
     t1 = (((struct o5C_int *)(a4))->v);
     t2 = (((struct o60_int *)(a4))->v);
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x0)) = ((~t2) & t1);
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x4)) = ((~t1) & t2);
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x8)) = t1;
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0xC)) = t2;
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x14)) = (*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x10)));
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x1C)) = (*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x18)));
-    *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x24)) = (*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x20)));
-    if (((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x0))) & 0x200) != 0) {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x2C)) = 0x0;
+    r[0] = (~t2) & t1;
+    r[1] = (~t1) & t2;
+    r[2] = t1;
+    r[3] = t2;
+    r[5] = r[4];
+    r[7] = r[6];
+    r[9] = r[8];
+    r[11] = (r[0] & 0x200) != 0 ? 0 : r[11] + 1;
+    r[12] = (r[0] & 0x2) != 0 ? 0 : r[12] + 1;
+    r[13] = (r[0] & 0x400) != 0 ? 0 : r[13] + 1;
+    if ((r[2] & 0x200) != 0) {
+        t20 = r[4] + 1;
+        r[4] = t20;
     } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x2C)) = ((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x2C))) + 0x1);
-    }
-    if (((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x0))) & 0x2) != 0) {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x30)) = 0x0;
-    } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x30)) = ((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x30))) + 0x1);
-    }
-    if (((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x0))) & 0x400) != 0) {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x34)) = 0x0;
-    } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x34)) = ((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x34))) + 0x1);
-    }
-    if (((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x8))) & 0x200) != 0) {
-        t19 = *(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x10));
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x10)) = (t19 + 0x1);
-        t20 = (t19 + 0x1);
-    } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x10)) = 0x0;
+        r[4] = 0;
         t20 = 0x60;
     }
-    if ((0x2 & (*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x8)))) != 0) {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x18)) = ((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x18))) + 0x1);
-    } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x18)) = 0x0;
-    }
-    if ((0x400 & (*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x8)))) != 0) {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x20)) = ((*(int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x20))) + 0x1);
-    } else {
-        *(unsigned int *)(((0xC943614 + ((((t0 << 2) + t0) << 2) << 2)) + 0x20)) = 0x0;
-    }
+    r[6] = (0x2 & r[2]) != 0 ? r[6] + 1 : 0;
+    r[8] = (0x400 & r[2]) != 0 ? r[8] + 1 : 0;
     return t20;
 }
 
@@ -339,14 +355,19 @@ float FUN_0c01ec10(int a4, float f4, float f5, float f6)
 {
     int t9;
     int stk[12];
+    float R1004;
+    float R1008;
 
-    *(float *)(((int)stk + 8)) = f4;
-    *(float *)(((int)stk + 4)) = f6;
+    R1004 = *(float *)((int)stk + 4);
+    R1008 = *(float *)((int)stk + 8);
+
+    R1008 = f4;
+    R1004 = f6;
     nlPushMatrix(0x0);
     FUN_0c0dbda0((a4 + 0x50));
-    *(float *)(((int)stk + 24)) = (*(float *)(((int)stk + 8)));
+    *(float *)(((int)stk + 24)) = (R1008);
     *(float *)(((int)stk + 28)) = f5;
-    *(float *)(((int)stk + 32)) = (*(float *)(((int)stk + 4)));
+    *(float *)(((int)stk + 32)) = (R1004);
     FUN_0c0db470((((int)stk + 4) + 0x14), (((int)stk + 4) + 0x14));
     t9 = FUN_0c0e1138((*(int *)((a4 + 0x90))), (*(float *)(((int)stk + 24))), ((*(float *)(((int)stk + 28))) + (1.0f + 1.0f)), (*(float *)(((int)stk + 32))));
     if (t9 != 0) {
@@ -394,7 +415,7 @@ int FUN_0c0510be(int a4)
     int t8;
     int t23;
     int t33;
-    int stk[6];
+    int stk[5];
 
     t33 = (((struct o330_int *)(a4))->v);
     if ((t33 != 2) && (t33 != 3)) {
@@ -403,10 +424,10 @@ int FUN_0c0510be(int a4)
             t33 = 0x344;
             if (((((struct o344_int *)(a4))->v)) != 0) {
                 t8 = (((struct oBC_int *)(a4))->v);
-                *(float *)(((int)stk + 8)) = ((((struct o4_float *)(((0xC23F268 + (((((t8 << 1) + t8) << 2) << 2) << 2)) + 0x3C)))->v));
-                *(float *)(((int)stk + 4)) = ((((struct o30_float *)(a4))->v));
-                *(float *)(((int)stk + 12)) = ((((struct o38_float *)(a4))->v));
-                FUN_0c056118(a4, 0x3, ((int)stk + 4), 0x0);
+                *(float *)(((int)stk + 4)) = ((((struct o4_float *)(((0xC23F268 + (((((t8 << 1) + t8) << 2) << 2) << 2)) + 0x3C)))->v));
+                *(float *)(((int)stk + 0)) = ((((struct o30_float *)(a4))->v));
+                *(float *)(((int)stk + 8)) = ((((struct o38_float *)(a4))->v));
+                FUN_0c056118(a4, 0x3, ((int)stk + 0), 0x0);
                 t33 = (FUN_0c0519f0(a4));
             }
         }
@@ -414,10 +435,10 @@ int FUN_0c0510be(int a4)
         t33 = 0x348;
         if (((((struct o348_int *)(a4))->v)) != 0) {
             t23 = (((struct oBC_int *)(a4))->v);
-            *(float *)(((int)stk + 8)) = ((((struct o4_float *)(((0xC23F268 + (((((t23 << 1) + t23) << 2) << 2) << 2)) + 0x24)))->v));
-            *(float *)(((int)stk + 4)) = ((((struct o30_float *)(a4))->v));
-            *(float *)(((int)stk + 12)) = ((((struct o38_float *)(a4))->v));
-            FUN_0c056118(a4, 0x3, ((int)stk + 4), 0x1);
+            *(float *)(((int)stk + 4)) = ((((struct o4_float *)(((0xC23F268 + (((((t23 << 1) + t23) << 2) << 2) << 2)) + 0x24)))->v));
+            *(float *)(((int)stk + 0)) = ((((struct o30_float *)(a4))->v));
+            *(float *)(((int)stk + 8)) = ((((struct o38_float *)(a4))->v));
+            FUN_0c056118(a4, 0x3, ((int)stk + 0), 0x1);
             t33 = (FUN_0c0519f0(a4));
         }
     }
@@ -470,21 +491,21 @@ int FUN_0c086cac(int a4)
     int t20;
     int t22;
     int t17;
-    int stk[9];
+    int stk[8];
 
     t0 = (((struct o44_int *)(a4))->v);
     (((struct o44_uint *)(a4))->v) = (t0 + 0x1);
     if ((int)(t0 + 0x1) >= (int)((((struct o48_int *)(a4))->v))) {
         (((struct o44_uint *)(a4))->v) = 0x0;
+        *(float *)(((int)stk + 0)) = ((float)((FUN_0c0da2e0()) - 16384) * 6.10370189e-05f);
         *(float *)(((int)stk + 4)) = ((float)((FUN_0c0da2e0()) - 16384) * 6.10370189e-05f);
         *(float *)(((int)stk + 8)) = ((float)((FUN_0c0da2e0()) - 16384) * 6.10370189e-05f);
-        *(float *)(((int)stk + 12)) = ((float)((FUN_0c0da2e0()) - 16384) * 6.10370189e-05f);
-        FUN_0c0dce80(((int)stk + 4), ((int)stk + 4), ((((struct o3C_float *)(a4))->v)));
-        nlAddVector(((int)stk + 4), (a4 + 0x30));
+        FUN_0c0dce80(((int)stk + 0), ((int)stk + 0), ((((struct o3C_float *)(a4))->v)));
+        nlAddVector(((int)stk + 0), (a4 + 0x30));
         u9 = (((struct o40_float *)(a4))->v);
         u10 = 1.0f;
         u10 = u10 + 3.05185094e-05f * (float)(FUN_0c0da2e0());
-        FUN_0c086bda(((int)stk + 4), (u9 * u10));
+        FUN_0c086bda(((int)stk + 0), (u9 * u10));
     } else {
         t17 = a4;
     }
@@ -492,7 +513,7 @@ int FUN_0c086cac(int a4)
     (((struct o4C_uint *)(a4))->v) = (t20 - 1);
     t22 = 0x4C;
     if ((int)(t20 - 1) <= 0) {
-        t22 = (FUN_0c0e19f2(t17));
+        t22 = (FUN_0c0e19f2());
     }
     return t22;
 }
@@ -503,19 +524,19 @@ int FUN_0c0c1714(int a4)
 
     t0 = *(int *)((a4 + 0x38));
     FUN_0c0db0a0(0x14, 0x32);
-    nlPrintf(0xC1E3B18, ((*(int *)((t0 + 0xC0)))), ((*(int *)((t0 + 0xC4)))));
+    nlPrintf(0xC1E3B18, (((((struct oC0_int *)(t0))->v))), (((((struct oC4_int *)(t0))->v))));
     FUN_0c0db0a0(0x14, 0x33);
-    nlPrintf(0xC1E3B30, (*(float *)((t0 + 0x30))));
+    nlPrintf(0xC1E3B30, ((((struct o30_float *)(t0))->v)));
     FUN_0c0db0a0(0x14, 0x34);
-    nlPrintf(0xC1E3B44, (*(float *)((t0 + 0x34))));
+    nlPrintf(0xC1E3B44, ((((struct o34_float *)(t0))->v)));
     FUN_0c0db0a0(0x14, 0x35);
-    nlPrintf(0xC1E3B58, (*(float *)((t0 + 0x38))));
+    nlPrintf(0xC1E3B58, ((((struct o38_float *)(t0))->v)));
     FUN_0c0db0a0(0x14, 0x36);
-    nlPrintf(0xC1E3B6C, (unsigned short)(*(short *)((t0 + 0x6C))));
+    nlPrintf(0xC1E3B6C, (unsigned short)((((struct o6C_short *)(t0))->v)));
     FUN_0c0db0a0(0x14, 0x37);
-    nlPrintf(0xC1E3B80, (unsigned short)(*(short *)((t0 + 0x6E))));
+    nlPrintf(0xC1E3B80, (unsigned short)((((struct o6E_short *)(t0))->v)));
     FUN_0c0db0a0(0x14, 0x38);
-    return (nlPrintf(0xC1E3B94, (unsigned short)(*(short *)((t0 + 0x70)))));
+    return (nlPrintf(0xC1E3B94, (unsigned short)((((struct o70_short *)(t0))->v))));
 }
 
 int FUN_0c0d9dc0(float f4, float f5)
@@ -562,7 +583,7 @@ int FUN_0c0351bc(int a4, int a5, int a6, int a7)
 {
     int t19;
     int t20;
-    int stk[7];
+    int stk[6];
 
     int R0;
     int R1;
@@ -584,8 +605,8 @@ int FUN_0c0351bc(int a4, int a5, int a6, int a7)
     R6 = a6;
     R7 = a7;
     L_C0351BC:;
-    *(unsigned int *)(((int)stk + 8)) = R5;
-    *(unsigned int *)(((int)stk + 12)) = R6;
+    *(unsigned int *)(((int)stk + 4)) = R5;
+    *(unsigned int *)(((int)stk + 8)) = R6;
     R14 = (R4);
     if ((((((struct o508_int *)(R4))->v)) != 0)) goto L_C035206;
     goto L_C0351D2;
@@ -609,14 +630,14 @@ int FUN_0c0351bc(int a4, int a5, int a6, int a7)
     R13 = (((*(int *)(((((*(int *)((R14 + R0))) << 2) + R4) + 0x0))) + 0x30));
     goto L_C035212;
     L_C035212:;
-    FUN_0c0a68ec(((int)stk + 4), (((((struct o30_float *)(R14))->v)) - (*(float *)((R13 + 0x0)))), (((((struct o38_float *)(R14))->v)) - ((((struct o8_float *)(R13))->v))));
-    t19 = *(int *)(((int)stk + 4));
+    FUN_0c0a68ec(((int)stk + 0), (((((struct o30_float *)(R14))->v)) - (*(float *)((R13 + 0x0)))), (((((struct o38_float *)(R14))->v)) - ((((struct o8_float *)(R13))->v))));
+    t19 = *(int *)(((int)stk + 0));
     t20 = (((struct o6E_short *)(R14))->v);
     R4 = ((short)(t20 - t19));
     if ((!(16384.0f > _builtin_fabsf((float)(short)(t20 - t19))))) goto L_C035252;
     goto L_C035242;
     L_C035242:;
-    FUN_0c0546fe(R14, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8))), (*(int *)(((int)stk + 12))));
+    FUN_0c0546fe(R14, (*(int *)(((int)stk + 0))), (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8))));
     R0 = (0x1);
     goto L_C035254;
     L_C035206:;
@@ -632,25 +653,25 @@ int FUN_0c07b1ee(int a4, int a5, int a6, int a7)
     int t1;
 
     FUN_0c0685a4(a4, a5, a6, a7);
-    t1 = *(int *)((a4 + 0x80));
+    t1 = (((struct o80_int *)(a4))->v);
     if (t1 != 0) {
         if (t1 != 1) {
         } else {
-            *(float *)((a4 + 0x90)) = ((*(float *)((a4 + 0x90))) - (1.0f + 1.0f));
-            if (!((*(float *)((a4 + 0x90))) > 0.0f)) {
-                *(float *)((a4 + 0x90)) = 0.0f;
-                *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+            (((struct o90_float *)(a4))->v) = (((((struct o90_float *)(a4))->v)) - (1.0f + 1.0f));
+            if (!(((((struct o90_float *)(a4))->v)) > 0.0f)) {
+                (((struct o90_float *)(a4))->v) = 0.0f;
+                (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
             }
         }
     } else {
-        *(unsigned int *)((a4 + 0x80)) = ((*(int *)((a4 + 0x80))) + 0x1);
+        (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
     }
     nlPushMatrix(0x0);
-    FUN_0c0dcc70((*(float *)((a4 + 0x30))), (*(float *)((a4 + 0x34))), (*(float *)((a4 + 0x38))));
+    FUN_0c0dcc70(((((struct o30_float *)(a4))->v)), ((((struct o34_float *)(a4))->v)), ((((struct o38_float *)(a4))->v)));
     nlRotateAY(0xC000);
-    FUN_0c0dcc70((*(float *)((a4 + 0x90))), 0.0f, 0.0f);
+    FUN_0c0dcc70(((((struct o90_float *)(a4))->v)), 0.0f, 0.0f);
     FUN_0c0c465c(0x1213);
-    FUN_0c0dcc70((-((*(float *)((a4 + 0x90))) * (1.0f + 1.0f))), 0.0f, 0.0f);
+    FUN_0c0dcc70((-(((((struct o90_float *)(a4))->v)) * (1.0f + 1.0f))), 0.0f, 0.0f);
     FUN_0c0c465c(0x1214);
     return nlPopMatrix(0x1);
 }
@@ -662,25 +683,30 @@ int FUN_0c0a73ec(float f4, float f5, float f6, float f7, float f8, float f9)
     float u7;
     float u11;
     int stk[24];
+    float R1004;
+    float R1008;
 
-    *(float *)(((int)stk + 4)) = f6;
-    *(float *)(((int)stk + 8)) = (f8 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)));
+    R1004 = *(float *)((int)stk + 4);
+    R1008 = *(float *)((int)stk + 8);
+
+    R1004 = f6;
+    R1008 = (f8 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)));
     nlGetMatrix((((int)stk + 4) + 0x8));
     u1 = 1.0f;
     u1 = u1 + (f7 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9))) * f4;
     *(float *)(((int)stk + 12)) = u1;
     *(float *)(((int)stk + 16)) = (f5 * ((f7 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)))));
-    *(float *)(((int)stk + 20)) = ((*(float *)(((int)stk + 4))) * ((f7 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)))));
-    u6 = *(float *)(((int)stk + 8));
+    *(float *)(((int)stk + 20)) = ((R1004) * ((f7 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)))));
+    u6 = R1008;
     *(float *)(((int)stk + 28)) = (f4 * u6);
     u7 = 1.0f;
     u7 = u7 + u6 * f5;
     *(float *)(((int)stk + 32)) = u7;
     *(float *)(((int)stk + 48)) = (f5 * ((f9 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)))));
     *(float *)(((int)stk + 44)) = (f4 * ((f9 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9)))));
-    *(float *)(((int)stk + 36)) = ((*(float *)(((int)stk + 4))) * u6);
+    *(float *)(((int)stk + 36)) = ((R1004) * u6);
     u11 = 1.0f;
-    u11 = u11 + (f9 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9))) * (*(float *)(((int)stk + 4)));
+    u11 = u11 + (f9 / (((-(f4 * f7)) - (f5 * f8)) - (f6 * f9))) * (R1004);
     *(float *)(((int)stk + 52)) = u11;
     return (FUN_0c0dbda0((((int)stk + 4) + 0x8)));
 }
@@ -826,9 +852,9 @@ int FUN_0c053f0c(int a4, int a5)
     int t43;
     int t71;
     int t24;
-    int stk[6];
+    int stk[5];
 
-    *(unsigned int *)(((int)stk + 8)) = a5;
+    *(unsigned int *)(((int)stk + 4)) = a5;
     t0 = *(int *)0xC23A1A8;
     if (((t0 & 0x100) == 0) && (t71 = (((struct oE8_short *)(a4))->v), (int)t71 < (int)0x4)) {
     } else {
@@ -844,8 +870,8 @@ int FUN_0c053f0c(int a4, int a5)
                     t43 = (((struct oE8_short *)(a4))->v);
                     t45 = (((((((t43 << 1) + t43) << 2) << 2) << 2) + 0xC23F268) + 0xB4);
                 }
-                FUN_0c0a68ec(((int)stk + 4), (((((struct o30_float *)(a4))->v)) - (*(float *)((t45 + 0x0)))), (((((struct o38_float *)(a4))->v)) - ((((struct o8_float *)(t45))->v))));
-                t71 = (FUN_0c054654(a4, (*(int *)(((int)stk + 4))), 0x400, (*(int *)(((int)stk + 8)))));
+                FUN_0c0a68ec(((int)stk + 0), (((((struct o30_float *)(a4))->v)) - (*(float *)((t45 + 0x0)))), (((((struct o38_float *)(a4))->v)) - ((((struct o8_float *)(t45))->v))));
+                t71 = (FUN_0c054654(a4, (*(int *)(((int)stk + 0))), 0x400, (*(int *)(((int)stk + 4)))));
             }
         }
     }
@@ -887,19 +913,19 @@ int FUN_0c0d26a8(void)
     int t18;
 
     t0 = FUN_0c0e1830(0xC0D2DD4, 0x6C);
-    *(unsigned int *)0xC943404 = t0;
+    (((struct o8_uint *)0xC9433FC)->v) = t0;
     FUN_0c0e19d0(t0);
     *(unsigned int *)0xC23A1A8 = ((*(int *)0xC23A1A8) & 0x60100);
-    *(unsigned int *)0xC943434 = 0x0;
+    (((struct o38_uint *)0xC9433FC)->v) = 0x0;
     (((struct o5C_uint *)(t0))->v) = (FUN_0c0d1870());
     (((struct o60_uint *)(t0))->v) = (FUN_0c0cee40());
-    *(unsigned int *)0xC9433FC = 0x0;
-    t6 = *(int *)((((*(int *)0xC522D7C) << 2) + 0xC20BE68));
-    *(unsigned int *)0xC943438 = t6;
+    (((struct o0_uint *)0xC9433FC)->v) = 0x0;
+    t6 = *(int *)(((((((struct o4_int *)0xC522D78)->v)) << 2) + 0xC20BE68));
+    (((struct o3C_uint *)0xC9433FC)->v) = t6;
     if (t6 != -1) {
-        *(unsigned int *)0xC943438 = ((*(int *)0xC943438) * 0x3C);
+        (((struct o3C_uint *)0xC9433FC)->v) = (((((struct o3C_int *)0xC9433FC)->v)) * 0x3C);
     }
-    *(unsigned int *)0xC94343C = (*(int *)((((*(int *)0xC522D78) << 2) + 0xC20BE7C)));
+    *(unsigned int *)0xC94343C = (*(int *)(((((((struct o0_int *)0xC522D78)->v)) << 2) + 0xC20BE7C)));
     *(unsigned int *)0xC23EDAC = 0x1;
     FUN_0c0d37e8();
     FUN_0c0d3684();
@@ -923,26 +949,26 @@ int FUN_0c016438(void)
     FUN_0c086b70();
     FUN_0c0b25d0();
     FUN_0c016d2c();
-    *(unsigned int *)0xC23ED58 = 0x6B;
+    (((struct o0_uint *)0xC23ED58)->v) = 0x6B;
     *(unsigned int *)0xC23A184 = ((*(int *)0xC23A184) + 0x1);
-    *(unsigned int *)0xC23ED9C = 0x1;
-    *(unsigned int *)0xC23ED84 = 0x1;
-    *(unsigned int *)0xC23ED60 = 0x0;
-    *(unsigned int *)0xC23ED74 = 0x0;
-    *(unsigned int *)0xC23ED80 = 0x0;
-    *(unsigned int *)0xC23EDB8 = 0x0;
+    (((struct o0_uint *)0xC23ED9C)->v) = 0x1;
+    (((struct o2C_uint *)0xC23ED58)->v) = 0x1;
+    (((struct o8_uint *)0xC23ED58)->v) = 0x0;
+    (((struct o1C_uint *)0xC23ED58)->v) = 0x0;
+    (((struct o28_uint *)0xC23ED58)->v) = 0x0;
+    (((struct o1C_uint *)0xC23ED9C)->v) = 0x0;
     *(unsigned int *)0xC23EE54 = 0x0;
-    *(unsigned int *)0xC23ED7C = ((*(int *)0xC23ED7C) + 0x1);
-    *(unsigned int *)0xC23ED6C = 0x3;
+    (((struct o24_uint *)0xC23ED58)->v) = (((((struct o24_int *)0xC23ED58)->v)) + 0x1);
+    (((struct o14_uint *)0xC23ED58)->v) = 0x3;
     t11 = 0xFFFFFFFD;
-    if ((((*(int *)0xC23ED7C) + 0x1) & 7) != 0) {
+    if (((((((struct o24_int *)0xC23ED58)->v)) + 0x1) & 7) != 0) {
         t11 = 0x0;
     }
-    *(unsigned int *)0xC23ED70 = t11;
-    *(unsigned int *)0xC23EE04 = (*(int *)0xC2475B4);
-    *(unsigned int *)0xC23EE08 = (*(int *)0xC2475B4);
-    *(unsigned int *)0xC23EE0C = (*(int *)0xC2475B4);
-    *(unsigned int *)0xC23EE10 = (*(int *)0xC2475B4);
+    (((struct o18_uint *)0xC23ED58)->v) = t11;
+    (((struct o0_uint *)0xC23EE04)->v) = (*(int *)0xC2475B4);
+    (((struct o4_uint *)0xC23EE04)->v) = (*(int *)0xC2475B4);
+    (((struct o8_uint *)0xC23EE04)->v) = (*(int *)0xC2475B4);
+    (((struct oC_uint *)0xC23EE04)->v) = (*(int *)0xC2475B4);
     return FUN_0c0164d6();
 }
 
@@ -953,12 +979,12 @@ int FUN_0c04b8e4(int a4, int a5, int a6, int a7)
     int t3;
     int stk[4];
 
-    *(unsigned int *)0xC23ED88 = ((*(int *)0xC23ED88) | 0x10000);
+    (((struct o0_uint *)0xC23ED88)->v) = (((((struct o0_int *)0xC23ED88)->v)) | 0x10000);
     t1 = (((struct o2EC_int *)(a4))->v);
     t18 = t1;
     if ((t1 & 12) != 0) {
         t3 = *(int *)(((((((struct oCC_int *)(a4))->v)) << 2) + 0xC246FF0));
-        FUN_0c0cc3f8(0xB20A9, a5, a6, a7, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
+        FUN_0c0cc3f8(0xB20A9, a5, a6, a7);
         FUN_0c0cc054(((((struct oBC_int *)(a4))->v)), 0x1A);
         (((struct o20C_uint *)(a4))->v) = 0x100;
         (((struct o210_uint *)(a4))->v) = 0x63;
@@ -969,7 +995,7 @@ int FUN_0c04b8e4(int a4, int a5, int a6, int a7)
         (((struct oD0_uint *)(t3))->v) = 0xFFFFFFFF;
         (((struct o2C4_uint *)(t3))->v) = (((((struct o2C4_int *)(t3))->v)) + 0x1);
         (((struct o2CC_uint *)(t3))->v) = 0x1;
-        if ((*(int *)0xC23EDAC) == 1) {
+        if (((((struct o24_int *)0xC23ED88)->v)) == 1) {
             (((struct o1EC_uint *)(a4))->v) = 0x0;
         } else {
             (((struct o1EC_uint *)(a4))->v) = 0xF;
@@ -990,7 +1016,7 @@ int FUN_0c054ae0(int a4)
     int t10;
     int t13;
     int t2;
-    int stk[6];
+    int stk[5];
 
     t1 = *(short *)((a4 + 0xE8));
     t22 = 0x0;
@@ -1002,73 +1028,73 @@ int FUN_0c054ae0(int a4)
             t10 = (((((((t1 << 1) + t1) << 2) << 2) << 2) + 0xC23F268) + 0xB4);
         }
         t13 = *(int *)((a4 + 0xBC));
-        FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x0))) - (*(float *)((t10 + 0x0)))), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x4))) - (*(float *)((t10 + 0x4)))), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x8))) - (*(float *)((t10 + 0x8)))));
-        t22 = (*(int *)(((int)stk + 4)));
+        FUN_0c0a7714(((int)stk + 0), (((int)stk + 0) + 0x4), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x0))) - (*(float *)((t10 + 0x0)))), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x4))) - (*(float *)((t10 + 0x4)))), ((*(float *)(((((((((t13 << 1) + t13) << 2) << 2) << 2) + 0xC23F268) + 0xC) + 0x8))) - (*(float *)((t10 + 0x8)))));
+        t22 = (*(int *)(((int)stk + 0)));
     }
     return t22;
 }
 
 int FUN_0c0651ac(int a4, int a5, int a6, int a7, float f4)
 {
-    int stk[13];
+    int stk[12];
 
-    *(unsigned int *)(((int)stk + 8)) = a6;
-    *(unsigned int *)(((int)stk + 12)) = a7;
-    *(float *)(((int)stk + 4)) = f4;
-    nlSubVector3op((((int)stk + 4) + 0x18), a5, (a5 + 0xC));
-    nlAddVector((((int)stk + 4) + 0x18), (*(int *)(((int)stk + 12))));
-    FUN_0c0dce80((((int)stk + 4) + 0x18), (((int)stk + 4) + 0x18), (*(float *)(((int)stk + 4))));
-    nlAddVector((((int)stk + 4) + 0x18), a5);
-    nlSubVector3op((((int)stk + 4) + 0xC), (((int)stk + 4) + 0x18), a4);
-    FUN_0c0a78fc((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))), (*(float *)(((int)stk + 24))));
+    *(unsigned int *)(((int)stk + 4)) = a6;
+    *(unsigned int *)(((int)stk + 8)) = a7;
+    *(float *)(((int)stk + 0)) = f4;
+    nlSubVector3op((((int)stk + 0) + 0x18), a5, (a5 + 0xC));
+    nlAddVector((((int)stk + 0) + 0x18), (*(int *)(((int)stk + 8))));
+    FUN_0c0dce80((((int)stk + 0) + 0x18), (((int)stk + 0) + 0x18), (*(float *)(((int)stk + 0))));
+    nlAddVector((((int)stk + 0) + 0x18), a5);
+    nlSubVector3op((((int)stk + 0) + 0xC), (((int)stk + 0) + 0x18), a4);
+    FUN_0c0a78fc((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 12))), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((a5 + 0xC)) = *(struct mv3 *)(a5); }
     nlUnitMatrix();
     FUN_0c0dcca0(a4);
     nlRotateAX((*(int *)((a4 + 0x18))));
     nlRotateAZ((*(int *)((a4 + 0x1C))));
-    return (FUN_0c0db470((*(int *)(((int)stk + 8))), a5));
+    return (FUN_0c0db470((*(int *)(((int)stk + 4))), a5));
 }
 
 int FUN_0c0652a2(int a4, int a5, int a6, int a7, float f4)
 {
-    int stk[13];
+    int stk[12];
 
-    *(unsigned int *)(((int)stk + 8)) = a6;
-    *(unsigned int *)(((int)stk + 12)) = a7;
-    *(float *)(((int)stk + 4)) = f4;
-    nlSubVector3op((((int)stk + 4) + 0x18), a5, (a5 + 0xC));
-    nlAddVector((((int)stk + 4) + 0x18), (*(int *)(((int)stk + 12))));
-    FUN_0c0dce80((((int)stk + 4) + 0x18), (((int)stk + 4) + 0x18), (*(float *)(((int)stk + 4))));
-    nlAddVector((((int)stk + 4) + 0x18), a5);
-    nlSubVector3op((((int)stk + 4) + 0xC), (((int)stk + 4) + 0x18), a4);
-    FUN_0c0a7714((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))), (*(float *)(((int)stk + 24))));
+    *(unsigned int *)(((int)stk + 4)) = a6;
+    *(unsigned int *)(((int)stk + 8)) = a7;
+    *(float *)(((int)stk + 0)) = f4;
+    nlSubVector3op((((int)stk + 0) + 0x18), a5, (a5 + 0xC));
+    nlAddVector((((int)stk + 0) + 0x18), (*(int *)(((int)stk + 8))));
+    FUN_0c0dce80((((int)stk + 0) + 0x18), (((int)stk + 0) + 0x18), (*(float *)(((int)stk + 0))));
+    nlAddVector((((int)stk + 0) + 0x18), a5);
+    nlSubVector3op((((int)stk + 0) + 0xC), (((int)stk + 0) + 0x18), a4);
+    FUN_0c0a7714((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 12))), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((a5 + 0xC)) = *(struct mv3 *)(a5); }
     nlUnitMatrix();
     FUN_0c0dcca0(a4);
     nlRotateAY((*(int *)((a4 + 0x1C))));
     nlRotateAX((*(int *)((a4 + 0x18))));
-    return (FUN_0c0db470((*(int *)(((int)stk + 8))), a5));
+    return (FUN_0c0db470((*(int *)(((int)stk + 4))), a5));
 }
 
 int FUN_0c065398(int a4, int a5, int a6, int a7, float f4)
 {
-    int stk[13];
+    int stk[12];
 
-    *(unsigned int *)(((int)stk + 8)) = a6;
-    *(unsigned int *)(((int)stk + 12)) = a7;
-    *(float *)(((int)stk + 4)) = f4;
-    nlSubVector3op((((int)stk + 4) + 0x18), a5, (a5 + 0xC));
-    nlAddVector((((int)stk + 4) + 0x18), (*(int *)(((int)stk + 12))));
-    FUN_0c0dce80((((int)stk + 4) + 0x18), (((int)stk + 4) + 0x18), (*(float *)(((int)stk + 4))));
-    nlAddVector((((int)stk + 4) + 0x18), a5);
-    nlSubVector3op((((int)stk + 4) + 0xC), (((int)stk + 4) + 0x18), a4);
-    FUN_0c0a77fe((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))), (*(float *)(((int)stk + 24))));
+    *(unsigned int *)(((int)stk + 4)) = a6;
+    *(unsigned int *)(((int)stk + 8)) = a7;
+    *(float *)(((int)stk + 0)) = f4;
+    nlSubVector3op((((int)stk + 0) + 0x18), a5, (a5 + 0xC));
+    nlAddVector((((int)stk + 0) + 0x18), (*(int *)(((int)stk + 8))));
+    FUN_0c0dce80((((int)stk + 0) + 0x18), (((int)stk + 0) + 0x18), (*(float *)(((int)stk + 0))));
+    nlAddVector((((int)stk + 0) + 0x18), a5);
+    nlSubVector3op((((int)stk + 0) + 0xC), (((int)stk + 0) + 0x18), a4);
+    FUN_0c0a77fe((a4 + 0x18), (a4 + 0x1C), (*(float *)(((int)stk + 12))), (*(float *)(((int)stk + 16))), (*(float *)(((int)stk + 20))));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((a5 + 0xC)) = *(struct mv3 *)(a5); }
     nlUnitMatrix();
     FUN_0c0dcca0(a4);
     nlRotateAY((*(int *)((a4 + 0x18))));
     nlRotateAZ((*(int *)((a4 + 0x1C))));
-    return (FUN_0c0db470((*(int *)(((int)stk + 8))), a5));
+    return (FUN_0c0db470((*(int *)(((int)stk + 4))), a5));
 }
 
 int FUN_0c06b114(int a4)
@@ -1107,7 +1133,7 @@ int FUN_0c067cd4(void)
 
     t1 = FUN_0c0e19aa(0xC067DE4, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
-    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)(*(short *)0xC1FFE46);
+    *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)((((struct o12_short *)0xC1FFE34)->v));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC1FFE34); }
     FUN_0c0de9c0();
     FUN_0c0845e8(0x1);
@@ -1117,7 +1143,7 @@ int FUN_0c067cd4(void)
     FUN_0c0846be(0x1, 15.0f);
     FUN_0c0846de(0x1, 0.0f, 0.799999952f, 0.299999982f, 0.0f);
     FUN_0c0845f8(0x1, 0x1);
-    return FUN_0c084622(0x1, (*(float *)0xC1FFE34), ((*(float *)0xC1FFE38) + 1.0f), (*(float *)0xC1FFE3C));
+    return FUN_0c084622(0x1, ((((struct o0_float *)0xC1FFE34)->v)), (((((struct o4_float *)0xC1FFE34)->v)) + 1.0f), ((((struct o8_float *)0xC1FFE34)->v)));
 }
 
 void FUN_0c0ce7e0(int a4, int a5, int a6, int a7)
@@ -1129,18 +1155,18 @@ void FUN_0c0ce7e0(int a4, int a5, int a6, int a7)
     if ((*(signed char *)(((0xC522E48 + a4) + 0x0))) != 0) {
         *(unsigned char *)(((0xC522E48 + a4) + 0x0)) = 0x0;
         t1 = *(int *)(((a4 << 2) + 0xC522E40));
-        t2 = *(int *)0xC522E38;
+        t2 = (((struct o4_int *)0xC522E34)->v);
         *(unsigned short *)((((a4 << 1) + 0xC522ABC) + 0x0)) = ((*(short *)((((a4 << 1) + 0xC522ABC) + 0x0))) + 0x1);
-        if ((unsigned int)(t2 - t1) > (unsigned int)(*(int *)0xC522AC8)) {
-            *(unsigned int *)0xC522AC8 = (t2 - t1);
+        if ((unsigned int)(t2 - t1) > (unsigned int)((((struct o4_int *)0xC522AC4)->v))) {
+            (((struct o4_uint *)0xC522AC4)->v) = (t2 - t1);
         }
-        if ((unsigned int)(t2 - t1) < (unsigned int)(*(int *)0xC522ACC)) {
-            *(unsigned int *)0xC522ACC = (t2 - t1);
+        if ((unsigned int)(t2 - t1) < (unsigned int)((((struct o8_int *)0xC522AC4)->v))) {
+            (((struct o8_uint *)0xC522AC4)->v) = (t2 - t1);
         }
-        if ((*(int *)0xC522ACC) == 0) {
-            *(unsigned int *)0xC522ACC = (t2 - t1);
+        if (((((struct o8_int *)0xC522AC4)->v)) == 0) {
+            (((struct o8_uint *)0xC522AC4)->v) = (t2 - t1);
         }
-        *(unsigned int *)0xC522AC4 = ((*(int *)0xC522AC4) + (t2 - t1));
+        (((struct o0_uint *)0xC522AC4)->v) = (((((struct o0_int *)0xC522AC4)->v)) + (t2 - t1));
         t11 = 0x0;
         for (;;) {
             if ((unsigned int)(t2 - t1) < (unsigned int)(unsigned short)(*(short *)((0xC20B15C + (t11 << 1))))) {
@@ -1152,10 +1178,10 @@ void FUN_0c0ce7e0(int a4, int a5, int a6, int a7)
                     t11 = (t11 << 1);
                     t11 = (t11 + 0xC522AD4);
                     *(unsigned short *)((t11 + 0x0)) = ((*(short *)((t11 + 0x0))) + 0x1);
-                    *(unsigned int *)0xC522E34 = 0x1;
+                    (((struct o0_uint *)0xC522E34)->v) = 0x1;
                     return;
                 }
-                *(unsigned int *)0xC522E34 = 0x1;
+                (((struct o0_uint *)0xC522E34)->v) = 0x1;
                 return;
             }
         }
@@ -1163,7 +1189,7 @@ void FUN_0c0ce7e0(int a4, int a5, int a6, int a7)
         if (t11 == 20) {
             *(unsigned short *)((((t11 << 1) + 0xC522AD4) + 0x0)) = ((*(short *)((((t11 << 1) + 0xC522AD4) + 0x0))) + 0x1);
         }
-        *(unsigned int *)0xC522E34 = 0x1;
+        (((struct o0_uint *)0xC522E34)->v) = 0x1;
     }
 }
 
@@ -1197,23 +1223,23 @@ int FUN_0c0e432e(int a4, int a5, int a6)
 int adxf_SetFileInfo(int a4, int a5)
 {
     int t18;
-    int stk[9];
+    int stk[8];
 
-    t18 = ADXSTM_GetFad(a5, (((int)stk + 4) + 0x8));
+    t18 = ADXSTM_GetFad(a5, (((int)stk + 0) + 0x8));
     if ((int)t18 < 0) {
-        ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 4));
+        ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 0));
     } else {
-        t18 = ADXSTM_GetFsizeSct(a5, (((int)stk + 4) + 0x4));
+        t18 = ADXSTM_GetFsizeSct(a5, (((int)stk + 0) + 0x4));
         if ((int)t18 < 0) {
-            ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 4));
+            ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 0));
         } else {
-            t18 = FUN_0c22abc0(a5, ((int)stk + 4));
+            t18 = FUN_0c22abc0(a5, ((int)stk + 0));
             if ((int)t18 < 0) {
-                ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 4));
+                ADXERR_CallErrFunc(*(Stk4 *)((int)stk + 0));
             } else {
-                *(unsigned int *)((a4 + 0xC)) = (*(int *)(((int)stk + 12)));
-                *(unsigned int *)((a4 + 0x10)) = (*(int *)(((int)stk + 8)));
-                *(unsigned int *)((a4 + 0x14)) = (*(int *)(((int)stk + 4)));
+                *(unsigned int *)((a4 + 0xC)) = (*(int *)(((int)stk + 8)));
+                *(unsigned int *)((a4 + 0x10)) = (*(int *)(((int)stk + 4)));
+                *(unsigned int *)((a4 + 0x14)) = (*(int *)(((int)stk + 0)));
                 t18 = 0x0;
             }
         }
@@ -1226,8 +1252,8 @@ int syTmrInt1Cancel(void)
     int t0;
 
     t0 = *(signed char *)0xFFD80004;
-    *(unsigned char *)0xFFD80004 = (t0 & 0xFD);
-    *(unsigned short *)0xFFD8001C = ((*(short *)0xFFD8001C) & 0xFFFFFFDF);
+    (((struct o0_uchar *)0xFFD80004)->v) = (t0 & 0xFD);
+    (((struct o18_ushort *)0xFFD80004)->v) = (((((struct o18_short *)0xFFD80004)->v)) & 0xFFFFFFDF);
     return (t0 & 0xFD);
 }
 
@@ -1270,7 +1296,7 @@ int FUN_0c03fed2(int a4)
     float t8;
     float t27;
     int t36;
-    int stk[7];
+    int stk[6];
 
     t0 = (((struct o4EC_int *)(a4))->v);
     if (t0 != 0) {
@@ -1283,7 +1309,7 @@ int FUN_0c03fed2(int a4)
         } else {
             (((struct o26C_float *)(a4))->v) = (((((struct o26C_float *)(a4))->v)) - 0.049999997f);
             (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) + (((((struct o26C_float *)(a4))->v)) + 0.5f));
-            t8 = FUN_0c01f1b8((a4 + 0x30), ((int)stk + 4));
+            t8 = FUN_0c01f1b8((a4 + 0x30), ((int)stk + 0));
             t36 = 0x34;
             if (t8 > ((((struct o34_float *)(a4))->v))) {
                 (((struct o4E0_uint *)(a4))->v) = (((((struct o4E0_int *)(a4))->v)) + 0x1);
@@ -1299,7 +1325,7 @@ int FUN_0c03fed2(int a4)
         (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
         (((struct o26C_float *)(a4))->v) = (((((struct o26C_float *)(a4))->v)) - 0.049999997f);
         (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) + (((((struct o26C_float *)(a4))->v)) + 0.5f));
-        t27 = FUN_0c01f1b8((a4 + 0x30), ((int)stk + 4));
+        t27 = FUN_0c01f1b8((a4 + 0x30), ((int)stk + 0));
         t36 = 0x34;
         if (t27 > ((((struct o34_float *)(a4))->v))) {
             (((struct o4E0_uint *)(a4))->v) = (((((struct o4E0_int *)(a4))->v)) + 0x1);
@@ -1375,20 +1401,23 @@ float FUN_0c06c89c(int a4, int a5, int a6, float f4, float f5, float f6, float f
     float u21;
     float u23;
     float u25;
+    float s1;
+    float s2;
+    float s3;
 
     u0 = *(float *)((a6 + 0x0));
-    u1 = *(float *)((a6 + 0x4));
-    u2 = *(float *)((a6 + 0x8));
+    u1 = (((struct o4_float *)(a6))->v);
+    u2 = (((struct o8_float *)(a6))->v);
     u3 = *(float *)0xC06C9A0;
-    u4 = *(float *)((a4 + 0x30));
+    u4 = (((struct o30_float *)(a4))->v);
     u5 = (u1 * u1);
     u5 = u5 + u0 * u0;
     u6 = u5;
     u6 = u6 + u2 * u2;
-    u7 = *(float *)((a5 + 0x4));
-    u8 = *(float *)((a4 + 0x34));
-    u9 = *(float *)((a5 + 0x8));
-    u10 = *(float *)((a4 + 0x38));
+    u7 = (((struct o4_float *)(a5))->v);
+    u8 = (((struct o34_float *)(a4))->v);
+    u9 = (((struct o8_float *)(a5))->v);
+    u10 = (((struct o38_float *)(a4))->v);
     u11 = *(float *)((a5 + 0x0));
     u12 = ((u8 - u7) * (u8 - u7));
     u12 = u12 + (u4 - u11) * (u4 - u11);
@@ -1398,26 +1427,29 @@ float FUN_0c06c89c(int a4, int a5, int a6, float f4, float f5, float f6, float f
     u29 = f10;
     u30 = (u4 - u11);
     u31 = (u10 - u9);
-    if ((*(float *)0xC06C9A4) > _builtin_sqrtf(u13)) {
+    s1 = _builtin_sqrtf(u13);
+    if ((*(float *)0xC06C9A4) > s1) {
         u15 = *(float *)((a5 + 0x0));
-        u16 = *(float *)((a4 + 0x30));
-        u17 = *(float *)((a5 + 0x8));
-        u18 = *(float *)((a4 + 0x38));
+        u16 = (((struct o30_float *)(a4))->v);
+        u17 = (((struct o8_float *)(a5))->v);
+        u18 = (((struct o38_float *)(a4))->v);
         u19 = ((u18 - u17) * (u18 - u17));
         u19 = u19 + (u16 - u15) * (u16 - u15);
-        u21 = (*(float *)((a4 + 0x58)));
-        u21 = u21 + (_builtin_sqrtf(u6) / u3) * f5;
-        *(float *)((a4 + 0x58)) = u21;
-        u23 = (*(float *)((a4 + 0x54)));
-        u23 = u23 + (_builtin_sqrtf(u6) / u3) * ((((u16 - u15) / _builtin_sqrtf(u19)) / _builtin_sqrtf(u13)) * f4);
-        *(float *)((a4 + 0x54)) = u23;
-        u25 = (*(float *)((a4 + 0x5C)));
-        u25 = u25 + (_builtin_sqrtf(u6) / u3) * ((((u18 - u17) / _builtin_sqrtf(u19)) / _builtin_sqrtf(u13)) * f4);
-        *(float *)((a4 + 0x5C)) = u25;
-        u27 = (_builtin_sqrtf(u6) / u3);
-        u29 = _builtin_sqrtf(u19);
-        u30 = ((((u16 - u15) / _builtin_sqrtf(u19)) / _builtin_sqrtf(u13)) * f4);
-        u31 = ((((u18 - u17) / _builtin_sqrtf(u19)) / _builtin_sqrtf(u13)) * f4);
+        u21 = ((((struct o58_float *)(a4))->v));
+        s2 = _builtin_sqrtf(u6);
+        u21 = u21 + (s2 / u3) * f5;
+        (((struct o58_float *)(a4))->v) = u21;
+        u23 = ((((struct o54_float *)(a4))->v));
+        s3 = _builtin_sqrtf(u19);
+        u23 = u23 + (s2 / u3) * ((((u16 - u15) / s3) / s1) * f4);
+        (((struct o54_float *)(a4))->v) = u23;
+        u25 = ((((struct o5C_float *)(a4))->v));
+        u25 = u25 + (s2 / u3) * ((((u18 - u17) / s3) / s1) * f4);
+        (((struct o5C_float *)(a4))->v) = u25;
+        u27 = (s2 / u3);
+        u29 = s3;
+        u30 = ((((u16 - u15) / s3) / s1) * f4);
+        u31 = ((((u18 - u17) / s3) / s1) * f4);
     }
     return u27;
 }
@@ -1465,7 +1497,7 @@ int FUN_0c0bdec2(int a4, float f4, float f5, float f6)
     int t15;
     int t16;
     int t17;
-    int stk[18];
+    int stk[17];
 
     t0 = *(short *)((a4 + 0xC));
     t1 = *(int *)((a4 + 0x0));
@@ -1476,22 +1508,22 @@ int FUN_0c0bdec2(int a4, float f4, float f5, float f6)
         for (;;) {
             t4 = *(int *)((t3 + 0x24));
             t5 = *(int *)((t3 + 0x28));
-            FUN_0c0db470(t3, (((int)stk + 4) + 0x10));
-            *(float *)(((int)stk + 4)) = (*(float *)(((int)stk + 20)));
-            *(unsigned int *)((((int)stk + 4) + 0x0)) = ((*(int *)((((int)stk + 4) + 0x0))) | 0x1);
-            u9 = *(float *)(((int)stk + 24));
-            u10 = *(float *)(((int)stk + 28));
-            FUN_0c0db4d0((t3 + 0xC), (((int)stk + 4) + 0x4));
-            u12 = *(float *)(((int)stk + 8));
-            u13 = *(float *)(((int)stk + 12));
-            u14 = *(float *)(((int)stk + 16));
+            FUN_0c0db470(t3, (((int)stk + 0) + 0x10));
+            *(float *)(((int)stk + 0)) = (*(float *)(((int)stk + 16)));
+            *(unsigned int *)((((int)stk + 0) + 0x0)) = ((*(int *)((((int)stk + 0) + 0x0))) | 0x1);
+            u9 = *(float *)(((int)stk + 20));
+            u10 = *(float *)(((int)stk + 24));
+            FUN_0c0db4d0((t3 + 0xC), (((int)stk + 0) + 0x4));
+            u12 = *(float *)(((int)stk + 4));
+            u13 = *(float *)(((int)stk + 8));
+            u14 = *(float *)(((int)stk + 12));
             t15 = t4;
             t16 = t5;
             for (;;) {
                 t17 = *(int *)((t16 + 0x0));
                 t16 = (t16 + 0x4);
                 t15 = (t15 - 0x1);
-                *(float *)((t17 + 0x0)) = (*(float *)(((int)stk + 4)));
+                *(float *)((t17 + 0x0)) = (*(float *)(((int)stk + 0)));
                 *(float *)((t17 + 0x4)) = u9;
                 *(float *)((t17 + 0x8)) = u10;
                 *(float *)((t17 + 0xC)) = u12;
@@ -1517,32 +1549,32 @@ int FUN_0c0b8632(void)
     int stk[2];
 
     FUN_0c0bfa90();
-    FUN_0c0e2400(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24));
+    FUN_0c0e2400();
     FUN_0c0c45d0();
     FUN_0c084104();
     FUN_0c0c0384();
     FUN_0c0cdff2();
-    if ((*(int *)0xC23ED50) == 0) {
-        *(unsigned int *)0xC23ED50 = 0xB;
+    if (((((struct o0_int *)0xC23ED50)->v)) == 0) {
+        (((struct o0_uint *)0xC23ED50)->v) = 0xB;
     }
     FUN_0c0169da(0x0);
     FUN_0c0169da(0x1);
-    *(unsigned int *)0xC23ED84 = 0x0;
-    *(unsigned int *)0xC23EDB0 = 0x0;
-    *(unsigned int *)0xC23EDB4 = 0x0;
+    (((struct o34_uint *)0xC23ED50)->v) = 0x0;
+    (((struct o18_uint *)0xC23ED98)->v) = 0x0;
+    (((struct o1C_uint *)0xC23ED98)->v) = 0x0;
     *(unsigned int *)0xC2475B0 = 0x0;
-    *(unsigned int *)0xC23ED88 = 0x0;
-    *(unsigned int *)0xC23ED60 = 0x0;
-    *(unsigned int *)0xC23EDA4 = 0x0;
-    *(unsigned int *)0xC23ED98 = 0x0;
+    (((struct o38_uint *)0xC23ED50)->v) = 0x0;
+    (((struct o10_uint *)0xC23ED50)->v) = 0x0;
+    (((struct oC_uint *)0xC23ED98)->v) = 0x0;
+    (((struct o0_uint *)0xC23ED98)->v) = 0x0;
     *(unsigned int *)0xC2498B0 = 0x0;
-    *(unsigned int *)0xC23A1B8 = 0x0;
-    *(unsigned int *)0xC23A1B4 = 0x0;
-    *(unsigned int *)0xC23A1B0 = 0x0;
-    *(unsigned int *)0xC23A1AC = 0x0;
-    *(unsigned int *)0xC23A1A8 = 0x0;
-    *(unsigned int *)0xC23EDAC = 0x0;
-    *(unsigned int *)0xC23A18C = ((*(int *)0xC23A18C) + 0x1);
+    (((struct o2C_uint *)0xC23A18C)->v) = 0x0;
+    (((struct o28_uint *)0xC23A18C)->v) = 0x0;
+    (((struct o24_uint *)0xC23A18C)->v) = 0x0;
+    (((struct o20_uint *)0xC23A18C)->v) = 0x0;
+    (((struct o1C_uint *)0xC23A18C)->v) = 0x0;
+    (((struct o14_uint *)0xC23ED98)->v) = 0x0;
+    (((struct o0_uint *)0xC23A18C)->v) = (((((struct o0_int *)0xC23A18C)->v)) + 0x1);
     return 0xC23A1B8;
 }
 
@@ -1553,26 +1585,26 @@ int FUN_0c0c73e6(int a4, float f4, float f5)
     int t5;
     float u4;
     float u9;
-    int stk[24];
+    int stk[23];
 
-    *(float *)(((int)stk + 24)) = f4;
-    *(float *)(((int)stk + 28)) = f5;
-    *(float *)(((int)stk + 32)) = 0.00139999995f;
+    *(float *)(((int)stk + 20)) = f4;
+    *(float *)(((int)stk + 24)) = f5;
+    *(float *)(((int)stk + 28)) = 0.00139999995f;
+    *(float *)(((int)stk + 32)) = 1.0f;
     *(float *)(((int)stk + 36)) = 1.0f;
-    *(float *)(((int)stk + 40)) = 1.0f;
+    *(float *)(((int)stk + 40)) = 0.0f;
     *(float *)(((int)stk + 44)) = 0.0f;
-    *(float *)(((int)stk + 48)) = 0.0f;
+    *(float *)(((int)stk + 48)) = 1.0f;
     *(float *)(((int)stk + 52)) = 1.0f;
-    *(float *)(((int)stk + 56)) = 1.0f;
-    *(unsigned int *)(((int)stk + 60)) = 0x0;
-    *(unsigned int *)(((int)stk + 72)) = 0x0;
-    *(float *)(((int)stk + 64)) = 1.0f;
-    *(unsigned int *)(((int)stk + 72)) = 0x0;
-    *(unsigned int *)(((int)stk + 68)) = 0xFFFFFFFF;
-    *(unsigned int *)(((int)stk + 4)) = (((int)stk + 4) + 0x4);
-    FUN_0c0c6ac6(a4, 0xC1E982C, (((int)stk + 4) + 0x4));
+    *(unsigned int *)(((int)stk + 56)) = 0x0;
+    *(unsigned int *)(((int)stk + 68)) = 0x0;
+    *(float *)(((int)stk + 60)) = 1.0f;
+    *(unsigned int *)(((int)stk + 68)) = 0x0;
+    *(unsigned int *)(((int)stk + 64)) = 0xFFFFFFFF;
+    *(unsigned int *)(((int)stk + 0)) = (((int)stk + 0) + 0x4);
+    FUN_0c0c6ac6(a4, 0xC1E982C, (((int)stk + 0) + 0x4));
     t2 = 0xC0C74A0;
-    t3 = (*(int *)(((int)stk + 4)));
+    t3 = (*(int *)(((int)stk + 0)));
     for (;;) {
         t5 = *(signed char *)((t3 + 0x0));
         t3 = (t3 + 0x1);
@@ -1583,17 +1615,17 @@ int FUN_0c0c73e6(int a4, float f4, float f5)
         if (t2 != 32) {
             t2 = t5;
             t2 = (t2 << 1);
-            *(unsigned int *)(((int)stk + 20)) = (*(short *)((0xC1E8760 + t2)));
-            t2 = (FUN_0c0c0340((((int)stk + 4) + 0x10)));
+            *(unsigned int *)(((int)stk + 16)) = (*(short *)((0xC1E8760 + t2)));
+            t2 = (FUN_0c0c0340((((int)stk + 0) + 0x10)));
         } else {
             u9 = u4;
         }
         u4 = u9;
         t2 = 0x14;
-        u4 = (*(float *)((((int)stk + 4) + t2)));
+        u4 = (*(float *)((((int)stk + 0) + t2)));
         t2 = 0x14;
         u4 = (u4 + 18.0f);
-        *(float *)((((int)stk + 4) + t2)) = u4;
+        *(float *)((((int)stk + 0) + t2)) = u4;
     }
     return t2;
 }
@@ -1711,7 +1743,7 @@ int vmsfs_mount2(int a4)
     t3 = *(int *)((((a4 * 0x148) + 0xC956768) + 0x30));
     t4 = *(int *)((((a4 * 0x148) + 0xC956768) + 0x34));
     *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x30)) = (t3 + 0x1);
-    vmsfs_c_progress(a4, (*(int *)(((((((a4 << 2) << 2) << 2) << 1) + 0xC954350) + 0x8))), ((t3 + 0x1) - 1), t4);
+    vmsfs_c_progress(a4);
     return check_cache(a4);
 }
 
@@ -1724,12 +1756,12 @@ int FUN_0c024324(int a4)
 
     t0 = FUN_0c034fbc(a4, 0x200, 0x1, 0x0);
     if (t0 != 0) {
-        if ((*(int *)((a4 + 0x500))) == 3) {
-            t5 = *(int *)((a4 + 0x3AC));
-            *(unsigned int *)((a4 + 0x3AC)) = (t5 + 0x1);
-            if ((int)(t5 + 0x1) <= (int)(*(int *)((a4 + 0x3B0)))) {
-                if ((int)(*(int *)((a4 + 0x54C))) <= (int)(*(int *)((a4 + 0x528)))) {
-                    if ((int)(*(int *)((a4 + 0x3AC))) > (int)0x3C) {
+        if (((((struct o500_int *)(a4))->v)) == 3) {
+            t5 = (((struct o3AC_int *)(a4))->v);
+            (((struct o3AC_uint *)(a4))->v) = (t5 + 0x1);
+            if ((int)(t5 + 0x1) <= (int)((((struct o3B0_int *)(a4))->v))) {
+                if ((int)((((struct o54C_int *)(a4))->v)) <= (int)((((struct o528_int *)(a4))->v))) {
+                    if ((int)((((struct o3AC_int *)(a4))->v)) > (int)0x3C) {
                         return FUN_0c02a19a(a4);
                     }
                     return 0x3AC;
@@ -1738,12 +1770,12 @@ int FUN_0c024324(int a4)
             }
             return FUN_0c02a19a(a4);
         }
-        if ((*(int *)((a4 + 0x500))) == 2) {
-            t15 = *(int *)((a4 + 0x3AC));
-            *(unsigned int *)((a4 + 0x3AC)) = (t15 + 0x1);
-            if ((int)(t15 + 0x1) <= (int)(*(int *)((a4 + 0x3B0)))) {
-                if ((int)(*(int *)((a4 + 0x54C))) >= (int)(*(int *)((a4 + 0x528)))) {
-                    if ((int)(*(int *)((a4 + 0x3AC))) > (int)0x3C) {
+        if (((((struct o500_int *)(a4))->v)) == 2) {
+            t15 = (((struct o3AC_int *)(a4))->v);
+            (((struct o3AC_uint *)(a4))->v) = (t15 + 0x1);
+            if ((int)(t15 + 0x1) <= (int)((((struct o3B0_int *)(a4))->v))) {
+                if ((int)((((struct o54C_int *)(a4))->v)) >= (int)((((struct o528_int *)(a4))->v))) {
+                    if ((int)((((struct o3AC_int *)(a4))->v)) > (int)0x3C) {
                         return FUN_0c02a19a(a4);
                     }
                     return 0x3AC;
@@ -1752,9 +1784,9 @@ int FUN_0c024324(int a4)
             }
             return FUN_0c02a19a(a4);
         }
-        t24 = *(int *)((a4 + 0x3AC));
-        *(unsigned int *)((a4 + 0x3AC)) = (t24 + 0x1);
-        if ((int)(t24 + 0x1) > (int)(*(int *)((a4 + 0x3B0)))) {
+        t24 = (((struct o3AC_int *)(a4))->v);
+        (((struct o3AC_uint *)(a4))->v) = (t24 + 0x1);
+        if ((int)(t24 + 0x1) > (int)((((struct o3B0_int *)(a4))->v))) {
             return FUN_0c02a19a(a4);
         }
         return 0x3B0;

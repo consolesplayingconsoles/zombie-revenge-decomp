@@ -19,6 +19,19 @@ int nlRotateAY(int);
 int nlRotateAZ(int);
 int FUN_0c079de4(int a4);
 void FUN_0c09517c(int a4);
+struct o226_short { char p[0x226]; short v; };
+struct o228_short { char p[0x228]; short v; };
+struct o22A_short { char p[0x22A]; short v; };
+struct o238_ushort { char p[0x238]; unsigned short v; };
+struct o23A_short { char p[0x23A]; short v; };
+struct o3C_short { char p[0x3C]; short v; };
+struct o3E_short { char p[0x3E]; short v; };
+struct o4A_short { char p[0x4A]; short v; };
+struct o62_short { char p[0x62]; short v; };
+struct o64_short { char p[0x64]; short v; };
+struct o68_short { char p[0x68]; short v; };
+struct o68_ushort { char p[0x68]; unsigned short v; };
+
 
 
 void FUN_0c09517c(int a4)
@@ -36,31 +49,31 @@ void FUN_0c09517c(int a4)
     if (t0 != 0) {
         nlPushMatrix(0x0);
         FUN_0c0dcca0((0x22C + t0));
-        nlRotateAY((*(short *)((t0 + 0x228))));
-        nlRotateAX((*(short *)((t0 + 0x226))));
-        nlRotateAZ((*(short *)((t0 + 0x22A))));
+        nlRotateAY(((((struct o228_short *)(t0))->v)));
+        nlRotateAX(((((struct o226_short *)(t0))->v)));
+        nlRotateAZ(((((struct o22A_short *)(t0))->v)));
         FUN_0c0c465c((*(short *)((t1 + 0x0))));
-        FUN_0c0c465c((*(short *)((a4 + 0x64))));
-        FUN_0c0c465c((*(short *)((a4 + 0x62))));
+        FUN_0c0c465c(((((struct o64_short *)(a4))->v)));
+        FUN_0c0c465c(((((struct o62_short *)(a4))->v)));
         nlPushMatrix(0x0);
         FUN_0c0dcca0((t1 + 0x44));
-        nlRotateAY((*(short *)((a4 + 0x3E))));
-        nlRotateAX((*(short *)((a4 + 0x3C))));
+        nlRotateAY(((((struct o3E_short *)(a4))->v)));
+        nlRotateAX(((((struct o3C_short *)(a4))->v)));
         FUN_0c0c465c((*(short *)((t1 + 0x6))));
         FUN_0c0db800(0x0, 0x0, 0x0, 0x0, *(int *)((int)stk + 4));
         FUN_0c0dcca0((t1 + 0x50));
-        nlRotateAY((*(short *)((a4 + 0x3E))));
-        nlRotateAX((*(short *)((a4 + 0x3C))));
+        nlRotateAY(((((struct o3E_short *)(a4))->v)));
+        nlRotateAX(((((struct o3C_short *)(a4))->v)));
         FUN_0c0c465c((*(short *)((t1 + 0x8))));
         nlPopMatrix(0x1);
         nlPopMatrix(0x1);
         t35 = ((int (*)(int))((*(int *)((a4 + 0x30)))))(a4);
-        t36 = *(short *)((a4 + 0x68));
-        *(unsigned short *)((a4 + 0x68)) = (t36 - 1);
-        if (((int)(short)(t36 - 1) >= 0) && (t37 = *(short *)((t0 + 0x23A)), t38 = *(short *)((a4 + 0x4A)), t37 == t38)) {
+        t36 = (((struct o68_short *)(a4))->v);
+        (((struct o68_ushort *)(a4))->v) = (t36 - 1);
+        if (((int)(short)(t36 - 1) >= 0) && (t37 = (((struct o23A_short *)(t0))->v), t38 = (((struct o4A_short *)(a4))->v), t37 == t38)) {
             return;
         }
-        *(unsigned short *)((t0 + 0x238)) = 0x0;
+        (((struct o238_ushort *)(t0))->v) = 0x0;
         FUN_0c0e19f2();
     return;
     }

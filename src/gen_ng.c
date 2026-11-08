@@ -31,7 +31,11 @@ int FUN_0c0a9bb8(void)
     register int v0_8;
     register int v0_9;
     register float w0_0;
-    *(unsigned int *)(((int)stk + 4)) = 0xC23EDD0;
+    int R1004;
+    int R1008;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
+    R1004 = 0xC23EDD0;
     v0_0 = (0x0);
     v0_1 = (0xC);
     v0_2 = (0x0);
@@ -40,7 +44,7 @@ int FUN_0c0a9bb8(void)
     v0_5 = (0xFFFFF8E4);
     w0_0 = (1.0f);
     L_C0A9BDE:;
-    *(unsigned int *)(((int)stk + 8)) = (*(int *)((v0_3 + 0x14)));
+    R1008 = (*(int *)((v0_3 + 0x14)));
     v0_9 = FUN_0c0e1830(0xC0B35E4, 0x474);
     FUN_0c0e19d0(v0_9);
     *(unsigned int *)(((0xC0 + v0_9) + 0x0)) = (*(signed char *)((v0_3 + 0x1)));
@@ -58,7 +62,7 @@ int FUN_0c0a9bb8(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_9 + 0x30)) = *(struct mv3 *)((v0_3 + 0x8)); }
     v0_6 = (v0_9);
     v0_7 = (v0_0);
-    v0_8 = ((*(int *)(((int)stk + 4))));
+    v0_8 = ((R1004));
     v0_9 = (((*(int *)((v0_9 + 0xC0))) & 0xFFFFFFFE));
     L_C0A9C46:;
     if (((*(int *)((v0_7 + 0xC23EDE0))) != 4)) goto L_C0A9C5E;
@@ -69,7 +73,7 @@ int FUN_0c0a9bb8(void)
     FUN_0c0ba6e8(v0_6);
     FUN_0c0ba776(v0_6);
     FUN_0c085638(v0_6);
-    FUN_0c0b359e(v0_6, (*(int *)(((int)stk + 8))));
+    FUN_0c0b359e(v0_6, (R1008));
     *(unsigned int *)((v0_2 + 0xC246FF0)) = v0_6;
     *(unsigned short *)((v0_6 + 0x6C)) = v0_5;
     *(unsigned int *)((v0_6 + 0x2E8)) = v0_4;

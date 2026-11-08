@@ -9,6 +9,8 @@ int vmsio_ismount(int);
 int vmsio_isready(int);
 void vmsfs_fread1(int a4, int a5);
 struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+
 
 
 void vmsfs_fread1(int a4, int a5)
@@ -39,7 +41,7 @@ void vmsfs_fread1(int a4, int a5)
                                 t2 = vmsfs_read_retry(t1, t0, a5);
                                 if ((int)t2 < 0) {
                                 } else {
-                                    *(unsigned int *)(((0x40 + a4) + 0x0)) = (unsigned short)(get_fat(t1, t0));
+                                    (((struct o40_uint *)(a4))->v) = (unsigned short)(get_fat(t1, t0));
                                     *(unsigned int *)((a4 + 0x34)) = ((*(int *)((a4 + 0x34))) - 1);
                                 }
                             }

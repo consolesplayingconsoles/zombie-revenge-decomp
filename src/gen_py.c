@@ -52,6 +52,7 @@ int FUN_0c07a944(int a4, int a5, int a6, int a7)
     register float t67;
     register float u68;
     register float u30;
+    float s1;
 
     if (((*(int *)0xC23ED5C) & 6) != 0) {
         t1 = ((int (*)(int, int, int, int))(FUN_0c0e19f2))(a4, a5, a6, a7);
@@ -68,7 +69,8 @@ int FUN_0c07a944(int a4, int a5, int a6, int a7)
                 t39 = 0;
                 if (t16 > ((((struct o34_float *)(a4))->v))) {
                     u18 = (((struct o94_float *)(a4))->v);
-                    if (_builtin_fabsf(u18) > 0.199999988f) {
+                    s1 = _builtin_fabsf(u18);
+                    if (s1 > 0.199999988f) {
                         (((struct o62_ushort *)(a4))->v) = (((((struct o62_short *)(a4))->v)) + 0x2000);
                         (((struct o34_float *)(a4))->v) = ((t16 + t16) - ((((struct o34_float *)(a4))->v)));
                         u21 = (((struct o94_float *)(a4))->v);
@@ -81,9 +83,9 @@ int FUN_0c07a944(int a4, int a5, int a6, int a7)
                         (((struct o64_ushort *)(a4))->v) = 0x0;
                         (((struct o60_ushort *)(a4))->v) = 0x0;
                         (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
-                        u30 = _builtin_fabsf(u18);
+                        u30 = s1;
                     }
-                    t39 = ((_builtin_fabsf(u18) > 0.199999988f));
+                    t39 = ((s1 > 0.199999988f));
                 } else {
                     t39 = (0);
                 }

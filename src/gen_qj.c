@@ -27,6 +27,9 @@ struct o6C_short { char p[0x6C]; short v; };
 struct o6E_short { char p[0x6E]; short v; };
 struct o70_short { char p[0x70]; short v; };
 struct oB4_float { char p[0xB4]; float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 
 int FUN_0c018c7c(int a4)
@@ -74,14 +77,14 @@ int FUN_0c018c7c(int a4)
     *(float *)(((int)stk + 40)) = ((((struct o64_float *)(v0_5))->v));
     *(float *)(((int)stk + 44)) = ((((struct o68_float *)(v0_5))->v));
     FUN_0c0db470((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x14));
-    *(float *)(((((int)stk + 4) + 0x38) + 0x0)) = (*(float *)(((int)stk + 24)));
-    *(float *)((((((int)stk + 4) + 0x38) + 0x4) + 0x0)) = (*(float *)(((int)stk + 28)));
+    (((struct o38_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 24)));
+    (((struct o4_float *)((((int)stk + 4) + 0x38)))->v) = (*(float *)(((int)stk + 28)));
     R1012 = ((((int)stk + 4) + 0x38) + 0x8);
-    *(float *)((((((int)stk + 4) + 0x38) + 0x8) + 0x0)) = (*(float *)(((int)stk + 32)));
-    w0_2 = *(float *)(((((int)stk + 4) + 0x38) + 0x0));
+    (((struct o8_float *)((((int)stk + 4) + 0x38)))->v) = (*(float *)(((int)stk + 32)));
+    w0_2 = (((struct o38_float *)(((int)stk + 4)))->v);
     w0_4 = (((struct o228_float *)(v0_5))->v);
     w0_5 = *(float *)(((R1012) + 0x0));
-    w0_6 = *(float *)((((((int)stk + 4) + 0x38) + 0x4) + 0x0));
+    w0_6 = (((struct o4_float *)((((int)stk + 4) + 0x38)))->v);
     R1016 = ((w0_6 - w0_4) / w0_5);
     R1004 = (((int)stk + 4) + 0x2C);
     R1008 = ((((int)stk + 4) + 0x2C) + 0x4);

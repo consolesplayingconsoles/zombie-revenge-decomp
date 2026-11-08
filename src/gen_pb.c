@@ -4,6 +4,12 @@
 int FUN_0c0d68dc(int, int);
 int FUN_0c0da2e0(void);
 void FUN_0c0d6604(int a4, int a5, int a6, float f4);
+struct o32C_int { char p[0x32C]; int v; };
+struct o4_float { char p[0x4]; float v; };
+struct o6C_int { char p[0x6C]; int v; };
+struct o8_float { char p[0x8]; float v; };
+struct o90_float { char p[0x90]; float v; };
+
 
 void FUN_0c0d6604(int a4, int a5, int a6, float f4)
 {
@@ -28,7 +34,7 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     *(unsigned int *)(((int)stk + 20)) = v0_0;
     *(unsigned int *)(((int)stk + 16)) = v0_1;
     *(unsigned int *)(((int)stk + 12)) = v0_2;
-    *(float *)(((((int)stk + 4) + 0x4) + 0x0)) = w0_0;
+    (((struct o4_float *)(((int)stk + 4)))->v) = w0_0;
     *(unsigned int *)(((int)stk + 4)) = (0x170 + (*(int *)(((int)stk + 20))));
     if (((*(int *)(((int)stk + 12))) != 0)) goto L_C0D6626;
     L_C0D68D4:;
@@ -57,12 +63,12 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     L_C0D6896:;
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = (*(int *)(((int)stk + 12)));
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x4)) = (*(int *)(((int)stk + 12)));
-    *(float *)(((*(int *)(((int)stk + 4))) + 0x8)) = (*(float *)(((int)stk + 8)));
+    (((struct o8_float *)((*(int *)(((int)stk + 4)))))->v) = (*(float *)(((int)stk + 8)));
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0xC)) = 0x0;
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x10)) = 0x0;
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x14)) = 0x0;
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x1C)) = 0x0;
-    *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x20)) = (*(int *)(((*(int *)(((*(int *)(((int)stk + 20))) + 0x6C))) + 0x32C)));
+    *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x20)) = ((((struct o32C_int *)(((((struct o6C_int *)((*(int *)(((int)stk + 20)))))->v))))->v));
     FUN_0c0d68dc((*(int *)(((int)stk + 20))), (*(int *)(((int)stk + 4))));
     v0_0 = (0x1);
     goto L_C0D68D4;
@@ -144,7 +150,7 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     goto L_C0D688E;
     L_C0D67B4:;
     v0_0 = (0x90);
-    if (((*(float *)(((*(int *)(((int)stk + 20))) + 0x90))) > 15.0f)) goto L_C0D688E;
+    if ((((((struct o90_float *)((*(int *)(((int)stk + 20)))))->v)) > 15.0f)) goto L_C0D688E;
     goto L_C0D67C2;
     L_C0D6740:;
     v0_1 = *(int *)(((*(int *)(((int)stk + 16))) + 0x1C));
@@ -190,7 +196,7 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     goto L_C0D688E;
     L_C0D66E8:;
     v0_0 = (0x32C);
-    if (((int)(*(int *)(((*(int *)(((*(int *)(((int)stk + 20))) + 0x6C))) + 0x32C))) >= (int)0x2)) goto L_C0D66FC;
+    if (((int)((((struct o32C_int *)(((((struct o6C_int *)((*(int *)(((int)stk + 20)))))->v))))->v)) >= (int)0x2)) goto L_C0D66FC;
     goto L_C0D6896;
     L_C0D66FC:;
     goto L_C0D688E;

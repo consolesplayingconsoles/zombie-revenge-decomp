@@ -17,8 +17,6 @@ int FUN_0c0366b4(int a4)
     register int t7;
     register int t8;
     register int t9;
-    register int t10;
-    register int t11;
 
     t0 = *(int *)((a4 + 0x530));
     t1 = 0x0;
@@ -39,8 +37,8 @@ int FUN_0c0366b4(int a4)
                     if (t2 == t9) {
                         FUN_0c0da2e0();
                         t9 = 0xC0E5F1C;
-                        t10 = ((int (*)(void))(FUN_0c0e5f1c))();
-                        if ((int)t10 > (int)0x3) {
+                        t7 = ((int (*)(void))(FUN_0c0e5f1c))();
+                        if ((int)t7 > (int)0x3) {
                             t5 = t4;
                             t5 = (t5 + t8);
                             t2 = t8;
@@ -49,9 +47,8 @@ int FUN_0c0366b4(int a4)
                             t2 = (t2 - t4);
                         }
                     } else {
-                        t10 = ((t3 << 2) + (0xF0 + t0));
+                        t7 = ((t3 << 2) + (0xF0 + t0));
                     }
-                    t11 = t10;
                 } else {
                     t5 = t4;
                     t5 = (t5 + t8);
@@ -59,9 +56,8 @@ int FUN_0c0366b4(int a4)
                     t5 = ((int)((unsigned int)((int)((unsigned int)t5 + (unsigned int)0x0)) + ((((int)0x0 > (int)t5)) ? 1u : 0u)));
                     t5 = (t5 >> 1);
                     t2 = (t2 - t4);
-                    t11 = ((t3 << 2) + (0xF0 + t0));
+                    t7 = ((t3 << 2) + (0xF0 + t0));
                 }
-                t7 = t11;
             }
             t6 = t7;
         } else {

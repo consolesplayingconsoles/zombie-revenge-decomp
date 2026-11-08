@@ -23,7 +23,6 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
     register int t24;
     register int t26;
     register int t29;
-    register int t96;
     register int t60;
     register float u66;
     register float u67;
@@ -32,13 +31,6 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
     register float u72;
     register float u81;
     register float u82;
-    register int t16;
-    register int t17;
-    register int t19;
-    register int t5;
-    register int t7;
-    register int t11;
-    register int t13;
     register int t25;
     register int t27;
     int t28;
@@ -50,17 +42,6 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
     register int t102;
     register int t44;
     register int t45;
-    register int t48;
-    register int t49;
-    register int t51;
-    register int t52;
-    register int t92;
-    register int t93;
-    register int t95;
-    register int t86;
-    register int t87;
-    register int t89;
-    register int t90;
     register int t73;
 
     t1 = *(int *)0xC23ED5C;
@@ -68,25 +49,18 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
         if ((t1 & 0x6) != 0) {
             FUN_0c0e19f2(t1, a5, a6, a7);
         } else {
-            t5 = 0x6;
-            t7 = t1;
+            t22 = 0x6;
+            t24 = t1;
         }
-        t16 = t5;
-        t19 = t7;
     } else {
         if ((t1 & 0x20) == 0) {
-            t11 = 0x20;
-            t13 = t1;
+            t23 = 0x20;
+            t24 = t1;
         } else {
             FUN_0c0e19f2(t1, a5, a6, a7);
         }
-        t17 = t11;
-        t19 = t13;
     }
     t21 = 0xC0679EC;
-    t22 = t16;
-    t23 = t17;
-    t24 = t19;
     t26 = t25;
     t29 = 0x4;
     for (;;) {
@@ -113,33 +87,29 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
                     t24 = t29;
                     t21 = (FUN_0c0845f8(t24, t26));
                 } else {
-                    t48 = t22;
-                    t49 = t23;
-                    t51 = t24;
-                    t52 = t26;
+                    t98 = t22;
+                    t99 = t23;
+                    t101 = t24;
+                    t102 = t26;
                 }
-                t98 = t48;
-                t99 = t49;
-                t101 = t51;
-                t102 = t52;
             } else {
                 t27 = 0xC246FF0;
                 t27 = (t27 + t24);
                 t21 = 0xC8;
                 t27 = (*(int *)((t27 + 0x0)));
                 t21 = (*(int *)((t27 + t21)));
-                t96 = t26;
+                t102 = t26;
                 if ((t21 & 64) != 0) {
-                    t92 = t22;
-                    t93 = t23;
-                    t95 = t24;
+                    t98 = t22;
+                    t99 = t23;
+                    t101 = t24;
                 } else {
                     t21 = 0x68;
                     if (((*(int *)((a4 + t21))) & t28) != 0) {
-                        t86 = t22;
-                        t87 = t23;
-                        t89 = t24;
-                        t90 = t26;
+                        t98 = t22;
+                        t99 = t23;
+                        t101 = t24;
+                        t102 = t26;
                     } else {
                         t24 = 0xC067B98;
                         t26 = 0xB4;
@@ -224,15 +194,7 @@ int FUN_0c067964(int a4, int a5, int a6, int a7)
                         t24 = t29;
                         t21 = (FUN_0c0845f8(t24, t26));
                     }
-                    t92 = t86;
-                    t93 = t87;
-                    t95 = t89;
-                    t96 = t90;
                 }
-                t98 = t92;
-                t99 = t93;
-                t101 = t95;
-                t102 = t96;
             }
             t22 = t98;
             t29 = (t29 + 0x1);

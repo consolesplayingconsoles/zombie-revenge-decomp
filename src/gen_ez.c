@@ -4,11 +4,11 @@
 int FUN_0c081404(int, int, int, float);
 int FUN_0c0844dc(int, int, int, float);
 int FUN_0c0848d6(int, int, int, float, float, float);
-int FUN_0c0849da(int, int, int, int, int, int, int, int);
+int FUN_0c0849da(void);
 int FUN_0c0b9b7a(void);
 int FUN_0c0bbbf4(int);
 int FUN_0c0c465c(int);
-int FUN_0c0ce10c(int, int, int, int);
+int FUN_0c0ce10c(void);
 extern int FUN_0c0d9dc0();
 int FUN_0c0dcbb0(int);
 int FUN_0c0dcc70(float, float, float);
@@ -88,6 +88,8 @@ void FUN_0c081478(int a4, int a5, int a6, float f4, float f5)
     float F14;
     float F15;
     int T_;
+    int R1004;
+    R1004 = *(int *)((int)stk + 4);
     R4 = a4;
     R6 = a6;
     F5 = f5;
@@ -189,12 +191,12 @@ void FUN_0c081478(int a4, int a5, int a6, float f4, float f5)
     L_C08153C:;
     goto L_C08179E;
     L_C081540:;
-    *(unsigned int *)(((int)stk + 4)) = (R11 << 2);
+    R1004 = (R11 << 2);
     t60 = *(int *)((((R11 << 2) + R12) + 0x0));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x10)) = *(struct mv3 *)(((((((R11 << 1) + R11) << 2) << 2) << 2) + 0xC23F268)); }
     *(unsigned int *)((R14 + 0x0)) = 0x1;
     *(unsigned int *)((R14 + 0x18)) = (short)(((int (*)(int, int, int, float, float))(FUN_0c0d9dc0))(R4, R5, R6, ((*(float *)(((int)stk + 20))) - ((((struct o338_float *)(R13))->v))), ((*(float *)(((int)stk + 28))) - ((((struct o340_float *)(R13))->v)))));
-    (((struct o14_float *)(R14))->v) = (*(float *)((((((((((struct o3B4_int *)(R13))->v)) << 2) << 2) << 2) + (0x94 + R12)) + (*(int *)(((int)stk + 4))))));
+    (((struct o14_float *)(R14))->v) = (*(float *)((((((((((struct o3B4_int *)(R13))->v)) << 2) << 2) << 2) + (0x94 + R12)) + (R1004))));
     u69 = (((struct o270_float *)(t60))->v);
     R9 = (t60);
     F4 = ((u69 + 15.0f));
@@ -327,7 +329,7 @@ int FUN_0c0b97d4(int a4, int a5, int a6, int a7)
     R6 = a6;
     L_C0B97D4:;
     *(unsigned int *)(((int)stk + 12)) = R4;
-    FUN_0c0ce10c(R4, R5, R6, a7);
+    FUN_0c0ce10c();
     R10 = (0xC0C465C);
     R11 = (0xC23A258);
     R13 = (0x1);
@@ -489,7 +491,7 @@ int FUN_0c0b97d4(int a4, int a5, int a6, int a7)
     nlMultiMatrix((((((((*(int *)((R11 + 0x0))) & R13) << 2) << 2) << 2) + (R1008)) + 0x200));
     FUN_0c0c465c(0x1252);
     nlPopMatrix(0x1);
-    FUN_0c0849da(0x0, 0x0, 0x0, 0x0, R1004, R1008, *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12));
+    FUN_0c0849da();
     goto L_C0B9B30;
     L_C0B9B30:;
     (((struct o38_float *)(R14))->v) = (((((struct o38_float *)(R14))->v)) + F12);

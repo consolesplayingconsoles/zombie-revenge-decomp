@@ -9,6 +9,10 @@ int nlRotateAX(int);
 int nlRotateAY(int);
 int nlUnitMatrix(void);
 int FUN_0c0a6ac4(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
+struct o2C_float { char p[0x2C]; float v; };
+struct o30_float { char p[0x30]; float v; };
+struct o44_float { char p[0x44]; float v; };
+
 
 int FUN_0c0a6ac4(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, int a12, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
 {
@@ -16,8 +20,8 @@ int FUN_0c0a6ac4(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     register float u2;
 
     stk[14] = a8;
-    *(float *)(((((int)stk + 4) + 0x30) + 0x0)) = f10;
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = f11;
+    (((struct o30_float *)(((int)stk + 4)))->v) = f10;
+    (((struct o2C_float *)(((int)stk + 4)))->v) = f11;
     *(unsigned int *)(((int)stk + 12)) = a4;
     *(unsigned int *)(((int)stk + 20)) = a5;
     *(unsigned int *)(((int)stk + 16)) = a6;
@@ -34,9 +38,9 @@ int FUN_0c0a6ac4(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     *(float *)(((int)stk + 40)) = (*(float *)(((int)stk + 48)));
     *(float *)(((int)stk + 44)) = u2;
     FUN_0c0db470((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x14));
-    *(float *)(((((int)stk + 4) + 0x30) + 0x0)) = (*(float *)(((int)stk + 24)));
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = (*(float *)(((int)stk + 28)));
-    *(float *)(((((int)stk + 4) + 0x44) + 0x0)) = (*(float *)(((int)stk + 32)));
+    (((struct o30_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 24)));
+    (((struct o2C_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 28)));
+    (((struct o44_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 32)));
     nlUnitMatrix();
     nlRotateAY((*(int *)(((int)stk + 8))));
     nlRotateAX((*(int *)(((int)stk + 4))));
@@ -46,9 +50,9 @@ int FUN_0c0a6ac4(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     *(float *)(((int)stk + 40)) = (*(float *)(((int)stk + 48)));
     *(float *)(((int)stk + 44)) = u2;
     FUN_0c0db470((((int)stk + 4) + 0x20), (((int)stk + 4) + 0x14));
-    *(float *)(((((int)stk + 4) + 0x30) + 0x0)) = (*(float *)(((int)stk + 24)));
-    *(float *)(((((int)stk + 4) + 0x2C) + 0x0)) = (*(float *)(((int)stk + 28)));
-    *(float *)(((((int)stk + 4) + 0x44) + 0x0)) = (*(float *)(((int)stk + 32)));
+    (((struct o30_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 24)));
+    (((struct o2C_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 28)));
+    (((struct o44_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 32)));
     nlPopMatrix(0x1);
     *(float *)(((*(int *)(((int)stk + 12))) + 0x0)) = (f7 + (*(float *)(((int)stk + 52))));
     *(float *)(((*(int *)(((int)stk + 20))) + 0x0)) = (f8 + (*(float *)(((int)stk + 48))));

@@ -3,6 +3,8 @@
 
 int FUN_0c0e5dc0(void);
 int FUN_0c0e509a(int a4, int a5, int a6);
+struct o2A_short { char p[0x2A]; short v; };
+
 
 int FUN_0c0e509a(int a4, int a5, int a6)
 {
@@ -132,7 +134,7 @@ int FUN_0c0e509a(int a4, int a5, int a6)
         }
         t125 = t115;
     } else {
-        t125 = (unsigned short)(*(short *)(((R1012) + 0x2A)));
+        t125 = (unsigned short)((((struct o2A_short *)((R1012)))->v));
     }
     return t125;
 }

@@ -8,6 +8,11 @@ int FUN_0c0dcc70(float, float, float);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int FUN_0c075036(int a4, int a5, int a6, int a7);
+struct o4_float { char p[0x4]; float v; };
+struct o78_int { char p[0x78]; int v; };
+struct o8C_int { char p[0x8C]; int v; };
+struct oC_float { char p[0xC]; float v; };
+
 
 int FUN_0c075036(int a4, int a5, int a6, int a7)
 {
@@ -38,7 +43,7 @@ int FUN_0c075036(int a4, int a5, int a6, int a7)
     v0_2 = (0xC01F1B8);
     v0_2 = (0xC0DC510);
     v0_2 = (v0_0);
-    v0_3 = ((*(int *)((v0_0 + 0x8C))));
+    v0_3 = (((((struct o8C_int *)(v0_0))->v)));
     v0_0 = (0xC0DC4C0);
     v0_0 = (0xC0C465C);
     w0_0 = (1.0f);
@@ -55,8 +60,8 @@ int FUN_0c075036(int a4, int a5, int a6, int a7)
     L_C0750DE:;
     nlPushMatrix(0x0);
     w0_1 = FUN_0c01f1b8((v0_3 + 0x4), ((int)stk + 4));
-    FUN_0c0dcc70((*(float *)((v0_3 + 0x4))), (w0_1 + w0_0), (*(float *)((v0_3 + 0xC))));
-    FUN_0c0c465c((*(int *)((v0_2 + 0x78))));
+    FUN_0c0dcc70(((((struct o4_float *)(v0_3))->v)), (w0_1 + w0_0), ((((struct oC_float *)(v0_3))->v)));
+    FUN_0c0c465c(((((struct o78_int *)(v0_2))->v)));
     v0_1 = ((nlPopMatrix(0x1)));
     L_C075104:;
     v0_3 = ((v0_3 + 0x10));

@@ -22,10 +22,14 @@ int vmsfs_findnext(int a4, int a5)
     register int v0_4;
     register int v0_5;
     register int v0_6;
+    int R1004;
+    int R1008;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
     v0_1 = a4;
     v0_3 = a5;
-    *(unsigned int *)(((int)stk + 4)) = v0_3;
-    *(unsigned int *)(((int)stk + 8)) = (v0_1 * 0x148);
+    R1004 = v0_3;
+    R1008 = (v0_1 * 0x148);
     v0_3 = (v0_1);
     v0_0 = (((v0_1 * 0x148) + 0xC956768));
     if (((*(signed char *)((((v0_1 * 0x148) + 0xC956768) + 0x2))) == 0)) goto L_C226A3C;
@@ -39,7 +43,7 @@ int vmsfs_findnext(int a4, int a5)
     L_C226A26:;
     v0_1 = (vmsio_ismount(v0_3)) == 0;
     if (v0_1) goto L_C226A3C;
-    if (((*(signed char *)((((*(int *)(((int)stk + 8))) + 0xC956768) + 0x8))) != 0)) goto L_C226A42;
+    if (((*(signed char *)((((R1008) + 0xC956768) + 0x8))) != 0)) goto L_C226A42;
     goto L_C226A3C;
     L_C226A42:;
     v0_1 = (int)(buIsFormat(v0_3)) >= 0;
@@ -65,7 +69,7 @@ int vmsfs_findnext(int a4, int a5)
     v0_0 = (0xFFFFFF05);
     goto L_C226AB0;
     L_C226A94:;
-    v0_2 = *(int *)(((int)stk + 4));
+    v0_2 = R1004;
     v0_3 = (v0_1 + 0x4);
     v0_0 = ((v0_2 + 0xC));
     v0_1 = (v0_2);

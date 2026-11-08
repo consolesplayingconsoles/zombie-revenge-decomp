@@ -15,6 +15,39 @@ int kmiGetVertexBasePointer(int, int, int, int, int, int, int);
 int kmiSetTAEnvironment(int, int, int, int, int);
 int kmiTAallocEx(int, int, int);
 int kmSetSystemConfiguration(int a4);
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o5C_int { char p[0x5C]; int v; };
+struct o0_int { int v; };
+struct o0_uint { unsigned int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o10_uint { char p[0x10]; unsigned int v; };
+struct o14_int { char p[0x14]; int v; };
+struct o14_uint { char p[0x14]; unsigned int v; };
+struct o18_int { char p[0x18]; int v; };
+struct o18_uint { char p[0x18]; unsigned int v; };
+struct o1C_int { char p[0x1C]; int v; };
+struct o1C_uint { char p[0x1C]; unsigned int v; };
+struct o20_int { char p[0x20]; int v; };
+struct o20_uint { char p[0x20]; unsigned int v; };
+struct o24_int { char p[0x24]; int v; };
+struct o24_uint { char p[0x24]; unsigned int v; };
+struct o28_uint { char p[0x28]; unsigned int v; };
+struct o2C_uint { char p[0x2C]; unsigned int v; };
+struct o30_uint { char p[0x30]; unsigned int v; };
+struct o34_uint { char p[0x34]; unsigned int v; };
+struct o38_int { char p[0x38]; int v; };
+struct o38_uint { char p[0x38]; unsigned int v; };
+struct o3C_int { char p[0x3C]; int v; };
+struct o3C_uint { char p[0x3C]; unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+struct oC_int { char p[0xC]; int v; };
+struct oC_uint { char p[0xC]; unsigned int v; };
+
+
 
 int kmSetSystemConfiguration(int a4)
 {
@@ -51,7 +84,6 @@ int kmSetSystemConfiguration(int a4)
     register int t112;
     register int t118;
     register int t126;
-    register int t128;
     register int t127;
     register int t130;
     register int t131;
@@ -62,8 +94,6 @@ int kmSetSystemConfiguration(int a4)
     register int t164;
     register int t169;
     register int t171;
-    register int t176;
-    register int t181;
     register int t182;
     register int t183;
     register int t184;
@@ -77,7 +107,6 @@ int kmSetSystemConfiguration(int a4)
     register int t233;
     register int t273;
     register int t235;
-    register int t271;
     register int t237;
     int t238;
     register float u70;
@@ -86,7 +115,6 @@ int kmSetSystemConfiguration(int a4)
     register float u86;
     register float u93;
     int t104;
-    register int t106;
     register int t198;
     register int t199;
     register int t200;
@@ -94,7 +122,7 @@ int kmSetSystemConfiguration(int a4)
     *(unsigned int *)(((int)stk + 20)) = 0x2;
     kmiFBinit();
     kmiDiscardRenderPipeline();
-    *(unsigned int *)0xC952940 = 0x0;
+    (((struct o14_uint *)0xC95292C)->v) = 0x0;
     if (((*(int *)((a4 + 0x4))) & 0x1) != 0) {
         *(unsigned int *)(((int)stk + 32)) = 0x1;
     } else {
@@ -111,18 +139,18 @@ int kmSetSystemConfiguration(int a4)
         *(unsigned int *)(((int)stk + 28)) = 0x0;
     }
     if (((*(int *)((a4 + 0x4))) & 0x100000) != 0) {
-        *(unsigned int *)0xC95272C = 0x0;
+        (((struct o0_uint *)0xC95272C)->v) = 0x0;
     } else {
-        *(unsigned int *)0xC95272C = 0x1;
+        (((struct o0_uint *)0xC95272C)->v) = 0x1;
     }
     kmiGetDisplayData(0xFF, (*(int *)(((int)stk + 28))), (*(int *)((a4 + 0x14))));
     if (((*(int *)((a4 + 0x4))) & 0x10000) != 0) {
-        *(unsigned int *)0xC95272C = 0x1;
-        *(unsigned int *)0xC239C70 = 0x1;
-        *(unsigned int *)0xC952660 = (*(int *)0xC952658);
-        *(unsigned int *)((((*(int *)0xC952658) << 2) + 0xC952648)) = 0x2;
+        (((struct o0_uint *)0xC95272C)->v) = 0x1;
+        (((struct o4_uint *)0xC239C6C)->v) = 0x1;
+        (((struct o20_uint *)0xC952640)->v) = ((((struct o18_int *)0xC952640)->v));
+        *(unsigned int *)(((((((struct o18_int *)0xC952640)->v)) << 2) + 0xC952648)) = 0x2;
         *(unsigned int *)0xC952508 = 0x0;
-        *(unsigned int *)0xC952670 = 0x1;
+        (((struct o30_uint *)0xC952640)->v) = 0x1;
         *(unsigned int *)(((int)stk + 20)) = (((int)stk + 16) + 0x24);
         *(unsigned int *)(((((int)stk + 16) + 0x24) + 0x0)) = ((*(int *)(((*(int *)((a4 + 0x20))) + 0x10))) & 0x1);
         *(unsigned int *)((((((int)stk + 16) + 0x24) + 0x4) + 0x0)) = (0x2 & (*(int *)(((*(int *)((a4 + 0x20))) + 0x10))));
@@ -141,23 +169,23 @@ int kmSetSystemConfiguration(int a4)
         *(unsigned int *)(((int)stk + 16)) = t47;
         kmiGetNativeRegOBPSize(t47);
     } else {
-        *(unsigned int *)0xC239C70 = 0x0;
+        (((struct o4_uint *)0xC239C6C)->v) = 0x0;
         if (((*(int *)((a4 + 0x4))) & 16) != 0) {
-            *(unsigned int *)0xC952640 = 0x1;
-            *(unsigned int *)0xC95272C = 0x1;
+            (((struct o0_uint *)0xC952640)->v) = 0x1;
+            (((struct o0_uint *)0xC95272C)->v) = 0x1;
         } else {
-            *(unsigned int *)0xC952640 = 0x0;
+            (((struct o0_uint *)0xC952640)->v) = 0x0;
         }
-        kmChangeLatencyModel((*(int *)0xC952640), (*(int *)((a4 + 0x5C))));
+        kmChangeLatencyModel(((((struct o0_int *)0xC952640)->v)), ((((struct o5C_int *)(a4))->v)));
         t56 = *(int *)((a4 + 0x28));
-        *(unsigned int *)0xC95273C = (*(int *)((a4 + 0x24)));
+        (((struct o10_uint *)0xC95272C)->v) = (*(int *)((a4 + 0x24)));
         t63 = t56;
-        if (((*(int *)0xC95273C) & 0x1F) != 0) {
-            t58 = *(int *)0xC95273C;
-            *(unsigned int *)0xC95273C = (((*(int *)0xC95273C) + 0x1F) & 0xFFFFFFE0);
+        if ((((((struct o10_int *)0xC95272C)->v)) & 0x1F) != 0) {
+            t58 = (((struct o10_int *)0xC95272C)->v);
+            (((struct o10_uint *)0xC95272C)->v) = ((((((struct o10_int *)0xC95272C)->v)) + 0x1F) & 0xFFFFFFE0);
             t63 = (t56 - ((-(t58 & 0x1F)) + 0x20));
         }
-        t65 = *(int *)0xC952640;
+        t65 = (((struct o0_int *)0xC952640)->v);
         t66 = t63;
         if (t65 == 0) {
             t66 = ((unsigned int)t63 >> 1);
@@ -256,13 +284,12 @@ int kmSetSystemConfiguration(int a4)
             t89 = (t89 & t88);
             *(unsigned int *)((t90 + 0x0)) = t89;
         }
-        if ((((*(int *)0xC952300) & 64) != 0) && (t104 = *(int *)(((((int)stk + 16) + 0x40) + 0x0)), (unsigned int)t104 < (unsigned int)0x38)) {
-            *(unsigned int *)(((((int)stk + 16) + 0x40) + 0x0)) = ((*(int *)(((((int)stk + 16) + 0x40) + 0x0))) + 0x38);
-            t106 = 0x38;
+        if (((((((struct o0_int *)0xC952300)->v)) & 64) != 0) && (t104 = (((struct o40_int *)(((int)stk + 16)))->v), (unsigned int)t104 < (unsigned int)0x38)) {
+            (((struct o40_uint *)(((int)stk + 16)))->v) = (((((struct o40_int *)(((int)stk + 16)))->v)) + 0x38);
+            t108 = 0x38;
         } else {
-            t106 = t88;
+            t108 = t88;
         }
-        t108 = t106;
         t109 = 0xC952300;
         t110 = 0x0;
         t111 = 0x0;
@@ -287,14 +314,13 @@ int kmSetSystemConfiguration(int a4)
             *(unsigned int *)((((t118 << 2) + (((int)stk + 16) + 0x40)) + 0x0)) = ((*(int *)((((t118 << 2) + (((int)stk + 16) + 0x40)) + 0x0))) - (t111 - t66));
             *(unsigned int *)((((t118 << 2) + (((int)stk + 16) + 0x40)) + 0x0)) = ((*(int *)((((t118 << 2) + (((int)stk + 16) + 0x40)) + 0x0))) & 0xFFFFFFE0);
         }
-        t126 = *(int *)(((((int)stk + 16) + 0x40) + 0x0));
-        t128 = t126;
+        t126 = (((struct o40_int *)(((int)stk + 16)))->v);
+        t130 = t126;
         if (t126 != 0) {
-            t127 = *(int *)(((((int)stk + 16) + 0x40) + 0x0));
-            *(unsigned int *)(((((int)stk + 16) + 0x40) + 0x0)) = (t127 - 16);
-            t128 = (t127 - 16);
+            t127 = (((struct o40_int *)(((int)stk + 16)))->v);
+            (((struct o40_uint *)(((int)stk + 16)))->v) = (t127 - 16);
+            t130 = (t127 - 16);
         }
-        t130 = t128;
         t131 = ((((int)stk + 16) + 0x40) + 0x4);
         t132 = ((((int)stk + 16) + 0x40) + 0x4);
         for (;;) {
@@ -310,21 +336,21 @@ int kmSetSystemConfiguration(int a4)
             t131 = (t131 + 0x4);
             t132 = (t132 + 0x4);
         }
-        *(unsigned int *)0xC9528EC = (*(int *)((a4 + 0x20)));
+        (((struct o0_uint *)0xC9528EC)->v) = (*(int *)((a4 + 0x20)));
         *(unsigned int *)(((int)stk + 16)) = (((int)stk + 16) + 0x40);
-        *(unsigned int *)0xC9528F0 = (*(int *)(((((int)stk + 16) + 0x40) + 0x0)));
+        (((struct o4_uint *)0xC9528EC)->v) = ((((struct o40_int *)(((int)stk + 16)))->v));
         *(unsigned int *)(((int)stk + 24)) = ((((int)stk + 16) + 0x40) + 0x4);
-        *(unsigned int *)0xC9528F4 = (*(int *)((((((int)stk + 16) + 0x40) + 0x4) + 0x0)));
+        (((struct o8_uint *)0xC9528EC)->v) = (*(int *)((((((int)stk + 16) + 0x40) + 0x4) + 0x0)));
         *(unsigned int *)(((int)stk + 44)) = ((((int)stk + 16) + 0x40) + 0x8);
-        *(unsigned int *)0xC9528F8 = (*(int *)((((((int)stk + 16) + 0x40) + 0x8) + 0x0)));
+        (((struct oC_uint *)0xC9528EC)->v) = (*(int *)((((((int)stk + 16) + 0x40) + 0x8) + 0x0)));
         *(unsigned int *)(((int)stk + 40)) = ((((int)stk + 16) + 0x40) + 0xC);
-        *(unsigned int *)0xC9528FC = (*(int *)((((((int)stk + 16) + 0x40) + 0xC) + 0x0)));
+        (((struct o10_uint *)0xC9528EC)->v) = (*(int *)((((((int)stk + 16) + 0x40) + 0xC) + 0x0)));
         *(unsigned int *)(((int)stk + 36)) = ((((int)stk + 16) + 0x40) + 0x10);
-        *(unsigned int *)0xC952900 = (*(int *)((((((int)stk + 16) + 0x40) + 0x10) + 0x0)));
+        (((struct o14_uint *)0xC9528EC)->v) = (*(int *)((((((int)stk + 16) + 0x40) + 0x10) + 0x0)));
         t145 = (*(int *)(((*(int *)(((int)stk + 36))) + 0x0)));
         *(int *)((int)stk + 12) = t145;
         kmiChkActiveListType((*(int *)(((*(int *)(((int)stk + 16))) + 0x0))), (*(int *)(((*(int *)(((int)stk + 24))) + 0x0))), (*(int *)(((*(int *)(((int)stk + 44))) + 0x0))), (*(int *)(((*(int *)(((int)stk + 40))) + 0x0))), t145);
-        *(unsigned int *)(((*(int *)((a4 + 0x20))) + 0x10)) = (*(int *)0xC952764);
+        *(unsigned int *)(((*(int *)((a4 + 0x20))) + 0x10)) = ((((struct o38_int *)0xC95272C)->v));
         t157 = 0xC9529D4;
         for (;;) {
             if ((unsigned int)t157 >= (unsigned int)0xC9529E8) {
@@ -336,10 +362,10 @@ int kmSetSystemConfiguration(int a4)
         *(int *)((int)stk + 12) = 0x0;
         t159 = (*(int *)(((((int)stk + 16) + 0x40) + 0x10)));
         *(int *)((int)stk + 8) = t159;
-        t164 = kmiGetPackOBPParam((*(int *)(((((int)stk + 16) + 0x40) + 0x0))), (*(int *)(((((int)stk + 16) + 0x40) + 0x4))), (*(int *)(((((int)stk + 16) + 0x40) + 0x8))), (*(int *)(((((int)stk + 16) + 0x40) + 0xC))), t159, 0x0);
+        t164 = kmiGetPackOBPParam(((((struct o40_int *)(((int)stk + 16)))->v)), (*(int *)(((((int)stk + 16) + 0x40) + 0x4))), (*(int *)(((((int)stk + 16) + 0x40) + 0x8))), (*(int *)(((((int)stk + 16) + 0x40) + 0xC))), t159, 0x0);
         *(unsigned int *)(((int)stk + 16)) = t164;
         kmiGetNativeRegOBPSize(t164);
-        if ((*(int *)0xC952640) == 1) {
+        if (((((struct o0_int *)0xC952640)->v)) == 1) {
             *(unsigned int *)(((int)stk + 20)) = 0x1;
         }
         t169 = (*(int *)(((int)stk + 20)));
@@ -347,15 +373,13 @@ int kmSetSystemConfiguration(int a4)
         *(int *)((int)stk + 8) = 0x0;
         t171 = (*(int *)(((((int)stk + 16) + 0x40) + 0x10)));
         *(int *)((int)stk + 4) = t171;
-        t176 = kmiGetVertexBasePointer((*(int *)(((((int)stk + 16) + 0x40) + 0x0))), (*(int *)(((((int)stk + 16) + 0x40) + 0x4))), (*(int *)(((((int)stk + 16) + 0x40) + 0x8))), (*(int *)(((((int)stk + 16) + 0x40) + 0xC))), t171, 0x0, t169);
-        *(unsigned int *)0xC9529A0 = (*(int *)0xC952978);
-        *(unsigned int *)0xC9529A4 = (*(int *)0xC95297C);
-        *(unsigned int *)0xC9529A8 = (*(int *)0xC952980);
-        *(unsigned int *)0xC9529AC = (*(int *)0xC952984);
-        t181 = *(int *)0xC952988;
-        *(unsigned int *)0xC9529B0 = t181;
-        t182 = t176;
-        t183 = t181;
+        t182 = kmiGetVertexBasePointer(((((struct o40_int *)(((int)stk + 16)))->v)), (*(int *)(((((int)stk + 16) + 0x40) + 0x4))), (*(int *)(((((int)stk + 16) + 0x40) + 0x8))), (*(int *)(((((int)stk + 16) + 0x40) + 0xC))), t171, 0x0, t169);
+        (((struct o28_uint *)0xC952978)->v) = ((((struct o0_int *)0xC952978)->v));
+        (((struct o2C_uint *)0xC952978)->v) = ((((struct o4_int *)0xC952978)->v));
+        (((struct o30_uint *)0xC952978)->v) = ((((struct o8_int *)0xC952978)->v));
+        (((struct o34_uint *)0xC952978)->v) = ((((struct oC_int *)0xC952978)->v));
+        t183 = (((struct o10_int *)0xC952978)->v);
+        (((struct o38_uint *)0xC952978)->v) = t183;
         t184 = 0x0;
         for (;;) {
             if ((unsigned int)t184 >= (unsigned int)0x14) {
@@ -366,12 +390,12 @@ int kmSetSystemConfiguration(int a4)
             t184 = (t184 + 0x4);
             *(unsigned int *)((0xC9529B4 + t182)) = t183;
         }
-        *(unsigned int *)0xC952954 = 0x0;
-        *(unsigned int *)0xC952958 = 0x0;
-        *(unsigned int *)0xC95295C = 0x0;
-        *(unsigned int *)0xC952960 = 0x0;
-        *(unsigned int *)0xC952964 = 0xC952978;
-        *(unsigned int *)0xC952968 = 0xC9529A0;
+        (((struct o28_uint *)0xC95292C)->v) = 0x0;
+        (((struct o2C_uint *)0xC95292C)->v) = 0x0;
+        (((struct o30_uint *)0xC95292C)->v) = 0x0;
+        (((struct o34_uint *)0xC95292C)->v) = 0x0;
+        (((struct o38_uint *)0xC95292C)->v) = 0xC952978;
+        (((struct o3C_uint *)0xC95292C)->v) = 0xC9529A0;
         if ((unsigned int)0x0 < (unsigned int)(*(int *)(((int)stk + 20)))) {
             t187 = 0xC952978;
             t188 = 0xC952970;
@@ -393,7 +417,7 @@ int kmSetSystemConfiguration(int a4)
                 break;
             }
             t197 = 0xC9529D4;
-            t199 = (*(int *)0xC952968);
+            t199 = ((((struct o3C_int *)0xC95292C)->v));
             t200 = (*(int *)((t201 + t197)));
             t199 = (t199 + t201);
             t198 = (*(int *)((t199 + 0x0)));
@@ -404,34 +428,34 @@ int kmSetSystemConfiguration(int a4)
         }
     }
     t213 = *(int *)((a4 + 0x1C));
-    *(unsigned int *)0xC952948 = t213;
+    (((struct o1C_uint *)0xC95292C)->v) = t213;
     if ((t213 & 7) != 0) {
-        *(unsigned int *)0xC952948 = (((*(int *)0xC952948) + 0x7) & 0xFFFFFFF8);
+        (((struct o1C_uint *)0xC95292C)->v) = ((((((struct o1C_int *)0xC95292C)->v)) + 0x7) & 0xFFFFFFF8);
     }
-    *(unsigned int *)0xC952944 = ((unsigned int)(((*(int *)0xC952310) - ((*(int *)0xC952948) << 2)) - ((*(int *)0xC95294C) << 1)) >> 1);
+    (((struct o18_uint *)0xC95292C)->v) = ((unsigned int)((((((struct o10_int *)0xC952300)->v)) - (((((struct o1C_int *)0xC95292C)->v)) << 2)) - (((((struct o20_int *)0xC95292C)->v)) << 1)) >> 1);
     t222 = kmiGetProfileInt(0xC237794, 0xC2377A0, 0x0);
     if (t222 == 1) {
-        if ((unsigned int)(*(int *)0xC952944) > (unsigned int)0x400000) {
-            *(unsigned int *)0xC952944 = 0x400000;
+        if ((unsigned int)((((struct o18_int *)0xC95292C)->v)) > (unsigned int)0x400000) {
+            (((struct o18_uint *)0xC95292C)->v) = 0x400000;
         }
     } else {
-        if ((unsigned int)(*(int *)0xC952944) > (unsigned int)0x200000) {
-            *(unsigned int *)0xC952944 = 0x200000;
+        if ((unsigned int)((((struct o18_int *)0xC95292C)->v)) > (unsigned int)0x200000) {
+            (((struct o18_uint *)0xC95292C)->v) = 0x200000;
         }
     }
-    t233 = *(int *)0xC952944;
+    t233 = (((struct o18_int *)0xC95292C)->v);
     t273 = 0x3;
-    if ((unsigned int)t233 < (unsigned int)(*(int *)0xC952950)) {
+    if ((unsigned int)t233 < (unsigned int)((((struct o24_int *)0xC95292C)->v))) {
     } else {
         t235 = kmiTAallocEx(t233, (((int)stk + 16) + 0x38), (((int)stk + 16) + 0x3C));
-        t271 = t235;
+        t273 = t235;
         if (t235 == 0) {
-            *(unsigned int *)0xC952754 = (*(int *)0xC952944);
+            (((struct o28_uint *)0xC95272C)->v) = ((((struct o18_int *)0xC95292C)->v));
             *(int *)((int)stk + 12) = 0x0;
             t237 = *(int *)(((int)stk + 28));
             t238 = *(int *)(((int)stk + 16));
             *(int *)((int)stk + 8) = ((~t237) & t238);
-            kmiSetTAEnvironment(((unsigned int)(*(int *)0xC952368) >> 7), ((unsigned int)(*(int *)0xC95236C) >> 7), ((unsigned int)(*(int *)0xC952370) >> 7), ((unsigned int)(*(int *)0xC952374) >> 7), ((~t237) & t238));
+            kmiSetTAEnvironment(((unsigned int)((((struct o0_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct o4_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct o8_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct oC_int *)0xC952368)->v)) >> 7), ((~t237) & t238));
             if (((*(int *)((a4 + 0x4))) & 0x10000) != 0) {
                 *(unsigned int *)0xC952508 = 0x1;
             }
@@ -439,23 +463,22 @@ int kmSetSystemConfiguration(int a4)
             *(unsigned int *)(((*(int *)((a4 + 0x20))) + 0x4)) = 0xC239B2C;
             *(unsigned int *)(((*(int *)((a4 + 0x20))) + 0x8)) = 0xC952954;
             *(unsigned int *)(((*(int *)((a4 + 0x20))) + 0xC)) = 0xC952970;
-            *(unsigned int *)0xC952904 = (*(int *)(((int)stk + 28)));
-            *(unsigned int *)0xC952330 = (*(int *)(((int)stk + 28)));
-            *(unsigned int *)0xC952908 = (*(int *)(((*(int *)((a4 + 0x8))) + 0x0)));
-            *(unsigned int *)0xC95290C = (*(int *)((a4 + 0x10)));
-            *(unsigned int *)0xC952910 = (*(int *)((a4 + 0x14)));
-            *(unsigned int *)0xC952914 = (*(int *)(((int)stk + 32)));
-            *(unsigned int *)0xC952918 = (*(int *)(((*(int *)((a4 + 0x8))) + 0x4)));
-            *(unsigned int *)0xC95291C = (*(int *)((a4 + 0x10)));
-            *(unsigned int *)0xC952920 = (*(int *)((a4 + 0x14)));
-            *(unsigned int *)0xC952924 = (*(int *)(((int)stk + 32)));
-            *(unsigned int *)0xC952928 = (*(int *)(((*(int *)((a4 + 0x8))) + 0x0)));
-            *(unsigned int *)0xC95292C = (*(int *)(((*(int *)((a4 + 0x8))) + 0x4)));
-            *(unsigned int *)0xC952930 = (*(int *)(((int)stk + 48)));
-            *(unsigned int *)0xC239C6C = 0x80000000;
-            t271 = (kmiAllocSysConfig((*(int *)0xC952940)));
+            (((struct o18_uint *)0xC9528EC)->v) = (*(int *)(((int)stk + 28)));
+            (((struct o30_uint *)0xC952300)->v) = (*(int *)(((int)stk + 28)));
+            (((struct o1C_uint *)0xC9528EC)->v) = (*(int *)(((*(int *)((a4 + 0x8))) + 0x0)));
+            (((struct o20_uint *)0xC9528EC)->v) = (*(int *)((a4 + 0x10)));
+            (((struct o24_uint *)0xC9528EC)->v) = (*(int *)((a4 + 0x14)));
+            (((struct o28_uint *)0xC9528EC)->v) = (*(int *)(((int)stk + 32)));
+            (((struct o2C_uint *)0xC9528EC)->v) = (*(int *)(((*(int *)((a4 + 0x8))) + 0x4)));
+            (((struct o30_uint *)0xC9528EC)->v) = (*(int *)((a4 + 0x10)));
+            (((struct o34_uint *)0xC9528EC)->v) = (*(int *)((a4 + 0x14)));
+            (((struct o38_uint *)0xC9528EC)->v) = (*(int *)(((int)stk + 32)));
+            (((struct o3C_uint *)0xC9528EC)->v) = (*(int *)(((*(int *)((a4 + 0x8))) + 0x0)));
+            (((struct o0_uint *)0xC95292C)->v) = (*(int *)(((*(int *)((a4 + 0x8))) + 0x4)));
+            (((struct o4_uint *)0xC95292C)->v) = (*(int *)(((int)stk + 48)));
+            (((struct o0_uint *)0xC239C6C)->v) = 0x80000000;
+            t273 = (kmiAllocSysConfig(((((struct o14_int *)0xC95292C)->v))));
         }
-        t273 = t271;
     }
     return t273;
 }

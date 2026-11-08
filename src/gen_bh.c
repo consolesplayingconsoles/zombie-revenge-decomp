@@ -33,6 +33,10 @@ struct o64_ushort { char p[0x64]; unsigned short v; };
 struct o78_int { char p[0x78]; int v; };
 struct o98_int { char p[0x98]; int v; };
 struct o98_uint { char p[0x98]; unsigned int v; };
+struct o68_int { char p[0x68]; int v; };
+struct o6C_int { char p[0x6C]; int v; };
+struct o70_int { char p[0x70]; int v; };
+
 
 
 int FUN_0c07903a(int a4, int a5, int a6, int a7)
@@ -50,9 +54,9 @@ int FUN_0c07903a(int a4, int a5, int a6, int a7)
     if ((t3 & 1) != 0) {
         nlAddVector((a4 + 0x30), (a4 + 0x48));
         (((struct o4C_float *)(a4))->v) = (((((struct o4C_float *)(a4))->v)) - 0.049999997f);
-        (((struct o60_ushort *)(a4))->v) = (((((struct o60_short *)(a4))->v)) + (*(int *)(((a4 + 0x68) + 0x0))));
-        (((struct o62_ushort *)(a4))->v) = (((((struct o62_short *)(a4))->v)) + (*(int *)(((0x6C + a4) + 0x0))));
-        (((struct o64_ushort *)(a4))->v) = (((((struct o64_short *)(a4))->v)) + (*(int *)(((0x70 + a4) + 0x0))));
+        (((struct o60_ushort *)(a4))->v) = (((((struct o60_short *)(a4))->v)) + ((((struct o68_int *)(a4))->v)));
+        (((struct o62_ushort *)(a4))->v) = (((((struct o62_short *)(a4))->v)) + ((((struct o6C_int *)(a4))->v)));
+        (((struct o64_ushort *)(a4))->v) = (((((struct o64_short *)(a4))->v)) + ((((struct o70_int *)(a4))->v)));
         nlPushMatrix(0x0);
         FUN_0c0dcca0((a4 + 0x30));
         nlRotateAZ(((((struct o64_short *)(a4))->v)));

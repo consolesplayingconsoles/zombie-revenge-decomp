@@ -14,7 +14,6 @@ struct o5C0_int { char p[0x5C0]; int v; };
 
 int FUN_0c03c75c(int a4)
 {
-    int stk[5];
 
     register int R1;
     register int R2;
@@ -29,8 +28,6 @@ int FUN_0c03c75c(int a4)
     register int v0_1;
     register int v0_2;
     v0_1 = a4;
-    *(int *)((int)stk + 12) = (R13);
-    *(int *)((int)stk + 4) = 0x0;
     FUN_0c03bd28(v0_1, 0x0, 0x3, 0x5, 0x0);
     v0_0 = (v0_1);
     if (((int)((((struct o304_int *)(v0_1))->v)) <= 0)) goto L_C03C78C;

@@ -3,9 +3,18 @@
 
 typedef struct { int w[3]; } Stk3;
 int FUN_0c0da2e0(void);
-int FUN_0c0e19aa(int, int, int, Stk3);
+int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e6248(void);
 float FUN_0c0685b6(int a4, int a5);
+struct o30_float { char p[0x30]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o48_float { char p[0x48]; float v; };
+struct o4C_float { char p[0x4C]; float v; };
+struct o50_float { char p[0x50]; float v; };
+struct o78_uint { char p[0x78]; unsigned int v; };
+struct o8_float { char p[0x8]; float v; };
+struct o80_uint { char p[0x80]; unsigned int v; };
+
 
 float FUN_0c0685b6(int a4, int a5)
 {
@@ -46,17 +55,17 @@ float FUN_0c0685b6(int a4, int a5)
     w0_1 = ((*(float *)0xC0686E8));
     w0_2 = ((*(float *)0xC0686EC));
     L_C0685F2:;
-    v0_7 = FUN_0c0e19aa(0xC06867A, v0_4, (*(int *)0xC23ECE4), *(Stk3 *)(((int)stk + 4)));
+    v0_7 = FUN_0c0e19aa(0xC06867A, v0_4, (*(int *)0xC23ECE4));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_7 + 0x30)) = *(struct mv3 *)(v0_3); }
     FUN_0c0e6248();
-    *(unsigned int *)(((0x78 + v0_7) + 0x0)) = (unsigned short)(*(short *)((v0_3 + 0x12)));
-    *(unsigned int *)((v0_7 + 0x80)) = v0_0;
-    *(float *)((v0_7 + 0x48)) = (((*(float *)((v0_7 + 0x30))) - (*(float *)((v0_2 + 0x0)))) * w0_2);
+    (((struct o78_uint *)(v0_7))->v) = (unsigned short)(*(short *)((v0_3 + 0x12)));
+    (((struct o80_uint *)(v0_7))->v) = v0_0;
+    (((struct o48_float *)(v0_7))->v) = ((((((struct o30_float *)(v0_7))->v)) - (*(float *)((v0_2 + 0x0)))) * w0_2);
     v0_5 = FUN_0c0da2e0();
     w0_3 = w0_1;
     w0_3 = w0_3 + w0_0 * (float)(v0_5 & R9);
-    *(float *)((v0_7 + 0x4C)) = w0_3;
-    *(float *)((v0_7 + 0x50)) = (((*(float *)((v0_7 + 0x38))) - (*(float *)((v0_2 + 0x8)))) * w0_2);
+    (((struct o4C_float *)(v0_7))->v) = w0_3;
+    (((struct o50_float *)(v0_7))->v) = ((((((struct o38_float *)(v0_7))->v)) - ((((struct o8_float *)(v0_2))->v))) * w0_2);
     v0_6 = (v0_1 - 0x1) != 0;
     v0_8 = (0x50);
     v0_1 = ((v0_1 - 0x1));

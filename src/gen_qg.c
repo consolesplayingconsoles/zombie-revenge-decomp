@@ -17,6 +17,12 @@ int nlRotateAX(int);
 int nlRotateAZ(int);
 int nlSubVector3op(int, int, int);
 int FUN_0c08b8e0(int a4, int a5);
+struct o44_float { char p[0x44]; float v; };
+struct o48_ushort { char p[0x48]; unsigned short v; };
+struct o4C_ushort { char p[0x4C]; unsigned short v; };
+struct o58_uint { char p[0x58]; unsigned int v; };
+struct o60_uint { char p[0x60]; unsigned int v; };
+
 
 int FUN_0c08b8e0(int a4, int a5)
 {
@@ -83,11 +89,11 @@ int FUN_0c08b8e0(int a4, int a5)
             }
             FUN_0c0a78fc(((int)stk + 8), (((int)stk + 8) + 0x4), (*(float *)(((int)stk + 40))), (*(float *)(((int)stk + 44))), (*(float *)(((int)stk + 48))));
             t18 = (t18 + 0x1);
-            *(unsigned short *)((t21 + 0x48)) = (*(int *)(((int)stk + 8)));
-            *(unsigned short *)((t21 + 0x4C)) = (*(int *)(((int)stk + 12)));
-            *(unsigned int *)((t21 + 0x58)) = (*(int *)(((int)stk + 20)));
-            *(float *)((t21 + 0x44)) = ((*(float *)(((int)stk + 36))) * u42);
-            *(unsigned int *)((t21 + 0x60)) = t1;
+            (((struct o48_ushort *)(t21))->v) = (*(int *)(((int)stk + 8)));
+            (((struct o4C_ushort *)(t21))->v) = (*(int *)(((int)stk + 12)));
+            (((struct o58_uint *)(t21))->v) = (*(int *)(((int)stk + 20)));
+            (((struct o44_float *)(t21))->v) = ((*(float *)(((int)stk + 36))) * u42);
+            (((struct o60_uint *)(t21))->v) = t1;
             *(float *)(((int)stk + 24)) = ((*(float *)(((int)stk + 24))) + (*(float *)(((int)stk + 28))));
             *(unsigned int *)(((int)stk + 20)) = ((*(int *)(((int)stk + 20))) + t1);
             if ((int)t18 < (int)((0xF & t0) + 0x5)) continue;

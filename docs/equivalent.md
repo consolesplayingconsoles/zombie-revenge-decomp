@@ -72198,43 +72198,25 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 59 of 59 instructions
 
 ### FUN_0c087f9c (`0C087F9C`, 166 bytes, `src/gen_ja.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_ja/FUN_0c087f9c.json`
+- equivalent on 9 development and 9 holdout cases, in `tests/gen_ja/FUN_0c087f9c.json`
 - case 66
 - case 2
-- case 3
 - case 0
-- case 1
 - case 4
-- case 5
 - case 6
 - case 7
-- case 8
 - case 9
-- case 10
-- case 11
 - case 12
 - case 13
-- case 14
-- case 15
-- case 16
 - case 69
-- case 89
 - case 88
 - case 113
 - case 50
-- case 57
 - case 114
 - case 109
 - case 56
-- case 74
-- case 93
 - case 75
 - case 85
-- case 119
-- case 108
-- case 79
-- case 63
-- case 60
 - the cases run 61 of 83 instructions
 
 ### FUN_0c088042 (`0C088042`, 4 bytes, `src/gen_jq.c`)
@@ -121025,7 +121007,7 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 6 of 6 instructions
 
 ### FUN_0c0deaa0 (`0C0DEAA0`, 676 bytes, `src/gen_ap.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_ap/FUN_0c0deaa0.json`
+- equivalent on 17 development and 13 holdout cases, in `tests/gen_ap/FUN_0c0deaa0.json`
 - case 105
 - case 21
 - case 8
@@ -121042,26 +121024,20 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 120
 - case 128
 - case 137
-- case 142
 - case 147
 - case 0
 - case 4
 - case 13
-- case 20
 - case 26
 - case 33
 - case 51
 - case 55
 - case 61
-- case 89
-- case 93
-- case 111
 - case 119
 - case 124
 - case 134
 - case 139
 - case 143
-- case 148
 - the cases run 170 of 262 instructions
 
 ### FUN_0c0ded50 (`0C0DED50`, 44 bytes, `src/gen_j.c`)
@@ -127898,13 +127874,10 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 17 of 17 instructions
 
 ### FUN_0c0edc60 (`0C0EDC60`, 26 bytes, `src/gen_l.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_l/FUN_0c0edc60.json`
-- case 1
+- equivalent on 14 development and 12 holdout cases, in `tests/gen_l/FUN_0c0edc60.json`
 - case 0
 - case 2
-- case 3
 - case 4
-- case 5
 - case 6
 - case 7
 - case 8
@@ -127916,24 +127889,17 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 14
 - case 15
 - case 16
-- case 17
-- case 50
 - case 80
 - case 77
 - case 102
-- case 117
 - case 94
-- case 103
 - case 101
-- case 98
 - case 40
 - case 99
-- case 53
 - case 119
 - case 87
 - case 51
 - case 47
-- case 42
 - case 118
 - the cases run 13 of 13 instructions
 
@@ -140456,41 +140422,27 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 4 of 4 instructions
 
 ### _destructFiber (`0C233F62`, 34 bytes, `src/gen_p.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_p/_destructFiber.json`
-- case 1
+- equivalent on 12 development and 10 holdout cases, in `tests/gen_p/_destructFiber.json`
 - case 0
 - case 2
-- case 3
 - case 4
-- case 5
 - case 6
-- case 7
 - case 8
-- case 9
 - case 10
 - case 11
 - case 12
 - case 13
 - case 14
 - case 15
-- case 16
 - case 17
 - case 93
 - case 87
 - case 100
-- case 49
 - case 60
-- case 54
-- case 102
-- case 105
 - case 84
 - case 109
 - case 57
-- case 119
-- case 78
-- case 101
 - case 77
-- case 61
 - case 91
 - case 81
 - the cases run 17 of 17 instructions

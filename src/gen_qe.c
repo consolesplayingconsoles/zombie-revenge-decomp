@@ -83,12 +83,12 @@ int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     nlPopMatrix(0x1);
     (((struct oA4_uint *)(t3))->v) = (0x176 + (R1004));
     if (a11 == 0) {
-        *(unsigned short *)(((0xA2 + t3) + 0x0)) = ((FUN_0c0da2e0()) & 0x3F);
+        (((struct oA2_ushort *)(t3))->v) = ((FUN_0c0da2e0()) & 0x3F);
     } else {
         t31 = 0x8;
         for (;;) {
             t31 = (t31 - 0x1);
-            *(unsigned short *)(((0xA2 + t3) + 0x0)) = ((*(short *)(((0xA2 + t3) + 0x0))) + ((FUN_0c0da2e0()) & 0xF));
+            (((struct oA2_ushort *)(t3))->v) = (((((struct oA2_short *)(t3))->v)) + ((FUN_0c0da2e0()) & 0xF));
             if (t31 == 0) {
                 break;
             }
@@ -99,8 +99,8 @@ int FUN_0c07d17c(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a1
     FUN_0c0dd0a0((t3 + 0x78), (((int)stk + 4) + 0x28));
     (((struct oA8_ushort *)(t3))->v) = (int)((((*(float *)(((int)stk + 48))) + 1.0f) / (1.0f + 1.0f)) * 240.0f);
     t43 = FUN_0c0da2e0();
-    t44 = *(short *)(((0xA8 + t3) + 0x0));
-    *(unsigned short *)(((0xA8 + t3) + 0x0)) = (t44 + ((t43 & 0x1F) - 8));
+    t44 = (((struct oA8_short *)(t3))->v);
+    (((struct oA8_ushort *)(t3))->v) = (t44 + ((t43 & 0x1F) - 8));
     if ((int)(short)(t44 + ((t43 & 0x1F) - 8)) > (int)0xF0) {
         (((struct oA8_ushort *)(t3))->v) = 0xF0;
     }

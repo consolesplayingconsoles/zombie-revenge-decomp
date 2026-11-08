@@ -4,6 +4,9 @@
 int FUN_0c06722e(int);
 int FUN_0c0e19f2(int, int);
 int FUN_0c06b97c(int a4, int a5);
+struct o68_int { char p[0x68]; int v; };
+struct o68_uint { char p[0x68]; unsigned int v; };
+
 
 int FUN_0c06b97c(int a4, int a5)
 {
@@ -68,12 +71,12 @@ int FUN_0c06b97c(int a4, int a5)
     R13 = (((int)0x1 << (int)v0_2));
     v0_1 = (((v0_2 << 2) + 0xC247030));
     if (v0_3) goto L_C06B9F2;
-    v0_3 = ((*(int *)((R11 + 0x68))) & R13) != 0;
+    v0_3 = (((((struct o68_int *)(R11))->v)) & R13) != 0;
     *(unsigned int *)(((int)stk + 8)) = *(int *)((int)stk + 8);
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     if (v0_3) goto L_C06B9F2;
     FUN_0c06722e(v0_2);
-    *(unsigned int *)((R11 + 0x68)) = ((*(int *)((R11 + 0x68))) | R13);
+    (((struct o68_uint *)(R11))->v) = (((((struct o68_int *)(R11))->v)) | R13);
     *(unsigned int *)(((int)stk + 8)) = *(int *)((int)stk + 8);
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     v0_3 = (0x68);
@@ -97,7 +100,7 @@ int FUN_0c06b97c(int a4, int a5)
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     v0_3 = (v0_1);
     if ((v0_1 == 4)) goto L_C06BA10;
-    v0_1 = ((*(int *)((R11 + 0x68))) & R13) == 0;
+    v0_1 = (((((struct o68_int *)(R11))->v)) & R13) == 0;
     *(unsigned int *)(((int)stk + 8)) = *(int *)((int)stk + 8);
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     v0_3 = (0x68);

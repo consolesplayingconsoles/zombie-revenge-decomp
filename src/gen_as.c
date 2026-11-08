@@ -72,6 +72,26 @@ int FUN_0c067964(int a4, int a5, int a6, int a7);
 int FUN_0c01cb94(int a4, int a5);
 int FUN_0c02f174(int a4);
 int FUN_0c0376f4(int a4);
+struct o274_float { char p[0x274]; float v; };
+struct o278_float { char p[0x278]; float v; };
+struct o27C_float { char p[0x27C]; float v; };
+struct o280_float { char p[0x280]; float v; };
+struct o388_int { char p[0x388]; int v; };
+struct o390_float { char p[0x390]; float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o5C_float { char p[0x5C]; float v; };
+struct o68_float { char p[0x68]; float v; };
+struct o74_float { char p[0x74]; float v; };
+struct o8_float { char p[0x8]; float v; };
+struct o0_float { float v; };
+struct o10_float { char p[0x10]; float v; };
+struct o14_float { char p[0x14]; float v; };
+struct o18_float { char p[0x18]; float v; };
+struct o1C_float { char p[0x1C]; float v; };
+struct o20_float { char p[0x20]; float v; };
+struct oC_float { char p[0xC]; float v; };
+
+
 
 
 
@@ -95,28 +115,30 @@ int FUN_0c0bb980(int a4)
     int t56;
     float u65;
     int stk[45];
+    float s1;
 
-    t0 = *(int *)((a4 + 0x388));
+    t0 = (((struct o388_int *)(a4))->v);
     t79 = t0;
     if ((t0 & 2) == 0) {
     } else {
         nlPushMatrix(0x0);
         *(unsigned int *)(((int)stk + 16)) = (((int)stk + 4) + 0x5C);
-        u2 = *(float *)0xC26085C;
-        *(float *)(((((int)stk + 4) + 0x5C) + 0x0)) = ((((*(float *)0xC260850) - u2) / (1.0f + 1.0f)) + u2);
-        u5 = *(float *)0xC260860;
-        *(float *)(((((int)stk + 4) + 0x5C) + 0x4)) = ((((*(float *)0xC260854) - u5) / (1.0f + 1.0f)) + u5);
-        u6 = *(float *)0xC260864;
-        *(float *)((((((int)stk + 4) + 0x5C) + 0x8) + 0x0)) = ((((*(float *)0xC260858) - u6) / (1.0f + 1.0f)) + u6);
+        u2 = (((struct o18_float *)0xC260844)->v);
+        (((struct o5C_float *)(((int)stk + 4)))->v) = (((((((struct oC_float *)0xC260844)->v)) - u2) / (1.0f + 1.0f)) + u2);
+        u5 = (((struct o1C_float *)0xC260844)->v);
+        (((struct o4_float *)((((int)stk + 4) + 0x5C)))->v) = (((((((struct o10_float *)0xC260844)->v)) - u5) / (1.0f + 1.0f)) + u5);
+        u6 = (((struct o20_float *)0xC260844)->v);
+        (((struct o8_float *)((((int)stk + 4) + 0x5C)))->v) = (((((((struct o14_float *)0xC260844)->v)) - u6) / (1.0f + 1.0f)) + u6);
         u9 = *(float *)(((*(int *)(((int)stk + 16))) + 0x0));
-        u10 = *(float *)0xC260844;
+        u10 = (((struct o0_float *)0xC260844)->v);
         *(float *)(((int)stk + 4)) = (u9 - u10);
-        u11 = *(float *)((((((int)stk + 4) + 0x5C) + 0x8) + 0x0));
-        u12 = *(float *)0xC26084C;
+        u11 = (((struct o8_float *)((((int)stk + 4) + 0x5C)))->v);
+        u12 = (((struct o8_float *)0xC260844)->v);
         u13 = ((u11 - u12) * (u11 - u12));
         u13 = u13 + (u9 - u10) * (u9 - u10);
-        u14 = (_builtin_sqrtf(u13) * 0.0799999982f);
-        if (0.5f > (_builtin_sqrtf(u13) * 0.0799999982f)) {
+        s1 = _builtin_sqrtf(u13);
+        u14 = (s1 * 0.0799999982f);
+        if (0.5f > (s1 * 0.0799999982f)) {
             u14 = 0.5f;
         }
         u16 = u14;
@@ -127,35 +149,35 @@ int FUN_0c0bb980(int a4)
         FUN_0c0a7c66((((int)stk + 4) + 0x50), ((((int)stk + 4) + 0x50) + 0x4), ((((int)stk + 4) + 0x50) + 0x8));
         FUN_0c01f6fc((((int)stk + 4) + 0x74), (((int)stk + 4) + 0x68), (*(float *)(((int)stk + 132))), (*(float *)(((int)stk + 136))), (*(float *)(((int)stk + 140))));
         if ((*(short *)((((((*(int *)0xC23ED50) << 2) << 2) << 1) + 0xC207A8C))) == 0) {
-            *(float *)(((((int)stk + 4) + 0x68) + 0x0)) = 0.0f;
-            *(float *)(((((int)stk + 4) + 0x68) + 0x4)) = 1.0f;
-            *(float *)(((((int)stk + 4) + 0x68) + 0x8)) = 0.0f;
+            (((struct o68_float *)(((int)stk + 4)))->v) = 0.0f;
+            (((struct o4_float *)((((int)stk + 4) + 0x68)))->v) = 1.0f;
+            (((struct o8_float *)((((int)stk + 4) + 0x68)))->v) = 0.0f;
         }
-        if (!((*(float *)(((((int)stk + 4) + 0x68) + 0x4))) > 0.449999988f)) {
+        if (!(((((struct o4_float *)((((int)stk + 4) + 0x68)))->v)) > 0.449999988f)) {
         } else {
             *(unsigned int *)(((int)stk + 16)) = ((((int)stk + 4) + 0x74) + 0x4);
-            *(float *)((((((int)stk + 4) + 0x74) + 0x4) + 0x0)) = (*(float *)((a4 + 0x390)));
-            *(float *)(((((int)stk + 4) + 0x74) + 0x0)) = (*(float *)(((int)stk + 132)));
-            *(float *)(((((int)stk + 4) + 0x74) + 0x8)) = (*(float *)(((int)stk + 140)));
-            FUN_0c0a78fc((((int)stk + 4) + 0x4), (((int)stk + 4) + 0x8), (*(float *)(((((int)stk + 4) + 0x68) + 0x0))), (*(float *)(((((int)stk + 4) + 0x68) + 0x4))), (*(float *)(((((int)stk + 4) + 0x68) + 0x8))));
+            (((struct o4_float *)((((int)stk + 4) + 0x74)))->v) = ((((struct o390_float *)(a4))->v));
+            (((struct o74_float *)(((int)stk + 4)))->v) = (*(float *)(((int)stk + 132)));
+            (((struct o8_float *)((((int)stk + 4) + 0x74)))->v) = (*(float *)(((int)stk + 140)));
+            FUN_0c0a78fc((((int)stk + 4) + 0x4), (((int)stk + 4) + 0x8), ((((struct o68_float *)(((int)stk + 4)))->v)), ((((struct o4_float *)((((int)stk + 4) + 0x68)))->v)), ((((struct o8_float *)((((int)stk + 4) + 0x68)))->v)));
             nlUnitMatrix();
-            u40 = (*(float *)0xC26084C);
+            u40 = ((((struct o8_float *)0xC260844)->v));
             u40 = u40 + 0.5f * (u11 - u12);
-            u45 = (*(float *)0xC260844);
+            u45 = ((((struct o0_float *)0xC260844)->v));
             u45 = u45 + 0.5f * (*(float *)(((int)stk + 4)));
             FUN_0c0dcc70(u45, ((*(float *)(((*(int *)(((int)stk + 16))) + 0x0))) + 0.299999982f), u40);
             nlMultiMatrixRevOrder(((*(int *)0xC247CAC) + 0x2AC));
-            FUN_0c0de000((*(float *)((a4 + 0x280))));
+            FUN_0c0de000(((((struct o280_float *)(a4))->v)));
             nlRotateAX((*(int *)(((int)stk + 8))));
             nlRotateAZ((*(int *)(((int)stk + 12))));
             t56 = FUN_0c0d9dc0((*(float *)(((int)stk + 4))), (u11 - u12));
             nlRotateAY((0x4000 + (short)t56));
-            nlScale(((((*(float *)((a4 + 0x274))) * u16)) * 1.0f), ((((*(float *)((a4 + 0x278))) * 1.0f)) * 0.5f), ((((*(float *)((a4 + 0x27C))) * 1.0f)) * 0.5f));
+            nlScale((((((((struct o274_float *)(a4))->v)) * u16)) * 1.0f), (((((((struct o278_float *)(a4))->v)) * 1.0f)) * 0.5f), (((((((struct o27C_float *)(a4))->v)) * 1.0f)) * 0.5f));
             u65 = u16;
             if (0.5f > u16) {
                 u65 = 0.5f;
             }
-            FUN_0c0de000(((*(float *)((a4 + 0x280))) * u65));
+            FUN_0c0de000((((((struct o280_float *)(a4))->v)) * u65));
             FUN_0c0c465c(0x270);
         }
         t79 = (nlPopMatrix(0x1));

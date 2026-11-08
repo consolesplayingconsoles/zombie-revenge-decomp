@@ -3,13 +3,15 @@
 
 int FUN_0c01ef2a(int, int, int, int, int);
 void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
+struct o0_float { float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6)
 {
     int stk[19];
     register float u0;
     register float u1;
-    register int t2;
     register int t12;
     register int t13;
     register int t14;
@@ -36,18 +38,17 @@ void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6)
     *(float *)(((int)stk + 64)) = f4;
     *(float *)(((int)stk + 68)) = f5;
     *(float *)(((int)stk + 72)) = f6;
-    u0 = *(float *)0xC23FE68;
-    u1 = *(float *)0xC23FE70;
+    u0 = (((struct o0_float *)0xC23FE68)->v);
+    u1 = (((struct o8_float *)0xC23FE68)->v);
     *(unsigned int *)(((int)stk + 20)) = (((int)((f4 - u0) * 0.049999997f) & 0x3F) - 2);
     if ((int)(((int)((f4 - u0) * 0.049999997f) & 0x3F) - 2) < 0) {
         *(unsigned int *)(((int)stk + 20)) = 0x0;
         t5 = (((int)((f4 - u0) * 0.049999997f) & 0x3F) + 0x2);
     } else {
-        t2 = (((int)((f4 - u0) * 0.049999997f) & 0x3F) + 0x2);
+        t5 = (((int)((f4 - u0) * 0.049999997f) & 0x3F) + 0x2);
         if ((int)(((int)((f4 - u0) * 0.049999997f) & 0x3F) + 0x2) > (int)0x3F) {
-            t2 = 0x3F;
+            t5 = 0x3F;
         }
-        t5 = t2;
     }
     if ((int)(((int)((f6 - u1) * 0.049999997f) & 0x1F) - 2) < 0) {
         *(unsigned int *)(((int)stk + 16)) = (((int)((f6 - u1) * 0.049999997f) & 0x1F) + 0x2);

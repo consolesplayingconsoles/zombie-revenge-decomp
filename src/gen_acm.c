@@ -2,13 +2,17 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0c465c(int);
-int FUN_0c0cc3f8(int, int, int, int, int);
+int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0da2e0(void);
 float FUN_0c0da410(int);
 int FUN_0c0dcc70(float, float, float);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int FUN_0c0ab616(int a4, int a5, int a6);
+struct o0_float { float v; };
+struct o4_float { char p[0x4]; float v; };
+struct o8_float { char p[0x8]; float v; };
+
 
 int FUN_0c0ab616(int a4, int a5, int a6)
 {
@@ -61,7 +65,7 @@ int FUN_0c0ab616(int a4, int a5, int a6)
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     L_C0AB72A:;
     nlPushMatrix(0x0);
-    FUN_0c0dcc70((*(float *)0xC10E0D4), ((*(float *)0xC10E0D8) + (*(float *)((v0_2 + 0x3C)))), (*(float *)0xC10E0DC));
+    FUN_0c0dcc70(((((struct o0_float *)0xC10E0D4)->v)), (((((struct o4_float *)0xC10E0D4)->v)) + (*(float *)((v0_2 + 0x3C)))), ((((struct o8_float *)0xC10E0D4)->v)));
     FUN_0c0c465c(0xD7B);
     *(volatile int *)((int)stk + 4);
     return nlPopMatrix(0x1);
@@ -74,7 +78,7 @@ int FUN_0c0ab616(int a4, int a5, int a6)
     if (v0_3) goto L_C0AB72A;
     L_C0AB71E:;
     *(unsigned int *)((v0_2 + 0x30)) = ((*(int *)((v0_2 + 0x30))) + 0x1);
-    FUN_0c0cc3f8(0xD1FA9, v0_0, v0_1, 0x0, *(int *)((int)stk + 4));
+    FUN_0c0cc3f8(0xD1FA9, v0_0, v0_1, 0x0);
     goto L_C0AB72A;
     L_C0AB6E0:;
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
@@ -83,7 +87,7 @@ int FUN_0c0ab616(int a4, int a5, int a6)
     *(unsigned int *)((v0_2 + 0x38)) = 0x0;
     *(unsigned int *)(((int)stk + 4)) = *(int *)((int)stk + 4);
     L_C0AB6F0:;
-    FUN_0c0cc3f8(0xC1FA9, v0_0, v0_1, 0x0, *(int *)((int)stk + 4));
+    FUN_0c0cc3f8(0xC1FA9, v0_0, v0_1, 0x0);
     goto L_C0AB72A;
     L_C0AB6C6:;
     w0_0 = *(float *)((v0_2 + 0x3C));

@@ -6,6 +6,8 @@ struct o10_float { char p[0x10]; float v; };
 struct o4_float { char p[0x4]; float v; };
 struct o8_float { char p[0x8]; float v; };
 struct oC_float { char p[0xC]; float v; };
+struct o28_short { char p[0x28]; short v; };
+
 
 
 float FUN_0c0a81ac(int a4, int a5, int a6, int a7)
@@ -72,7 +74,7 @@ float FUN_0c0a81ac(int a4, int a5, int a6, int a7)
     u11 = u11 + u0 * (float)(*(short *)((((((((short)((unsigned int)a5 >> 16) << 2) + (short)((unsigned int)a5 >> 16)) << 2) + a4) + 0x14) + 0x0)));
     u0 = (u6 * 0.166669995f);
     u10 = u11;
-    u10 = u10 + u0 * (float)(*(short *)((((((((short)((unsigned int)a5 >> 16) << 2) + (short)((unsigned int)a5 >> 16)) << 2) + a4) + 0x28) + 0x0)));
+    u10 = u10 + u0 * (float)((((struct o28_short *)((((((short)((unsigned int)a5 >> 16) << 2) + (short)((unsigned int)a5 >> 16)) << 2) + a4)))->v));
     t0 = *(short *)((((((((short)((unsigned int)a5 >> 16) << 2) + (short)((unsigned int)a5 >> 16)) << 2) + a4) + 0x28) + 0x4));
     t1 = *(short *)((((((((short)((unsigned int)a5 >> 16) << 2) + (short)((unsigned int)a5 >> 16)) << 2) + a4) + 0x14) + 0x4));
     t2 = *(short *)((((((((short)((unsigned int)a5 >> 16) - 1) << 2) + ((short)((unsigned int)a5 >> 16) - 1)) << 2) + a4) + 0x4));

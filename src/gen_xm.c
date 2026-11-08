@@ -7,6 +7,8 @@ int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlScale(float, float, float);
 int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7);
+struct o4_float { char p[0x4]; float v; };
+
 
 int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7)
 {
@@ -29,18 +31,26 @@ int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7)
     register float w0_2;
     register float w0_3;
     register float w0_4;
+    float R1004;
+    float R1008;
+    float R1012;
+    int R1016;
+    R1004 = *(float *)((int)stk + 4);
+    R1008 = *(float *)((int)stk + 8);
+    R1012 = *(float *)((int)stk + 12);
+    R1016 = *(int *)((int)stk + 16);
     v0_2 = a4;
     w0_4 = f4;
     w0_0 = f5;
     w0_2 = f6;
     w0_1 = f7;
-    *(float *)(((int)stk + 4)) = w0_4;
-    *(float *)(((int)stk + 8)) = w0_0;
-    *(float *)(((int)stk + 12)) = w0_2;
+    R1004 = w0_4;
+    R1008 = w0_0;
+    R1012 = w0_2;
     nlPushMatrix(0x0);
     nlScale(w0_1, w0_1, 1.0f);
-    FUN_0c0dcc70((*(float *)(((int)stk + 4))), (*(float *)(((int)stk + 8))), (*(float *)(((int)stk + 12))));
-    *(unsigned int *)(((int)stk + 16)) = 0xC1EF29C;
+    FUN_0c0dcc70((R1004), (R1008), (R1012));
+    R1016 = 0xC1EF29C;
     v0_0 = (0xC1EEFC4);
     v0_1 = (0xC1EEEC4);
     v0_3 = (0xC0DCC70);
@@ -63,12 +73,12 @@ int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7)
     if ((v0_4 == 10)) goto L_C010B7C;
     v0_5 = (((((signed char)v0_2 << 2) << 1) + v0_1));
     if (((unsigned int)((((signed char)v0_2 << 2) << 1) + v0_1) <= (unsigned int)v0_0)) goto L_C010BDA;
-    if (((unsigned int)v0_5 >= (unsigned int)(*(int *)(((int)stk + 16))))) goto L_C010BDA;
+    if (((unsigned int)v0_5 >= (unsigned int)(R1016))) goto L_C010BDA;
     FUN_0c0c465c((*(int *)((v0_5 + 0x0))));
-    w0_3 = ((*(float *)((v0_5 + 0x4))));
+    w0_3 = (((((struct o4_float *)(v0_5))->v)));
     if (((*(signed char *)((v0_3 + 0x0))) == 0)) goto L_C010BDA;
     L_C010BCC:;
-    w0_3 = ((w0_3 + (*(float *)((((((*(signed char *)((v0_3 + 0x0))) << 2) << 1) + v0_1) + 0x4)))));
+    w0_3 = ((w0_3 + ((((struct o4_float *)(((((*(signed char *)((v0_3 + 0x0))) << 2) << 1) + v0_1)))->v))));
     L_C010BDA:;
     FUN_0c0dcc70(w0_3, w0_2, w0_2);
     goto L_C010BE2;
@@ -77,7 +87,7 @@ int FUN_0c010b04(int a4, float f4, float f5, float f6, float f7)
     nlPopMatrix(0x1);
     nlPushMatrix(0x0);
     nlScale(w0_1, w0_1, 1.0f);
-    FUN_0c0dcc70((*(float *)(((int)stk + 4))), ((*(float *)(((int)stk + 8))) + (w0_0 - w0_3)), (*(float *)(((int)stk + 12))));
+    FUN_0c0dcc70((R1004), ((R1008) + (w0_0 - w0_3)), (R1012));
     w0_0 = ((w0_0 - w0_3));
     w0_3 = (w0_2);
     goto L_C010BDA;

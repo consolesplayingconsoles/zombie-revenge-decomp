@@ -583,41 +583,19 @@ void nlQuickInvertMatrix(void)
 
 int FUN_0c0db6b0(int a4)
 {
-    float u0[16];
-    float u1[16];
+    float m[16];
+    int i;
 
     if (a4 == 0) {
         return 0x0;
     }
-    _builtin_st_ext((float (*)[4])u0);
-    *(float *)((((a4 + 0x2C) - 0x4) + 0x0)) = u0[10];
-    *(float *)(((((a4 + 0x2C) - 0x4) - 0x4) + 0x0)) = u0[9];
-    *(float *)((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[8];
-    *(float *)((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) + 0x0)) = u0[6];
-    *(float *)(((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) + 0x0)) = u0[5];
-    *(float *)((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[4];
-    *(float *)((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) + 0x0)) = u0[2];
-    *(float *)(((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) + 0x0)) = u0[1];
-    *(float *)((((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[0];
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = u0[0];
-    u1[1] = u0[1];
-    u1[2] = u0[2];
-    u1[3] = u0[3];
-    u1[4] = u0[4];
-    u1[5] = u0[5];
-    u1[6] = u0[6];
-    u1[7] = u0[7];
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
-    return ((((((((((((a4 + 0x2C) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4) - 4) - 0x4) - 0x4) - 0x4);
+    _builtin_st_ext((float (*)[4])m);
+    for (i = 10; i >= 0; i--) {
+        if ((i & 3) != 3) {
+            ((float *)a4)[i] = m[i];
+        }
+    }
+    return a4;
 }
 
 int nlGetMatrix(int a4)
@@ -655,107 +633,55 @@ float nlMultiMatrixRevOrder8(int a4)
 
 float nlRotateAX(int a4)
 {
-    register float u0;
-    register float u1;
-    float u2[4];
-    float u3[4];
-    float u4[16];
+    register float s;
+    register float c;
+    float m[16];
 
-    u0 = iaFscaS(a4);
-    u1 = iaFscaC(a4);
-    u2[0] = 0.0f;
-    u2[1] = u1;
-    u2[2] = u0;
-    u2[3] = 0.0f;
-    _builtin_ftrv(u2, u2);
-    u3[0] = 0.0f;
-    u3[1] = (-u0);
-    u3[2] = u1;
-    u3[3] = 0.0f;
-    _builtin_ftrv(u3, u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[4] = u2[0];
-    u4[5] = u2[1];
-    u4[6] = u2[2];
-    u4[7] = u2[3];
-    u4[8] = u3[0];
-    u4[9] = u3[1];
-    u4[10] = u3[2];
-    u4[11] = u3[3];
-    _builtin_ld_ext((float (*)[4])u4);
-    return u2[0];
+    s = iaFscaS(a4);
+    c = iaFscaC(a4);
+    _builtin_st_ext((float (*)[4])m);
+    m[4] = 0.0f;
+    m[5] = c;
+    m[6] = s;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    m[8] = 0.0f;
+    m[9] = (-s);
+    m[10] = c;
+    m[11] = 0.0f;
+    _builtin_ftrv(m + 8, m + 8);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[4];
 }
 
 void FUN_0c0dcbb0(int a4)
 {
-    register float u2;
-    register float u3;
-    register float u4;
-    int t5;
-    float u0[16];
-    float u6[16];
+    float m[16];
+    int i;
 
-    _builtin_st_ext((float (*)[4])u0);
-    u2 = *(float *)((a4 + 0x0));
-    u3 = *(float *)(((a4 + 0x4) + 0x0));
-    u4 = *(float *)((((a4 + 0x4) + 0x4) + 0x0));
-    t5 = (*(int *)&(u0[15]));
-    _builtin_st_ext((float (*)[4])u6);
-    u6[0] = (u0[0] * u2);
-    u6[1] = (u0[1] * u2);
-    u6[2] = (u0[2] * u2);
-    u6[3] = (u0[3] * u2);
-    u6[4] = (u0[4] * u3);
-    u6[5] = (u0[5] * u3);
-    u6[6] = (u0[6] * u3);
-    u6[7] = (u0[7] * u3);
-    u6[8] = (u0[8] * u4);
-    u6[9] = (u0[9] * u4);
-    u6[10] = (u0[10] * u4);
-    u6[11] = (u0[11] * u4);
-    u6[12] = u0[12];
-    u6[13] = u0[13];
-    u6[14] = u0[14];
-    u6[15] = (*(float *)&t5);
-    _builtin_ld_ext((float (*)[4])u6);
+    _builtin_st_ext((float (*)[4])m);
+    for (i = 0; i < 12; i++) {
+        m[i] = m[i] * ((float *)a4)[i >> 2];
+    }
+    _builtin_ld_ext((float (*)[4])m);
 }
 
 void nlTransposeMatrix(void)
 {
-    int t2;
-    int t4;
-    int t6;
-    int t8;
-    int t10;
-    int t12;
-    float u0[16];
-    float u13[16];
+    float m[16];
+    float t;
+    int i;
+    int j;
 
-    _builtin_st_ext((float (*)[4])u0);
-    t2 = (*(int *)&(u0[1]));
-    t4 = (*(int *)&(u0[2]));
-    t6 = (*(int *)&(u0[3]));
-    t8 = (*(int *)&(u0[6]));
-    t10 = (*(int *)&(u0[7]));
-    t12 = (*(int *)&(u0[11]));
-    _builtin_st_ext((float (*)[4])u13);
-    u13[0] = u0[0];
-    u13[1] = u0[4];
-    u13[2] = u0[8];
-    u13[3] = u0[12];
-    u13[4] = (*(float *)&t2);
-    u13[5] = u0[5];
-    u13[6] = u0[9];
-    u13[7] = u0[13];
-    u13[8] = (*(float *)&t4);
-    u13[9] = (*(float *)&t8);
-    u13[10] = u0[10];
-    u13[11] = u0[14];
-    u13[12] = (*(float *)&t6);
-    u13[13] = (*(float *)&t10);
-    u13[14] = (*(float *)&t12);
-    u13[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u13);
+    _builtin_st_ext((float (*)[4])m);
+    for (i = 0; i < 4; i++) {
+        for (j = i + 1; j < 4; j++) {
+            t = m[i * 4 + j];
+            m[i * 4 + j] = m[j * 4 + i];
+            m[j * 4 + i] = t;
+        }
+    }
+    _builtin_ld_ext((float (*)[4])m);
 }
 
 void nlLoadMatrix8(int a4)
@@ -788,31 +714,21 @@ void nlLoadMatrix8(int a4)
 
 float nlRotateXSC(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = 0.0f;
-    u0[1] = f5;
-    u0[2] = f4;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = 0.0f;
-    u1[1] = (-f4);
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[4] = u0[0];
-    u2[5] = u0[1];
-    u2[6] = u0[2];
-    u2[7] = u0[3];
-    u2[8] = u1[0];
-    u2[9] = u1[1];
-    u2[10] = u1[2];
-    u2[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[4] = 0.0f;
+    m[5] = f5;
+    m[6] = f4;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    m[8] = 0.0f;
+    m[9] = (-f4);
+    m[10] = f5;
+    m[11] = 0.0f;
+    _builtin_ftrv(m + 8, m + 8);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[4];
 }
 
 float nlRotateAY(int a4)
@@ -840,180 +756,120 @@ float nlRotateAY(int a4)
 
 float nlRotateAZ(int a4)
 {
-    register float u0;
-    register float u1;
-    float u2[4];
-    float u3[4];
-    float u4[16];
+    register float s;
+    register float c;
+    float m[16];
 
-    u0 = iaFscaS(a4);
-    u1 = iaFscaC(a4);
-    u2[0] = u1;
-    u2[1] = u0;
-    u2[2] = 0.0f;
-    u2[3] = 0.0f;
-    _builtin_ftrv(u2, u2);
-    u3[0] = (-u0);
-    u3[1] = u1;
-    u3[2] = 0.0f;
-    u3[3] = 0.0f;
-    _builtin_ftrv(u3, u3);
-    _builtin_st_ext((float (*)[4])u4);
-    u4[0] = u2[0];
-    u4[1] = u2[1];
-    u4[2] = u2[2];
-    u4[3] = u2[3];
-    u4[4] = u3[0];
-    u4[5] = u3[1];
-    u4[6] = u3[2];
-    u4[7] = u3[3];
-    _builtin_ld_ext((float (*)[4])u4);
-    return u2[0];
+    s = iaFscaS(a4);
+    c = iaFscaC(a4);
+    _builtin_st_ext((float (*)[4])m);
+    m[0] = c;
+    m[1] = s;
+    m[2] = 0.0f;
+    m[3] = 0.0f;
+    _builtin_ftrv(m, m);
+    m[4] = (-s);
+    m[5] = c;
+    m[6] = 0.0f;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[0];
 }
 
 float FUN_0c0dc860(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = 0.0f;
-    u0[1] = f5;
-    u0[2] = f4;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = 0.0f;
-    u1[1] = f4;
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[4] = u0[0];
-    u2[5] = u0[1];
-    u2[6] = u0[2];
-    u2[7] = u0[3];
-    u2[8] = u1[0];
-    u2[9] = u1[1];
-    u2[10] = u1[2];
-    u2[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[4] = 0.0f;
+    m[5] = f5;
+    m[6] = f4;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    m[8] = 0.0f;
+    m[9] = f4;
+    m[10] = f5;
+    m[11] = 0.0f;
+    _builtin_ftrv(m + 8, m + 8);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[4];
 }
 
 float nlRotateYSC(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = f5;
-    u0[1] = 0.0f;
-    u0[2] = (-f4);
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = f4;
-    u1[1] = 0.0f;
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[0] = u0[0];
-    u2[1] = u0[1];
-    u2[2] = u0[2];
-    u2[3] = u0[3];
-    u2[8] = u1[0];
-    u2[9] = u1[1];
-    u2[10] = u1[2];
-    u2[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[0] = f5;
+    m[1] = 0.0f;
+    m[2] = (-f4);
+    m[3] = 0.0f;
+    _builtin_ftrv(m, m);
+    m[8] = f4;
+    m[9] = 0.0f;
+    m[10] = f5;
+    m[11] = 0.0f;
+    _builtin_ftrv(m + 8, m + 8);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[0];
 }
 
 float FUN_0c0dc920(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = f5;
-    u0[1] = 0.0f;
-    u0[2] = f4;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = (-f4);
-    u1[1] = 0.0f;
-    u1[2] = f5;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[0] = u0[0];
-    u2[1] = u0[1];
-    u2[2] = u0[2];
-    u2[3] = u0[3];
-    u2[8] = u1[0];
-    u2[9] = u1[1];
-    u2[10] = u1[2];
-    u2[11] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[0] = f5;
+    m[1] = 0.0f;
+    m[2] = f4;
+    m[3] = 0.0f;
+    _builtin_ftrv(m, m);
+    m[8] = (-f4);
+    m[9] = 0.0f;
+    m[10] = f5;
+    m[11] = 0.0f;
+    _builtin_ftrv(m + 8, m + 8);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[0];
 }
 
 float FUN_0c0dc980(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = f5;
-    u0[1] = f4;
-    u0[2] = 0.0f;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = (-f4);
-    u1[1] = f5;
-    u1[2] = 0.0f;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[0] = u0[0];
-    u2[1] = u0[1];
-    u2[2] = u0[2];
-    u2[3] = u0[3];
-    u2[4] = u1[0];
-    u2[5] = u1[1];
-    u2[6] = u1[2];
-    u2[7] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[0] = f5;
+    m[1] = f4;
+    m[2] = 0.0f;
+    m[3] = 0.0f;
+    _builtin_ftrv(m, m);
+    m[4] = (-f4);
+    m[5] = f5;
+    m[6] = 0.0f;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[0];
 }
 
 float FUN_0c0dc9e0(float f4, float f5)
 {
-    float u0[4];
-    float u1[4];
-    float u2[16];
+    float m[16];
 
-    u0[0] = f5;
-    u0[1] = (-f4);
-    u0[2] = 0.0f;
-    u0[3] = 0.0f;
-    _builtin_ftrv(u0, u0);
-    u1[0] = f4;
-    u1[1] = f5;
-    u1[2] = 0.0f;
-    u1[3] = 0.0f;
-    _builtin_ftrv(u1, u1);
-    _builtin_st_ext((float (*)[4])u2);
-    u2[0] = u0[0];
-    u2[1] = u0[1];
-    u2[2] = u0[2];
-    u2[3] = u0[3];
-    u2[4] = u1[0];
-    u2[5] = u1[1];
-    u2[6] = u1[2];
-    u2[7] = u1[3];
-    _builtin_ld_ext((float (*)[4])u2);
-    return u0[0];
+    _builtin_st_ext((float (*)[4])m);
+    m[0] = f5;
+    m[1] = (-f4);
+    m[2] = 0.0f;
+    m[3] = 0.0f;
+    _builtin_ftrv(m, m);
+    m[4] = f4;
+    m[5] = f5;
+    m[6] = 0.0f;
+    m[7] = 0.0f;
+    _builtin_ftrv(m + 4, m + 4);
+    _builtin_ld_ext((float (*)[4])m);
+    return m[0];
 }
 
 void nlUnitMatrix(void)
@@ -1041,73 +897,35 @@ void nlUnitMatrix(void)
 
 void FUN_0c0dc670(void)
 {
-    float u0[16];
-    float u1[16];
+    float m[16];
+    int i;
 
-    _builtin_st_ext((float (*)[4])u0);
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = (-u0[0]);
-    u1[1] = (-u0[1]);
-    u1[2] = (-u0[2]);
-    u1[3] = (-u0[3]);
-    u1[4] = (-u0[4]);
-    u1[5] = (-u0[5]);
-    u1[6] = (-u0[6]);
-    u1[7] = (-u0[7]);
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
+    _builtin_st_ext((float (*)[4])m);
+    for (i = 0; i < 8; i++) {
+        m[i] = (-m[i]);
+    }
+    _builtin_ld_ext((float (*)[4])m);
 }
 
 void FUN_0c0db840(int a4)
 {
-    float u0[16];
-    float u1[16];
+    float m[16];
 
-    _builtin_st_ext((float (*)[4])u0);
-    *(float *)((((a4 + 0xC) - 0x4) + 0x0)) = u0[14];
-    *(float *)(((((a4 + 0xC) - 0x4) - 0x4) + 0x0)) = u0[13];
-    *(float *)((((((a4 + 0xC) - 0x4) - 0x4) - 0x4) + 0x0)) = u0[12];
-    _builtin_st_ext((float (*)[4])u1);
-    u1[0] = u0[0];
-    u1[1] = u0[1];
-    u1[2] = u0[2];
-    u1[3] = u0[3];
-    u1[4] = u0[4];
-    u1[5] = u0[5];
-    u1[6] = u0[6];
-    u1[7] = u0[7];
-    u1[8] = u0[8];
-    u1[9] = u0[9];
-    u1[10] = u0[10];
-    u1[11] = u0[11];
-    u1[12] = u0[12];
-    u1[13] = u0[13];
-    u1[14] = u0[14];
-    u1[15] = u0[15];
-    _builtin_ld_ext((float (*)[4])u1);
+    _builtin_st_ext((float (*)[4])m);
+    ((float *)a4)[2] = m[14];
+    ((float *)a4)[1] = m[13];
+    ((float *)a4)[0] = m[12];
 }
 
 void FUN_0c0dcc70(float f4, float f5, float f6)
 {
-    float u0[4];
-    float u1[16];
+    float m[16];
 
-    u0[0] = f4;
-    u0[1] = f5;
-    u0[2] = f6;
-    u0[3] = 1.0f;
-    _builtin_ftrv(u0, u0);
-    _builtin_st_ext((float (*)[4])u1);
-    u1[12] = u0[0];
-    u1[13] = u0[1];
-    u1[14] = u0[2];
-    u1[15] = u0[3];
-    _builtin_ld_ext((float (*)[4])u1);
+    _builtin_st_ext((float (*)[4])m);
+    m[12] = f4;
+    m[13] = f5;
+    m[14] = f6;
+    m[15] = 1.0f;
+    _builtin_ftrv(m + 12, m + 12);
+    _builtin_ld_ext((float (*)[4])m);
 }

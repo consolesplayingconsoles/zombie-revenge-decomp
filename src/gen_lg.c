@@ -2,8 +2,23 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0c0340(int);
-int FUN_0c0e19f2(int, int, int, int);
+int FUN_0c0e19f2(void);
 int FUN_0c0c6352(int a4, int a5, int a6, int a7);
+struct o34_float { char p[0x34]; float v; };
+struct o38_float { char p[0x38]; float v; };
+struct o5C_float { char p[0x5C]; float v; };
+struct o68_float { char p[0x68]; float v; };
+struct o6C_float { char p[0x6C]; float v; };
+struct o70_int { char p[0x70]; int v; };
+struct o76_short { char p[0x76]; short v; };
+struct o78_short { char p[0x78]; short v; };
+struct o78_ushort { char p[0x78]; unsigned short v; };
+struct o7A_short { char p[0x7A]; short v; };
+struct o7A_ushort { char p[0x7A]; unsigned short v; };
+struct o7C_short { char p[0x7C]; short v; };
+struct o7E_short { char p[0x7E]; short v; };
+struct o80_short { char p[0x80]; short v; };
+
 
 int FUN_0c0c6352(int a4, int a5, int a6, int a7)
 {
@@ -28,33 +43,33 @@ int FUN_0c0c6352(int a4, int a5, int a6, int a7)
     register float w0_2;
     v0_4 = a4;
     v0_5 = a5;
-    v0_1 = *(short *)((v0_4 + 0x78));
-    *(unsigned int *)(((int)stk + 8)) = (*(int *)((v0_4 + 0x70)));
+    v0_1 = (((struct o78_short *)(v0_4))->v);
+    *(unsigned int *)(((int)stk + 8)) = ((((struct o70_int *)(v0_4))->v));
     *(unsigned char *)(((int)stk + 4)) = 0xFFFFFFFF;
     v0_3 = (0x7E);
     v0_0 = (0xC1E8760);
     v0_2 = (v0_1);
     v0_1 = (v0_4);
-    if (((*(short *)((v0_4 + 0x7E))) == 0)) goto L_C0C6384;
+    if ((((((struct o7E_short *)(v0_4))->v)) == 0)) goto L_C0C6384;
     *(unsigned short *)((v0_1 + v0_3)) = ((*(short *)((v0_1 + v0_3))) - 1);
     L_C0C6484:;
     return v0_3;
     L_C0C6384:;
     v0_3 = (0x80);
-    if (((*(short *)((v0_1 + 0x80))) == 0)) goto L_C0C639E;
+    if ((((((struct o80_short *)(v0_1))->v)) == 0)) goto L_C0C639E;
     v0_6 = *(short *)((v0_1 + v0_3));
     *(unsigned short *)((v0_1 + v0_3)) = (v0_6 - 1);
     if (((short)(v0_6 - 1) != 0)) goto L_C0C639E;
-    FUN_0c0e19f2(v0_4, v0_5, a6, a7);
+    FUN_0c0e19f2();
     L_C0C639E:;
-    v0_3 = *(short *)((v0_1 + 0x7A));
-    *(unsigned short *)((v0_1 + 0x7A)) = (v0_3 + 0x1);
-    if (((int)(short)(v0_3 + 0x1) < (int)(*(short *)((v0_1 + 0x7C))))) goto L_C0C63BE;
-    *(unsigned short *)((v0_1 + 0x7A)) = 0x0;
-    *(unsigned short *)((v0_1 + 0x78)) = ((*(short *)((v0_1 + 0x78))) + 0x1);
+    v0_3 = (((struct o7A_short *)(v0_1))->v);
+    (((struct o7A_ushort *)(v0_1))->v) = (v0_3 + 0x1);
+    if (((int)(short)(v0_3 + 0x1) < (int)((((struct o7C_short *)(v0_1))->v)))) goto L_C0C63BE;
+    (((struct o7A_ushort *)(v0_1))->v) = 0x0;
+    (((struct o78_ushort *)(v0_1))->v) = (((((struct o78_short *)(v0_1))->v)) + 0x1);
     L_C0C63BE:;
-    *(float *)((v0_1 + 0x34)) = (*(float *)((v0_1 + 0x68)));
-    *(float *)((v0_1 + 0x38)) = (*(float *)((v0_1 + 0x6C)));
+    (((struct o34_float *)(v0_1))->v) = ((((struct o68_float *)(v0_1))->v));
+    (((struct o38_float *)(v0_1))->v) = ((((struct o6C_float *)(v0_1))->v));
     v0_3 = (0xC0C0340);
     w0_0 = (18.0f);
     w0_1 = (34.0f);
@@ -66,12 +81,12 @@ int FUN_0c0c6352(int a4, int a5, int a6, int a7)
     *(unsigned char *)(((int)stk + 4)) = v0_3;
     if (!((v0_3 != 0))) goto L_C0C644A;
     if (((*(signed char *)(((int)stk + 4))) != 10)) goto L_C0C6418;
-    *(float *)((v0_1 + 0x34)) = (*(float *)((v0_1 + 0x68)));
+    (((struct o34_float *)(v0_1))->v) = ((((struct o68_float *)(v0_1))->v));
     v0_3 = (0x38);
-    w0_2 = (((*(float *)((v0_1 + 0x38))) + w0_1));
+    w0_2 = ((((((struct o38_float *)(v0_1))->v)) + w0_1));
     goto L_C0C6432;
     L_C0C644A:;
-    v0_3 = *(short *)((v0_1 + 0x76));
+    v0_3 = (((struct o76_short *)(v0_1))->v);
     v0_4 = (v0_3);
     if (((int)v0_3 >= 0)) goto L_C0C646A;
     v0_3 = (v0_4);
@@ -84,8 +99,8 @@ int FUN_0c0c6352(int a4, int a5, int a6, int a7)
     v0_2 = *(int *)0xC23A258;
     v0_3 = (v0_2);
     if (((v0_2 & 4) == 0)) goto L_C0C6484;
-    *(unsigned int *)((v0_1 + 0x30)) = (*(short *)((v0_0 + 0x80)));
-    *(float *)((v0_1 + 0x5C)) = 1.0f;
+    *(unsigned int *)((v0_1 + 0x30)) = ((((struct o80_short *)(v0_0))->v));
+    (((struct o5C_float *)(v0_1))->v) = 1.0f;
     v0_3 = ((FUN_0c0c0340((v0_1 + 0x30))));
     goto L_C0C6484;
     L_C0C6432:;
@@ -98,6 +113,6 @@ int FUN_0c0c6352(int a4, int a5, int a6, int a7)
     FUN_0c0c0340((v0_1 + 0x30));
     L_C0C642C:;
     v0_3 = (0x34);
-    w0_2 = (((*(float *)((v0_1 + 0x34))) + w0_0));
+    w0_2 = ((((((struct o34_float *)(v0_1))->v)) + w0_0));
     goto L_C0C6432;
 }

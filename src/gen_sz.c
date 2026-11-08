@@ -12,6 +12,9 @@ struct o4_float { char p[0x4]; float v; };
 struct o4_uint { char p[0x4]; unsigned int v; };
 struct o8_float { char p[0x8]; float v; };
 struct oC_int { char p[0xC]; int v; };
+struct o18_float { char p[0x18]; float v; };
+struct o44_float { char p[0x44]; float v; };
+
 
 static float iaFsrra(float x)
 {
@@ -21,7 +24,6 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7);
 
 int FUN_0c9df220(int a4, int a5, int a6, int a7)
 {
-    int stk[2];
     float u28[4];
     float u79[4];
     float u80[4];
@@ -63,15 +65,14 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     v0_2 = a6;
     v0_4 = a7;
     v0_2 = v0_2;
-    *(int *)((int)stk + 4) = v0_2;
     v0_1 = ((((((struct o0_int *)0xC990EAC)->v)) + 0xC));
     v0_2 = (v0_2);
     v0_3 = ((((((struct oC_int *)0xC990EAC)->v)) + 0x8));
     v0_4 = ((FUN_0c9e2780((v0_4 + 0x10))));
     L_C9DF248:;
     w0_0 = *(float *)((v0_0 + 0x0));
-    w0_1 = *(float *)(((v0_0 + 0x4) + 0x0));
-    w0_4 = *(float *)((((v0_0 + 0x4) + 0x4) + 0x0));
+    w0_1 = (((struct o4_float *)(v0_0))->v);
+    w0_4 = (((struct o4_float *)((v0_0 + 0x4)))->v);
     *(volatile float *)(((((v0_0 + 0x4) + 0x4) + 0x4) + 0x0));
     *(volatile float *)((((((v0_0 + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
     *(volatile float *)(((((((v0_0 + 0x4) + 0x4) + 0x4) + 0x4) + 0x4) + 0x0));
@@ -160,8 +161,8 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     w0_6 = (0.0f);
     if ((v0_8 != 2)) goto L_C9DF2A0;
     u79[0] = (*(float *)(((v0_6 + R14) + 0x0)));
-    u79[1] = (*(float *)((((v0_6 + R14) + 0x4) + 0x0)));
-    u79[2] = (*(float *)(((((v0_6 + R14) + 0x4) + 0x4) + 0x0)));
+    u79[1] = ((((struct o4_float *)((v0_6 + R14)))->v));
+    u79[2] = ((((struct o4_float *)(((v0_6 + R14) + 0x4)))->v));
     u79[3] = w0_6;
     u80[0] = F4;
     u80[1] = F5;
@@ -173,20 +174,20 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     goto L_C9DF33E;
     L_C9DF328:;
     w0_2 = w0_2;
-    w0_2 = w0_2 + F7 * (*(float *)(((R14 + 0x18) + 0x0)));
+    w0_2 = w0_2 + F7 * ((((struct o18_float *)(R14))->v));
     w0_5 = w0_5;
-    w0_5 = w0_5 + F7 * (*(float *)((((R14 + 0x18) + 0x4) + 0x0)));
+    w0_5 = w0_5 + F7 * ((((struct o4_float *)((R14 + 0x18)))->v));
     w0_3 = w0_3;
-    w0_3 = w0_3 + F7 * (*(float *)(((((R14 + 0x18) + 0x4) + 0x4) + 0x0)));
+    w0_3 = w0_3 + F7 * ((((struct o4_float *)(((R14 + 0x18) + 0x4)))->v));
     w0_2 = (w0_2);
     w0_5 = (w0_5);
     w0_3 = (w0_3);
     goto L_C9DF33E;
     L_C9DF2A0:;
     w0_10 = *(float *)((((v0_6 - 12) + R14) + 0x0));
-    w0_11 = *(float *)(((((v0_6 - 12) + R14) + 0x4) + 0x0));
-    w0_7 = *(float *)((((((v0_6 - 12) + R14) + 0x4) + 0x4) + 0x0));
-    w0_8 = *(float *)((((((((v0_6 - 12) + R14) + 0x4) + 0x4) + 0x4) + 0x18) + 0x0));
+    w0_11 = (((struct o4_float *)(((v0_6 - 12) + R14)))->v);
+    w0_7 = (((struct o4_float *)((((v0_6 - 12) + R14) + 0x4)))->v);
+    w0_8 = (((struct o18_float *)((((((v0_6 - 12) + R14) + 0x4) + 0x4) + 0x4)))->v);
     u97[0] = (w0_10 - w0_0);
     u97[1] = (w0_11 - w0_1);
     u97[2] = (w0_7 - w0_4);
@@ -216,14 +217,14 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     if ((!(w0_8 > w0_9))) goto L_C9DF33E;
     if ((v0_7 == 3)) goto L_C9DF300;
     w0_12 = *(float *)(((v0_6 - 24) + 0x0));
-    w0_8 = *(float *)((((v0_6 - 24) + 0x4) + 0x0));
+    w0_8 = (((struct o4_float *)((v0_6 - 24)))->v);
     w0_9 = iaFsrra(w0_6);
     w0_10 = (w0_12 * w0_10);
     w0_10 = w0_10 + w0_8 * w0_11;
     w0_10 = w0_10;
-    w0_10 = w0_10 + (*(float *)(((((v0_6 - 24) + 0x4) + 0x4) + 0x0))) * w0_7;
+    w0_10 = w0_10 + ((((struct o4_float *)(((v0_6 - 24) + 0x4)))->v)) * w0_7;
     w0_11 = *(float *)((((((v0_6 - 24) + 0x4) + 0x4) - 48) + 0x0));
-    w0_7 = (*(float *)(((((((v0_6 - 24) + 0x4) + 0x4) - 48) + 0x44) + 0x0)));
+    w0_7 = ((((struct o44_float *)(((((v0_6 - 24) + 0x4) + 0x4) - 48)))->v));
     v0_7 = (*(int *)&(w0_6));
     v0_6 = ((((((v0_6 - 24) + 0x4) + 0x4) - 48) + 0x44));
     w0_6 = (w0_9);
@@ -243,7 +244,7 @@ int FUN_0c9df220(int a4, int a5, int a6, int a7)
     w0_7 = w0_7 + w0_0 * (*(float *)((v0_6 + 0x0)));
     w0_0 = (w0_0 * w0_6);
     w0_6 = w0_7;
-    w0_6 = w0_6 + w0_0 * (*(float *)((((v0_6 - 8) + 0x4) + 0x0)));
+    w0_6 = w0_6 + w0_0 * ((((struct o4_float *)((v0_6 - 8)))->v));
     w0_0 = ((*(float *)&(FPUL_)));
     w0_8 = (w0_6);
     if ((!(w0_6 > 1.0f))) goto L_C9DF328;

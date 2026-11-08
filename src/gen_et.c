@@ -98,7 +98,6 @@ int FUN_0c07ed4c(int a4)
     int t2;
     int t19;
     int t5;
-    int t16;
     int stk[9];
     int R1004;
 
@@ -117,9 +116,8 @@ int FUN_0c07ed4c(int a4)
         nlRotateAX(0x11C7);
         nlRotateAY((-((((struct o6E_short *)(t2))->v))));
         FUN_0c0dcc80((((int)stk + 4) + 0x4));
-        t16 = FUN_0c0853d4(0xC247D24, (*(float *)0xC07EE60));
+        t19 = FUN_0c0853d4(0xC247D24, (*(float *)0xC07EE60));
         nlPopMatrix(0x1);
-        t19 = t16;
     }
     return t19;
 }

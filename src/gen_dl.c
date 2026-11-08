@@ -164,7 +164,7 @@ int FUN_0c0d22d0(int a4)
             if ((0x8080 & t10) != 0) {
                 (((struct o6C_uint *)(a4))->v) = ((((struct o68_int *)(a4))->v));
                 (((struct o68_uint *)(a4))->v) = (((((struct o68_int *)(a4))->v)) + 0x1);
-                *(unsigned int *)(((0x68 + a4) + 0x0)) = (FUN_0c0e5f1c(t84));
+                (((struct o68_uint *)(a4))->v) = (FUN_0c0e5f1c(t84));
                 *(unsigned int *)((((a4 + 0x3C) + (t0 << 2)) + 0x0)) = (*(int *)((((a4 + 0x44) + (t0 << 2)) + 0x0)));
                 *(unsigned int *)((((a4 + 0x4C) + (t0 << 2)) + 0x0)) = 0x1;
                 t103 = (((int (*)(int, int, int, int, int, int, int, int, int, int, int, int))(FUN_0c0cc3f8))(0x29A9, 0x0, 0x0, 0x0, R1004, *(int *)((int)stk + 4 + 4), R1012, *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28)));

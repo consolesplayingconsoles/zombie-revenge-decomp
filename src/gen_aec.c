@@ -43,7 +43,7 @@ int FUN_0c04e402(int a4, int a5)
             }
             t4 = t2;
             if (((*(int *)((a5 + 0x0))) & 0x400) != 0) {
-                *(unsigned int *)(((0x20C + a4) + 0x0)) = 0x40;
+                (((struct o20C_uint *)(a4))->v) = 0x40;
                 (((struct o210_uint *)(a4))->v) = 0x7A;
                 (((struct o2C4_uint *)(a4))->v) = (unsigned short)(*(short *)(((((((((struct oC0_int *)(a4))->v)) << 2) << 2) + 0xC0F82AA) + 0x0)));
                 (((struct o2CC_uint *)(a4))->v) = 0x1;
@@ -62,7 +62,7 @@ int FUN_0c04e402(int a4, int a5)
                 if ((int)((((struct o3AC_int *)(a4))->v)) > (int)0xFFFFFFF4) {
                     (((struct o20C_uint *)(a4))->v) = 0x80;
                     (((struct o210_uint *)(a4))->v) = 0x7C;
-                    *(unsigned int *)(((0x2C4 + a4) + 0x0)) = (unsigned short)(*(short *)(((0xC0F82AA + ((((((struct oC0_int *)(a4))->v)) << 2) << 2)) + 0x2)));
+                    (((struct o2C4_uint *)(a4))->v) = (unsigned short)(*(short *)(((0xC0F82AA + ((((((struct oC0_int *)(a4))->v)) << 2) << 2)) + 0x2)));
                     (((struct o2CC_uint *)(a4))->v) = 0x1;
                     (((struct o2D4_uint *)(a4))->v) = 0x1;
                     (((struct o3AC_uint *)(a4))->v) = 0x0;

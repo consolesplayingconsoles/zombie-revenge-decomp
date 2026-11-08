@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0e262a(int);
-int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0e2a4c(int);
 int FUN_0c0c86ac(int a4, int a5, int a6);
 struct o10_float { char p[0x10]; float v; };
 struct o18_float { char p[0x18]; float v; };
@@ -14,7 +14,7 @@ struct oC_float { char p[0xC]; float v; };
 
 int FUN_0c0c86ac(int a4, int a5, int a6)
 {
-    int stk[22];
+    int stk[21];
 
     register int R1;
     register float F2;
@@ -47,17 +47,17 @@ int FUN_0c0c86ac(int a4, int a5, int a6)
     int R1036;
     int R1040;
     int R1044;
-    R1004 = *(int *)((int)stk + 4);
-    R1008 = *(int *)((int)stk + 8);
-    R1012 = *(int *)((int)stk + 12);
-    R1016 = *(int *)((int)stk + 16);
-    R1020 = *(int *)((int)stk + 20);
-    R1024 = *(int *)((int)stk + 24);
-    R1028 = *(int *)((int)stk + 28);
-    R1032 = *(int *)((int)stk + 32);
-    R1036 = *(int *)((int)stk + 36);
-    R1040 = *(int *)((int)stk + 40);
-    R1044 = *(int *)((int)stk + 44);
+    R1004 = *(int *)((int)stk + 0);
+    R1008 = *(int *)((int)stk + 4);
+    R1012 = *(int *)((int)stk + 8);
+    R1016 = *(int *)((int)stk + 12);
+    R1020 = *(int *)((int)stk + 16);
+    R1024 = *(int *)((int)stk + 20);
+    R1028 = *(int *)((int)stk + 24);
+    R1032 = *(int *)((int)stk + 28);
+    R1036 = *(int *)((int)stk + 32);
+    R1040 = *(int *)((int)stk + 36);
+    R1044 = *(int *)((int)stk + 40);
     v0_4 = a4;
     v0_0 = a5;
     v0_9 = a6;
@@ -208,8 +208,8 @@ int FUN_0c0c86ac(int a4, int a5, int a6)
     v0_10 = ((v0_10 + 0x4));
     if (v0_5) goto L_C0C8B30;
     L_C0C8B3C:;
-    FUN_0c0e2a4c(v0_4, v0_0, v0_9, v0_10, R1004, R1008, R1012, R1016, R1020, R1024, R1028);
-    v0_4 = ((FUN_0c0e2a4c((R1028), 0x0, 0x0, 0x0, R1004, R1008, R1012, R1016, R1020, R1024, R1028)));
+    FUN_0c0e2a4c(v0_4);
+    v0_4 = ((FUN_0c0e2a4c((R1028))));
     v0_0 = (v0_1);
     if (((int)v0_3 <= 0)) goto L_C0C8B78;
     L_C0C8B4E:;

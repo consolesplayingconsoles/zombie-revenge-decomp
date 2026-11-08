@@ -172,6 +172,7 @@ int FUN_0c0341a6(int a4, int a5)
     float u5;
     int t14;
     int t20;
+    float s1;
 
     u0 = (((struct o30_float *)(a4))->v);
     u1 = (((struct o30_float *)(a5))->v);
@@ -180,15 +181,16 @@ int FUN_0c0341a6(int a4, int a5)
     t4 = (((struct o4F4_int *)(a4))->v);
     u5 = ((u2 - u3) * (u2 - u3));
     u5 = u5 + (u0 - u1) * (u0 - u1);
-    if (_builtin_sqrtf(u5) > ((((struct o7C_float *)((*(int *)((((((t4 << 1) + t4) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
+    s1 = _builtin_sqrtf(u5);
+    if (s1 > ((((struct o7C_float *)((*(int *)((((((t4 << 1) + t4) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
         return 0x0;
     }
     t14 = (((struct o4F4_int *)(a4))->v);
-    if (_builtin_sqrtf(u5) > ((((struct o80_float *)((*(int *)((((((t14 << 1) + t14) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
+    if (s1 > ((((struct o80_float *)((*(int *)((((((t14 << 1) + t14) << 2) + 0xC1F79B4) + 0x8)))))->v))) {
         return 0x1;
     }
     t20 = (((struct o4F4_int *)(a4))->v);
-    if (_builtin_sqrtf(u5) > ((((struct o84_float *)((*(int *)(((0xC1F79B4 + (((t20 << 1) + t20) << 2)) + 0x8)))))->v))) {
+    if (s1 > ((((struct o84_float *)((*(int *)(((0xC1F79B4 + (((t20 << 1) + t20) << 2)) + 0x8)))))->v))) {
         return 0x2;
     }
     return 0x3;
@@ -208,6 +210,8 @@ int FUN_0c037002(int a4, int a5)
     float u12;
     float u13;
     float u14;
+    float s1;
+    float s2;
 
     u0 = *(float *)((a4 + 0x0));
     u1 = *(float *)((a4 + 0x4));
@@ -227,10 +231,12 @@ int FUN_0c037002(int a4, int a5)
     u13 = u13 + u8 * u8;
     u14 = u13;
     u14 = u14 + u11 * u11;
-    if ((u9 / (_builtin_sqrtf(u12) * _builtin_sqrtf(u14))) > 0.0f) {
+    s1 = _builtin_sqrtf(u12);
+    s2 = _builtin_sqrtf(u14);
+    if ((u9 / (s1 * s2)) > 0.0f) {
         return 0x1;
     }
-    if (0.0f > (u9 / (_builtin_sqrtf(u12) * _builtin_sqrtf(u14)))) {
+    if (0.0f > (u9 / (s1 * s2))) {
         return 0xFFFFFFFF;
     }
     return 0x0;

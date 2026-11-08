@@ -16,6 +16,17 @@ int nlRotateAY(int);
 int nlRotateAZ(int);
 int nlScaleUnitVector(int, int, float);
 int FUN_0c0acd48(int a4);
+struct o40_int { char p[0x40]; int v; };
+struct o40_uint { char p[0x40]; unsigned int v; };
+struct o52_ushort { char p[0x52]; unsigned short v; };
+struct o54_ushort { char p[0x54]; unsigned short v; };
+struct o56_ushort { char p[0x56]; unsigned short v; };
+struct o58_ushort { char p[0x58]; unsigned short v; };
+struct o6C_short { char p[0x6C]; short v; };
+struct o6E_short { char p[0x6E]; short v; };
+struct o70_short { char p[0x70]; short v; };
+struct o84_int { char p[0x84]; int v; };
+
 
 int FUN_0c0acd48(int a4)
 {
@@ -45,20 +56,20 @@ int FUN_0c0acd48(int a4)
     v0_2 = a4;
     v0_1 = *(int *)((v0_2 + 0x30));
     v0_4 = *(int *)((v0_2 + 0x38));
-    v0_0 = *(int *)(((*(int *)0xC23EE54) + 0x84));
+    v0_0 = (((struct o84_int *)((*(int *)0xC23EE54)))->v);
     *(float *)(((int)stk + 8)) = (float)v0_4;
     v0_3 = *(int *)((v0_2 + 0x3C));
     *(float *)(((int)stk + 4)) = (float)v0_3;
     w0_0 = (float)v0_4;
-    w0_0 = w0_0 + (FUN_0c0da410((*(int *)((v0_2 + 0x40))))) * (float)v0_3;
+    w0_0 = w0_0 + (FUN_0c0da410(((((struct o40_int *)(v0_2))->v)))) * (float)v0_3;
     FUN_0c0dc5a0();
     FUN_0c0dcca0((v0_0 + 0x30));
-    nlRotateAZ((*(short *)((v0_0 + 0x70))));
-    nlRotateAY((*(short *)((v0_0 + 0x6E))));
-    nlRotateAX((*(short *)((v0_0 + 0x6C))));
+    nlRotateAZ(((((struct o70_short *)(v0_0))->v)));
+    nlRotateAY(((((struct o6E_short *)(v0_0))->v)));
+    nlRotateAX(((((struct o6C_short *)(v0_0))->v)));
     FUN_0c0dcca0(0xC10F0A4);
     FUN_0c0c47ae((0xF60 + (int)w0_0));
-    *(unsigned int *)(((0x40 + v0_2) + 0x0)) = ((*(int *)(((0x40 + v0_2) + 0x0))) + (*(short *)(((((v0_1 << 1) + (v0_1 << 2)) + 0xC10F130) + 0x2))));
+    (((struct o40_uint *)(v0_2))->v) = (((((struct o40_int *)(v0_2))->v)) + (*(short *)(((((v0_1 << 1) + (v0_1 << 2)) + 0xC10F130) + 0x2))));
     v0_3 = *(int *)((v0_2 + 0x34));
     *(unsigned int *)((v0_2 + 0x34)) = (v0_3 + 0x1);
     R11 = ((int)w0_0);
@@ -66,7 +77,7 @@ int FUN_0c0acd48(int a4)
     v0_2 = (v0_2);
     if (((int)(v0_3 + 0x1) <= (int)(*(short *)(((((v0_1 << 1) + (v0_1 << 2)) + 0xC10F130) + 0x0))))) goto L_C0ACDFC;
     *(unsigned int *)((v0_2 + 0x30)) = ((*(int *)((v0_2 + 0x30))) + 0x1);
-    *(unsigned int *)((v0_2 + 0x40)) = 0x0;
+    (((struct o40_uint *)(v0_2))->v) = 0x0;
     *(unsigned int *)((v0_2 + 0x34)) = 0x0;
     *(unsigned int *)((v0_2 + 0x38)) = R11;
     *(unsigned int *)((v0_2 + 0x3C)) = (*(short *)((v0_0 + 0x4)));
@@ -93,10 +104,10 @@ int FUN_0c0acd48(int a4)
     w0_4 = w0_1;
     w0_4 = w0_4 + w0_0 * (float)(FUN_0c0da2e0());
     nlScaleUnitVector((v0_3 + 0x40), v0_1, w0_4);
-    *(unsigned short *)(((0x52 + v0_3) + 0x0)) = (((FUN_0c0da2e0()) & R11) + v0_0);
-    *(unsigned short *)(((0x54 + v0_3) + 0x0)) = (((FUN_0c0da2e0()) & R11) + v0_0);
-    *(unsigned short *)(((0x56 + v0_3) + 0x0)) = (((FUN_0c0da2e0()) & R11) + v0_0);
-    *(unsigned short *)((v0_3 + 0x58)) = (*(short *)((v0_2 + 0x0)));
+    (((struct o52_ushort *)(v0_3))->v) = (((FUN_0c0da2e0()) & R11) + v0_0);
+    (((struct o54_ushort *)(v0_3))->v) = (((FUN_0c0da2e0()) & R11) + v0_0);
+    (((struct o56_ushort *)(v0_3))->v) = (((FUN_0c0da2e0()) & R11) + v0_0);
+    (((struct o58_ushort *)(v0_3))->v) = (*(short *)((v0_2 + 0x0)));
     w0_4 = w0_3;
     w0_4 = w0_4 + w0_2 * (float)(FUN_0c0da2e0());
     *(unsigned int *)((v0_3 + 0x30)) = (int)w0_4;
@@ -110,7 +121,7 @@ int FUN_0c0acd48(int a4)
     v0_0 = FUN_0c0e1830(0xC0ACFCE, 0x5C);
     FUN_0c0e19d0(v0_0);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_0 + 0x34)) = *(struct mv3 *)(v0_1); }
-    *(unsigned short *)((v0_0 + 0x58)) = (*(short *)((v0_2 + 0x0)));
+    (((struct o58_ushort *)(v0_0))->v) = (*(short *)((v0_2 + 0x0)));
     FUN_0c0e19f2();
     goto L_C0ACF24;
 }

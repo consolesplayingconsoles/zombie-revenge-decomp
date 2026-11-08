@@ -3,9 +3,14 @@
 
 extern int FUN_0c0be338();
 int FUN_0c0db470(int, int);
-int FUN_0c0e2a4c(int, int, int, int, int, int, int, int, int, int, int);
+int FUN_0c0e2a4c(int);
 float nlLength(int, int);
 int FUN_0c0be054(int a4, int a5, int a6, int a7);
+struct o10_float { char p[0x10]; float v; };
+struct o14_float { char p[0x14]; float v; };
+struct o18_float { char p[0x18]; float v; };
+struct oC_float { char p[0xC]; float v; };
+
 
 int FUN_0c0be054(int a4, int a5, int a6, int a7)
 {
@@ -34,9 +39,9 @@ int FUN_0c0be054(int a4, int a5, int a6, int a7)
             t13 = nlLength((t7 + 0x4), (((int)stk + 4) + 0x4));
             if (!(t13 > u3)) {
                 t14 = *(int *)((t11 + 0x0));
-                *(float *)((t14 + 0xC)) = (*(float *)((t7 + 0x10)));
-                *(float *)((t14 + 0x10)) = (*(float *)((t7 + 0x14)));
-                *(float *)((t14 + 0x14)) = (*(float *)((t7 + 0x18)));
+                (((struct oC_float *)(t14))->v) = ((((struct o10_float *)(t7))->v));
+                (((struct o10_float *)(t14))->v) = ((((struct o14_float *)(t7))->v));
+                (((struct o14_float *)(t14))->v) = ((((struct o18_float *)(t7))->v));
             }
             t10 = (t10 - 0x1);
             t11 = (t11 + 0x24);
@@ -50,6 +55,6 @@ int FUN_0c0be054(int a4, int a5, int a6, int a7)
             break;
         }
     }
-    FUN_0c0e2a4c((*(int *)(((int)stk + 28))), 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24));
-    return (FUN_0c0e2a4c((*(int *)(((int)stk + 20))), 0x0, 0x0, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24)));
+    FUN_0c0e2a4c((*(int *)(((int)stk + 28))));
+    return (FUN_0c0e2a4c((*(int *)(((int)stk + 20)))));
 }

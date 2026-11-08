@@ -2,6 +2,9 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c054654(int a4, int a5, int a6, int a7);
+struct o6E_short { char p[0x6E]; short v; };
+struct o6E_ushort { char p[0x6E]; unsigned short v; };
+
 
 int FUN_0c054654(int a4, int a5, int a6, int a7)
 {
@@ -16,21 +19,21 @@ int FUN_0c054654(int a4, int a5, int a6, int a7)
 
     t0 = 0;
     if (a7 != 0) {
-        t1 = *(short *)((a4 + 0x6E));
+        t1 = (((struct o6E_short *)(a4))->v);
         t2 = 0;
         if (_builtin_fabsf((float)(short)(t1 - a5)) > 16384.0f) {
             t3 = 0;
             if ((int)(unsigned short)(int)_builtin_fabsf((float)(int)(0xFFFF8000 + (short)(t1 - a5))) > (int)a6) {
                 if ((int)(unsigned short)(short)(t1 - a5) <= (int)0x8000) {
-                    t4 = ((*(short *)((a4 + 0x6E))) + a6);
+                    t4 = (((((struct o6E_short *)(a4))->v)) + a6);
                 } else {
-                    t4 = ((*(short *)((a4 + 0x6E))) - a6);
+                    t4 = (((((struct o6E_short *)(a4))->v)) - a6);
                 }
-                *(unsigned short *)((a4 + 0x6E)) = t4;
+                (((struct o6E_ushort *)(a4))->v) = t4;
                 t5 = t4;
                 t3 = (((int)(unsigned short)(short)(t1 - a5) > (int)0x8000));
             } else {
-                *(unsigned short *)((a4 + 0x6E)) = (a5 - 32768);
+                (((struct o6E_ushort *)(a4))->v) = (a5 - 32768);
                 t5 = (unsigned short)(int)_builtin_fabsf((float)(int)(0xFFFF8000 + (short)(t1 - a5)));
                 t3 = (0);
             }
@@ -41,14 +44,14 @@ int FUN_0c054654(int a4, int a5, int a6, int a7)
             t3 = 0;
             if (_builtin_fabsf((float)(short)(t1 - a5)) > (float)a6) {
                 if ((int)(short)(t1 - a5) > 0) {
-                    t5 = ((*(short *)((a4 + 0x6E))) - a6);
+                    t5 = (((((struct o6E_short *)(a4))->v)) - a6);
                 } else {
-                    t5 = ((*(short *)((a4 + 0x6E))) + a6);
+                    t5 = (((((struct o6E_short *)(a4))->v)) + a6);
                 }
-                *(unsigned short *)((a4 + 0x6E)) = t5;
+                (((struct o6E_ushort *)(a4))->v) = t5;
                 t3 = (((int)(short)(t1 - a5) > 0));
             } else {
-                *(unsigned short *)((a4 + 0x6E)) = a5;
+                (((struct o6E_ushort *)(a4))->v) = a5;
                 t3 = (0);
             }
             u0 = _builtin_fabsf((float)(short)(t1 - a5));
@@ -58,12 +61,12 @@ int FUN_0c054654(int a4, int a5, int a6, int a7)
         u1 = u0;
         t0 = (t2);
     } else {
-        t1 = *(short *)((a4 + 0x6E));
+        t1 = (((struct o6E_short *)(a4))->v);
         t2 = a5;
         if (_builtin_fabsf((float)(short)(t1 - a5)) > 16384.0f) {
             t2 = (a5 - 32768);
         }
-        *(unsigned short *)((a4 + 0x6E)) = t2;
+        (((struct o6E_ushort *)(a4))->v) = t2;
         u1 = _builtin_fabsf((float)(short)(t1 - a5));
         t0 = ((_builtin_fabsf((float)(short)(t1 - a5)) > 16384.0f));
     }

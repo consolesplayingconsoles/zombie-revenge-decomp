@@ -32,10 +32,16 @@ float FUN_0c0ab550(int a4, int a5)
     register float w0_0;
     register float w0_1;
     register float w0_2;
+    int R1004;
+    int R1008;
+    int R1012;
+    R1004 = *(int *)((int)stk + 4);
+    R1008 = *(int *)((int)stk + 8);
+    R1012 = *(int *)((int)stk + 12);
     v0_0 = a5;
-    *(unsigned int *)(((int)stk + 8)) = 0xC10E210;
-    *(unsigned int *)(((int)stk + 12)) = 0x2;
-    *(unsigned int *)(((int)stk + 4)) = 0xC10E2B8;
+    R1008 = 0xC10E210;
+    R1012 = 0x2;
+    R1004 = 0xC10E2B8;
     R10 = (0x3FF);
     v0_0 = (0x7FFF);
     v0_1 = (0x1F);
@@ -48,8 +54,8 @@ float FUN_0c0ab550(int a4, int a5)
     L_C0AB586:;
     v0_6 = FUN_0c0e19aa(0xC08C25A, v0_2, (*(int *)0xC23ECF0));
     FUN_0c0e19d0(v0_6);
-    v0_5 = *(int *)(((int)stk + 8));
-    *(unsigned int *)(((int)stk + 8)) = (v0_5 + 0xC);
+    v0_5 = R1008;
+    R1008 = (v0_5 + 0xC);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_6 + 0x70)) = *(struct mv3 *)(((v0_5 + 0xC) - 12)); }
     *(unsigned short *)((v0_6 + 0x8A)) = v0_0;
     *(unsigned short *)((v0_6 + 0x9A)) = v0_3;
@@ -58,8 +64,8 @@ float FUN_0c0ab550(int a4, int a5)
     w0_2 = w0_1;
     w0_2 = w0_2 + w0_0 * (float)(v0_5 & R10);
     *(float *)((v0_6 + 0x90)) = w0_2;
-    v0_8 = *(int *)(((int)stk + 4));
-    *(unsigned int *)(((int)stk + 4)) = (v0_8 + 0x2);
+    v0_8 = R1004;
+    R1004 = (v0_8 + 0x2);
     v0_7 = (v0_4 - 0x1) != 0;
     *(unsigned short *)((v0_6 + 0x98)) = (*(short *)((((v0_8 + 0x2) - 2) + 0x0)));
     v0_8 = (0x98);
@@ -68,8 +74,8 @@ float FUN_0c0ab550(int a4, int a5)
     w0_2 = (w0_0);
     FPUL_ = ((v0_5 & R10));
     if (v0_7) goto L_C0AB586;
-    v0_4 = *(int *)(((int)stk + 12));
-    *(unsigned int *)(((int)stk + 12)) = (v0_4 - 1);
+    v0_4 = R1012;
+    R1012 = (v0_4 - 1);
     if (((v0_4 - 1) != 0)) goto L_C0AB584;
     return w0_2;
 }

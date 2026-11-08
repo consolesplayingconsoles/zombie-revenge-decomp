@@ -37,7 +37,6 @@ int FUN_0c078846(int a4, int a5, int a6, int a7, float f4, float f5)
     int t58;
     int t64;
     int t68;
-    int stk[10];
 
     int R0;
     int R1;
@@ -69,11 +68,7 @@ int FUN_0c078846(int a4, int a5, int a6, int a7, float f4, float f5)
     F4 = f4;
     F5 = f5;
     t0 = R8;
-    *(int *)((int)stk + 12) = t0;
-    *(float *)(((int)stk + 8)) = F15;
     t2 = ((*(int *)0xC23ED5C) & 6) == 0;
-    *(unsigned int *)(((int)stk + 8)) = t0;
-    *(float *)(((int)stk + 4)) = F15;
     R11 = (R4);
     if (t2) goto L_C078868;
     FUN_0c0e19f2();

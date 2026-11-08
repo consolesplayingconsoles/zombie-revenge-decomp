@@ -1944,7 +1944,7 @@ int FUN_0c0b4f84(int a4)
 {
     register int t1;
 
-    t1 = *(int *)((((*(int *)((a4 + 0x40))) << 2) + 0xC203FBC));
+    t1 = *(int *)(((((((struct o40_int *)(a4))->v)) << 2) + 0xC203FBC));
     return ((int (*)(int))(t1))(a4);
 }
 
@@ -1952,7 +1952,7 @@ int FUN_0c0b5344(int a4)
 {
     register int t1;
 
-    t1 = *(int *)((((*(int *)((a4 + 0x40))) << 2) + 0xC204008));
+    t1 = *(int *)(((((((struct o40_int *)(a4))->v)) << 2) + 0xC204008));
     return ((int (*)(int))(t1))(a4);
 }
 
@@ -1960,7 +1960,7 @@ int FUN_0c0b5a08(int a4)
 {
     register int t1;
 
-    t1 = *(int *)((((*(int *)((a4 + 0x40))) << 2) + 0xC2041DC));
+    t1 = *(int *)(((((((struct o40_int *)(a4))->v)) << 2) + 0xC2041DC));
     return ((int (*)(int))(t1))(a4);
 }
 

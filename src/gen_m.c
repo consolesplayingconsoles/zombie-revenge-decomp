@@ -256,6 +256,33 @@ int FUN_0c220da0(void);
 int FUN_0c220da4(void);
 int thunk_FUN_0c221364(int a4, int a5);
 int syTmrInt1Set(int a4, int a5, int a6);
+struct o3C_short { char p[0x3C]; short v; };
+struct o3E_short { char p[0x3E]; short v; };
+struct o3E_ushort { char p[0x3E]; unsigned short v; };
+struct o4A_short { char p[0x4A]; short v; };
+struct o4C_short { char p[0x4C]; short v; };
+struct o4C_uint { char p[0x4C]; unsigned int v; };
+struct o4C_ushort { char p[0x4C]; unsigned short v; };
+struct o4E_ushort { char p[0x4E]; unsigned short v; };
+struct o50_short { char p[0x50]; short v; };
+struct o6D_uchar { char p[0x6D]; unsigned char v; };
+struct o71_uchar { char p[0x71]; unsigned char v; };
+struct o0_int { int v; };
+struct o0_uchar { unsigned char v; };
+struct o0_uint { unsigned int v; };
+struct o10_int { char p[0x10]; int v; };
+struct o10_ushort { char p[0x10]; unsigned short v; };
+struct o1C_uint { char p[0x1C]; unsigned int v; };
+struct o20_uint { char p[0x20]; unsigned int v; };
+struct o4_int { char p[0x4]; int v; };
+struct o4_uchar { char p[0x4]; unsigned char v; };
+struct o4_uint { char p[0x4]; unsigned int v; };
+struct o8_int { char p[0x8]; int v; };
+struct o8_uint { char p[0x8]; unsigned int v; };
+struct oC_int { char p[0xC]; int v; };
+struct oC_uint { char p[0xC]; unsigned int v; };
+
+
 
 int buCalcBackupFileSize(int a4, int a5, int a6)
 {
@@ -293,7 +320,7 @@ int ADXT_IsIbufSafety(int a4)
 
 int adxt_start_stm(int a4)
 {
-    ADXSTM_SetBufSize((*(int *)((a4 + 0x8))), ((((*(short *)((a4 + 0x3E))) << 8) << 2) << 1), ((((*(short *)((a4 + 0x3C))) << 8) << 2) << 1));
+    ADXSTM_SetBufSize((*(int *)((a4 + 0x8))), (((((((struct o3E_short *)(a4))->v)) << 8) << 2) << 1), (((((((struct o3C_short *)(a4))->v)) << 8) << 2) << 1));
     ADXSTM_SetEos((*(int *)((a4 + 0x8))), 0x19);
     ADXSTM_Start((*(int *)((a4 + 0x8))));
     adxt_start_sj(a4, (*(int *)((a4 + 0x10))));
@@ -317,36 +344,26 @@ int FUN_0c213470(void)
 
 int FUN_0c21b5a6(int a4)
 {
-    int t2;
     int t3;
-    int t4;
     int t12;
     int t13;
-    int t9;
-    int t10;
-    int t7;
 
     if ((unsigned short)(*(int *)((a4 + 0x0))) == 3) {
-        t2 = FUN_0c21b73c(a4);
-        t12 = t2;
-        t13 = t2;
+        t13 = FUN_0c21b73c(a4);
+        t12 = t13;
     } else {
         t3 = *(int *)((a4 + 0x18));
         if ((t3 & 8) != 0) {
-            t4 = FUN_0c21b654(a4);
-            t9 = t4;
-            t10 = t4;
+            t13 = FUN_0c21b654(a4);
+            t12 = t13;
         } else {
             if ((t3 & 32) != 0) {
-                t7 = (FUN_0c21b6b2(a4));
+                t13 = (FUN_0c21b6b2(a4));
             } else {
-                t7 = (FUN_0c21b600(a4));
+                t13 = (FUN_0c21b600(a4));
             }
-            t9 = t7;
-            t10 = t7;
+            t12 = t13;
         }
-        t12 = t9;
-        t13 = t10;
     }
     *(unsigned int *)((a4 + 0x14)) = t13;
     return t12;
@@ -358,11 +375,11 @@ int kmChangeContextFilterMode(int a4)
     int t2;
     int stk[5];
 
-    t0 = *(int *)0xC237778;
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = (*(int *)0xC237774);
+    t0 = (((struct o4_int *)0xC237774)->v);
+    *(unsigned int *)((((int)stk + 4) + 0x0)) = ((((struct o0_int *)0xC237774)->v));
     *(unsigned int *)((((int)stk + 4) + 0x4)) = t0;
-    t2 = *(int *)0xC237780;
-    *(unsigned int *)((((int)stk + 4) + 0x8)) = (*(int *)0xC23777C);
+    t2 = (((struct oC_int *)0xC237774)->v);
+    *(unsigned int *)((((int)stk + 4) + 0x8)) = ((((struct o8_int *)0xC237774)->v));
     *(unsigned int *)((((int)stk + 4) + 0xC)) = t2;
     *(unsigned int *)0xC95288C = (((*(int *)0xC95288C) & 0xFFFF9FFF) | ((*(int *)((((int)stk + 4) + (a4 << 2)))) << 13));
     *(unsigned int *)0xC239B34 = (*(int *)0xC95288C);
@@ -376,7 +393,7 @@ void kmiDACControl(void)
 
 int FUN_0c21ef80(int a4)
 {
-    return (((((((*(int *)((0xC239CD4 + ((*(int *)0xC9527AC) << 2)))) + (*(int *)((0xC239CD4 + ((*(int *)0xC9527B0) << 2))))) + (*(int *)((0xC239CD4 + ((*(int *)0xC9527B4) << 2))))) + (*(int *)((0xC239CD4 + ((*(int *)0xC9527B8) << 2))))) + (*(int *)((0xC239CD4 + ((*(int *)0xC9527BC) << 2))))) * a4) << 2);
+    return (((((((*(int *)((0xC239CD4 + (((((struct o0_int *)0xC9527AC)->v)) << 2)))) + (*(int *)((0xC239CD4 + (((((struct o4_int *)0xC9527AC)->v)) << 2))))) + (*(int *)((0xC239CD4 + (((((struct o8_int *)0xC9527AC)->v)) << 2))))) + (*(int *)((0xC239CD4 + (((((struct oC_int *)0xC9527AC)->v)) << 2))))) + (*(int *)((0xC239CD4 + (((((struct o10_int *)0xC9527AC)->v)) << 2))))) * a4) << 2);
 }
 
 int kmiCopyTextureToTexture(void)
@@ -391,12 +408,12 @@ int kmiPutGlobalParam(void)
     int t5;
 
     t0 = *(int *)0xC9529C8;
-    t1 = *(int *)0xC952968;
-    *(unsigned int *)0xC95296C = ((t0 << 2) + t1);
+    t1 = (((struct o0_int *)0xC952968)->v);
+    (((struct o4_uint *)0xC952968)->v) = ((t0 << 2) + t1);
     FUN_0c22fa60((*(int *)((((t0 << 2) + t1) + 0x0))), 0xC239B2C, ((*(int *)0xC239B28) << 2));
-    t5 = *(int *)0xC95296C;
+    t5 = (((struct o4_int *)0xC952968)->v);
     *(unsigned int *)((t5 + 0x0)) = ((*(int *)((t5 + 0x0))) + ((*(int *)0xC239B28) << 2));
-    return (*(int *)0xC95296C);
+    return ((((struct o4_int *)0xC952968)->v));
 }
 
 int ccitt_updcrc(int a4, int a5, int a6, int a7)
@@ -497,13 +514,13 @@ int syTmrGenSetClock(int a4)
 int kmGetFreeTextureMem(int a4, int a5)
 {
     int t0;
-    int stk[8];
+    int stk[7];
 
-    *(unsigned int *)(((int)stk + 24)) = a4;
-    *(unsigned int *)(((int)stk + 20)) = a5;
-    t0 = kmiFBgetfreemem(((int)stk + 4), (((int)stk + 4) + 0x4), (((int)stk + 4) + 0x8), (((int)stk + 4) + 0xC));
-    *(unsigned int *)(((*(int *)(((int)stk + 24))) + 0x0)) = (((*(int *)(((int)stk + 4))) + (*(int *)(((int)stk + 8)))) + (*(int *)(((int)stk + 12))));
-    *(unsigned int *)(((*(int *)(((int)stk + 20))) + 0x0)) = (*(int *)(((int)stk + 16)));
+    *(unsigned int *)(((int)stk + 20)) = a4;
+    *(unsigned int *)(((int)stk + 16)) = a5;
+    t0 = kmiFBgetfreemem(((int)stk + 0), (((int)stk + 0) + 0x4), (((int)stk + 0) + 0x8), (((int)stk + 0) + 0xC));
+    *(unsigned int *)(((*(int *)(((int)stk + 20))) + 0x0)) = (((*(int *)(((int)stk + 0))) + (*(int *)(((int)stk + 4)))) + (*(int *)(((int)stk + 8))));
+    *(unsigned int *)(((*(int *)(((int)stk + 16))) + 0x0)) = (*(int *)(((int)stk + 12)));
     return t0;
 }
 
@@ -524,14 +541,17 @@ int kmChangeVertexPCW(int a4, int a5, int a6)
     int t0;
     int t3;
     int stk[5];
+    int R1004;
+
+    R1004 = *(int *)((int)stk + 4);
 
     *(unsigned int *)(((int)stk + 8)) = a5;
-    *(unsigned int *)(((int)stk + 4)) = a6;
+    R1004 = a6;
     t0 = *(int *)0xC952968;
     *(unsigned int *)0xC95296C = ((a4 << 2) + t0);
     FUN_0c22fa60((*(int *)((((a4 << 2) + t0) + 0x0))), (((int)stk + 4) + 0x4), 0x4);
     t3 = *(int *)0xC95296C;
-    *(unsigned int *)((t3 + 0x0)) = ((*(int *)((t3 + 0x0))) + ((*(int *)(((int)stk + 4))) << 2));
+    *(unsigned int *)((t3 + 0x0)) = ((*(int *)((t3 + 0x0))) + ((R1004) << 2));
     return 0x0;
 }
 
@@ -541,13 +561,13 @@ int gdFsClose(int a4)
     int t12;
 
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) != 0) {
-            t4 = *(short *)((a4 + 0x50));
+        if (((((struct o4C_short *)(a4))->v)) != 0) {
+            t4 = (((struct o50_short *)(a4))->v);
             if ((t4 != 2) && ((t4 != 3) && (t4 != 4))) {
             } else {
                 gdFsStopRd(a4);
             }
-            *(unsigned short *)((a4 + 0x4C)) = 0x0;
+            (((struct o4C_ushort *)(a4))->v) = 0x0;
         }
         t12 = 0x4C;
     }
@@ -608,38 +628,39 @@ int buSetFileParam(int a4, int a5, int a6)
 {
     int t2;
     int stk[5];
+    int R1004;
 
-    *(unsigned int *)(((int)stk + 4)) = a4;
+    R1004 = *(int *)((int)stk + 4);
+
+    R1004 = a4;
     *(unsigned short *)(((int)stk + 8)) = a5;
     *(unsigned char *)(((int)stk + 12)) = a6;
-    t2 = vmsfs_c_getstate((*(int *)(((*(int *)(((int)stk + 4))) + 0x28))));
+    t2 = vmsfs_c_getstate((*(int *)(((R1004) + 0x28))));
     if (t2 != 0) {
         return 0xFFFFFFFF;
     }
-    return vmsfs_fsetparam((*(int *)(((int)stk + 4))), (*(short *)(((int)stk + 8))), (*(signed char *)(((int)stk + 12))));
+    return vmsfs_fsetparam((R1004), (*(short *)(((int)stk + 8))), (*(signed char *)(((int)stk + 12))));
 }
 
 int FUN_0c214cdc(int a4, int a5, int a6)
 {
     int t9;
     int t0;
-    int t2;
     int t3;
 
     t9 = a5;
     if ((0x2000000 & a4) != 0) {
         t0 = (a5 << 2);
-        t2 = (a5 + 0x1);
+        t9 = (a5 + 0x1);
         t3 = a6;
         if ((a4 & 0x400000) != 0) {
         } else {
             *(unsigned int *)(((a5 << 2) + 0xC9523A0)) = (0xFFFF0000 & a6);
             t0 = ((a5 + 0x1) << 2);
-            t2 = ((a5 + 0x1) + 0x1);
+            t9 = ((a5 + 0x1) + 0x1);
             t3 = ((unsigned short)a6 << 16);
         }
         *(unsigned int *)((t0 + 0xC9523A0)) = t3;
-        t9 = t2;
     }
     return t9;
 }
@@ -647,10 +668,10 @@ int FUN_0c214cdc(int a4, int a5, int a6)
 int FUN_0c218676(int a4, int a5, int a6, int a7)
 {
     *(unsigned int *)0xA05F6908 = 0x4;
-    *(unsigned int *)0xC952824 = ((*(int *)0xC952824) + 0x1);
+    (((struct oC_uint *)0xC952818)->v) = (((((struct oC_int *)0xC952818)->v)) + 0x1);
     *(unsigned int *)((((*(int *)0xC952660) << 2) + 0xC952648)) = 0xFFFFFFFD;
     if ((*(int *)0xC9527A8) == 1) {
-        *(unsigned int *)0xC952818 = ((*(int *)0xC952818) + 0x1);
+        (((struct o0_uint *)0xC952818)->v) = (((((struct o0_int *)0xC952818)->v)) + 0x1);
         FUN_0c218514(0x0, a5, a6, a7);
     }
     return 0x0;
@@ -723,8 +744,8 @@ int adxt_start_sj(int a4, int a5)
     *(unsigned int *)((a4 + 0x14)) = a5;
     ADXSJD_Start((*(int *)((a4 + 0x4))));
     *(unsigned char *)((a4 + 0x1)) = 0x1;
-    *(unsigned int *)((a4 + 0x4C)) = 0x0;
-    *(unsigned char *)((a4 + 0x71)) = 0x0;
+    (((struct o4C_uint *)(a4))->v) = 0x0;
+    (((struct o71_uchar *)(a4))->v) = 0x0;
     return 0x71;
 }
 
@@ -935,13 +956,16 @@ int kmiWaitAccurate(float f4)
 {
     float u0;
     int stk[2];
+    int R1004;
 
-    *(unsigned int *)(((int)stk + 4)) = 0x0;
+    R1004 = *(int *)((int)stk + 4);
+
+    R1004 = 0x0;
     u0 = *(float *)0xC2179E0;
-    if ((unsigned int)(*(int *)(((int)stk + 4))) < (unsigned int)(int)(f4 * u0)) {
+    if ((unsigned int)(R1004) < (unsigned int)(int)(f4 * u0)) {
         for (;;) {
-            *(unsigned int *)(((int)stk + 4)) = ((*(int *)(((int)stk + 4))) + 0x1);
-            if ((unsigned int)(*(int *)(((int)stk + 4))) >= (unsigned int)(int)(f4 * u0)) {
+            R1004 = ((R1004) + 0x1);
+            if ((unsigned int)(R1004) >= (unsigned int)(int)(f4 * u0)) {
                 break;
             }
         }
@@ -952,9 +976,9 @@ int kmiWaitAccurate(float f4)
 int FUN_0c2186aa(int a4, int a5, int a6, int a7)
 {
     *(unsigned int *)0xA05F6908 = 0x8;
-    *(unsigned int *)0xC952820 = ((*(int *)0xC952820) + 0x1);
+    (((struct oC_uint *)0xC952814)->v) = (((((struct oC_int *)0xC952814)->v)) + 0x1);
     if ((*(int *)0xC9527A8) == 1) {
-        *(unsigned int *)0xC952814 = ((*(int *)0xC952814) + 0x1);
+        (((struct o0_uint *)0xC952814)->v) = (((((struct o0_int *)0xC952814)->v)) + 0x1);
         FUN_0c218514(0x1, a5, a6, a7);
     }
     return 0x0;
@@ -991,7 +1015,7 @@ int FUN_0c21b7ea(int a4, int a5, int a6)
 int gdFsCheckEof(int a4, int a5)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0xFFFFFFF6;
         }
         if ((int)(*(int *)((a4 + 0x14))) >= (int)(*(int *)((a4 + 0x10)))) {
@@ -1158,13 +1182,13 @@ int syTmrInit(void)
 {
     int t1;
 
-    *(unsigned char *)0xFFD80000 = 0x0;
-    *(unsigned char *)0xFFD80004 = ((*(signed char *)0xFFD80004) & 0xFE);
-    *(unsigned short *)0xFFD80010 = 0x2;
-    *(unsigned int *)0xFFD80008 = 0xFFFFFFFF;
-    *(unsigned int *)0xFFD8000C = 0xFFFFFFFF;
+    (((struct o0_uchar *)0xFFD80000)->v) = 0x0;
+    (((struct o4_uchar *)0xFFD80000)->v) = ((*(signed char *)0xFFD80004) & 0xFE);
+    (((struct o10_ushort *)0xFFD80000)->v) = 0x2;
+    (((struct o8_uint *)0xFFD80000)->v) = 0xFFFFFFFF;
+    (((struct oC_uint *)0xFFD80000)->v) = 0xFFFFFFFF;
     t1 = *(signed char *)0xFFD80004;
-    *(unsigned char *)0xFFD80004 = (t1 | 0x1);
+    (((struct o4_uchar *)0xFFD80000)->v) = (t1 | 0x1);
     return (t1 | 0x1);
 }
 
@@ -1190,15 +1214,15 @@ int kmFreeTexture(int a4)
 
 int kmiCreateDummyRegionforAvoidCacheBug(int a4)
 {
-    int stk[8];
+    int stk[7];
 
-    *(unsigned int *)(((int)stk + 4)) = 0x10000000;
+    *(unsigned int *)(((int)stk + 0)) = 0x10000000;
+    *(unsigned int *)(((int)stk + 4)) = 0x80000000;
     *(unsigned int *)(((int)stk + 8)) = 0x80000000;
     *(unsigned int *)(((int)stk + 12)) = 0x80000000;
     *(unsigned int *)(((int)stk + 16)) = 0x80000000;
     *(unsigned int *)(((int)stk + 20)) = 0x80000000;
-    *(unsigned int *)(((int)stk + 24)) = 0x80000000;
-    return (kmiCopyToPVRMemory(a4, ((int)stk + 4), 0x18));
+    return (kmiCopyToPVRMemory(a4, ((int)stk + 0), 0x18));
 }
 
 int syChainMasterHandler(int a4)
@@ -1221,35 +1245,35 @@ int syChainMasterHandler(int a4)
 
 int FUN_0c2211be(int a4, int a5, int a6)
 {
-    int stk[7];
+    int stk[6];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    *(unsigned int *)((((int)stk + 4) + 0x8)) = a6;
-    *(unsigned int *)((((int)stk + 4) + 0xC)) = 0x0;
-    return (FUN_0c228e94(0x14, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    *(unsigned int *)((((int)stk + 0) + 0x8)) = a6;
+    *(unsigned int *)((((int)stk + 0) + 0xC)) = 0x0;
+    return (FUN_0c228e94(0x14, ((int)stk + 0)));
 }
 
 int FUN_0c2211e0(int a4, int a5, int a6)
 {
-    int stk[7];
+    int stk[6];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    *(unsigned int *)((((int)stk + 4) + 0x8)) = a6;
-    *(unsigned int *)((((int)stk + 4) + 0xC)) = 0x0;
-    return (FUN_0c228e94(0x15, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    *(unsigned int *)((((int)stk + 0) + 0x8)) = a6;
+    *(unsigned int *)((((int)stk + 0) + 0xC)) = 0x0;
+    return (FUN_0c228e94(0x15, ((int)stk + 0)));
 }
 
 int FUN_0c22124c(int a4, int a5, int a6)
 {
-    int stk[7];
+    int stk[6];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    *(unsigned int *)((((int)stk + 4) + 0x8)) = a6;
-    *(unsigned int *)((((int)stk + 4) + 0xC)) = 0x0;
-    return (FUN_0c228e94(0x22, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    *(unsigned int *)((((int)stk + 0) + 0x8)) = a6;
+    *(unsigned int *)((((int)stk + 0) + 0xC)) = 0x0;
+    return (FUN_0c228e94(0x22, ((int)stk + 0)));
 }
 
 int buMountDisk(int a4, int a5, int a6)
@@ -1292,13 +1316,13 @@ int kmiWriteRegisters(int a4, int a5, int a6, int a7)
 
 int FUN_0c221282(int a4, int a5, int a6, int a7)
 {
-    int stk[7];
+    int stk[6];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    *(unsigned int *)((((int)stk + 4) + 0x8)) = a6;
-    *(unsigned int *)((((int)stk + 4) + 0xC)) = a7;
-    return (FUN_0c228e94(0x24, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    *(unsigned int *)((((int)stk + 0) + 0x8)) = a6;
+    *(unsigned int *)((((int)stk + 0) + 0xC)) = a7;
+    return (FUN_0c228e94(0x24, ((int)stk + 0)));
 }
 
 int FUN_0c213b90(int a4)
@@ -1321,7 +1345,6 @@ int FUN_0c214caa(int a4)
 {
     int t5;
     int t0;
-    int t2;
 
     t5 = 0x1;
     if ((0x2000000 & a4) != 0) {
@@ -1329,11 +1352,10 @@ int FUN_0c214caa(int a4)
         if ((0x1000000 & a4) != 0) {
             t0 = 0x3;
         }
-        t2 = t0;
+        t5 = t0;
         if ((a4 & 0x400000) == 0) {
-            t2 = (t0 + 0x1);
+            t5 = (t0 + 0x1);
         }
-        t5 = t2;
     }
     return t5;
 }
@@ -1403,29 +1425,29 @@ int kmGetCurrentVertexOffset(int a4)
 
 int FUN_0c221142(int a4)
 {
-    int stk[5];
+    int stk[4];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = 0x0;
-    return (FUN_0c228e94(0x1B, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = 0x0;
+    return (FUN_0c228e94(0x1B, ((int)stk + 0)));
 }
 
 int FUN_0c221212(int a4)
 {
-    int stk[5];
+    int stk[4];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = 0x0;
-    return (FUN_0c228e94(0x17, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = 0x0;
+    return (FUN_0c228e94(0x17, ((int)stk + 0)));
 }
 
 int FUN_0c2212a2(int a4)
 {
-    int stk[5];
+    int stk[4];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = 0x0;
-    return (FUN_0c228e94(0x28, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = 0x0;
+    return (FUN_0c228e94(0x28, ((int)stk + 0)));
 }
 
 int FUN_0c221364(int a4, int a5)
@@ -1510,20 +1532,20 @@ int kmQueryFinishFlushVertexBuffer(void)
 
 int FUN_0c22100e(int a4, int a5)
 {
-    int stk[5];
+    int stk[4];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    return (FUN_0c228e94(0x1C, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    return (FUN_0c228e94(0x1C, ((int)stk + 0)));
 }
 
 int FUN_0c221230(int a4, int a5)
 {
-    int stk[5];
+    int stk[4];
 
-    *(unsigned int *)((((int)stk + 4) + 0x0)) = a4;
-    *(unsigned int *)((((int)stk + 4) + 0x4)) = a5;
-    return (FUN_0c228e94(0x13, ((int)stk + 4)));
+    *(unsigned int *)((((int)stk + 0) + 0x0)) = a4;
+    *(unsigned int *)((((int)stk + 0) + 0x4)) = a5;
+    return (FUN_0c228e94(0x13, ((int)stk + 0)));
 }
 
 int buStat(int a4)
@@ -1566,7 +1588,7 @@ int FUN_0c220e10(int a4)
 int gdFsGetFileSize(int a4, int a5)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0x0;
         }
         *(unsigned int *)((a5 + 0x0)) = (*(int *)((a4 + 0xC)));
@@ -1578,7 +1600,7 @@ int gdFsGetFileSize(int a4, int a5)
 int gdFsGetFileSctSize(int a4, int a5)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0x0;
         }
         *(unsigned int *)((a5 + 0x0)) = (*(int *)((a4 + 0x10)));
@@ -1590,7 +1612,7 @@ int gdFsGetFileSctSize(int a4, int a5)
 int gdFsGetFileFad(int a4, int a5)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0x0;
         }
         *(unsigned int *)((a5 + 0x0)) = (*(int *)((a4 + 0x8)));
@@ -1602,10 +1624,10 @@ int gdFsGetFileFad(int a4, int a5)
 int gdFsSetTmode(int a4, int a5)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0xFFFFFFF6;
         }
-        *(unsigned short *)((a4 + 0x4E)) = a5;
+        (((struct o4E_ushort *)(a4))->v) = a5;
         return 0x0;
     }
     return 0xFFFFFFF6;
@@ -1614,10 +1636,10 @@ int gdFsSetTmode(int a4, int a5)
 int gdFsGetTransStat(int a4)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0xFFFFFFF6;
         }
-        return (*(short *)((a4 + 0x4A)));
+        return ((((struct o4A_short *)(a4))->v));
     }
     return 0xFFFFFFF6;
 }
@@ -1634,10 +1656,10 @@ int syTmrGenSetCount(int a4)
 
     t0 = *(signed char *)0xFFD80004;
     t1 = *(signed char *)0xFFD80004;
-    *(unsigned char *)0xFFD80004 = (t1 & 0xFB);
-    *(unsigned int *)0xFFD80020 = 0xFFFFFFFF;
-    *(unsigned int *)0xFFD80024 = (-a4);
-    *(unsigned char *)0xFFD80004 = t0;
+    (((struct o0_uchar *)0xFFD80004)->v) = (t1 & 0xFB);
+    (((struct o1C_uint *)0xFFD80004)->v) = 0xFFFFFFFF;
+    (((struct o20_uint *)0xFFD80004)->v) = (-a4);
+    (((struct o0_uchar *)0xFFD80004)->v) = t0;
     return (t1 & 0xFB);
 }
 
@@ -1691,10 +1713,10 @@ void gdFsMemcpy(int a4, int a5, int a6)
 int gdFsGetStat(int a4)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0xFFFFFFF6;
         }
-        return (*(short *)((a4 + 0x50)));
+        return ((((struct o50_short *)(a4))->v));
     }
     return 0xFFFFFFF6;
 }
@@ -1727,7 +1749,7 @@ int kmiCopyFromPVRMemory(int a4, int a5, int a6)
 int gdFsTell(int a4)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0x0;
         }
         return (*(int *)((a4 + 0x14)));
@@ -1738,7 +1760,7 @@ int gdFsTell(int a4)
 int gdFsGetNumRd(int a4)
 {
     if (a4 != 0) {
-        if ((*(short *)((a4 + 0x4C))) == 0) {
+        if (((((struct o4C_short *)(a4))->v)) == 0) {
             return 0x0;
         }
         return (*(int *)((a4 + 0x18)));
@@ -1975,13 +1997,13 @@ int pdVibMxIsReady(int a4)
 
 int FUN_0c213c26(int a4, int a5)
 {
-    *(unsigned short *)((a4 + 0x3E)) = a5;
+    (((struct o3E_ushort *)(a4))->v) = a5;
     return 0x3E;
 }
 
 int FUN_0c213cf2(int a4, int a5)
 {
-    *(unsigned char *)((a4 + 0x6D)) = a5;
+    (((struct o6D_uchar *)(a4))->v) = a5;
     return 0x6D;
 }
 

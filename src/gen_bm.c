@@ -4,11 +4,13 @@
 int FUN_0c0e19f2(int, int);
 int mwPlySetLpFlg(int);
 int FUN_0c06b430(int a4);
+struct oBC_int { char p[0xBC]; int v; };
+
 
 int FUN_0c06b430(int a4)
 {
     mwPlySetLpFlg(a4);
-    *(unsigned int *)(((((*(int *)((a4 + 0xBC))) << 2) + 0xC247030) + 0x0)) = 0x0;
-    *(unsigned int *)(((((*(int *)((a4 + 0xBC))) << 2) + 0xC246FF0) + 0x0)) = 0x0;
+    *(unsigned int *)((((((((struct oBC_int *)(a4))->v)) << 2) + 0xC247030) + 0x0)) = 0x0;
+    *(unsigned int *)((((((((struct oBC_int *)(a4))->v)) << 2) + 0xC246FF0) + 0x0)) = 0x0;
     return FUN_0c0e19f2(0x0, 0xC246FF0);
 }

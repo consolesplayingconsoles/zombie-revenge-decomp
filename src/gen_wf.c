@@ -27,6 +27,8 @@ int gdDecSubcode(int a4, int a5)
     register int v0_6;
     register int v0_7;
     register int v0_8;
+    int R1008;
+    R1008 = *(int *)((int)stk + 8);
     v0_2 = a4;
     v0_3 = a5;
     v0_0 = (v0_3);
@@ -58,10 +60,10 @@ int gdDecSubcode(int a4, int a5)
     *(unsigned int *)((v0_0 + 0x4)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0xF)))));
     *(unsigned int *)((v0_0 + 0x8)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0x10)))));
     *(unsigned int *)((v0_0 + 0xC)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0x11)))));
-    *(unsigned int *)(((int)stk + 8)) = (v0_1 + 0xC);
+    R1008 = (v0_1 + 0xC);
     v0_2 = *(signed char *)(((v0_1 + 0xC) + 0x0));
     *(int *)((int)stk + 4) = ((v0_2 << 16) << 8);
-    *(unsigned int *)((v0_0 + 0x10)) = ((bcdtime2fad(((*(int *)(((int)stk + 8))) + 0x7))) | ((v0_2 << 16) << 8));
+    *(unsigned int *)((v0_0 + 0x10)) = ((bcdtime2fad(((R1008) + 0x7))) | ((v0_2 << 16) << 8));
     *(unsigned int *)((v0_0 + 0x14)) = (FUN_0c220e10((*(signed char *)((v0_1 + 0xE)))));
     v0_0 = (0x0);
     goto L_C220F6A;

@@ -58,7 +58,7 @@ void FUN_0c0d4b14(int a4, int a5, int a6, float f4)
         if (PI(0) == 0 || *(int *)((i << 2) + 0xC247594) == 0) {
             continue;
         }
-        if (PI(0x7C) >= 0 && PI(0x40) != 4 && *(int *)(R + 0xAC) == 21) {
+        if (PI(0x7C) >= 0 && PI(0x40) != 4 && (((struct oAC_int *)(R))->v) == 21) {
             PI(0x30) = 4;
             PI(0x16C) = 3;
             continue;
@@ -133,7 +133,7 @@ void FUN_0c0d4b14(int a4, int a5, int a6, float f4)
                 PI(0x16C) = 0;
                 goto acted;
             }
-            if (PI(0x40) != 1 && PI(0x10) > 0x1E && *(int *)(R + 0xAC) >= 0xF && *(int *)(R + 0xAC) <= 0x13) {
+            if (PI(0x40) != 1 && PI(0x10) > 0x1E && (((struct oAC_int *)(R))->v) >= 0xF && (((struct oAC_int *)(R))->v) <= 0x13) {
                 PI(0x68) = 0;
                 PI(0x30) = 2;
                 FUN_0c0d637e(P, 4, a6, f4);
@@ -346,7 +346,7 @@ settle:
                 PI(0x30) = 1;
                 break;
             }
-            if ((PI(0x16C) != 12 && PI(0x16C) != 10 && (PI(0x1C) & 64) != 0) || (*(int *)(R + 0x20C) & 0x8000) != 0
+            if ((PI(0x16C) != 12 && PI(0x16C) != 10 && (PI(0x1C) & 64) != 0) || ((((struct o20C_int *)(R))->v) & 0x8000) != 0
                     || (PI(0x20) & 64) != 0 || PI(0x10) > 0xB4) {
                 PI(0x30) = 1;
             }
