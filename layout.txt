@@ -2,6 +2,6 @@
 fixed   0CA10000             # the first address a movable build may not move: the first address above the image that any code loads from a literal pool (a buffer; then 0CEE.., 0CF2.., 0CF6.., the RAM end). 0C9E2940-0CA10000 (186 KB) is referenced by no code
 bss     0C9E3000             # the end of what moves with the image: the image ends at 0C9E293F; up to fixed is room it may grow into
 game    0C0100A4 0C9E293F    # the game's own code: what the build from C replaces (0C0100A4 up to the C startup code at 0C20D160, and the overlay code 0C9DE220-0C9E2838 at the end)
-keep    0C20D160 0C236384    # the C startup code (_INITSCT) and the Katana libraries (0C20D160-0C236360): they stay as they are, their functions and C are not rebuilt
+keep    0C0D7F60 0C236384    # the NAOMI library and C runtime (0C0D7F60-0C0F4004: FUN_0c0d7f60, called from FUN_0c0df758 by bsrf at a fixed distance, is its first function), the data after them, the C startup code (_INITSCT) and the Katana libraries (0C20D160-0C236360): they stay as they are, their functions and C are not rebuilt
 mixed   1                    # the movable build may copy a group that holds pieces without C, and call a replaced function through its hole (tools/8-build/mbuild.py)
 trimdata 1                 # a data copy (bytes the C reads out of a replaced function) holds only the data runs that contain a read (tools/8-build/mbuild.py)

@@ -40,7 +40,6 @@ int FUN_0c0154c0(int a4, int a5, int a6)
     int R1100;
 
     R1004 = *(int *)((int)stk + 4);
-    R1100 = *(int *)((int)stk + 100);
 
     R1004 = a5;
     t0 = *(int *)0xC23ED50;
@@ -106,6 +105,8 @@ int FUN_0c0154c0(int a4, int a5, int a6)
                         t57 = buAnalyzeBackupFileImage((((int)stk + 4) + 0x4), ((((struct o0_int *)0xC23EB14)->v)));
                         t94 = t57;
                         if (t57 == 0) {
+                            /* manual: read here, not at the top: buAnalyzeBackupFileImage fills this slot */
+                            R1100 = *(int *)((int)stk + 100);
                             t59 = FUN_0c0e262a((R1100));
                             FUN_0c0e631c(t59, (*(int *)(((int)stk + 96))), (R1100));
                             t94 = FUN_0c0e2a4c(((((struct o0_int *)0xC23EB14)->v)));
