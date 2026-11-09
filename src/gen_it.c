@@ -288,7 +288,7 @@ int FUN_0c068a90(void)
             (((struct o22C_uint *)(t6))->v) = 0x0;
             (((struct o230_uint *)(t6))->v) = 0x3;
             { struct mv3 { int w[3]; }; *(struct mv3 *)((t6 + 0x30)) = *(struct mv3 *)(t3); }
-            FUN_0c0e6248();
+            { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t6 + 0x6C)) = *(struct mvb6 *)((t3 + 0xC)); }
             (((struct o21C_uint *)(t6))->v) = (unsigned short)(*(short *)((t3 + 0x12)));
             (((struct o78_uint *)(t6))->v) = 0xC1B6844;
             (((struct o74_uint *)(t6))->v) = 0x15;
@@ -402,7 +402,7 @@ int FUN_0c067654(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)(0xC1FFE0C); }
     (((struct o78_uint *)(t1))->v) = (unsigned short)(*(short *)0xC1FFE1E);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x54)) = *(struct mv3 *)(0xC1FFE20); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(0xC1FFE18); }
     FUN_0c0de9c0();
     FUN_0c0845e8(0x1);
     FUN_0c08476e(0.5f, 0.5f, 0.5f);

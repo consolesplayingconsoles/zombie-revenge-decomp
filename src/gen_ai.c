@@ -79,8 +79,7 @@ int FUN_0c06ede8(int a4, int a5, int a6, int a7, float f4)
     *(unsigned int *)((v0_0 + 0x30)) = ((*(int *)((v0_0 + 0x30))) + 0x1);
     v0_3 = (((int (*)(int, int, int, float))(((((struct oC4_int *)(v0_0))->v))))(v0_0, v0_1, v0_2, w0_0)) != 0;
     if (!(v0_3)) goto L_C06F170;
-    FUN_0c0da2e0();
-    v0_3 = FUN_0c0e5f1c();
+    v0_3 = (FUN_0c0da2e0() % 100);
     v0_4 = (0xC0DA2E0);
     FPUL_ = (v0_3);
     if ((!(((((struct o78_float *)(v0_0))->v)) > (float)v0_3))) goto L_C06EE9C;

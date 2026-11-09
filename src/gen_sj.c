@@ -45,7 +45,7 @@ int FUN_0c063ff8(int a4, int a5)
     *(unsigned int *)((t1 + 0x1F8)) = (unsigned char)(*(signed char *)((a5 + 0x0)));
     *(unsigned int *)(((0x22C + t1) + 0x0)) = (unsigned short)(*(short *)((a5 + 0x8)));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x6C)) = *(struct mvb6 *)((a4 + 0x6C)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)((t1 + 0x30)); }
     t25 = *(int *)((a4 + 0xBC));
     *(float *)(((int)stk + 40)) = (((*(float *)(((((((((t25 << 1) + t25) << 2) << 2) << 2) + 0xC23F268) + 0x24) + 0x0))) + (*(float *)(((((((((t25 << 1) + t25) << 2) << 2) << 2) + 0xC23F268) + 0x3C) + 0x0)))) / (1.0f + 1.0f));

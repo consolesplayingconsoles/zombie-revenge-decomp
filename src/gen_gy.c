@@ -17,8 +17,7 @@ int FUN_0c037088(int a4, int a5, int a6, int a7)
     int t13;
     int t15;
 
-    FUN_0c0da2e0();
-    t1 = FUN_0c0e5f1c();
+    t1 = (FUN_0c0da2e0() % 100);
     t2 = *(int *)((a4 + 0x4C0));
     t3 = *(int *)0xC2462F8;
     if ((*(int *)((a4 + 0x330))) != 0) {

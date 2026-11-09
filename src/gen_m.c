@@ -117,7 +117,7 @@ int buCreateFile(int a4, int a5, int a6, int a7);
 int buCreateExecFile(int a4, int a5, int a6, int a7);
 int ADXF_ReadSj32(int a4, int a5, int a6);
 int ADXT_DiscardSmpl(int a4);
-void kmiGetProfileInt(int a4, int a5, int a6);
+int kmiGetProfileInt(int a4, int a5, int a6);
 int buFindFirstFileEx(int a4, int a5, int a6);
 int buFindNextFileEx(int a4, int a5, int a6);
 int buOpenFile(int a4, int a5, int a6);
@@ -824,15 +824,12 @@ int ADXT_DiscardSmpl(int a4)
     return t2;
 }
 
-void kmiGetProfileInt(int a4, int a5, int a6)
+int kmiGetProfileInt(int a4, int a5, int a6)
 {
-    int t0;
-
-    t0 = FUN_0c0f05a0(a4, 0xC2373F0);
-    if (t0 == 0) {
-        FUN_0c0f05a0(a5, 0xC2373FC);
-        
+    if ((FUN_0c0f05a0(a4, 0xC2373F0) == 0) && (FUN_0c0f05a0(a5, 0xC2373FC) == 0)) {
+        return 0x0;
     }
+    return a6;
 }
 
 int buFindFirstFileEx(int a4, int a5, int a6)

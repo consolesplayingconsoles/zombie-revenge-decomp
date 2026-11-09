@@ -159,7 +159,7 @@ int FUN_0c0125f4(int a4, int a5, int a6, int a7, int a8)
                                     t15 = *(short *)((((((((*(int *)((a8 + 0x0))) + t4) + (((t14 << 2) + t14) << 2)) - 7) * 0x16) + (*(int *)0xC23EB10)) + 0xE));
                                     t14 = t15;
                                     if ((int)t15 >= 0) {
-                                        FUN_0c0e6248(a4);
+                                        { struct mvb22 { char c[22]; }; *(struct mvb22 *)(((((unsigned int)(a7 & 0xFFFF0000) >> 16) * 0x16) + 0xC20C5A8)) = *(struct mvb22 *)(((((((*(int *)((a8 + 0x0))) + t4) + ((((*(int *)((a6 + 0x0))) << 2) + (*(int *)((a6 + 0x0)))) << 2)) - 7) * 0x16) + (*(int *)0xC23EB10))); }
                                         if ((0x4 & (unsigned short)t3) != 0) {
                                             *(unsigned int *)((t0 + 0x0)) = 0x9;
                                         } else {

@@ -363,7 +363,7 @@ int FUN_0c017718(int a4, int a5, float f4)
     (((struct o30_float *)(t1))->v) = (((((struct o30_float *)(t1))->v)) + ((((struct o30_float *)(a4))->v)));
     (((struct o34_float *)(t1))->v) = (((((struct o34_float *)(t1))->v)) + (((((struct o34_float *)(a4))->v)) + (R1008)));
     (((struct o38_float *)(t1))->v) = (((((struct o38_float *)(t1))->v)) + ((((struct o38_float *)(a4))->v)));
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(((((((t0 << 1) + t0) << 2) << 1) + 0xC0F5128) + 0xC)); }
     (((struct o60_ushort *)(t1))->v) = (((((struct o60_short *)(t1))->v)) + ((((struct o6C_short *)(a4))->v)));
     (((struct o62_ushort *)(t1))->v) = (((((struct o62_short *)(t1))->v)) + ((((struct o6E_short *)(a4))->v)));
     (((struct o64_ushort *)(t1))->v) = (((((struct o64_short *)(t1))->v)) + ((((struct o70_short *)(a4))->v)));

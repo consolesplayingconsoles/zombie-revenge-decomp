@@ -494,7 +494,7 @@ int FUN_0c0638d0(int a4, int a5, int a6, int a7)
     }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((a4 + 0x3C)) = *(struct mv3 *)((a4 + 0x30)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((a4 + 0x30)) = *(struct mv3 *)((t0 + 0x30)); }
-    FUN_0c0e6248(t2);
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((a4 + 0x6C)) = *(struct mvb6 *)((t0 + 0x6C)); }
     return FUN_0c01cdc2(a4);
 }
 

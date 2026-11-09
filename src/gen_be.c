@@ -25,7 +25,7 @@ int FUN_0c063df0(int a4, int a5, int a6);
 int FUN_0c03261c(int a4, float f4, float f5);
 int FUN_0c064640(int a4, int a5);
 int FUN_0c0b2126(int);
-void FUN_0c058e7c(int, int);
+int FUN_0c058e7c(int, int);
 struct o3C_float { char p[0x3C]; float v; };
 struct o44_int { char p[0x44]; int v; };
 struct o44_uint { char p[0x44]; unsigned int v; };

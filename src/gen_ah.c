@@ -42,7 +42,7 @@ extern void _builtin_prefetch(void *);
 int FUN_0c0dfd50(int a4);
 int FUN_0c038732(int a4, int a5, int a6, int a7, int a8, int a9, int a10);
 void FUN_0c08da10(int a4, int a5, int a6, int a7);
-void FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
+int FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
 struct o10_float { char p[0x10]; float v; };
 struct o14_float { char p[0x14]; float v; };
 struct o18_float { char p[0x18]; float v; };

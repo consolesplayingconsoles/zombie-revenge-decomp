@@ -39,7 +39,7 @@ int FUN_0c07a520(void)
     t1 = FUN_0c0e19aa(0xC07A5F8, 0x28C, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FFCEC); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x6C)) = *(struct mvb6 *)(0xC0FFCF8); }
     (((struct o21C_uint *)(t1))->v) = (unsigned short)(*(short *)0xC0FFCFE);
     (((struct o78_uint *)(t1))->v) = 0xC1B6844;
     (((struct o74_uint *)(t1))->v) = 0x15;

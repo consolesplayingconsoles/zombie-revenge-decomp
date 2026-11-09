@@ -268,8 +268,7 @@ int FUN_0c039354(int a4)
     if ((int)(t5 - 1) < 0) {
     } else {
         if ((int)(t5 - 1) >= (int)0x1) {
-            FUN_0c0da2e0();
-            t16 = (FUN_0c0e5f1c());
+            t16 = ((FUN_0c0da2e0() % 0));
         } else {
             t16 = (t5 - 1);
         }

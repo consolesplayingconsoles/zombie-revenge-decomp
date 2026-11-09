@@ -25,7 +25,8 @@ int FUN_0c07409c(int a4)
     t2 = 0xC0FD34C;
     t3 = 0xC0FD374;
     for (;;) {
-        t4 = FUN_0c0e6248(t0);
+        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(((int)stk + 4)) = *(struct mvb6 *)(0xC0FE16C); }
+        t4 = 0x0;
         t0 = t2;
         t6 = t4;
         t7 = 0x0;

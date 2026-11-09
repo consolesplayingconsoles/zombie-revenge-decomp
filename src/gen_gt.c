@@ -935,7 +935,7 @@ int FUN_0c093a08(int a4, int a5, int a6)
     (((struct o78_uint *)(t1))->v) = ((((struct oC0_int *)(a4))->v));
     (((struct o88_uint *)(t1))->v) = ((((struct oBC_int *)(a4))->v));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(a5); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(a6); }
     (((struct o74_float *)(t1))->v) = 1.0f;
     (((struct o68_uint *)(t1))->v) = (*(short *)((a6 + 0x0)));
     FUN_0c0da2e0();
@@ -1096,7 +1096,7 @@ int FUN_0c06b476(void)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC200390); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)((t1 + 0x30)); }
     *(unsigned int *)(((0x28C + t1) + 0x0)) = (unsigned short)(*(short *)0xC2003A2);
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x6C)) = *(struct mvb6 *)(0xC20039C); }
     (((struct oBC_uint *)(t1))->v) = 0xF;
     FUN_0c01ce40(t1, 0xC1B6794, 22.0f);
     *(unsigned int *)((((((((struct oBC_int *)(t1))->v)) << 2) + 0xC247030) + 0x0)) = 0x4;
@@ -1183,7 +1183,7 @@ int FUN_0c017a04(void)
         t2 = FUN_0c0e19aa(0xC01788C, 0x24C, (*(int *)0xC23ECF0));
         FUN_0c0e19d0(t2);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((t2 + 0x30)) = *(struct mv3 *)(0xC0F5218); }
-        FUN_0c0e6248();
+        { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t2 + 0x6C)) = *(struct mvb6 *)(0xC0F5224); }
         (((struct o21C_uint *)(t2))->v) = (*(int *)0xC0F522C);
         (((struct oBC_uint *)(t2))->v) = 0x11;
         (((struct o78_uint *)(t2))->v) = 0xC1B6F5C;
@@ -1330,7 +1330,7 @@ void FUN_0c063994(int a4, int a5)
     (((struct o1F8_uint *)(t1))->v) = (unsigned char)(*(signed char *)((a5 + 0x0)));
     *(unsigned int *)(((0x22C + t1) + 0x0)) = (unsigned short)(*(short *)((a5 + 0x8)));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x6C)) = *(struct mvb6 *)((a4 + 0x6C)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)((t1 + 0x30)); }
 }
 

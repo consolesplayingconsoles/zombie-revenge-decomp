@@ -62,6 +62,6 @@ int FUN_0c063a90(int a4)
     (((struct o34_float *)(a4))->v) = (*(float *)(((int)stk + 8)));
     (((struct o38_float *)(a4))->v) = (*(float *)(((int)stk + 12)));
     nlPopMatrix(0x1);
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((a4 + 0x6C)) = *(struct mvb6 *)((t1 + 0x6C)); }
     return (FUN_0c01cdc2(a4));
 }

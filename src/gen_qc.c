@@ -104,8 +104,7 @@ int FUN_0c0414a6(int a4, int a5, int a6)
     v0_4 = (0x1BA9);
     L_C0416DA:;
     FUN_0c0cc3f8(v0_4, v0_1, v0_2, R7);
-    FUN_0c0da2e0();
-    v0_1 = FUN_0c0e5f1c();
+    v0_1 = (FUN_0c0da2e0() % 60);
     (((struct o3AC_uint *)(v0_0))->v) = (v0_1 + 0x3C);
     v0_3 = ((v0_1 + 0x3C));
     L_C0416F6:;

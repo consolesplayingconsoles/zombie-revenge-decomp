@@ -82,7 +82,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                         t5 = t10;
                                         t6 = 0xC0E6248;
                                         t5 = (t5 + 0xC);
-                                        FUN_0c0e6248();
+                                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                                         t5 = (*(int *)((t10 + 0x18)));
                                         (((struct o22C_uint *)(t9))->v) = t5;
                                     } else {
@@ -103,7 +103,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                     t5 = t10;
                                     t6 = 0xC0E6248;
                                     t5 = (t5 + 0xC);
-                                    FUN_0c0e6248();
+                                    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                                     t8 = 0x0;
                                     t7 = t9;
                                     FUN_0c01d636(t7, (*(int *)((t10 + 0x18))), t8);
@@ -120,7 +120,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                                 t5 = t10;
                                 t6 = 0xC0E6248;
                                 t5 = (t5 + 0xC);
-                                FUN_0c0e6248();
+                                { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                                 t7 = t9;
                                 FUN_0c01d3ee(t7, (*(int *)((t10 + 0x18))));
                             }
@@ -135,7 +135,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                             t5 = t10;
                             t6 = 0xC0E6248;
                             t5 = (t5 + 0xC);
-                            FUN_0c0e6248();
+                            { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                             t7 = t9;
                             FUN_0c01d3ee(t7, (*(int *)((t10 + 0x18))));
                         }
@@ -150,7 +150,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                         t5 = t10;
                         t6 = 0xC0E6248;
                         t5 = (t5 + 0xC);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                         t8 = 0x1;
                         t7 = t9;
                         FUN_0c01d636(t7, (*(int *)((t10 + 0x18))), t8);
@@ -166,7 +166,7 @@ int FUN_0c018232(int a4, int a5, int a6)
                     t5 = t10;
                     t6 = 0xC0E6248;
                     t5 = (t5 + 0xC);
-                    FUN_0c0e6248();
+                    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t9 + 0x6C)) = *(struct mvb6 *)(t5); }
                     (((struct o224_uint *)(t9))->v) = (*(short *)((t10 + 0x16)));
                     t8 = 0x0;
                     t7 = t9;

@@ -46,7 +46,7 @@ int nlSubVector(int, int);
 int nlSubVector3op(int, int, int);
 int FUN_0c07e670(int a4);
 void FUN_0c0c3fb8(int a4, int a5, int a6, int a7);
-void FUN_0c0d6604(int a4, int a5, int a6, float f4);
+int FUN_0c0d6604(int a4, int a5, int a6, float f4);
 int FUN_0c01197c(void);
 int FUN_0c0c0bda(int a4);
 int FUN_0c0438ac(int a4);

@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=69&s=0)
+![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=69&s=1)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 

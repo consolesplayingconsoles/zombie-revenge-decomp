@@ -1504,12 +1504,12 @@ void FUN_0c06e9cc(int a4, int a5)
                 t12 = FUN_0c0e19aa(0xC06E7AC, 0xB4, (*(int *)0xC23ECE4));
                 FUN_0c0e19d0(t12);
                 { struct mv3 { int w[3]; }; *(struct mv3 *)((t12 + 0x30)) = *(struct mv3 *)(t1); }
-                FUN_0c0e6248();
+                { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t12 + 0x60)) = *(struct mvb6 *)((t1 + 0xC)); }
             } else {
                 t12 = FUN_0c0e19aa(0xC06E87A, 0xB4, (*(int *)0xC23ECE4));
                 FUN_0c0e19d0(t12);
                 { struct mv3 { int w[3]; }; *(struct mv3 *)((t12 + 0x30)) = *(struct mv3 *)(t1); }
-                FUN_0c0e6248();
+                { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t12 + 0x60)) = *(struct mvb6 *)((t1 + 0xC)); }
             }
             *(unsigned int *)(((0x78 + t12) + 0x0)) = (*(short *)((t1 + 0x12)));
             *(unsigned int *)((t12 + 0x80)) = 0x0;

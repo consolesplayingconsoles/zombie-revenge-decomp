@@ -1026,7 +1026,7 @@ int FUN_0c2335c8(int a4, int a5, int a6)
         t2 = 0xF;
         if ((int)a6 >= 0) {
         } else {
-            t2 = ((FUN_0c0e5dc0()) + 0xF);
+            t2 = ((a6 / 0x3) + 0xF);
         }
         t9 = t2;
     }
@@ -1097,8 +1097,7 @@ int FUN_0c023f0c(int a4)
             FUN_0c0222c0(a4);
         }
     } else {
-        FUN_0c0da2e0();
-        t12 = FUN_0c0e5f1c();
+        t12 = (FUN_0c0da2e0() % 100);
         if ((int)t12 < (int)((-((((struct o4C0_int *)(a4))->v))) + 0xA)) {
             FUN_0c0222c0(a4);
         } else {
@@ -1127,8 +1126,7 @@ int FUN_0c023f80(int a4)
             FUN_0c0222c0(a4);
         }
     } else {
-        FUN_0c0da2e0();
-        t12 = FUN_0c0e5f1c();
+        t12 = (FUN_0c0da2e0() % 100);
         if ((int)t12 < (int)((-((((struct o4C0_int *)(a4))->v))) + 0xA)) {
             FUN_0c0222c0(a4);
         } else {

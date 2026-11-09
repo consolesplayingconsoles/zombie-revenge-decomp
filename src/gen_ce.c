@@ -898,8 +898,7 @@ int FUN_0c02a35a(int a4)
     int t7;
     int t13;
 
-    FUN_0c0da2e0();
-    t1 = FUN_0c0e5f1c();
+    t1 = (FUN_0c0da2e0() % 100);
     t2 = (((struct o54C_int *)(a4))->v);
     t3 = t2;
     if ((int)t2 > (int)0x3) {

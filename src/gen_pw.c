@@ -73,8 +73,7 @@ int FUN_0c03d038(int a4)
         (((struct o560_uint *)(a4))->v) = (unsigned short)(*(short *)(((((((struct o4C4_int *)(a4))->v)) << 1) + ((*(int *)(((((((struct o578_int *)(a4))->v)) << 2) + (*(int *)((0xC1F8E40 + (((t11 << 2) + t11) << 2))))))) + (t10 * 0xE)))));
     } else {
         if (((((struct o554_int *)(a4))->v)) == 2) {
-            FUN_0c0da2e0();
-            t20 = FUN_0c0e5f1c();
+            t20 = (FUN_0c0da2e0() % 100);
             if ((int)t20 < (int)(*(int *)(((((((((struct o310_int *)(a4))->v)) - 1) << 2) + ((int)stk + 4)) + 0x0)))) {
                 (((struct o560_uint *)(a4))->v) = 0x2;
                 (((struct o57C_uint *)(a4))->v) = 0x3;

@@ -66,7 +66,7 @@ int kmCreateFrameBufferSurface(int a4, int a5, int a6, int a7, int a8);
 int FUN_0c21b92e(int a4, int a5, int a6);
 int FUN_0c07b3b0(int a4, int a5, int a6, int a7);
 int FUN_0c0a5dfa(void);
-void kmCreateTABuffer(int a4, int a5);
+int kmCreateTABuffer(int a4, int a5);
 int FUN_0c21bc80(int a4, int a5, int a6);
 int FUN_0c0ce2f8(int a4, int a5);
 int FUN_0c055aee(int a4, int a5);
@@ -603,7 +603,7 @@ int FUN_0c07b3b0(int a4, int a5, int a6, int a7)
 }
 
 
-void kmCreateTABuffer(int a4, int a5)
+int kmCreateTABuffer(int a4, int a5)
 {
     int t0;
     int t1;
@@ -631,8 +631,9 @@ void kmCreateTABuffer(int a4, int a5)
         (((struct o0_uint *)0xC239C6C)->v) = (t1 | 0x100);
         if ((t1 | 0x100) == 0xB00) {
             (((struct o0_uint *)0xC239C6C)->v) = 0x80000000;
-            kmiAllocSysConfig(((((struct o0_int *)0xC952940)->v)));
+            return kmiAllocSysConfig(((((struct o0_int *)0xC952940)->v)));
         }
+        return ((int)stk + 8);
     } else {
         (((struct o4_uint *)0xC239C6C)->v) = 0x1;
         (((struct o8_uint *)0xC952658)->v) = ((((struct o0_int *)0xC952658)->v));
@@ -658,6 +659,7 @@ void kmCreateTABuffer(int a4, int a5)
             kmiSetTAEnvironment(((unsigned int)((((struct o0_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct o4_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct o8_int *)0xC952368)->v)) >> 7), ((unsigned int)((((struct oC_int *)0xC952368)->v)) >> 7), (t27 & (~((((struct o18_int *)0xC9528EC)->v)))));
             *(unsigned int *)0xC952508 = 0x1;
         }
+        return t37;
     }
 }
 

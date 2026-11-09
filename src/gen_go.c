@@ -204,7 +204,7 @@ int FUN_0c05e6dc(int a4, int a5, int a6)
         if (((*(int *)0xC23A258) & 7) == 0) {
             t5 = FUN_0c0e1830(0xC05E952, 0xB4);
             { struct mv3 { int w[3]; }; *(struct mv3 *)((t5 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
-            FUN_0c0e6248(t5);
+            { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t5 + 0x60)) = *(struct mvb6 *)((a4 + 0x6C)); }
             (((struct o78_uint *)(a4))->v) = 0x2D0;
             (((struct oA0_uint *)(a4))->v) = 0x10;
         }
@@ -705,7 +705,7 @@ void FUN_0c0d8d00(int a4, int a5, int a6)
     }
     (((struct o0_uint *)0xC943EA4)->v) = (*(int *)((((a5 & 0xF) << 2) + 0xC1EA3B4)));
     kmInitDevice((*(int *)((((unsigned char)(((a4 << 1) + a4) << 2) + 0xC1EA2B8) + 0x0))));
-    kmSetDisplayMode((*(int *)((((unsigned char)(((a4 << 1) + a4) << 2) + 0xC1EA2B8) + 0x4))), ((((struct o0_int *)0xC943EA4)->v)), ((((struct o18_short *)0xC948268)->v)), ((((struct o1A_short *)0xC948268)->v)));
+    ((int (*)(int, int, int, int))(*(int *)0xC0D8E34))((*(int *)((((unsigned char)(((a4 << 1) + a4) << 2) + 0xC1EA2B8) + 0x4))), ((((struct o0_int *)0xC943EA4)->v)), ((((struct o18_short *)0xC948268)->v)), ((((struct o1A_short *)0xC948268)->v)));
     (((struct o14_ushort *)0xC948268)->v) = (*(short *)((((unsigned char)(((a4 << 1) + a4) << 2) + 0xC1EA2B8) + 0x8)));
     (((struct o16_ushort *)0xC948268)->v) = (*(short *)((((unsigned char)(((a4 << 1) + a4) << 2) + 0xC1EA2B8) + 0xA)));
     FUN_0c0d8ba0(0xC944470);

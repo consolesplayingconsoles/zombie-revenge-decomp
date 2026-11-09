@@ -162,7 +162,7 @@ int FUN_0c0a92fc(int a4)
         t1 = (((struct oBC_int *)(t0))->v);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((a4 + 0x30)) = *(struct mv3 *)((((((((t1 << 1) + t1) << 2) << 2) << 2) + 0xC23F268) + 0x3C)); }
     }
-    FUN_0c0e6248(a4);
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((a4 + 0x6C)) = *(struct mvb6 *)((t0 + 0x6C)); }
     return FUN_0c0a9084();
 }
 

@@ -79,7 +79,7 @@ int FUN_0c0b8590(void);
 int FUN_0c04fd64(void);
 int FUN_0c0d70c8(int a4);
 int FUN_0c0d6592(int a4, int a5);
-void FUN_0c0da510(float f4);
+float FUN_0c0da510(float f4);
 int FUN_0c0a92b0(int a4);
 void FUN_0c0da5c0(float f4);
 int nlObjPutSetSaturate(float f4, float f5);
@@ -425,7 +425,7 @@ int FUN_0c0d70c8(int a4)
 }
 
 
-void FUN_0c0da510(float f4)
+float FUN_0c0da510(float f4)
 {
     float t0;
     float u1;
@@ -436,11 +436,12 @@ void FUN_0c0da510(float f4)
     t0 = FUN_0c0da560(((int)stk + 0), (f4 / (1.0f + 1.0f)));
     u1 = 1.0f;
     u1 = u1 + t0 * t0;
-    *(volatile int *)(((int)stk + 0));
-    t3 = FUN_0c0e5f1c();
+    u1 = ((t0 * 2.0f) / u1);
+    t3 = ((*(int *)(((int)stk + 0))) % 0x2);
     if (t3 == 0) {
-        return;
+        return u1;
     }
+    return (-u1);
 }
 
 int FUN_0c0a92b0(int a4)
@@ -991,9 +992,11 @@ int FUN_0c23379c(int a4, int a5)
 {
     int t1;
     int t2;
+    int t3;
 
-    t1 = *(signed char *)((0xC2384FC + (FUN_0c0e5dc0())));
-    t2 = FUN_0c0e5dc0();
+    t1 = *(signed char *)((0xC2384FC + (0xAC44 / (a5 + 0x1))));
+    t3 = (0xAC44 >> t1);
+    t2 = ((a5 - t3) << 10) / t3;
     FUN_0c0e4ece((*(int *)(((*(int *)((a4 + 0x10))) + 0x4))), (0xF & (-t1)), (0x3FF & t2));
     return 0x0;
 }

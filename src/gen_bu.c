@@ -143,7 +143,7 @@ int FUN_0c0c3748(void);
 void FUN_0c0c7254(int a4, int a5, int a6, float f4, float f5, float f6, float f7, float f8);
 int FUN_0c0c45d0(void);
 int FUN_0c0cf3ec(int a4);
-int FUN_0c0e6620(int a4);
+int FUN_0c0e6620(int a4, int a5);
 int FUN_0c2338cc(int a4, int a5, int a6, int a7);
 int FUN_0c046aee(int a4);
 void FUN_0c045588(int a4);
@@ -1115,7 +1115,7 @@ int FUN_0c0cf3ec(int a4)
     return t0;
 }
 
-int FUN_0c0e6620(int a4)
+int FUN_0c0e6620(int a4, int a5)
 {
     int t0;
     int t4;
@@ -1123,7 +1123,7 @@ int FUN_0c0e6620(int a4)
     t0 = _builtin_get_imask();
     _builtin_set_imask(0xE);
     if ((int)a4 < (int)0xC) {
-        t4 = (((int (*)(int))((*(int *)(((a4 << 2) + 0xC20D0A0)))))(a4));
+        t4 = (((int (*)(int, int))((*(int *)(((a4 << 2) + 0xC20D0A0)))))(a4, a5));
     } else {
         t4 = (FUN_0c0e65e0());
     }

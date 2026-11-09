@@ -78,7 +78,7 @@ int FUN_0c0cc108(int a4)
     int t91;
     int stk[16];
 
-    FUN_0c0e6248(a4);
+    { struct mvb4 { char c[4]; }; *(struct mvb4 *)(((int)stk + 4)) = *(struct mvb4 *)(0xC1E9DF8); }
     t126 = a4;
     if (a4 != 9) {
     } else {

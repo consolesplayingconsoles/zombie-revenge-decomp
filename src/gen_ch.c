@@ -674,8 +674,7 @@ int FUN_0c02e478(int a4)
             (((struct o3BC_float *)(a4))->v) = ((((struct o14_float *)0xC02E53C)->v));
         }
     } else {
-        FUN_0c0da2e0();
-        t16 = FUN_0c0e5f1c();
+        t16 = (FUN_0c0da2e0() % 100);
         if ((int)t16 < (int)0x1E) {
             (((struct o500_uint *)(a4))->v) = 0x2;
             (((struct o3BC_float *)(a4))->v) = ((((struct o14_float *)0xC02E53C)->v));
@@ -768,8 +767,7 @@ int FUN_0c060bda(int a4, int a5)
     FUN_0c0e19d0(t1);
     (((struct o230_uint *)(t1))->v) = (*(int *)(((int)stk + 8)));
     (((struct o234_uint *)(t1))->v) = (*(int *)(((int)stk + 12)));
-    FUN_0c0da2e0();
-    (((struct o23C_uint *)(t1))->v) = ((FUN_0c0e5f1c()) + 0x4);
+    (((struct o23C_uint *)(t1))->v) = (((FUN_0c0da2e0() % 3)) + 0x4);
     (((struct o240_uint *)(t1))->v) = 0x1;
     t7 = *(int *)(((int)stk + 8));
     if (((((struct o50C_int *)(t7))->v)) != 0) {

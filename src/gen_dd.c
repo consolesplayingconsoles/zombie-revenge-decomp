@@ -279,14 +279,10 @@ int FUN_0c0aeabc(int a4, int a5, int a6)
     (((struct oC_float *)0xC24FA74)->v) = 0.00139999995f;
     (((struct o4_float *)0xC24FA74)->v) = 320.0f;
     (((struct o8_float *)0xC24FA74)->v) = 400.0f;
-    *(volatile int *)((a4 + 0xA0));
-    FUN_0c0e5dc0();
-    (((struct o0_uint *)0xC24FA74)->v) = ((FUN_0c0e5dc0()) + 0x2050);
+    (((struct o0_uint *)0xC24FA74)->v) = ((((*(int *)((a4 + 0xA0))) / 60) / 10) + 0x2050);
     (((struct o34_uint *)0xC24FA74)->v) = 0x3007;
     FUN_0c0c0340(0xC24FA74);
-    *(volatile int *)((a4 + 0xA0));
-    FUN_0c0e5dc0();
-    (((struct o0_uint *)0xC24FA74)->v) = ((FUN_0c0e5f1c()) + 0x2050);
+    (((struct o0_uint *)0xC24FA74)->v) = ((((*(int *)((a4 + 0xA0))) / 60) % 10) + 0x2050);
     (((struct o34_uint *)0xC24FA74)->v) = 0x3005;
     FUN_0c0c0340(0xC24FA74);
     u46 = 500.0f;

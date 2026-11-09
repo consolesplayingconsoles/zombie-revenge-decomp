@@ -2,12 +2,12 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c01ef2a(int, int, int, int, int);
-void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
+int FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
 struct o0_float { float v; };
 struct o8_float { char p[0x8]; float v; };
 
 
-void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6)
+int FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6)
 {
     int stk[19];
     register float u0;
@@ -147,5 +147,8 @@ void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6)
         t12 = 0x300;
         *(unsigned int *)(((int)stk + 8)) = ((*(int *)(((int)stk + 8))) + 0x1);
     }
-    *(volatile int *)(((int)stk + 24));
+    if ((*(int *)(((int)stk + 24))) != 0) {
+        return 0x1;
+    }
+    return 0xFFFFFFFF;
 }

@@ -1,1 +1,13 @@
 # <addr> <name> for what the C uses that no file defines yet (RAM, data still inside asm); the linker gets them as defines. None yet.
+# FUN_0c0e6248 is the SDK byte-copy helper: C struct copies of odd sizes call it by this name (the compiler adds the call)
+0C0E6248 _slow_mvn
+# FUN_0c0e5f1c is the SDK signed remainder (r1 % r0): C uses of % call it under one of these names
+0C0E5F1C _modls
+0C0E5F1C _modlsp
+0C0E5F1C _modlnm
+0C0E5F1C _modlspnm
+# FUN_0c0e5dc0 is the SDK signed division (r1 / r0): C uses of / call it under one of these names
+0C0E5DC0 _divls
+0C0E5DC0 _divlsp
+0C0E5DC0 _divlnm
+0C0E5DC0 _divlspnm

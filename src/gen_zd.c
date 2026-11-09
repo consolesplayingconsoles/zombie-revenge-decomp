@@ -57,7 +57,7 @@ float FUN_0c0685b6(int a4, int a5)
     L_C0685F2:;
     v0_7 = FUN_0c0e19aa(0xC06867A, v0_4, (*(int *)0xC23ECE4));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_7 + 0x30)) = *(struct mv3 *)(v0_3); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((v0_7 + 0x60)) = *(struct mvb6 *)((v0_3 + 0xC)); }
     (((struct o78_uint *)(v0_7))->v) = (unsigned short)(*(short *)((v0_3 + 0x12)));
     (((struct o80_uint *)(v0_7))->v) = v0_0;
     (((struct o48_float *)(v0_7))->v) = ((((((struct o30_float *)(v0_7))->v)) - (*(float *)((v0_2 + 0x0)))) * w0_2);

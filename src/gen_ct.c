@@ -78,7 +78,7 @@ int FUN_0c03e1a0(int a4, int a5, int a6, int a7);
 int FUN_0c0cf58a(int a4, int a5, int a6, int a7, float f4);
 int FUN_0c0d9450(int a4, int a5, int a6, int a7);
 int FUN_0c0cbc28(void);
-void vmsfs_fcreate(int a4, int a5, int a6, int a7);
+int vmsfs_fcreate(int a4, int a5, int a6, int a7);
 int kmiVQalloc(int);
 void FUN_0c02ac3e(int a4);
 int FUN_0c0347d6(int a4);
@@ -778,7 +778,7 @@ int FUN_0c0cf58a(int a4, int a5, int a6, int a7, float f4)
     return v;
 }
 
-void vmsfs_fcreate(int a4, int a5, int a6, int a7)
+int vmsfs_fcreate(int a4, int a5, int a6, int a7)
 {
     int t6;
     int t10;
@@ -833,7 +833,7 @@ void vmsfs_fcreate(int a4, int a5, int a6, int a7)
     R0 = (0xFFFFFF01);
     goto L_C2261C6;
     L_C2261C6:;
-    return;
+    return R0;
     L_C2260CA:;
     t10 = (vmsio_ismount(R14)) == 0;
     if (t10) goto L_C2260E2;
@@ -977,8 +977,7 @@ int FUN_0c035ce4(int a4)
     if (t22) goto L_C035D7C;
     goto L_C035D5E;
     L_C035D5E:;
-    FUN_0c0da2e0();
-    t26 = (int)(FUN_0c0e5f1c()) <= (int)(*(int *)(((int)stk + 16)));
+    t26 = (int)((FUN_0c0da2e0() % 100)) <= (int)(*(int *)(((int)stk + 16)));
     if (t26) goto L_C035D7C;
     goto L_C035D72;
     L_C035D72:;
@@ -991,8 +990,7 @@ int FUN_0c035ce4(int a4)
     if ((((((struct o548_int *)(R14))->v)) == 0)) goto L_C035D9C;
     goto L_C035D84;
     L_C035D84:;
-    FUN_0c0da2e0();
-    t33 = (int)(FUN_0c0e5f1c()) <= (int)(*(int *)(((int)stk + 12)));
+    t33 = (int)((FUN_0c0da2e0() % 100)) <= (int)(*(int *)(((int)stk + 12)));
     if (t33) goto L_C035D9C;
     goto L_C035D98;
     L_C035D98:;

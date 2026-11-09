@@ -59,7 +59,7 @@ int FUN_0c0d1284(int a4);
 int FUN_0c02829e(int a4, int a5, int a6, int a7);
 int FUN_0c02fc26(int a4, float f4);
 void FUN_0c089d04(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
-void FUN_0c022e60(int a4, int a5, int a6, int a7, float f4);
+int FUN_0c022e60(int a4, int a5, int a6, int a7, float f4);
 struct o4DC_int { char p[0x4DC]; int v; };
 struct o4E8_int { char p[0x4E8]; int v; };
 struct o4E8_uint { char p[0x4E8]; unsigned int v; };

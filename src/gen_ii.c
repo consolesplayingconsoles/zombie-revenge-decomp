@@ -84,8 +84,7 @@ int FUN_0c060ca0(int a4, int a5, int a6, int a7)
     t52 = 0x22C;
     if ((int)(t8 - 1) > 0) {
     } else {
-        FUN_0c0da2e0();
-        *(unsigned int *)(((int)stk + 16)) = ((FUN_0c0e5f1c()) + 0x4);
+        *(unsigned int *)(((int)stk + 16)) = (((FUN_0c0da2e0() % 5)) + 0x4);
         if (((((struct o240_int *)(a4))->v)) != 0) {
             (((struct o240_uint *)(a4))->v) = 0x0;
             t12 = (((struct o228_int *)(a4))->v);

@@ -5,7 +5,7 @@ int nlSetBackColorZ(int, int, int, float);
 float nlFloor(float);
 float nlLog(float);
 int FUN_0c0da2e0(void);
-int FUN_0c0da510(float);
+float FUN_0c0da510(float);
 int FUN_0c0dbda0(int);
 int nlMultiMatrix(int);
 int nlMultiMatrix8(int);
@@ -38,7 +38,7 @@ int FUN_0c0de8d0(void);
 int FUN_0c0d88a0(int a4);
 int FUN_0c0d8ed0(int a4);
 int FUN_0c0d8ef0(int a4);
-int FUN_0c0d9ee0(float f4);
+float FUN_0c0d9ee0(float f4);
 float FUN_0c0da300(void);
 void FUN_0c0db2a0(int a4);
 int FUN_0c0df3a0(int a4, int a5);
@@ -135,7 +135,7 @@ int FUN_0c0d88a0(int a4)
 
 
 
-int FUN_0c0d9ee0(float f4)
+float FUN_0c0d9ee0(float f4)
 {
     return FUN_0c0da510(((-_builtin_fabsf(f4)) + (*(float *)0xC0D9F80)));
 }

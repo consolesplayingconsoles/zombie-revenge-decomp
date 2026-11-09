@@ -75,7 +75,7 @@ int FUN_0c0e5f1c(void);
 int _quick_odd_mvn(void);
 extern float _builtin_sqrtf(float);
 int strlen(int);
-void FUN_0c0503bc(int a4);
+int FUN_0c0503bc(int a4);
 int FUN_0c077960(int a4, int a5, int a6, int a7);
 int FUN_0c0d3aa0(int a4);
 int FUN_0c0bb360(int a4, int a5, int a6, int a7);

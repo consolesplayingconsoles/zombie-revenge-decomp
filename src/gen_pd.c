@@ -122,7 +122,7 @@ int FUN_0c091d00(int a4, int a5, int a6, int a7)
     FUN_0c0e19d0(v0_2);
     (((struct o68_uint *)(v0_2))->v) = 0x20;
     { struct mv3 { int w[3]; }; *(struct mv3 *)((v0_2 + 0x34)) = *(struct mv3 *)(v0_4); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((v0_2 + 0x4C)) = *(struct mvb6 *)((v0_3 + 0x6C)); }
     (((struct o58_uint *)(v0_2))->v) = ((unsigned char)(FUN_0c0da2e0()) << 8);
     (((struct o5C_uint *)(v0_2))->v) = 0x2590000;
     v0_2 = (v0_2);

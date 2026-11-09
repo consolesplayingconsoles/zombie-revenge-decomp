@@ -483,7 +483,7 @@ int FUN_0c037504(int a4)
     (((struct oBC_uint *)(t0))->v) = ((((struct oBC_int *)(a4))->v));
     (((struct oC0_uint *)(t0))->v) = ((((struct oC0_int *)(a4))->v));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t0 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t0 + 0x6C)) = *(struct mvb6 *)((a4 + 0x6C)); }
     (((struct o20C_uint *)(t0))->v) = 0x40000000;
     u5 = (((struct o284_float *)(a4))->v);
     (((struct o284_float *)(t0))->v) = u5;

@@ -529,7 +529,7 @@ int FUN_0c07a89a(int a4)
     t1 = FUN_0c0e19aa(0xC07A944, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FFD50); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(0xC0FFD5C); }
     (((struct o78_uint *)(t1))->v) = (unsigned short)(*(short *)0xC0FFD62);
     (((struct o8C_uint *)(t1))->v) = a4;
     return 0x8C;

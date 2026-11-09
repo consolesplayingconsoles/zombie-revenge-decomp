@@ -486,8 +486,7 @@ int FUN_0c03fab6(int a4)
 int FUN_0c043356(int a4)
 {
     (((struct o3AC_uint *)(a4))->v) = 0x0;
-    FUN_0c0da2e0();
-    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = (((FUN_0c0e5f1c()) + 0x2) * 0x3C);
+    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = ((((FUN_0c0da2e0() % 3)) + 0x2) * 0x3C);
     (((struct o2C4_uint *)(a4))->v) = 0x51F;
     (((struct o2CC_uint *)(a4))->v) = 0x1;
     (((struct o4C8_uint *)(a4))->v) = 0x2;
@@ -497,8 +496,7 @@ int FUN_0c043356(int a4)
 int FUN_0c04345a(int a4)
 {
     (((struct o3AC_uint *)(a4))->v) = 0x0;
-    FUN_0c0da2e0();
-    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = (((FUN_0c0e5f1c()) + 0x2) * 0x3C);
+    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = ((((FUN_0c0da2e0() % 3)) + 0x2) * 0x3C);
     (((struct o2C4_uint *)(a4))->v) = 0x523;
     (((struct o2CC_uint *)(a4))->v) = 0x1;
     (((struct o4C8_uint *)(a4))->v) = 0x6;

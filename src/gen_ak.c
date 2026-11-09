@@ -678,7 +678,7 @@ int FUN_0c0d27a0(int a4)
     L_C0D2A5A:;
     FUN_0c0cf386();
     FUN_0c0cee9e();
-    FUN_0c0e6248();
+    { struct mvb4 { char c[4]; }; *(struct mvb4 *)((((int)stk + 8) + 0xC)) = *(struct mvb4 *)(0xC1EA0E0); }
     t91 = (((struct o30_int *)0xC9433FC)->v);
     R1008 = ((t91 * 0x2C) + 0xC20BF54);
     R1016 = (*(int *)((((t91 * 0x2C) + 0xC20BF54) + 0x18)));

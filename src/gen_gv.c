@@ -45,7 +45,7 @@ int FUN_0c05f6f8(int a4)
     (((struct o1E4_float *)(t3))->v) = 5.0f;
     (((struct o1F8_uint *)(t3))->v) = 0xD;
     *(volatile int *)(((int)stk + 4));
-    FUN_0c0e6248(0xA);
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t3 + 0x6C)) = *(struct mvb6 *)(((*(int *)(((int)stk + 4))) + 0x6C)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t3 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t3 + 0x3C)) = *(struct mv3 *)((a4 + 0x30)); }
     (((struct o22C_uint *)(t3))->v) = 0x20;

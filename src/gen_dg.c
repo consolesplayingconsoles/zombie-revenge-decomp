@@ -158,6 +158,7 @@ int FUN_0c217e2a(void)
 
 int FUN_0c0d382a(int a4)
 {
+    int t99;
     int t0;
     int t80;
     int t13;
@@ -211,13 +212,12 @@ int FUN_0c0d382a(int a4)
                 u41 = u41 + ((((struct o0_float *)0xC0D3A6C)->v)) * (FUN_0c0da410((((t36 << 8) << 2) << 2)));
                 (((struct o68_float *)(a4))->v) = u41;
             }
-            *(volatile int *)((a4 + 0x34));
-            FUN_0c0e5dc0();
-            *(unsigned int *)((a4 + 0x3C)) = ((FUN_0c0e5dc0()) + t43);
+            t99 = (*(int *)((a4 + 0x34))) / 60;
+            *(unsigned int *)((a4 + 0x3C)) = ((t99 / 10) + t43);
             (((struct o70_uint *)(a4))->v) = 0x300F;
             FUN_0c0c0340((a4 + 0x3C));
             (((struct o40_float *)(a4))->v) = (((((struct o40_float *)(a4))->v)) - 13.0f);
-            *(unsigned int *)((a4 + 0x3C)) = ((FUN_0c0e5f1c()) + t43);
+            *(unsigned int *)((a4 + 0x3C)) = ((t99 % 10) + t43);
             (((struct o70_uint *)(a4))->v) = 0x300D;
             FUN_0c0c0340((a4 + 0x3C));
             (((struct o4C_float *)(a4))->v) = 0.599999964f;

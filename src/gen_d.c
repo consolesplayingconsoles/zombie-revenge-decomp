@@ -523,8 +523,7 @@ int FUN_0c03145c(int a4)
 int FUN_0c043394(int a4)
 {
     (((struct o3AC_uint *)(a4))->v) = 0x0;
-    FUN_0c0da2e0();
-    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = (((FUN_0c0e5f1c()) + 0x2) * 0x3C);
+    *(unsigned int *)(((0x3B0 + a4) + 0x0)) = ((((FUN_0c0da2e0() % 3)) + 0x2) * 0x3C);
     (((struct o2C4_uint *)(a4))->v) = 0x520;
     (((struct o2CC_uint *)(a4))->v) = 0x1;
     (((struct o4C8_uint *)(a4))->v) = 0x3;
@@ -2644,7 +2643,7 @@ int FUN_0c010eec(int a4)
 {
     int stk[3];
 
-    FUN_0c0e6248(a4);
+    { struct mvb4 { char c[4]; }; *(struct mvb4 *)(((int)stk + 4)) = *(struct mvb4 *)(0xC0F410A); }
     return (FUN_0c010e3c(((int)stk + 4), (*(float *)0xC011008)));
 }
 
@@ -2652,7 +2651,7 @@ int FUN_0c010e92(int a4)
 {
     int stk[7];
 
-    FUN_0c0e6248(a4);
+    { struct mvb18 { char c[18]; }; *(struct mvb18 *)(((int)stk + 4)) = *(struct mvb18 *)(0xC0F40F8); }
     return (FUN_0c010e3c(((int)stk + 4), 0.239999995f));
 }
 
@@ -2660,7 +2659,7 @@ int FUN_0c010f3a(int a4)
 {
     int stk[7];
 
-    FUN_0c0e6248(a4);
+    { struct mvb19 { char c[19]; }; *(struct mvb19 *)(((int)stk + 4)) = *(struct mvb19 *)(0xC0F411C); }
     return (FUN_0c010e3c(((int)stk + 4), (*(float *)0xC011008)));
 }
 

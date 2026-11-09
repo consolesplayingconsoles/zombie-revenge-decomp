@@ -36,7 +36,7 @@ int vmsio_get_media_info(int a4, int a5);
 void FUN_0c0d1b00(int a4);
 int ADXF_AddPartition(int a4, int a5, int a6, int a7);
 int FUN_0c02286c(int a4, int a5, float f4, float f5);
-void FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
+int FUN_0c01f6fc(int a4, int a5, float f4, float f5, float f6);
 struct o12_uchar { char p[0x12]; unsigned char v; };
 struct o28_float { char p[0x28]; float v; };
 struct o34_float { char p[0x34]; float v; };

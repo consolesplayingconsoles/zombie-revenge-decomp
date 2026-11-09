@@ -13,9 +13,9 @@ int set_vmstime(int, int);
 int vmsfs_unmount(int);
 int vmsio_ismount(int);
 int vmsio_isready(int);
-void vmsfs_xcreate(int a4, int a5, int a6, int a7);
+int vmsfs_xcreate(int a4, int a5, int a6, int a7);
 
-void vmsfs_xcreate(int a4, int a5, int a6, int a7)
+int vmsfs_xcreate(int a4, int a5, int a6, int a7)
 {
     int stk[16];
     register int t3;
@@ -95,15 +95,25 @@ void vmsfs_xcreate(int a4, int a5, int a6, int a7)
                                                 *(unsigned char *)((t23 + 0x0)) = 0x0;
                                                 set_vmstime((t21 + 0x20), (R1012));
                                                 *(unsigned int *)(((R1008) + 0x0)) = t21;
+                                                return 0x0;
                                             }
+                                            return 0xFFFFFF07;
                                         }
+                                        return 0xFFFFFF08;
                                     }
+                                    return 0xFFFFFF08;
                                 }
+                                return 0xFFFFFF09;
                             }
+                            return 0xFFFFFF06;
                         }
+                        return 0xFFFFFF08;
                     }
+                    return 0xFFFFFF08;
                 }
+                return 0xFFFFFF03;
             }
         }
     }
+    return 0xFFFFFF01;
 }

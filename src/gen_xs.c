@@ -7,13 +7,13 @@ int vmsfs_read_retry(int, int, int);
 int vmsfs_unmount(int);
 int vmsio_ismount(int);
 int vmsio_isready(int);
-void vmsfs_fread1(int a4, int a5);
+int vmsfs_fread1(int a4, int a5);
 struct o40_int { char p[0x40]; int v; };
 struct o40_uint { char p[0x40]; unsigned int v; };
 
 
 
-void vmsfs_fread1(int a4, int a5)
+int vmsfs_fread1(int a4, int a5)
 {
     int t0;
     register int t1;
@@ -22,33 +22,39 @@ void vmsfs_fread1(int a4, int a5)
     t1 = vmsio_isready((*(int *)((a4 + 0x28))));
     if (t1 == 0) {
         vmsfs_unmount((*(int *)((a4 + 0x28))));
-    } else {
-        t1 = vmsio_ismount((*(int *)((a4 + 0x28))));
-        if (t1 != 0) {
-            if ((*(signed char *)((((*(int *)((a4 + 0x28))) * 0x148) + 0xC956770))) == 0) {
-            } else {
-                t1 = buIsFormat((*(int *)((a4 + 0x28))));
-                if ((int)t1 < 0) {
-                } else {
-                    t1 = *(int *)((a4 + 0x28));
-                    if (((((struct o40_int *)(a4))->v)) == 0xFFFA) {
-                        *(volatile int *)((a4 + 0x34));
-                    } else {
-                        if ((*(int *)((a4 + 0x34))) == 0) {
-                        } else {
-                            if ((((((struct o40_int *)(a4))->v)) != 0xFFFC) && (t0 = (((struct o40_int *)(a4))->v), t0 != 0xFFFF)) {
-                                t0 = (((struct o40_int *)(a4))->v);
-                                t2 = vmsfs_read_retry(t1, t0, a5);
-                                if ((int)t2 < 0) {
-                                } else {
-                                    (((struct o40_uint *)(a4))->v) = (unsigned short)(get_fat(t1, t0));
-                                    *(unsigned int *)((a4 + 0x34)) = ((*(int *)((a4 + 0x34))) - 1);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        return 0xFFFFFF01;
     }
+    t1 = vmsio_ismount((*(int *)((a4 + 0x28))));
+    if (t1 == 0) {
+        return 0xFFFFFF01;
+    }
+    if ((*(signed char *)((((*(int *)((a4 + 0x28))) * 0x148) + 0xC956770))) == 0) {
+        return 0xFFFFFF01;
+    }
+    t1 = buIsFormat((*(int *)((a4 + 0x28))));
+    if ((int)t1 < 0) {
+        return 0xFFFFFF03;
+    }
+    t1 = *(int *)((a4 + 0x28));
+    t0 = (((struct o40_int *)(a4))->v);
+    if (t0 == 0xFFFA) {
+        if ((*(int *)((a4 + 0x34))) == 0) {
+            return 0x0;
+        }
+        return 0xFFFF0000;
+    }
+    if ((*(int *)((a4 + 0x34))) == 0) {
+        return 0x0;
+    }
+    if ((t0 == 0xFFFC) || (t0 == 0xFFFF)) {
+        return 0xFFFFFF41;
+    }
+    t2 = vmsfs_read_retry(t1, t0, a5);
+    if ((int)t2 < 0) {
+        return t2;
+    }
+    (((struct o40_uint *)(a4))->v) = (unsigned short)(get_fat(t1, t0));
+    t2 = ((*(int *)((a4 + 0x34))) - 1);
+    *(unsigned int *)((a4 + 0x34)) = t2;
+    return t2;
 }

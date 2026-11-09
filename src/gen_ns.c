@@ -156,8 +156,7 @@ int FUN_0c023300(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(unsigned int *)((v0_2 + 0x0)) = 0x4;
     *(unsigned int *)((v0_2 + 0x1C)) = 0x3;
     *(unsigned int *)((v0_2 + 0x4)) = 0x3;
-    FUN_0c0da2e0();
-    v0_7 = FUN_0c0e5f1c();
+    v0_7 = (FUN_0c0da2e0() % 3);
     v0_6 = (v0_7);
     v0_5 = (0x0);
     if ((v0_7 == 0)) goto L_C0235B6;

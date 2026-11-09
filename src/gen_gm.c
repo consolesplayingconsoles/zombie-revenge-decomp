@@ -252,7 +252,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -276,7 +276,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -306,7 +306,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -484,7 +484,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -576,7 +576,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -606,7 +606,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -715,7 +715,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
@@ -753,7 +753,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -785,7 +785,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x44);
-                        FUN_0c0e6248();
+                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
                         t0 = 0x4A;
                         t0 = (t0 + t5);
                         *(unsigned short *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -1241,7 +1241,7 @@ int FUN_0c05e158(int a4, int a5, int a6)
     t118 = FUN_0c0e1830(0xC05E41C, 0x5C);
     FUN_0c0e19d0(t118);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t118 + 0x3C)) = *(struct mv3 *)((a4 + 0x30)); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t118 + 0x48)) = *(struct mvb6 *)((a4 + 0x6C)); }
     *(unsigned int *)((t118 + 0x30)) = ((((struct o220_int *)(a4))->v));
     (((struct o54_uint *)(t118))->v) = 0x1E;
     (((struct o34_float *)(t118))->v) = ((((struct o238_float *)(a4))->v));

@@ -52,8 +52,7 @@ float FUN_0c07056c(int a4)
     v0_1 = *(int *)((v0_2 + 0x34));
     v0_4 = (((struct o54_int *)(v0_2))->v);
     *(int *)((int)stk + 0) = (v0_1 - v0_4);
-    FUN_0c0da2e0();
-    v0_5 = FUN_0c0e5f1c();
+    v0_5 = (FUN_0c0da2e0() % 84);
     v0_3 = (v0_5);
     v0_0 = (0xC0DA2E0);
     v0_0 = (v0_2);

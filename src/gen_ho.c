@@ -622,7 +622,7 @@ int FUN_0c0abb34(void)
         t26 = FUN_0c0e19aa(0xC0ABE80, 0x5C, (*(int *)0xC23ECF0));
         FUN_0c0e19d0(t26);
         { struct mv3 { int w[3]; }; *(struct mv3 *)((t26 + 0x34)) = *(struct mv3 *)(t22); }
-        FUN_0c0e6248();
+        { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t26 + 0x4C)) = *(struct mvb6 *)((t22 + 0xC)); }
         *(unsigned int *)(((0x54 + t26) + 0x0)) = (unsigned short)(*(short *)((t22 + 0x12)));
         u31 = 2.5f;
         u31 = u31 + 4.99999987e-05f * (float)(FUN_0c0da2e0());

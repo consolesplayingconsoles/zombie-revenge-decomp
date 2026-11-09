@@ -1043,7 +1043,7 @@ int FUN_0c0619e0(int a4)
     (((struct o1FC_uint *)(t1))->v) = ((((struct o1FC_int *)(a4))->v));
     (((struct o1F8_uint *)(t1))->v) = ((((struct o1F8_int *)(a4))->v));
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)((a4 + 0x30)); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x6C)) = *(struct mvb6 *)((a4 + 0x6C)); }
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)((t1 + 0x30)); }
     (((struct o50_float *)(t1))->v) = (*(float *)0xC061B14);
     (((struct o22C_uint *)(t1))->v) = 0x14;

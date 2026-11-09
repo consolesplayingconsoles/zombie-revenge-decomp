@@ -116,7 +116,7 @@ int FUN_0c078dc2(int a4, int a5, int a6, int a7)
                 t63 = t65;
                 t63 = (t63 + 0x60);
                 t62 = 0x6;
-                t62 = (FUN_0c0e6248());
+                { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t63) = *(struct mvb6 *)((a4 + 0x6C)); }
                 t62 = 0x220;
                 t69 = *(int *)((a4 + t62));
                 t62 = 0x78;

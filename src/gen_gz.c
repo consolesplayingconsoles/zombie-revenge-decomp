@@ -37,7 +37,7 @@ int FUN_0c0cf16a(int a4, int a5, int a6, int a7, int a8)
     *(unsigned short *)0xC20B30E = a4;
     { struct mv3 { int w[3]; }; *(struct mv3 *)(0xC20B2FC) = *(struct mv3 *)(a7); }
     if (a4 == 2) {
-        FUN_0c0e6248(a4);
+        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(0xC20B308) = *(struct mvb6 *)(a8); }
     }
     *(unsigned int *)0xC20B314 = a5;
     *(unsigned int *)0xC20B318 = a6;

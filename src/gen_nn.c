@@ -5,7 +5,7 @@ float FUN_0c01f1b8(int, int);
 int FUN_0c0546fe(int, int, int, int);
 int FUN_0c0a6610(int, int, int);
 int FUN_0c0a7714(int, int, float, float, float);
-void FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
+int FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6);
 struct o20_float { char p[0x20]; float v; };
 struct o20C_int { char p[0x20C]; int v; };
 struct o20C_uint { char p[0x20C]; unsigned int v; };
@@ -46,7 +46,7 @@ struct oA4_uint { char p[0xA4]; unsigned int v; };
 struct oAC_int { char p[0xAC]; int v; };
 
 
-void FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
+int FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
 {
     int stk[25];
 
@@ -118,7 +118,7 @@ void FUN_0c02f6f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     L_C02FB5A:;
     v0_3 = (0x0);
     L_C02FB5C:;
-    return;
+    return v0_3;
     L_C02F8F6:;
     (((struct o48_float *)(v0_0))->v) = (((((struct o48_float *)(v0_0))->v)) + ((((struct o258_float *)(v0_0))->v)));
     (((struct o4C_float *)(v0_0))->v) = (((((struct o4C_float *)(v0_0))->v)) + ((((struct o26C_float *)(v0_0))->v)));

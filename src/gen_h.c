@@ -121,7 +121,7 @@ int FUN_0c0c69b6(void);
 int FUN_0c0ce8b8(int a4);
 int FUN_0c0d6e1a(float f4);
 int FUN_0c0b62a4(int a4);
-void FUN_0c0c8cc8(int a4, float f4, float f5);
+float FUN_0c0c8cc8(int a4, float f4, float f5);
 int FUN_0c0caeac(int a4);
 int FUN_0c0d0f6c(void);
 int FUN_0c0d19d4(void);
@@ -459,7 +459,7 @@ int FUN_0c0b62a4(int a4)
     return FUN_0c084b1a((*(int *)0xC23ED8C), 0x0);
 }
 
-void FUN_0c0c8cc8(int a4, float f4, float f5)
+float FUN_0c0c8cc8(int a4, float f4, float f5)
 {
     float u5;
     float u6;
@@ -471,6 +471,7 @@ void FUN_0c0c8cc8(int a4, float f4, float f5)
     u6 = u6 + (*(float *)((a4 + 0x10))) * ((1.0f - f4) * f5);
     u7 = u6;
     u7 = u7 + (*(float *)((a4 + 0x28))) * (f4 * f5);
+    return u7;
 }
 
 int FUN_0c0caeac(int a4)
@@ -936,8 +937,7 @@ int FUN_0c0b06d0(void)
     t1 = *(int *)0xC23A1A8;
     t4 = t1;
     if ((t1 & 1) != 0) {
-        FUN_0c0e6380();
-        t4 = FUN_0c0e5f1c();
+        t4 = (FUN_0c0e6380() % 3);
         *(unsigned int *)0xC23EDBC = t4;
         *(unsigned int *)0xC246DEC = t4;
     }

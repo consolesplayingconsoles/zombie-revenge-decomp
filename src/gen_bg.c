@@ -975,8 +975,7 @@ int FUN_0c0e06de(void)
 
     R1016 = 0x0;
     for (;;) {
-        *(volatile int *)0xC94C6A0;
-        t1 = FUN_0c0e5dc0();
+        t1 = ((*(volatile int *)0xC94C6A0) + 0x1F) / 0x20;
         if ((int)(R1016) >= (int)t1) {
             return 0xFFFFFFFF;
         }

@@ -48,7 +48,7 @@ int FUN_0c0294e6(void)
     return v0_0;
     L_C02950E:;
     { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 4) + 0x14)) = *(struct mv3 *)(v0_1); }
-    FUN_0c0e6248(v0_1);
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)(((int)stk + 4)) = *(struct mvb6 *)((v0_1 + 0xC)); }
     v0_2 = ((((int)stk + 4) + 0x14));
     v0_3 = (((int)stk + 4));
     v0_1 = ((t10 << 2));

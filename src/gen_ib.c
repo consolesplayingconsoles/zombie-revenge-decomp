@@ -298,7 +298,7 @@ int FUN_0c06e384(int a4, int a5, int a6, int a7)
             t41 = (t41 + 0x1);
         }
         nlPopMatrix(0x1);
-        FUN_0c0e6248();
+        { struct mvb6 { char c[6]; }; *(struct mvb6 *)((a4 + 0x90)) = *(struct mvb6 *)((a4 + 0x3C)); }
         if (((((struct o46_short *)(a4))->v)) == 2) {
             t49 = (((struct o48_int *)(a4))->v);
             *(unsigned int *)(((int)stk + 4)) = t49;
@@ -307,8 +307,7 @@ int FUN_0c06e384(int a4, int a5, int a6, int a7)
             (((struct oAC_uint *)(a4))->v) = (-(FUN_0c0d9ca0(((*(float *)(((int)stk + 12))) / ((((struct oA8_float *)(a4))->v))))));
             (((struct oB0_uint *)(a4))->v) = (FUN_0c0d9dc0((*(float *)(((int)stk + 8))), (*(float *)(((int)stk + 16)))));
         }
-        FUN_0c0da2e0();
-        (((struct o9C_ushort *)(a4))->v) = (FUN_0c0e5f1c());
+        (((struct o9C_ushort *)(a4))->v) = ((FUN_0c0da2e0() % 4));
         FUN_0c0da2e0();
         (((struct o9E_ushort *)(a4))->v) = (FUN_0c0e5f1c());
         FUN_0c0da2e0();

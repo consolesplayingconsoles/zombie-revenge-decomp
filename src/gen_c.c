@@ -82,7 +82,7 @@ int FUN_0c0cf1b0(int a4, int a5, int a6, int a7);
 int FUN_0c060ae0(int a4, int a5);
 int vmsfs_init(int a4, int a5, int a6);
 int vmsfs_save_exec_file(int a4, int a5, int a6, int a7, int a8, int a9);
-void vmsfs_fread1(int a4, int a5);
+int vmsfs_fread1(int a4, int a5);
 int vmsfs_fgetinfo(int a4, int a5, int a6);
 int FUN_0c034fbc(int a4, int a5, int a6, int a7);
 int FUN_0c0df660(int a4, int a5, int a6);
@@ -261,8 +261,7 @@ int FUN_0c0cf1b0(int a4, int a5, int a6, int a7)
     FUN_0c0cf09e(a7, a5, a6, a7, (((int)stk + 8) + 0x14));
     t11 = a4;
     if (a4 == 22) {
-        FUN_0c0da2e0();
-        t2 = FUN_0c0e5f1c();
+        t2 = (FUN_0c0da2e0() % 100);
         t11 = 0x17;
         if ((((*(int *)0xC23A1A8) & 1) == 0) && ((unsigned int)t2 >= (unsigned int)0x3C)) {
             t11 = 0x18;

@@ -18,7 +18,7 @@ int FUN_0c088ec4(int, int);
 int FUN_0c0a1c76(int);
 int FUN_0c0cc054(int, int);
 int FUN_0c0cc3f8(int, int, int, int);
-void FUN_0c0503bc(int a4, int a5, int a6);
+int FUN_0c0503bc(int a4, int a5, int a6);
 struct o1BC_int { char p[0x1BC]; int v; };
 struct o1BC_uint { char p[0x1BC]; unsigned int v; };
 struct o1C4_int { char p[0x1C4]; int v; };
@@ -56,7 +56,7 @@ struct oD0_uint { char p[0xD0]; unsigned int v; };
 struct oE8_ushort { char p[0xE8]; unsigned short v; };
 
 
-void FUN_0c0503bc(int a4, int a5, int a6)
+int FUN_0c0503bc(int a4, int a5, int a6)
 {
     int stk[10];
 
@@ -107,7 +107,7 @@ void FUN_0c0503bc(int a4, int a5, int a6)
     L_C05081A:;
     v0_9 = (0x0);
     L_C05081C:;
-    return;
+    return v0_9;
     L_C0503EA:;
     (((struct o314_uint *)(v0_1))->v) = (((((struct o314_int *)(v0_1))->v)) + 0x1);
     if ((((((struct o1BC_int *)(v0_1))->v)) != 0)) goto L_C0503FE;

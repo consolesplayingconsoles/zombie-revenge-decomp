@@ -3,7 +3,7 @@
 
 int FUN_0c0d68dc(int, int);
 int FUN_0c0da2e0(void);
-void FUN_0c0d6604(int a4, int a5, int a6, float f4);
+int FUN_0c0d6604(int a4, int a5, int a6, float f4);
 struct o32C_int { char p[0x32C]; int v; };
 struct o4_float { char p[0x4]; float v; };
 struct o6C_int { char p[0x6C]; int v; };
@@ -11,7 +11,7 @@ struct o8_float { char p[0x8]; float v; };
 struct o90_float { char p[0x90]; float v; };
 
 
-void FUN_0c0d6604(int a4, int a5, int a6, float f4)
+int FUN_0c0d6604(int a4, int a5, int a6, float f4)
 {
     int stk[6];
 
@@ -38,7 +38,7 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     *(unsigned int *)(((int)stk + 4)) = (0x170 + (*(int *)(((int)stk + 20))));
     if (((*(int *)(((int)stk + 12))) != 0)) goto L_C0D6626;
     L_C0D68D4:;
-    return;
+    return v0_0;
     L_C0D6626:;
     v0_2 = *(int *)(((*(int *)(((int)stk + 20))) + 0xC));
     v0_1 = *(int *)(((((*(int *)(((int)stk + 12))) << 2) + (0xC20CB64 + (v0_2 * 0x34))) + 0x0));
@@ -51,7 +51,7 @@ void FUN_0c0d6604(int a4, int a5, int a6, float f4)
     v0_0 = (0x3);
     goto L_C0D6650;
     L_C0D688E:;
-    return;
+    return 0x0;
     L_C0D6650:;
     v0_1 = *(int *)(((int)stk + 12));
     v0_0 = ((v0_1 - 1));

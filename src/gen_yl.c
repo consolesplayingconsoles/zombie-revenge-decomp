@@ -67,8 +67,7 @@ int FUN_0c02a288(int a4)
     v0_2 = FUN_0c035ce4(v0_0);
     v0_1 = (v0_2);
     if ((v0_2 == 0)) goto L_C02A350;
-    FUN_0c0da2e0();
-    v0_1 = (int)(FUN_0c0e5f1c()) <= (int)(*(int *)(((int)stk + 28)));
+    v0_1 = (int)((FUN_0c0da2e0() % 100)) <= (int)(*(int *)(((int)stk + 28)));
     v0_3 = (0xFFFFFFFF);
     if (v0_1) goto L_C02A332;
     (((struct o4EC_uint *)(v0_0))->v) = v0_3;

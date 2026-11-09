@@ -440,8 +440,7 @@ int FUN_0c02f4b8(int a4, int a5)
     if (t31) goto L_C02F5C4;
     goto L_C02F570;
     L_C02F570:;
-    FUN_0c0da2e0();
-    t35 = (int)(FUN_0c0e5f1c()) <= (int)(R1012);
+    t35 = (int)((FUN_0c0da2e0() % 100)) <= (int)(R1012);
     if (t35) goto L_C02F5C4;
     goto L_C02F584;
     L_C02F584:;
@@ -451,8 +450,7 @@ int FUN_0c02f4b8(int a4, int a5)
     if ((((((struct o548_int *)(R14))->v)) == 0)) goto L_C02F5EA;
     goto L_C02F5CC;
     L_C02F5CC:;
-    FUN_0c0da2e0();
-    t41 = (int)(FUN_0c0e5f1c()) <= (int)(R1016);
+    t41 = (int)((FUN_0c0da2e0() % 100)) <= (int)(R1016);
     if (t41) goto L_C02F5EA;
     goto L_C02F5E0;
     L_C02F5E0:;

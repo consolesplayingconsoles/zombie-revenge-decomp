@@ -685,7 +685,7 @@ int FUN_0c0690ee(void)
     t1 = FUN_0c0e19aa(0xC069152, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FA518); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(0xC0FA524); }
     (((struct o60_ushort *)(t1))->v) = 0x0;
     *(unsigned int *)(((0x78 + t1) + 0x0)) = (unsigned short)((((struct o6_short *)0xC0FA524)->v));
     (((struct o74_float *)(t1))->v) = (*(float *)0xC0691A4);
@@ -702,7 +702,7 @@ int FUN_0c068d54(int a4)
     t1 = FUN_0c0e19aa(0xC068DA8, 0xB4, (*(int *)0xC23ECE4));
     FUN_0c0e19d0(t1);
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(0xC0FA4F0); }
-    FUN_0c0e6248();
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(0xC0FA4FC); }
     (((struct o78_uint *)(t1))->v) = (unsigned short)(*(short *)0xC0FA502);
     (((struct o8C_uint *)(t1))->v) = a4;
     return 0x8C;

@@ -100,10 +100,10 @@ void syChainDeleteHandler(int a4);
 int adxstmf_stat_exec(int a4, int a5);
 int FUN_0c02eaee(int a4);
 int FUN_0c065eb2(void);
-void vmsfs_fclose(int a4, int a5);
+int vmsfs_fclose(int a4, int a5);
 int FUN_0c05f07c(int a4);
 int FUN_0c0b2b18(void);
-void vmsfs_xcreate(int a4, int a5, int a6, int a7);
+int vmsfs_xcreate(int a4, int a5, int a6, int a7);
 int FUN_0c016728(void);
 int FUN_0c0453ac(int a4);
 int FUN_0c0da9a0(int a4, int a5, int a6, int a7);
@@ -578,7 +578,7 @@ int FUN_0c065eb2(void)
     return (nlPrintf(0xC0FA118, ((unsigned short)(*(short *)0xC24FB32) + 0x1)));
 }
 
-void vmsfs_fclose(int a4, int a5)
+int vmsfs_fclose(int a4, int a5)
 {
     int t13;
     int t19;
@@ -621,7 +621,7 @@ void vmsfs_fclose(int a4, int a5)
     R0 = (0xFFFFFF00);
     goto L_C2263EA;
     L_C2263EA:;
-    return;
+    return R0;
     L_C2262AE:;
     R10 = (0xC956768);
     R11 = (0x148);

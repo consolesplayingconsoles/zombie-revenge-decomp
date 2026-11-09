@@ -33,8 +33,7 @@ int FUN_0c04313c(int a4)
     if ((((*(int *)0xC246310) & 0x1) == 0)) goto L_C0431F2;
     v0_2 = (0xC246FF0);
     if (((int)(*(int *)0xC247074) <= (int)v0_3)) goto L_C0431F2;
-    FUN_0c0da2e0();
-    v0_3 = (int)(FUN_0c0e5f1c()) > (int)0x23;
+    v0_3 = (int)((FUN_0c0da2e0() % 100)) > (int)0x23;
     if (v0_3) goto L_C0431F2;
     v0_3 = (0x4);
     v0_5 = (0xFFFFFFFF);

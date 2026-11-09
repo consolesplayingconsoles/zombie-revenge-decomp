@@ -297,8 +297,7 @@ int FUN_0c07df40(int a4)
     t2 = 0x6;
     for (;;) {
         *(unsigned short *)(((int)stk + 36)) = 0x0;
-        FUN_0c0da2e0();
-        *(unsigned short *)(((int)stk + 34)) = ((*(short *)(((int)stk + 34))) + (FUN_0c0e5f1c()));
+        *(unsigned short *)(((int)stk + 34)) = ((*(short *)(((int)stk + 34))) + ((FUN_0c0da2e0() % 32)));
         FUN_0c0da2e0();
         *(unsigned short *)(((int)stk + 32)) = ((FUN_0c0e5f1c()) + 0x4000);
         FUN_0c0dc5a0();
@@ -1271,8 +1270,7 @@ int FUN_0c066240(int a4)
     FUN_0c0dcc70(0.0f, 30.0f, 5.0f);
     nlGetMatrix((0xA4 + a4));
     nlPopMatrix(0x1);
-    FUN_0c0da2e0();
-    (((struct o32_ushort *)(a4))->v) = ((FUN_0c0e5f1c()) + 0x99);
+    (((struct o32_ushort *)(a4))->v) = (((FUN_0c0da2e0() % 6)) + 0x99);
     (((struct o54_float *)(a4))->v) = 0.0f;
     (((struct o58_float *)(a4))->v) = 0.0f;
     (((struct o5C_float *)(a4))->v) = -5.0f;

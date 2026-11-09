@@ -5,7 +5,7 @@ float FUN_0c01f1b8(int, int);
 int FUN_0c0546fe(int, int, int, int);
 int FUN_0c0a6610(int, int, int);
 int FUN_0c0a7714(int, int, float, float, float);
-void FUN_0c022e60(int a4, int a5, int a6, int a7, float f4);
+int FUN_0c022e60(int a4, int a5, int a6, int a7, float f4);
 struct o20_float { char p[0x20]; float v; };
 struct o20C_int { char p[0x20C]; int v; };
 struct o20C_uint { char p[0x20C]; unsigned int v; };
@@ -48,7 +48,7 @@ struct oA4_uint { char p[0xA4]; unsigned int v; };
 struct oAC_int { char p[0xAC]; int v; };
 
 
-void FUN_0c022e60(int a4, int a5, int a6, int a7, float f4)
+int FUN_0c022e60(int a4, int a5, int a6, int a7, float f4)
 {
     int stk[24];
 
@@ -114,7 +114,7 @@ void FUN_0c022e60(int a4, int a5, int a6, int a7, float f4)
     L_C0232BC:;
     v0_3 = (0x0);
     L_C0232BE:;
-    return;
+    return v0_3;
     L_C0232AA:;
     (((struct o4C4_uint *)(v0_0))->v) = v0_4;
     (((struct o500_uint *)(v0_0))->v) = v0_4;

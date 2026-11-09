@@ -98,7 +98,7 @@ int FUN_0c079424(int a4)
                 t17 = (t17 + 0xC);
                 { struct mv3 { int w[3]; }; *(struct mv3 *)((t18 + 0x40)) = *(struct mv3 *)(t20); }
                 R1004 = ((R1004) + 0x6);
-                FUN_0c0e6248();
+                { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t18 + 0x58)) = *(struct mvb6 *)(((R1004) - 0x6)); }
                 t23 = R1020;
                 R1020 = (t23 + 0x2);
                 (((struct o64_ushort *)(t18))->v) = (*(short *)((((t23 + 0x2) - 2) + 0x0)));

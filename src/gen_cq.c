@@ -408,8 +408,7 @@ int FUN_0c066870(int a4, int a5)
     (((struct o98_float *)(a4))->v) = -5.0f;
     (((struct o9C_float *)(a4))->v) = 1.0f;
     (((struct o48_float *)(a4))->v) = (((((struct o38_float *)(a4))->v)) * 233.333328f);
-    FUN_0c0da2e0();
-    (((struct oE4_float *)(a4))->v) = (((float)((FUN_0c0e5f1c()) - 50) + 0.5f) * 0.00999999978f);
+    (((struct oE4_float *)(a4))->v) = (((float)(((FUN_0c0da2e0() % 72)) - 50) + 0.5f) * 0.00999999978f);
     FUN_0c0da2e0();
     (((struct oEC_float *)(a4))->v) = (((float)((FUN_0c0e5f1c()) - 50) + 0.5f) * 0.00999999978f);
     FUN_0c0da2e0();
@@ -1131,8 +1130,7 @@ int FUN_0c043724(int a4)
         t15 = (((struct o3AC_int *)(a4))->v);
         (((struct o3AC_uint *)(a4))->v) = (t15 + 0x1);
         if ((int)(t15 + 0x1) > (int)((((struct o3B0_int *)(a4))->v))) {
-            FUN_0c0da2e0();
-            t18 = FUN_0c0e5f1c();
+            t18 = (FUN_0c0da2e0() % 5);
             if ((t18 != 0) && ((t18 != 1) && ((t18 != 2) && (t18 != 3)))) {
                 if (t18 != 4) {
                     return t18;
@@ -1148,8 +1146,7 @@ int FUN_0c043724(int a4)
     if ((int)(t19 + 0x1) <= (int)((((struct o3B0_int *)(a4))->v))) {
         return 0x3B0;
     }
-    FUN_0c0da2e0();
-    t22 = FUN_0c0e5f1c();
+    t22 = (FUN_0c0da2e0() % 5);
     if (t22 != 0) {
         if (t22 != 1) {
             if ((t22 != 2) && ((t22 != 3) && (t22 != 4))) {
