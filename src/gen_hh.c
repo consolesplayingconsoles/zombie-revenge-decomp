@@ -39,7 +39,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e4226(int, int, int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 extern float _builtin_sqrtf(float);
 int nlAddVector(int, int);
 int nlGetMatrix(int);

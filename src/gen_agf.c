@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0e262a(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e216c(int a4);
 
 int FUN_0c0e216c(int a4)
@@ -11,7 +11,7 @@ int FUN_0c0e216c(int a4)
     register int t4;
     register int t7;
 
-    t0 = FUN_0c0e5dc0();
+    t0 = _divls();
     *(unsigned int *)0xC94C7E4 = ((*(int *)0xC94C7E4) + 0x1);
     if (t0 == 0) {
         *(unsigned int *)((((*(int *)0xC94C7E4) << 2) + 0xC94C7C4)) = 0x0;

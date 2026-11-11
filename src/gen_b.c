@@ -40,8 +40,8 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e2b0e(int);
 int FUN_0c0e5980(int, int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int FUN_0c0e5fe4(int);
 int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
@@ -251,38 +251,6 @@ int FUN_0c039034(int a4)
 }
 
 
-int FUN_0c06bc74(int a4)
-{
-    int t5;
-    int t6;
-    int stk[8];
-    int R1004;
-
-    R1004 = *(int *)((int)stk + 4);
-
-    R1004 = ((((struct o228_int *)(a4))->v));
-    *(volatile int *)0xC23A258;
-    (((struct o22C_uint *)(a4))->v) = (FUN_0c0e5fe4(a4));
-    *(volatile int *)((a4 + 0xBC));
-    *(volatile int *)((a4 + 0x22C));
-    t5 = FUN_0c0e5f1c();
-    t6 = 0x0;
-    if (((int)t5 >= 0) && ((int)t5 <= (int)0x5)) {
-        t6 = t5;
-    }
-    nlPushMatrix(0x0);
-    nlMultiMatrix((*(int *)0xC247BF4));
-    FUN_0c0dcc70(((((struct o60_float *)(a4))->v)), ((((struct o64_float *)(a4))->v)), ((((struct o68_float *)(a4))->v)));
-    nlRotateAY(((((struct o6E_short *)(a4))->v)));
-    nlRotateAX(((((struct o6C_short *)(a4))->v)));
-    FUN_0c0c465c((unsigned short)(*(short *)(((t6 << 1) + (R1004)))));
-    nlMultiMatrixRevOrder(((*(int *)0xC247CAC) + 0x2EC));
-    FUN_0c0db840((((int)stk + 4) + 0x4));
-    (((struct o30_float *)(a4))->v) = (*(float *)(((int)stk + 8)));
-    (((struct o34_float *)(a4))->v) = (*(float *)(((int)stk + 12)));
-    (((struct o38_float *)(a4))->v) = (*(float *)(((int)stk + 16)));
-    return (nlPopMatrix(0x1));
-}
 
 void FUN_0c082e44(int a4, int a5, float f4, float f5)
 {

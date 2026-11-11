@@ -34,7 +34,7 @@ int nl_set_cnv_proj_pers(void);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 extern int FUN_0c0e19f2();
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
 extern int _builtin_get_imask(void);
@@ -601,103 +601,6 @@ int kmSetModifierRenderState(int a4, float f4)
 
 
 
-int FUN_0c03d2ae(int a4)
-{
-    int t0;
-    int t11;
-    int t19;
-    int t28;
-    int t44;
-    int t52;
-    int t61;
-    int t92;
-    int t1;
-    int t2;
-    int t7;
-    int t10;
-    int t24;
-    int t27;
-    int t45;
-    int t46;
-    int t54;
-    int t106;
-    int stk[5];
-
-    t0 = (((struct o4C4_int *)(a4))->v);
-    if (((t0 != 0) && (t0 != 1)) || ((t1 = (((struct o310_int *)(a4))->v), (int)t1 < 0) || (t2 = (((struct o304_int *)(a4))->v), (int)t2 <= 0))) {
-        (((struct o57C_uint *)(a4))->v) = 0x0;
-        if (((int)((((struct o304_int *)(a4))->v)) > 0) && (t7 = (((struct o57C_int *)(a4))->v), t7 != 4)) {
-            t10 = ((((struct o57C_int *)(a4))->v));
-        } else {
-            t10 = (((((struct o57C_int *)(a4))->v)) + 0x5);
-        }
-        t11 = (((struct o4F0_int *)(a4))->v);
-        (((struct o560_uint *)(a4))->v) = (unsigned short)(*(short *)(((((((struct o4C4_int *)(a4))->v)) << 1) + ((*(int *)(((((((struct o578_int *)(a4))->v)) << 2) + (*(int *)((0xC1F8E40 + (((t11 << 2) + t11) << 2))))))) + (t10 * 0xE)))));
-    } else {
-        if (((((struct o554_int *)(a4))->v)) == 2) {
-            *(volatile int *)((a4 + 0x310));
-            t19 = FUN_0c0e5f1c(t0);
-            if ((int)t19 < (int)0x4) {
-                (((struct o560_uint *)(a4))->v) = 0xB;
-                (((struct o57C_uint *)(a4))->v) = 0x0;
-            } else {
-                (((struct o560_uint *)(a4))->v) = 0x2;
-                (((struct o57C_uint *)(a4))->v) = 0x3;
-            }
-        } else {
-            (((struct o57C_uint *)(a4))->v) = 0x0;
-            if (((int)((((struct o304_int *)(a4))->v)) <= 0) && (t24 = (((struct o57C_int *)(a4))->v), t24 != 4)) {
-                t27 = (((((struct o57C_int *)(a4))->v)) + 0x5);
-            } else {
-                t27 = ((((struct o57C_int *)(a4))->v));
-            }
-            t28 = (((struct o4F0_int *)(a4))->v);
-            (((struct o560_uint *)(a4))->v) = (unsigned short)(*(short *)(((((((struct o4C4_int *)(a4))->v)) << 1) + ((*(int *)(((((((struct o578_int *)(a4))->v)) << 2) + (*(int *)((0xC1F8E40 + (((t28 << 2) + t28) << 2))))))) + (t27 * 0xE)))));
-        }
-    }
-    t44 = (((struct o560_int *)(a4))->v);
-    if ((t44 != 2) && ((t44 != 3) && ((t44 != 4) && ((t44 != 6) && ((t44 != 12) && ((t45 = (((struct o304_int *)(a4))->v), (int)t45 > 0) && (t46 = (((struct o20C_int *)(a4))->v), t46 != 0x200000))))))) {
-    } else {
-        (((struct o554_uint *)(a4))->v) = 0x1;
-        (((struct o4F8_uint *)(a4))->v) = 0x0;
-        (((struct o4E4_uint *)(a4))->v) = 0x0;
-    }
-    if (((((struct o560_int *)(a4))->v)) != 0) {
-        t52 = (((struct o4C8_int *)(a4))->v);
-        if ((((((t52 == 2)) ? 1 : 0) & (((((((struct o4CC_int *)(a4))->v)) == 0)) ? 1 : 0)) == 0) && (((t52 != 9) || (t54 = (((struct o210_int *)(a4))->v), t54 != 67)) && ((t52 != 4) && ((t52 != 7) && ((t52 != 12) && ((t52 != 10) && ((t52 != 13) && (t52 != 8)))))))) {
-        } else {
-            FUN_0c0355f8(a4);
-        }
-        t61 = (((struct o4C8_int *)(a4))->v);
-        if ((t61 != 5) && (t61 != 6)) {
-            FUN_0c039034(a4);
-            FUN_0c039110(a4);
-            (((struct o5A4_uint *)(a4))->v) = (((((struct o5A0_int *)(a4))->v)) << 1);
-            if (((((struct o560_int *)(a4))->v)) != 11) {
-                FUN_0c0356f4(a4, 0x1);
-            }
-        }
-    }
-    if ((int)((((struct o304_int *)(a4))->v)) <= 0) {
-        t106 = 0x5C0;
-        if (((((struct o5C0_int *)(a4))->v)) == 0) {
-            (((struct o5C0_uint *)(a4))->v) = 0x1;
-            t106 = (FUN_0c0cc3f8(0x51BA9, 0x0, 0x0, 0x0));
-        }
-    } else {
-        t92 = (((struct o57C_int *)(a4))->v);
-        if ((t92 != 0) && ((t92 != 1) && ((t92 != 2) && (t92 != 3)))) {
-            t106 = t92;
-            if (t92 != 4) {
-            } else {
-                t106 = (FUN_0c0cc3f8(0x51BA9, 0x0, 0x0, 0x0));
-            }
-        } else {
-            t106 = (FUN_0c0cc3f8(0x41BA9, 0x0, 0x0, 0x0));
-        }
-    }
-    return t106;
-}
 
 void FUN_0c210c70(int a4, int a5)
 {

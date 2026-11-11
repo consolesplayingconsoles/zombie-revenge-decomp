@@ -153,8 +153,7 @@ int FUN_0c09c4f4(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     L_C09C58E:;
     *(unsigned int *)((v0_7 + 0x10)) = ((FUN_0c0da2e0()) << 1);
     (((struct oC_float *)(v0_7))->v) = ((float)((FUN_0c0da2e0()) & 0xFFF) * w0_2);
-    FUN_0c0da2e0();
-    v0_8 = FUN_0c0e5fe4();
+    v0_8 = ((unsigned int)(FUN_0c0da2e0() & 0xFFF) % 3);
     *(unsigned int *)((v0_7 + 0x8)) = (0xC200C60 + ((((v0_8 << 1) + v0_8) << 2) << 1));
     w0_4 = ((((struct oC_float *)((0xC200C60 + ((((v0_8 << 1) + v0_8) << 2) << 1))))->v));
     w0_4 = w0_4 + ((((struct oC_float *)(v0_7))->v)) * ((((struct o10_float *)((0xC200C60 + ((((v0_8 << 1) + v0_8) << 2) << 1))))->v));

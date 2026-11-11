@@ -15,7 +15,7 @@ int nlRotateAY(int);
 int FUN_0c0dcc70(float, float, float);
 float nlLength(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(int, int, int, int);
 int buIsFormat(int);
 int check_isopen(void);
@@ -55,54 +55,6 @@ struct o4C_float { char p[0x4C]; float v; };
 
 
 
-int FUN_0c084f18(int a4)
-{
-    float u0;
-    int t1;
-    float u11;
-    float u12;
-    int t18;
-    int t24;
-    int t38;
-    int t39;
-
-    u0 = (((struct o4C_float *)(a4))->v);
-    t1 = (((struct o48_int *)(a4))->v);
-    (((struct o48_uint *)(a4))->v) = (t1 + (int)u0);
-    if ((int)(t1 + (int)u0) > (int)0xFF) {
-        (((struct o50_uint *)(a4))->v) = (((((struct o50_int *)(a4))->v)) + 0x1);
-        (((struct o48_uint *)(a4))->v) = (((((struct o48_int *)(a4))->v)) - 127);
-    }
-    (((struct o30_float *)(a4))->v) = (((((struct o30_float *)(a4))->v)) - ((((struct o3C_float *)(a4))->v)));
-    (((struct o34_float *)(a4))->v) = (((((struct o34_float *)(a4))->v)) - ((((struct o40_float *)(a4))->v)));
-    u11 = (((struct o38_float *)(a4))->v);
-    u12 = (((struct o44_float *)(a4))->v);
-    (((struct o38_float *)(a4))->v) = (u11 - u12);
-    FUN_0c084570(((((struct o48_int *)(a4))->v)), ((((struct o50_int *)(a4))->v)), (int)((((struct o30_float *)(a4))->v)), (int)((((struct o34_float *)(a4))->v)), (int)(u11 - u12));
-    t18 = (((struct o60_int *)(a4))->v);
-    (((struct o60_uint *)(a4))->v) = (t18 - 1);
-    if ((int)(t18 - 1) <= 0) {
-        t24 = (((struct oC_int *)0xC248A7C)->v);
-        FUN_0c084570(((int)t24 >> 8), (unsigned char)t24, ((((struct o0_int *)0xC248A7C)->v)), ((((struct o4_int *)0xC248A7C)->v)), (((((struct o8_int *)0xC248A7C)->v))));
-        if (((((struct o64_int *)(a4))->v)) != 0) {
-            FUN_0c08477e(0x0);
-            mwPlaEntryErrFn(0xFFFFFFFF, 0x0);
-        }
-        return FUN_0c0e19f2();
-    }
-    if (((((struct o64_int *)(a4))->v)) != 0) {
-        *(volatile int *)((a4 + 0x64));
-        *(volatile int *)((a4 + 0x60));
-        t38 = FUN_0c0e5dc0();
-        t39 = t38;
-        if ((int)t38 < 0) {
-            t39 = 0x0;
-        }
-        FUN_0c08477e(0x1);
-        return mwPlaEntryErrFn(0xFFFFFFFF, (((t39 << 16) | (t39 << 8)) | t39));
-    }
-    return 0x64;
-}
 
 int vmsfs_fdelete_ex(int a4, int a5, int a6)
 {

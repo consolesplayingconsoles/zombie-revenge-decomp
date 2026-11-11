@@ -193,8 +193,7 @@ int FUN_0c0256fc(int a4, int a5, int a6, int a7)
         (((struct o564_uint *)(a4))->v) = 0x0;
         (((struct o56C_uint *)(a4))->v) = 0x0;
         (((struct o4F8_uint *)(a4))->v) = (((((struct o4F8_int *)(a4))->v)) + 0x1);
-        *(volatile int *)0xC23A258;
-        t0 = FUN_0c0e5fe4();
+        t0 = (*(unsigned int *)0xC23A258 % 10);
         if ((unsigned int)t0 > (unsigned int)((((struct oBC_int *)(a4))->v))) {
             return FUN_0c0cc3f8(0x431A9);
         }

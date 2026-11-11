@@ -8,7 +8,7 @@ int FUN_0c039034(int);
 int FUN_0c039110(int);
 int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0da2e0(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c03d038(int a4);
 struct o20C_int { char p[0x20C]; int v; };
 struct o210_int { char p[0x210]; int v; };

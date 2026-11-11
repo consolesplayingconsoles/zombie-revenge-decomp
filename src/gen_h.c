@@ -6,7 +6,7 @@ int ADXF_GetFsizeSct(int);
 int ADXF_GetStat(int);
 int ADXF_OpenAfs(void);
 int ADXF_ReadNw32(int, int, int);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c0169da(int);
 int FUN_0c016d74(void);
 int FUN_0c018142(void);
@@ -91,7 +91,7 @@ int FUN_0c0e262a(int);
 int FUN_0c0e2a4c(int);
 int FUN_0c0e3c22(int, int);
 int FUN_0c0e40ec(int, int, int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(int);
 int FUN_0c0e6248(int);
@@ -1040,8 +1040,7 @@ int FUN_0c0cc720(void)
             break;
         }
     }
-    *(volatile int *)0xC5158E4;
-    return ADXT_Stop();
+    return ADXT_Stop(*(int *)0xC5158E4);
 }
 
 int FUN_0c0ceaf8(int a4)
@@ -1113,12 +1112,9 @@ void FUN_0c0c99a0(int a4, int a5)
 
 int FUN_0c0cc6ac(void)
 {
-    *(volatile int *)0xC5158E8;
-    ADXT_Stop();
-    *(volatile int *)0xC5158EC;
-    ADXT_Stop();
-    *(volatile int *)0xC5158F0;
-    ADXT_Stop();
+    ADXT_Stop(*(int *)0xC5158E8);
+    ADXT_Stop(*(int *)0xC5158EC);
+    ADXT_Stop(*(int *)0xC5158F0);
     (((struct oC_uint *)0xC522928)->v) = 0x0;
     (((struct o8_uint *)0xC522928)->v) = 0x0;
     (((struct o4_uint *)0xC522928)->v) = 0x0;
@@ -2053,11 +2049,6 @@ int FUN_0c0c3d46(void)
     return ((t0 + 0x1F) & 0xFFFFFFE0);
 }
 
-int FUN_0c0c8dfe(int a4)
-{
-    FUN_0c0c8dd4();
-    return (FUN_0c0e5f1c());
-}
 
 int FUN_0c0d19b8(int a4, int a5)
 {

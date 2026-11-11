@@ -707,8 +707,7 @@ int FUN_0c026034(int a4)
     (((struct o3B0_uint *)(a4))->v) = 0x1;
     (((struct o4C8_uint *)(a4))->v) = 0x3;
     (((struct o4F8_uint *)(a4))->v) = (((((struct o4F8_int *)(a4))->v)) + 0x1);
-    *(volatile int *)0xC23A258;
-    t5 = FUN_0c0e5fe4(0x1);
+    t5 = (*(unsigned int *)0xC23A258 % 10);
     if ((unsigned int)t5 > (unsigned int)((((struct oBC_int *)(a4))->v))) {
         FUN_0c0cc3f8(0x431A9, 0x0, 0x0, 0x0);
     }

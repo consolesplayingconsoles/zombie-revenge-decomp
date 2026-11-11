@@ -19,7 +19,7 @@ int FUN_0c0de030(int);
 int FUN_0c0de8c0(void);
 int FUN_0c0dea10(int, float);
 int FUN_0c0e59e0(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int ccitt_updcrc(int, int, int, int);
 int FUN_0c22907e(int, int, int);
 int FUN_0c22b324(int, int, int, int);
@@ -133,7 +133,7 @@ int FUN_0c22c884(int a4, int a5, int a6, int a7)
     *(unsigned int *)((a4 + 0x30)) = (((t2 >> 1) >> 1) >> 1);
     *(unsigned int *)((a4 + 0x8)) = a5;
     *(volatile int *)((a4 + 0x30));
-    t5 = FUN_0c0e5dc0();
+    t5 = _divls();
     *(unsigned int *)((a4 + 0x30)) = ((t5 << 2) << 1);
     return ((t5 << 2) << 1);
 }

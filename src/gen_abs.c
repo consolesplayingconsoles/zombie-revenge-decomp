@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_abs): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e509a(int a4, int a5, int a6);
 struct o2A_short { char p[0x2A]; short v; };
 
@@ -127,8 +127,8 @@ int FUN_0c0e509a(int a4, int a5, int a6)
                 }
                 t107 = t99;
             } else {
-                FUN_0c0e5dc0();
-                t107 = (FUN_0c0e5dc0());
+                _divls();
+                t107 = (_divls());
             }
             t115 = t107;
         }

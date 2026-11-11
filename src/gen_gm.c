@@ -1,3 +1,4 @@
+int FUN_0c0be4d0(int, int, int, int);
 /* Straight-line functions with calls and guards (batch gen_gm): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
@@ -48,13 +49,15 @@ int nlRotateAZ(int);
 int nlScale(float, float, float);
 int nlUnitMatrix(void);
 int FUN_0c053fac(int a4, int a5, int a6, int a7, float f4, float f5);
-int FUN_0c017aca(int a4, int a5, int a6);
+int FUN_0c017aca(int a4, int a5, int a6, int a7);
 int FUN_0c03840e(int a4, int a5, int a6, int a7);
 int FUN_0c02c6ee(int a4, float f4);
 int FUN_0c087510(int a4);
 int FUN_0c0635ec(int a4, int a5);
 int FUN_0c05e158(int a4, int a5, int a6);
 int FUN_0c04105c(int a4);
+int FUN_0c017ad0(int a4, int a5, int a6, int a7);
+int FUN_0c017ae2(int a4, int a5, int a6, int a7);
 struct o1E4_float { char p[0x1E4]; float v; };
 struct o1EC_int { char p[0x1EC]; int v; };
 struct o1EC_uint { char p[0x1EC]; unsigned int v; };
@@ -151,54 +154,49 @@ struct o5C_int { char p[0x5C]; int v; };
 
 
 
-int FUN_0c017aca(int a4, int a5, int a6)
+int FUN_0c017aca(int a4, int a5, int a6, int a7)
 {
-    int t3;
-    int t4;
-    int t6;
-    int t8;
-    int t9;
-    int t186;
-    int t187;
-    int t188;
-    float u191;
-    int t11;
-    int t14;
-    int t18;
-    int t23;
-    int t28;
-    int t34;
-    int t68;
-    int t75;
-    int t112;
-    int t117;
-    int t156;
-    int t159;
-    int t168;
-    int t173;
-    int t0;
-    int t1;
-    int t2;
-    int t5;
-    float u7;
-    int t189;
-    int t190;
-    int t181;
-    int t182;
-    int t183;
-    float u184;
-    int t64;
-    int t65;
-    int t108;
-    int t109;
-    int t151;
-    int t152;
-    int t153;
-    int stk[18];
+    return FUN_0c017ae2(0xC0F5240, a5, a6, a7);
+}
 
-    t3 = 0xC0F5240;
+int FUN_0c017ad0(int a4, int a5, int a6, int a7)
+{
+    return FUN_0c0be4d0((unsigned short)((((struct o4A_short *)(a4))->v)), (a4 + 0x30), a6, a7);
+}
+
+int FUN_0c017ae2(int a4, int a5, int a6, int a7)
+{
+    int stk[7];
+    register int t3;
+    register int t4;
+    register int t6;
+    register int t8;
+    register int t9;
+    register int t231;
+    register int t232;
+    register int t233;
+    register float u236;
+    register int t0;
+    register int t1;
+    register int t2;
+    register int t5;
+    register float u7;
+    register int t234;
+    register int t235;
+    register int t226;
+    register int t227;
+    register int t228;
+    register float u229;
+    register int t80;
+    register int t81;
+    register int t129;
+    register int t130;
+    register int t182;
+    register int t183;
+
+    t3 = a4;
     t4 = a6;
-    t6 = 0xC0F5240;
+    t6 = a4;
     for (;;) {
         t8 = *(short *)((t6 + 0x14));
         if (t8 != -1) {
@@ -206,22 +204,21 @@ int FUN_0c017aca(int a4, int a5, int a6)
             t9 = *(short *)((t6 + 0x14));
             t4 = (*(int *)((t1 + 0x0)));
             t0 = 0xE;
-            t186 = t0;
-            t187 = t1;
-            t188 = t2;
-            u191 = u7;
+            t231 = t0;
+            t232 = t1;
+            t233 = t2;
+            u236 = u7;
             if ((unsigned int)t9 >= (unsigned int)t0) {
-                t189 = t3;
-                t190 = t4;
+                t234 = t3;
+                t235 = t4;
             } else {
                 t0 = (t9 << 1);
                 switch (t0) {
                     case 0:
                     {
                         t3 = 0xC018450;
-                        t11 = FUN_0c0e19aa(0xC018450, 0xB4, t4);
-                        t5 = t11;
-                        t3 = t11;
+                        t3 = FUN_0c0e19aa(0xC018450, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -231,17 +228,16 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = 0xC0E61D4;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = 0xC0E61D4;
                     }
                         break;
                     case 2:
                     {
                         t3 = 0xC0186A4;
-                        t14 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t14;
-                        t3 = t14;
+                        t3 = FUN_0c0e19aa(0xC0186A4, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -252,19 +248,25 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = 0xC0E6248;
                     }
                         break;
                     case 4:
                     {
                         t3 = 0xC0186EC;
-                        t18 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t18;
-                        t3 = t18;
+                        t3 = FUN_0c0e19aa(0xC0186EC, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -276,7 +278,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -284,17 +291,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 6:
                     {
                         t3 = 0xC01874E;
-                        t23 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t23;
-                        t3 = t23;
+                        t3 = FUN_0c0e19aa(0xC01874E, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -306,7 +313,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -314,17 +326,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 8:
                     {
                         t3 = 0xC0187CC;
-                        t28 = FUN_0c0e19aa(t3, 0x244, t4);
-                        t5 = t28;
-                        t3 = t28;
+                        t3 = FUN_0c0e19aa(0xC0187CC, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -344,18 +356,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
                         (((struct o1E4_float *)(t5))->v) = u7;
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 10:
                     {
                         t3 = 0xC01885A;
-                        t34 = FUN_0c0e19aa(t3, 0x244, t4);
-                        t5 = t34;
-                        t3 = t34;
+                        t3 = FUN_0c0e19aa(0xC01885A, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -373,7 +384,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t2 = (*(int *)((t6 + 0x18)));
                         if (t2 != 0) {
                             t2 = (*(int *)((t6 + 0x18)));
-                            *(unsigned int *)(((int)stk + 4)) = t2;
+                            *(unsigned int *)(((int)stk + 0)) = t2;
                             t3 = 0x0;
                             nlPushMatrix(t3);
                             t2 = 0xC0DCCC0;
@@ -383,35 +394,35 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t2 = 0xC0DC950;
                             t3 = ((((struct o70_short *)(t5))->v));
                             nlRotateAZ(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
-                            t3 = ((int)stk + 4);
+                            t1 = (*(int *)(((int)stk + 0)));
+                            t3 = ((int)stk + 0);
                             u7 = (*(float *)((t1 + 0x0)));
-                            *(float *)(((int)stk + 20)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 16)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o4_float *)(t2))->v));
-                            *(float *)(((int)stk + 24)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 20)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o8_float *)(t2))->v));
                             t2 = 0xC0DB470;
-                            *(float *)(((int)stk + 28)) = u7;
+                            *(float *)(((int)stk + 24)) = u7;
                             t3 = (t3 + 0x10);
-                            FUN_0c0db470(t3, (((int)stk + 4) + 0x4));
+                            FUN_0c0db470(t3, (((int)stk + 0) + 0x4));
                             t1 = t5;
-                            u7 = (*(float *)(((int)stk + 8)));
+                            u7 = (*(float *)(((int)stk + 4)));
                             t1 = (t1 + 0x60);
                             t2 = t5;
                             *(float *)((t1 + 0x0)) = u7;
                             t2 = (t2 + 0x64);
-                            u7 = (*(float *)(((int)stk + 12)));
+                            u7 = (*(float *)(((int)stk + 8)));
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = t5;
-                            u7 = (*(float *)(((int)stk + 16)));
+                            u7 = (*(float *)(((int)stk + 12)));
                             t2 = (t2 + 0x68);
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = 0xC0DC4C0;
                             t3 = 0x1;
                             nlPopMatrix(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
+                            t1 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct oC_float *)(t1))->v));
                         } else {
                             t1 = t5;
@@ -423,24 +434,23 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                             u7 = (float)t2;
                             u7 = (u7 * 0.099999994f);
-                            t64 = t0;
-                            t65 = t2;
+                            t80 = t0;
+                            t81 = t2;
                         }
-                        t0 = t64;
-                        t2 = t65;
+                        t0 = t80;
+                        t2 = t81;
                         (((struct o1E4_float *)(t5))->v) = u7;
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 12:
                     {
                         t3 = 0xC018918;
-                        t68 = FUN_0c0e19aa(t3, 0x244, t4);
-                        t5 = t68;
-                        t3 = t68;
+                        t3 = FUN_0c0e19aa(0xC018918, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -462,18 +472,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
                         (((struct o1E4_float *)(t5))->v) = u7;
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 14:
                     {
                         t3 = 0xC018A38;
-                        t75 = FUN_0c0e19aa(t3, 0x244, t4);
-                        t5 = t75;
-                        t3 = t75;
+                        t3 = FUN_0c0e19aa(0xC018A38, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -484,14 +493,19 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
                         t2 = (*(int *)((t6 + 0x18)));
                         if (t2 != 0) {
                             t2 = (*(int *)((t6 + 0x18)));
-                            *(unsigned int *)(((int)stk + 4)) = t2;
+                            *(unsigned int *)(((int)stk + 0)) = t2;
                             t3 = 0x0;
                             nlPushMatrix(t3);
                             t2 = 0xC0DCCC0;
@@ -507,35 +521,35 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t2 = 0xC0DC6E0;
                             t3 = ((((struct o6C_short *)(t5))->v));
                             nlRotateAX(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
-                            t3 = ((int)stk + 4);
+                            t1 = (*(int *)(((int)stk + 0)));
+                            t3 = ((int)stk + 0);
                             u7 = (*(float *)((t1 + 0x0)));
-                            *(float *)(((int)stk + 20)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 16)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o4_float *)(t2))->v));
-                            *(float *)(((int)stk + 24)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 20)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o8_float *)(t2))->v));
                             t2 = 0xC0DB470;
-                            *(float *)(((int)stk + 28)) = u7;
+                            *(float *)(((int)stk + 24)) = u7;
                             t3 = (t3 + 0x10);
-                            FUN_0c0db470(t3, (((int)stk + 4) + 0x4));
+                            FUN_0c0db470(t3, (((int)stk + 0) + 0x4));
                             t1 = t5;
-                            u7 = (*(float *)(((int)stk + 8)));
+                            u7 = (*(float *)(((int)stk + 4)));
                             t1 = (t1 + 0x60);
                             t2 = t5;
                             *(float *)((t1 + 0x0)) = u7;
                             t2 = (t2 + 0x64);
-                            u7 = (*(float *)(((int)stk + 12)));
+                            u7 = (*(float *)(((int)stk + 8)));
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = t5;
-                            u7 = (*(float *)(((int)stk + 16)));
+                            u7 = (*(float *)(((int)stk + 12)));
                             t2 = (t2 + 0x68);
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = 0xC0DC4C0;
                             t3 = 0x1;
                             nlPopMatrix(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
+                            t1 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct oC_float *)(t1))->v));
                         } else {
                             t1 = t5;
@@ -547,25 +561,24 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                             u7 = (float)t2;
                             u7 = (u7 * 0.099999994f);
-                            t108 = t0;
-                            t109 = t2;
+                            t129 = t0;
+                            t130 = t2;
                         }
-                        t0 = t108;
-                        t2 = t109;
+                        t0 = t129;
+                        t2 = t130;
                         (((struct o228_float *)(t5))->v) = u7;
                         (((struct o1E4_float *)(t5))->v) = 1.0f;
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 16:
                     {
                         t3 = 0xC01898C;
-                        t112 = FUN_0c0e19aa(0xC01898C, 0x244, t4);
-                        t5 = t112;
-                        t3 = t112;
+                        t3 = FUN_0c0e19aa(0xC01898C, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -576,7 +589,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -584,17 +602,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
                         (((struct o1E4_float *)(t5))->v) = u7;
-                        t181 = t0;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 18:
                     {
                         t3 = 0xC018C7C;
-                        t117 = FUN_0c0e19aa(t3, 0x244, t4);
-                        t5 = t117;
-                        t3 = t117;
+                        t3 = FUN_0c0e19aa(0xC018C7C, 0x244, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -606,7 +624,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x6C);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x224;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -617,7 +640,7 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t2 = (*(int *)((t6 + 0x18)));
                         if (t2 != 0) {
                             t2 = (*(int *)((t6 + 0x18)));
-                            *(unsigned int *)(((int)stk + 4)) = t2;
+                            *(unsigned int *)(((int)stk + 0)) = t2;
                             t3 = 0x0;
                             nlPushMatrix(t3);
                             t2 = 0xC0DCCC0;
@@ -633,58 +656,55 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t2 = 0xC0DC6E0;
                             t3 = ((((struct o6C_short *)(t5))->v));
                             nlRotateAX(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
-                            t3 = ((int)stk + 4);
+                            t1 = (*(int *)(((int)stk + 0)));
+                            t3 = ((int)stk + 0);
                             u7 = (*(float *)((t1 + 0x0)));
-                            *(float *)(((int)stk + 20)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 16)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o4_float *)(t2))->v));
-                            *(float *)(((int)stk + 24)) = u7;
-                            t2 = (*(int *)(((int)stk + 4)));
+                            *(float *)(((int)stk + 20)) = u7;
+                            t2 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct o8_float *)(t2))->v));
                             t2 = 0xC0DB470;
-                            *(float *)(((int)stk + 28)) = u7;
+                            *(float *)(((int)stk + 24)) = u7;
                             t3 = (t3 + 0x10);
-                            FUN_0c0db470(t3, (((int)stk + 4) + 0x4));
+                            FUN_0c0db470(t3, (((int)stk + 0) + 0x4));
                             t1 = t5;
-                            u7 = (*(float *)(((int)stk + 8)));
+                            u7 = (*(float *)(((int)stk + 4)));
                             t1 = (t1 + 0x60);
                             t2 = t5;
                             *(float *)((t1 + 0x0)) = u7;
                             t2 = (t2 + 0x64);
-                            u7 = (*(float *)(((int)stk + 12)));
+                            u7 = (*(float *)(((int)stk + 8)));
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = t5;
-                            u7 = (*(float *)(((int)stk + 16)));
+                            u7 = (*(float *)(((int)stk + 12)));
                             t2 = (t2 + 0x68);
                             *(float *)((t2 + 0x0)) = u7;
                             t2 = 0xC0DC4C0;
                             t3 = 0x1;
                             nlPopMatrix(t3);
-                            t1 = (*(int *)(((int)stk + 4)));
+                            t1 = (*(int *)(((int)stk + 0)));
                             u7 = ((((struct oC_float *)(t1))->v));
                             (((struct o228_float *)(t5))->v) = u7;
-                            t152 = t1;
                         } else {
-                            t151 = t0;
-                            t153 = t2;
+                            t182 = t0;
+                            t183 = t2;
                         }
-                        t0 = t151;
-                        t1 = t152;
-                        t2 = t153;
+                        t0 = t182;
+                        t2 = t183;
                         (((struct o1E4_float *)(t5))->v) = 1.0f;
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 20:
                     {
                         t3 = 0xC018480;
-                        t156 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t156;
-                        t3 = t156;
+                        t3 = FUN_0c0e19aa(0xC018480, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -694,17 +714,16 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
-                        t182 = t1;
-                        t183 = 0xC0E61D4;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = 0xC0E61D4;
                     }
                         break;
                     case 22:
                     {
                         t3 = 0xC0184E0;
-                        t159 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t159;
-                        t3 = t159;
+                        t3 = FUN_0c0e19aa(0xC0184E0, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t0 = t5;
                         t1 = t6;
@@ -715,7 +734,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
@@ -731,17 +755,17 @@ int FUN_0c017aca(int a4, int a5, int a6)
                             t0 = 0x2;
                             *(unsigned int *)((t5 + (t0 + 0x7E))) = t0;
                         }
-                        t181 = t0;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     case 24:
                     {
                         t3 = 0xC018550;
-                        t168 = FUN_0c0e19aa(t3, 0xB4, t4);
-                        t5 = t168;
-                        t3 = t168;
+                        t3 = FUN_0c0e19aa(0xC018550, 0xB4, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t2 = 0xC0E61D4;
                         t0 = t5;
@@ -753,7 +777,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x60);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t2 = (unsigned short)(*(short *)((t6 + 0x12)));
                         u7 = (float)t2;
                         u7 = (u7 * 0.099999994f);
@@ -761,23 +790,23 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = 0x78;
                         t0 = (t0 + t5);
                         *(unsigned int *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
-                        t181 = t0;
-                        t183 = t2;
-                        u184 = u7;
+                        t226 = t0;
+                        t227 = t1;
+                        t228 = t2;
+                        u229 = u7;
                     }
                         break;
                     default:
                     {
                         t3 = 0xC01860C;
-                        t173 = FUN_0c0e19aa(t3, 0x54, t4);
-                        t5 = t173;
-                        t3 = t173;
+                        t3 = FUN_0c0e19aa(0xC01860C, 0x54, t4);
+                        t5 = t3;
                         FUN_0c0e19d0(t3);
                         t1 = 0xC017AD0;
                         t0 = t5;
                         t2 = 0xC0E61D4;
                         t0 = (t0 + 0x38);
-                        *(unsigned int *)((t5 + 0x4)) = t1;
+                        *(unsigned int *)((t5 + 0x4)) = 0xC017AD0;
                         t1 = t6;
                         { struct mv3 { int w[3]; }; *(struct mv3 *)(t0) = *(struct mv3 *)(t1); }
                         t1 = t6;
@@ -785,7 +814,12 @@ int FUN_0c017aca(int a4, int a5, int a6)
                         t0 = t5;
                         t1 = (t1 + 0xC);
                         t0 = (t0 + 0x44);
-                        { struct mvb6 { char c[6]; }; *(struct mvb6 *)(t0) = *(struct mvb6 *)(t1); }
+                        *(unsigned char *)((t0 + 0x0)) = (*(signed char *)((t1 + 0x0)));
+                        *(unsigned char *)((t0 + 0x1)) = (*(signed char *)((t1 + 0x1)));
+                        *(unsigned char *)((t0 + 0x2)) = (*(signed char *)((t1 + 0x2)));
+                        *(unsigned char *)((t0 + 0x3)) = (*(signed char *)((t1 + 0x3)));
+                        *(unsigned char *)((t0 + 0x4)) = (*(signed char *)((t1 + 0x4)));
+                        *(unsigned char *)((t0 + 0x5)) = (*(signed char *)((t1 + 0x5)));
                         t0 = 0x4A;
                         t0 = (t0 + t5);
                         *(unsigned short *)((t0 + 0x0)) = (*(short *)((t6 + 0x16)));
@@ -798,18 +832,18 @@ int FUN_0c017aca(int a4, int a5, int a6)
                     }
                         break;
                 }
-                t186 = t181;
-                t187 = t182;
-                t188 = t183;
-                u191 = u184;
+                t231 = t226;
+                t232 = t227;
+                t233 = t228;
+                u236 = u229;
             }
-            u7 = u191;
-            t0 = t186;
+            u7 = u236;
+            t0 = t231;
             t6 = (t6 + 0x1C);
-            t1 = t187;
-            t2 = t188;
-            t3 = t189;
-            t4 = t190;
+            t1 = t232;
+            t2 = t233;
+            t3 = t234;
+            t4 = t235;
             continue;
         }
         break;

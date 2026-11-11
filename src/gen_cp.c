@@ -36,7 +36,7 @@ int FUN_0c0dcc70(float, float, float);
 int nlUnitMatrix(void);
 int FUN_0c0e19f2(void);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 int FUN_0c0e62d4(int);
 int FUN_0c0e62e0(int, int, int);
@@ -291,79 +291,6 @@ int FUN_0c015b5c(int a4)
 
 
 
-int FUN_0c06867a(int a4, int a5, int a6, int a7)
-{
-    int t0;
-    int t9;
-    float u29;
-    float u32;
-    int t33;
-    int t52;
-    int t68;
-    int stk[9];
-
-    t0 = (((struct o80_int *)(a4))->v);
-    if (t0 != 0) {
-        if (t0 != 1) {
-            if (t0 != 2) {
-                if (t0 != 3) {
-                } else {
-                    (((struct o60_ushort *)(a4))->v) = (((((struct o60_short *)(a4))->v)) - 0x100);
-                    (((struct o64_ushort *)(a4))->v) = (((((struct o64_short *)(a4))->v)) + 0x100);
-                    (((struct o30_float *)(a4))->v) = (((((struct o30_float *)(a4))->v)) + ((((struct o48_float *)(a4))->v)));
-                    (((struct o34_float *)(a4))->v) = (((((struct o34_float *)(a4))->v)) + ((((struct o4C_float *)(a4))->v)));
-                    (((struct o38_float *)(a4))->v) = (((((struct o38_float *)(a4))->v)) + ((((struct o50_float *)(a4))->v)));
-                    t9 = (((struct oA0_int *)(a4))->v);
-                    (((struct oA0_uint *)(a4))->v) = (t9 - 1);
-                    if ((int)(t9 - 1) <= 0) {
-                        FUN_0c0e19f2();
-                    }
-                }
-            } else {
-                u29 = ((((struct o30_float *)(a4))->v));
-                u29 = u29 + 0.00999999978f * (float)(((FUN_0c0da2e0()) & 0x1F) - 15);
-                (((struct o30_float *)(a4))->v) = u29;
-                u32 = ((((struct o38_float *)(a4))->v));
-                u32 = u32 + 0.00999999978f * (float)(((FUN_0c0da2e0()) & 0x1F) - 15);
-                (((struct o38_float *)(a4))->v) = u32;
-                t33 = (((struct oA0_int *)(a4))->v);
-                (((struct oA0_uint *)(a4))->v) = (t33 - 1);
-                if ((int)(t33 - 1) <= 0) {
-                    (((struct oA0_uint *)(a4))->v) = 0x32;
-                    (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
-                    _quick_evn_mvn();
-                    *(float *)(((int)stk + 20)) = 16.0f;
-                    FUN_0c086c1e(((int)stk + 8), 0x4, 0x96, 1.0f);
-                }
-            }
-        } else {
-            t52 = (((struct oA0_int *)(a4))->v);
-            (((struct oA0_uint *)(a4))->v) = (t52 - 1);
-            if ((int)(t52 - 1) > 0) {
-            } else {
-                (((struct oA0_uint *)(a4))->v) = 0xA;
-                (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
-            }
-        }
-    } else {
-        (((struct oA0_uint *)(a4))->v) = 0x5A;
-        (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
-        t68 = (((struct oA0_int *)(a4))->v);
-        (((struct oA0_uint *)(a4))->v) = (t68 - 1);
-        if ((int)(t68 - 1) > 0) {
-        } else {
-            (((struct oA0_uint *)(a4))->v) = 0xA;
-            (((struct o80_uint *)(a4))->v) = (((((struct o80_int *)(a4))->v)) + 0x1);
-        }
-    }
-    nlPushMatrix(0x0);
-    FUN_0c0dcc70(((((struct o30_float *)(a4))->v)), ((((struct o34_float *)(a4))->v)), ((((struct o38_float *)(a4))->v)));
-    nlRotateAZ(((((struct o64_short *)(a4))->v)));
-    nlRotateAY(((((struct o62_short *)(a4))->v)));
-    nlRotateAX(((((struct o60_short *)(a4))->v)));
-    FUN_0c0c465c(((((struct o78_int *)(a4))->v)));
-    return (nlPopMatrix(0x1));
-}
 
 
 int FUN_0c21b92e(int a4, int a5, int a6)

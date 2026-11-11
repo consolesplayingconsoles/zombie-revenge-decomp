@@ -35,7 +35,7 @@ int FUN_0c0e4c34(int);
 int FUN_0c0e4e88(int);
 int FUN_0c0e55f0(void);
 int FUN_0c0e563c(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(void);
 int FUN_0c213912(int, int, int, int, int, int, int, int, int);
 int FUN_0c229f30(int, int, int);

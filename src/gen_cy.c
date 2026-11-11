@@ -51,7 +51,7 @@ int FUN_0c0e36ac(void);
 int FUN_0c0e36c4(int, int);
 int FUN_0c0e3792(int, int, int, int);
 int FUN_0c0e4428(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(void);
 int FUN_0c2212c0(void);
 int FUN_0c22ba6a(void);
@@ -689,49 +689,6 @@ int FUN_0c0e3c22(int a4, int a5)
     return t58;
 }
 
-int FUN_0c0b3ef8(int a4, int a5, int a6, int a7)
-{
-    int t16;
-    int t17;
-
-    if (((*(int *)0xC23ED5C) & 4) != 0) {
-        FUN_0c0e19f2();
-    }
-    FUN_0c08448c(0x1);
-    nlPushMatrix(0x0);
-    FUN_0c0dcc70(1.0f, 0.0f, 0.0f);
-    FUN_0c0c465c((unsigned short)((((struct o0_short *)0xC203F70)->v)));
-    FUN_0c0c465c((unsigned short)((((struct o2_short *)0xC203F70)->v)));
-    FUN_0c0c465c((unsigned short)((((struct o4_short *)0xC203F70)->v)));
-    nlPopMatrix(0x1);
-    t16 = (((struct oA4_int *)(a4))->v);
-    (((struct oA4_uint *)(a4))->v) = (t16 + 0x1);
-    if ((t16 + 0x1) == 60) {
-        (((struct oA4_uint *)(a4))->v) = 0x0;
-        t17 = (((struct oA0_int *)(a4))->v);
-        (((struct oA0_uint *)(a4))->v) = (t17 + 0x1);
-        if ((t17 + 0x1) == 60) {
-            (((struct oA0_uint *)(a4))->v) = 0x0;
-        }
-    }
-    *(volatile int *)((a4 + 0xA0));
-    (((struct o62_ushort *)(a4))->v) = (FUN_0c0e5dc0());
-    nlPushMatrix(0x0);
-    FUN_0c0dcc70(((((struct o8_float *)0xC0B4058)->v)), ((((struct o4_float *)0xC0B4058)->v)), ((((struct o0_float *)0xC0B4058)->v)));
-    nlRotateAZ(0xFFFFFFF6);
-    nlRotateAX(0xA);
-    nlRotateAY(((((struct o62_short *)(a4))->v)));
-    FUN_0c0c465c(((((struct o7C_int *)(a4))->v)));
-    nlPopMatrix(0x1);
-    FUN_0c0dcc70(((((struct o20_float *)0xC0B4058)->v)), ((((struct o1C_float *)0xC0B4058)->v)), ((((struct o18_float *)0xC0B4058)->v)));
-    nlRotateAZ(0xFFFFFFF6);
-    nlRotateAX(0xA);
-    nlRotateAY(((((struct o62_short *)(a4))->v)));
-    nlScale(1.0f, 1.0f, ((((struct o24_float *)0xC0B4058)->v)));
-    FUN_0c0de000(1.0f);
-    FUN_0c0c465c((((((struct o7C_int *)(a4))->v)) + 0x1));
-    return (nlPopMatrix(0x1));
-}
 
 int kmiFinalizeRender(int a4, int a5, int a6)
 {

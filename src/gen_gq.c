@@ -60,7 +60,7 @@ int FUN_0c0e18ce(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e6118(void);
 int FUN_0c0e6248(void);
 int FUN_0c210416(void);
@@ -626,55 +626,6 @@ int FUN_0c09084c(int a4, int a5, int a6)
 
 
 
-int FUN_0c0d41c6(void)
-{
-    int t0;
-    int t31;
-    int stk[10];
-
-    { struct mv4 { int w[4]; }; *(struct mv4 *)(0xC943564) = *(struct mv4 *)(0xC249880); }
-    { struct mv4 { int w[4]; }; *(struct mv4 *)(0xC943554) = *(struct mv4 *)(0xC249880); }
-    t0 = 0x0;
-    for (;;) {
-        FUN_0c0d3f0c(t0);
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x0)) = 0x0;
-        if ((*(int *)0xC943400) != 2) {
-            if ((*(int *)0xC943400) == 0) {
-                if (t0 == (0x1 - (*(int *)0xC23A1BC))) {
-                    *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x0)) = 0x1;
-                }
-            }
-        } else {
-            *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x0)) = 0x1;
-        }
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x8)) = t0;
-        if ((*(int *)(((t0 << 2) + 0xC23EDC0))) == 4) {
-            *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0xC)) = 0x0;
-        } else {
-            if ((*(int *)(((t0 << 2) + 0xC23EDC0))) == 0) {
-                *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0xC)) = 0x1;
-            } else {
-                *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0xC)) = 0x2;
-            }
-        }
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x40)) = 0x1;
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x54)) = 0x10000;
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x6C)) = (*(int *)((((t0 << 2) + 0xC246FF0) + 0x0)));
-        *(unsigned int *)((((t0 * 0x1D4) + 0xC9436B4) + 0x70)) = (*(int *)(((((0x1 - t0) << 2) + 0xC246FF0) + 0x0)));
-        *(unsigned int *)(((int)stk + 4)) = (0xC943574 + ((((t0 << 2) + t0) << 2) << 2));
-        FUN_0c0e6118();
-        *(volatile int *)(((int)stk + 4));
-        FUN_0c0e6118();
-        FUN_0c0da2e0();
-        t31 = ((t0 * 0x1D4) + 0xC9436B4);
-        t0 = (t0 + 0x1);
-        *(unsigned int *)(((0x68 + t31) + 0x0)) = (FUN_0c0e5f1c());
-        if ((int)t0 >= (int)0x2) {
-            break;
-        }
-    }
-    return FUN_0c0d6a64();
-}
 
 int FUN_0c0d6254(int a4, int a5, int a6)
 {
@@ -903,4 +854,5 @@ int FUN_0c0e1310(int a4, int a5, float f4, float f5, float f6)
     (((struct o20_uint *)0xC94C6C4)->v) = R5;
     return (*(int *)((R7 + 0x0)));
 }
+
 

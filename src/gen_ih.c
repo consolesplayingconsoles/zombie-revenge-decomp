@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int ADXSTM_GetStat(int);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c010c40(int);
 int FUN_0c01d8de(int);
 int FUN_0c02a19a(int);
@@ -48,8 +48,8 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(int);
+int _divls(void);
+int _modls(int);
 int FUN_0c22a06c(int);
 int FUN_0c22a512(int);
 int adxt_RcvrReplay(int);

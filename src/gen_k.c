@@ -1,3 +1,4 @@
+int FUN_0c0df584(int, int);
 /* Straight-line functions with calls and guards (batch gen_k): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
@@ -175,19 +176,19 @@ int FUN_0c0df3c0(int a4, int a5)
 int FUN_0c0df510(int a4)
 {
     FUN_0c0dd260();
-    return ((int (*)(int, int))(0xC0DF584))(a4, 0x0);
+    return FUN_0c0df584(a4, 0x0);
 }
 
 int FUN_0c0df530(int a4)
 {
     FUN_0c0dd260();
-    return ((int (*)(int, int))(0xC0DF584))(a4, 0xFFFFFFFF);
+    return FUN_0c0df584(a4, 0xFFFFFFFF);
 }
 
 int FUN_0c0df550(int a4)
 {
     FUN_0c0dd280();
-    return ((int (*)(int, int))(0xC0DF584))(a4, 0x0);
+    return FUN_0c0df584(a4, 0x0);
 }
 
 int FUN_0c0d90f0(void)

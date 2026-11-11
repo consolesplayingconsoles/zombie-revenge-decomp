@@ -9,7 +9,7 @@ int FUN_0c01d394(void);
 int FUN_0c01d3c6(void);
 int FUN_0c01f1b8(int, int);
 int FUN_0c01fa90(void);
-int FUN_0c02a35a(void);
+int FUN_0c02a35a(int);
 int FUN_0c02a416(int);
 int FUN_0c0359c0(int, int, int, int);
 float FUN_0c036e18(int, int, int);
@@ -986,64 +986,6 @@ int FUN_0c22c98e(int a4, int a5, int a6, int a7, float f4)
     return t15;
 }
 
-int FUN_0c016d74(void)
-{
-    int t3;
-    int t4;
-    int t6;
-    int t0;
-    int t1;
-    int t2;
-    int t5;
-
-    t3 = 0xC23EE14;
-    t4 = 0x0;
-    for (;;) {
-        t6 = *(int *)((t3 + 0x4));
-        if (t6 != 0) {
-            t0 = 0x48;
-            t1 = (*(int *)((t6 + t0)));
-            if (t1 != 0) {
-                t2 = 0xC23ECF0;
-                t0 = (FUN_0c0e19aa((*(int *)((t6 + t0))), 0xB4, (*(int *)((t2 + 0x0)))));
-                t2 = 0xC0E19D0;
-                t5 = t0;
-                t0 = (FUN_0c0e19d0(t0));
-                t1 = t6;
-                t2 = 0xC0E61D4;
-                t1 = (t1 + 0x2C);
-                t0 = 0xC;
-                t0 = (_quick_odd_mvn());
-                t1 = (*(int *)((t6 + 0x38)));
-                t0 = 0x60;
-                *(unsigned short *)((t5 + t0)) = t1;
-                t0 = 0x62;
-                t2 = (*(int *)((t6 + 0x3C)));
-                *(unsigned short *)((t5 + t0)) = t2;
-                t0 = 0x40;
-                t1 = (*(int *)((t6 + t0)));
-                t0 = 0x78;
-                *(unsigned int *)((t5 + t0)) = t1;
-                t0 = 0x44;
-                t2 = (*(short *)((t6 + t0)));
-                t0 = (t0 + 0x3C);
-                *(unsigned int *)((t5 + t0)) = t2;
-                t0 = 0x46;
-                t1 = (*(short *)((t6 + t0)));
-                t0 = (t0 + 0x3E);
-                *(unsigned int *)((t5 + t0)) = t1;
-                t0 = (t0 + 0x4);
-                *(unsigned int *)((t5 + t0)) = t4;
-            }
-            t3 = (t3 + 0x8);
-        }
-        t4 = (t4 + 0x1);
-        if ((int)t4 >= (int)0x8) {
-            break;
-        }
-    }
-    return t0;
-}
 
 int FUN_0c031206(int a4)
 {
@@ -1058,7 +1000,7 @@ int FUN_0c031206(int a4)
     } else {
         t1 = FUN_0c03593a(a4);
         if (t1 != 0) {
-            t2 = FUN_0c02a35a();
+            t2 = FUN_0c02a35a(a4);
             if (t2 == 0) {
                 (((struct o538_uint *)(a4))->v) = 0x2;
                 (((struct o4F8_uint *)(a4))->v) = 0x2;

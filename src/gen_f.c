@@ -87,7 +87,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e262a(int);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(void);
 int FUN_0c083da2(void);
@@ -1078,15 +1078,6 @@ int FUN_0c08e12c(int a4)
 
 
 
-int FUN_0c0a9f0e(int a4)
-{
-    int t1;
-
-    t1 = *(int *)((((FUN_0c0e5f1c(a4)) << 2) + 0xC246FF0));
-    FUN_0c0b359e(t1, (*(int *)(((a4 << 2) + 0xC10D7F0))));
-    (((struct o2E8_uint *)(t1))->v) = 0x2;
-    return 0x2E8;
-}
 
 
 int FUN_0c06cb94(int a4)

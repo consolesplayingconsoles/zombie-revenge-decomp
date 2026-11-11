@@ -26,7 +26,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(int, int, int, int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_odd_mvn(int, int);
 int FUN_0c0847de(int a4);
 int FUN_0c08b364(void);
@@ -256,14 +256,6 @@ int FUN_0c092c2c(int a4, int a5)
     return ((int (*)(int, int))(t1))(a4, a5);
 }
 
-int FUN_0c09ee68(int a4)
-{
-    int t0;
-
-    t0 = FUN_0c0e5f1c(a4);
-    *(unsigned int *)0xC23EDBC = t0;
-    return t0;
-}
 
 int FUN_0c0ab2ec(void)
 {

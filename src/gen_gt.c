@@ -48,7 +48,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e6248(void);
 int FUN_0c229058(int, int, int);
 int FUN_0c232638(int, int, int);
@@ -920,35 +920,6 @@ int FUN_0c0220dc(int a4, int a5, int a6, int a7)
     return 0x6C;
 }
 
-int FUN_0c093a08(int a4, int a5, int a6)
-{
-    int t1;
-    int t14;
-    int t15;
-
-    t1 = FUN_0c0e19aa(0xC093844, 0xB4, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    (((struct o80_uint *)(t1))->v) = (unsigned char)(*(signed char *)0xC10BA2C);
-    (((struct oA0_uint *)(t1))->v) = (unsigned char)(*(signed char *)0xC10BA2D);
-    (((struct oA4_uint *)(t1))->v) = (unsigned short)(*(short *)0xC10BA2E);
-    (((struct o8C_uint *)(t1))->v) = (*(int *)0xC10BA30);
-    (((struct o78_uint *)(t1))->v) = ((((struct oC0_int *)(a4))->v));
-    (((struct o88_uint *)(t1))->v) = ((((struct oBC_int *)(a4))->v));
-    { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(a5); }
-    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(a6); }
-    (((struct o74_float *)(t1))->v) = 1.0f;
-    (((struct o68_uint *)(t1))->v) = (*(short *)((a6 + 0x0)));
-    FUN_0c0da2e0();
-    *(volatile short *)0xC10BA2E;
-    (((struct o9C_uint *)(t1))->v) = (FUN_0c0e5f1c());
-    t14 = FUN_0c0da2e0();
-    t15 = ((~(((~t14) + 0x1) & 0xFFFF)) + 0x1);
-    if ((int)t14 >= 0) {
-        t15 = (t14 & 0xFFFF);
-    }
-    (((struct oA8_uint *)(t1))->v) = t15;
-    return t15;
-}
 
 
 
@@ -1334,4 +1305,33 @@ void FUN_0c063994(int a4, int a5)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x3C)) = *(struct mv3 *)((t1 + 0x30)); }
 }
 
+int FUN_0c093a08(int a4, int a5, int a6)
+{
+    int t1;
+    int t14;
+    int t15;
+
+    t1 = FUN_0c0e19aa(0xC093844, 0xB4, (*(int *)0xC23ECF0));
+    FUN_0c0e19d0(t1);
+    (((struct o80_uint *)(t1))->v) = (unsigned char)(*(signed char *)0xC10BA2C);
+    (((struct oA0_uint *)(t1))->v) = (unsigned char)(*(signed char *)0xC10BA2D);
+    (((struct oA4_uint *)(t1))->v) = (unsigned short)(*(short *)0xC10BA2E);
+    (((struct o8C_uint *)(t1))->v) = (*(int *)0xC10BA30);
+    (((struct o78_uint *)(t1))->v) = ((((struct oC0_int *)(a4))->v));
+    (((struct o88_uint *)(t1))->v) = ((((struct oBC_int *)(a4))->v));
+    { struct mv3 { int w[3]; }; *(struct mv3 *)((t1 + 0x30)) = *(struct mv3 *)(a5); }
+    { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t1 + 0x60)) = *(struct mvb6 *)(a6); }
+    (((struct o74_float *)(t1))->v) = 1.0f;
+    (((struct o68_uint *)(t1))->v) = (*(short *)((a6 + 0x0)));
+    /* manual: the operands of the remainder, from the original */
+    t14 = FUN_0c0da2e0();
+    (((struct o9C_uint *)(t1))->v) = (t14 % (int)(unsigned short)(*(short *)0xC10BA2E));
+    t14 = FUN_0c0da2e0();
+    t15 = ((~(((~t14) + 0x1) & 0xFFFF)) + 0x1);
+    if ((int)t14 >= 0) {
+        t15 = (t14 & 0xFFFF);
+    }
+    (((struct oA8_uint *)(t1))->v) = t15;
+    return t15;
+}
 

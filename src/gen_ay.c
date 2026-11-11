@@ -9,7 +9,7 @@ int FUN_0c07e24e(void);
 int FUN_0c0a7714(int, int, float, float, float);
 int FUN_0c0da2e0(void);
 float FUN_0c0da410(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c22fa7e(int, int, int);
 int kmiReadRegister(int);
 int kmiWriteRegister(int, int);
@@ -191,73 +191,3 @@ int kmiInitializeDevice(void)
     return 0x1;
 }
 
-int FUN_0c0aee08(int a4, float f4)
-{
-    int t0;
-    int t29;
-    int t33;
-    int t41;
-    int stk[6];
-
-    t0 = (((struct o400_int *)(a4))->v);
-    if (t0 != 1) {
-        if (t0 != 2) {
-            if (t0 == 3) {
-                (((struct o430_uint *)(a4))->v) = (((((struct o430_int *)(a4))->v)) + (*(int *)(((0x434 + a4) + 0x0))));
-                (((struct o254_float *)(a4))->v) = (((((struct o350_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o338_float *)(a4))->v))));
-                (((struct o258_float *)(a4))->v) = (((((struct o354_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o33C_float *)(a4))->v))));
-                (((struct o25C_float *)(a4))->v) = (((((struct o358_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o340_float *)(a4))->v))));
-                (((struct o278_float *)(a4))->v) = (((((struct o35C_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o344_float *)(a4))->v))));
-                (((struct o27C_float *)(a4))->v) = (((((struct o360_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o348_float *)(a4))->v))));
-                (((struct o280_float *)(a4))->v) = (((((struct o364_float *)(a4))->v)) - ((FUN_0c0da410(((((struct o430_int *)(a4))->v)))) * ((((struct o34C_float *)(a4))->v))));
-                t29 = (((struct o3FC_int *)(a4))->v);
-                (((struct o3FC_uint *)(a4))->v) = (t29 - 1);
-                if ((int)(t29 - 1) <= 0) {
-                    (((struct o400_uint *)(a4))->v) = 0x4;
-                }
-                t33 = *(int *)0xC24FA6C;
-                if (((((struct o424_int *)(a4))->v)) != ((((struct o78_int *)(t33))->v))) {
-                    (((struct o424_uint *)(a4))->v) = ((((struct o78_int *)(t33))->v));
-                    (((struct o400_uint *)(a4))->v) = 0x2;
-                }
-            } else {
-                if (t0 == 4) {
-                    t41 = *(int *)0xC24FA6C;
-                    if (((((struct o424_int *)(a4))->v)) != ((((struct o78_int *)(t41))->v))) {
-                        (((struct o424_uint *)(a4))->v) = ((((struct o78_int *)(t41))->v));
-                        (((struct o400_uint *)(a4))->v) = 0x2;
-                    }
-                }
-            }
-        } else {
-            *(volatile int *)((a4 + 0x424));
-            (((struct o3FC_uint *)(a4))->v) = 0x1E;
-            (((struct o430_uint *)(a4))->v) = 0x4000;
-            *(volatile int *)((a4 + 0x3FC));
-            *(unsigned int *)(((0x434 + a4) + 0x0)) = (FUN_0c0e5dc0());
-            (((struct o338_float *)(a4))->v) = (((*(float *)((a4 + 0x0))) - ((((struct o254_float *)(a4))->v))) * 0.5f);
-            (((struct o33C_float *)(a4))->v) = ((((((struct o4_float *)(a4))->v)) - ((((struct o258_float *)(a4))->v))) * 0.5f);
-            (((struct o340_float *)(a4))->v) = ((((((struct o8_float *)(a4))->v)) - ((((struct o25C_float *)(a4))->v))) * 0.5f);
-            (((struct o344_float *)(a4))->v) = ((((((struct oC_float *)(a4))->v)) - ((((struct o278_float *)(a4))->v))) * 0.5f);
-            (((struct o348_float *)(a4))->v) = ((((((struct o10_float *)(a4))->v)) - ((((struct o27C_float *)(a4))->v))) * 0.5f);
-            (((struct o34C_float *)(a4))->v) = ((((((struct o14_float *)(a4))->v)) - ((((struct o280_float *)(a4))->v))) * 0.5f);
-            (((struct o350_float *)(a4))->v) = (((((struct o254_float *)(a4))->v)) + ((((struct o338_float *)(a4))->v)));
-            (((struct o354_float *)(a4))->v) = (((((struct o258_float *)(a4))->v)) + ((((struct o33C_float *)(a4))->v)));
-            (((struct o358_float *)(a4))->v) = (((((struct o25C_float *)(a4))->v)) + ((((struct o340_float *)(a4))->v)));
-            (((struct o35C_float *)(a4))->v) = (((((struct o278_float *)(a4))->v)) + ((((struct o344_float *)(a4))->v)));
-            (((struct o360_float *)(a4))->v) = (((((struct o27C_float *)(a4))->v)) + ((((struct o348_float *)(a4))->v)));
-            (((struct o364_float *)(a4))->v) = (((((struct o280_float *)(a4))->v)) + ((((struct o34C_float *)(a4))->v)));
-            (((struct o400_uint *)(a4))->v) = 0x3;
-        }
-    } else {
-        if (((((struct o80_int *)((*(int *)0xC24FA6C)))->v)) == 0) {
-        } else {
-            (((struct o400_uint *)(a4))->v) = 0x2;
-            (((struct o424_uint *)(a4))->v) = 0x0;
-        }
-    }
-    FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (((((struct o254_float *)(a4))->v)) - ((((struct o278_float *)(a4))->v))), (((((struct o258_float *)(a4))->v)) - ((((struct o27C_float *)(a4))->v))), (((((struct o25C_float *)(a4))->v)) - ((((struct o280_float *)(a4))->v))));
-    (((struct o3CC_ushort *)(a4))->v) = (*(int *)(((int)stk + 4)));
-    (((struct o3CE_ushort *)(a4))->v) = (*(int *)(((int)stk + 8)));
-    return (FUN_0c07e24e());
-}

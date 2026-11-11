@@ -104,8 +104,8 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e2400(void);
 int FUN_0c0e262a(int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int FUN_0c0e5fe4(void);
 int FUN_0c0e6248(int);
 int FUN_0c22cd00(void);
@@ -346,30 +346,6 @@ struct oAC_uint { char p[0xAC]; unsigned int v; };
 
 
 
-int FUN_0c06bbc0(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-    register int t6;
-    register int t7;
-
-    t0 = (((struct o54_int *)(a4))->v);
-    FUN_0c0685a4(a4, a5, a6, a7);
-    *(volatile int *)0xC23A258;
-    (((struct o4C_uint *)(a4))->v) = (FUN_0c0e5fe4());
-    *(volatile int *)((a4 + 0x48));
-    *(volatile int *)((a4 + 0x4C));
-    t6 = FUN_0c0e5f1c();
-    t7 = 0x0;
-    if (((int)t6 >= 0) && ((int)t6 <= (int)0x5)) {
-        t7 = t6;
-    }
-    nlPushMatrix(0x0);
-    nlMultiMatrix((*(int *)0xC247BF4));
-    FUN_0c0dcc70(((((struct o30_float *)(a4))->v)), ((((struct o34_float *)(a4))->v)), ((((struct o38_float *)(a4))->v)));
-    nlRotateAY(((((struct o3E_short *)(a4))->v)));
-    FUN_0c0c465c((unsigned short)(*(short *)(((t7 << 1) + t0))));
-    return nlPopMatrix(0x1);
-}
 
 int FUN_0c09b730(int a4)
 {
@@ -800,27 +776,6 @@ int FUN_0c0c2484(int a4, int a5, int a6, int a7)
     return t7;
 }
 
-int FUN_0c01b788(int a4)
-{
-    FUN_0c0cc6dc();
-    FUN_0c0c43dc(((((struct o8_int *)0xC23ED50)->v)), 0x1);
-    FUN_0c0c4364(((((struct o0_int *)0xC23ED50)->v)), 0x1);
-    FUN_0c0cc88c(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c018142();
-    FUN_0c018232();
-    FUN_0c01937a();
-    FUN_0c0852bc(((((struct o0_int *)0xC23ED50)->v)));
-    (((struct o0_uint *)0xC23ED9C)->v) = 0x4;
-    FUN_0c01a874();
-    FUN_0c016d74();
-    FUN_0c084b1a(((((struct o3C_int *)0xC23ED50)->v)), 0x0);
-    FUN_0c0cc7d8(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c019a36();
-    FUN_0c01a89c((a4 + 0x34));
-    *(volatile int *)((a4 + 0x34));
-    (((struct o8_uint *)0xC23ED9C)->v) = (FUN_0c0e5dc0());
-    return FUN_0c04996a();
-}
 
 int FUN_0c04b280(int a4)
 {

@@ -96,8 +96,7 @@ int FUN_0c09bb20(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     *(unsigned int *)((v0_1 + 0x10)) = ((FUN_0c0da2e0()) << 1);
     *(unsigned int *)((v0_1 + 0x0)) = 0x3;
     (((struct oC_float *)(v0_1))->v) = ((float)((FUN_0c0da2e0()) & R11) * w0_0);
-    FUN_0c0da2e0();
-    v0_4 = FUN_0c0e5fe4();
+    v0_4 = ((unsigned int)(FUN_0c0da2e0() & R11) % 6);
     *(unsigned int *)((v0_1 + 0x8)) = (((((v0_4 << 1) + v0_4) << 2) << 1) + 0xC200BB8);
     w0_1 = ((((struct oC_float *)((((((v0_4 << 1) + v0_4) << 2) << 1) + 0xC200BB8)))->v));
     w0_1 = w0_1 + ((((struct oC_float *)(v0_1))->v)) * ((((struct o10_float *)((((((v0_4 << 1) + v0_4) << 2) << 1) + 0xC200BB8)))->v));

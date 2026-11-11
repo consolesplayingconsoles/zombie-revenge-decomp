@@ -265,40 +265,6 @@ int FUN_0c03c510(int a4)
     return t18;
 }
 
-int FUN_0c04f7cc(void)
-{
-    int t0;
-    int t1;
-    int t3;
-    int t10;
-    int t2;
-
-    t0 = 0x0;
-    t1 = 0x0;
-    for (;;) {
-        t3 = *(int *)((t1 + 0xC247030));
-        t10 = t3;
-        if (t3 == 4) {
-            t2 = 0xC246FF0;
-            t2 = (t2 + t0);
-            t2 = (*(int *)((t2 + 0x0)));
-            FUN_0c049b80(t2);
-            _quick_odd_mvn();
-            _quick_odd_mvn();
-            *(unsigned int *)((t2 + 0x1B0)) = 0x0;
-            *(unsigned int *)((t2 + 0xA4)) = 0xA7F;
-            FUN_0c051a48(t2);
-            *(unsigned int *)((t2 + 0x0)) = 0xC04A118;
-            t10 = (FUN_0c055090(t2));
-        }
-        t1 = (t1 + 0x4);
-        t0 = (t0 + 0x4);
-        if ((unsigned int)t1 >= (unsigned int)0x8) {
-            break;
-        }
-    }
-    return t10;
-}
 
 int FUN_0c056016(int a4)
 {

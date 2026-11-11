@@ -6,7 +6,7 @@ int FUN_0c0240e0(int);
 int FUN_0c024324(int);
 int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int FUN_0c082118(int a4, int a5, int a6, int a7);
 int FUN_0c027736(int a4, int a5, int a6, int a7);
 int FUN_0c028efc(int a4, int a5, int a6, int a7);
@@ -61,26 +61,4 @@ int FUN_0c028efc(int a4, int a5, int a6, int a7)
     return FUN_0c02286c(a4, 0x28, a6, a7, 0.0f, (*(float *)0xC028FAC));
 }
 
-int FUN_0c02e9a8(int a4)
-{
-    register int t1;
 
-    *(volatile int *)((a4 + 0x3AC));
-    t1 = FUN_0c0e5f1c(a4);
-    if (t1 == 20) {
-        FUN_0c0cc3f8(0x1BA9, 0x0, 0x0, 0x0);
-    }
-    return FUN_0c0240e0(a4);
-}
-
-int FUN_0c02e9ce(int a4)
-{
-    register int t1;
-
-    *(volatile int *)((a4 + 0x3AC));
-    t1 = FUN_0c0e5f1c(a4);
-    if (t1 == 20) {
-        FUN_0c0cc3f8(0x1BA9, 0x0, 0x0, 0x0);
-    }
-    return FUN_0c024324(a4);
-}

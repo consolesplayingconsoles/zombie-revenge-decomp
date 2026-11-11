@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0da2e0(void);
-extern int FUN_0c0e5f1c();
+extern int _modls();
 int FUN_0c0366b4(int a4);
 
 int FUN_0c0366b4(int a4)
@@ -37,7 +37,7 @@ int FUN_0c0366b4(int a4)
                     if (t2 == t9) {
                         FUN_0c0da2e0();
                         t9 = 0xC0E5F1C;
-                        t7 = ((int (*)(void))(FUN_0c0e5f1c))();
+                        t7 = ((int (*)(void))(_modls))();
                         if ((int)t7 > (int)0x3) {
                             t5 = t4;
                             t5 = (t5 + t8);
@@ -80,7 +80,7 @@ int FUN_0c0366b4(int a4)
             t1 = t5;
             if (t2 == (0x7 - t4)) {
                 FUN_0c0da2e0();
-                t2 = ((int (*)(void))(FUN_0c0e5f1c))();
+                t2 = ((int (*)(void))(_modls))();
                 t8 = t5;
                 if ((int)t2 > (int)0x3) {
                     t8 = (((int)((unsigned int)((int)((unsigned int)(t4 + 0x7) + (unsigned int)0x0)) + ((((int)0x0 > (int)(t4 + 0x7))) ? 1u : 0u))) >> 1);
@@ -99,8 +99,8 @@ int FUN_0c0366b4(int a4)
         t7 = t1;
     }
     *(volatile int *)0xC23ED68;
-    t1 = ((int (*)(int))(FUN_0c0e5f1c))(t7);
-    t1 = ((int (*)(void))(FUN_0c0e5f1c))();
+    t1 = ((int (*)(int))(_modls))(t7);
+    t1 = ((int (*)(void))(_modls))();
     if (t1 != 0) {
         t2 = (t3 + 0x1);
         if (t1 != 1) {

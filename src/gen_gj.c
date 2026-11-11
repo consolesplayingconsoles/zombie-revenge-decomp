@@ -95,57 +95,6 @@ int syMalloc_default_malloc(int a4)
     return (t14 + 0x20);
 }
 
-int FUN_0c045840(void)
-{
-    int t22;
-    int t2;
-    int t4;
-    int t6;
-    int t7;
-    int t12;
-    int t15;
-    int t16;
-    int stk[57];
-
-    FUN_0c0e6118();
-    { struct mv14 { int w[14]; }; *(struct mv14 *)(((int)stk + 20)) = *(struct mv14 *)(0xC0F5DB0); }
-    t22 = 0xC246DDC;
-    if ((*(int *)0xC246DDC) != 0) {
-        t2 = ((int (*)(int, int, Stk14))(FUN_0c0db0a0))(0x1, 0x20, *(Stk14 *)(((int)stk + 20)));
-        t4 = (*(int *)0xC247994);
-        *(int *)((int)stk + 16) = t4;
-        *(int *)((int)stk + 12) = 0xC0F5DE8;
-        t6 = (nlPrintf(0xC0F5DE8, t4));
-        t7 = 0x0;
-        for (;;) {
-            if ((int)(*(int *)(((0xC247634 + (t7 << 2)) + 0x0))) > 0) {
-                t6 = (((int (*)(int, int))(FUN_0c0db0a0))(0x1, (t7 + 0x21)));
-                t6 = 0xC2475D4;
-                t6 = (t6 + 0x30);
-                t6 = (*(int *)(((t7 << 2) + t6)));
-                t6 = (t6 << 2);
-                t12 = (*(int *)((((int)stk + 20) + t6)));
-                *(int *)((int)stk + 16) = t12;
-                t6 = 0xC2475D4;
-                t6 = (t6 + 0x60);
-                t6 = (*(int *)(((t7 << 2) + t6)));
-                t6 = (t6 << 2);
-                t15 = (*(int *)(((((int)stk + 20) + 0x38) + t6)));
-                *(int *)((int)stk + 12) = t15;
-                t16 = t7;
-                *(int *)((int)stk + 8) = t16;
-                *(int *)((int)stk + 4) = 0xC0F5DFC;
-                t6 = (nlPrintf(0xC0F5DFC, t16, t15, t12));
-            }
-            t7 = (t7 + 0x1);
-            if ((int)t7 >= (int)0xC) {
-                break;
-            }
-        }
-        t22 = t6;
-    }
-    return t22;
-}
 
 int vmsfs_load_file(int a4, int a5, int a6, int a7)
 {

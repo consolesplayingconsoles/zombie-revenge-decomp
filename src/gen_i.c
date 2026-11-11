@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_i): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c011cfc(void);
+int FUN_0c011cfc(int);
 int FUN_0c052064(int);
 int FUN_0c0685a4(int);
 int FUN_0c06b060(int);
@@ -12,7 +12,7 @@ int FUN_0c0855f4(int);
 int FUN_0c0be88a(int, int);
 int FUN_0c0c0340(int, float);
 int FUN_0c0c2764(int);
-int FUN_0c0c27a0(void);
+int FUN_0c0c27a0(int);
 int FUN_0c0c465c(int);
 int FUN_0c0c5a4c(int);
 int FUN_0c0c7970(int, int);
@@ -82,7 +82,7 @@ int FUN_0c0cc008(int a4);
 void FUN_0c0cee62(void);
 int thunk_FUN_0c0d61be(void);
 void FUN_0c0d80c0(int a4);
-int thunk_FUN_0c011cfc(void);
+int thunk_FUN_0c011cfc(int);
 void FUN_0c0c1480(void);
 void FUN_0c0c4654(void);
 void FUN_0c0cbaf8(void);
@@ -354,7 +354,7 @@ int FUN_0c0b8624(void)
 int FUN_0c0c281c(int a4)
 {
     FUN_0c0c2764(a4);
-    return FUN_0c0c27a0();
+    return FUN_0c0c27a0(a4);
 }
 
 int FUN_0c0cedc8(void)
@@ -444,9 +444,9 @@ void FUN_0c0d80c0(int a4)
     *(unsigned int *)0xC948270 = a4;
 }
 
-int thunk_FUN_0c011cfc(void)
+int thunk_FUN_0c011cfc(int a4)
 {
-    return FUN_0c011cfc();
+    return FUN_0c011cfc(a4);
 }
 
 void FUN_0c0c1480(void)

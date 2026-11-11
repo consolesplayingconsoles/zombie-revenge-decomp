@@ -10,7 +10,7 @@ int ADXPD_Stop(int);
 int FUN_0c0e4a04(int);
 int FUN_0c0e4a5a(int);
 int FUN_0c0e4d2c(int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int FUN_0c22d77a(int, int, int);
 int FUN_0c22e3f4(int, int, int, int, int, int);
 int FUN_0c22f040(int, int);
@@ -565,7 +565,7 @@ int mwlRnaAddFlshPos(int a4)
     *(volatile int *)((a4 + 0x60));
     *(volatile int *)((a4 + 0x58));
     *(volatile int *)((a4 + 0x30));
-    (((struct o58_uint *)(a4))->v) = (FUN_0c0e5f1c(a4));
+    (((struct o58_uint *)(a4))->v) = (_modls(a4));
     (((struct o5C_uint *)(a4))->v) = (((((struct o5C_int *)(a4))->v)) + ((((struct o60_int *)(a4))->v)));
     (((struct o60_uint *)(a4))->v) = 0x0;
     return 0x60;

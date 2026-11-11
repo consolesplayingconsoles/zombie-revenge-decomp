@@ -21,7 +21,7 @@ int FUN_0c0de3c0(int, int);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlRotateAX(int);

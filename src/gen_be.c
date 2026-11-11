@@ -17,7 +17,7 @@ int FUN_0c0dfd50(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_odd_mvn(void);
 int FUN_0c0a3cdc(int a4, int a5, int a6, int a7);
 int FUN_0c036a4c(int a4, int a5, int a6, int a7);
@@ -95,41 +95,6 @@ int FUN_0c0a3cdc(int a4, int a5, int a6, int a7)
 
 
 
-int FUN_0c03261c(int a4, float f4, float f5)
-{
-    int t4;
-    int t5;
-    int t6;
-    int t7;
-    int t8;
-    int stk[19];
-
-    *(float *)(((int)stk + 12)) = f4;
-    *(float *)(((int)stk + 8)) = f5;
-    if ((*(int *)((a4 + 0xD8))) != 0) {
-        FUN_0c0cc3f8((*(int *)((((*(int *)((a4 + 0x1F8))) << 2) + 0xC1FFB70))));
-        return 0x0;
-    }
-    t4 = FUN_0c032394(a4);
-    if ((int)t4 >= 0) {
-        t5 = FUN_0c02a416(a4);
-        if ((t5 == 0) && ((t6 = *(int *)((a4 + 0x49C)), t6 != 3) && (t7 = *(int *)((a4 + 0x510)), t8 = *(int *)((0xC247030 + (t7 << 2))), t8 == 4))) {
-            *(volatile int *)((a4 + 0x510));
-            _quick_odd_mvn();
-            *(float *)(((int)stk + 60)) = (*(float *)(((int)stk + 12)));
-            *(float *)(((int)stk + 64)) = (1.0f + 1.0f);
-            _quick_odd_mvn();
-            *(float *)(((int)stk + 40)) = (*(float *)(((int)stk + 8)));
-            *(float *)(((int)stk + 44)) = 1.0f;
-            FUN_0c036efc((((int)stk + 4) + 0x2C), (((int)stk + 4) + 0x18), (((int)stk + 4) + 0xC), ((int)stk + 4));
-            nlAddVector((0x4B0 + a4), (((int)stk + 4) + 0xC));
-            *(float *)((a4 + 0x550)) = (*(float *)(((int)stk + 4)));
-            return 0x1;
-        }
-        return 0x0;
-    }
-    return 0x0;
-}
 
 
 

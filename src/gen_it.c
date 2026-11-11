@@ -4,7 +4,7 @@
 int ADXCRS_Lock(int);
 int ADXCRS_Unlock(void);
 int ADXERR_CallErrFunc(int, ...);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c01cdc2(int);
 int FUN_0c01ce40(int, int, float);
 int FUN_0c01d636(int, int, int);
@@ -61,7 +61,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
-extern int FUN_0c0e5f1c();
+extern int _modls();
 int FUN_0c0e6248(void);
 int FUN_0c22cd5e(int, int);
 int FUN_0c22cfdc(void);
@@ -530,10 +530,10 @@ int FUN_0c22d2b8(int a4, int a5, int a6)
         *(volatile int *)((a4 + 0x14));
         *(volatile int *)((a4 + 0x20));
         *(volatile int *)((a6 + 0x4));
-        t1 = ((int (*)(void))(FUN_0c0e5f1c))();
+        t1 = ((int (*)(void))(_modls))();
         *(volatile int *)((a6 + 0x0));
         *(volatile int *)((a4 + 0x1C));
-        t2 = ((int (*)(int))(FUN_0c0e5f1c))(t1);
+        t2 = ((int (*)(int))(_modls))(t1);
         if (a4 == t2) {
             *(unsigned int *)((a4 + 0x14)) = a4;
             *(unsigned int *)((a4 + 0x10)) = ((*(int *)((a4 + 0x10))) + (*(int *)((a6 + 0x4))));
@@ -548,10 +548,10 @@ int FUN_0c22d2b8(int a4, int a5, int a6)
             *(volatile int *)((a4 + 0x18));
             *(volatile int *)((a4 + 0x20));
             *(volatile int *)((a6 + 0x4));
-            t1 = ((int (*)(void))(FUN_0c0e5f1c))();
+            t1 = ((int (*)(void))(_modls))();
             *(volatile int *)((a6 + 0x0));
             *(volatile int *)((a4 + 0x1C));
-            t2 = ((int (*)(int))(FUN_0c0e5f1c))(t1);
+            t2 = ((int (*)(int))(_modls))(t1);
             if (a4 == t2) {
                 *(unsigned int *)((a4 + 0x18)) = a4;
                 *(unsigned int *)((a4 + 0xC)) = ((*(int *)((a4 + 0xC))) + (*(int *)((a6 + 0x4))));
@@ -622,7 +622,7 @@ int FUN_0c213640(int a4, int a5, int a6)
     register int t0;
     register int t1;
 
-    ADXT_Stop();
+    ADXT_Stop(a4);
     t0 = *(int *)((a5 + 0x4));
     if (((int)a6 < (int)((((unsigned char)(signed char)((unsigned int)((unsigned int)t0 >> 16) >> 8) | (((int)t0 >> 8) & 0xFF00)) | ((t0 << 8) & 0xFF0000)) | ((t0 << 16) << 8))) && ((int)a6 >= 0)) {
         ADXCRS_Lock(t0);

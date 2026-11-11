@@ -31,7 +31,7 @@ int FUN_0c0e14c4(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e4428(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
 int FUN_0c0ed8a8(int, int, int);
@@ -413,20 +413,6 @@ int FUN_0c06c254(void)
     return t8;
 }
 
-int FUN_0c07da2c(int a4)
-{
-    int t1;
-    int t6;
-
-    t1 = FUN_0c0e19aa(0xC07DA7E, 0x64, (*(int *)0xC23ECF0));
-    FUN_0c0e19d0(t1);
-    (((struct o48_float *)(t1))->v) = (-1.0f);
-    (((struct o52_ushort *)(t1))->v) = (*(short *)((((*(int *)0xC23EDBC) << 1) + 0xC1105A0)));
-    (((struct o5C_float *)(t1))->v) = (*(float *)0xC07DB50);
-    t6 = FUN_0c0e5dc0();
-    (((struct o58_uint *)(t1))->v) = t6;
-    return t6;
-}
 
 int FUN_0c084ab8(int a4)
 {
@@ -867,13 +853,13 @@ int ADXB_EntryData(int a4, int a5, int a6)
     if (((((struct oA8_short *)(a4))->v)) == 0) {
         (((struct o50_uint *)(a4))->v) = a5;
         *(volatile signed char *)((a4 + 0xF));
-        t8 = (FUN_0c0e5dc0());
+        t8 = (_divls());
     } else {
         (((struct o50_uint *)(a4))->v) = a5;
         *(volatile signed char *)((a4 + 0xD));
         
         *(volatile signed char *)((a4 + 0xE));
-        t8 = (FUN_0c0e5dc0());
+        t8 = (_divls());
     }
     (((struct o54_uint *)(a4))->v) = t8;
     (((struct o84_uint *)(a4))->v) = 0x0;

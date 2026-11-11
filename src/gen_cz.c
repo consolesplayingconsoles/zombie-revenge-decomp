@@ -71,7 +71,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e2a4c(int);
 int FUN_0c0e4428(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_odd_mvn(void);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c20f29a(int);

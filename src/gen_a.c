@@ -46,7 +46,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e262a(int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_odd_mvn(int, int);
 int _slow_strcpy(void);
 int FUN_0c0e631c(int, int, int);
@@ -617,55 +617,6 @@ int syG2DmaReset(int a4)
     return 0x0;
 }
 
-int FUN_0c053700(int a4)
-{
-    int t2;
-    int t30;
-    int t3;
-    int t4;
-    int t5;
-    int t7;
-    int t27;
-
-    t2 = *(int *)((((*(short *)(((*(int *)0xC23ECFC) + 0x2))) << 2) + 0xC1A3290));
-    t30 = 0xC1A3290;
-    if (t2 != 0) {
-        t3 = 0xC23ECFC;
-        t4 = 0x0;
-        t5 = t2;
-        for (;;) {
-            if (!(((((struct o4_float *)(t5))->v)) > -500.0f)) {
-                break;
-            }
-            t7 = FUN_0c0e5f1c(a4);
-            t3 = 0xAC;
-            t3 = (t3 + a4);
-            t3 = (*(int *)((t3 + 0x0)));
-            if (t7 == t3) {
-                nlPushMatrix(0x0);
-                t3 = 0xC0DCC70;
-                FUN_0c0dcc70((*(float *)((t5 + 0x0))), ((((struct o4_float *)(t5))->v)), ((((struct o8_float *)(t5))->v)));
-                t3 = 0xC0DC890;
-                nlRotateAY((*(short *)((t5 + 0xE))));
-                nlRotateAX((*(short *)((t5 + 0xC))));
-                nlRotateAZ((*(short *)((t5 + 0x10))));
-                t3 = 0xC0DCB80;
-                nlScale(1.79999995f, 0.199999988f, 1.79999995f);
-                FUN_0c0de000(1.79999995f);
-                t3 = 0xC0C4784;
-                FUN_0c0c4784(((((struct o78_int *)(a4))->v)), ((((struct o90_float *)(a4))->v)));
-                nlPopMatrix(0x1);
-            } else {
-                t27 = t3;
-            }
-            t5 = (t5 + 0x14);
-            t3 = t27;
-            t4 = (t4 + 0x1);
-        }
-        t30 = 0x4;
-    }
-    return t30;
-}
 
 int FUN_0c09363c(int a4, int a5)
 {

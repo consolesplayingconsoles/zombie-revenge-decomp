@@ -41,8 +41,8 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e49a0(int, int, int);
 int FUN_0c0e4ece(int, int, int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(void);
 int FUN_0c2212e0(int);
@@ -466,7 +466,7 @@ void FUN_0c0da5c0(float f4)
 
     FUN_0c0da610(((int)stk + 4), f4);
     *(volatile int *)(((int)stk + 4));
-    t2 = FUN_0c0e5f1c();
+    t2 = _modls();
     if (t2 == 0) {
         return;
     }

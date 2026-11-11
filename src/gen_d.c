@@ -85,8 +85,8 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
 extern int FUN_0c0e2a4c();
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int _quick_odd_mvn(int);
 int FUN_0c0e6248(int);
 int FUN_0c2134b2(int, int, int, int);
@@ -636,26 +636,6 @@ int FUN_0c04561a(int a4)
     return t16;
 }
 
-void FUN_0c046134(int a4)
-{
-    int t3;
-    int t4;
-    int t6;
-
-    *(volatile int *)((a4 + 0x4C0));
-    *(volatile int *)0xC2462F8;
-    *(volatile int *)0xC23ED70;
-    t3 = FUN_0c0e5dc0();
-    t4 = (a4 + t3);
-    if ((int)(a4 + t3) < 0) {
-        t4 = 0x0;
-    }
-    t6 = t4;
-    if ((int)t4 > (int)0xF) {
-        t6 = 0xF;
-    }
-    *(volatile int *)((0xC1FDCC0 + (t6 << 2)));
-}
 
 int FUN_0c048798(int a4)
 {

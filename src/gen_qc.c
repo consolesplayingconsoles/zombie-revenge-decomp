@@ -9,7 +9,7 @@ int FUN_0c0da2e0(void);
 int FUN_0c0db840(int);
 int FUN_0c0dbda0(int);
 int FUN_0c0dcca0(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlRotateAY(int);

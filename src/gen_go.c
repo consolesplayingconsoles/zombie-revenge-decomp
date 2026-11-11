@@ -50,7 +50,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e6248(int);
 int FUN_0c20e0ba(float);
 extern void _builtin_set_imask(int);

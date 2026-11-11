@@ -530,9 +530,7 @@ int FUN_0c07bcac(int a4, int a5, int a6)
                         u79 = 1.69999993f;
                     }
                     t41 = (FUN_0c0de000(u79));
-                    *(volatile int *)0xC23A258;
-                    t41 = 0x3;
-                    t41 = (FUN_0c0e5fe4());
+                    t41 = ((((*(unsigned int *)0xC23A258 >> 1) + t42) & 0xFF) % 3);
                     t41 = (FUN_0c0c465c((0x2BB + t41)));
                     t41 = (nlPopMatrix(0x1));
                 }

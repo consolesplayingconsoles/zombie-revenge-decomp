@@ -7,7 +7,7 @@ int FUN_0c0dbda0(int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(int, int, int, int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int nlGetAverageVector(int, int, int, float, float);
 float nlLength(int, int);
 int nlPopMatrix(int);

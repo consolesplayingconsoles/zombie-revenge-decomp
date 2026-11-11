@@ -15,7 +15,7 @@ int FUN_0c0dbda0(int);
 int FUN_0c0dcc70(float, float, float);
 int FUN_0c0de000(float);
 int FUN_0c0e19f2(void);
-extern int FUN_0c0e5f1c();
+extern int _modls();
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlRotateAX(int);
@@ -95,7 +95,7 @@ int FUN_0c096f50(int a4, int a5, int a6, int a7)
     v0_7 = (v0_8);
     w0_0 = (0.5f);
     if (((int)v0_8 >= (int)0x15)) goto L_C096FF0;
-    v0_8 = (((int (*)(int))(FUN_0c0e5f1c))(v0_0)) != 0;
+    v0_8 = (((int (*)(int))(_modls))(v0_0)) != 0;
     if (v0_8) goto L_C096FF0;
     v0_8 = (0x6);
     v0_0 = ((0x9D4 + v0_4));
@@ -201,7 +201,7 @@ int FUN_0c096f50(int a4, int a5, int a6, int a7)
     goto L_C0972F8;
     L_C097178:;
     FUN_0c0da2e0();
-    *(unsigned int *)((v0_7 + 0x0)) = ((((int (*)(void))(FUN_0c0e5f1c))()) + 0x2A7);
+    *(unsigned int *)((v0_7 + 0x0)) = ((((int (*)(void))(_modls))()) + 0x2A7);
     *(unsigned int *)((v0_7 + 0x10)) = 0x14;
     (((struct o18_float *)(v0_7))->v) = (((float)(unsigned char)(FUN_0c0da2e0()) / 512.0f) + w0_0);
     *(unsigned int *)((v0_7 + 0xC)) = (FUN_0c0da2e0());

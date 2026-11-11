@@ -9,7 +9,7 @@ int FUN_0c0c710e(int, int, int, float, float);
 int FUN_0c0c73e6(int, float, float);
 int FUN_0c0cc3f8(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int _quick_odd_mvn(int, int, float);
 int FUN_0c01906a(int a4, int a5, int a6, int a7);
 int FUN_0c039804(int a4);
@@ -153,41 +153,4 @@ int FUN_0c039804(int a4)
     return 0x5CC;
 }
 
-int FUN_0c0ba09c(int a4, int a5, int a6)
-{
-    int t1;
-    int t2;
-    int t4;
-    float u16;
-    int t26;
-    int t28;
-    int t24;
-
-    if (((((struct o80_int *)(a4))->v)) == 0) {
-        t1 = (((struct oA0_int *)(a4))->v);
-        (((struct oA0_uint *)(a4))->v) = (t1 + 0x1);
-        if (((t1 + 0x1) & 0x1F) == 0) {
-            t2 = (((struct oA8_int *)(a4))->v);
-            (((struct oA4_uint *)(a4))->v) = (((((struct oA4_int *)(a4))->v)) | (((int)t2 >= 0) ? (0x1 << (t2 & 31)) : ((-(int)t2 & 31) ? ((int)0x1 >> (-(int)t2 & 31)) : ((int)0x1 >> 31))));
-            t4 = (((struct oA8_int *)(a4))->v);
-            (((struct oA8_uint *)(a4))->v) = (t4 + 0x1);
-            if ((int)(t4 + 0x1) > (int)0x6) {
-                (((struct o80_uint *)(a4))->v) = 0x1;
-            }
-        }
-    }
-    u16 = *(float *)0xC0BA1A0;
-    if ((0x1 & ((((struct oA4_int *)(a4))->v))) != 0) {
-        FUN_0c0c710e(0xC112724, a5, a6, ((((struct o30_float *)(a4))->v)), u16);
-    } else {
-        t24 = 0x1;
-    }
-    t26 = (((struct oA4_int *)(a4))->v);
-    if ((t26 & 2) != 0) {
-        *(volatile int *)((a4 + 0xAC));
-        t28 = FUN_0c0e5f1c(t24);
-        return FUN_0c0c73e6(t28, (((((struct o30_float *)(a4))->v)) + (*(float *)0xC0BA1B0)), u16);
-    }
-    return t26;
-}
 

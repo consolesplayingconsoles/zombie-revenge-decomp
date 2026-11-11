@@ -74,7 +74,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e4428(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e6248(void);
 int FUN_0c22a560(int);
 int buSaveExecFile(int, int, int, int, int, int);
@@ -571,44 +571,6 @@ int FUN_0c01a3d8(int a4, int a5)
     return t0;
 }
 
-int FUN_0c034e2c(int a4)
-{
-    int t0;
-    int t1;
-    int t3;
-    int t4;
-    int t7;
-    int t11;
-
-    t0 = *(int *)((a4 + 0x4F4));
-    t1 = *(int *)((((((t0 << 1) + t0) << 2) + 0xC1F79B4) + 0x8));
-    *(volatile int *)(((t1 + 0x88) + 0x8));
-    t3 = *(int *)(((t1 + 0x88) + 0x0));
-    t4 = *(int *)(((t1 + 0x88) + 0x4));
-    if ((*(int *)((a4 + 0x49C))) == 3) {
-        FUN_0c0da2e0();
-        t7 = FUN_0c0e5f1c();
-        if ((int)(t7 - t3) > 0) {
-            *(unsigned int *)((a4 + 0x528)) = 0x2;
-        } else {
-            *(unsigned int *)((a4 + 0x528)) = 0x1;
-        }
-    } else {
-        FUN_0c0da2e0();
-        t11 = FUN_0c0e5f1c();
-        if ((int)(t11 - t3) <= 0) {
-            *(unsigned int *)((a4 + 0x528)) = 0x1;
-        } else {
-            if ((int)((t11 - t3) - t4) <= 0) {
-                *(unsigned int *)((a4 + 0x528)) = 0x2;
-            } else {
-                *(unsigned int *)((a4 + 0x528)) = 0x3;
-            }
-        }
-    }
-    *(unsigned int *)((a4 + 0x524)) = 0x1;
-    return 0x1;
-}
 
 int FUN_0c04be14(int a4)
 {
@@ -1943,32 +1905,5 @@ int FUN_0c0a8bb0(int a4)
 }
 
 
-int FUN_0c033d60(int a4, int a5, int a6, float f4, float f5)
-{
-    float u13;
-    float u14;
-    float u15;
-    int t19;
-
-    nlPushMatrix(0x0);
-    nlUnitMatrix();
-    FUN_0c0dcc70((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
-    nlRotateAZ((*(short *)((a5 + 0x4))));
-    nlRotateAY((*(short *)((a5 + 0x2))));
-    nlRotateAX((*(short *)((a5 + 0x0))));
-    nlScale((-(f5 / 1.0f)), (-(f5 / 1.0f)), (-(f4 / 10.0f)));
-    u13 = (f5 / 1.0f);
-    u14 = _builtin_fabsf((f4 / 10.0f));
-    u15 = _builtin_fabsf((f4 / 10.0f));
-    if (_builtin_fabsf((f5 / 1.0f)) > _builtin_fabsf((f4 / 10.0f))) {
-        u13 = _builtin_fabsf((f5 / 1.0f));
-        u14 = (f4 / 10.0f);
-        u15 = _builtin_fabsf((f5 / 1.0f));
-    }
-    FUN_0c0de000(u15);
-    t19 = *(int *)((((FUN_0c0e5f1c()) << 2) + 0xC1EFE10));
-    FUN_0c0c47ae(t19);
-    return nlPopMatrix(0x1);
-}
 
 

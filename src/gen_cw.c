@@ -72,7 +72,7 @@ int FUN_0c0e3930(int, int, int);
 int FUN_0c0e4428(int);
 int FUN_0c0e5740(void);
 int FUN_0c0e5930(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(void);
 int FUN_0c21b228(int, int, int, int);
 int crcchk(int, int, int, int);
@@ -100,7 +100,7 @@ extern int mwRnaErrCallFunc();
 int mwlRnaAlloc(void);
 int search_fat_dir(int, int);
 int set_fat(int, int);
-int thunk_FUN_0c011cfc(void);
+int thunk_FUN_0c011cfc(int);
 int vmsfb_create(int, int, int);
 int vmsfb_init(void);
 int vmsfs_write_retry(int, int, int);
@@ -199,7 +199,7 @@ int FUN_0c0d1f12(int a4)
                     }
                     t15 = t9;
                 } else {
-                    thunk_FUN_0c011cfc();
+                    thunk_FUN_0c011cfc(a4);
                     t15 = (FUN_0c0da2e0());
                 }
                 t23 = t15;
@@ -208,7 +208,7 @@ int FUN_0c0d1f12(int a4)
                 (((struct o60_uint *)(a4))->v) = 0x0;
                 FUN_0c011c6c();
                 *(unsigned int *)((a4 + 0x34)) = ((*(int *)((a4 + 0x34))) + 0x1);
-                thunk_FUN_0c011cfc();
+                thunk_FUN_0c011cfc(a4);
                 t23 = (FUN_0c0da2e0());
             }
             t29 = t23;
@@ -380,7 +380,7 @@ int FUN_0c22b866(int a4, int a5, int a6, int a7, float f4, float f5, float f6, f
     L_C22B96A:;
     *(volatile int *)(((int)stk + 8));
     *(volatile int *)((R14 + 0x8));
-    *(unsigned int *)((R14 + 0x30)) = (((FUN_0c0e5dc0()) << 2) << 1);
+    *(unsigned int *)((R14 + 0x30)) = (((_divls()) << 2) << 1);
     *(unsigned char *)((R14 + 0x0)) = 0x1;
     goto L_C22B97C;
 }

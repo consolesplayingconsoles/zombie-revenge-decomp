@@ -5,7 +5,7 @@ int FUN_0c01e822(int, int, int, int, int);
 int FUN_0c0da2e0(void);
 int FUN_0c0db470(int, int);
 int FUN_0c0dcc70(float, float, float);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 extern float _builtin_sqrtf(float);
 int nlPopMatrix(int);
 int nlPushMatrix(int);

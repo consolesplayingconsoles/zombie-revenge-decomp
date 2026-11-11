@@ -10,8 +10,8 @@ float FUN_0c0da510(float);
 int FUN_0c0db4d0(int, int);
 int nlTransposeMatrix(void);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(int);
+int _divls(void);
+int _modls(int);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c0e6f62(int, int, float);
 int FUN_0c0eaa22(int, int, float, float);
@@ -342,7 +342,7 @@ int FUN_0c0f3ccc(int a4, int a5, int a6)
         t2 = 0x0;
         for (;;) {
             *(unsigned char *)((t0 + 0x0)) = (((unsigned char)(*(signed char *)((t0 + 0x0))) + (unsigned char)(*(signed char *)((t1 + 0x0)))) + t2);
-            t5 = FUN_0c0e5dc0();
+            t5 = _divls();
             t2 = t5;
             t1 = (a5 - 1);
             t0 = (a4 - 1);
@@ -489,8 +489,8 @@ int FUN_0c0f2b34(int a4, int a5, int a6)
 
 int syRtcMakeDayOfWeek(int a4, int a5, int a6)
 {
-    FUN_0c0e5dc0();
-    return (FUN_0c0e5f1c(a4));
+    _divls();
+    return (_modls(a4));
 }
 
 void syHwFinish(void)

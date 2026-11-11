@@ -139,3 +139,8 @@ P 0C200A94   # FUN_0c1ffdb0 -> 0C10AC40
 P 0C200A98   # FUN_0c1ffdb0 -> 0C10AC70
 P 0C200AA8   # FUN_0c1ffdb0 -> 0C10ACA0
 P 0C231FAC   # FUN_0c231fac -> 0C231FB0
+# The model-to-slot table (16-bit numbers, 0C1127D8): words at the ends of number runs that the halves rule cannot tell from addresses
+N 0C112838   # 0C5F 0052
+N 0C113BF4   # 0C87 0000
+N 0C11487C   # 0C87 0B74
+N 0C119890   # 0C87 14FC

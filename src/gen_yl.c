@@ -8,7 +8,7 @@ int FUN_0c03442c(int, int, int, int, int, int);
 int FUN_0c034b1c(int, int);
 int FUN_0c035ce4(int);
 int FUN_0c0da2e0(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c02a288(int a4);
 struct o4E0_uint { char p[0x4E0]; unsigned int v; };
 struct o4EC_int { char p[0x4EC]; int v; };

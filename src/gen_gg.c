@@ -26,7 +26,7 @@ int FUN_0c0dcca0(int);
 int FUN_0c0dccf0(void);
 int FUN_0c0de000(float);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e5fe4(void);
 int kdGetDevice(int);
 int kdSetBlockWrite(Stk4);
@@ -666,7 +666,7 @@ int vmsio_block_write(int a4, int a5, int a6)
     t60 = (((int (*)(int, int, int, int))(R11))(R14, R5, R6, R7)) != 0;
     if (t60) goto L_C2324C2;
     *(volatile int *)(((int)stk + 16));
-    *(int *)((int)stk + 12) = ((FUN_0c0e5dc0()));
+    *(int *)((int)stk + 12) = ((_divls()));
     *(int *)((int)stk + 8) = ((*(int *)(((int)stk + 20))));
     *(int *)((int)stk + 4) = (R8);
     t67 = kdSetBlockWrite(*(Stk4 *)((int)stk + 4));

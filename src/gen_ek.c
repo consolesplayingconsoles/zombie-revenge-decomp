@@ -63,8 +63,8 @@ int FUN_0c0e262a(int);
 extern int FUN_0c0e2a4c();
 int FUN_0c0e5008(int, int, int);
 int FUN_0c0e542c(int, int, int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int FUN_0c0e5fe4(void);
 extern int FUN_0c22c932();
 int FUN_0c23370e(int, int);
@@ -1280,8 +1280,7 @@ int FUN_0c098b48(int a4, int a5, int a6, int a7)
     t1 = *(int *)((a4 + 0x38));
     t12 = (FUN_0c0685a4(a4, a5, a6, a7));
     if ((int)t1 < (int)0x1) {
-        FUN_0c0da2e0();
-        t3 = FUN_0c0e5fe4();
+        t3 = ((unsigned int)FUN_0c0da2e0() % 15);
         t5 = FUN_0c0e19aa(0xC0982FC, 0x308, (*(int *)0xC23ECF0));
         FUN_0c0e19d0(t5);
         *(unsigned int *)((t5 + 0x38)) = a4;

@@ -59,7 +59,7 @@ int FUN_0c0e18ce(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-extern int FUN_0c0e5f1c();
+extern int _modls();
 int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
 int FUN_0c0e631c(int, int, int);

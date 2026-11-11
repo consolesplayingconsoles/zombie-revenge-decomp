@@ -51,7 +51,7 @@ int nlAddVector(int, int);
 float nlLength(int, int);
 int FUN_0c0de000(float);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 int FUN_0c0e6118(void);
 int _quick_odd_mvn(int);

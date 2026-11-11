@@ -8,7 +8,7 @@ int ADXCRS_Unlock(void);
 int ADXERR_CallErrFunc(int, ...);
 int ADXF_GetFileRange(int, int, int, int);
 int ADXSTM_OpenRange(int, int, int);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c019a5c(int, int, int, int);
 int FUN_0c01cdf2(int);
 int FUN_0c01f8a0(int, int, int);
@@ -450,7 +450,7 @@ int ADXT_StartAfs(int a4, int a5, int a6)
 
     *(unsigned int *)(((int)stk + 24)) = a5;
     *(unsigned int *)(((int)stk + 28)) = a6;
-    ADXT_Stop();
+    ADXT_Stop(a4);
     ADXCRS_Lock();
     ADXF_GetFileRange((*(int *)(((int)stk + 24))), (*(int *)(((int)stk + 28))), ((int)stk + 16), (((int)stk + 16) + 0x4));
     t8 = ADXSTM_OpenRange((*(int *)(((int)stk + 16))), (*(int *)(((int)stk + 20))), (*(int *)((a4 + 0x10))));

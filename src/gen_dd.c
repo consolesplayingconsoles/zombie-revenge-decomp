@@ -29,8 +29,8 @@ int FUN_0c0de000(float);
 int FUN_0c0e064a(int, int);
 int FUN_0c0e06de(void);
 int FUN_0c0e19f2(int, int, int, int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int FUN_0c0e6118(void);
 extern int _quick_odd_mvn();
 int FUN_0c0e62e0(int, int, int);
@@ -227,89 +227,6 @@ int kmSetVertexRenderState(int a4, int a5, float f4)
     return 0x0;
 }
 
-int FUN_0c0aeabc(int a4, int a5, int a6)
-{
-    int t2;
-    float u3;
-    int t6;
-    float u46;
-    float u12;
-    float u26;
-
-    t2 = 0xC10F924;
-    u3 = 420.0f;
-    if ((*(int *)((a4 + 0x84))) == 0) {
-        t2 = 0xC10F918;
-        u3 = 50.0f;
-    }
-    FUN_0c0c710e(t2, a5, a6, u3, 400.0f);
-    t6 = *(int *)((a4 + 0x84));
-    nlPushMatrix(0x0);
-    nlUnitMatrix();
-    if ((*(int *)0xC23A1A0) == 0) {
-        u12 = (*(float *)(((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0x4)));
-    } else {
-        u12 = ((*(float *)(((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0x4))) + -0.0149999997f);
-    }
-    FUN_0c0dcc70((*(float *)(((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0x0))), u12, (*(float *)(((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0x8))));
-    nlRotateAZ(0x8000);
-    nlScale(0.00199999986f, 0.00199999986f, 0.00199999986f);
-    FUN_0c0de000(0.00199999986f);
-    FUN_0c0c465c((((*(int *)0xC23A258) & 0x7) + 0x34));
-    nlUnitMatrix();
-    if ((*(int *)0xC23A1A0) == 0) {
-        u26 = (*(float *)((((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0xC) + 0x4)));
-    } else {
-        u26 = ((*(float *)((((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0xC) + 0x4))) + -0.0149999997f);
-    }
-    FUN_0c0dcc70((*(float *)((((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0xC) + 0x0))), u26, (*(float *)((((((((t6 << 1) << 1) + (t6 << 1)) << 2) + 0xC202490) + 0xC) + 0x8))));
-    nlScale(0.00199999986f, 0.00199999986f, 0.00199999986f);
-    FUN_0c0de000(0.00199999986f);
-    FUN_0c0c465c((((*(int *)0xC23A258) & 0x7) + 0x34));
-    nlPopMatrix(0x1);
-    (((struct o10_float *)0xC24FA74)->v) = 1.0f;
-    (((struct o14_float *)0xC24FA74)->v) = 1.0f;
-    (((struct o2C_float *)0xC24FA74)->v) = 1.0f;
-    (((struct o1C_float *)0xC24FA74)->v) = 0.0f;
-    (((struct o18_float *)0xC24FA74)->v) = 0.0f;
-    (((struct o24_float *)0xC24FA74)->v) = 1.0f;
-    (((struct o20_float *)0xC24FA74)->v) = 1.0f;
-    (((struct o28_uint *)0xC24FA74)->v) = 0x0;
-    (((struct o30_uint *)0xC24FA74)->v) = 0xFFFFFFFF;
-    (((struct oC_float *)0xC24FA74)->v) = 0.00139999995f;
-    (((struct o4_float *)0xC24FA74)->v) = 320.0f;
-    (((struct o8_float *)0xC24FA74)->v) = 400.0f;
-    (((struct o0_uint *)0xC24FA74)->v) = ((((*(int *)((a4 + 0xA0))) / 60) / 10) + 0x2050);
-    (((struct o34_uint *)0xC24FA74)->v) = 0x3007;
-    FUN_0c0c0340(0xC24FA74);
-    (((struct o0_uint *)0xC24FA74)->v) = ((((*(int *)((a4 + 0xA0))) / 60) % 10) + 0x2050);
-    (((struct o34_uint *)0xC24FA74)->v) = 0x3005;
-    FUN_0c0c0340(0xC24FA74);
-    u46 = 500.0f;
-    if ((*(int *)((a4 + 0x84))) == 0) {
-        u46 = 140.0f;
-    }
-    (((struct o4_float *)0xC24FA74)->v) = u46;
-    (((struct o34_uint *)0xC24FA74)->v) = 0x300A;
-    if ((*(int *)0xC23A1A0) == 0) {
-        (((struct o0_uint *)0xC24FA74)->v) = 0x2074;
-    } else {
-        (((struct o0_uint *)0xC24FA74)->v) = 0x2078;
-    }
-    (((struct o8_float *)0xC24FA74)->v) = 302.0f;
-    FUN_0c0c0340(0xC24FA74);
-    if ((*(int *)0xC23A1A0) == 0) {
-        (((struct o0_uint *)0xC24FA74)->v) = 0x2075;
-    } else {
-        (((struct o0_uint *)0xC24FA74)->v) = 0x2079;
-    }
-    (((struct o8_float *)0xC24FA74)->v) = ((((struct o0_float *)0xC0AEE68)->v));
-    FUN_0c0c0340(0xC24FA74);
-    (((struct o8_float *)0xC24FA74)->v) = ((((struct o8_float *)0xC0AEE68)->v));
-    *(volatile int *)((a4 + 0xA0));
-    (((struct o0_uint *)0xC24FA74)->v) = ((FUN_0c0e5f1c()) + 0x203C);
-    return (FUN_0c0c0340(0xC24FA74));
-}
 
 
 int FUN_0c217b80(void)
@@ -792,7 +709,7 @@ int FUN_0c0f2100(int a4, int a5, int a6, int a7, int a8, int a9)
     d[7] = 0;
     *(int *)a6 = e - a4 + 1;
     FUN_0c0f2a30(a4, (int)c);
-    k = FUN_0c0e5dc0();
+    k = _divls();
     for (i = 0; i < 8 - k; i++) {
         c[i] = c[i + k];
     }
@@ -801,7 +718,7 @@ int FUN_0c0f2100(int a4, int a5, int a6, int a7, int a8, int a9)
     }
     FUN_0c0f29d8((int)c, 8, a4 - k * 8);
     FUN_0c0f2a30(a4 - 1, (int)b);
-    k = FUN_0c0e5dc0();
+    k = _divls();
     for (i = 0; i < 8 - k; i++) {
         b[i] = b[i + k];
     }

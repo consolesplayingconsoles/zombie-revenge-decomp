@@ -1,0 +1,60 @@
+{
+ "dev": [
+  {
+   "about": "123 in 3 digits, zeros suppressed",
+   "regs": {
+    "r4": "0000007B",
+    "r5": "00000003",
+    "r6": "00000001",
+    "fr4": 1.0
+   }
+  },
+  {
+   "about": "7 in 3 digits: two leading zeros suppressed",
+   "regs": {
+    "r4": "00000007",
+    "r5": "00000003",
+    "r6": "00000001",
+    "fr4": 1.0
+   }
+  },
+  {
+   "about": "a negative value: the minus branch",
+   "regs": {
+    "r4": "FFFFFFFB",
+    "r5": "00000002",
+    "r6": "00000000",
+    "fr4": 1.0
+   }
+  }
+ ],
+ "holdout": [
+  {
+   "about": "405 in 3 digits with zeros shown, scale 2.5",
+   "regs": {
+    "r4": "00000195",
+    "r5": "00000003",
+    "r6": "00000000",
+    "fr4": 2.5
+   }
+  },
+  {
+   "about": "40 in 2 digits, a zero digit after a nonzero one",
+   "regs": {
+    "r4": "00000028",
+    "r5": "00000002",
+    "r6": "00000001",
+    "fr4": 0.5
+   }
+  },
+  {
+   "about": "0 in 1 digit",
+   "regs": {
+    "r4": "00000000",
+    "r5": "00000001",
+    "r6": "00000001",
+    "fr4": 1.0
+   }
+  }
+ ]
+}

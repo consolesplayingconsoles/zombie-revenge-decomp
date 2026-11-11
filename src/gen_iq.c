@@ -15,7 +15,7 @@ int FUN_0c0dcc70(float, float, float);
 int FUN_0c0dcca0(int);
 int FUN_0c0de000(float);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int nlMultiMatrix(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
@@ -202,47 +202,6 @@ int FUN_0c0a350c(int a4, int a5, int a6, int a7)
     return FUN_0c0e19f2();
 }
 
-int FUN_0c0760c4(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-    register int t1;
-    register int t2;
-    register float u0;
-
-    if (((*(int *)0xC23A180) == 3) && (t0 = *(int *)0xC23ED5C, (t0 & 4) != 0)) {
-        FUN_0c0e19f2();
-    }
-    t0 = *(int *)0xC23ED9C;
-    if (((int)t0 >= (int)0x11) && ((int)t0 <= (int)0x12)) {
-        return 0x12;
-    }
-    nlPushMatrix(0x0);
-    FUN_0c0dcca0(0xC0FE620);
-    nlRotateAY((*(short *)0xC0FE62E));
-    FUN_0c0c465c((*(short *)0xC0FE632));
-    nlPopMatrix(0x1);
-    if ((((((struct o74_short *)(a4))->v)) & 32) != 0) {
-        t0 = 0x0;
-        t1 = 0xC0FE650;
-        for (;;) {
-            nlPushMatrix(0x0);
-            FUN_0c0dcca0(t1);
-            nlRotateAY((*(short *)((t1 + 0xE))));
-            *(volatile short *)((a4 + 0x74));
-            t2 = FUN_0c0e5dc0();
-            u0 = FUN_0c0da410(t2);
-            FUN_0c0c475c((*(short *)((t1 + 0x12))), (u0 * (1.0f + 1.0f)));
-            nlPopMatrix(0x1);
-            t0 = (t0 + 0x1);
-            t1 = (t1 + 0x18);
-            if ((unsigned int)t0 >= (unsigned int)0x2) {
-                break;
-            }
-        }
-    }
-    (((struct o74_ushort *)(a4))->v) = (((((struct o74_short *)(a4))->v)) + 0x1);
-    return FUN_0c075f30(a4);
-}
 
 
 

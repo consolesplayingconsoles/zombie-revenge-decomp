@@ -38,7 +38,7 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e1ade(int);
 int FUN_0c0e1dc4(int);
 int FUN_0c0e35b6(int, int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(void);
 int FUN_0c0e631c(int, int, int);
@@ -370,17 +370,6 @@ int FUN_0c0a2884(int a4, int a5, int a6, int a7)
     return t6;
 }
 
-void FUN_0c01a52c(int a4)
-{
-    int t3;
-
-    if (((*(int *)0xC23A1A8) & 0x101) == 0) {
-        *(volatile int *)(((a4 << 2) + 0xC23F25C));
-        t3 = *(int *)((((FUN_0c0e5dc0()) << 2) + 0xC1EFA24));
-        FUN_0c0c7354(t3, ((*(float *)(((a4 << 2) + 0xC0F52B4))) + 160.0f), 32.0f);
-    return;
-    }
-}
 
 
 int FUN_0c050dac(int a4)

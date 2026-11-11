@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int ADXSTM_GetStat(int);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c22a06c(int);
 int FUN_0c22a512(int);
 int adxt_RcvrReplay(int, int);
@@ -58,7 +58,7 @@ int FUN_0c22b13a(int a4, int a5, int a6, int a7)
     if ((v0_4 == 1)) goto L_C22B1B4;
     if ((v0_3 != 2)) goto L_C22B1B8;
     L_C22B1B4:;
-    ADXT_Stop();
+    ADXT_Stop(a4);
     L_C22B1B8:;
     if (((*(signed char *)((v0_1 + 0x6D))) == 0)) goto L_C22B1C8;
     (((struct o60_ushort *)(v0_1))->v) = v0_0;
@@ -86,7 +86,7 @@ int FUN_0c22b13a(int a4, int a5, int a6, int a7)
     v0_3 = *(signed char *)((v0_1 + 0x6D));
     v0_2 = (v0_3);
     if ((v0_3 != 1)) goto L_C22B258;
-    ADXT_Stop();
+    ADXT_Stop(a4);
     L_C22B260:;
     v0_2 = (0x6D);
     if (((*(signed char *)((v0_1 + 0x6D))) == 0)) goto L_C22B270;
@@ -102,7 +102,7 @@ int FUN_0c22b13a(int a4, int a5, int a6, int a7)
     v0_3 = *(signed char *)((v0_1 + 0x6D));
     v0_2 = (v0_3);
     if ((v0_3 != 1)) goto L_C22B290;
-    ADXT_Stop();
+    ADXT_Stop(a4);
     L_C22B298:;
     v0_2 = (0x6D);
     if (((*(signed char *)((v0_1 + 0x6D))) == 0)) goto L_C22B2A8;

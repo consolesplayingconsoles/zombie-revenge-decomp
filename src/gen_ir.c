@@ -97,7 +97,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e2400(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e631c(int, int, int);
 extern float _builtin_sqrtf(float);
 int mwPlyPreInitSofdec(void);
@@ -753,45 +753,6 @@ int FUN_0c03bc12(int a4)
     return t0;
 }
 
-int FUN_0c01af34(int a4)
-{
-    register int t33;
-
-    FUN_0c0de310(0.0f, 0.0f, 0.0f);
-    FUN_0c0c43dc(((((struct o8_int *)0xC23ED50)->v)), 0x0);
-    FUN_0c0c4364(((((struct o0_int *)0xC23ED50)->v)), 0x0);
-    FUN_0c0cc88c(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c018142();
-    FUN_0c018232();
-    FUN_0c01937a();
-    FUN_0c0b264e();
-    FUN_0c0b2e48();
-    FUN_0c0852bc(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c055936(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c058fa0(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c016d2c();
-    FUN_0c016d40();
-    FUN_0c016d74();
-    FUN_0c0534a4();
-    mwPlyPreInitSofdec();
-    FUN_0c04faa4();
-    FUN_0c04996a();
-    FUN_0c019a36();
-    (((struct o0_uint *)0xC23ED9C)->v) = 0x4;
-    FUN_0c01a874();
-    FUN_0c0cc752(((((struct o0_int *)0xC23ED50)->v)));
-    *(unsigned int *)((a4 + 0x34)) = (*(int *)((0xC2078A4 + ((*(short *)(((*(int *)0xC23ECFC) + 0x2))) << 2))));
-    *(volatile int *)((a4 + 0x34));
-    t33 = FUN_0c0e5dc0();
-    (((struct o8_uint *)0xC23ED9C)->v) = t33;
-    if ((*(int *)0xC204998) != 0) {
-        *(unsigned int *)0xC1FF890 = 0x0;
-    }
-    if (((*(int *)0xC23A1A8) & 0x101) == 0) {
-        *(unsigned int *)0xC1EFD5C = 0x0;
-    }
-    return t33;
-}
 
 int FUN_0c08c25a(int a4)
 {

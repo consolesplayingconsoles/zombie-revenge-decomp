@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_rx): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int FUN_0c22ee60(void);
 extern int FUN_0c22eeb2();
 int FUN_0c22f312(int, int, int, int, int, int);
@@ -65,7 +65,7 @@ int FUN_0c22ea0c(int a4, int a5, int a6)
     v0_8 = (v0_6);
     L_C22EA76:;
     *(volatile int *)((v0_6 + 0xC));
-    v0_4 = (FUN_0c0e5f1c(v0_6)) == 0;
+    v0_4 = (_modls(v0_6)) == 0;
     if (v0_4) goto L_C22EAB2;
     v0_10 = *(int *)((v0_6 + 0xC));
     R1012 = v0_10;

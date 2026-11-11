@@ -36,7 +36,7 @@ int FUN_0c0dcc70(float, float, float);
 int FUN_0c0dcca0(int);
 int FUN_0c0e262a(int);
 int FUN_0c0e2a4c(int);
-extern int FUN_0c0e5f1c();
+extern int _modls();
 int nlPopMatrix(int);
 int nlPushMatrix(int);
 int nlScale(float, float, float);

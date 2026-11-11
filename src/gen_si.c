@@ -1,7 +1,7 @@
 /* Straight-line functions with calls and guards (batch gen_si): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int kdDevGetStorageInfo(int, int);
 int kdGetDevice(int);
 int kdGetDeviceInfo(int);
@@ -108,9 +108,9 @@ int vmsio_get_media_info(int a4, int a5)
     *(unsigned int *)((v0_0 + 0x3C)) = (unsigned short)(*(short *)(((int)stk + 14)));
     (((struct o40_uint *)(v0_0))->v) = (unsigned short)(*(short *)(((int)stk + 12)));
     *(volatile short *)(((int)stk + 14));
-    (((struct o44_uint *)(v0_0))->v) = (FUN_0c0e5dc0());
+    (((struct o44_uint *)(v0_0))->v) = (_divls());
     *(volatile short *)(((int)stk + 12));
-    (((struct o48_uint *)(v0_0))->v) = (FUN_0c0e5dc0());
+    (((struct o48_uint *)(v0_0))->v) = (_divls());
     v0_2 = (0x0);
     goto L_C232222;
 }

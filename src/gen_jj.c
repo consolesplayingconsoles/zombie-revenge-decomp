@@ -11,7 +11,7 @@ int FUN_0c0c465c(int);
 int FUN_0c0cc3f8(int, int, int, int);
 int FUN_0c0da2e0(void);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int FUN_0c0e5fe4(void);
 int nlMultiMatrix(int);
 int nlPopMatrix(int);
@@ -215,33 +215,3 @@ int FUN_0c020962(int a4, int a5, int a6, int a7)
     return FUN_0c0e19f2();
 }
 
-int FUN_0c07cc3a(int a4, int a5, int a6, int a7)
-{
-    register int t13;
-    register int t17;
-    register int t23;
-
-    t13 = a4;
-    if (((*(int *)0xC23ED88) & 128) != 0) {
-        if ((*(int *)((a4 + 0x30))) == 0) {
-            FUN_0c0cc3f8(0x1431A9, a5, a6, a7);
-        } else {
-            t13 = a4;
-        }
-        *(unsigned int *)((a4 + 0x30)) = ((*(int *)((a4 + 0x30))) + 0x1);
-    }
-    if (((*(int *)0xC23ED88) & 128) == 0) {
-        *(volatile int *)((a4 + 0x30));
-        t17 = FUN_0c0e5f1c(t13);
-        t23 = t17;
-        if (t17 == 0) {
-            FUN_0c0da2e0();
-            t23 = FUN_0c0e5fe4();
-            *(unsigned short *)(((0x36 + a4) + 0x0)) = t23;
-        }
-    } else {
-        *(unsigned short *)((a4 + 0x36)) = 0xFFFFFFFF;
-        t23 = 0x36;
-    }
-    return t23;
-}

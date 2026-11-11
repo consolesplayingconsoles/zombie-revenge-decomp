@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0da2e0(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c04313c(int a4);
 struct o498_int { char p[0x498]; int v; };
 struct o4E0_uint { char p[0x4E0]; unsigned int v; };

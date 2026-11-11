@@ -588,3 +588,5 @@ func 0c235da0 ADXPD_ExecServer
 func 0c235fe6 send_message_in_current_mode(char*)
 func 0c236058 ADX_DecodeMonoFloat
 func 0c236170 ADX_DecodeSteFloat
+func 0c0ef250 FUN_0c0ef250
+func 0c0efd04 FUN_0c0efd04

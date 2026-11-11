@@ -4,7 +4,7 @@
 int ADXF_GetFileRange(int, int, int);
 int ADXSTM_GetCurOfst(int, int);
 int ADXSTM_GetStat(int);
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c016c10(int);
 int FUN_0c016c5e(int);
 int FUN_0c01d984(int);
@@ -1025,8 +1025,7 @@ int FUN_0c0cc6dc(void)
     if ((*(int *)0xC23A260) != 3) {
         FUN_0c0e40ec(0x0, 0x100A0, 0x0);
     }
-    *(volatile int *)0xC5158E4;
-    ADXT_Stop();
+    ADXT_Stop(*(int *)0xC5158E4);
     return FUN_0c0cc6ac();
 }
 

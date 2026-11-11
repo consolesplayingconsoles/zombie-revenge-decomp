@@ -52,7 +52,7 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
 int FUN_0c0e2794(int, int);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e5fe4(void);
 int _quick_odd_mvn(int, int);
 int setjmp(int, int, int, int, float, float, float, float, float, float, float, float);
@@ -343,8 +343,7 @@ int FUN_0c07c964(int a4)
     int t12;
     float u18;
 
-    FUN_0c0da2e0();
-    t1 = FUN_0c0e5fe4();
+    t1 = ((unsigned int)FUN_0c0da2e0() % 12);
     u2 = *(float *)(((0xC100DDC + ((((t1 << 1) + t1) << 2) << 1)) + 0x8));
     u3 = *(float *)(((0xC100DDC + ((((t1 << 1) + t1) << 2) << 1)) + 0x10));
     u4 = u2;
@@ -852,61 +851,6 @@ int FUN_0c08aa8e(int a4, int a5, int a6, int a7)
 
 
 
-int FUN_0c033c8c(int a4, int a5, int a6, float f4)
-{
-    float u0;
-    float u1;
-    float u2;
-    float u3;
-    float u4;
-    float u5;
-    float u7;
-    float u8;
-    float u9;
-    float u10;
-    float u22;
-    float u23;
-    float u24;
-    int t29;
-    int stk[10];
-    float s1;
-
-    *(float *)(((int)stk + 16)) = f4;
-    *(unsigned int *)(((int)stk + 12)) = a6;
-    u0 = *(float *)((a4 + 0x0));
-    u1 = *(float *)((a5 + 0x0));
-    u2 = *(float *)((a5 + 0x4));
-    u3 = *(float *)((a4 + 0x4));
-    u4 = *(float *)((a5 + 0x8));
-    u5 = *(float *)((a4 + 0x8));
-    FUN_0c0a7714(((int)stk + 4), (((int)stk + 4) + 0x4), (u1 - u0), (u2 - u3), (u4 - u5));
-    u7 = ((u2 - u3) * (u2 - u3));
-    u7 = u7 + (u1 - u0) * (u1 - u0);
-    u8 = u7;
-    u8 = u8 + (u4 - u5) * (u4 - u5);
-    u9 = *(float *)0xC033E0C;
-    u10 = *(float *)(((int)stk + 16));
-    nlPushMatrix(0x0);
-    nlUnitMatrix();
-    FUN_0c0dcc70((*(float *)((a4 + 0x0))), (*(float *)((a4 + 0x4))), (*(float *)((a4 + 0x8))));
-    nlRotateAY((*(int *)(((int)stk + 8))));
-    nlRotateAX((*(int *)(((int)stk + 4))));
-    s1 = _builtin_sqrtf(u8);
-    nlScale((-(u10 / 1.0f)), (-(u10 / 1.0f)), (-(s1 / u9)));
-    u22 = (u10 / 1.0f);
-    u23 = _builtin_fabsf((s1 / u9));
-    u24 = _builtin_fabsf((s1 / u9));
-    if (_builtin_fabsf((u10 / 1.0f)) > _builtin_fabsf((s1 / u9))) {
-        u22 = _builtin_fabsf((u10 / 1.0f));
-        u23 = (s1 / u9);
-        u24 = _builtin_fabsf((u10 / 1.0f));
-    }
-    FUN_0c0de000(u24);
-    *(volatile int *)(((int)stk + 12));
-    t29 = *(int *)((((FUN_0c0e5f1c()) << 2) + 0xC1EFE10));
-    FUN_0c0c47ae(t29);
-    return (nlPopMatrix(0x1));
-}
 
 int FUN_0c04d8e0(int a4, int a5)
 {

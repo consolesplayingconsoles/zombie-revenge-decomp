@@ -1,3 +1,4 @@
+int FUN_0c031014(int);
 /* Straight-line functions with calls and guards (batch gen_jn): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
@@ -118,7 +119,7 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e2030(int);
 int FUN_0c0e2400(void);
 int FUN_0c0e2a4c(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c22cd00(void);
 int FUN_0c22cd18(int, int);
 int FUN_0c232e00(int);
@@ -216,7 +217,7 @@ void FUN_0c0193f8(int a4);
 int FUN_0c01bea2(int a4, int a5);
 int FUN_0c02c2f0(int a4);
 int FUN_0c02ccfa(int a4);
-int FUN_0c0310b4(int a4);
+int FUN_0c0310b4(int a4, int a5, int a6, int a7);
 int FUN_0c030de0(int a4);
 int FUN_0c0bed98(void);
 int FUN_0c0cbf12(void);
@@ -1602,15 +1603,15 @@ int FUN_0c02ccfa(int a4)
     return 0x304;
 }
 
-int FUN_0c0310b4(int a4)
+int FUN_0c0310b4(int a4, int a5, int a6, int a7)
 {
     register int t2;
 
-    t2 = ((int (*)(int))((*(int *)(((((*(int *)((a4 + 0x48C))) - 47) << 2) + 0xC1EFDD0)))))(a4);
-    if ((*(int *)((a4 + 0x4FC))) != 0) {
+    t2 = ((int (*)(int, int, int, int))((*(int *)((((((((struct o48C_int *)(a4))->v)) - 47) << 2) + 0xC1EFDD0)))))(a4, a5, a6, a7);
+    if (((((struct o4FC_int *)(a4))->v)) != 0) {
         return FUN_0c030ec8(a4);
     }
-    return ((int (*)(int))(0xC031014))(a4);
+    return FUN_0c031014(a4);
 }
 
 int FUN_0c030de0(int a4)
@@ -2018,21 +2019,6 @@ int FUN_0c0cca88(int a4)
     return t0;
 }
 
-int FUN_0c0ce042(void)
-{
-    register int t6;
-    register int t7;
-
-    if (((*(int *)0xC23A258) & 20) == 0) {
-        *(unsigned int *)0xC23F244 = ((*(int *)0xC23F244) ^ 0x1);
-    }
-    t6 = *(int *)0xC23ED50;
-    if (t6 != 11) {
-        t7 = *(int *)0xC522A40;
-        return ((int (*)(int))(t7))(0xC23F1AC);
-    }
-    return t6;
-}
 
 int FUN_0c01688a(void)
 {

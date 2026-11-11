@@ -71,7 +71,7 @@ int FUN_0c0de2c0(int);
 int FUN_0c0e18ce(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_odd_mvn(void);
 extern float _builtin_sqrtf(float);
 int strlen(int);

@@ -63,7 +63,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e6248(void);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c22b6c8(int);
@@ -567,97 +567,6 @@ int FUN_0c0160d2(int a4, int a5, int a6, int a7)
 }
 
 
-int FUN_0c042fd0(int a4, int a5, int a6)
-{
-    int t0;
-    int t4;
-    int t5;
-    int t11;
-    int t13;
-    int t14;
-    int t15;
-    int t26;
-    int t27;
-    int t29;
-    int t12;
-    int t21;
-    int t22;
-    int t25;
-    int t31;
-
-    t0 = *(int *)0xC247074;
-    if (t0 == 0) {
-        FUN_0c0da2e0();
-        *(volatile int *)0xC247070;
-        t4 = 0x0;
-        t5 = (FUN_0c0e5f1c());
-        for (;;) {
-            if ((*(int *)(((t4 << 2) + 0xC247030))) == 4) {
-                t5 = (t5 - 1);
-            }
-            if ((int)t5 >= 0) {
-                t4 = (t4 + 0x1);
-                if ((int)t4 >= (int)0x2) {
-                    break;
-                }
-                continue;
-            }
-            (((struct o510_uint *)(a4))->v) = t4;
-            t4 = 0x1;
-            (((struct o50C_uint *)(a4))->v) = t4;
-            return 0x50C;
-        }
-        (((struct o50C_uint *)(a4))->v) = 0x0;
-    } else {
-        t11 = 0x84;
-        t13 = 0x0;
-        t14 = a6;
-        t15 = t0;
-        for (;;) {
-            if ((unsigned int)t13 >= (unsigned int)0x8) {
-                break;
-            }
-            t14 = 0xC246FF0;
-            t14 = (t14 + t13);
-            t11 = 0xC246FF0;
-            t11 = (t11 + 0x40);
-            t11 = (*(int *)((t13 + t11)));
-            t14 = (*(int *)((t14 + 0x0)));
-            if ((t11 == 4) && (t21 = (t11 == 4), t11 = 0x32C, t22 = *(int *)((t14 + t11)), t12 = t22, (int)t12 > 0)) {
-                t15 = (t15 + 0x1);
-            }
-            t13 = (t13 + 0x4);
-        }
-        FUN_0c0da2e0();
-        t26 = 0x0;
-        t27 = (FUN_0c0e5f1c());
-        for (;;) {
-            t29 = *(int *)(((0xC246FF0 + (t26 << 2)) + 0x0));
-            if ((*(int *)(((t26 << 2) + 0xC247030))) == 4) {
-                if (((int)t26 >= (int)0x2) || (t31 = (((struct o32C_int *)(t29))->v), t25 = t31, (int)t25 > 0)) {
-                    t27 = (t27 - 1);
-                }
-                if ((int)t27 < 0) {
-                    break;
-                }
-                t26 = (t26 + 0x1);
-                if ((int)t26 >= (int)0xC) {
-                    (((struct o50C_uint *)(a4))->v) = 0x0;
-                    return 0x50C;
-                }
-                continue;
-            }
-            t26 = (t26 + 0x1);
-            if ((int)t26 >= (int)0xC) {
-                (((struct o50C_uint *)(a4))->v) = 0x0;
-                return 0x50C;
-            }
-        }
-        (((struct o510_uint *)(a4))->v) = t26;
-        (((struct o50C_uint *)(a4))->v) = 0x1;
-    }
-    return 0x50C;
-}
 
 int FUN_0c023de0(int a4, int a5, int a6, int a7, float f4, float f5)
 {

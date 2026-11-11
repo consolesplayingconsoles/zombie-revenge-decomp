@@ -21,7 +21,7 @@ int FUN_0c0df9fc(int, int);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e6248(void);
 extern float _builtin_sqrtf(float);
 int kmActivateFrameBuffer(int, int, int, int);

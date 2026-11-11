@@ -14,7 +14,7 @@ int FUN_0c0e1830(int, int);
 int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int FUN_0c0e6248(void);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
@@ -95,41 +95,6 @@ int FUN_0c08ac50(int a4)
     return 0x64;
 }
 
-int FUN_0c06e6b0(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-    register int t1;
-    register int t2;
-
-    if (((*(int *)0xC23ED5C) & 6) != 0) {
-        FUN_0c0e15d4((*(int *)((a4 + 0x30))));
-        *(unsigned int *)0xC247C60 = 0x0;
-        FUN_0c0e19f2();
-    }
-    t0 = FUN_0c0e16c0((*(int *)((a4 + 0x30))));
-    t1 = *(int *)((a4 + 0x38));
-    *(unsigned int *)((a4 + 0x38)) = (t1 + 0x1);
-    t2 = t0;
-    if ((int)(t1 + 0x1) > (int)0x78) {
-        FUN_0c0da2e0();
-        t0 = FUN_0c0e5f1c();
-        t1 = t0;
-        if ((int)t0 < (int)0x1) {
-            *(unsigned int *)((a4 + 0x38)) = 0x0;
-            t0 = (((struct o40_int *)(a4))->v);
-            (((struct o40_uint *)(a4))->v) = (t0 + 0x18);
-            FUN_0c06e56e(((t0 + 0x18) - 24), 0x1);
-            t0 = 0x4;
-            if ((*(float *)0xC06E78C) > ((((struct o4_float *)(((((struct o40_int *)(a4))->v))))->v))) {
-                (((struct o40_uint *)(a4))->v) = (*(int *)((a4 + 0x3C)));
-                t0 = 0x40;
-            }
-            t1 = t0;
-        }
-        t2 = t1;
-    }
-    return t2;
-}
 
 int FUN_0c02d32e(int a4, int a5, int a6, int a7, float f4)
 {

@@ -12,8 +12,8 @@ int FUN_0c0da2e0(void);
 int FUN_0c0db0a0(int, int);
 int FUN_0c0e262a(int);
 int FUN_0c0e40ec(int, int, int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(int);
+int _divls(void);
+int _modls(int);
 int FUN_0c22ee60(void);
 int FUN_0c22ee8c(int);
 int FUN_0c22eeb2(int, int, int);
@@ -298,7 +298,7 @@ int vmsfs_format(int a4, int a5, int a6, int a7, int a8)
             *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x30)) = 0x1;
             t3 = *(int *)((((a4 * 0x148) + 0xC956768) + 0x4));
             *(volatile int *)(((((((t3 << 2) + t3) << 2) << 2) + 0xC239D10) + 0xC));
-            *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x34)) = (FUN_0c0e5dc0());
+            *(unsigned int *)((((a4 * 0x148) + 0xC956768) + 0x34)) = (_divls());
         }
         t14 = vmsio_ismount(a4);
         t202 = 0xFFFFFF01;

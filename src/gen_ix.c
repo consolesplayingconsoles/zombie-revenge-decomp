@@ -69,7 +69,7 @@ int FUN_0c0e19f2(void);
 int FUN_0c0e1e6a(int);
 int FUN_0c0e2a4c(int);
 int FUN_0c0e35b6(int, int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c0ed62c(int);
 int FUN_0c0ed650(int);
@@ -847,34 +847,6 @@ int FUN_0c0afca4(int a4)
     return 0x50;
 }
 
-int FUN_0c01b9d4(int a4)
-{
-
-    FUN_0c0cc6dc();
-    if (((*(short *)(((*(int *)0xC23ECFC) + 0x6))) & 8) != 0) {
-        FUN_0c0bfa90();
-        FUN_0c0bf940();
-    }
-    FUN_0c0c43dc(((((struct o8_int *)0xC23ED50)->v)), 0x1);
-    FUN_0c0c4364(((((struct o0_int *)0xC23ED50)->v)), 0x1);
-    FUN_0c0cc88c(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c018142();
-    FUN_0c018232();
-    FUN_0c01937a();
-    FUN_0c0852bc(((((struct o0_int *)0xC23ED50)->v)));
-    (((struct oC_uint *)0xC23ED50)->v) = (((((struct oC_int *)0xC23ED50)->v)) & 0xFFFFFE7F);
-    FUN_0c01a874();
-    (((struct o0_uint *)0xC23ED9C)->v) = 0x7;
-    FUN_0c084b1a(((((struct o3C_int *)0xC23ED50)->v)), 0x0);
-    FUN_0c016d74();
-    FUN_0c0cc7d8(((((struct o0_int *)0xC23ED50)->v)));
-    FUN_0c04f7cc();
-    FUN_0c01a89c((a4 + 0x38));
-    *(volatile int *)((a4 + 0x38));
-    (((struct o8_uint *)0xC23ED9C)->v) = (FUN_0c0e5dc0());
-    (((struct o14_uint *)0xC23ED9C)->v) = 0x0;
-    return FUN_0c019a36();
-}
 
 int FUN_0c042e74(int a4)
 {

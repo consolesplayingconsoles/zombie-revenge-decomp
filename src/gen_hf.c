@@ -43,7 +43,7 @@ int FUN_0c0de000(float);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int nlAddVector(int, int);
 int nlGetAverageVector(int, int, int, float, float);
 int nlGetMatrix(int);

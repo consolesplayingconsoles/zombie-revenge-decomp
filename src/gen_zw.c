@@ -259,8 +259,7 @@ int FUN_0c09e290(int a4, int a5, int a6, int a7)
     v0_3 = R1008;
     R1004 = (0xC + v0_3);
     (((struct oC_float *)(v0_3))->v) = ((float)((FUN_0c0da2e0()) & 0xFFF) * w0_1);
-    FUN_0c0da2e0();
-    v0_3 = FUN_0c0e5fe4();
+    v0_3 = ((unsigned int)(FUN_0c0da2e0() & 0xFFF) % 7);
     *(unsigned int *)(((R1008) + 0x8)) = (0xC200FF0 + ((((v0_3 << 1) + v0_3) << 2) << 1));
     v0_4 = R1008;
     w0_4 = ((((struct oC_float *)((0xC200FF0 + ((((v0_3 << 1) + v0_3) << 2) << 1))))->v));

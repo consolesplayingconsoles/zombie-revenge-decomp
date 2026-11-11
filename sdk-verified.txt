@@ -272,3 +272,8 @@ syTmrGenStop
 syTmrGetCount
 syTmrInit
 syTmrMicroToCount
+syIntAdrChk_finish
+syIntAdrChk_getchar
+syIntAdrChk_init
+syIntAdrChk_printh
+sySqInit

@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 typedef struct { int w[4]; } Stk4;
-int ADXT_Stop(void);
+int ADXT_Stop(int);
 int FUN_0c010f58(void);
 int FUN_0c0115c0(void);
 int FUN_0c0161aa(int);
@@ -108,7 +108,7 @@ int FUN_0c0e262a(int);
 int FUN_0c0e36c4(int, int);
 int FUN_0c0e3792(int, int, int, int);
 int FUN_0c0e5664(int, int, int, int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int _quick_odd_mvn(void);
 int _slow_strcpy(int);
 int FUN_0c218da0(void);
@@ -1556,21 +1556,18 @@ int FUN_0c0cc642(int a4)
     int t27;
 
     if ((*(int *)0xC52292C) == a4) {
-        *(volatile int *)0xC5158E8;
-        t27 = ADXT_Stop();
+        t27 = ADXT_Stop(*(int *)0xC5158E8);
         *(unsigned int *)0xC522928 = ((*(int *)0xC522928) & (~a4));
         *(unsigned int *)0xC52292C = 0x0;
     } else {
         if ((*(int *)0xC522930) == a4) {
-            *(volatile int *)0xC5158EC;
-            t27 = ADXT_Stop();
+            t27 = ADXT_Stop(*(int *)0xC5158EC);
             *(unsigned int *)0xC522928 = ((*(int *)0xC522928) & (~a4));
             *(unsigned int *)0xC522930 = 0x0;
         } else {
             t27 = 0xC522934;
             if ((*(int *)0xC522934) == a4) {
-                *(volatile int *)0xC5158F0;
-                t27 = ADXT_Stop();
+                t27 = ADXT_Stop(*(int *)0xC5158F0);
                 *(unsigned int *)0xC522928 = ((*(int *)0xC522928) & (~a4));
                 *(unsigned int *)0xC522934 = 0x0;
             }

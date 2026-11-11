@@ -13,8 +13,8 @@ int FUN_0c062d4a(int, int, int, int, int, int, int);
 int FUN_0c062f54(int, int, int);
 int FUN_0c0c0340(int);
 float FUN_0c0da410(int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 extern int _quick_odd_mvn();
 int kmiCreateRegionArray(int, int, int, int, int, int);
@@ -156,91 +156,6 @@ int FUN_0c217e2a(void)
     return 0xC95265C;
 }
 
-int FUN_0c0d382a(int a4)
-{
-    int t99;
-    int t0;
-    int t80;
-    int t13;
-    float u29;
-    int t36;
-    float u41;
-    int t11;
-    int t12;
-    int t43;
-
-    t0 = (((struct o0_int *)0xC9433FC)->v);
-    t80 = t0;
-    if (t0 == 3) {
-    } else {
-        if ((*(int *)((a4 + 0x30))) != 0) {
-            *(unsigned int *)((a4 + 0x30)) = ((*(int *)((a4 + 0x30))) - 1);
-        } else {
-            if ((((((struct o3C_int *)0xC9433FC)->v)) != -1) && ((t11 = *(int *)((a4 + 0x38)), t11 == 0) && (t12 = *(int *)((a4 + 0x34)), t12 != 0))) {
-                t13 = *(int *)((a4 + 0x34));
-                *(unsigned int *)((a4 + 0x34)) = (t13 - 1);
-                if ((t13 - 1) == 0) {
-                    *(unsigned int *)((a4 + 0x38)) = 0x2;
-                }
-            }
-        }
-        (((struct o40_float *)(a4))->v) = 320.0f;
-        (((struct o48_float *)(a4))->v) = 0.00139999995f;
-        if (((((struct o3C_int *)0xC9433FC)->v)) == -1) {
-            (((struct o44_float *)(a4))->v) = ((*(float *)0xC2475BC) + 56.0f);
-            u29 = 1.29999995f;
-            u29 = u29 + ((((struct o20_float *)0xC0D3A6C)->v)) * (FUN_0c0da410(((*(int *)0xC23A258) << 8)));
-            (((struct o4C_float *)(a4))->v) = u29;
-            (((struct o50_float *)(a4))->v) = 1.29999995f;
-            *(unsigned int *)((a4 + 0x3C)) = 0x2065;
-            (((struct o70_uint *)(a4))->v) = 0x300E;
-            t80 = (FUN_0c0c0340((a4 + 0x3C)));
-        } else {
-            (((struct o4C_float *)(a4))->v) = 1.29999995f;
-            (((struct o50_float *)(a4))->v) = 1.29999995f;
-            if ((int)(*(int *)((a4 + 0x34))) >= (int)0x258) {
-                (((struct o44_float *)(a4))->v) = ((*(float *)0xC2475BC) + 56.0f);
-                (((struct o68_float *)(a4))->v) = 1.0f;
-                t43 = 0x2050;
-            } else {
-                t36 = *(int *)0xC23A258;
-                t43 = 0x205A;
-                if (((*(int *)0xC23A258) & 1) != 0) {
-                    t43 = 0x2050;
-                }
-                u41 = 0.599999964f;
-                u41 = u41 + ((((struct o0_float *)0xC0D3A6C)->v)) * (FUN_0c0da410((((t36 << 8) << 2) << 2)));
-                (((struct o68_float *)(a4))->v) = u41;
-            }
-            t99 = (*(int *)((a4 + 0x34))) / 60;
-            *(unsigned int *)((a4 + 0x3C)) = ((t99 / 10) + t43);
-            (((struct o70_uint *)(a4))->v) = 0x300F;
-            FUN_0c0c0340((a4 + 0x3C));
-            (((struct o40_float *)(a4))->v) = (((((struct o40_float *)(a4))->v)) - 13.0f);
-            *(unsigned int *)((a4 + 0x3C)) = ((t99 % 10) + t43);
-            (((struct o70_uint *)(a4))->v) = 0x300D;
-            FUN_0c0c0340((a4 + 0x3C));
-            (((struct o4C_float *)(a4))->v) = 0.599999964f;
-            (((struct o50_float *)(a4))->v) = 0.599999964f;
-            *(volatile int *)((a4 + 0x34));
-            FUN_0c0e5f1c();
-            *(volatile float *)0xC0D3A7C;
-            *(volatile float *)0xC0D3A80;
-            (((struct o40_float *)(a4))->v) = (((((struct o40_float *)(a4))->v)) + 54.0f);
-            (((struct o44_float *)(a4))->v) = (((((struct o44_float *)(a4))->v)) - 1.0f);
-            *(unsigned int *)((a4 + 0x3C)) = ((FUN_0c0e5dc0()) + t43);
-            (((struct o70_uint *)(a4))->v) = 0x300F;
-            FUN_0c0c0340((a4 + 0x3C));
-            (((struct o40_float *)(a4))->v) = (((((struct o40_float *)(a4))->v)) - 5.0f);
-            *(unsigned int *)((a4 + 0x3C)) = ((FUN_0c0e5f1c()) + t43);
-            (((struct o70_uint *)(a4))->v) = 0x300D;
-            FUN_0c0c0340((a4 + 0x3C));
-            (((struct o44_float *)(a4))->v) = (((((struct o44_float *)(a4))->v)) + 1.0f);
-            t80 = 0x44;
-        }
-    }
-    return t80;
-}
 
 int mpdrv_setcmd_force(int a4, int a5, int a6, int a7, int a8, int a9)
 {

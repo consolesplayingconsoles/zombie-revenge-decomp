@@ -67,8 +67,8 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 extern float _builtin_sqrtf(float);
 int nlAddVector(int, int);
 int nlGetMatrix(int);
@@ -526,59 +526,6 @@ int FUN_0c02448c(int a4, int a5, int a6, int a7, float f4)
     goto L_C024500;
 }
 
-int FUN_0c0906e8(int a4)
-{
-    register int t0;
-    register int t1;
-    register float u0;
-    register float u1;
-    register float u2;
-    register float u3;
-
-    t0 = (((struct o88_int *)(a4))->v);
-    if (t0 != 0) {
-        u0 = (-((((struct o90_float *)(a4))->v)));
-    } else {
-        u0 = ((((struct o90_float *)(a4))->v));
-    }
-    (((struct o94_float *)(a4))->v) = u0;
-    nlPushMatrix(0x0);
-    t1 = (((struct oA0_int *)(a4))->v);
-    if ((int)t1 > (int)0x9) {
-        *(volatile int *)((a4 + 0xA0));
-        (((struct o78_uint *)(a4))->v) = ((FUN_0c0e5dc0()) + 0x64);
-        nlUnitMatrix();
-        FUN_0c0dcc70((((*(float *)((((((t0 << 1) + t0) << 2) + 0xC200A7C) + 0x0))) + ((((struct o94_float *)(a4))->v))) + -0.699999988f), ((((struct o4_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v)), ((((struct o8_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v)));
-        FUN_0c0c465c(((((struct o78_int *)(a4))->v)));
-        *(volatile int *)((a4 + 0xA0));
-        (((struct o78_uint *)(a4))->v) = ((FUN_0c0e5f1c()) + 0x64);
-        nlUnitMatrix();
-        u0 = 0.699999988f;
-        u1 = ((*(float *)((((((t0 << 1) + t0) << 2) + 0xC200A7C) + 0x0))) + ((((struct o94_float *)(a4))->v)));
-        u2 = ((((struct o4_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v));
-        u3 = ((((struct o8_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v));
-    } else {
-        (((struct o78_uint *)(a4))->v) = (t1 + 0x64);
-        nlUnitMatrix();
-        u0 = ((((struct o94_float *)(a4))->v));
-        u1 = (*(float *)((((((t0 << 1) + t0) << 2) + 0xC200A7C) + 0x0)));
-        u2 = ((((struct o4_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v));
-        u3 = ((((struct o8_float *)(((((t0 << 1) + t0) << 2) + 0xC200A7C)))->v));
-    }
-    FUN_0c0dcc70((u1 + u0), u2, u3);
-    FUN_0c0c465c(((((struct o78_int *)(a4))->v)));
-    nlPopMatrix(0x1);
-    if (8.0f > ((((struct o90_float *)(a4))->v))) {
-        (((struct o90_float *)(a4))->v) = (((((struct o90_float *)(a4))->v)) + 0.799999952f);
-        return 0x90;
-    }
-    t0 = (((struct oA4_int *)(a4))->v);
-    (((struct oA4_uint *)(a4))->v) = (t0 + 0x1);
-    if ((int)(t0 + 0x1) > (int)0x6) {
-        return FUN_0c0e19f2();
-    }
-    return 0xA4;
-}
 
 
 int FUN_0c0314d8(int a4)

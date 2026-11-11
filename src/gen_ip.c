@@ -71,7 +71,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e262a(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int nlAddVector(int, int);
 int nlAddVector3op(int, int, int);
 int nlPopMatrix(int);
@@ -609,40 +609,6 @@ int FUN_0c0802c4(int a4)
     return FUN_0c07e2b0(a4);
 }
 
-int FUN_0c08238c(int a4, int a5)
-{
-    int stk[11];
-    register int t1;
-    register float t22;
-    int R1004;
-    int R1008;
-
-    R1004 = *(int *)((int)stk + 4);
-    R1008 = *(int *)((int)stk + 8);
-
-    R1004 = a4;
-    R1008 = a5;
-    t1 = *(int *)((((*(int *)0xC247CF8) << 2) + 0xC247CAC));
-    if (((((struct o3F4_int *)(t1))->v)) == 1) {
-        (((struct o3F4_uint *)(t1))->v) = 0x0;
-        (((struct o430_uint *)(t1))->v) = 0x4000;
-        *(volatile int *)((t1 + 0x3FC));
-        (((struct o434_uint *)(t1))->v) = (FUN_0c0e5dc0());
-        nlSubVector3op((0x338 + t1), (R1004), (0x254 + t1));
-        FUN_0c0dce80((0x338 + t1), (0x338 + t1), 0.5f);
-        nlSubVector3op((0x344 + t1), (R1008), (0x278 + t1));
-        FUN_0c0dce80((0x344 + t1), (0x344 + t1), 0.5f);
-        nlAddVector3op((0x350 + t1), (0x254 + t1), (0x338 + t1));
-        nlAddVector3op((0x35C + t1), (0x278 + t1), (0x344 + t1));
-    }
-    (((struct o430_uint *)(t1))->v) = (((((struct o430_int *)(t1))->v)) + ((((struct o434_int *)(t1))->v)));
-    t22 = FUN_0c0da410(((((struct o430_int *)(t1))->v)));
-    FUN_0c0dce80((((int)stk + 4) + 0x8), (0x338 + t1), t22);
-    nlSubVector3op((0x254 + t1), (0x350 + t1), (((int)stk + 4) + 0x8));
-    FUN_0c0dce80((((int)stk + 4) + 0x8), (0x344 + t1), t22);
-    nlSubVector3op((0x278 + t1), (0x35C + t1), (((int)stk + 4) + 0x8));
-    return (FUN_0c081e0c(t1));
-}
 
 int FUN_0c0b9f10(int a4)
 {

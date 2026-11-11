@@ -5,7 +5,7 @@ int FUN_0c0848bc(float, float, float);
 int FUN_0c0c47ae(int);
 int FUN_0c0da2e0(void);
 int FUN_0c0dbda0(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int nlGetMatrix(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);

@@ -4,7 +4,7 @@
 int ADXB_DecodeHeader(int, int, int, int, int, int, int, int, int, int, int, int);
 int ADXB_GetFormat(int);
 int FUN_0c0236ce(int);
-int FUN_0c02a35a(void);
+int FUN_0c02a35a(int);
 int FUN_0c02a416(int);
 int FUN_0c035828(int, int, int, int, int, float, float);
 int FUN_0c03593a(int);
@@ -38,8 +38,8 @@ int FUN_0c0dce80(int, int, float);
 int FUN_0c0de000(float);
 int FUN_0c0dfcee(float, float);
 int FUN_0c0e19f2(void);
-int FUN_0c0e5dc0(void);
-int FUN_0c0e5f1c(void);
+int _divls(void);
+int _modls(void);
 int _quick_odd_mvn(void);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c22b6c8(int);
@@ -584,7 +584,7 @@ int FUN_0c02b0c2(int a4)
     } else {
         t1 = FUN_0c03593a(a4);
         if (t1 != 0) {
-            t2 = FUN_0c02a35a();
+            t2 = FUN_0c02a35a(a4);
             if (t2 != 0) {
                 if (t2 != 1) {
                     if (t2 != 2) {
@@ -837,9 +837,9 @@ int FUN_0c22c602(int a4, int a5, int a6, int a7)
             *(volatile int *)((a4 + 0x3C));
             *(volatile int *)((a4 + 0x5C));
             *(volatile int *)((a4 + 0x8));
-            FUN_0c0e5dc0();
+            _divls();
             *(volatile int *)((a4 + 0x38));
-            FUN_0c0e5dc0();
+            _divls();
             *(volatile int *)((a4 + 0x94));
             FUN_0c233a38(((((struct o40_int *)(a4))->v)));
             if (((((struct o90_int *)(a4))->v)) == 2) {

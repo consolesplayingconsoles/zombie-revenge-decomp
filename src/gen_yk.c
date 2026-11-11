@@ -2,7 +2,7 @@
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
 int FUN_0c0dfcee(float, float);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c0df660(int a4, int a5, int a6);
 struct o0_uint { unsigned int v; };
 struct o10_uint { char p[0x10]; unsigned int v; };
@@ -50,7 +50,7 @@ int FUN_0c0df660(int a4, int a5, int a6)
     *(unsigned int *)(((int)stk + 16)) = ((((v0_0 << 1) + v0_1) + 0x3) & 0xFFFFFFFC);
     (((struct oC_uint *)0xC94C698)->v) = ((((v0_0 << 1) + v0_1) + 0x3) & 0xFFFFFFFC);
     *(volatile int *)(((int)stk + 12));
-    v0_0 = FUN_0c0e5dc0();
+    v0_0 = _divls();
     v0_1 = *(int *)(((int)stk + 16));
     *(unsigned int *)(((int)stk + 16)) = ((((v0_0 << 2) + v0_1) + 0x3) & 0xFFFFFFFC);
     (((struct o10_uint *)0xC94C698)->v) = ((((v0_0 << 2) + v0_1) + 0x3) & 0xFFFFFFFC);
@@ -60,7 +60,7 @@ int FUN_0c0df660(int a4, int a5, int a6)
     R1004 = 0x0;
     L_C0DF72C:;
     *(volatile int *)0xC94C6A0;
-    v0_0 = FUN_0c0e5dc0();
+    v0_0 = _divls();
     v0_1 = (v0_0);
     if (((int)(R1004) < (int)v0_0)) goto L_C0DF71A;
     return v0_1;

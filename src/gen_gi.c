@@ -33,7 +33,7 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(int);
 int FUN_0c0e262a(int);
-int FUN_0c0e5f1c(int);
+int _modls(int);
 int FUN_0c230334(void);
 int FUN_0c231fb4(int, int, int);
 extern int _builtin_get_imask(void);

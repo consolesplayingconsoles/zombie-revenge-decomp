@@ -158,10 +158,11 @@ int FUN_0c0bdec2(int a4, float f4, float f5, float f6);
 int FUN_0c0b8632(void);
 int FUN_0c0c73e6(int a4, float f4, float f5);
 int FUN_0c0d8ae0(int a4);
-int FUN_0c0df570(int a4);
+void FUN_0c0df570(int a4);
 int kmLoadTextureBlock(int a4, int a5, int a6, int a7);
 int vmsfs_mount2(int a4);
 int FUN_0c024324(int a4);
+void FUN_0c0df584(int a4, int a5);
 struct o14_float { char p[0x14]; float v; };
 struct o1EC_int { char p[0x1EC]; int v; };
 struct o1EC_uint { char p[0x1EC]; unsigned int v; };
@@ -1673,26 +1674,30 @@ int FUN_0c0d8ae0(int a4)
     return kmSetVertexRenderState(a4);
 }
 
-int FUN_0c0df570(int a4)
+void FUN_0c0df570(int a4)
 {
-    int t0;
-    int t2;
+    FUN_0c0dd280();
+    FUN_0c0df584(a4, 0xFFFFFFFF);
+}
 
-    t0 = FUN_0c0dd280();
-    t2 = *(int *)((a4 + 0x18));
-    if (((int)(*(int *)((a4 + 0x0))) >= 0) && (t2 != 0)) {
-        *(unsigned int *)0xFF000038 = 0xC;
-        *(unsigned int *)0xFF00003C = 0xC;
+void FUN_0c0df584(int a4, int a5)
+{
+    int t1;
+
+    t1 = *(int *)((a4 + 0x18));
+    if (((int)(*(int *)((a4 + 0x0))) >= 0) && (t1 != 0)) {
+        (((struct o0_uint *)0xFF000038)->v) = 0xC;
+        (((struct o4_uint *)0xFF000038)->v) = 0xC;
         nlPushMatrix(0x0);
         FUN_0c0de7a0(0xC9484E8);
         nlMultiMatrix(0xC9484A8);
-        *(unsigned int *)0xC948238 = (((t2 | (*(int *)0xC9482A8)) & 0x30000) | 0x818C0000);
-        *(unsigned int *)0xC94823C = 0x0;
-        *(unsigned int *)0xC948240 = (*(int *)0xC94C690);
-        FUN_0c0eca40(a4, 0xC948238, 0xFFFFFFFF, (*(int *)0xC94C694));
-        return nlPopMatrix(0x1);
+        (((struct o0_uint *)0xC948238)->v) = (((t1 | (*(int *)0xC9482A8)) & 0x30000) | 0x818C0000);
+        (((struct o4_uint *)0xC948238)->v) = 0x0;
+        (((struct o8_uint *)0xC948238)->v) = ((((struct o0_int *)0xC94C690)->v));
+        FUN_0c0eca40(a4, 0xC948238, a5, ((((struct o4_int *)0xC94C690)->v)));
+        nlPopMatrix(0x1);
+    return;
     }
-    return t0;
 }
 
 int kmLoadTextureBlock(int a4, int a5, int a6, int a7)

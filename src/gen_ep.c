@@ -6,7 +6,7 @@ int FUN_0c0cf88c(int, int, int, int);
 int FUN_0c0e1830(int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e1dc4(int);
-int FUN_0c0e5dc0(void);
+int _divls(void);
 int FUN_0c233800(int, int, int);
 int kmfSetVertexBufferBaseAddress(int, int);
 int nlMultiMatrixRevOrder(int);
@@ -42,7 +42,7 @@ int FUN_0c2333cc(int a4, int a5)
         if ((int)t0 >= (int)0x7F) {
             *(unsigned int *)((a5 + 0x0)) = 0x0;
         } else {
-            *(unsigned int *)((a5 + 0x0)) = (FUN_0c0e5dc0());
+            *(unsigned int *)((a5 + 0x0)) = (_divls());
         }
     }
     *(unsigned int *)((a4 + 0x30)) = (*(int *)((a5 + 0x0)));

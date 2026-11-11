@@ -45,7 +45,7 @@ int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e1dc4(int);
 int FUN_0c0e262a(int);
-int FUN_0c0e5f1c(void);
+int _modls(void);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(int);
 int FUN_0c229734(void);
@@ -555,24 +555,6 @@ void FUN_0c0cec9a(int a4)
     }
 }
 
-int FUN_0c0d2060(int a4)
-{
-    int t2;
-
-    FUN_0c0da2e0();
-    t2 = (0xFFFFFFFE & (FUN_0c0e5f1c()));
-    for (;;) {
-        if ((*(int *)(((((0x1 - a4) << 2) + 0xC943410) + 0x0))) != t2) {
-            break;
-        }
-        t2 = (t2 + 0x1);
-        if ((int)t2 >= (int)0x6) {
-            t2 = 0x0;
-        }
-    }
-    *(unsigned int *)((0xC943410 + (a4 << 2))) = t2;
-    return FUN_0c0d2040(a4, t2);
-}
 
 int FUN_0c0e1852(int a4, int a5, int a6)
 {

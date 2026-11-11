@@ -388,8 +388,8 @@ int FUN_0c085752(int a4, int a5, int a6, int a7, float f4, float f5, float f6)
     { struct mv3 { int w[3]; }; *(struct mv3 *)(((*(int *)(((int)stk + 20))) + 0x60)) = *(struct mv3 *)((v0_8 + 0x60)); }
     goto L_C085E5C;
     L_C085E40:;
-    *(volatile int *)(((int)stk + 20));
-    v0_10 = ((FUN_0c0e6118()));
+    /* manual: FUN_0c0e6118 is the block copy (r0 bytes, r1 from r2): the copy itself, as the 12-byte one below */
+    { struct mv27 { int w[27]; }; *(struct mv27 *)(((*(int *)(((int)stk + 20))))) = *(struct mv27 *)(v0_8); }
     goto L_C085E64;
     L_C085DC0:;
     v0_10 = ((((unsigned short)(*(short *)(((*(int *)(((int)stk + 24))) + 0x10))) + (*(int *)(((0x2E8 + v0_2) + 0x0)))) + (*(int *)((((0x2DC + v0_2) + v0_1) + 0x0)))));
