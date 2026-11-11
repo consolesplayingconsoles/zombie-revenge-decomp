@@ -12,8 +12,10 @@ save_net_info 136 nt_utl.lib 2871
 ntInfGetDnsServerAddress 116 nt_utl.lib 4164
 _bfslu 54 sh4nlfzz.lib 12709
 quick_strcpy1 100 softkey.elf 11740
+FUN_0c0efa90 620 sh4plfzz.elf 15420
 FUN_0c0f047a 104 teapot.elf 66486
 FUN_0c0f04ec 90 sh4plfzz.lib 55445
+FUN_0c0f1fc4 286 sh4plfzz.elf 22648
 FUN_0c0f23c8 140 teapot.elf 68820
 _ftod 124 teapot.elf 68968
 FUN_0c0f24ec 172 teapot.elf 61784
@@ -27,6 +29,7 @@ setjmp 102 sh4nlfzz.lib 142755
 _divws 72 softkey.elf 96420
 FUN_0c0f2fe4 236 sh4plfzz.lib 64752
 FUN_0c0f3148 96 sh4plfzz.lib 74700
+FUN_0c0f31dc 304 sh4plfzz.elf 24976
 FUN_0c0f3344 234 sh4plfzz.lib 79793
 FUN_0c0f3440 124 sh4plfzz.lib 81597
 FUN_0c0f34e0 724 teapot.elf 72680
@@ -134,7 +137,6 @@ FUN_0c221082 186 softkey.elf 474746
 gdFsGet1DirEnt 150 softkey.elf 475640
 gdFsReqRdPio 216 softkey.elf 477412
 syChainClx1Handler 170 softkey.elf 482610
-sySqInit 174 softkey.elf 483676
 syG2SysInit 396 softkey.elf 484368
 syTmrInt1SetEx 126 softkey.elf 485396
 syTmrGenSetInt 108 softkey.elf 485706
@@ -245,11 +247,15 @@ ADX_DecodeInfoExADPCM2 102 adxsmp01.elf 217420
 ADX_DecodeInfoExLoop 338 adxsmp01.elf 217522
 ADXPD_Create 120 cri_adxs.lib 68212
 FUN_0c235d04 156 cri_adxs.lib 68543
-syIntAdrChk_init 204 softkey.elf 588428
-syIntAdrChk_finish 86 softkey.elf 588868
 ADX_DecodeMonoFloat 258 adxsmp01.elf 224384
-FUN_0c0f1fc4 286 teapot.elf 67756 relaxed
-FUN_0c0f31dc 304 f40.elf 44264 relaxed
+FUN_0c0ed8dc 820 sh4plfzz.elf 45388 relaxed
+FUN_0c0ef250 2112 sh4plfzz.elf 13308 relaxed
+FUN_0c0efd04 1910 sh4plfzz.elf 16048 relaxed
+FUN_0c22d77a 198 softkey.elf 563418 relaxed
+kmiCreateRegionArray 1714 softkey.elf 580800 relaxed
+mpdrv_init_globals 552 softkey.elf 544728 relaxed
+syRtcCountToDate 354 mw_mpa01.elf 50528 relaxed
+syTmrGenMicroToCount 116 softkey.elf 486068 relaxed
 FUN_0c0d7210 160 libnaomi.lib 13916
 FUN_0c0d72b0 160 libnaomi.elf 3952
 FUN_0c0d7350 216 libnaomi.elf 4112

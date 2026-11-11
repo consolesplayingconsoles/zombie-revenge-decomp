@@ -144,3 +144,131 @@ N 0C112838   # 0C5F 0052
 N 0C113BF4   # 0C87 0000
 N 0C11487C   # 0C87 0B74
 N 0C119890   # 0C87 14FC
+# Pointers in FUN_0c1028d0 and FUN_0c10b9cc (data blocks listed as functions: no prologue anywhere): records, string and byte
+# pointers, and three callbacks into FUN_0c0a8730+0C (taken from asm, asm-functions.txt). Not 0C10BC30/0C10BC40: bytes of a table.
+P 0C10294C   # FUN_0c1028d0 data -> 0C102934
+P 0C1029F0   # FUN_0c1028d0 data -> 0C102958
+P 0C102AE0   # FUN_0c1028d0 data -> 0C1029FC
+P 0C102AE8   # FUN_0c1028d0 data -> 0C102A90
+P 0C102B98   # FUN_0c1028d0 data -> 0C102AF4
+P 0C102BA8   # FUN_0c1028d0 data -> 0C102B40
+P 0C102D00   # FUN_0c1028d0 data -> 0C102CC0
+P 0C102D20   # FUN_0c1028d0 data -> 0C102CCC
+P 0C102EC8   # FUN_0c1028d0 data -> 0C102E30
+P 0C102F24   # FUN_0c1028d0 data -> 0C102ED4
+P 0C102FE4   # FUN_0c1028d0 data -> 0C102F30
+P 0C102FEC   # FUN_0c1028d0 data -> 0C102F94
+P 0C1030DC   # FUN_0c1028d0 data -> 0C102FF8
+P 0C1030E4   # FUN_0c1028d0 data -> 0C103044
+P 0C103188   # FUN_0c1028d0 data -> 0C1030F0
+P 0C10322C   # FUN_0c1028d0 data -> 0C103194
+P 0C1032D0   # FUN_0c1028d0 data -> 0C103238
+P 0C103374   # FUN_0c1028d0 data -> 0C1032DC
+P 0C1033D8   # FUN_0c1028d0 data -> 0C103380
+P 0C1033E0   # FUN_0c1028d0 data -> 0C1033CC
+P 0C103484   # FUN_0c1028d0 data -> 0C1033EC
+P 0C10B9F8   # FUN_0c10b9cc data -> 0C10B9D0
+P 0C10BA14   # FUN_0c10b9cc data -> 0C10B9D4
+P 0C10BA30   # FUN_0c10b9cc data -> 0C10B06C
+P 0C10BC4C   # FUN_0c10b9cc data -> 0C10BC2E
+P 0C10BC50   # FUN_0c10b9cc data -> 0C10BC31
+P 0C10BC54   # FUN_0c10b9cc data -> 0C10BC37
+P 0C10D4D0   # FUN_0c10b9cc data -> 0C10D390
+P 0C10D4E8   # FUN_0c10b9cc data -> 0C10D3A8
+P 0C10D500   # FUN_0c10b9cc data -> 0C10D3C0
+P 0C10D518   # FUN_0c10b9cc data -> 0C10D4B0
+P 0C10D7B4   # FUN_0c10b9cc data -> 0C10D51C
+P 0C10D7BC   # FUN_0c10b9cc data -> 0C10D6C0
+P 0C10D7CC   # FUN_0c10b9cc data -> 0C10D570
+P 0C10DB50   # FUN_0c10b9cc data -> 0C10DB42
+P 0C10DB6C   # FUN_0c10b9cc data -> 0C10DEA8
+P 0C10DB80   # FUN_0c10b9cc data -> 0C10DED4
+P 0C10DBA8   # FUN_0c10b9cc data -> 0C10DF00
+P 0C10DBBC   # FUN_0c10b9cc data -> 0C10DF30
+P 0C10DBD0   # FUN_0c10b9cc data -> 0C10DF40
+P 0C10DBE4   # FUN_0c10b9cc data -> 0C10DF68
+P 0C10DBF8   # FUN_0c10b9cc data -> 0C10DF88
+P 0C10DC0C   # FUN_0c10b9cc data -> 0C10DFB4
+P 0C10DD04   # FUN_0c10b9cc data -> 0C10DCDC
+P 0C10DD20   # FUN_0c10b9cc data -> 0C10DD0C
+P 0C10DD28   # FUN_0c10b9cc data -> 0C10DD18
+P 0C10DD44   # FUN_0c10b9cc data -> 0C10DD30
+P 0C10DD4C   # FUN_0c10b9cc data -> 0C10DD3C
+P 0C10DFE0   # FUN_0c10b9cc data -> 0C0A873C
+P 0C10DFF8   # FUN_0c10b9cc data -> 0C0A873C
+P 0C10E010   # FUN_0c10b9cc data -> 0C0A873C
+P 0C10E030   # FUN_0c10b9cc data -> 0C10E020
+P 0C10E04C   # FUN_0c10b9cc data -> 0C10E038
+P 0C10E054   # FUN_0c10b9cc data -> 0C10E044
+P 0C10E070   # FUN_0c10b9cc data -> 0C10E05C
+P 0C10E088   # FUN_0c10b9cc data -> 0C10E05C
+P 0C10E090   # FUN_0c10b9cc data -> 0C10E080
+# Numbers the generic 0c rule took for addresses (2026-11-11): packed byte fields whose top byte happens to be 0C. In the 16-byte
+# records at 0C1A5E00-0C1A8000 the word after the 3.0f is four bytes: of 184 records 104 start 00, 17 0B, 10 05; the 0C ones read
+# as odd addresses inside functions (0C080109 = FUN_0c0800c6+43), and relocating them changed the game's data.
+N 0C1A5F1C   # 0C010218
+N 0C1A5F5C   # 0C0A010A
+N 0C1A60AC   # 0C060106
+N 0C1A60BC   # 0C050106
+N 0C1A60CC   # 0C060106
+N 0C1A60DC   # 0C050106
+N 0C1A60EC   # 0C060116
+N 0C1A623C   # 0C080109
+N 0C1A624C   # 0C080109
+N 0C1A625C   # 0C080109
+N 0C1A626C   # 0C080109
+N 0C1A627C   # 0C080109
+N 0C1A628C   # 0C080109
+N 0C1A629C   # 0C080109
+N 0C1A62AC   # 0C080109
+N 0C1A639C   # 0C120109
+N 0C1A63AC   # 0C120109
+N 0C1A63BC   # 0C120109
+N 0C1A7CEC   # 0C010218
+N 0C237CD4   # 0C0C0606, in a byte table (06060606 0C0C0C0C 12121212)
+N 0C11031C   # 0C0D0005, two 16-bit numbers (neighbours FFFFFFFF 0C200008 0000FFFF)
+# More numbers the 0c and 8c rules took for addresses, all checked in the 20:40 build, where each came out changed (2026-11-11).
+# The rest of the same column of the 16-byte records (0C1A4860-0C1A82A0, word +0C of each record is four packed bytes):
+N 0C1A5D4C   # 0C010110
+N 0C1A5D5C   # 0C010110
+N 0C1A5D6C   # 0C010110
+N 0C1A5D7C   # 0C010110
+N 0C1A5E3C   # 0C1B0113
+N 0C1A5E4C   # 0C1B0113
+N 0C1A5E5C   # 0C1B0113
+N 0C1A5E6C   # 0C1B0113
+N 0C1A5E7C   # 0C1B0113
+N 0C1A5E8C   # 0C1B0113
+N 0C1A5EAC   # 0C010110
+N 0C1A645C   # 0C11020D
+N 0C1A646C   # 0C11020D
+N 0C1A647C   # 0C11020D
+N 0C1A648C   # 0C11020D
+# Stage object records (0C197xxx-0C1A0xxx): {0Dnn000t, 0, x, y, z, angle<<16, 0}; an angle of 0x0C8C reads as 0C8C0000:
+N 0C1973E8   # 0C8C0000
+N 0C1979A8   # 0C8C0000
+N 0C197FF4   # 0C8C0000
+N 0C198334   # 0C8C0000
+N 0C198894   # 0C8C0000
+N 0C198D58   # 0C8C0000
+N 0C19FE8C   # 0C8C0000
+N 0C1A0500   # 0C8C0000
+N 0C1A07A0   # 0C8C0000
+# Byte, colour and bitmap tables:
+N 0C10ABB0   # 0C80404F (505F5F5F 4F4F0B80 | 303F3F3F 2F2F0D80)
+N 0C1117E0   # 8C8C8C8D (a table of 80-BF bytes)
+N 0C1117EC   # 8C8C8B8C
+N 0C1117F0   # 8C8C8C8C
+N 0C1117F8   # 8C92B7BF
+N 0C11184C   # AC8BBF99
+N 0C1A3B54   # 8C4A2864 (next to 968C4A28)
+N 0C20BF40   # 0C0B0A14, inside the byte table 0C20BF18-0C20BF50 that the records after it point into
+N 0C0F47FC   # 0C480408, a row of a 1-bit font
+# Number tables:
+N 0C1EEED4   # 8C854E96, a high-entropy table (FUN_0c1eeec4 is data)
+N 0C202C70   # 8C170000 (next to 87D30000 89F50000)
+N 0C0FA30C   # 0C252A3F, in a float table (0D2B2AB7 0D21ED59 next to it)
+N 0C0FA550   # 0C5F0000, in a float table (0D2D0000 after it)
+# A number in a pool the C takes as a literal (2026-11-11): FUN_0c0ca794 passes it to FUN_0c0cbafc(0x3F7, 2, 0xFC01E000, value), which
+# keeps word & ~0xFC01E000 and ORs the value in: a render-state bit field inside the mask, not an address (mbuild.py number_values()).
+N 0C0CA8F0   # 0C01A000

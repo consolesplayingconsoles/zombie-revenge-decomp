@@ -64,14 +64,16 @@ def is_addr(v, lo, hi):
     return (v >> 24) in TOPS and lo <= ((v & 0x1FFFFFFF) | 0x0C000000) < hi
 
 
-def rewrite_literals(text, lo, hi, macro_consts=False):
+def rewrite_literals(text, lo, hi, macro_consts=False, numbers=frozenset()):
     """(text, {values}): every hex number of 7-8 digits in [lo, hi) (any RAM mirror) as ((int)A_<VALUE>), with its extern
-    declaration at the top; comment lines are left alone (a line that starts with `*` is code: a dereference)."""
+    declaration at the top; comment lines are left alone (a line that starts with `*` is code: a dereference). numbers: values
+    (0C mirror) that build/pointers.txt decides are numbers wherever the executable holds them (number_values()): they stay as
+    written (Zombie Revenge 0x0C01A000, a render-state bit field FUN_0c0ca794 passes to FUN_0c0cbafc, not an address)."""
     used = set()
 
     def sub(m):
         v = int(m.group(1), 16)
-        if not is_addr(v, lo, hi):
+        if not is_addr(v, lo, hi) or ((v & 0x1FFFFFFF) | 0x0C000000) in numbers:
             return m.group(0)
         used.add(v)
         before = m.string[:m.start()]
@@ -96,6 +98,28 @@ def rewrite_literals(text, lo, hi, macro_consts=False):
         out.append(LIT.sub(sub, l) if not s.startswith('/*') else l)      # a one-line comment; `*(int *)0x...` is code
     head = ''.join('extern char A_%08X[];\n' % v for v in sorted(used))
     return head + '\n'.join(out), used
+
+
+def needs_assembly(src, text, obj):
+    """True when the unit `text` must be written to `src` and assembled into `obj`: the source is missing or says something else, the
+    object is missing or empty, or the object is older than the source. A run that wrote the sources and stopped before assembling
+    them left the old objects behind with sources that already match (Zombie Revenge, 2026-11-11: 522 units from an earlier build,
+    which still defined six functions that had become C, linked beside the C: DUPLICATE SYMBOL)."""
+    return (not os.path.exists(src) or open(src).read() != text or not os.path.exists(obj) or os.path.getsize(obj) == 0
+            or os.path.getmtime(obj) < os.path.getmtime(src))
+
+
+def number_values(path='build/pointers.txt'):
+    """{value (0C mirror)}: the values every word of build/pointers.txt that holds them decides N (a number), at least one word.
+    The C's literals come from those words (pool words of the code it replaces), so a value no word calls an address is a number."""
+    dec = {}
+    if os.path.exists(path):
+        for l in open(path):
+            p = l.split()
+            if len(p) >= 3:
+                v = (int(p[1], 16) & 0x1FFFFFFF) | 0x0C000000
+                dec[v] = dec.get(v, True) and p[2] == 'N'
+    return {v for v, n in dec.items() if n}
 
 
 def mapper(pieces, dropped, second, syms, cfun, end, bss_end, link_top, keep=None, druns=None):
@@ -555,6 +579,7 @@ def main():
     import codeconsts                                    # a float read from a pool of code the C replaces: the constant itself
     gone = [(starts[i] & 0x1FFFFFFF, (starts[i + 1] if i + 1 < len(P) else end) & 0x1FFFFFFF) for i in sorted(dropped)]
     allv, nconst = set(), 0
+    numbers = number_values()                             # literals pointers.txt decides are numbers: left as they are
     calls = set()                                         # addresses the C calls through a cast: code that runs, not bytes that are read
     game_stems = set(gs.values())                         # the decomp's own files; the others are a mod's (mod-sources.txt)
     for f in glob.glob(cbuild.OUT + '/src/*.c') + glob.glob(cbuild.OUT + '/src/**/*.h', recursive=True):     # headers too: a mod's game.h holds function addresses
@@ -564,7 +589,8 @@ def main():
         for s, e, a, lit in reversed(hits):
             t = t[:s] + lit + t[e:]
         nconst += len(hits)
-        t, used = rewrite_literals(t, B.BASE, bss_end, macro_consts=f.endswith('.h') or os.path.basename(f)[:-2] not in game_stems)
+        t, used = rewrite_literals(t, B.BASE, bss_end, macro_consts=f.endswith('.h') or os.path.basename(f)[:-2] not in game_stems,
+                                   numbers=numbers)
         open(f, 'w').write(t)
         allv |= used
     say('prep: %d C functions in %d files replace %d pieces; %d float reads of their pools written as constants; %d address '
@@ -866,7 +892,7 @@ def main():
                     unit_veneer[k] = vpath
             for path_, t_ in outs:
                 o = path_.replace('/asm/', '/obj/')[:-4] + '.obj'
-                if not os.path.exists(path_) or open(path_).read() != t_ or not os.path.exists(o) or os.path.getsize(o) == 0:
+                if needs_assembly(path_, t_, o):
                     open(path_, 'w').write(t_)
                     jobs.append((path_, o))
         return jobs

@@ -1038,56 +1038,6 @@ int FUN_0c069480(int a4)
     return nlPopMatrix(0x1);
 }
 
-int FUN_0c093490(int a4, int a5)
-{
-    register int t0;
-    register int t1;
-    register int t2;
-    register int t3;
-    register int t4;
-    register int t5;
-    register int t6;
-    register int t7;
-    register int t8;
-
-    t1 = *(short *)((a5 + 0x6));
-    t2 = (((struct oC4_int *)(a4))->v);
-    t3 = *(int *)((((((unsigned short)t1 << 2) << 1) + 0xC10B954) + 0x4));
-    t4 = *(signed char *)((((((unsigned short)t1 << 2) << 1) + 0xC10B954) + 0x1));
-    if (((((struct oC0_int *)(a4))->v)) == (unsigned char)t4) {
-        t5 = *(short *)((((t2 << 1) + t3) + 0x0));
-        if (t5 != -1) {
-            t6 = FUN_0c0e19aa(0xC093524, 0xB4, (*(int *)0xC23ECF0));
-            FUN_0c0e19d0(t6);
-            (((struct o80_uint *)(t6))->v) = (unsigned char)(*(signed char *)((((((unsigned short)t1 << 2) << 1) + 0xC10B954) + 0x0)));
-            (((struct oA0_uint *)(t6))->v) = (unsigned short)(*(short *)((a5 + 0x2)));
-            (((struct oA4_uint *)(t6))->v) = (unsigned short)(*(short *)((a5 + 0x4)));
-            (((struct o8C_uint *)(t6))->v) = ((t2 << 1) + t3);
-            (((struct o88_uint *)(t6))->v) = ((((struct oBC_int *)(a4))->v));
-            t1 = *(int *)(((((((struct o88_int *)(t6))->v)) << 2) + 0xC246FF0));
-            t2 = 0xC246FF0;
-            if (t1 != 0) {
-                t3 = 0xA0;
-                if ((int)((((struct oA0_int *)(t6))->v)) <= (int)((((struct o2B4_int *)(t1))->v))) {
-                    t7 = (((struct o88_int *)(t6))->v);
-                    t8 = (((struct o80_int *)(t6))->v);
-                    if (((*(short *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x4))) == 0) && (t0 = *(short *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x6)), t0 == 0)) {
-                        *(unsigned short *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x4)) = (*(int *)(((0x404 + t1) + (((((struct o80_int *)(t6))->v)) << 2))));
-                    }
-                    *(unsigned short *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x6)) = ((*(short *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x6))) + 0x1);
-                    *(unsigned int *)((((((((t7 << 2) << 2) << 2) << 1) + 0xC248EF0) + ((t8 << 2) << 1)) + 0x0)) = (*(int *)((t6 + 0x8)));
-                    *(unsigned int *)((((((((struct o80_int *)(t6))->v)) << 2) + (0x404 + t1)) + 0x0)) = (*(short *)((((((struct o8C_int *)(t6))->v)) + 0x0)));
-                    *(unsigned int *)((t6 + 0x0)) = 0xC0935CC;
-                    t3 = 0x8C;
-                }
-                t2 = t3;
-            }
-            return t2;
-        }
-        return t5;
-    }
-    return (unsigned char)t4;
-}
 
 int FUN_0c04f414(int a4, int a5, int a6)
 {

@@ -510,16 +510,6 @@ int FUN_0c0906a0(int a4)
     return 0xA0;
 }
 
-int FUN_0c0a8730(void)
-{
-    int t1;
-
-    t1 = FUN_0c0a8bb0((*(int *)0xC23ED50));
-    *(unsigned int *)0xC23ED44 = 0x1;
-    *(unsigned int *)0xC23ED48 = 0x0;
-    *(unsigned int *)0xC23EDB0 = 0x0;
-    return t1;
-}
 
 void FUN_0c0a9e94(int a4, int a5, float f4)
 {
