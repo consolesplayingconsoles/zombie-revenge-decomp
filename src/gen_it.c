@@ -85,7 +85,7 @@ int FUN_0c02ea20(int a4, int a5, int a6, int a7);
 int FUN_0c03b40c(int a4, int a5);
 int FUN_0c0786a0(int a4, int a5, int a6, int a7);
 void FUN_0c07b640(void);
-int FUN_0c22d2b8(int a4, int a5, int a6);
+int FUN_0c22d2b8(int a4, int a5, int a6, int a7);
 int FUN_0c0172a0(int a4, int a5, int a6, int a7);
 int FUN_0c0b07a8(int a4, int a5, int a6, int a7);
 int FUN_0c213640(int a4, int a5, int a6);
@@ -519,7 +519,7 @@ void FUN_0c07b640(void)
     }
 }
 
-int FUN_0c22d2b8(int a4, int a5, int a6)
+int FUN_0c22d2b8(int a4, int a5, int a6, int a7)
 {
     register int t0;
     register int t1;
@@ -527,44 +527,34 @@ int FUN_0c22d2b8(int a4, int a5, int a6)
 
     t0 = FUN_0c22cfdc();
     if (a5 == 0) {
-        *(volatile int *)((a4 + 0x14));
-        *(volatile int *)((a4 + 0x20));
-        *(volatile int *)((a6 + 0x4));
-        t1 = ((int (*)(void))(_modls))();
-        *(volatile int *)((a6 + 0x0));
-        *(volatile int *)((a4 + 0x1C));
-        t2 = ((int (*)(int))(_modls))(t1);
-        if (a4 == t2) {
-            *(unsigned int *)((a4 + 0x14)) = a4;
+        t1 = *(int *)((a4 + 0x20));
+        t2 = (int)((int)(((*(int *)((a4 + 0x14))) + t1) - (*(int *)((a6 + 0x4)))) % (int)t1);
+        if (t2 == ((int)((int)((*(int *)((a6 + 0x0))) - (*(int *)((a4 + 0x1C)))) % (int)t1))) {
+            *(unsigned int *)((a4 + 0x14)) = t2;
             *(unsigned int *)((a4 + 0x10)) = ((*(int *)((a4 + 0x10))) + (*(int *)((a6 + 0x4))));
         } else {
             if ((*(int *)((a4 + 0x28))) == 0) {
             } else {
-                t1 = ((int (*)(int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD);
+                t1 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD, a6, a7);
             }
         }
     } else {
         if (a5 == 1) {
-            *(volatile int *)((a4 + 0x18));
-            *(volatile int *)((a4 + 0x20));
-            *(volatile int *)((a6 + 0x4));
-            t1 = ((int (*)(void))(_modls))();
-            *(volatile int *)((a6 + 0x0));
-            *(volatile int *)((a4 + 0x1C));
-            t2 = ((int (*)(int))(_modls))(t1);
-            if (a4 == t2) {
-                *(unsigned int *)((a4 + 0x18)) = a4;
+            t1 = *(int *)((a4 + 0x20));
+            t2 = (int)((int)(((*(int *)((a4 + 0x18))) + t1) - (*(int *)((a6 + 0x4)))) % (int)t1);
+            if (t2 == ((int)((int)((*(int *)((a6 + 0x0))) - (*(int *)((a4 + 0x1C)))) % (int)t1))) {
+                *(unsigned int *)((a4 + 0x18)) = t2;
                 *(unsigned int *)((a4 + 0xC)) = ((*(int *)((a4 + 0xC))) + (*(int *)((a6 + 0x4))));
             } else {
                 if ((*(int *)((a4 + 0x28))) != 0) {
-                    t1 = ((int (*)(int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD);
+                    t1 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD, a6, a7);
                 }
             }
         } else {
             *(unsigned int *)((a6 + 0x4)) = 0x0;
             *(unsigned int *)((a6 + 0x0)) = 0x0;
             if ((*(int *)((a4 + 0x28))) != 0) {
-                t1 = ((int (*)(int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD);
+                t1 = ((int (*)(int, int, int, int))((*(int *)((a4 + 0x28)))))((*(int *)((a4 + 0x2C))), 0xFFFFFFFD, a6, a7);
             }
         }
     }

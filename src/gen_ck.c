@@ -12,7 +12,7 @@ int FUN_0c01fa90(void);
 int FUN_0c02a35a(int);
 int FUN_0c02a416(int);
 int FUN_0c0359c0(int, int, int, int);
-float FUN_0c036e18(int, int, int);
+float FUN_0c036e18(int, int, int, float);
 int FUN_0c0465fa(int);
 int FUN_0c0498ce(void);
 int FUN_0c04c98e(int, int);
@@ -148,6 +148,7 @@ int FUN_0c0d9d20(float f4);
 int ADXSTMF_Create(int a4, int a5, int a6, int a7);
 int FUN_0c0725c8(void);
 int FUN_0c07a352(int a4, float f4);
+struct o49C_int { char p[0x49C]; int v; };
 struct o1BC_int { char p[0x1BC]; int v; };
 struct o1BC_uint { char p[0x1BC]; unsigned int v; };
 struct o20C_uint { char p[0x20C]; unsigned int v; };
@@ -382,35 +383,31 @@ int FUN_0c22b994(int a4, int a5, int a6, int a7)
 
 int FUN_0c032590(int a4, float f4, float f5)
 {
-    int t13;
-    int t3;
-    int t4;
-    float t5;
+    int stk[10];
+    register int t12;
+    register int t2;
+    register float t4;
+    register int t7;
     int t8;
-    int t9;
-    int stk[14];
-    float R1004;
 
-    R1004 = *(float *)((int)stk + 4);
-
-    R1004 = f5;
-    t13 = 0x0;
-    if ((*(int *)((0xC247030 + ((*(int *)((a4 + 0x510))) << 2)))) == 4) {
-        *(volatile int *)((a4 + 0x510));
-        t3 = ((int (*)(int, float, float))(_quick_odd_mvn))(a4, f4, f5);
-        t4 = ((int (*)(void))(_quick_odd_mvn))();
-        t5 = FUN_0c036e18((((int)stk + 4) + 0x1C), (((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4));
-        nlAddVector((0x4B0 + a4), (((int)stk + 4) + 0x4));
-        t13 = 0x0;
-        if (t5 > (R1004)) {
-            t8 = FUN_0c02a416(a4);
-            t13 = 0x0;
-            if ((t8 == 0) && (t9 = *(int *)((a4 + 0x49C)), t9 != 3)) {
-                t13 = 0x1;
+    *(float *)(((int)stk + 0)) = f5;
+    t12 = 0x0;
+    if ((*(int *)((0xC247030 + (((((struct o510_int *)(a4))->v)) << 2)))) == 4) {
+        t2 = (((struct o510_int *)(a4))->v);
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x1C)) = *(struct mv3 *)(((((((t2 << 1) + t2) << 2) << 2) << 2) + 0xC23F274)); }
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x10)) = *(struct mv3 *)((a4 + 0x30)); }
+        t4 = FUN_0c036e18((((int)stk + 0) + 0x1C), (((int)stk + 0) + 0x10), (((int)stk + 0) + 0x4), f4);
+        nlAddVector((0x4B0 + a4), (((int)stk + 0) + 0x4));
+        t12 = 0x0;
+        if (t4 > (*(float *)(((int)stk + 0)))) {
+            t7 = FUN_0c02a416(a4);
+            t12 = 0x0;
+            if ((t7 == 0) && (t8 = (((struct o49C_int *)(a4))->v), t8 != 3)) {
+                t12 = 0x1;
             }
         }
     }
-    return t13;
+    return t12;
 }
 
 int FUN_0c04ba58(int a4, int a5)

@@ -81,7 +81,7 @@ int FUN_0c0d70c8(int a4);
 int FUN_0c0d6592(int a4, int a5);
 float FUN_0c0da510(float f4);
 int FUN_0c0a92b0(int a4);
-void FUN_0c0da5c0(float f4);
+float FUN_0c0da5c0(float f4);
 int nlObjPutSetSaturate(float f4, float f5);
 int FUN_0c0e5008(int a4, int a5, int a6);
 int adxf_CloseSjStm(int a4);
@@ -459,21 +459,19 @@ int FUN_0c0a92b0(int a4)
     return 0x34;
 }
 
-void FUN_0c0da5c0(float f4)
+float FUN_0c0da5c0(float f4)
 {
-    int t2;
-    int stk[3];
+    int stk[1];
+    register float t0;
 
-    FUN_0c0da610(((int)stk + 4), f4);
-    *(volatile int *)(((int)stk + 4));
-    t2 = _modls();
-    if (t2 == 0) {
-        return;
+    t0 = FUN_0c0da610(((int)stk + 0), f4);
+    if (((int)((int)(*(int *)(((int)stk + 0))) % (int)0x2)) == 0) {
+        return t0;
     }
-    if (f4 != 0.0f) {
-        return;
+    if (t0 != 0.0f) {
+        return (-1.0f / t0);
     }
-    *(volatile float *)0xC0DA694;
+    return (*(float *)0xC0DA694);
 }
 
 int nlObjPutSetSaturate(float f4, float f5)

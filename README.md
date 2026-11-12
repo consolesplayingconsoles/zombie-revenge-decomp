@@ -1,6 +1,6 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=68&s=2)
+![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=68&s=3)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
@@ -21,18 +21,18 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE           68.4%  the instructions the cases ran, of all instructions, over the 5148 functions that can be C; the 5148 functions that reached the check are measured, the others count 0
-FUNCTIONS LEFT  (100.0% complete) 0  of the 5148 functions that can be C (163 with no C form are counted apart)
-BYTES LEFT      (100.0% complete) 0  of 876986 bytes of code that can be C
+TOTAL TEST COVERAGE           68.3%  the instructions the cases ran, of all instructions, over the 5189 functions that can be C; the 5189 functions that reached the check are measured, the others count 0
+FUNCTIONS LEFT  (100.0% complete) 0  of the 5189 functions that can be C (161 with no C form are counted apart)
+BYTES LEFT      (100.0% complete) 0  of 886768 bytes of code that can be C
 FUNCTIONS                            
-  unnamed                      4665  functions still called FUN_... (4665 of 5801)
+  unnamed                      4704  functions still called FUN_... (4704 of 5840)
   Not written C                   0  0 bytes
   Written C with errors           0  0 bytes
   Not drawn                       0  0 bytes
   Drawn with errors               0  0 bytes
   Checked with errors             0  0 bytes
   No C form                    2.8%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
-  documented                  14.1%  816 named functions in docs/*.md
+  documented                  14.0%  816 named functions in docs/*.md
 ```
 <!-- /progress -->
 

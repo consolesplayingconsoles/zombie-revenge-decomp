@@ -813,17 +813,17 @@ int FUN_0c046a20(int a4)
 
 int FUN_0c22c602(int a4, int a5, int a6, int a7)
 {
-    int t37;
-    int t7;
+    int stk[1];
+    register int t37;
+    register int t7;
     int t4;
-    int stk[4];
 
     if (a4 == 0) {
         return (mwRnaErrCallFunc(0xC237EE0, a5, a6, a7));
     }
     t37 = 0x94;
     if ((((((struct o94_int *)(a4))->v)) != 0) && (t4 = *(int *)((a4 + 0x38)), t4 != 0)) {
-        FUN_0c22b6c8(((int)stk + 4));
+        FUN_0c22b6c8(((int)stk + 0));
         if ((unsigned char)(*(signed char *)((a4 + 0x5))) == 1) {
             t7 = mwRnaGetTransSw(a4);
             if (t7 == 1) {
@@ -837,9 +837,7 @@ int FUN_0c22c602(int a4, int a5, int a6, int a7)
             *(volatile int *)((a4 + 0x3C));
             *(volatile int *)((a4 + 0x5C));
             *(volatile int *)((a4 + 0x8));
-            _divls();
             *(volatile int *)((a4 + 0x38));
-            _divls();
             *(volatile int *)((a4 + 0x94));
             FUN_0c233a38(((((struct o40_int *)(a4))->v)));
             if (((((struct o90_int *)(a4))->v)) == 2) {
@@ -851,7 +849,7 @@ int FUN_0c22c602(int a4, int a5, int a6, int a7)
             *(volatile int *)((a4 + 0x40));
             FUN_0c233a46();
         }
-        t37 = (FUN_0c22b6e0(((int)stk + 4)));
+        t37 = (FUN_0c22b6e0(((int)stk + 0)));
     }
     return t37;
 }

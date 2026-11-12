@@ -32,6 +32,7 @@ int buFbrExecFiberServer(int, int, int, int, float, float, float, float, float, 
 int buFbrInit(void);
 int buFbrSleepVFiber(void);
 #pragma inline_asm(iaOcbwb)
+struct o58_int { char p[0x58]; int v; };
 struct o10C0_uint { char p[0x10C0]; unsigned int v; };
 struct o10C4_uint { char p[0x10C4]; unsigned int v; };
 struct o10C8_uint { char p[0x10C8]; unsigned int v; };
@@ -562,10 +563,7 @@ int FUN_0c23332c(void)
 
 int mwlRnaAddFlshPos(int a4)
 {
-    *(volatile int *)((a4 + 0x60));
-    *(volatile int *)((a4 + 0x58));
-    *(volatile int *)((a4 + 0x30));
-    (((struct o58_uint *)(a4))->v) = (_modls(a4));
+    (((struct o58_uint *)(a4))->v) = ((int)((int)(((((struct o58_int *)(a4))->v)) + ((((struct o60_int *)(a4))->v))) % (int)(*(int *)((a4 + 0x30)))));
     (((struct o5C_uint *)(a4))->v) = (((((struct o5C_int *)(a4))->v)) + ((((struct o60_int *)(a4))->v)));
     (((struct o60_uint *)(a4))->v) = 0x0;
     return 0x60;
@@ -1496,37 +1494,9 @@ int mpdrv_get_autoflash(void)
     return (*(int *)((0xFBC + (*(int *)0xC98E18C))));
 }
 
-int FUN_0c232610(int a4, int a5, int a6)
-{
-    int t0;
 
-    t0 = *(int *)0x8C0000B8;
-    return ((int (*)(int, int, int, int))(t0))(a4, a5, a6, 0x0);
-}
 
-int FUN_0c232624(int a4, int a5, int a6)
-{
-    int t0;
 
-    t0 = *(int *)0x8C0000B8;
-    return ((int (*)(int, int, int, int))(t0))(a4, a5, a6, 0x1);
-}
-
-int FUN_0c232638(int a4, int a5, int a6)
-{
-    int t0;
-
-    t0 = *(int *)0x8C0000B8;
-    return ((int (*)(int, int, int, int))(t0))(a4, a5, a6, 0x2);
-}
-
-int FUN_0c23264c(int a4, int a5, int a6)
-{
-    int t0;
-
-    t0 = *(int *)0x8C0000B8;
-    return ((int (*)(int, int, int, int))(t0))(a4, a5, a6, 0x3);
-}
 
 int ADXB_EntryGetWrFunc(int a4, int a5, int a6)
 {

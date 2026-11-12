@@ -116,10 +116,9 @@ int FUN_0c22cb3c(int a4, int a5, int a6, int a7)
 
 int FUN_0c22c884(int a4, int a5, int a6, int a7)
 {
-    int t0;
-    int t1;
-    int t2;
-    int t5;
+    register int t0;
+    register int t1;
+    register int t2;
 
     if (a4 == 0) {
         return mwRnaErrCallFunc(0xC237EE0, a5, a6, a7);
@@ -132,10 +131,9 @@ int FUN_0c22c884(int a4, int a5, int a6, int a7)
     }
     *(unsigned int *)((a4 + 0x30)) = (((t2 >> 1) >> 1) >> 1);
     *(unsigned int *)((a4 + 0x8)) = a5;
-    *(volatile int *)((a4 + 0x30));
-    t5 = _divls();
-    *(unsigned int *)((a4 + 0x30)) = ((t5 << 2) << 1);
-    return ((t5 << 2) << 1);
+    t0 = (int)((int)(*(int *)((a4 + 0x30))) / (int)a5);
+    *(unsigned int *)((a4 + 0x30)) = ((t0 << 2) << 1);
+    return ((t0 << 2) << 1);
 }
 
 void FUN_0c0db490(int a4, int a5, int a6)

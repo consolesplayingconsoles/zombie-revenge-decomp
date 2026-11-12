@@ -300,7 +300,7 @@ int FUN_0c04e5b8(int a4, int a5)
 
 int FUN_0c0555ca(int a4, int a5, int a6, int a7)
 {
-    int t0;
+    register int t0;
 
     *(unsigned int *)0xC1FF888 = 0x1;
     if (((int)a5 >= (int)0x16) && ((int)a5 < (int)0x1D)) {
@@ -308,8 +308,8 @@ int FUN_0c0555ca(int a4, int a5, int a6, int a7)
         if (t0 == 0) {
             return 0xFFFFFFFF;
         }
-        _quick_odd_mvn(t0);
-        (((struct o25C_uint *)(a4))->v) = 0x0;
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((t0 + 0x60)) = *(struct mv3 *)(a7); }
+        (((struct o25C_uint *)(t0))->v) = 0x0;
         return 0x0;
     }
     return 0xFFFFFFFF;

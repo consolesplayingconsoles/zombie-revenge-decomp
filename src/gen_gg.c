@@ -3,6 +3,8 @@
 
 typedef struct { int w[4]; } Stk4;
 typedef struct { int w[7]; } Stk7;
+int kdIsChanged(int);
+int kdGetStatus(int);
 int FUN_0c01c46a(int, int);
 int FUN_0c01c86c(int, int);
 int FUN_0c01cb94(int, int);
@@ -29,8 +31,8 @@ int FUN_0c0e19f2(void);
 int _divls(void);
 int FUN_0c0e5fe4(void);
 int kdGetDevice(int);
-int kdSetBlockWrite(Stk4);
-int kdSetGetLastError(Stk4);
+int kdSetBlockWrite(int, ...);
+int kdSetGetLastError(int, ...);
 int nlGetMatrix(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
@@ -51,6 +53,8 @@ void FUN_0c01c274(int a4, int a5, int a6, int a7, float f4, float f5, float f6, 
 int ADX_DecodeSteFloat(int a4, int a5, int a6, int a7, int a8, int a9, int a10, int a11, float f4, float f5, float f6);
 int FUN_0c0c8e40(int a4, int a5, int a6, int a7, float f4);
 int vmsio_block_write(int a4, int a5, int a6);
+struct o40_int { char p[0x40]; int v; };
+struct o48_int { char p[0x48]; int v; };
 struct o20_float { char p[0x20]; float v; };
 struct o258_float { char p[0x258]; float v; };
 struct o32_short { char p[0x32]; short v; };
@@ -549,148 +553,192 @@ int ADX_DecodeSteFloat(int a4, int a5, int a6, int a7, int a8, int a9, int a10, 
 
 int vmsio_block_write(int a4, int a5, int a6)
 {
-    int t2;
-    int t14;
-    int t29;
-    int t31;
-    int t34;
-    int t36;
-    int t37;
-    int t40;
-    int t42;
-    int t47;
-    int t52;
-    int t60;
-    int t67;
-    int t70;
-    int t72;
-    int t73;
-    int t76;
-    int t78;
-    int stk[20];
+    int stk[11];
+    register int t2;
+    register int t5;
+    register int t16;
+    register int t19;
+    register int t22;
+    register int t23;
+    register int t26;
+    register int t44;
+    register int t46;
+    register int t47;
+    register int t50;
+    register int t52;
+    register int t53;
+    register int t55;
+    register int t58;
+    register int t62;
+    register int t70;
+    register int t71;
+    register int t74;
+    register int t77;
+    register int t78;
+    register int t81;
+    register int t99;
+    register int t15;
 
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R7;
-    int R8;
-    int R9;
-    int R10;
-    int R11;
-    int R12;
-    int R13;
-    int R14;
-    float F0;
-    float F3;
-    float F15;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    R6 = a6;
-    *(unsigned int *)(((int)stk + 24)) = R4;
-    *(unsigned int *)(((int)stk + 16)) = R6;
-    *(unsigned int *)(((int)stk + 36)) = (((*(int *)(((int)stk + 24))) * 0x148) + 0xC956768);
-    t2 = vmsio_ismount((*(int *)(((int)stk + 24))));
-    R0 = (t2);
-    R10 = (0xC223A0A);
-    R11 = (0xC223CB6);
-    R13 = (0xC232022);
-    R8 = (R5);
-    T_ = (((t2 == 0)));
-    if ((t2 != 0)) goto L_C2323CC;
-    vmsfb_sleep();
-    L_C23252E:;
-    R0 = (0xFFFFFF01);
-    L_C232530:;
-    return R0;
-    L_C2323CC:;
-    R14 = ((*(int *)(((int)stk + 24))));
-    t14 = *(int *)(((R14 << 2) + 0xC2382DC));
-    kdGetDevice(t14);
-    *(unsigned int *)(((int)stk + 20)) = (*(int *)(((int)stk + 16)));
-    *(unsigned int *)(((int)stk + 16)) = (*(int *)(((*(int *)(((*(int *)(((int)stk + 36))) + 0x1C))) + 0x48)));
-    *(unsigned int *)(((int)stk + 44)) = 0x0;
-    R14 = (t14);
-    R4 = (0x0);
-    R9 = (0x0);
-    L_C23246C:;
-    if (((int)(*(int *)(((int)stk + 44))) < (int)(*(int *)(((*(int *)(((*(int *)(((int)stk + 36))) + 0x1C))) + 0x40))))) goto L_C2323F0;
-    L_C23247A:;
-    t29 = (((int (*)(int, int, int, int))(R11))(R14, R5, R6, R7)) != 0;
-    if (t29) goto L_C2324C2;
-    *(int *)((int)stk + 12) = (R8);
-    t31 = kdSetGetLastError(*(Stk4 *)((int)stk + 12));
-    R12 = (t31);
-    if (((int)t31 >= 0)) goto L_C2324A0;
-    t34 = ((int (*)(int, int, int, int))(R13))(R4, R5, R6, R7);
-    goto L_C23247A;
-    L_C2324A0:;
-    t36 = (((int (*)(int, int, int, int))(R10))(R14, R12, R6, R7)) != 0;
-    if (t36) goto L_C2324B2;
-    t37 = ((int (*)(int, int, int, int))(R13))(R4, R5, R6, R7);
-    goto L_C2324A0;
-    L_C2324B2:;
-    *(unsigned int *)(((int)stk + 20)) = (kdGetDevice(R14));
-    t40 = (((int (*)(int))(R11))(R14)) == 0;
-    if (t40) goto L_C2324E0;
-    L_C2324C2:;
-    R0 = (0xFFFFFF30);
-    goto L_C232530;
-    L_C2324E0:;
-    t42 = *(int *)0xC239F58;
-    *(unsigned int *)(((int)stk + 16)) = t42;
-    if ((t42 == 0)) goto L_C232500;
-    t47 = (((int (*)(int, int, int, int))((*(int *)(((int)stk + 16)))))((*(int *)(((int)stk + 24))), R8, (((int)stk + 16) + 0xC), (((int)stk + 16) + 0x10))) != 0;
-    if (t47) goto L_C23250C;
-    L_C232500:;
-    *(unsigned char *)(((int)stk + 28)) = (*(signed char *)(((*(int *)(((int)stk + 20))) + 0x4)));
-    *(unsigned int *)(((int)stk + 32)) = (*(int *)(((*(int *)(((int)stk + 20))) + 0xC)));
-    L_C23250C:;
-    t52 = *(signed char *)(((int)stk + 28));
-    R0 = ((unsigned char)t52);
-    if (((unsigned char)t52 == 7)) goto L_C232524;
-    if ((R0 == 0xFC)) goto L_C23247A;
-    if ((R0 == 0xFB)) goto L_C232528;
-    goto L_C23252E;
-    L_C232528:;
-    R0 = (0xFFFFFF40);
-    goto L_C232530;
-    L_C232524:;
-    R0 = (0x0);
-    goto L_C232530;
-    L_C2323F0:;
-    t60 = (((int (*)(int, int, int, int))(R11))(R14, R5, R6, R7)) != 0;
-    if (t60) goto L_C2324C2;
-    *(volatile int *)(((int)stk + 16));
-    *(int *)((int)stk + 12) = ((_divls()));
-    *(int *)((int)stk + 8) = ((*(int *)(((int)stk + 20))));
-    *(int *)((int)stk + 4) = (R8);
-    t67 = kdSetBlockWrite(*(Stk4 *)((int)stk + 4));
-    R12 = (t67);
-    if (((int)t67 >= 0)) goto L_C232426;
-    t70 = ((int (*)(int, int, int, int))(R13))(R4, R5, R6, R7);
-    goto L_C2323F0;
-    L_C232426:;
-    t72 = (((int (*)(int, int, int, int))(R10))(R14, R12, R6, R7)) != 0;
-    if (t72) goto L_C232438;
-    t73 = ((int (*)(int, int, int, int))(R13))(R4, R5, R6, R7);
-    goto L_C232426;
-    L_C232438:;
-    *(unsigned int *)(((int)stk + 40)) = (kdGetDevice(R14));
-    t76 = (((int (*)(int))(R11))(R14)) != 0;
-    if (t76) goto L_C2324C2;
-    t78 = *(signed char *)(((*(int *)(((int)stk + 40))) + 0x4));
-    R0 = ((unsigned char)t78);
-    if (((unsigned char)t78 == 7)) goto L_C23245C;
-    if ((R0 == 0xFC)) goto L_C2323F0;
-    goto L_C23252E;
-    L_C23245C:;
-    *(unsigned int *)(((int)stk + 20)) = ((*(int *)(((int)stk + 20))) + (*(int *)(((int)stk + 16))));
-    *(unsigned int *)(((int)stk + 44)) = ((*(int *)(((int)stk + 44))) + 0x1);
-    R9 = ((R9 + 0x1));
-    goto L_C23246C;
+    *(unsigned int *)(((int)stk + 20)) = a4;
+    *(unsigned int *)(((int)stk + 12)) = a6;
+    *(unsigned int *)(((int)stk + 32)) = (((*(int *)(((int)stk + 20))) * 0x148) + 0xC956768);
+    t2 = vmsio_ismount((*(int *)(((int)stk + 20))));
+    if (t2 == 0) {
+        vmsfb_sleep();
+    } else {
+        t5 = *(int *)((((*(int *)(((int)stk + 20))) << 2) + 0xC2382DC));
+        kdGetDevice(t5);
+        *(unsigned int *)(((int)stk + 16)) = (*(int *)(((int)stk + 12)));
+        *(unsigned int *)(((int)stk + 12)) = ((((struct o48_int *)((*(int *)(((*(int *)(((int)stk + 32))) + 0x1C)))))->v));
+        *(unsigned int *)(((int)stk + 40)) = 0x0;
+        for (;;) {
+            if ((int)(*(int *)(((int)stk + 40))) >= (int)((((struct o40_int *)((*(int *)(((*(int *)(((int)stk + 32))) + 0x1C)))))->v))) {
+                for (;;) {
+                    t16 = kdIsChanged(t5);
+                    if (t16 == 0) {
+                        t15 = 0xC223BA8;
+                        *(int *)((int)stk + 8) = a5;
+                        t15 = (kdSetGetLastError(a5));
+                        if ((int)t15 < 0) {
+                            vmsfb_sleep();
+                            continue;
+                        }
+                        for (;;) {
+                            t19 = kdGetStatus(t5);
+                            if (t19 == 0) {
+                                vmsfb_sleep();
+                                continue;
+                            }
+                            break;
+                        }
+                        *(unsigned int *)(((int)stk + 16)) = (kdGetDevice(t5));
+                        t22 = kdIsChanged(t5);
+                        if (t22 != 0) {
+                            break;
+                        }
+                        t23 = *(int *)0xC239F58;
+                        *(unsigned int *)(((int)stk + 12)) = t23;
+                        if (t23 != 0) {
+                            t26 = ((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)(((int)stk + 12)))))((*(int *)(((int)stk + 20))), a5, (((int)stk + 12) + 0xC), (((int)stk + 12) + 0x10), *(int *)((int)stk + 12), *(int *)((int)stk + 12 + 4), *(int *)((int)stk + 12 + 8), *(int *)((int)stk + 12 + 12), *(int *)((int)stk + 12 + 16), *(int *)((int)stk + 12 + 20), *(int *)((int)stk + 12 + 24));
+                            if (t26 == 0) {
+                                *(unsigned char *)(((int)stk + 24)) = (*(signed char *)(((*(int *)(((int)stk + 16))) + 0x4)));
+                                *(unsigned int *)(((int)stk + 28)) = (*(int *)(((*(int *)(((int)stk + 16))) + 0xC)));
+                            }
+                        } else {
+                            *(unsigned char *)(((int)stk + 24)) = (*(signed char *)(((*(int *)(((int)stk + 16))) + 0x4)));
+                            *(unsigned int *)(((int)stk + 28)) = (*(int *)(((*(int *)(((int)stk + 16))) + 0xC)));
+                        }
+                        t44 = *(signed char *)(((int)stk + 24));
+                        if ((unsigned char)t44 != 7) {
+                            if ((unsigned char)t44 != 0xFC) {
+                                if ((unsigned char)t44 != 0xFB) {
+                                    return 0xFFFFFF01;
+                                }
+                                return 0xFFFFFF40;
+                            }
+                            continue;
+                        }
+                        return 0x0;
+                    }
+                    break;
+                }
+                return 0xFFFFFF30;
+            }
+            t46 = 0x0;
+            for (;;) {
+                t47 = kdIsChanged(t5);
+                if (t47 == 0) {
+                    t50 = ((int)((int)(*(int *)(((int)stk + 12))) / (int)0x4));
+                    *(int *)((int)stk + 8) = t50;
+                    t52 = (*(int *)(((int)stk + 16)));
+                    *(int *)((int)stk + 4) = t52;
+                    *(int *)((int)stk + 0) = a5;
+                    t53 = kdSetBlockWrite(a5, t52, t50);
+                    if ((int)t53 < 0) {
+                        vmsfb_sleep();
+                        continue;
+                    }
+                    for (;;) {
+                        t55 = kdGetStatus(t5);
+                        if (t55 == 0) {
+                            vmsfb_sleep();
+                            continue;
+                        }
+                        break;
+                    }
+                    *(unsigned int *)(((int)stk + 36)) = (kdGetDevice(t5));
+                    t58 = kdIsChanged(t5);
+                    if (t58 == 0) {
+                        t62 = *(signed char *)(((*(int *)(((int)stk + 36))) + 0x4));
+                        if ((unsigned char)t62 != 7) {
+                            if ((unsigned char)t62 != 0xFC) {
+                                break;
+                            }
+                            continue;
+                        }
+                        t46 = (t46 + 0x1);
+                        *(unsigned int *)(((int)stk + 16)) = ((*(int *)(((int)stk + 16))) + (*(int *)(((int)stk + 12))));
+                        *(unsigned int *)(((int)stk + 40)) = ((*(int *)(((int)stk + 40))) + 0x1);
+                        if ((int)(*(int *)(((int)stk + 40))) >= (int)((((struct o40_int *)((*(int *)(((*(int *)(((int)stk + 32))) + 0x1C)))))->v))) {
+                            t70 = t53;
+                            for (;;) {
+                                t71 = kdIsChanged(t5);
+                                if (t71 == 0) {
+                                    *(int *)((int)stk + 8) = a5;
+                                    t70 = (kdSetGetLastError(a5));
+                                    if ((int)t70 < 0) {
+                                        vmsfb_sleep();
+                                        continue;
+                                    }
+                                    for (;;) {
+                                        t74 = kdGetStatus(t5);
+                                        if (t74 == 0) {
+                                            vmsfb_sleep();
+                                            continue;
+                                        }
+                                        break;
+                                    }
+                                    *(unsigned int *)(((int)stk + 16)) = (kdGetDevice(t5));
+                                    t77 = kdIsChanged(t5);
+                                    if (t77 != 0) {
+                                        break;
+                                    }
+                                    t78 = *(int *)0xC239F58;
+                                    *(unsigned int *)(((int)stk + 12)) = t78;
+                                    if (t78 != 0) {
+                                        t81 = ((int (*)(int, int, int, int, int, int, int, int, int, int, int))((*(int *)(((int)stk + 12)))))((*(int *)(((int)stk + 20))), a5, (((int)stk + 12) + 0xC), (((int)stk + 12) + 0x10), *(int *)((int)stk + 12), *(int *)((int)stk + 12 + 4), *(int *)((int)stk + 12 + 8), *(int *)((int)stk + 12 + 12), *(int *)((int)stk + 12 + 16), *(int *)((int)stk + 12 + 20), *(int *)((int)stk + 12 + 24));
+                                        if (t81 == 0) {
+                                            *(unsigned char *)(((int)stk + 24)) = (*(signed char *)(((*(int *)(((int)stk + 16))) + 0x4)));
+                                            *(unsigned int *)(((int)stk + 28)) = (*(int *)(((*(int *)(((int)stk + 16))) + 0xC)));
+                                        }
+                                    } else {
+                                        *(unsigned char *)(((int)stk + 24)) = (*(signed char *)(((*(int *)(((int)stk + 16))) + 0x4)));
+                                        *(unsigned int *)(((int)stk + 28)) = (*(int *)(((*(int *)(((int)stk + 16))) + 0xC)));
+                                    }
+                                    t99 = *(signed char *)(((int)stk + 24));
+                                    if ((unsigned char)t99 != 7) {
+                                        if ((unsigned char)t99 != 0xFC) {
+                                            if ((unsigned char)t99 != 0xFB) {
+                                                return 0xFFFFFF01;
+                                            }
+                                            return 0xFFFFFF40;
+                                        }
+                                        continue;
+                                    }
+                                    return 0x0;
+                                }
+                                break;
+                            }
+                            return 0xFFFFFF30;
+                        }
+                        continue;
+                    }
+                    return 0xFFFFFF30;
+                }
+                return 0xFFFFFF30;
+            }
+            break;
+        }
+    }
+    return 0xFFFFFF01;
 }

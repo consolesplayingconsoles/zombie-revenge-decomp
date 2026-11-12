@@ -23,6 +23,11 @@ extern float _builtin_sqrtf(float);
 int FUN_0c07903a(int a4, int a5, int a6, int a7);
 int FUN_0c04073a(int a4, float f4);
 int FUN_0c0cc752(int a4);
+struct o26C_float { char p[0x26C]; float v; };
+struct o2EC_int { char p[0x2EC]; int v; };
+struct o34_float { char p[0x34]; float v; };
+struct o4EC_int { char p[0x4EC]; int v; };
+struct o4EC_uint { char p[0x4EC]; unsigned int v; };
 struct o4C_float { char p[0x4C]; float v; };
 struct o60_short { char p[0x60]; short v; };
 struct o60_ushort { char p[0x60]; unsigned short v; };
@@ -88,71 +93,59 @@ int FUN_0c0cc752(int a4)
 
 int FUN_0c04073a(int a4, float f4)
 {
-    int t0;
-    int t2;
-    int t6;
-    int t8;
-    float t16;
-    int t22;
-    int t24;
-    float t40;
-    int t46;
-    int t48;
-    int t52;
-    int t28;
-    int t11;
-    int stk[10];
+    int stk[7];
+    register int t0;
+    register int t6;
+    register float t16;
+    register int t22;
+    register float t39;
+    register int t45;
+    register int t51;
 
-    *(float *)(((int)stk + 4)) = f4;
-    t0 = *(int *)((a4 + 0x4EC));
+    *(float *)(((int)stk + 0)) = f4;
+    t0 = (((struct o4EC_int *)(a4))->v);
     if (t0 != 0) {
         if (t0 != 1) {
             if (t0 != 2) {
-                t2 = t0;
+                t51 = t0;
                 if (t0 != 3) {
                 } else {
-                    t2 = (FUN_0c041f2a(a4));
+                    t51 = (FUN_0c041f2a(a4));
                 }
-                t11 = t2;
             } else {
                 t6 = FUN_0c040266(a4);
-                t8 = t6;
+                t51 = t6;
                 if (t6 != 0) {
-                    *(unsigned int *)((a4 + 0x4EC)) = ((*(int *)((a4 + 0x4EC))) + 0x1);
-                    t8 = 0x4EC;
+                    (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
+                    t51 = 0x4EC;
                 }
-                t11 = t8;
             }
-            t28 = t11;
         } else {
             t16 = FUN_0c0401e0(a4);
-            if ((*(float *)((a4 + 0x34))) > t16) {
-                *(unsigned int *)((a4 + 0x4EC)) = ((*(int *)((a4 + 0x4EC))) + 0x1);
+            if (((((struct o34_float *)(a4))->v)) > t16) {
+                (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
             }
-            t22 = *(int *)((a4 + 0x2EC));
-            t24 = t22;
+            t22 = (((struct o2EC_int *)(a4))->v);
+            t51 = t22;
             if ((t22 & 12) != 0) {
-                t24 = (FUN_0c041dd0(a4));
+                t51 = (FUN_0c041dd0(a4));
             }
-            t28 = t24;
         }
-        t52 = t28;
     } else {
-        _quick_odd_mvn(a4, f4);
-        *(float *)(((int)stk + 8)) = 0.0f;
-        *(float *)((a4 + 0x26C)) = _builtin_sqrtf(((((FUN_0c01f1b8((((int)stk + 4) + 0x4), (((int)stk + 4) + 0x10))) + (*(float *)(((int)stk + 4)))) - (*(float *)((a4 + 0x34)))) * (*(float *)0xC040888)));
-        *(unsigned int *)((a4 + 0x4EC)) = ((*(int *)((a4 + 0x4EC))) + 0x1);
-        t40 = FUN_0c0401e0(a4);
-        if ((*(float *)((a4 + 0x34))) > t40) {
-            *(unsigned int *)((a4 + 0x4EC)) = ((*(int *)((a4 + 0x4EC))) + 0x1);
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x4)) = *(struct mv3 *)((a4 + 0x30)); }
+        *(float *)(((int)stk + 4)) = 0.0f;
+        (((struct o26C_float *)(a4))->v) = _builtin_sqrtf(((((FUN_0c01f1b8((((int)stk + 0) + 0x4), (((int)stk + 0) + 0x10))) + (*(float *)(((int)stk + 0)))) - ((((struct o34_float *)(a4))->v))) * (*(float *)0xC040888)));
+        (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
+        t39 = FUN_0c0401e0(a4);
+        if (((((struct o34_float *)(a4))->v)) > t39) {
+            (((struct o4EC_uint *)(a4))->v) = (((((struct o4EC_int *)(a4))->v)) + 0x1);
         }
-        t46 = *(int *)((a4 + 0x2EC));
-        t48 = t46;
-        if ((t46 & 12) != 0) {
-            t48 = (FUN_0c041dd0(a4));
+        t45 = (((struct o2EC_int *)(a4))->v);
+        t51 = t45;
+        if ((t45 & 12) != 0) {
+            t51 = (FUN_0c041dd0(a4));
         }
-        t52 = t48;
     }
-    return t52;
+    return t51;
 }
 

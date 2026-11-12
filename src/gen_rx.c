@@ -3,159 +3,168 @@
 
 int _modls(int);
 int FUN_0c22ee60(void);
-extern int FUN_0c22eeb2();
+int FUN_0c22eeb2(int, int, int);
 int FUN_0c22f312(int, int, int, int, int, int);
 int kmytex_FBDeQueueEntry(int, int, int);
-int FUN_0c22ea0c(int a4, int a5, int a6);
+int FUN_0c22ea0c(int a4, int a5, int a6, int a7);
 
-int FUN_0c22ea0c(int a4, int a5, int a6)
+int FUN_0c22ea0c(int a4, int a5, int a6, int a7)
 {
-    int stk[6];
+    int stk[5];
+    register int t0;
+    register int t2;
+    register int t5;
+    register int t42;
+    register int t46;
+    register int t47;
+    int t49;
+    register int t7;
+    int t9;
+    register int t10;
+    register int t11;
+    register int t12;
+    register int t13;
+    register int t14;
+    register int t50;
+    register int t51;
+    register int t112;
+    register int t73;
+    register int t8;
+    register int t36;
+    register int t38;
+    int t22;
+    register int t23;
 
-    register int R1;
-    register int R2;
-    register int R7;
-    register int T_;
-    register int v0_0;
-    register int v0_1;
-    register int v0_10;
-    register int v0_11;
-    register int v0_12;
-    register int v0_2;
-    register int v0_3;
-    register int v0_4;
-    register int v0_5;
-    register int v0_6;
-    register int v0_7;
-    register int v0_8;
-    register int v0_9;
-    int R1012;
-    int R1016;
-    R1012 = *(int *)((int)stk + 12);
-    R1016 = *(int *)((int)stk + 16);
-    v0_6 = a4;
-    v0_4 = a5;
-    v0_7 = a6;
-    *(unsigned short *)(((int)stk + 20)) = v0_6;
-    R1016 = v0_7;
-    v0_2 = (v0_4);
-    v0_0 = (v0_4);
-    v0_1 = (0x0);
-    v0_7 = (0x0);
-    if (((int)v0_4 < 0)) goto L_C22EA34;
-    v0_2 = ((v0_2 & 0x1F));
-    L_C22EA3E:;
-    v0_6 = (v0_2);
-    v0_8 = (v0_1);
-    if ((v0_2 == 0)) goto L_C22EA4C;
-    v0_0 = ((v0_0 + (0x20 - v0_6)));
-    L_C22EA4C:;
-    v0_3 = *(short *)(((int)stk + 20));
-    v0_10 = *(int *)((((((v0_3 << 2) + v0_3) << 2) + 0xC239EF8) + 0x8));
-    v0_2 = (0xC239EF8);
-    v0_9 = (0x1);
-    v0_5 = (v0_1);
-    v0_6 = (v0_10);
-    v0_3 = ((((v0_3 << 2) + v0_3) << 2));
-    if ((v0_10 == 0)) goto L_C22EAE6;
-    R7 = (0x800);
-    L_C22EA6A:;
-    if (((int)(*(int *)((v0_6 + 0x10))) < (int)v0_0)) goto L_C22EAE0;
-    if ((v0_8 != 0)) goto L_C22EA76;
-    v0_8 = (v0_6);
-    L_C22EA76:;
-    *(volatile int *)((v0_6 + 0xC));
-    v0_4 = (_modls(v0_6)) == 0;
-    if (v0_4) goto L_C22EAB2;
-    v0_10 = *(int *)((v0_6 + 0xC));
-    R1012 = v0_10;
-    v0_11 = *(int *)((v0_6 + 0x10));
-    v0_12 = R1012;
-    R1012 = (v0_12 + v0_11);
-    v0_4 = (((v0_10 + R7) & 0xFFFFF800));
-    if (((int)((v0_10 + R7) & 0xFFFFF800) >= (int)(v0_12 + v0_11))) goto L_C22EAB4;
-    if (((int)(v0_4 - (*(int *)((v0_6 + 0xC)))) >= (int)v0_0)) goto L_C22EAB4;
-    if (((int)((R1012) - v0_4) < (int)v0_0)) goto L_C22EAAE;
-    v0_7 = (0x2);
-    L_C22EAB6:;
-    v0_5 = (v0_6);
-    v0_6 = (v0_1);
-    L_C22EAE2:;
-    if ((v0_6 != 0)) goto L_C22EA6A;
-    L_C22EAE6:;
-    if ((v0_7 != 0)) goto L_C22EAF2;
-    if ((v0_8 == 0)) goto L_C22EAF2;
-    v0_5 = (v0_8);
-    v0_7 = (v0_9);
-    L_C22EAF2:;
-    if ((v0_5 == 0)) goto L_C22EB8A;
-    if ((v0_7 != 2)) goto L_C22EB0E;
-    v0_2 = v0_9;
-    *(int *)((int)stk + 8) = v0_2;
-    v0_1 = v0_1;
-    *(int *)((int)stk + 4) = v0_1;
-    v0_2 = ((FUN_0c22f312((*(short *)(((int)stk + 20))), v0_4, v0_0, (R1016), v0_1, v0_2)));
-    L_C22EBE2:;
-    return v0_2;
-    L_C22EB0E:;
-    if (((*(int *)((v0_5 + 0x10))) != v0_0)) goto L_C22EB80;
-    kmytex_FBDeQueueEntry(((v0_3 + v0_2) + 0x8), ((v0_3 + v0_2) + 0xC), v0_5);
-    v0_0 = ((int (*)(int, int, int))(FUN_0c22eeb2))((v0_3 + v0_2), ((v0_3 + v0_2) + 0x4), v0_5);
-    *(unsigned int *)(((R1016) + 0x8)) = (*(int *)((v0_5 + 0xC)));
-    *(unsigned int *)((v0_5 + 0x14)) = (R1016);
-    *(unsigned short *)((v0_5 + 0x0)) = v0_9;
-    if (((*(short *)(((int)stk + 20))) != 0)) goto L_C22EB4A;
-    *(unsigned short *)((v0_5 + 0x0)) = ((*(short *)((v0_5 + 0x0))) | 0x200);
-    L_C22EB52:;
-    *(unsigned short *)((v0_5 + 0x0)) = ((*(short *)((v0_5 + 0x0))) | 0x4);
-    v0_0 = ((*(int *)((v0_5 + 0x10))));
-    v0_3 = ((v0_3 + v0_2));
-    L_C22EBDA:;
-    *(unsigned int *)((v0_3 + 0x10)) = ((*(int *)((v0_3 + 0x10))) - v0_0);
-    v0_2 = (0x0);
-    goto L_C22EBE2;
-    L_C22EB4A:;
-    *(unsigned short *)((v0_5 + 0x0)) = ((*(short *)((v0_5 + 0x0))) | 0x400);
-    goto L_C22EB52;
-    L_C22EB80:;
-    v0_4 = FUN_0c22ee60();
-    v0_1 = (v0_4);
-    if (!((v0_4 != 0))) goto L_C22EB8A;
-    *(unsigned int *)((v0_1 + 0xC)) = (*(int *)((v0_5 + 0xC)));
-    *(unsigned int *)((v0_1 + 0x10)) = v0_0;
-    *(unsigned int *)((v0_5 + 0x10)) = ((*(int *)((v0_5 + 0x10))) - v0_0);
-    *(unsigned int *)((v0_5 + 0xC)) = ((*(int *)((v0_5 + 0xC))) + v0_0);
-    R1012 = (v0_3 + v0_2);
-    v0_0 = ((int (*)(int, int, int, int))(FUN_0c22eeb2))((R1012), ((v0_3 + v0_2) + 0x4), v0_1, R7);
-    *(unsigned int *)(((R1016) + 0x8)) = (*(int *)((v0_1 + 0xC)));
-    *(unsigned int *)((v0_1 + 0x14)) = (R1016);
-    if (((*(short *)(((int)stk + 20))) != 0)) goto L_C22EBC8;
-    *(unsigned short *)((v0_1 + 0x0)) = ((*(short *)((v0_1 + 0x0))) | 0x200);
-    goto L_C22EBD0;
-    L_C22EB8A:;
-    v0_2 = (0x3);
-    goto L_C22EBE2;
-    L_C22EBD0:;
-    *(unsigned short *)((v0_1 + 0x0)) = ((*(short *)((v0_1 + 0x0))) | 0x4);
-    v0_0 = ((*(int *)((v0_1 + 0x10))));
-    v0_3 = ((v0_3 + v0_2));
-    goto L_C22EBDA;
-    L_C22EBC8:;
-    *(unsigned short *)((v0_1 + 0x0)) = ((*(short *)((v0_1 + 0x0))) | 0x400);
-    goto L_C22EBD0;
-    L_C22EAAE:;
-    v0_6 = ((*(int *)((v0_6 + 0x8))));
-    goto L_C22EAE2;
-    L_C22EAB4:;
-    v0_7 = (v0_9);
-    goto L_C22EAB6;
-    L_C22EAB2:;
-    v0_4 = ((*(int *)((v0_6 + 0xC))));
-    goto L_C22EAB4;
-    L_C22EAE0:;
-    v0_6 = ((*(int *)((v0_6 + 0x8))));
-    goto L_C22EAE2;
-    L_C22EA34:;
-    v0_2 = (((~(((~v0_2) + 0x1) & 0x1F)) + 0x1));
-    goto L_C22EA3E;
+    *(unsigned short *)(((int)stk + 16)) = a4;
+    *(unsigned int *)(((int)stk + 12)) = a6;
+    t0 = ((~(((~a5) + 0x1) & 0x1F)) + 0x1);
+    if ((int)a5 >= 0) {
+        t0 = (a5 & 0x1F);
+    }
+    t2 = a5;
+    if (t0 != 0) {
+        t2 = (a5 + (0x20 - t0));
+    }
+    t5 = *(short *)(((int)stk + 16));
+    t10 = *(int *)((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x8));
+    t42 = 0x0;
+    t46 = a5;
+    t47 = 0x0;
+    t49 = 0x0;
+    if (t10 != 0) {
+        t7 = (((t5 << 2) + t5) << 2);
+        t9 = t5;
+        t11 = a5;
+        t12 = 0x0;
+        t13 = 0x0;
+        t14 = 0x0;
+        for (;;) {
+            if ((int)(*(int *)((t10 + 0x10))) >= (int)t2) {
+                if (t13 == 0) {
+                    t13 = t10;
+                }
+                t9 = 0xC0E5F1C;
+                t8 = (*(int *)((t10 + 0xC)));
+                t7 = 0x800;
+                t7 = ((int)((int)t8 % (int)t7));
+                if (t7 != 0) {
+                    t11 = (*(int *)((t10 + 0xC)));
+                    t9 = 0xFFFFF800;
+                    *(unsigned int *)(((int)stk + 8)) = t11;
+                    t11 = (t11 + 0x800);
+                    t11 = (t11 & t9);
+                    t8 = (*(int *)(((int)stk + 8)));
+                    t8 = (t8 + (*(int *)((t10 + 0x10))));
+                    *(unsigned int *)(((int)stk + 8)) = t8;
+                    if (((int)t11 < (int)t8) && (t22 = *(int *)((t10 + 0xC)), t23 = ((int)t11 >= (int)t8), t8 = t11, t8 = (t8 - t22), (int)t8 < (int)t2)) {
+                        if ((int)((*(int *)(((int)stk + 8))) - t11) >= (int)t2) {
+                            t12 = 0x2;
+                            t14 = t10;
+                            t10 = 0x0;
+                        } else {
+                            t10 = (*(int *)((t10 + 0x8)));
+                        }
+                    } else {
+                        t12 = 0x1;
+                        t14 = t10;
+                        t10 = 0x0;
+                    }
+                    t36 = t8;
+                    t38 = t9;
+                } else {
+                    t11 = (*(int *)((t10 + 0xC)));
+                    t12 = 0x1;
+                    t14 = t10;
+                    t10 = 0x0;
+                    t38 = 0xC0E5F1C;
+                }
+            } else {
+                t10 = (*(int *)((t10 + 0x8)));
+                t36 = t8;
+                t38 = t9;
+            }
+            t8 = t36;
+            t9 = t38;
+            if (t10 == 0) {
+                break;
+            }
+        }
+        t42 = t14;
+        t46 = t11;
+        t47 = t12;
+        t49 = t13;
+    }
+    t50 = t42;
+    t51 = t47;
+    if ((t47 == 0) && (t49 != 0)) {
+        t50 = t49;
+        t51 = 0x1;
+    }
+    t112 = 0x3;
+    if (t50 != 0) {
+        if (t51 == 2) {
+            *(int *)((int)stk + 4) = 0x1;
+            *(int *)((int)stk + 0) = 0x0;
+            t112 = (FUN_0c22f312((*(short *)(((int)stk + 16))), t46, t2, (*(int *)(((int)stk + 12))), 0x0, 0x1));
+        } else {
+            if ((*(int *)((t50 + 0x10))) == t2) {
+                kmytex_FBDeQueueEntry((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x8), (((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0xC), t50);
+                FUN_0c22eeb2(((((t5 << 2) + t5) << 2) + 0xC239EF8), (((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x4), t50);
+                *(unsigned int *)(((*(int *)(((int)stk + 12))) + 0x8)) = (*(int *)((t50 + 0xC)));
+                *(unsigned int *)((t50 + 0x14)) = (*(int *)(((int)stk + 12)));
+                *(unsigned short *)((t50 + 0x0)) = 0x1;
+                if ((*(short *)(((int)stk + 16))) == 0) {
+                    *(unsigned short *)((t50 + 0x0)) = ((*(short *)((t50 + 0x0))) | 0x200);
+                } else {
+                    *(unsigned short *)((t50 + 0x0)) = ((*(short *)((t50 + 0x0))) | 0x400);
+                }
+                *(unsigned short *)((t50 + 0x0)) = ((*(short *)((t50 + 0x0))) | 0x4);
+                *(unsigned int *)((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x10)) = ((*(int *)((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x10))) - (*(int *)((t50 + 0x10))));
+                t112 = 0x0;
+            } else {
+                t73 = FUN_0c22ee60();
+                t112 = 0x3;
+                if (t73 == 0) {
+                } else {
+                    *(unsigned int *)((t73 + 0xC)) = (*(int *)((t50 + 0xC)));
+                    *(unsigned int *)((t73 + 0x10)) = t2;
+                    *(unsigned int *)((t50 + 0x10)) = ((*(int *)((t50 + 0x10))) - t2);
+                    *(unsigned int *)((t50 + 0xC)) = ((*(int *)((t50 + 0xC))) + t2);
+                    *(unsigned int *)(((int)stk + 8)) = ((((t5 << 2) + t5) << 2) + 0xC239EF8);
+                    FUN_0c22eeb2((*(int *)(((int)stk + 8))), (((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x4), t73);
+                    *(unsigned int *)(((*(int *)(((int)stk + 12))) + 0x8)) = (*(int *)((t73 + 0xC)));
+                    *(unsigned int *)((t73 + 0x14)) = (*(int *)(((int)stk + 12)));
+                    if ((*(short *)(((int)stk + 16))) == 0) {
+                        *(unsigned short *)((t73 + 0x0)) = ((*(short *)((t73 + 0x0))) | 0x200);
+                    } else {
+                        *(unsigned short *)((t73 + 0x0)) = ((*(short *)((t73 + 0x0))) | 0x400);
+                    }
+                    *(unsigned short *)((t73 + 0x0)) = ((*(short *)((t73 + 0x0))) | 0x4);
+                    *(unsigned int *)((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x10)) = ((*(int *)((((((t5 << 2) + t5) << 2) + 0xC239EF8) + 0x10))) - (*(int *)((t73 + 0x10))));
+                    t112 = 0x0;
+                }
+            }
+        }
+    }
+    return t112;
 }

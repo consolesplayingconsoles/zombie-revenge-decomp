@@ -1,3 +1,4 @@
+typedef struct { int w[3]; } Stk3;
 /* Straight-line functions with calls and guards (batch gen_bd): generated from the code and checked by tests. Calls are
    to the game or library function at the address, with the arguments in r4-r7 and fr4-fr11 as set. */
 
@@ -39,7 +40,7 @@ int FUN_0c0db4d0(int, int);
 int nlMultiMatrix(int);
 int nlPopMatrix(int);
 int nlPushMatrix(int);
-int FUN_0c0dc5a0(void);
+int FUN_0c0dc5a0(Stk3);
 int nlRotateAX(int);
 int nlRotateAY(int);
 int nlRotateAZ(int);
@@ -686,19 +687,14 @@ int FUN_0c025b9a(int a4, float f4)
 
 int FUN_0c06816c(int a4)
 {
-    int t16;
-    int t20;
-    int t23;
-    int t32;
-    int t6;
-    int t36;
-    int stk[9];
+    int stk[6];
+    register int t16;
+    register int t23;
+    register int t35;
 
     if ((((((struct o0_int *)0xC23ED5C)->v)) & 6) != 0) {
         FUN_0c0845f8(((((struct o78_int *)(a4))->v)), 0x0);
         FUN_0c0e19f2();
-    } else {
-        t6 = a4;
     }
     if (((((struct o98_int *)(a4))->v)) == 3) {
         nlPushMatrix((*(int *)0xC247BF4));
@@ -706,27 +702,25 @@ int FUN_0c06816c(int a4)
         FUN_0c08463a(((((struct o78_int *)(a4))->v)), (a4 + 0x54));
         nlPopMatrix(0x1);
         t16 = (((struct o2C_int *)0xC23ED5C)->v);
-        t20 = t16;
+        t35 = t16;
         if ((t16 & 1) != 0) {
             FUN_0c0845f8(((((struct o78_int *)(a4))->v)), 0x0);
-            t20 = (FUN_0c0e19f2());
+            t35 = (FUN_0c0e19f2());
         }
-        t36 = t20;
     } else {
         t23 = (((struct o2C_int *)0xC23ED5C)->v);
-        t32 = t23;
+        t35 = t23;
         if ((t23 & 1) != 0) {
-            _quick_odd_mvn(t6);
-            FUN_0c0dc5a0();
+            { struct mv3 { int w[3]; }; *(struct mv3 *)(((int)stk + 0)) = *(struct mv3 *)(0xC0FA294); }
+            FUN_0c0dc5a0(*(Stk3 *)(((int)stk + 0)));
             nlRotateAY(0x8000);
             nlRotateAX(0xB400);
-            FUN_0c0db4d0(((int)stk + 4), (((int)stk + 4) + 0xC));
+            FUN_0c0db4d0(((int)stk + 0), (((int)stk + 0) + 0xC));
             nlPopMatrix(0x1);
-            t32 = (FUN_0c08467c(((((struct o78_int *)(a4))->v)), (((int)stk + 4) + 0xC)));
+            t35 = (FUN_0c08467c(((((struct o78_int *)(a4))->v)), (((int)stk + 0) + 0xC)));
         }
-        t36 = t32;
     }
-    return t36;
+    return t35;
 }
 
 int FUN_0c070a42(int a4, int a5, int a6, int a7)

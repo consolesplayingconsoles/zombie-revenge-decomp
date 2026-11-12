@@ -33,7 +33,7 @@ struct o8_int { char p[0x8]; int v; };
 
 int FUN_0c2333cc(int a4, int a5)
 {
-    int t0;
+    register int t0;
 
     t0 = FUN_0c233800(a4, 0x5, 0x0);
     if ((int)t0 <= 0) {
@@ -42,7 +42,7 @@ int FUN_0c2333cc(int a4, int a5)
         if ((int)t0 >= (int)0x7F) {
             *(unsigned int *)((a5 + 0x0)) = 0x0;
         } else {
-            *(unsigned int *)((a5 + 0x0)) = (_divls());
+            *(unsigned int *)((a5 + 0x0)) = ((int)((int)(0x80 - ((((int)((unsigned int)((int)((unsigned int)(0x7F - t0) + (unsigned int)0x0)) + ((((int)0x0 > (int)(0x7F - t0))) ? 1u : 0u))) >> 1) * 0x3BF)) / (int)0xFF));
         }
     }
     *(unsigned int *)((a4 + 0x30)) = (*(int *)((a5 + 0x0)));

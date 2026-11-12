@@ -947,23 +947,22 @@ int FUN_0c0243d8(int a4)
 
 int FUN_0c03271c(int a4, float f4, float f5)
 {
-    int t3;
-    int t4;
-    int t7;
-    int stk[17];
+    int stk[14];
+    register int t2;
+    register int t6;
 
-    if ((*(int *)((0xC247030 + ((*(int *)((a4 + 0x510))) << 2)))) == 4) {
-        *(volatile int *)((a4 + 0x510));
-        t3 = ((int (*)(int))(_quick_odd_mvn))(a4);
-        *(float *)(((int)stk + 52)) = f4;
-        *(float *)(((int)stk + 56)) = (1.0f + 1.0f);
-        t4 = ((int (*)(float))(_quick_odd_mvn))(f4);
-        *(float *)(((int)stk + 32)) = f5;
-        *(float *)(((int)stk + 36)) = 1.0f;
-        FUN_0c036efc((((int)stk + 4) + 0x24), (((int)stk + 4) + 0x10), (((int)stk + 4) + 0x4), ((int)stk + 4));
-        nlAddVector((0x4B0 + a4), (((int)stk + 4) + 0x4));
-        t7 = FUN_0c032394(a4);
-        if ((int)t7 > 0) {
+    if ((*(int *)((0xC247030 + (((((struct o510_int *)(a4))->v)) << 2)))) == 4) {
+        t2 = (((struct o510_int *)(a4))->v);
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x24)) = *(struct mv3 *)(((((((t2 << 1) + t2) << 2) << 2) << 2) + 0xC23F274)); }
+        *(float *)(((int)stk + 48)) = f4;
+        *(float *)(((int)stk + 52)) = (1.0f + 1.0f);
+        { struct mv3 { int w[3]; }; *(struct mv3 *)((((int)stk + 0) + 0x10)) = *(struct mv3 *)((a4 + 0x30)); }
+        *(float *)(((int)stk + 28)) = f5;
+        *(float *)(((int)stk + 32)) = 1.0f;
+        FUN_0c036efc((((int)stk + 0) + 0x24), (((int)stk + 0) + 0x10), (((int)stk + 0) + 0x4), ((int)stk + 0));
+        nlAddVector((0x4B0 + a4), (((int)stk + 0) + 0x4));
+        t6 = FUN_0c032394(a4);
+        if ((int)t6 > 0) {
             return 0x1;
         }
         return 0x0;

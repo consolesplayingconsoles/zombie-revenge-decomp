@@ -848,20 +848,23 @@ int FUN_0c22baec(int a4, int a5, int a6, int a7, int a8)
 
 int ADXB_EntryData(int a4, int a5, int a6)
 {
-    int t8;
+    register int t3;
+    register int t4;
+    register int t11;
 
     if (((((struct oA8_short *)(a4))->v)) == 0) {
         (((struct o50_uint *)(a4))->v) = a5;
-        *(volatile signed char *)((a4 + 0xF));
-        t8 = (_divls());
+        t11 = ((int)((int)a6 / (int)(*(signed char *)((a4 + 0xF)))));
     } else {
         (((struct o50_uint *)(a4))->v) = a5;
-        *(volatile signed char *)((a4 + 0xD));
-        
-        *(volatile signed char *)((a4 + 0xE));
-        t8 = (_divls());
+        t3 = *(signed char *)((a4 + 0xD));
+        t4 = t3;
+        if ((int)t3 < 0) {
+            t4 = (t3 + 0x7);
+        }
+        t11 = ((int)((int)a6 / (int)((((t4 >> 1) >> 1) >> 1) * (*(signed char *)((a4 + 0xE))))));
     }
-    (((struct o54_uint *)(a4))->v) = t8;
+    (((struct o54_uint *)(a4))->v) = t11;
     (((struct o84_uint *)(a4))->v) = 0x0;
     (((struct oA0_uint *)(a4))->v) = 0x0;
     (((struct oA4_uint *)(a4))->v) = 0x0;

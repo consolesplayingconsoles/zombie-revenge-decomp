@@ -173,13 +173,6 @@ struct oC_float { char p[0xC]; float v; };
 
 
 
-void FUN_0c016d20(int a4, int a5, int a6)
-{
-    if ((int)(*(short *)((a6 + 0x0))) < 0) {
-        return;
-    }
-    ((int (*)(int, int, int))(0xC016CE0))(a4, a5, a6);
-}
 
 int FUN_0c034bac(int a4)
 {
@@ -1132,3 +1125,5 @@ int syCfgGetIndividualID(int a4, int a5, int a6)
     }
     return t4;
 }
+
+

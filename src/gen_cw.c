@@ -81,8 +81,8 @@ int bcdtime2fad(int);
 int FUN_0c22b6c8(int);
 int FUN_0c22b6e0(int);
 int FUN_0c22b7e4(int);
-int FUN_0c22c7fe(int, int, int, int);
-int FUN_0c232f8a(int, int, int, int);
+int FUN_0c22c7fe(int, int, int, int, int, int, int);
+int FUN_0c232f8a(int, int);
 int FUN_0c2339e8(int, int, int, int);
 extern void _builtin_prefetch(void *);
 extern float _builtin_sqrtf(float);
@@ -110,7 +110,7 @@ int FUN_0c090c68(int a4);
 int FUN_0c03242c(int a4, float f4, float f5);
 int FUN_0c063160(int a4, int a5, int a6, int a7);
 int FUN_0c0d1f12(int a4);
-int FUN_0c22b866(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11);
+int FUN_0c22b866(int a4, int a5, int a6, int a7);
 int ADXB_ExecOneWav4(int a4, int a5, int a6, int a7);
 int FUN_0c07e458(int a4);
 int FUN_0c0e486e(int a4, int a5);
@@ -252,137 +252,200 @@ int FUN_0c0d1f12(int a4)
     return t36;
 }
 
-int FUN_0c22b866(int a4, int a5, int a6, int a7, float f4, float f5, float f6, float f7, float f8, float f9, float f10, float f11)
+int FUN_0c22b866(int a4, int a5, int a6, int a7)
 {
-    int t5;
-    int t14;
-    int t16;
-    int t20;
-    int t23;
-    int t30;
-    int t36;
-    int t47;
-    int stk[10];
+    int stk[3];
+    register int t0;
+    register int t1;
+    register int t4;
+    register int t5;
+    register int t12;
+    register int t17;
+    register int t21;
+    register int t34;
+    register int t39;
+    register int t43;
+    register int t54;
+    register int t56;
+    register int t57;
+    register int t67;
+    register int t58;
+    register int t59;
+    register int t70;
+    register int t74;
+    register int t78;
+    register int t108;
+    register int t114;
+    register int t115;
+    register int t104;
+    register int t99;
+    register int t92;
 
-    int R0;
-    int R1;
-    int R2;
-    int R3;
-    int R4;
-    int R5;
-    int R6;
-    int R7;
-    int R9;
-    int R10;
-    int R11;
-    int R12;
-    int R13;
-    int R14;
-    float F6;
-    float F11;
-    int T_;
-    R4 = a4;
-    R5 = a5;
-    R6 = a6;
-    R7 = a7;
-    F6 = f6;
-    F11 = f11;
-    L_C22B866:;
-    R10 = (R4);
-    R12 = (0xC232EA6);
-    R13 = (R5);
-    if (((int)R5 < (int)0x1)) goto L_C22B886;
-    goto L_C22B880;
-    L_C22B880:;
-    if (((int)R13 <= (int)0x2)) goto L_C22B890;
-    goto L_C22B886;
-    L_C22B886:;
-    t5 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E30, R5, R6, R7);
-    goto L_C22B8AA;
-    L_C22B8AA:;
-    R0 = (0x0);
-    goto L_C22B984;
-    L_C22B984:;
-    return R0;
-    L_C22B890:;
-    if ((R10 == 0)) goto L_C22B8A4;
-    goto L_C22B894;
-    L_C22B894:;
-    R11 = (0x0);
-    R4 = (R10);
-    R5 = (0x0);
-    if (((int)R13 <= 0)) goto L_C22B8B6;
-    goto L_C22B89E;
-    L_C22B89E:;
-    if (((*(int *)((R4 + 0x0))) != 0)) goto L_C22B8AE;
-    goto L_C22B8A4;
-    L_C22B8A4:;
-    t14 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E60, R5, R6, R7);
-    R14 = (0xC237E60);
-    goto L_C22B8AA;
-    L_C22B8AE:;
-    t16 = (int)(R5 + 0x1) < (int)R13;
-    R4 = ((R4 + 0x4));
-    R5 = ((R5 + 0x1));
-    if (t16) goto L_C22B89E;
-    goto L_C22B8B6;
-    L_C22B8B6:;
-    FUN_0c22b6c8((((int)stk + 4) + 0x8));
-    t20 = mwlRnaAlloc();
-    R14 = (t20);
-    if ((t20 != 0)) goto L_C22B8F4;
-    goto L_C22B8C6;
-    L_C22B8C6:;
-    t23 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E8C, R5, R6, R7);
-    goto L_C22B97C;
-    L_C22B97C:;
-    FUN_0c22b6e0((((int)stk + 4) + 0x8));
-    R0 = (R14);
-    goto L_C22B984;
-    L_C22B8F4:;
-    *(unsigned char *)((R14 + 0x3)) = R13;
-    *(unsigned char *)((R14 + 0x2)) = R13;
-    R4 = (R11);
-    R5 = (R11);
-    if (((int)R13 <= 0)) goto L_C22B916;
-    goto L_C22B902;
-    L_C22B902:;
-    *(unsigned int *)((((R14 + 0x10) + R4) + 0x0)) = (*(int *)((R10 + R4)));
-    t30 = (int)(R5 + 0x1) < (int)R13;
-    R4 = ((R4 + 0x4));
-    R5 = ((R5 + 0x1));
-    if (t30) goto L_C22B902;
-    goto L_C22B916;
-    L_C22B916:;
-    (((struct o40_uint *)(R14))->v) = (FUN_0c232f8a(R13, R5, R6, R7));
-    if ((((((struct o40_int *)(R14))->v)) != 0)) goto L_C22B934;
-    goto L_C22B92A;
-    L_C22B92A:;
-    t36 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237EBC, R5, R6, R7);
-    R14 = (R11);
-    goto L_C22B97C;
-    L_C22B934:;
-    FUN_0c22b7e4(R14);
-    FUN_0c22c7fe(R14, (unsigned char)(*(signed char *)((R14 + 0x3))), 0x0, 0x0);
-    R12 = (R11);
-    if (((int)R13 <= 0)) goto L_C22B96A;
-    goto L_C22B946;
-    L_C22B946:;
-    R11 = (0xC2339E8);
-    goto L_C22B948;
-    L_C22B948:;
-    FUN_0c2339e8(((((struct o40_int *)(R14))->v)), R12, ((int)stk + 4), (((int)stk + 4) + 0x4));
-    *(unsigned int *)((((R12 << 2) + (R14 + 0x28)) + 0x0)) = (*(int *)(((int)stk + 4)));
-    t47 = (int)(R12 + 0x1) < (int)R13;
-    R12 = ((R12 + 0x1));
-    if (t47) goto L_C22B948;
-    goto L_C22B96A;
-    L_C22B96A:;
-    *(volatile int *)(((int)stk + 8));
-    *(volatile int *)((R14 + 0x8));
-    *(unsigned int *)((R14 + 0x30)) = (((_divls()) << 2) << 1);
-    *(unsigned char *)((R14 + 0x0)) = 0x1;
-    goto L_C22B97C;
+    if (((int)a5 >= (int)0x1) && ((int)a5 <= (int)0x2)) {
+        if (a4 != 0) {
+            if ((int)a5 > 0) {
+                t0 = a4;
+                t1 = 0x0;
+                for (;;) {
+                    if ((*(int *)((t0 + 0x0))) == 0) {
+                        break;
+                    }
+                    t1 = (t1 + 0x1);
+                    t0 = (t0 + 0x4);
+                    if ((int)t1 >= (int)a5) {
+                        t0 = ((int)stk + 0);
+                        t0 = (t0 + 0x8);
+                        FUN_0c22b6c8(t0);
+                        t4 = mwlRnaAlloc();
+                        if (t4 == 0) {
+                            t0 = 0xC237E8C;
+                            t5 = ((int (*)(int))(mwRnaErrCallFunc))(t0);
+                        } else {
+                            t1 = 0x0;
+                            *(unsigned char *)((t4 + 0x3)) = a5;
+                            *(unsigned char *)((t4 + 0x2)) = a5;
+                            t0 = 0x0;
+                            if ((int)a5 > 0) {
+                                for (;;) {
+                                    t1 = (t1 + 0x1);
+                                    *(unsigned int *)((((t4 + 0x10) + t0) + 0x0)) = (*(int *)((a4 + t0)));
+                                    t0 = (t0 + 0x4);
+                                    if ((int)t1 >= (int)a5) {
+                                        break;
+                                    }
+                                }
+                                t0 = a5;
+                                (((struct o40_uint *)(t4))->v) = (FUN_0c232f8a(t0, t1));
+                                if (((((struct o40_int *)(t4))->v)) == 0) {
+                                    t0 = 0xC237EBC;
+                                    t12 = ((int (*)(int))(mwRnaErrCallFunc))(t0);
+                                    t0 = ((int)stk + 0);
+                                    t0 = (t0 + 0x8);
+                                    FUN_0c22b6e0(t0);
+                                    return 0x0;
+                                }
+                                t0 = t4;
+                                FUN_0c22b7e4(t0);
+                                t1 = (unsigned char)(*(signed char *)((t4 + 0x3)));
+                                t0 = t4;
+                                FUN_0c22c7fe(t0, t1, 0x0, 0x0, *(int *)((int)stk + 0), *(int *)((int)stk + 0 + 4), *(int *)((int)stk + 0 + 8));
+                                if ((int)a5 > 0) {
+                                    t17 = 0x0;
+                                    for (;;) {
+                                        t1 = t17;
+                                        t0 = ((((struct o40_int *)(t4))->v));
+                                        FUN_0c2339e8(t0, t1, ((int)stk + 0), (((int)stk + 0) + 0x4));
+                                        t21 = (t17 << 2);
+                                        t17 = (t17 + 0x1);
+                                        *(unsigned int *)(((t21 + (t4 + 0x28)) + 0x0)) = (*(int *)(((int)stk + 0)));
+                                        if ((int)t17 >= (int)a5) {
+                                            break;
+                                        }
+                                    }
+                                }
+                            } else {
+                                t0 = a5;
+                                (((struct o40_uint *)(t4))->v) = (FUN_0c232f8a(t0, t1));
+                                if (((((struct o40_int *)(t4))->v)) == 0) {
+                                    t0 = 0xC237EBC;
+                                    t34 = ((int (*)(int))(mwRnaErrCallFunc))(t0);
+                                    t0 = ((int)stk + 0);
+                                    t0 = (t0 + 0x8);
+                                    FUN_0c22b6e0(t0);
+                                    return 0x0;
+                                }
+                                t0 = t4;
+                                FUN_0c22b7e4(t0);
+                                t1 = (unsigned char)(*(signed char *)((t4 + 0x3)));
+                                t0 = t4;
+                                FUN_0c22c7fe(t0, t1, 0x0, 0x0, *(int *)((int)stk + 0), *(int *)((int)stk + 0 + 4), *(int *)((int)stk + 0 + 8));
+                                if ((int)a5 > 0) {
+                                    t39 = 0x0;
+                                    for (;;) {
+                                        t1 = t39;
+                                        t0 = ((((struct o40_int *)(t4))->v));
+                                        FUN_0c2339e8(t0, t1, ((int)stk + 0), (((int)stk + 0) + 0x4));
+                                        t43 = (t39 << 2);
+                                        t39 = (t39 + 0x1);
+                                        *(unsigned int *)(((t43 + (t4 + 0x28)) + 0x0)) = (*(int *)(((int)stk + 0)));
+                                        if ((int)t39 >= (int)a5) {
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            *(unsigned int *)((t4 + 0x30)) = ((((int)((int)(*(int *)(((int)stk + 4))) / (int)(*(int *)((t4 + 0x8))))) << 2) << 1);
+                            *(unsigned char *)((t4 + 0x0)) = 0x1;
+                        }
+                        t0 = ((int)stk + 0);
+                        t0 = (t0 + 0x8);
+                        FUN_0c22b6e0(t0);
+                        return t4;
+                    }
+                }
+                t54 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E60, t1, a6, a7);
+                t104 = 0x0;
+            } else {
+                FUN_0c22b6c8((((int)stk + 0) + 0x8));
+                t56 = mwlRnaAlloc();
+                if (t56 == 0) {
+                    t57 = ((int (*)(int))(mwRnaErrCallFunc))(0xC237E8C);
+                    t99 = t56;
+                } else {
+                    *(unsigned char *)((t56 + 0x3)) = a5;
+                    *(unsigned char *)((t56 + 0x2)) = a5;
+                    t67 = 0x0;
+                    if ((int)a5 > 0) {
+                        t58 = 0x0;
+                        t59 = 0x0;
+                        for (;;) {
+                            t59 = (t59 + 0x1);
+                            *(unsigned int *)((((t56 + 0x10) + t58) + 0x0)) = (*(int *)((a4 + t58)));
+                            t58 = (t58 + 0x4);
+                            if ((int)t59 >= (int)a5) {
+                                break;
+                            }
+                        }
+                        t67 = t59;
+                    }
+                    (((struct o40_uint *)(t56))->v) = (FUN_0c232f8a(a5, t67));
+                    if (((((struct o40_int *)(t56))->v)) == 0) {
+                        t70 = ((int (*)(int))(mwRnaErrCallFunc))(0xC237EBC);
+                        t92 = 0x0;
+                    } else {
+                        FUN_0c22b7e4(t56);
+                        FUN_0c22c7fe(t56, (unsigned char)(*(signed char *)((t56 + 0x3))), 0x0, 0x0, *(int *)((int)stk + 0), *(int *)((int)stk + 0 + 4), *(int *)((int)stk + 0 + 8));
+                        if ((int)a5 > 0) {
+                            t74 = 0x0;
+                            for (;;) {
+                                FUN_0c2339e8(((((struct o40_int *)(t56))->v)), t74, ((int)stk + 0), (((int)stk + 0) + 0x4));
+                                t78 = (t74 << 2);
+                                t74 = (t74 + 0x1);
+                                *(unsigned int *)(((t78 + (t56 + 0x28)) + 0x0)) = (*(int *)(((int)stk + 0)));
+                                if ((int)t74 >= (int)a5) {
+                                    break;
+                                }
+                            }
+                        }
+                        *(unsigned int *)((t56 + 0x30)) = ((((int)((int)(*(int *)(((int)stk + 4))) / (int)(*(int *)((t56 + 0x8))))) << 2) << 1);
+                        *(unsigned char *)((t56 + 0x0)) = 0x1;
+                        t92 = t56;
+                    }
+                    t99 = t92;
+                }
+                FUN_0c22b6e0((((int)stk + 0) + 0x8));
+                t104 = t99;
+            }
+            t115 = t104;
+        } else {
+            t108 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E60, a5, a6, a7);
+            t115 = 0x0;
+        }
+    } else {
+        t114 = ((int (*)(int, int, int, int))(mwRnaErrCallFunc))(0xC237E30, a5, a6, a7);
+        t115 = 0x0;
+    }
+    return t115;
 }
 
 int ADXB_ExecOneWav4(int a4, int a5, int a6, int a7)

@@ -20,10 +20,10 @@ struct oBC_int { char p[0xBC]; int v; };
 
 int FUN_0c02d12c(int a4, int a5, int a6, float f4, float f5)
 {
-    int t5;
-    float u7;
-    int t9;
-    float u17;
+    register int t5;
+    register float u7;
+    register int t9;
+    register float u17;
 
     if (((((struct o330_int *)(a4))->v)) != 0) {
         (((struct o4F0_uint *)(a4))->v) = 0x14;
@@ -50,7 +50,7 @@ int FUN_0c02d12c(int a4, int a5, int a6, float f4, float f5)
                 (((struct o558_uint *)(a4))->v) = t5;
                 (((struct o508_uint *)(a4))->v) = 0x1;
                 (((struct o514_uint *)(a4))->v) = 0x1;
-                _quick_odd_mvn(t5, t9, 0xC2475D4, u17, u7);
+                { struct mv3 { int w[3]; }; *(struct mv3 *)((0x518 + a4)) = *(struct mv3 *)((t9 + 0x30)); }
                 (((struct o4F4_uint *)(a4))->v) = 0x17;
             } else {
                 (((struct o558_uint *)(a4))->v) = 0x0;

@@ -376,3 +376,7 @@ for row in rows:
         print('%s%s  %s' % (name, cell.rjust(w + 2 + 7 - len(name)), detail))
     else:
         print('%-*s  %7s  %s' % (w, name, p, detail))
+
+if os.path.exists('overlays.tsv'):      # a game with code overlays (docs: references/overlays.md): their own total, after this report
+    sys.stdout.flush()
+    subprocess.run([sys.executable, os.path.join(here, 'overlay', 'progress.py')])

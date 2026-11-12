@@ -330,29 +330,35 @@ float FUN_0c0f2c4c(float f4)
 
 int FUN_0c0f3ccc(int a4, int a5, int a6)
 {
-    int t0;
-    int t1;
-    int t2;
-    int t5;
-    int t7;
+    register int t0;
+    register int t1;
+    register int t2;
+    register int t3;
+    register int t4;
+    register int t5;
+    register int t6;
 
     if ((int)(a6 - 1) >= 0) {
         t0 = (a4 + (a6 - 1));
         t1 = (a5 + (a6 - 1));
-        t2 = 0x0;
+        t2 = (a6 - 1);
+        t3 = 0x0;
         for (;;) {
-            *(unsigned char *)((t0 + 0x0)) = (((unsigned char)(*(signed char *)((t0 + 0x0))) + (unsigned char)(*(signed char *)((t1 + 0x0)))) + t2);
-            t5 = _divls();
-            t2 = t5;
-            t1 = (a5 - 1);
-            t0 = (a4 - 1);
-            if ((int)(a6 - 1) < 0) {
+            t5 = *(signed char *)((t0 + 0x0));
+            t6 = *(signed char *)((t1 + 0x0));
+            *(unsigned char *)((t0 + 0x0)) = (((unsigned char)t5 + (unsigned char)t6) + t3);
+            t4 = (int)((int)(((unsigned char)t5 + (unsigned char)t6) + t3) / (int)0x100);
+            t3 = t4;
+            t2 = (t2 - 1);
+            t1 = (t1 - 1);
+            t0 = (t0 - 1);
+            if ((int)t2 < 0) {
                 break;
             }
         }
-        t7 = t5;
+        t0 = t4;
     }
-    return t7;
+    return t0;
 }
 
 int gdFsReadWG(int a4, int a5, int a6)
@@ -489,8 +495,16 @@ int FUN_0c0f2b34(int a4, int a5, int a6)
 
 int syRtcMakeDayOfWeek(int a4, int a5, int a6)
 {
-    _divls();
-    return (_modls(a4));
+    register int t0;
+    register int t1;
+
+    t0 = a4;
+    t1 = a5;
+    if ((int)(unsigned char)a5 <= (int)0x2) {
+        t0 = (a4 - 1);
+        t1 = (a5 + 0xC);
+    }
+    return ((int)((int)(((((((unsigned short)t0 >> 1) >> 1) + ((int)((int)(((unsigned short)(unsigned char)t1 * (unsigned short)0xD) + 0x8) / (int)0x5))) + (unsigned short)t0) + (unsigned char)a6) - 15) % (int)0x7));
 }
 
 void syHwFinish(void)
@@ -918,14 +932,6 @@ int pdGunLeave(void)
     return t3;
 }
 
-int FUN_0c2113b4(void)
-{
-    int stk[2];
-
-    *(unsigned short *)(((int)stk + 4)) = (_builtin_get_imask());
-    _builtin_set_imask(0xF);
-    return ((int (*)(void))(0xAC2113E0))();
-}
 
 int syRtcAicaSetDateLo(int a4)
 {
@@ -1442,13 +1448,6 @@ int kmSetPALEXTCallback(int a4)
     return 0x0;
 }
 
-int syCalloc(void)
-{
-    int t1;
-
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x8));
-    return ((int (*)(void))(t1))();
-}
 
 void p2_cache_set(void)
 {
@@ -1510,31 +1509,7 @@ void FUN_0c20ec20(int a4)
     _builtin_set_imask(0xF);
 }
 
-int FUN_0c2103bc(void)
-{
-    int t0;
-    int t1;
 
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x44));
-        return ((int (*)(void))(t1))();
-    }
-    return 0x0;
-}
-
-int FUN_0c21045c(void)
-{
-    int t0;
-    int t1;
-
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x58));
-        return ((int (*)(void))(t1))();
-    }
-    return 0x0;
-}
 
 int FUN_0c0e5910(int a4, int a5)
 {
@@ -1556,79 +1531,11 @@ void FUN_0c20f29a(int a4)
     }
 }
 
-int gdFsReinit(void)
-{
-    int t0;
-    int t1;
 
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x10));
-        return ((int (*)(void))(t1))();
-    }
-    return 0xFFFFFFFF;
-}
 
-int FUN_0c210336(void)
-{
-    int t0;
-    int t1;
 
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x20));
-        return ((int (*)(void))(t1))();
-    }
-    return 0x0;
-}
 
-int FUN_0c210378(void)
-{
-    int t0;
-    int t1;
 
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x2C));
-        return ((int (*)(void))(t1))();
-    }
-    return 0x0;
-}
-
-int FUN_0c21038e(void)
-{
-    int t0;
-    int t1;
-
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        t1 = *(int *)((t0 + 0x3C));
-        return ((int (*)(void))(t1))();
-    }
-    return 0x0;
-}
-
-void FUN_0c210400(void)
-{
-    int t0;
-
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        ((int (*)(void))((*(int *)((t0 + 0x48)))))();
-    return;
-    }
-}
-
-void FUN_0c210416(void)
-{
-    int t0;
-
-    t0 = *(int *)0xC2393D0;
-    if (t0 != 0) {
-        ((int (*)(void))((*(int *)((t0 + 0x74)))))();
-    return;
-    }
-}
 
 int kmResetRenderer(int a4, int a5, int a6, int a7)
 {
@@ -1650,13 +1557,6 @@ int syMallocChangeIF(int a4)
     return t0;
 }
 
-int realloc(void)
-{
-    int t1;
-
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0xC));
-    return ((int (*)(void))(t1))();
-}
 
 int syRtcDbgSetLogAddr(int a4, int a5)
 {
@@ -1791,53 +1691,11 @@ void pdSetThreshold(int a4, int a5)
     *(unsigned char *)0xC94DF31 = a5;
 }
 
-int malloc(void)
-{
-    int t1;
 
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x0));
-    return ((int (*)(void))(t1))();
-}
 
-int syFree(void)
-{
-    int t1;
 
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x4));
-    return ((int (*)(void))(t1))();
-}
 
-int syMalloc(void)
-{
-    int t1;
 
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x0));
-    return ((int (*)(void))(t1))();
-}
-
-int free(void)
-{
-    int t1;
-
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x4));
-    return ((int (*)(void))(t1))();
-}
-
-int syRealloc(void)
-{
-    int t1;
-
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0xC));
-    return ((int (*)(void))(t1))();
-}
-
-int calloc(void)
-{
-    int t1;
-
-    t1 = *(int *)(((*(int *)0xC94DF78) + 0x8));
-    return ((int (*)(void))(t1))();
-}
 
 int FUN_0c0e62d4(int a4, int a5, int a6, int a7)
 {

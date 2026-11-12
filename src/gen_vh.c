@@ -3,6 +3,7 @@
 
 int FUN_0c0da2e0(void);
 extern int _modls();
+struct o530_int { char p[0x530]; int v; };
 int FUN_0c0366b4(int a4);
 
 int FUN_0c0366b4(int a4)
@@ -16,9 +17,8 @@ int FUN_0c0366b4(int a4)
     register int t6;
     register int t7;
     register int t8;
-    register int t9;
 
-    t0 = *(int *)((a4 + 0x530));
+    t0 = (((struct o530_int *)(a4))->v);
     t1 = 0x0;
     t2 = 0xFFFFFFFF;
     t3 = 0x0;
@@ -26,81 +26,65 @@ int FUN_0c0366b4(int a4)
     t5 = 0xFFFFFFFF;
     for (;;) {
         if (t1 != 0) {
-            t7 = ((t3 << 2) + (0xF0 + t0));
             if ((*(float *)((((t3 << 2) + (0xF0 + t0)) + 0x0))) != 0.0f) {
-                t8 = t3;
-                t8 = (t8 - 1);
-                t9 = t8;
-                t9 = (t9 - t4);
+                t6 = t3;
+                t6 = (t6 - 1);
+                t7 = t6;
+                t7 = (t7 - t4);
                 t1 = 0x0;
-                if ((int)t2 >= (int)t9) {
-                    if (t2 == t9) {
-                        FUN_0c0da2e0();
-                        t9 = 0xC0E5F1C;
-                        t7 = ((int (*)(void))(_modls))();
-                        if ((int)t7 > (int)0x3) {
+                if ((int)t2 >= (int)t7) {
+                    if (t2 == t7) {
+                        t7 = 0xC0E5F1C;
+                        t8 = (int)((int)(FUN_0c0da2e0()) % (int)0xA);
+                        if ((int)t8 > (int)0x3) {
                             t5 = t4;
-                            t5 = (t5 + t8);
-                            t2 = t8;
+                            t5 = (t5 + t6);
+                            t2 = t6;
                             t5 = ((int)((unsigned int)((int)((unsigned int)t5 + (unsigned int)0x0)) + ((((int)0x0 > (int)t5)) ? 1u : 0u)));
                             t5 = (t5 >> 1);
                             t2 = (t2 - t4);
                         }
-                    } else {
-                        t7 = ((t3 << 2) + (0xF0 + t0));
                     }
                 } else {
                     t5 = t4;
-                    t5 = (t5 + t8);
-                    t2 = t8;
+                    t5 = (t5 + t6);
+                    t2 = t6;
                     t5 = ((int)((unsigned int)((int)((unsigned int)t5 + (unsigned int)0x0)) + ((((int)0x0 > (int)t5)) ? 1u : 0u)));
                     t5 = (t5 >> 1);
                     t2 = (t2 - t4);
-                    t7 = ((t3 << 2) + (0xF0 + t0));
                 }
             }
-            t6 = t7;
         } else {
             if ((*(float *)((((t3 << 2) + (0xF0 + t0)) + 0x0))) == 0.0f) {
                 t4 = t3;
                 t1 = 0x1;
             }
-            t6 = ((t3 << 2) + (0xF0 + t0));
         }
-        t9 = 0x8;
+        t7 = 0x8;
         t3 = (t3 + 0x1);
-        if ((int)t3 >= (int)t9) {
+        if ((int)t3 >= (int)t7) {
             break;
         }
     }
     t3 = t5;
-    t7 = t6;
     if (t1 != 0) {
         if ((int)t2 >= (int)(0x7 - t4)) {
             t1 = t5;
             if (t2 == (0x7 - t4)) {
-                FUN_0c0da2e0();
-                t2 = ((int (*)(void))(_modls))();
-                t8 = t5;
+                t2 = (int)((int)(FUN_0c0da2e0()) % (int)0xA);
+                t6 = t5;
                 if ((int)t2 > (int)0x3) {
-                    t8 = (((int)((unsigned int)((int)((unsigned int)(t4 + 0x7) + (unsigned int)0x0)) + ((((int)0x0 > (int)(t4 + 0x7))) ? 1u : 0u))) >> 1);
+                    t6 = (((int)((unsigned int)((int)((unsigned int)(t4 + 0x7) + (unsigned int)0x0)) + ((((int)0x0 > (int)(t4 + 0x7))) ? 1u : 0u))) >> 1);
                 }
-                t1 = t8;
-            } else {
-                t2 = t6;
+                t1 = t6;
             }
-            t5 = t1;
-            t1 = t2;
+            t2 = t1;
         } else {
-            t5 = (((int)((unsigned int)((int)((unsigned int)(t4 + 0x7) + (unsigned int)0x0)) + ((((int)0x0 > (int)(t4 + 0x7))) ? 1u : 0u))) >> 1);
-            t1 = t6;
+            t2 = (((int)((unsigned int)((int)((unsigned int)(t4 + 0x7) + (unsigned int)0x0)) + ((((int)0x0 > (int)(t4 + 0x7))) ? 1u : 0u))) >> 1);
         }
-        t3 = t5;
-        t7 = t1;
+        t3 = t2;
     }
-    *(volatile int *)0xC23ED68;
-    t1 = ((int (*)(int))(_modls))(t7);
-    t1 = ((int (*)(void))(_modls))();
+    t1 = (int)((int)((int)((int)(*(int *)0xC23ED68) % (int)0x1F4)) % (int)0x3);
     if (t1 != 0) {
         t2 = (t3 + 0x1);
         if (t1 != 1) {

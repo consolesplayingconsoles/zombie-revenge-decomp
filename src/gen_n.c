@@ -1051,14 +1051,6 @@ int ADXSTM_GetCurOfst(int a4, int a5)
     return 0x1;
 }
 
-int FUN_0c22b324(void)
-{
-    int stk[2];
-
-    *(unsigned short *)(((int)stk + 4)) = (_builtin_get_imask());
-    _builtin_set_imask(0xF);
-    return ((int (*)(void))(0xAC22B350))();
-}
 
 int kdSetCallback(int a4, int a5, int a6)
 {
