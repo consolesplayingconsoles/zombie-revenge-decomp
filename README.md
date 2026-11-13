@@ -1,10 +1,16 @@
 # Zombie Revenge decomp
 
-![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=68&s=3)
+![decomp progress](badges/progress.svg?p=100.0&b=100.0&a=69&s=3)
 
 **Explore this decomp project with [Shuriken Explorer](https://consolesplayingconsoles.github.io/dc-shuriken-explorer/) and see the game's models, skeletons, animations, textures, images, sounds, text and side-by-side C and assembly code directly in your browser.**
 
-A decompilation of the Dreamcast **Zombie Revenge**, in progress. It rebuilds the game's executable byte for byte.
+A decompilation of the Dreamcast **Zombie Revenge**, in progress. 
+
+Known issues:
+- On a Dreamcast it crashes at the VMU screen
+- On Flycast the game starts and plays normally (not yet tested in depth)
+
+It rebuilds the game's executable byte for byte.
 A function is **done** when its C behaves like the original (Equivalent);
 byte-identical C (Matching) is the bonus tier.
 
@@ -21,7 +27,7 @@ everything game-derived on your machine, and `.gitignore` keeps it out of git.
 
 <!-- progress -->
 ```
-TOTAL TEST COVERAGE           68.3%  the instructions the cases ran, of all instructions, over the 5189 functions that can be C; the 5189 functions that reached the check are measured, the others count 0
+TOTAL TEST COVERAGE           68.5%  the instructions the cases ran, of all instructions, over the 5189 functions that can be C; the 5189 functions that reached the check are measured, the others count 0
 FUNCTIONS LEFT  (100.0% complete) 0  of the 5189 functions that can be C (161 with no C form are counted apart)
 BYTES LEFT      (100.0% complete) 0  of 886768 bytes of code that can be C
 FUNCTIONS                            
@@ -33,6 +39,9 @@ FUNCTIONS
   Checked with errors             0  0 bytes
   No C form                    2.8%  an instruction or a register convention with no C form (tools/5-generated/classify.py names it)
   documented                  14.0%  816 named functions in docs/*.md
+GAME ASSETS (EXTRA)                  
+  models named                 4.2%  608 of 14434 models: a name, or a named table or collection
+  sounds named                 7.2%  73 of 1019 sounds (sound rules)
 ```
 <!-- /progress -->
 

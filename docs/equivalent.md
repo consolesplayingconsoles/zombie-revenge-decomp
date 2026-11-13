@@ -38910,7 +38910,7 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 50 of 50 instructions
 
 ### FUN_0c0408a0 (`0C0408A0`, 1370 bytes, `src/gen_hf.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_hf/FUN_0c0408a0.json`
+- equivalent on 23 development and 23 holdout cases, in `tests/gen_hf/FUN_0c0408a0.json`
 - case 1
 - case 94
 - case 4
@@ -38929,6 +38929,11 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 14
 - case 15
 - case 16
+- object state 0, calls answer 0
+- object state 1, calls answer 0
+- object state 2, calls answer 0
+- object state 3, calls answer 0
+- object state 4, calls answer 0
 - case 144
 - case 132
 - case 32
@@ -38947,7 +38952,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 80
 - case 150
 - case 120
-- the cases run 82 of 542 instructions
+- object state 0, calls answer 1
+- object state 1, calls answer 1
+- object state 2, calls answer 1
+- object state 3, calls answer 1
+- object state 4, calls answer 1
+- the cases run 442 of 549 instructions
 
 ### FUN_0c040dfa (`0C040DFA`, 30 bytes, `src/gen_jq.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_jq/FUN_0c040dfa.json`
@@ -55365,7 +55375,7 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 31 of 116 instructions
 
 ### FUN_0c057142 (`0C057142`, 1762 bytes, `src/gen_mi.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_mi/FUN_0c057142.json`
+- equivalent on 22 development and 21 holdout cases, in `tests/gen_mi/FUN_0c057142.json`
 - case 0
 - case 15
 - case 0
@@ -55384,6 +55394,10 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 13
 - case 14
 - case 16
+- object type 0, state 0, +264 set, calls answer 0
+- object type 0, state 3, +264 0, calls answer 1
+- object type 0, state 4, +264 0, calls answer 1
+- object type 22, state 0, +264 0, calls answer 0
 - case 112
 - case 137
 - case 67
@@ -55402,7 +55416,10 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 97
 - case 124
 - case 154
-- the cases run 169 of 725 instructions
+- object type 0, state 3, +264 0, calls answer 0
+- object type 0, state 4, +264 0, calls answer 0
+- object type 0, state 11, +264 0, calls answer 0
+- the cases run 429 of 731 instructions
 
 ### FUN_0c057824 (`0C057824`, 300 bytes, `src/gen_pc.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_pc/FUN_0c057824.json`
@@ -101678,10 +101695,17 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 30 of 243 instructions
 
 ### FUN_0c0bbbf4 (`0C0BBBF4`, 2896 bytes, `src/gen_kp.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_kp/FUN_0c0bbbf4.json`
+- equivalent on 5 development and 4 holdout cases, in `tests/gen_kp/FUN_0c0bbbf4.json`
 - rescue: empty case
+- obj +BC 0, +32C 0, matrix buffer clear, +38C 0, floats (0.0, 1.0)
+- obj +BC 0, +32C 0, matrix buffer set, +38C 0, floats (1.0, 0.0)
+- obj +BC 0, +32C 2, matrix buffer clear, +38C 0, floats (1.0, 0.0)
+- obj +BC 2, +32C 0, matrix buffer clear, +38C 0, floats (1.0, 0.0)
 - rescue: empty case
-- the cases run 754 of 1218 instructions
+- obj +BC 0, +32C 0, matrix buffer clear, +38C 1, floats (1.0, 0.0)
+- obj +BC 0, +32C 1, matrix buffer clear, +38C 0, floats (1.0, 0.0)
+- obj +BC 0, +32C 3, matrix buffer clear, +38C 0, floats (1.0, 0.0)
+- the cases run 860 of 1220 instructions
 
 ### FUN_0c0bc744 (`0C0BC744`, 12 bytes, `src/gen_i.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_i/FUN_0c0bc744.json`
@@ -107448,10 +107472,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 53 of 53 instructions
 
 ### FUN_0c0c5660 (`0C0C5660`, 924 bytes, `src/gen_oa.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_oa/FUN_0c0c5660.json`
+- equivalent on 2 development and 2 holdout cases, in `tests/gen_oa/FUN_0c0c5660.json`
 - rescue: empty case
+- item passing the gate: model none, word +30 0, word +68 0, calls answer 0
 - rescue: empty case
-- the cases run 97 of 397 instructions
+- item passing the gate: model set, word +30 0, word +68 0, calls answer 0
+- the cases run 317 of 397 instructions
 
 ### FUN_0c0c5a4c (`0C0C5A4C`, 282 bytes, `src/gen_cy.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_cy/FUN_0c0c5a4c.json`
@@ -107539,8 +107565,8 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 53
 - the cases run 53 of 57 instructions
 
-### FUN_0c0c5de8 (`0C0C5DE8`, 374 bytes, `src/gen_bb.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_bb/FUN_0c0c5de8.json`
+### FUN_0c0c5de8 (`0C0C5DE8`, 374 bytes, `src/gen_ta.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ta/FUN_0c0c5de8.json`
 - case 0
 - case 1
 - case 2
@@ -107559,28 +107585,28 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 16
 - case 17
-- case 61
-- case 58
-- case 75
-- case 52
-- case 56
-- case 157
-- case 80
-- case 134
-- case 78
-- case 104
-- case 68
-- case 76
+- case 88
+- case 38
+- case 59
+- case 124
+- case 73
+- case 69
+- case 111
 - case 46
-- case 54
-- case 94
-- case 50
+- case 81
+- case 146
 - case 148
-- case 57
+- case 83
+- case 78
+- case 84
+- case 61
+- case 102
+- case 48
+- case 154
 - the cases run 41 of 147 instructions
 
-### FUN_0c0c5f5e (`0C0C5F5E`, 370 bytes, `src/gen_dx.c`)
-- equivalent on 18 development and 18 holdout cases, in `tests/gen_dx/FUN_0c0c5f5e.json`
+### FUN_0c0c5f5e (`0C0C5F5E`, 370 bytes, `src/gen_ta.c`)
+- equivalent on 18 development and 18 holdout cases, in `tests/gen_ta/FUN_0c0c5f5e.json`
 - case 0
 - case 1
 - case 2
@@ -107599,24 +107625,24 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 15
 - case 16
 - case 17
-- case 98
-- case 73
-- case 118
-- case 61
-- case 107
-- case 66
-- case 36
-- case 154
-- case 137
-- case 134
-- case 108
-- case 65
-- case 60
-- case 53
+- case 50
+- case 149
+- case 144
 - case 94
-- case 42
-- case 81
-- case 70
+- case 72
+- case 88
+- case 83
+- case 102
+- case 61
+- case 41
+- case 56
+- case 156
+- case 78
+- case 110
+- case 40
+- case 157
+- case 53
+- case 67
 - the cases run 41 of 147 instructions
 
 ### FUN_0c0c60d0 (`0C0C60D0`, 272 bytes, `src/gen_gr.c`)
@@ -130657,15 +130683,23 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 26 of 50 instructions
 
 ### FUN_0c0ed6d8 (`0C0ED6D8`, 300 bytes, `src/gen_aad.c`)
-- equivalent on 4 development and 4 holdout cases, in `tests/gen_aad/FUN_0c0ed6d8.json`
+- equivalent on 8 development and 8 holdout cases, in `tests/gen_aad/FUN_0c0ed6d8.json`
 - hand 4: 5 vertices
 - hand 3: 4 vertices
 - hand 1: 2 vertices
 - hand 6: 7 vertices
+- hand 4: 5 vertices with a distinct matrix in the back bank
+- hand 3: 4 vertices with a distinct matrix in the back bank
+- hand 1: 2 vertices with a distinct matrix in the back bank
+- hand 6: 7 vertices with a distinct matrix in the back bank
 - hand 2: 3 vertices
 - hand 0: 1 vertices
 - hand 5: 6 vertices
 - hand 7: 9 vertices
+- hand 2: 3 vertices with a distinct matrix in the back bank
+- hand 0: 1 vertices with a distinct matrix in the back bank
+- hand 5: 6 vertices with a distinct matrix in the back bank
+- hand 7: 9 vertices with a distinct matrix in the back bank
 - the cases run 150 of 150 instructions
 
 ### FUN_0c0ed8a8 (`0C0ED8A8`, 52 bytes, `src/gen_l.c`)
@@ -159376,9 +159410,12 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - the cases run 24 of 26 instructions
 
 ### nlGetMatrix8 (`0C0DB730`, 44 bytes, `src/gen_j.c`)
-- equivalent on 1 development and 1 holdout cases, in `tests/gen_j/nlGetMatrix8.json`
+- equivalent on 2 development and 3 holdout cases, in `tests/gen_j/nlGetMatrix8.json`
 - rescue: empty case
+- a matrix of 16 distinct values into a buffer
 - rescue: empty case
+- another distinct matrix into a buffer
+- distinct values, the default matrix (r4 = 0)
 - the cases run 20 of 20 instructions
 
 ### nlInitMatrixStack (`0C0DB850`, 58 bytes, `src/gen_j.c`)

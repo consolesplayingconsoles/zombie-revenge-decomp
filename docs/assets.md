@@ -28,13 +28,13 @@ Texture numbers in the records: handgun 13, machine gun 27, shotgun 26, shotshel
 
 93 entries, one per `POL.AFS` entry. Each holds a run of `PRESSEDPVRFORMAT` blocks: a 16-byte tag, then a PRS stream that decompresses to a GBIX header (12 bytes) and a PVRT chunk. Entry 3 has 216 blocks (the weapons' are 128x128, RGB565, VQ without mipmaps; the shotshell's is 32x64, data type 13).
 
-Pairing: a model in `POL.AFS` entry i takes texture number n from the n-th block of `TEX.AFS` entry i. In 92 of the 93 entries the highest texture number any model uses is the block count minus one (entry 0: 291 of 292 blocks, entry 3: 215 of 216). The pairing is not a rule in `models.txt` yet: `textures` rules pair whole files, and this needs a per-entry form.
+Pairing: a model in `POL.AFS` entry i takes texture number n from the n-th `PRESSEDPVRFORMAT` block of `TEX.AFS` entry i (`textures POL.AFS TEX.AFS entries` in `models.txt`; each entry's models get texture set `e<i>` in the map). Counted by their tags, every entry has a block for every texture number its models use: in 86 of the 93 the highest number is the block count minus one, in 7 one block at the end is unused. Models drawn with these textures from entries 0, 3, 20, 45, 62 and 81 (scenery, weapons, the bat zombie, the playable characters) look right. Some blocks' PRS streams have no end marker: the data stops where the texture does and zeros run up to the next tag (four in entry 81); the map tool reads such a stream up to the size its PVRT header gives. 831 textures are palettized (data types 5 and 7, about 52 in each of 15 entries) and their palettes are not in these blocks: they are listed but not drawn.
 
 ## Motions: `MOT.AFS`
 
 One entry on disc: 5,142,579 bytes at `0x80000`. No tag or header structure; mostly 16-bit values (about 20% zeros). None of the skill's motion readers finds a motion in it (V format, 16-bit Euler keys, Ninja `NMDM`, Ninja memory images). The executable has a motion debug screen (strings `nMOTION_NUM`, `MOTION MAIN`, `MOTION SUB`, `Motion play`, `Joint Move`, around `0x0C0C1800` to `0x0C0C1BB0`, code not named yet), so motions are keyframed joint rotations. Its loader, its index (the game's table says 319 for `MOT.AFS`, and no 319-entry offset table was found in the executable) and the characters' bone tree are not found. Reading the motion player is the way to the skeletons.
 
-Characters, skeletons and textures on them stay open: Shuriken shows Zombie Revenge's skeletons and its textured models as not found.
+Characters and skeletons stay open: the map pairs the models with their textures, but the characters' parts are separate models, not assembled.
 
 ## Sound effects: `SND.AFS`
 

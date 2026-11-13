@@ -12,11 +12,16 @@
 #   textures <model file> <texture file> index   texture n = the n-th texture of the PVM archive <texture file> (for a model file that
 #                                                keeps its texture lists in its own data). To find the pair: the model file holds the texture names
 #                                                (the entry names of a PVM's PVMH header) as text; the archive whose names it holds is its texture file
+#   textures <model file> <texture file> entries   both AFS archives of as many entries: texture n of a model in entry i of the model file
+#                                                is the n-th PRESSEDPVRFORMAT texture of entry i of the texture file
 #   motions <model file> <motion file>          the motions in <motion file> animate the models of <model file> with as many objects as they have
 #                                                nodes (a skeleton in the viewer), for files of different names (e.g. a character's motion bank and the
 #                                                executable that holds the character)
 #   name <file> <offset> <text>   /   table <addr> <group> <label>   /   sound <file> <entry> <text>   /   image <file> <offset> <text>   names (the viewer writes these)
 # Nothing is needed here to start: with no rules the map still lists every model, grouped by the table that holds it.
+
+# Textures: POL.AFS entry i takes its textures from TEX.AFS entry i (docs/assets.md, "Textures").
+textures POL.AFS TEX.AFS entries
 
 # Single models, named by file and offset (kept sorted by the viewer).
 name POL.AFS 2a4000 1_5_dummy
@@ -630,14 +635,27 @@ name POL.AFS 38c0c0 zond_ude_r_d
 
 # Sounds, named by file and entry (kept sorted by the viewer).
 sound SND.AFS 1 Song 1
+sound SND.AFS 2 Song 2
+sound SND.AFS 3 Song 3
 sound SND.AFS 3030000 Squash
+sound SND.AFS 3030009 Beep 1
+sound SND.AFS 3030014 Bug Squish
+sound SND.AFS 3030015 Squeaky Scream 12
+sound SND.AFS 3030039 Bug 1
+sound SND.AFS 3030040 Bug 2
+sound SND.AFS 3030041 Bug 3
+sound SND.AFS 3030042 Bug 4
+sound SND.AFS 3030043 Bug 5
+sound SND.AFS 3030045 Squash 3
 sound SND.AFS 3030046 Squeak
+sound SND.AFS 3030055 Heavy Hit
 sound SND.AFS 3030061 Glass 1
 sound SND.AFS 3030062 Glass 2
+sound SND.AFS 3030063 Beep 2
+sound SND.AFS 3030064 Squash 2
 sound SND.AFS 3030066 Helicopter
-sound SND.AFS 3030115 Reload 1
-sound SND.AFS 3030116 Reload 2
-sound SND.AFS 3030148 Gun Shot
+sound SND.AFS 3030100 Scream
+sound SND.AFS 3030101 Beep
 sound SND.AFS 3030102 Melee Hit 1
 sound SND.AFS 3030103 Melee Hit 2
 sound SND.AFS 3030104 Melee Hit 3
@@ -650,6 +668,10 @@ sound SND.AFS 3030110 Melee Hit 9
 sound SND.AFS 3030111 Melee Hit 10
 sound SND.AFS 3030112 Melee Hit 11
 sound SND.AFS 3030113 Melee Hit 12
+sound SND.AFS 3030115 Reload 1
+sound SND.AFS 3030116 Reload 2
+sound SND.AFS 3030117 Select Players
+sound SND.AFS 3030148 Gun Shot
 sound SND.AFS 3030150 Water 1
 sound SND.AFS 3030151 Water 2
 sound SND.AFS 3030152 Water 3
@@ -665,21 +687,16 @@ sound SND.AFS 3030165 Squeaky Scream 8
 sound SND.AFS 3030166 Squeaky Scream 9
 sound SND.AFS 3030167 Squeaky Scream 10
 sound SND.AFS 3030168 Squeaky Scream 11
-sound SND.AFS 3030014 Bug Squish
-sound SND.AFS 3030009 Beep 1
-sound SND.AFS 3030015 Squeaky Scream 12
-sound SND.AFS 3030039 Bug 1
-sound SND.AFS 3030040 Bug 2
-sound SND.AFS 3030041 Bug 3
-sound SND.AFS 3030042 Bug 4
-sound SND.AFS 3030043 Bug 5
-sound SND.AFS 3030063 Beep 2
-sound SND.AFS 3030064 Squash 2
-sound SND.AFS 3030055 Heavy Hit
 sound SND.AFS 3030169 Missed Punch
 sound SND.AFS 3030185 Grab 1
 sound SND.AFS 3030186 Grab 2
 sound SND.AFS 3030187 Grab 3
+sound SND.AFS 3030191 Zombie 1
+sound SND.AFS 3030195 Zombie 2
+sound SND.AFS 3030199 Zombie 3
+sound SND.AFS 3030200 Zombie 4
+sound SND.AFS 3030201 Zombie 5
+sound SND.AFS 3030202 Zombie 6
 sound SND.AFS 3040041 Bug Voice 1
 sound SND.AFS 3040052 Bug Voice 2
 sound SND.AFS 3040062 Bug Voice 3
@@ -690,3 +707,6 @@ sound SND.AFS 3040071 Bug Voice 7
 sound SND.AFS 3080004 Metal Noise
 sound SND.AFS 3090001 Water 5
 sound SND.AFS 3090003 Water 6
+
+# Sub-groups, named by group and id (added by the viewer).
+note POL.AFS 0x1180000 0x1180000 Chair
