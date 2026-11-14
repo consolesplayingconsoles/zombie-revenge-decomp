@@ -358,20 +358,6 @@ int FUN_0c0b4c10(void)
     return FUN_0c0844dc((*(int *)0xC247F20), (*(int *)0xC247F24), 0x0, 0.199999988f);
 }
 
-int FUN_0c0b9da0(void)
-{
-    int t2;
-    int t7;
-
-    FUN_0c084218();
-    if (((*(int *)0xC23EDE0) != 0) && (t2 = *(int *)0xC247548, t2 != 0)) {
-        *(volatile int *)0xC247548;
-    }
-    if (((*(int *)0xC23EDE4) != 0) && (t7 = *(int *)0xC247568, t7 != 0)) {
-        *(volatile int *)0xC247568;
-    }
-    return FUN_0c0e16c0((*(int *)0xC23ECE0));
-}
 
 int FUN_0c0c0b9a(void)
 {
@@ -1685,18 +1671,6 @@ int FUN_0c0cbeee(int a4, int a5, int a6)
     return ADXF_ReadNw32((*(int *)0xC521CBC), t1, a6);
 }
 
-int FUN_0c0cec76(int a4, int a5)
-{
-    int t0;
-
-    for (;;) {
-        t0 = buDeleteFile(a4);
-        if (t0 == 0) {
-            break;
-        }
-    }
-    return t0;
-}
 
 int FUN_0c0cf486(void)
 {

@@ -55,45 +55,6 @@ struct o4C_uint { char p[0x4C]; unsigned int v; };
 
 
 
-int FUN_0c0c69f6(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-
-    if ((((((struct oC_int *)0xC23ED50)->v)) & 6) != 0) {
-        if ((*(int *)((a4 + 0x30))) != 0) {
-            FUN_0c0e15d4((*(int *)((a4 + 0x30))));
-        } else {
-            t0 = a4;
-        }
-        FUN_0c0e19f2();
-    }
-    if ((*(int *)((a4 + 0x30))) == 0) {
-        *(unsigned int *)((a4 + 0x30)) = (FUN_0c0e14c4(0xC0C69B6));
-    }
-    if ((int)(*(int *)((a4 + 0x3C))) < 0) {
-        t0 = 0x0;
-        for (;;) {
-            if ((*(int *)((((((t0 << 2) << 2) << 1) + 0xC246074) + 0x0))) == ((((struct o0_int *)0xC23ED50)->v))) {
-                break;
-            }
-            t0 = (t0 + 0x1);
-            if ((int)t0 >= (int)0x4) {
-                if ((int)(*(int *)((a4 + 0x3C))) >= 0) {
-                    *(unsigned int *)((a4 + 0x38)) = (((*(int *)(((((((*(int *)((a4 + 0x3C))) << 2) << 2) << 1) + 0xC246074) + 0xC))) + (*(int *)0xC247074)) - (*(int *)0xC2462F4));
-                    t0 = (*(int *)((a4 + 0x30)));
-                    return FUN_0c0e16c0(t0);
-                }
-                t0 = (*(int *)((a4 + 0x30)));
-                return FUN_0c0e16c0(t0);
-            }
-        }
-        *(unsigned int *)((a4 + 0x3C)) = t0;
-    }
-    if ((int)(*(int *)((a4 + 0x3C))) >= 0) {
-        *(unsigned int *)((a4 + 0x38)) = (((*(int *)(((((((*(int *)((a4 + 0x3C))) << 2) << 2) << 1) + 0xC246074) + 0xC))) + (*(int *)0xC247074)) - (*(int *)0xC2462F4));
-    }
-    return FUN_0c0e16c0((*(int *)((a4 + 0x30))));
-}
 
 
 int FUN_0c06b544(int a4)

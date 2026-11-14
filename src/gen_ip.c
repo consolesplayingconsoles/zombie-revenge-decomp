@@ -228,59 +228,6 @@ struct oC_uint { char p[0xC]; unsigned int v; };
 
 
 
-int FUN_0c074112(int a4, int a5, int a6, int a7)
-{
-    register int t0;
-    register int t1;
-    register int t2;
-    register int t3;
-    register float u0;
-    register float u1;
-    register float u2;
-
-    t0 = *(int *)((((*(int *)((a4 + 0x30))) << 2) + 0xC195A18));
-    t1 = t0;
-    if (((*(int *)0xC23ED88) & ((((struct o40_int *)(a4))->v))) != 0) {
-        t2 = t0;
-        t0 = 0x10;
-        for (;;) {
-            t3 = *(short *)((t2 + 0x0));
-            t2 = (t2 + 0x2);
-            FUN_0c0c49b0(t3);
-            t0 = (t0 - 0x1);
-            if (t0 == 0) {
-                break;
-            }
-        }
-        FUN_0c0e19f2();
-        t1 = t2;
-    }
-    (((struct o34_float *)(a4))->v) = (((((struct o34_float *)(a4))->v)) - (((FUN_0c0da410((*(int *)((a4 + 0x3C))))) + 0.5f) * 0.00999999978f));
-    t0 = FUN_0c0da2e0();
-    t2 = ((~(((~t0) + 0x1) & 0x1FFF)) + 0x1);
-    if ((int)t0 >= 0) {
-        t2 = (t0 & 0x1FFF);
-    }
-    *(unsigned int *)((a4 + 0x3C)) = ((*(int *)((a4 + 0x3C))) + (t2 + 0x2000));
-    t0 = t1;
-    t1 = 0x10;
-    for (;;) {
-        u0 = (((struct o34_float *)(a4))->v);
-        u1 = (((struct o38_float *)(a4))->v);
-        t3 = *(short *)((t0 + 0x0));
-        t0 = (t0 + 0x2);
-        u2 = u0;
-        if (u1 > u0) {
-            u2 = u1;
-        }
-        t2 = FUN_0c0c497c(t3, u2);
-        t1 = (t1 - 0x1);
-        if (t1 == 0) {
-            break;
-        }
-    }
-    return t2;
-}
 
 int FUN_0c04f608(int a4, int a5, int a6)
 {

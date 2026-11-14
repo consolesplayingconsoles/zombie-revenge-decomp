@@ -1093,11 +1093,6 @@ void vmsfs_c_setvolume(int a4, int a5)
     }
 }
 
-void DECtoBCD(int a4, int a5, int a6)
-{
-    FUN_0c0e5e74();
-    FUN_0c0e5fe4(a4);
-}
 
 int vmsfs_c_progress(int a4)
 {

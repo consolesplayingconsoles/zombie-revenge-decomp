@@ -343,56 +343,6 @@ int FUN_0c060ae0(int a4, int a5)
     return (FUN_0c05fd8c(a4, (*(int *)(((int)stk + 16))), (*(int *)(((int)stk + 8))), 0x0, 0x8, 1.5f, 1.0f, u53, u54));
 }
 
-int vmsfs_init(int a4, int a5, int a6)
-{
-    int t0;
-    int t5;
-    int t6;
-    int t19;
-    int t4;
-
-    *(unsigned int *)0xC956764 = 0xC956750;
-    t0 = 0xC9571A8;
-    for (;;) {
-        *(unsigned int *)((t0 + 0x0)) = 0x0;
-        t0 = (t0 + 0x4);
-        if ((unsigned int)t0 >= (unsigned int)0xC9571C8) {
-            break;
-        }
-    }
-    memset(0xC956750, 0x0, 0x14);
-    memset(0xC956768, 0x0, 0xA40);
-    vmsfs_setdevicetype(0x0);
-    (((struct o8_uint *)0xC95B668)->v) = 0x0;
-    t5 = 0x0;
-    t6 = 0x1;
-    for (;;) {
-        t5 = (t5 + 0x1);
-        if ((a5 & t6) != 0) {
-            t4 = ((((struct o8_int *)0xC95B668)->v));
-            t4 = (t4 + 0x1);
-            (((struct o8_uint *)0xC95B668)->v) = t4;
-        }
-        t6 = (t6 << 1);
-        if ((int)t5 >= (int)0x8) {
-            break;
-        }
-    }
-    if (a6 != 0) {
-        vmsfs_init_work_normal(a4, a5);
-        *(unsigned int *)(((*(int *)0xC956764) + 0x8)) = 0x0;
-    } else {
-        vmsfs_init_work_new(a4);
-        *(unsigned int *)(((*(int *)0xC956764) + 0x8)) = 0x1;
-    }
-    (((struct o0_uint *)0xC95B668)->v) = 0x8;
-    (((struct o4_uint *)0xC95B668)->v) = 0x0;
-    vmsfs_setretry(0xA);
-    t19 = (((struct o0_int *)0xC95B668)->v);
-    memset(0xC95B428, 0x0, (((((t19 << 2) << 1) + t19) << 2) << 1));
-    vmsio_init();
-    return 0x0;
-}
 
 
 
@@ -454,57 +404,6 @@ int vmsfs_fgetinfo(int a4, int a5, int a6)
 
 
 
-int adxsjd_decode_prep(int a4)
-{
-    int t0;
-    int t2;
-    int t4;
-    int t5;
-    int t7;
-    int t9;
-    int t12;
-    int t13;
-    int t15;
-    int t24;
-    int t27;
-    int t35;
-    int t8;
-    int stk[11];
-
-    t0 = *(int *)((a4 + 0x8));
-    t2 = *(int *)((a4 + 0x4));
-    t4 = ((int (*)(int, int, int, int))((*(int *)(((*(int *)((t0 + 0x0))) + 0x18)))))(t0, 0x1, 0x1000, (((int)stk + 4) + 0xC));
-    t5 = *(int *)(((int)stk + 20));
-    if ((int)t5 >= (int)0x10) {
-        t7 = ADXB_DecodeHeader(t2, (*(int *)(((int)stk + 16))), t5, 0x0, *(int *)((int)stk + 4), *(int *)((int)stk + 4 + 4), *(int *)((int)stk + 4 + 8), *(int *)((int)stk + 4 + 12), *(int *)((int)stk + 4 + 16), *(int *)((int)stk + 4 + 20), *(int *)((int)stk + 4 + 24), *(int *)((int)stk + 4 + 28));
-        if ((t7 != 0) && (t8 = *(int *)(((int)stk + 20)), (int)t7 <= (int)t8)) {
-            t9 = ADXB_GetFormat(t2);
-            if (t9 == 4) {
-                *(unsigned char *)((a4 + 0x3)) = 0x1;
-            }
-            t12 = ADXB_GetFormat(t2);
-            if (t12 == 2) {
-                t13 = *(int *)(((int)stk + 20));
-                *(unsigned int *)(((int)stk + 4)) = t13;
-                t15 = 0x40;
-                if ((int)t13 < (int)0x40) {
-                    t15 = (*(int *)(((int)stk + 4)));
-                }
-                FUN_0c0e631c((a4 + 0x50), (*(int *)(((int)stk + 16))), t15);
-            }
-            SJ_SplitChunk((((int)stk + 4) + 0xC), t7, (((int)stk + 4) + 0xC));
-            t24 = ((int (*)(int, int, int))((*(int *)(((*(int *)((t0 + 0x0))) + 0x20)))))(t0, 0x0, (((int)stk + 4) + 0xC));
-            t27 = ((int (*)(int, int, int))((*(int *)(((*(int *)((t0 + 0x0))) + 0x1C)))))(t0, 0x1, (((int)stk + 4) + 0x4));
-            *(unsigned char *)((a4 + 0x1)) = 0x2;
-            t35 = 0x2;
-        } else {
-            t35 = (((int (*)(int, int, int))((*(int *)(((*(int *)((t0 + 0x0))) + 0x1C)))))(t0, 0x1, (((int)stk + 4) + 0xC)));
-        }
-    } else {
-        t35 = (((int (*)(int, int, int))((*(int *)(((*(int *)((t0 + 0x0))) + 0x1C)))))(t0, 0x1, (((int)stk + 4) + 0xC)));
-    }
-    return t35;
-}
 
 
 int FUN_0c02ee08(int a4)

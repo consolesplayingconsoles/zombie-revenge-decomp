@@ -400,43 +400,6 @@ int search_dir(int a4, int a5, int a6)
     return t1;
 }
 
-int FUN_0c015436(int a4, int a5, int a6, int a7)
-{
-    int t6;
-    int t1;
-    int t2;
-    int t14;
-    int t16;
-    int t15;
-    int stk[9];
-
-    *(unsigned int *)(((int)stk + 4)) = a4;
-    *(unsigned int *)0xC23EB14 = 0x0;
-    *(unsigned int *)0xC23EB1C = 0x0;
-    t6 = a5;
-    if ((int)a5 >= (int)0x6) {
-        t1 = 0xC1EF4AD;
-        t2 = (FUN_0c010f58());
-        for (;;) {
-            *(unsigned char *)((t1 + 0x0)) = ((0xF & t2) + 0x30);
-            t1 = (t1 - 1);
-            t2 = ((int)t2 >> 4);
-            if ((unsigned int)t1 <= (unsigned int)0xC1EF4AA) {
-                break;
-            }
-        }
-        t6 = 0x6;
-    }
-    t14 = buGetFileInfo((*(int *)(((int)stk + 4))), ((t6 * 0xD) + 0xC1EF454), (((int)stk + 4) + 0x4));
-    *(unsigned int *)0xC23EB24 = t14;
-    t16 = t14;
-    if (t14 == 0) {
-        t15 = *(signed char *)(((int)stk + 15));
-        *(unsigned int *)0xC23EB28 = (unsigned char)t15;
-        t16 = (unsigned char)t15;
-    }
-    return t16;
-}
 
 int FUN_0c01d8de(int a4)
 {

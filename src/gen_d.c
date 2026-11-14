@@ -991,21 +991,6 @@ int FUN_0c011182(int a4)
     return t0;
 }
 
-int FUN_0c0161aa(int a4)
-{
-    int stk[6];
-
-    *(unsigned short *)(((int)stk + 8)) = (*(short *)((a4 + 0x0)));
-    *(unsigned char *)(((int)stk + 10)) = (*(signed char *)((a4 + 0x2)));
-    *(unsigned char *)(((int)stk + 11)) = (*(signed char *)((a4 + 0x3)));
-    *(unsigned char *)(((int)stk + 12)) = (*(signed char *)((a4 + 0x4)));
-    *(unsigned char *)(((int)stk + 13)) = (*(signed char *)((a4 + 0x5)));
-    *(unsigned char *)(((int)stk + 14)) = (*(signed char *)((a4 + 0x6)));
-    *(unsigned char *)(((int)stk + 15)) = (*(signed char *)((a4 + 0x7)));
-    *(unsigned char *)(((int)stk + 16)) = 0x0;
-    syRtcDateToCount();
-    return (*(int *)(((int)stk + 4)));
-}
 
 int FUN_0c01fcf8(int a4, int a5, int a6, int a7)
 {

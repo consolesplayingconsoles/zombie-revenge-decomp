@@ -805,62 +805,6 @@ int FUN_0c086530(int a4, int a5)
     return 0x68;
 }
 
-int FUN_0c0a6356(void)
-{
-    int t2;
-    int t3;
-    int t4;
-    int t5;
-    int t10;
-    int t29;
-    int t1;
-    int stk[11];
-    int R1008;
-
-    R1008 = *(int *)((int)stk + 8);
-
-    if (((*(int *)0xC23ED50) == 0) && (t1 = *(int *)0xC23A180, t1 == 2)) {
-        return t1;
-    }
-    if (0x1 != 0) {
-        t2 = 0x0;
-        t3 = 0xC24990C;
-        t4 = 0x1;
-        t5 = 0x0;
-        for (;;) {
-            R1008 = (((t5 << 2) << 2) + 0xC249914);
-            *(unsigned int *)(((((t5 << 2) << 2) + 0xC249914) + 0x0)) = (pdGetPeripheral((*(int *)(((t5 << 2) + 0xC20115C)))));
-            t10 = *(int *)(((*(int *)(((R1008) + 0x0))) + 0x0));
-            if (t10 != 0x3F06FE) {
-                if (t10 != 0xFE) {
-                    if (t10 != 0x7FF) {
-                        *(unsigned int *)((t3 + 0x0)) = t2;
-                    } else {
-                        *(unsigned int *)((0xC24990C + (t5 << 2))) = t4;
-                    }
-                } else {
-                    *(unsigned int *)((0xC24990C + (t5 << 2))) = 0x4;
-                }
-            } else {
-                *(unsigned int *)((0xC24990C + (t5 << 2))) = 0x5;
-            }
-            t5 = (t5 + 0x1);
-            t2 = (t2 + 0x2);
-            t3 = (t3 + 0x4);
-            t4 = (t4 + 0x2);
-            if ((int)t5 >= (int)0x2) {
-                break;
-            }
-        }
-    }
-    FUN_0c0a5cc6();
-    t29 = *(int *)0xC23A180;
-    if (t29 != 1) {
-        FUN_0c0a5dfa();
-        return FUN_0c0a5fdc();
-    }
-    return t29;
-}
 
 int FUN_0c0b32a8(int a4)
 {

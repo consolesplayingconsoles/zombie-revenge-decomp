@@ -715,27 +715,6 @@ int FUN_0c211376(int a4, int a5)
     return (a4 & 0x1F);
 }
 
-int syRtcCompareDate(int a4, int a5)
-{
-    int t4;
-    int t10;
-    int stk[5];
-
-    *(unsigned int *)(((int)stk + 12)) = a5;
-    syRtcDateToCount();
-    *(volatile int *)(((int)stk + 12));
-    syRtcDateToCount();
-    t4 = *(int *)(((int)stk + 4));
-    t10 = 0x0;
-    if ((*(int *)(((int)stk + 8))) == t4) {
-    } else {
-        t10 = 0xFFFFFFFF;
-        if ((unsigned int)(*(int *)(((int)stk + 8))) > (unsigned int)t4) {
-            t10 = 0x1;
-        }
-    }
-    return t10;
-}
 
 int FUN_0c0e5aa0(void)
 {
@@ -1593,11 +1572,6 @@ void kmiWaitVlank(void)
     }
 }
 
-int syHwInit2(void)
-{
-    syChainInit();
-    return syG2SysInit();
-}
 
 int FUN_0c0f05a0(int a4, int a5)
 {

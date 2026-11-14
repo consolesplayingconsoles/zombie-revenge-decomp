@@ -654,57 +654,6 @@ void FUN_0c01632c(int a4, int a5, int a6, int a7)
 }
 
 
-int FUN_0c031d18(int a4)
-{
-    int t8;
-    int t31;
-    int t1;
-
-    if (((((((struct o534_int *)(a4))->v)) & 2) != 0) && (t1 = (((struct oCC_int *)(a4))->v), (int)t1 >= 0)) {
-        (((struct oD0_uint *)((*(int *)(((((((struct oCC_int *)(a4))->v)) << 2) + 0xC246FF0)))))->v) = 0xFFFFFFFF;
-    }
-    t8 = (((struct o2F4_int *)(a4))->v);
-    if ((t8 & 0xFFF0) != 0) {
-        if ((t8 & 0xFFF0) != 0x100) {
-            if ((t8 & 0xFFF0) != 0x200) {
-                FUN_0c0355f8(a4);
-                (((struct o4C4_uint *)(a4))->v) = 0x0;
-                (((struct o4CC_uint *)(a4))->v) = 0x0;
-            } else {
-                (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) + 0x8000);
-                FUN_0c0353e4(a4);
-                FUN_0c035402();
-                (((struct o4C4_uint *)(a4))->v) = 0x4;
-                (((struct o4CC_uint *)(a4))->v) = 0x1;
-            }
-        } else {
-            (((struct o6E_ushort *)(a4))->v) = (((((struct o6E_short *)(a4))->v)) + 0x8000);
-            (((struct o4C4_uint *)(a4))->v) = 0x0;
-            (((struct o4CC_uint *)(a4))->v) = 0x0;
-        }
-    } else {
-        FUN_0c0353e4(a4);
-        FUN_0c035402();
-        if ((int)((((struct o2A0_int *)(a4))->v)) <= (int)0x1) {
-            (((struct o2D4_uint *)(a4))->v) = 0x3;
-        }
-        (((struct o4C4_uint *)(a4))->v) = 0x0;
-        (((struct o4CC_uint *)(a4))->v) = 0x0;
-    }
-    (((struct o534_uint *)(a4))->v) = 0x0;
-    (((struct o1EC_uint *)(a4))->v) = 0xFFC;
-    (((struct o1B0_uint *)(a4))->v) = 0x0;
-    (((struct o55C_uint *)(a4))->v) = 0x0;
-    (((struct oD8_uint *)(a4))->v) = 0x0;
-    (((struct o1BC_uint *)(a4))->v) = 0x0;
-    (((struct o20C_uint *)(a4))->v) = 0x1;
-    t31 = 0x304;
-    if ((int)((((struct o304_int *)(a4))->v)) <= 0) {
-        (((struct o4D0_uint *)(a4))->v) = 0x1;
-        t31 = 0x4D0;
-    }
-    return t31;
-}
 
 float FUN_0c036e18(int a4, int a5, int a6, float f4)
 {
