@@ -7,8 +7,7 @@
 A decompilation of the Dreamcast **Zombie Revenge**, in progress. 
 
 Known issues:
-- On a Dreamcast it crashes at the VMU screen
-- On Flycast the game starts and plays normally (not yet tested in depth)
+- The game only plays until the first door.
 
 It rebuilds the game's executable byte for byte.
 A function is **done** when its C behaves like the original (Equivalent);
