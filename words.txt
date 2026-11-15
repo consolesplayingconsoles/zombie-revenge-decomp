@@ -20,14 +20,16 @@ P 0C19151C   # FUN_0c191368 -> 0C19135C
 P 0C191524   # FUN_0c191368 -> 0C1913BC
 P 0C191528   # FUN_0c191368 -> 0C19135C
 P 0C19153C   # FUN_0c191368 -> 0C1913BC
-P 0C191FD8   # FUN_0c191368 -> 0C360C46
-P 0C191FDC   # FUN_0c191368 -> 0C410C3E
-P 0C191FE0   # FUN_0c191368 -> 0C470C4C
-P 0C191FE4   # FUN_0c191368 -> 0C4D0C42
-P 0C191FE8   # FUN_0c191368 -> 0C430C49
-P 0C191FEC   # FUN_0c191368 -> 0C3F0C44
-P 0C191FF0   # FUN_0c191368 -> 0C450C34
-P 0C191FF4   # FUN_0c191368 -> 0C350C40
+# Type 9's model numbers (FUN_0c0ba6e8 copies them as halfwords to the object at +0x404): taken for addresses, the build added the
+# BSS shift to them (0C36 0C46 -> 0C38 7A06) and after the first door the model walker hit models 0x79FE and 0xC45 and halted (2026-11-15).
+N 0C191FD8   # two model numbers 0C46 0C36 (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FDC   # two model numbers 0C3E 0C41 (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FE0   # two model numbers 0C4C 0C47 (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FE4   # two model numbers 0C42 0C4D (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FE8   # two model numbers 0C49 0C43 (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FEC   # two model numbers 0C44 0C3F (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FF0   # two model numbers 0C34 0C45 (type 9, row 0 of 0C195A18's table), not an address
+N 0C191FF4   # two model numbers 0C40 0C35 (type 9, row 0 of 0C195A18's table), not an address
 P 0C1F79BC   # FUN_0c1f79b8 -> 0C1F5C54
 P 0C1F7A1C   # FUN_0c1f79b8 -> 0C1F5CF4
 P 0C1F7A28   # FUN_0c1f79b8 -> 0C1F6154

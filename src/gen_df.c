@@ -370,7 +370,7 @@ int FUN_0c0b6934(int a4)
     { struct mv3 { int w[3]; }; *(struct mv3 *)((0x254 + t0)) = *(struct mv3 *)(((*(int *)0xC24FAB0) + 0x8)); }
     *(volatile int *)0xC24FAB0;
     { struct mvb6 { char c[6]; }; *(struct mvb6 *)((t0 + 0x3CC)) = *(struct mvb6 *)(((*(int *)0xC24FAB0) + 0x14)); }
-    *(unsigned int *)((t0 + 0x0)) = (*(int *)(((*(int *)((a4 + 0x0))) + 0x4)));
+    *(unsigned int *)((t0 + 0x0)) = (*(int *)(((*(int *)0xC24FAB0) + 0x4)));
     t7 = FUN_0c0e1830(0xC0B6A7C, 0x440);
     FUN_0c0e19d0(t7);
     *(unsigned int *)0xC247CB0 = t7;
