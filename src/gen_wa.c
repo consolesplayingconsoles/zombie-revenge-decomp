@@ -7,7 +7,7 @@ int ADXF_LoadPartition(int, int, int, int);
 int ADXT_EntryErrFunc(int, int);
 int FUN_0c010a30(void);
 int FUN_0c0cbbf4(Stk6);
-int FUN_0c210416(int, int, int, int);
+int FUN_0c210416(int);
 int FUN_0c213470(void);
 int gdFsInit(int, int, int, int);
 int FUN_0c0cbc28(void);

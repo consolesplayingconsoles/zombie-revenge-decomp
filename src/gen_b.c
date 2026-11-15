@@ -4,7 +4,7 @@
 int FUN_0c02a19a(int);
 int FUN_0c030848(int, int, int);
 int FUN_0c03227c(int);
-int FUN_0c03442c(int, int, int, int);
+int FUN_0c03442c(int, int, int, int, int, int);
 int FUN_0c034506(int, int, int, int, int, int);
 float FUN_0c082e20(float);
 int FUN_0c0855ba(int);
@@ -238,7 +238,7 @@ int FUN_0c039034(int a4)
     if (t5 != 0) {
         t7 = *(int *)((((((((struct o1C4_int *)(a4))->v)) << 2) + 0xC246FF0) + 0x0));
         FUN_0c034506(a4, t7, (0x588 + a4), (0x58C + a4), (0x590 + a4), ((int)stk + 20));
-        FUN_0c03442c(a4, t7, (0x594 + a4), (0x598 + a4));
+        FUN_0c03442c(a4, t7, (0x594 + a4), (0x598 + a4), (0x59C + a4), ((int)stk + 24));
         (((struct o5A0_uint *)(a4))->v) = ((((struct o594_int *)(a4))->v));
         (((struct o5A4_uint *)(a4))->v) = ((((struct o598_int *)(a4))->v));
     } else {

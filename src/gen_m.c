@@ -10,7 +10,7 @@ int ADXSTM_SetBufSize(int, int, int);
 int ADXSTM_SetEos(int, int);
 int ADXSTM_Start(int);
 int FUN_0c0f05a0(int, int);
-int FUN_0c210336(void);
+int FUN_0c210336(int, int);
 int FUN_0c213a4e(int, int);
 int FUN_0c213d02(void);
 int FUN_0c218514(int, int, int, int);
@@ -242,7 +242,7 @@ int ADXT_EntryErrFunc(int a4, int a5);
 int kmiReadRegister(int a4);
 int kmiGetSysConfigFlag(void);
 int FUN_0c2212c0(void);
-int gdFsChangeDir(void);
+int gdFsChangeDir(int);
 int syTmrDiffCount(int a4, int a5);
 int FUN_0c213a4a(int a4, int a5);
 int ADXT_GetStat(int a4);
@@ -2029,9 +2029,9 @@ int FUN_0c2212c0(void)
     return 0xC237A48;
 }
 
-int gdFsChangeDir(void)
+int gdFsChangeDir(int a4)
 {
-    return FUN_0c210336();
+    return FUN_0c210336(a4, 0x0);
 }
 
 int syTmrDiffCount(int a4, int a5)

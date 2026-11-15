@@ -89,8 +89,8 @@ int FUN_0c0e19aa(int, int, int);
 int FUN_0c0e19d0(int);
 int FUN_0c0e19f2(void);
 int FUN_0c0e6248(void);
-int FUN_0c21038e(void);
-int gdFsChangeDir(void);
+int FUN_0c21038e(int, int);
+int gdFsChangeDir(int);
 int gdFsClose(int);
 int gdFsGetFileSctSize(int, int);
 int gdFsRead(int, int, int);
@@ -1266,8 +1266,8 @@ int FUN_0c214bf8(int a4, int a5)
 
     *(unsigned int *)(((int)stk + 12)) = a4;
     *(unsigned int *)(((int)stk + 8)) = a5;
-    gdFsChangeDir();
-    t2 = FUN_0c21038e();
+    gdFsChangeDir(0xC2373DC);
+    t2 = FUN_0c21038e(a4, 0x0);
     if (t2 != 0) {
         gdFsGetFileSctSize(t2, ((int)stk + 4));
         gdFsRead(t2, (*(int *)(((int)stk + 4))), (*(int *)(((int)stk + 8))));

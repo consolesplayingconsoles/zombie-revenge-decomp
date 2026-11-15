@@ -76,7 +76,7 @@ extern int FUN_0c0e2a4c();
 int FUN_0c0e631c(int, int, int);
 int FUN_0c0e6400(void);
 int FUN_0c0e6620(int, int);
-int FUN_0c210416(void);
+int FUN_0c210416(int);
 int FUN_0c219808(int);
 extern int _builtin_get_imask(void);
 extern void _builtin_set_imask(int);
@@ -621,7 +621,7 @@ int FUN_0c0106a0(void)
     FUN_0c0e6620(0x1, 0xC0CED7C);
     FUN_0c0e6620(0x0, 0xC0CEDC8);
     _builtin_set_imask(0x0);
-    FUN_0c210416();
+    FUN_0c210416(0xC010542);
     FUN_0c0cc384();
     FUN_0c0cea9c();
     FUN_0c0855b0();

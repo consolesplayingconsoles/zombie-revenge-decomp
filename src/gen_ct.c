@@ -45,7 +45,7 @@ int FUN_0c0e19f2(void);
 int _modls(void);
 int _quick_evn_mvn(void);
 int _quick_odd_mvn(void);
-int FUN_0c210416(void);
+int FUN_0c210416(int);
 int FUN_0c213470(void);
 int FUN_0c22ea0c(int, int, int);
 int FUN_0c22ee60(void);

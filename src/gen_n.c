@@ -19,7 +19,7 @@ int FUN_0c0e5e74(void);
 int FUN_0c0e5fe4(int);
 int FUN_0c0e631c(int, int, int);
 int FUN_0c0edc20(int, int, int);
-int FUN_0c210378(void);
+int FUN_0c210378(int, int);
 int FUN_0c22b736(int, int, int, int);
 int FUN_0c22b866(int, int, int, int);
 int FUN_0c22b994(int);
@@ -756,7 +756,7 @@ int ADXSTM_GetFsizeSct(int a4, int a5)
     R1004 = *(int *)((int)stk + 4);
 
     R1004 = a5;
-    t0 = FUN_0c210378();
+    t0 = FUN_0c210378(a4, ((int)stk + 8));
     t1 = *(int *)(((int)stk + 12));
     t2 = R1004;
     t4 = (t1 + 0x7FF);
@@ -1134,7 +1134,7 @@ int ADXSTM_GetFad(int a4, int a5)
     int stk[6];
 
     *(unsigned int *)(((int)stk + 4)) = a5;
-    t0 = FUN_0c210378();
+    t0 = FUN_0c210378(a4, ((int)stk + 8));
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = (*(int *)(((int)stk + 8)));
     return t0;
 }
@@ -1145,7 +1145,7 @@ int FUN_0c22abc0(int a4, int a5)
     int stk[6];
 
     *(unsigned int *)(((int)stk + 4)) = a5;
-    t0 = FUN_0c210378();
+    t0 = FUN_0c210378(a4, ((int)stk + 8));
     *(unsigned int *)(((*(int *)(((int)stk + 4))) + 0x0)) = (*(int *)(((int)stk + 12)));
     return t0;
 }

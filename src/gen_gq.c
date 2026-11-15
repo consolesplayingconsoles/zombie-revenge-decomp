@@ -63,7 +63,7 @@ int FUN_0c0e19f2(void);
 int _modls(void);
 int FUN_0c0e6118(void);
 int FUN_0c0e6248(void);
-int FUN_0c210416(void);
+int FUN_0c210416(int);
 int FUN_0c213470(void);
 extern float _builtin_sqrtf(float);
 int gdFsInit(void);

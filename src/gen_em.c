@@ -96,7 +96,7 @@ int FUN_0c0e2a4c(int);
 int FUN_0c0e4428(int);
 int FUN_0c0e6248(void);
 int FUN_0c0ed8a8(int, int, int);
-int FUN_0c2103bc(void);
+int FUN_0c2103bc(int, int, int);
 int FUN_0c22c602(int);
 int FUN_0c233800(int, int, int);
 extern int _builtin_get_imask(void);
@@ -1237,7 +1237,7 @@ int ADXSTM_OpenRange(int a4, int a5, int a6)
     int t0;
     int t2;
 
-    t0 = FUN_0c2103bc();
+    t0 = FUN_0c2103bc(a4, a5, a6);
     if (t0 == 0) {
         ADXERR_CallErrFunc(0xC237D54, a4, a5);
         return 0x0;

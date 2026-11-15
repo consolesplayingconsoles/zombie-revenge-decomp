@@ -35,7 +35,7 @@ int _divls(void);
 int _quick_odd_mvn(void);
 int FUN_0c0e6248(void);
 int FUN_0c0ed8a8(int, int, int);
-int FUN_0c21038e(void);
+int FUN_0c21038e(int, int);
 int FUN_0c211122(int, int);
 int FUN_0c229000(int, int, int);
 int ADXERR_CallErrFunc(int, ...);
@@ -261,7 +261,7 @@ int ADXSTM_OpenFileRange(int a4, int a5, int a6, int a7)
     int t0;
     int t4;
 
-    t0 = FUN_0c21038e();
+    t0 = FUN_0c21038e(a4, 0x0);
     if (t0 == 0) {
         ADXERR_CallErrFunc(0xC237D98);
         t4 = 0x0;

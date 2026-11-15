@@ -99,7 +99,7 @@ int FUN_0c0e2a4c(int);
 int FUN_0c0e5fe4(int);
 int FUN_0c0e6248(void);
 int FUN_0c0ed8a8(int, int, int);
-int FUN_0c21038e(void);
+int FUN_0c21038e(int, int);
 int FUN_0c22cd00(void);
 int FUN_0c22cd18(int, int);
 int __init_dspdb_cc_f(void);
@@ -665,7 +665,7 @@ int FUN_0c22a6e0(int a4, int a5)
     register int t9;
 
     *(unsigned int *)(((int)stk + 16)) = a5;
-    t0 = FUN_0c21038e();
+    t0 = FUN_0c21038e(a4, 0x0);
     if (t0 == 0) {
         *(int *)((int)stk + 8) = a4;
         *(int *)((int)stk + 4) = 0xC237CF4;

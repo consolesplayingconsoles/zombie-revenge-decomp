@@ -33,14 +33,14 @@ struct oF8_uint { char p[0xF8]; unsigned int v; };
 int FUN_0c220360(Stk63);
 int kmiInitNTSC(void);
 int syCalloc(void);
-int FUN_0c2103bc(void);
+int FUN_0c2103bc(int, int, int, int);
 int FUN_0c21045c(void);
-int FUN_0c210336(void);
+int FUN_0c210336(int, int, int, int);
 int gdFsReinit(void);
-int FUN_0c21038e(void);
-int FUN_0c210378(void);
+int FUN_0c21038e(int, int, int, int);
+int FUN_0c210378(int, int, int, int);
 void FUN_0c210400(void);
-void FUN_0c210416(void);
+void FUN_0c210416(int, int, int, int);
 int realloc(void);
 int syMalloc(void);
 int malloc(void);
@@ -193,7 +193,7 @@ int syCalloc(void)
     return ((int (*)(void))(t1))();
 }
 
-int FUN_0c2103bc(void)
+int FUN_0c2103bc(int a4, int a5, int a6, int a7)
 {
     register int t0;
     register int t1;
@@ -201,7 +201,7 @@ int FUN_0c2103bc(void)
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
         t1 = (((struct o44_int *)(t0))->v);
-        return ((int (*)(void))(t1))();
+        return ((int (*)(int, int, int, int))(t1))(a4, a5, a6, a7);
     }
     return 0x0;
 }
@@ -219,7 +219,7 @@ int FUN_0c21045c(void)
     return 0x0;
 }
 
-int FUN_0c210336(void)
+int FUN_0c210336(int a4, int a5, int a6, int a7)
 {
     register int t0;
     register int t1;
@@ -227,7 +227,7 @@ int FUN_0c210336(void)
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
         t1 = *(int *)((t0 + 0x20));
-        return ((int (*)(void))(t1))();
+        return ((int (*)(int, int, int, int))(t1))(a4, a5, a6, a7);
     }
     return 0x0;
 }
@@ -245,7 +245,7 @@ int gdFsReinit(void)
     return 0xFFFFFFFF;
 }
 
-int FUN_0c21038e(void)
+int FUN_0c21038e(int a4, int a5, int a6, int a7)
 {
     register int t0;
     register int t1;
@@ -253,12 +253,12 @@ int FUN_0c21038e(void)
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
         t1 = *(int *)((t0 + 0x3C));
-        return ((int (*)(void))(t1))();
+        return ((int (*)(int, int, int, int))(t1))(a4, a5, a6, a7);
     }
     return 0x0;
 }
 
-int FUN_0c210378(void)
+int FUN_0c210378(int a4, int a5, int a6, int a7)
 {
     register int t0;
     register int t1;
@@ -266,7 +266,7 @@ int FUN_0c210378(void)
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
         t1 = *(int *)((t0 + 0x2C));
-        return ((int (*)(void))(t1))();
+        return ((int (*)(int, int, int, int))(t1))(a4, a5, a6, a7);
     }
     return 0x0;
 }
@@ -282,13 +282,13 @@ void FUN_0c210400(void)
     }
 }
 
-void FUN_0c210416(void)
+void FUN_0c210416(int a4, int a5, int a6, int a7)
 {
     register int t0;
 
     t0 = *(int *)0xC2393D0;
     if (t0 != 0) {
-        ((int (*)(void))(((((struct o74_int *)(t0))->v))))();
+        ((int (*)(int, int, int, int))(((((struct o74_int *)(t0))->v))))(a4, a5, a6, a7);
     return;
     }
 }
