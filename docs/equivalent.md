@@ -39644,6 +39644,13 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 72
 - the cases run 14 of 14 instructions
 
+### FUN_0c041ee8 (`0C041EE8`, 28 bytes, `src/hand_ptr.c`)
+- equivalent on 2 development and 1 holdout cases, in `tests/hand_ptr/FUN_0c041ee8.json`
+- copy 0x12345678
+- copy -1
+- copy 0
+- the cases run 14 of 14 instructions
+
 ### FUN_0c041f04 (`0C041F04`, 38 bytes, `src/gen_jn.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_jn/FUN_0c041f04.json`
 - case 0
@@ -69683,6 +69690,26 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 127 of 149 instructions
+
+### FUN_0c07fdbc (`0C07FDBC`, 228 bytes, `src/hand_ptr.c`)
+- equivalent on 3 development and 2 holdout cases, in `tests/hand_ptr/FUN_0c07fdbc.json`
+- turn result 1000: clamp up
+- turn result -900: clamp down
+- turn result 200: smooth
+- turn result -384: smooth (not above 384)
+- turn result 385: clamp up
+- the cases run 114 of 114 instructions
+
+### FUN_0c07fef0 (`0C07FEF0`, 470 bytes, `src/hand_ptr.c`)
+- equivalent on 4 development and 3 holdout cases, in `tests/hand_ptr/FUN_0c07fef0.json`
+- state 0, counter runs out (96), smoothing
+- state 1, counter below 161, flag set
+- state 2, smoothing
+- state 5, flag clear: caller fr4 used
+- state 0, counter 5, flag set
+- state 1, counter runs out (162)
+- state 3, flag set: caller fr4 stored
+- the cases run 213 of 213 instructions
 
 ### FUN_0c0800c6 (`0C0800C6`, 456 bytes, `src/gen_ib.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_ib/FUN_0c0800c6.json`
