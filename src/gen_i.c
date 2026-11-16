@@ -16,7 +16,6 @@ int FUN_0c0c27a0(int);
 int FUN_0c0c465c(int);
 int FUN_0c0c5a4c(int);
 int FUN_0c0c7970(int, int);
-int FUN_0c0c82f2(int, int, int, int);
 int FUN_0c0cc3cc(int, int);
 int FUN_0c0cc3f8(int);
 int FUN_0c0cc6dc(void);
@@ -35,7 +34,6 @@ int buStat(int);
 int thunk_FUN_0c016d20(int, int, int);
 int FUN_0c0d6c52(int a4);
 void FUN_0c0b771e(void);
-int FUN_0c0c82dc(int a4, int a5, int a6, int a7);
 int FUN_0c0ce486(void);
 int FUN_0c0cead0(int a4);
 int FUN_0c0d8130(int a4, int a5, int a6);
@@ -125,11 +123,6 @@ void FUN_0c0b771e(void)
         *(unsigned char *)((t1 + 0x0)) = 0x0;
         t1 = (t1 + 0x1);
     }
-}
-
-int FUN_0c0c82dc(int a4, int a5, int a6, int a7)
-{
-    return FUN_0c0c82f2(a4, a5, a6, a7);
 }
 
 int FUN_0c0ce486(void)

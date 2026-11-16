@@ -98,3 +98,14 @@ void FUN_0c041ee8(int a4)
     *(int *)(a4 + 0x4E4) = 0xB4;
     FUN_0c088ec4(a4, *(int *)(a4 + 0x4E4));
 }
+
+/* An entry of the episode 2 start list (0C1A422C), after FUN_0c070b90 and not listed: the build's kept copy loaded its position table
+   from past the copy (FUN_0c0685a4's address in place of 0C200414), and FUN_0c070b90 copied the object's position from code: an
+   address error on the console at the start of episode 2. Its five neighbours (FUN_0c070c3a ...) are the same call with other tables. */
+int FUN_0c070b90(int, int);
+int FUN_0c070c34(void);
+
+int FUN_0c070c34(void)
+{
+    return FUN_0c070b90(0xC200414, 0x0);
+}

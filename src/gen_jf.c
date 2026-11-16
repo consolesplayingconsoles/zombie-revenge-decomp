@@ -1486,7 +1486,7 @@ int FUN_0c01c0ce(int a4, int a5, int a6, int a7)
         (((struct o14_uint *)0xC23ED9C)->v) = 0x0;
         *(unsigned int *)0xC247D04 = 0x9;
         (((struct o0_uchar *)0xC247CBB)->v) = (*(signed char *)0xC247D08);
-        (((struct o1_ushort *)0xC247CBB)->v) = 0x2;
+        *(unsigned short *)0xC247CBC = 0x2;
         return FUN_0c084e08(0xA, 0x1);
     }
     return 0x50;

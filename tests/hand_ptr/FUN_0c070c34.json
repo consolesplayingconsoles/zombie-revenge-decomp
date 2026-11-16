@@ -1,0 +1,1 @@
+{"dev": [{"about": "the object is created", "poke": {}, "calls": [{"r0": "0000029C"}]}, {"about": "another result", "poke": {}, "calls": [{"r0": "7FFFFFFF"}]}], "holdout": [{"about": "zero result", "poke": {}, "calls": [{"r0": "00000000"}]}]}
