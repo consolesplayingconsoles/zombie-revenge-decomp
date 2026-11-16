@@ -100848,6 +100848,16 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - the cases run 72 of 72 instructions
 
+### FUN_0c0b9da0 (`0C0B9DA0`, 64 bytes, `src/hand_task.c`)
+- equivalent on 3 development and 3 holdout cases, in `tests/hand_task/FUN_0c0b9da0.json`
+- rescue: empty case
+- both flags and both table words set
+- second flag set, its table word clear
+- rescue: empty case
+- only the second flag and its table word
+- only the first flag and its table word
+- the cases run 32 of 32 instructions
+
 ### FUN_0c0b9de0 (`0C0B9DE0`, 274 bytes, `src/gen_im.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_im/FUN_0c0b9de0.json`
 - rescue: empty case
@@ -108177,6 +108187,50 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - case 150
 - the cases run 32 of 32 instructions
 
+### FUN_0c0c69f6 (`0C0C69F6`, 208 bytes, `src/hand_task.c`)
+- equivalent on 20 development and 20 holdout cases, in `tests/hand_task/FUN_0c0c69f6.json`
+- case 1
+- case 8
+- case 12
+- case 13
+- case 14
+- case 16
+- case 18
+- case 19
+- case 20
+- case 22
+- case 23
+- case 24
+- case 29
+- case 30
+- case 32
+- case 33
+- the search finds the area at entry 2
+- the search finds nothing
+- flags set: the fiber is ended
+- flags set, no fiber: one is made, the area is entry 0
+- case 124
+- case 115
+- case 120
+- case 80
+- case 130
+- case 97
+- case 54
+- case 133
+- case 90
+- case 117
+- case 116
+- case 157
+- case 48
+- case 40
+- case 69
+- case 122
+- case 38
+- case 55
+- the search finds the area at the last entry
+- flags set, no fiber, the entry already known
+- the cases run 68 of 68 instructions
+
 ### FUN_0c0c6ac6 (`0C0C6AC6`, 104 bytes, `src/gen_gw.c`)
 - equivalent on 18 development and 18 holdout cases, in `tests/gen_gw/FUN_0c0c6ac6.json`
 - case 1
@@ -109143,6 +109197,20 @@ Functions whose C behaves like the original on every test case (`tools/equiv.py`
 - rescue: empty case
 - rescue: empty case
 - the cases run 171 of 202 instructions
+
+### FUN_0c0c82dc (`0C0C82DC`, 976 bytes, `src/gen_agx.c`)
+- equivalent on 5 development and 5 holdout cases, in `tests/gen_agx/FUN_0c0c82dc.json`
+- rescue: flips 0C0C831C
+- rescue: flips 0C0C8316
+- episode 2 list, one pass of each loop, both sheets drawn, first frame
+- an area with no weather list while the effect is on: it is turned off
+- mode 3 with the stop flag: the task is ended, no list
+- rescue: flips 0C0C8316
+- rescue: flips 0C0C831C
+- episode 2 list, two passes of each loop, effect already on
+- an area with no weather list, effect already off
+- mode 3 without the stop flag, no list
+- the cases run 425 of 425 instructions
 
 ### FUN_0c0c86ac (`0C0C86AC`, 1252 bytes, `src/gen_nh.c`)
 - equivalent on 1 development and 1 holdout cases, in `tests/gen_nh/FUN_0c0c86ac.json`

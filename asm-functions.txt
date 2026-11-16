@@ -1,4 +1,0 @@
-# Functions the build takes from the original assembly. These three have no C: the build already uses their original code.
-FUN_0c0c82dc   # weather task (976 bytes): no C written
-FUN_0c0b9da0   # 64 bytes: translated C differs from the original
-FUN_0c0c69f6   # 208 bytes: translated C differs from the original

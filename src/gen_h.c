@@ -106,7 +106,7 @@ int kmGetFreeTextureMem(int, int);
 int kmLoadTexture(int, int, int, int);
 int kmProcessVertexRenderState(int);
 int kmSetFogTable(void);
-int thunk_kmSetFogTable(void);
+int thunk_kmSetFogTable(int);
 int kmSetVertexRenderState(int);
 int memset(int, int, int);
 int syCfgExit(void);
@@ -1351,7 +1351,7 @@ int FUN_0c0c03da(void)
             break;
         }
     }
-    thunk_kmSetFogTable();
+    thunk_kmSetFogTable(0xC2620BC);
     nlFogTableColor(0x0);
     return FUN_0c0db1c0(0x9008);
 }
